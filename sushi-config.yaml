@@ -6,8 +6,7 @@
 id: kindlab.fhir.vbh
 canonical: http://someurl/fhir/vbh
 name: VoiceasaBiomarkerofHealth
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+description: Implementation Guide for Voice as a Biomarker of Health FHIR Profiles
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -20,8 +19,8 @@ publisher:
   url: http://fhir.kindlab.sickkids.ca
 
 #
-# dependencies:
-#   hl7.fhir.us.core: 3.1.0
+dependencies:
+  hl7.fhir.us.core: 5.0.1
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -61,8 +60,3 @@ menu:
 #     title: Examples Overview
 #     simpleExamples.xml:
 #     complexExamples.xml:
-
-
-
-
-
