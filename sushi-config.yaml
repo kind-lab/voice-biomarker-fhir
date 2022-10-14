@@ -50,13 +50,12 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Guidance: guidance.html
   Artifacts: artifacts.html
+  Change Log: changelog.html
   
- # pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
+pages:
+   index.md:
+   guidance.md:
+   artifacts.html:
+   changelog.md:
