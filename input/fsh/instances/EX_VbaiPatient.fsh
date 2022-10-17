@@ -2,7 +2,7 @@ Instance: VbaiPatientExample
 InstanceOf: VbaiPatient
 Description: "An example of a Voice as a Biomarker for AI patient"
 * identifier
-  * system = "http://voice.mit.edu/fhir/vbai/identifier/patient-id"
+  * system = "http://voicecollab.ai/identifier/patient-id"
   * value = "123456"
 * name
   * given[0] = "James"
