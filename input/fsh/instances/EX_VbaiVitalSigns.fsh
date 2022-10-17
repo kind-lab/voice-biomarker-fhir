@@ -1,8 +1,8 @@
-Instance: VbhVitalSignsExample
-InstanceOf: VbhVitalSigns
+Instance: VbaiVitalSignsExample
+InstanceOf: VbaiVitalSigns
 Description: "An example of a Voice as a Biomarker vital sign profile"
-* subject = Reference(VbhPatientExample)
-* encounter = Reference(VbhEncounterExample)
+* subject = Reference(VbaiPatientExample)
+* encounter = Reference(VbaiEncounterExample)
 * status = #final
 * category[VSCat] = $ObservationCategory#vital-signs "Vital Signs"
 * code = $LOINC#8867-4 "Heart rate"

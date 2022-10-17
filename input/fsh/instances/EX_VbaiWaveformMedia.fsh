@@ -1,9 +1,9 @@
-Instance: VbhWaveformMediaExample
-InstanceOf: VbhWaveformMedia
+Instance: VbaiWaveformMediaExample
+InstanceOf: VbaiWaveformMedia
 Description: "An example of a Voice as a Biomarker waveform media"
 * status = $EventStatus#completed
-* subject = Reference(VbhPatientExample)
-* encounter = Reference(VbhEncounterExample)
+* subject = Reference(VbaiPatientExample)
+* encounter = Reference(VbaiEncounterExample)
 * modality = $DicomModality#ECG "Electrocardiography"
 * content
   * contentType = #application/dicom

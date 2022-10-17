@@ -1,8 +1,8 @@
-Instance: VbhBodyHeightExample
-InstanceOf: VbhBodyHeight
+Instance: VbaiBodyHeightExample
+InstanceOf: VbaiBodyHeight
 Description: "An example of a Voice as a Biomarker body height profile"
-* subject = Reference(VbhPatientExample)
-* encounter = Reference(VbhEncounterExample)
+* subject = Reference(VbaiPatientExample)
+* encounter = Reference(VbaiEncounterExample)
 * status = #final
 * category[VSCat] = $ObservationCategory#vital-signs "Vital Signs"
 * code = $LOINC#8302-2 "Body height"

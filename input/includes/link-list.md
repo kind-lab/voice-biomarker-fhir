@@ -4,15 +4,15 @@
 [Home]: index.html
 
 
-[VbhBodyHeight]: StructureDefinition-vbh-body-height.html
-[VbhBodyWeight]: StructureDefinition-vbh-body-weight.html
-[VbhCondition]: StructureDefinition-vbh-condition.html
-[VbhEncounter]: StructureDefinition-vbh-encounter.html
-[VbhImagingMedia]: StructureDefinition-vbh-imaging-media.html
-[VbhImagingStudy]: StructureDefinition-vbh-imaging-study.html
-[VbhPatient]: StructureDefinition-vbh-patient.html
-[VbhQuestionnaire]: StructureDefinition-vbh-questionnaire.html
-[VbhQuestionnaireResponse]: StructureDefinition-vbh-questionnaire-response.html
-[VbhVitalSigns]: StructureDefinition-vbh-vital-signs.html
-[VbhWavefromDevice]: StructureDefinition-vbh-waveform-device.html
-[VbhWaveformMedia]: StructureDefinition-vbh-waveform-media.html
+[VbaiBodyHeight]: StructureDefinition-vbai-body-height.html
+[VbaiBodyWeight]: StructureDefinition-vbai-body-weight.html
+[VbaiCondition]: StructureDefinition-vbai-condition.html
+[VbaiEncounter]: StructureDefinition-vbai-encounter.html
+[VbaiImagingMedia]: StructureDefinition-vbai-imaging-media.html
+[VbaiImagingStudy]: StructureDefinition-vbai-imaging-study.html
+[VbaiPatient]: StructureDefinition-vbai-patient.html
+[VbaiQuestionnaire]: StructureDefinition-vbai-questionnaire.html
+[VbaiQuestionnaireResponse]: StructureDefinition-vbai-questionnaire-response.html
+[VbaiVitalSigns]: StructureDefinition-vbai-vital-signs.html
+[VbaiWavefromDevice]: StructureDefinition-vbai-waveform-device.html
+[VbaiWaveformMedia]: StructureDefinition-vbai-waveform-media.html

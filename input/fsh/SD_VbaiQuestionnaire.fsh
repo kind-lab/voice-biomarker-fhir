@@ -1,5 +1,5 @@
-Profile:        VbhQuestionnaire
+Profile:        VbaiQuestionnaire
 Parent:         Questionnaire
-Id:             vbh-questionnaire
-Title:          "VBH Questionnaire"
+Id:             vbai-questionnaire
+Title:          "VBAI Questionnaire"
 Description:    "A questionnaire profile based on the base Questionnaire resource."

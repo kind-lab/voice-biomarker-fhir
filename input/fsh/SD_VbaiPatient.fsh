@@ -1,6 +1,6 @@
-Profile:        VbhPatient
+Profile:        VbaiPatient
 Parent:         us-core-patient
-Id:             vbh-patient
-Title:          "VBH Patient"
+Id:             vbai-patient
+Title:          "VBAI Patient"
 Description:    "A patient profile based on US Core Patient."
 * birthDate 1..1

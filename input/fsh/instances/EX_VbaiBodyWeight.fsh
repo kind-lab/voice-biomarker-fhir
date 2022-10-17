@@ -1,8 +1,8 @@
-Instance: VbhBodyWeightExample
-InstanceOf: VbhBodyWeight
+Instance: VbaiBodyWeightExample
+InstanceOf: VbaiBodyWeight
 Description: "An example of a Voice as a Biomarker body weight profile"
-* subject = Reference(VbhPatientExample)
-* encounter = Reference(VbhEncounterExample)
+* subject = Reference(VbaiPatientExample)
+* encounter = Reference(VbaiEncounterExample)
 * status = #final
 * category[VSCat] = $ObservationCategory#vital-signs "Vital Signs"
 * code = $LOINC#29463-7 "Body weight"

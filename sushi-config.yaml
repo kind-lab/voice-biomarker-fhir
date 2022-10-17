@@ -3,10 +3,10 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: kindlab.fhir.vbh
-canonical: http://someurl/fhir/vbh
+id: kindlab.fhir.vbai
+canonical: http://someurl/fhir/vbai
 name: VoiceasaBiomarkerofHealth
-description: Implementation Guide for Voice as a Biomarker of Health FHIR Profiles
+description: Implementation Guide for Voice as a Biomarker for AI FHIR Profiles
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html

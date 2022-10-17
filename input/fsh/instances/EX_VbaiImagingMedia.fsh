@@ -1,9 +1,9 @@
-Instance: VbhImagingMediaExample
-InstanceOf: VbhImagingMedia
+Instance: VbaiImagingMediaExample
+InstanceOf: VbaiImagingMedia
 Description: "An example of a Voice as a Biomarker imaging media"
 * status = $EventStatus#completed
-* subject = Reference(VbhPatientExample)
-* encounter = Reference(VbhEncounterExample)
+* subject = Reference(VbaiPatientExample)
+* encounter = Reference(VbaiEncounterExample)
 * modality = $DicomModality#PX "Panoramic X-Ray"
 * content
   * contentType = #application/dicom
