@@ -1,0 +1,15 @@
+{
+  "name": "fhir.kindlab.template",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "KinD Lab Template - for use with KinD lab IGs",
+  "author": "http://fhir.mimic.mit.edu",
+  "canonical": "http://github.com/kindlab/ig-template-kindlab",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "current"
+  },
+  "date": "20220301040521",
+  "original-version": "0.0.1",
+  "version": "current"
+}
