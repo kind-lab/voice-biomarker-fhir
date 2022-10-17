@@ -1,2 +1,6 @@
-# voice-biomarker-fhir
-FHIR profiles for voice as a biomarker
+### Introduction
+The Voice as a Biomarker for AI Health (VBAI) profiles are based on [FHIR R4](http://hl7.org/fhir/R4/index.html) and derived from [US Core STU5](http://hl7.org/fhir/us/core/STU5/) where possible. The profiles capture the data collected in the VBAI study.
+
+
+### What is Voice as a Biomarker for AI?
+The National Institue of Health ([NIH](https://www.nih.gov/)) started the [Bridge2AI](https://commonfund.nih.gov/bridge2ai) initiative to fund the creation of foundational datasets in the medical field. Voice as a Biomarker for AI(VBAI) is one of five foundational datasets being constructed currently. The VBAI project will capture multimodal data from vocal recordings, genomic screens, waveform profiles, and electronic health records. The goal of the VBAI project is to create a dataset that can be used to create applications to diagnose conditions based on voice recordings. The researchers creating the VBAI dataset are multidisciplinary and across multiple institutions in Canada, USA, and France.
