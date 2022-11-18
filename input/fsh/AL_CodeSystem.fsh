@@ -21,3 +21,4 @@ Alias: $UCUM = http://unitsofmeasure.org
 Alias: $ConsentScope = http://terminology.hl7.org/CodeSystem/consentscope
 Alias: $ConsentPolicyCodes = http://terminology.hl7.org/CodeSystem/consentpolicycodes
 Alias: $ConsentStateCodes = http://hl7.org/fhir/consent-state-codes 
+Alias: $ConsentCategoryCodes = http://terminology.hl7.org/CodeSystem/consentcategorycodes
