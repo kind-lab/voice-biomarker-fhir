@@ -7,6 +7,7 @@
 [VbaiBodyHeight]: StructureDefinition-vbai-body-height.html
 [VbaiBodyWeight]: StructureDefinition-vbai-body-weight.html
 [VbaiCondition]: StructureDefinition-vbai-condition.html
+[VbaiConsent]: StructureDefinition-vbai-consent.html
 [VbaiEncounter]: StructureDefinition-vbai-encounter.html
 [VbaiImagingMedia]: StructureDefinition-vbai-imaging-media.html
 [VbaiImagingStudy]: StructureDefinition-vbai-imaging-study.html
