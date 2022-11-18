@@ -1,6 +1,6 @@
 Instance: VbaiVitalSignsExample
 InstanceOf: VbaiVitalSigns
-Description: "An example of a Voice as a Biomarker vital sign profile"
+Description: "An example of a Voice as a Biomarker for AI vital sign profile"
 * subject = Reference(VbaiPatientExample)
 * encounter = Reference(VbaiEncounterExample)
 * status = #final

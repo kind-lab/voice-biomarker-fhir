@@ -1,6 +1,6 @@
 Instance: VbaiBodyWeightExample
 InstanceOf: VbaiBodyWeight
-Description: "An example of a Voice as a Biomarker body weight profile"
+Description: "An example of a Voice as a Biomarker for AI body weight profile"
 * subject = Reference(VbaiPatientExample)
 * encounter = Reference(VbaiEncounterExample)
 * status = #final

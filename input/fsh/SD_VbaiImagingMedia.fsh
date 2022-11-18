@@ -6,3 +6,4 @@ Description:    "A imaging media profile based on the base Media resource."
 * subject only Reference(VbaiPatient)
 * encounter only Reference(VbaiEncounter)
 * modality 1..1
+* content 1..1

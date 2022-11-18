@@ -1,6 +1,6 @@
 Instance: VbaiPatientExample
 InstanceOf: VbaiPatient
-Description: "An example of a Voice as a Biomarker for AI patient"
+Description: "An example of a Voice as a Biomarker for AI Patient"
 * identifier
   * system = "http://voicecollab.ai/identifier/patient-id"
   * value = "123456"

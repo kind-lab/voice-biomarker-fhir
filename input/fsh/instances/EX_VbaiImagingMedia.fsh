@@ -1,6 +1,6 @@
 Instance: VbaiImagingMediaExample
 InstanceOf: VbaiImagingMedia
-Description: "An example of a Voice as a Biomarker imaging media"
+Description: "An example of a Voice as a Biomarker for AI imaging media"
 * status = $EventStatus#completed
 * subject = Reference(VbaiPatientExample)
 * encounter = Reference(VbaiEncounterExample)
