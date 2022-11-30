@@ -1,6 +1,6 @@
 Instance: VbaiWaveformMediaExample
 InstanceOf: VbaiWaveformMedia
-Description: "An example of a Voice as a Biomarker waveform media"
+Description: "An example of a Voice as a Biomarker for AI waveform media"
 * status = $EventStatus#completed
 * subject = Reference(VbaiPatientExample)
 * encounter = Reference(VbaiEncounterExample)

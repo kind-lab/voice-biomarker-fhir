@@ -20,6 +20,7 @@ The VBAI Profiles are meant for use in research and development. The audience th
 - [VbaiBodyHeight]
 - [VbaiBodyWeight]
 - [VbaiCondition]
+- [VbaiConsent]
 - [VbaiEncounter]
 - [VbaiImagingMedia]
 - [VbaiImagingStudy]
