@@ -2,7 +2,7 @@ Profile:        VbaiConsent
 Parent:         Consent
 Id:             vbai-consent
 Title:          "VBAI Consent"
-Description:    "An observation profile based on the base Consent resource"
+Description:    "A consent profile based on the base Consent resource"
 * patient only Reference(VbaiPatient)
 * status = $ConsentStateCodes#active "Active"
 * category = $ConsentCategoryCodes#research "Research Information Access"
