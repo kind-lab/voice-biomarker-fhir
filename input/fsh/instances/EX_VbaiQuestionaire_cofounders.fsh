@@ -1,8 +1,8 @@
-Instance: baiQuestionnaireCofoundersExample
+Instance: VbaiQuestionnaireCofoundersExample
 InstanceOf: Questionnaire
 Usage: #example
 Title: "vbaiQuestionnaireCofoundersExample"
-Description: "vbaiQuestionnaire cofounders Example"
+Description: "VbaiQuestionnaire cofounders Example"
 * title = "Cofounder Surveys"
 * date = 2023-04-14
 * subjectType = #Patient
