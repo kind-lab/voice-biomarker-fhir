@@ -19,19 +19,19 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "At what age did you start smoking?" 
 * item[=].item[=].enableWhen.question = "smoking"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If I used to smoke OR I currently smoke"
 * item[=].item[+].linkId = "smoking_q3"
 * item[=].item[=].type = #integer
 * item[=].item[=].text = "What age did you stop?" 
 * item[=].item[=].enableWhen.question = "smoking"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If I used to smoke"
 * item[=].item[+].linkId = "smoking_q4"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "Checklist of different types (choose all that apply):" 
 * item[=].item[=].enableWhen.question = "smoking"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If I used to smoke OR I currently smoke"
 * item[=].item[=].answerOption[0].valueString = "Tobacco cigarettes"
 * item[=].item[=].answerOption[+].valueString = "Cannabis joints, bong, pipe"
@@ -46,7 +46,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "How often do/did you smoke?" 
 * item[=].item[=].enableWhen.question = "smoking"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If I used to smoke OR I currently smoke"
 * item[=].item[=].answerOption[0].valueString = "Multiple times a day"
 * item[=].item[=].answerOption[+].valueString = "About once a day"
@@ -74,7 +74,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].text = "How often do you have at least one drink containing alcohol? Drinks can be beer, wine, shots of liquor, cocktails containing a shot of liquor" 
 
 * item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Yes"
 * item[=].item[=].answerOption[0].valueString = "Never"
 * item[=].item[=].answerOption[+].valueString = "Monthly or less"
@@ -87,7 +87,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].text = "How many drinks containing alcohol do you have on a typical day when you are drinking? One drink is 12 oz. beer, 5 oz. wine, 1.5 oz. (one shot) liquor" 
 
 * item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Yes"
 
 
@@ -96,7 +96,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].text = "How often do you have at least one drink containing alcohol? Drinks can be beer, wine, shots of liquor, cocktails containing a shot of liquor" 
 
 * item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Yes"
 * item[=].item[=].answerOption[0].valueString = "3 or 4 "
 * item[=].item[=].answerOption[+].valueString = "5 or 6"
@@ -110,7 +110,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].text = "Have you drunk alcohol today?" 
 
 * item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Yes"
 * item[=].item[=].answerOption[0].valueString = "Yes"
 * item[=].item[=].answerOption[+].valueString = "No"
@@ -119,7 +119,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].item[=].type = #integer
 * item[=].item[=].item[=].text = "How many drinks did you have?" 
 * item[=].item[=].item[=].enableWhen.question = "alcohol_q5"
-* item[=].item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerString = "If Yes"
 
 
@@ -130,7 +130,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].text = "Have you ever required rehab/counseling for heavy alcohol use?" 
 
 * item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Yes"
 * item[=].item[=].answerOption[0].valueString = "Yes"
 * item[=].item[=].answerOption[+].valueString = "No"
@@ -140,7 +140,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].text = "Are you currently in recovery for alcohol use?" 
 
 * item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Yes"
 * item[=].item[=].answerOption[0].valueString = "Yes"
 * item[=].item[=].answerOption[+].valueString = "No"
@@ -181,7 +181,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "Please specify ___. Do you currently have any tooth loss, dentures, retainers or braces? " 
 * item[=].item[=].enableWhen.question = "oral_dental"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Yes"
 
 // allergies_cold
@@ -200,7 +200,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].text = "What is your height? (ft/m)" 
 
 // weight
-* item[+].linkId = "height"
+* item[+].linkId = "weight"
 * item[=].type = #integer
 * item[=].text = "What is your weight? (lbs/kg)" 
 
@@ -239,7 +239,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "Please specify ___. " 
 * item[=].item[=].enableWhen.question = "medication"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Other"
 
 
@@ -257,7 +257,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "Please specify ___. " 
 * item[=].item[=].enableWhen.question = "menstration_menopause"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Other"
 
 // vocal_activity
@@ -277,7 +277,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "How many hours per day do you do this activity with a loud voice or in a loud environment that requires elevating your voice (for instance, a noisy bar or a noisy classroom)?" 
 * item[=].item[=].enableWhen.question = "menstration_menopause"
-* item[=].item[=].enableWhen.operator = #exists
+* item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If != None"
 
 // exercise
