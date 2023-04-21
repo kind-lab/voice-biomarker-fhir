@@ -146,6 +146,21 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].answerOption[+].valueString = "No"
 
 // Substance_use
+* item[+].linkId = "substance_use"
+* item[=].type = #group
+* item[=].text = "How many times in the past year have you used a recreational substance or used a prescription medication for nonmedical reasons? (Recreational substances include methamphetamines (speed, crystal), cannabis (marijuana, pot), inhalants (paint thinner, aerosol, glue), tranquilizers (Valium), barbiturates, cocaine, ecstasy, hallucinogens (LSD, mushrooms), or narcotics (heroin). )" 
+* item[=].answerOption[0].valueString = "None"
+* item[=].answerOption[+].valueString = "1 or more"
+
+* item[=].item[0].linkId = "substance_use_q2"
+* item[=].item[=].type = #string
+* item[=].item[=].text = "Are you currently in recovery for substance use? " 
+* item[=].item[=].answerOption[0].valueString = "Yes"
+* item[=].item[=].answerOption[+].valueString = "No"
+
+* item[=].item[+].linkId = "substance_use_q3"
+* item[=].item[=].type = #string
+* item[=].item[=].text = "During the past TWO (2) WEEKS, about how often did you use any of the following medicines ON YOUR OWN, that is, without a doctor’s prescription, in greater amounts or longer than prescribed? " 
 
 
 //caffeine
