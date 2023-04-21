@@ -207,6 +207,126 @@ Description: "VbaiQuestionnaire cofounders Example"
 
 
 // ent_history
+* item[+].linkId = "ent_history"
+* item[=].type = #string
+* item[=].text = "Do you have any of these voice, communication, or hearing conditions or had any of the interventions mentioned below? (check all that apply) " 
+
+    //Ear, Nose, Throat Medical History: 
+* item[=].answerOption[0].valueString = "Chronic ear infection"
+* item[=].answerOption[+].valueString = "Chronic rhinosinusitis"
+* item[=].answerOption[+].valueString = "Cochlear implant"
+* item[=].answerOption[+].valueString = "Cancer: throat"
+* item[=].answerOption[+].valueString = "Dysphagia (difficulty swallowing)"
+* item[=].answerOption[+].valueString = "Frequent sinusitis"
+* item[=].answerOption[+].valueString = "Hearing loss"
+* item[=].answerOption[+].valueString = "Migraine"
+* item[=].answerOption[+].valueString = "Pre-cancerous lesion (e.g., laryngeal leukoplakia or keratosis)"
+* item[=].answerOption[+].valueString = "Radiation around head, neck, or ears"
+* item[=].answerOption[+].valueString = "Reflux (heartburn)"
+* item[=].answerOption[+].valueString = "Reinke's edema, polypoid corditis, or smoker's larynx"
+* item[=].answerOption[+].valueString = "Seasonal allergies"
+* item[=].answerOption[+].valueString = "Sjogren's syndrome"
+* item[=].answerOption[+].valueString = "Swallowing disorders (dysphagia)"
+* item[=].answerOption[+].valueString = "Thyroid disease"
+* item[=].answerOption[+].valueString = "Velopharyngeal insufficiency"
+* item[=].answerOption[+].valueString = "Vocal fold polyp, nodule, or cyst"
+* item[=].answerOption[+].valueString = "Vocal hemorrhage or bleed"
+* item[=].answerOption[+].valueString = "Voice/throat disorder"
+
+
+    //ENT Surgical History: 
+* item[=].answerOption[+].valueString = "Chronic ear surgery (e.g. mastoid) "
+* item[=].answerOption[+].valueString = "Ear tubes"
+* item[=].answerOption[+].valueString = "Chronic ear surgery (e.g. mastoid) "
+* item[=].answerOption[+].valueString = "Sinus Surgery"
+* item[=].answerOption[+].valueString = "Septoplasty/Rhinoplasty"
+* item[=].answerOption[+].valueString = "Sleep surgery"
+* item[=].answerOption[+].valueString = "Throat surgery"
+* item[=].answerOption[+].valueString = "Thyroid surgery"
+* item[=].answerOption[+].valueString = "Tonsillectomy/Adenoidectomy"
+
+    // ENT Symptoms:
+* item[=].answerOption[+].valueString = "Dental problem"
+* item[=].answerOption[+].valueString = "Ear discharge"
+* item[=].answerOption[+].valueString = "Ear pain"
+* item[=].answerOption[+].valueString = "Hearing loss"
+* item[=].answerOption[+].valueString = "Nasal Congestion/runny nose"
+* item[=].answerOption[+].valueString = "Nosebleeds"
+* item[=].answerOption[+].valueString = "Pain wile talking or singing"
+* item[=].answerOption[+].valueString = "Post-nasal drip"
+* item[=].answerOption[+].valueString = "Sinus pressure"
+* item[=].answerOption[+].valueString = "Sore Throat"
+* item[=].answerOption[+].valueString = "Tinnitus"
+* item[=].answerOption[+].valueString = "Tremors: vocal tremors"
+* item[=].answerOption[+].valueString = "Trouble swallowing"
+* item[=].answerOption[+].valueString = "Voice change"
+
+    //Lung/Respiratory: 
+* item[=].answerOption[+].valueString = "Asthma"
+* item[=].answerOption[+].valueString = "Chronic Obstructive Pulmonary Disease (COPD)"
+* item[=].answerOption[+].valueString = "Chronic cough"
+* item[=].answerOption[+].valueString = "Noisy breathing"
+* item[=].answerOption[+].valueString = "Shortness of breath"
+
+    //Other Symptoms
+* item[=].answerOption[+].valueString = "Craniofacial abnormalities"
+* item[=].answerOption[+].valueString = "Cushingoid appearance"
+* item[=].answerOption[+].valueString = "Chest wall deformities (scars, deformities)"
+
+    // Speech and communication: 
+* item[=].answerOption[+].valueString = "Apraxia"
+* item[=].answerOption[+].valueString = "Craniofacial abnormalities"
+* item[=].answerOption[+].valueString = "Dysarthria"
+* item[=].answerOption[+].valueString = "Hoarseness "
+* item[=].answerOption[+].valueString = "Lisping "
+* item[=].answerOption[+].valueString = "Spasmodic Dysphonia"
+* item[=].answerOption[+].valueString = "Stuttering"
+* item[=].answerOption[+].valueString = "Vocal Fold Paralysis"
+* item[=].answerOption[+].valueString = "Aphasia"
+
+    // Learning Disabilities"
+
+* item[=].answerOption[+].valueString = "Dyslexia"
+* item[=].answerOption[+].valueString = "ADHD"
+* item[=].answerOption[+].valueString = "Dyscalculia"
+* item[=].answerOption[+].valueString = "Dysgraphia"
+* item[=].answerOption[+].valueString = "Dyspraxia"
+
+* item[=].answerOption[+].valueString = "Prefer not to disclose "
+* item[=].answerOption[+].valueString = "None"
+* item[=].answerOption[+].valueString = "Other"
+
+* item[=].item[0].linkId = "emt_history_q2"
+* item[=].item[=].type = #string
+* item[=].item[=].text = "Do you currently have these conditions or currently experience symptoms as a result of having had these conditions or interventions? "
+* item[=].item[=].enableWhen.question = "emt_history"
+* item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].enableWhen.answerString = "If != None"
+* item[=].item[=].answerOption[+].valueString = "Yes"
+* item[=].item[=].answerOption[+].valueString = "No"
+* item[=].item[=].answerOption[+].valueString = "Only Some"
+
+* item[=].item[=].item[0].linkId = "emt_history_q3"
+* item[=].item[=].item[=].type = #string
+* item[=].item[=].item[=].text = "Which ones do you currently have?"
+* item[=].item[=].item[=].enableWhen.question = "emt_history_q2"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerString = "only some"
+
+* item[=].item[+].linkId = "emt_history_q4"
+* item[=].item[=].type = #string
+* item[=].item[=].text = "Do you currently receive treatment for these conditions?"
+* item[=].item[=].answerOption[+].valueString = "Yes"
+* item[=].item[=].answerOption[+].valueString = "No"
+* item[=].item[=].answerOption[+].valueString = "Only Some"
+
+
+* item[=].item[=].item[0].linkId = "emt_history_q5"
+* item[=].item[=].item[=].type = #string
+* item[=].item[=].item[=].text = "Which ones do you currently receive treatment for?"
+* item[=].item[=].item[=].enableWhen.question = "emt_history_q4"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerString = "only some"
 
 
 // neurological_history
