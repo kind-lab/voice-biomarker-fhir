@@ -330,9 +330,41 @@ Description: "VbaiQuestionnaire cofounders Example"
 
 
 // neurological_history
-
-
-
+* item[+].linkId = "neurological_history"
+* item[=].type = #string
+* item[=].text = "Have you been diagnosed with any of these neurological health conditions by a clinician? (check all that apply) " 
+    //Neurological symptoms: 
+* item[=].answerOption[0].valueString = "Dizziness"
+* item[=].answerOption[+].valueString = "Frequent or severe headache"
+* item[=].answerOption[+].valueString = "Speech difficulty"
+    // Neurological history: 
+* item[=].answerOption[+].valueString = "Alzheimer's Disease"
+* item[=].answerOption[+].valueString = "Brain tumor"
+* item[=].answerOption[+].valueString = "Dementia"
+* item[=].answerOption[+].valueString = "Epilepsy"
+* item[=].answerOption[+].valueString = "Migraine"
+* item[=].answerOption[+].valueString = "Multiple sclerosis"
+* item[=].answerOption[+].valueString = "Parkinson's Disease"
+* item[=].answerOption[+].valueString = "Stroke"
+* item[=].answerOption[+].valueString = "Traumatic brain injury"
+* item[=].answerOption[+].valueString = "Prefer not to disclose"
+* item[=].answerOption[+].valueString = "Other"
+* item[=].answerOption[+].valueString = "None"
+* item[=].item[0].linkId = "neurological_history_q2"
+* item[=].item[=].type = #string
+* item[=].item[=].text = "Do you currently have these conditions or currently experience symptoms as a result of having had these conditions? "
+* item[=].item[=].enableWhen.question = "neurological_history"
+* item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].enableWhen.answerString = "!=None"
+* item[=].item[=].answerOption[0].valueString = "Yes"
+* item[=].item[=].answerOption[+].valueString = "No"
+* item[=].item[=].answerOption[+].valueString = "Only Some"
+* item[=].item[=].item[0].linkId = "neurological_history_q3"
+* item[=].item[=].item[=].type = #string
+* item[=].item[=].item[=].text = "Which ones do you currently have? "
+* item[=].item[=].item[=].enableWhen.question = "neurological_history_q2"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerString = "only some"
 // psychiatric_history
 
 
