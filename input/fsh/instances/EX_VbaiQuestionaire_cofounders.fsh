@@ -366,6 +366,63 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerString = "only some"
 // psychiatric_history
+* item[+].linkId = "psychiatric_history"
+* item[=].type = #string
+* item[=].text = "Psychiatric conditions: Have you been diagnosed with any of these mental health conditions by a clinician? (check all that apply) " 
+    //Psychiatric Symptoms: 
+* item[=].answerOption[0].valueString = "Confusion"
+* item[=].answerOption[+].valueString = "Nervous/Anxious"
+* item[=].answerOption[+].valueString = "Sleep disturbance"
+    //Psychiatric Diagnoses:
+* item[=].answerOption[+].valueString = "Agoraphobia"
+* item[=].answerOption[+].valueString = "Attention-Deficit / Hyperactivity Disorder (ADHD)"
+* item[=].answerOption[+].valueString = "Autism Spectrum Disorder (ASD)"
+* item[=].answerOption[+].valueString = "Bipolar Disorder"
+* item[=].answerOption[+].valueString = "Borderline Personality Disorder (BPD)"
+* item[=].answerOption[+].valueString = "Eating Disorder (ED)"
+* item[=].answerOption[+].valueString = "Generalized Anxiety Disorder (GAD)"
+* item[=].answerOption[+].valueString = "Insomnia / sleep disorder"
+
+
+* item[=].answerOption[+].valueString = "Major Depressive Disorder"
+* item[=].answerOption[+].valueString = "Obsessive-Compulsive Disorder (OCD)"
+* item[=].answerOption[+].valueString = "Panic Disorder"
+* item[=].answerOption[+].valueString = "Post-Traumatic Stress Disorder (PTSD)"
+* item[=].answerOption[+].valueString = "Schizophrenia"
+* item[=].answerOption[+].valueString = "Social Anxiety Disorder"
+* item[=].answerOption[+].valueString = "Substance Use Disorder"
+* item[=].answerOption[+].valueString = "Prefer not to disclose"
+* item[=].answerOption[+].valueString = "Other, Please specify"
+* item[=].answerOption[+].valueString = "None"
+
+* item[=].item[0].linkId = "psychiatric_history_q2"
+* item[=].item[=].enableWhen.question = "psychiatric_history"
+* item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].type = #string
+* item[=].item[=].enableWhen.answerString = "!=None"
+* item[=].item[=].text  = "Do you currently have these conditions? "
+* item[=].item[=].answerOption[0].valueString = "Yes"
+* item[=].item[=].answerOption[+].valueString = "No"
+* item[=].item[=].answerOption[+].valueString = "Only Some"
+
+
+* item[=].item[=].item[0].linkId = "psychiatric_history_q3"
+* item[=].item[=].item[=].enableWhen.question = "psychiatric_history_q2"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].type = #string
+* item[=].item[=].item[=].enableWhen.answerString = "Only Some"
+* item[=].item[=].item[=].text  = "Which ones do you currently have?"
+
+
+* item[=].item[=].item[+].linkId = "psychiatric_history_q4"
+* item[=].item[=].item[=].enableWhen.question = "psychiatric_history_q2"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].type = #string
+* item[=].item[=].item[=].enableWhen.answerString = "Only Some"
+* item[=].item[=].item[=].text  = "Do you currently receive treatment for these conditions? "
+* item[=].item[=].item[=].answerOption[0].valueString = "Yes"
+* item[=].item[=].item[=].answerOption[+].valueString = "No"
+
 
 
 //physical_health_whodas_2
