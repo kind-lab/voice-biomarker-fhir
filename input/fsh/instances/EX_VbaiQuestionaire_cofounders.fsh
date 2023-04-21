@@ -419,13 +419,141 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].type = #string
 * item[=].item[=].item[=].enableWhen.answerString = "Only Some"
-* item[=].item[=].item[=].text  = "Do you currently receive treatment for these conditions? "
+* item[=].item[=].item[=].text  = "Do you currently receive treatment for these conditions?"
 * item[=].item[=].item[=].answerOption[0].valueString = "Yes"
 * item[=].item[=].item[=].answerOption[+].valueString = "No"
 
 
 
 //physical_health_whodas_2
+* item[+].linkId = "physical_health_whodas_2"
+* item[=].type = #group
+* item[=].text = "In the past 30 days, how much difficulty did you have in:" 
+* item[=].item[0].linkId = "S1" 
+* item[=].item[=].text = "Standing for long periods such as 30 minutes?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+* item[=].item[+].linkId = "S2" 
+* item[=].item[=].text = "Taking care of your household responsibilities?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+* item[=].item[+].linkId = "S3" 
+* item[=].item[=].text = "Learning a new task, for example, learning how to get to a new place?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+* item[=].item[+].linkId = "S4" 
+* item[=].item[=].text = "How much of a problem did you have joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+
+
+* item[=].item[+].linkId = "S5" 
+* item[=].item[=].text = "How much have you been emotionally affected by your health problems?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+* item[=].item[+].linkId = "S6" 
+* item[=].item[=].text = "Concentrating on doing something for ten minutes?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+* item[=].item[+].linkId = "S7" 
+* item[=].item[=].text = "Walking a long distance such as a kilometre [or equivalent]?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+
+* item[=].item[+].linkId = "S8" 
+* item[=].item[=].text = "Washing your whole body?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+* item[=].item[+].linkId = "S9" 
+* item[=].item[=].text = "Getting dressed?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+* item[=].item[+].linkId = "S10" 
+* item[=].item[=].text = "Dealing with people you do not know?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+* item[=].item[+].linkId = "S11" 
+* item[=].item[=].text = "Maintaining a friendship?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+* item[=].item[+].linkId = "S12" 
+* item[=].item[=].text = "Your day-to-day work?" 
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "None"
+* item[=].item[=].answerOption[+].valueString = "Mild"
+* item[=].item[=].answerOption[+].valueString = "Moderate"
+* item[=].item[=].answerOption[+].valueString = "Severe"
+* item[=].item[=].answerOption[+].valueString = "Extreme or cannot do"
+
+
+* item[=].item[+].linkId = "H1" 
+* item[=].item[=].text = "Overall, in the past 30 days, how many days were these difficulties present?" 
+* item[=].item[=].type = #integer
+
+
+* item[=].item[+].linkId = "H2" 
+* item[=].item[=].text = "In the past 30 days, for how many days were you totally unable to carry out your" 
+* item[=].item[=].type = #integer
+
+
+* item[=].item[+].linkId = "H3" 
+* item[=].item[=].text = "In the past 30 days, not counting the days that you were totally unable, for how many days did you cut back or reduce your usual activities or work because of any health condition?" 
+* item[=].item[=].type = #integer
 
 
 // medication
@@ -476,7 +604,7 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].answerOption[0].valueString = "Bartender"
 * item[=].answerOption[+].valueString = "Waiter, receptionist"
 * item[=].answerOption[+].valueString = "Speaking  (secretary, call center, attorney, salesperson)"
-* item[=].answerOption[0].valueString = "K-12 Teacher "
+* item[=].answerOption[+].valueString = "K-12 Teacher "
 * item[=].answerOption[+].valueString = "Singer"
 * item[=].answerOption[+].valueString = "Chearleading"
 * item[=].answerOption[+].valueString = "None"
