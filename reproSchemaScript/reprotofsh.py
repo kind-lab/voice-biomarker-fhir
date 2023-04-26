@@ -18,15 +18,20 @@ def addOptions(f, question_json, questionnaire ):
     else: # case where there are not options ie free text
         return f
 
-
+  
     for j in options_json["choices"]:
-        choice =  j["name"]
-        if "en" in choice and type(choice) is dict:
+        # edge case where json is missing name tag
+        if "name" in j and j["name"] != "":
+            choice =  j["name"]
+        else:
+            choice = j["value"]
+
+        if type(choice) is not int and "en" in choice and type(choice) is dict:
             choice = choice["en"]
         if j == options_json["choices"][0]:
-            f += ("\n* item[=].item[=].answerOption[0].valueString = " + "'" +  choice+ "'")
+            f += ("\n* item[=].item[=].answerOption[0].valueString = " + "'" +  str(choice)+ "'")
         else:
-            f += ("\n* item[=].item[=].answerOption[+].valueString = " + "'" +  choice+ "'")
+            f += ("\n* item[=].item[=].answerOption[+].valueString = " + "'" +  str(choice)+ "'")
     
     return f
 
@@ -39,11 +44,20 @@ def convert_to_fsh(questionnaire, output_file):
     f = ""
     # initial instnace code
 
+ 
     f += ("Instance: "+ j["@id"].replace('_', ''))
     f += ("\nInstanceOf: Questionnaire")
     f += ("\nUsage: #example")
     f += ("\nTitle: " + "'"+ j["@id"]+ "'" )
-    f += ("\nDescription: " + "'"+ j["description"]+ "'")
+
+    # default description
+    description = questionnaire
+
+    #check to see if schema has a predefined description
+    if "description" in j.keys():
+        description = j["description"]
+
+    f += ("\nDescription: " + "'"+ description + "'")
     f += ("\n* item[0].linkId = " + "'"+ "T1"+ "'")
 
     if "preamble" in j.keys():
@@ -72,6 +86,7 @@ def convert_to_fsh(questionnaire, output_file):
         else:
             f += ("\n* item[=].item[+].linkId = " + "'"+ question_json["@id"]+ "'")
     
+        
         # adding questions type
         if question_json["ui"]["inputType"] == "radio":
             f += ("\n* item[=].item[=].type = #choice")
