@@ -8,7 +8,7 @@ https://github.com/ReproNim/reproschema-library/tree/43e7afab312596708c0ad4dfd45
 '''
 import json
 import sys
-
+import os
 
 def add_options(file_contents, question_json, questionnaire):
     '''
@@ -98,22 +98,24 @@ def convert_to_fsh(questionnaire, output_file):
             file_contents += ("\n* item[=].item[0].linkId = " + "'" + question_json["@id"] + "'")
         else:
             file_contents += ("\n* item[=].item[+].linkId = " + "'" + question_json["@id"] + "'")
-
+        # default assigned type
+        item_type = "#string"
         # adding questions type
-        if question_json["ui"]["inputType"] == "radio":
-            file_contents += ("\n* item[=].item[=].type = #choice")
-        elif question_json["ui"]["inputType"] in ("number", "xsd:int"):
-            file_contents += ("\n* item[=].item[=].type = #integer")
-        else:
-            file_contents += ("\n* item[=].item[=].type = #string")
+        if "inputType" in question_json["ui"]:
+            if question_json["ui"]["inputType"] == "radio":
+                item_type = "#choice"
+            elif question_json["ui"]["inputType"] in ("number", "xsd:int"):
+                item_type = "#integer"
+
+        file_contents += ("\n* item[=].item[=].type = " + item_type)
 
         # adding questions text
         if "question" in question_json and isinstance(question_json["question"], dict):
             file_contents += ("\n* item[=].item[=].text = " \
-                + "'"+question_json["question"]["en"] + "'")
+                + "'" + str(question_json["question"]["en"]) + "'")
         else:
             file_contents += ("\n* item[=].item[=].text = " \
-                + "'"+ question_json["prefLabel"] + "'")
+                + "'" + str(question_json["prefLabel"]) + "'")
 
         # add options
         if "responseOptions" in question_json:
