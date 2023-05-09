@@ -157,6 +157,7 @@ if __name__ == '__main__':
                 except Exception as e:
                     file_error += "\n" + str(folder)
                     logging.error(e)
+                    file_error += "\n" + str(e) + "\n"
         error.write(file_error)
         error.close()
     else:
