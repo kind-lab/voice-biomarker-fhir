@@ -1,7 +1,7 @@
 '''
 script to convert repro scheme to fsh for fhir questionnaire
 Not perfect conversion
-#example: python reprotofsh.py <reproschema_folder> <output_file>
+#example: python reprotofsh.py <mode: 'single' or 'group'> <reproschema_folder> <output_file>
 must be in the file structure specified in:
 https://github.com/ReproNim/reproschema-library/tree/43e7afab312596708c0ad4dfd45b69c8904088ae/activities
 
@@ -9,6 +9,7 @@ https://github.com/ReproNim/reproschema-library/tree/43e7afab312596708c0ad4dfd45
 import json
 import sys
 import os
+import logging
 
 def add_options(file_contents, question_json, questionnaire):
     '''
@@ -34,10 +35,10 @@ def add_options(file_contents, question_json, questionnaire):
             choice = j["name"]
         else:
             choice = j["value"]
-
-        if not isinstance(choice, int) and "en" in choice and isinstance(choice, dict):
+     
+        if choice and not isinstance(choice, int) and "en" in choice and isinstance(choice, dict):
             choice = choice["en"]
-        if j == options_json["choices"][0]:
+        if choice and j == options_json["choices"][0]:
             file_contents += ("\n* item[=].item[=].answerOption[0].valueString = " \
                 + "'" + str(choice)+ "'")
         else:
@@ -131,4 +132,32 @@ def convert_to_fsh(questionnaire, output_file):
 
 
 if __name__ == '__main__':
-    convert_to_fsh(sys.argv[1], sys.argv[2])
+    if len(sys.argv) == 1:
+        sys.exit("Please select either single or group mode")
+    elif sys.argv[1] == "single" and len(sys.argv) == 4:
+        convert_to_fsh(sys.argv[2], sys.argv[3])
+    elif sys.argv[1] == "group":
+        error = open("error_file.txt", "w+")
+        folder_names = []
+        for entry_name in os.listdir("."):
+            entry_path = os.path.join(".", entry_name)
+            if os.path.isdir(entry_path):
+                folder_names.append(entry_name)
+
+        file_error = ""
+        # loop through all questionnaire folders
+        for folder in folder_names:
+            file_name = str(folder)+"_fsh.fsh"
+            if folder == ".vscode":
+                pass
+            else:
+                # logs all folders which caused errors
+                try:
+                    convert_to_fsh(folder ,file_name)
+                except Exception as e:
+                    file_error += "\n" + str(folder)
+                    logging.error(e)
+        error.write(file_error)
+        error.close()
+    else:
+        logging.error("Invalid Input, please refer to example command for reference")
