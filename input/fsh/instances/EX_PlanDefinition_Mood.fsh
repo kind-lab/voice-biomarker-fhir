@@ -10,7 +10,7 @@ Description: "An example of the Mood Cohort's PlanDefinition"
 
 * action[0].title = "Consent"
 * action[=].prefix = "1.1"
-* action[=].description = "Ask particpant for consent"
+* action[=].description = "Ask participant for consent"
 * action[=].participant.type = #patient
 * action[=].priority = #routine
 
@@ -20,9 +20,9 @@ Description: "An example of the Mood Cohort's PlanDefinition"
 * action[=].action[=].priority = #routine
 
 
-* action[=].action[+].title = "enrolled participant"
+* action[=].action[+].title = "Enroll participant"
 * action[=].action[=].prefix = "1.1.2"
-* action[=].action[=].description = "enrolled participant"
+* action[=].action[=].description = "Enroll participant"
 * action[=].action[=].priority = #routine
 
 * action[=].action[+].title = "Retrieve Consent"
@@ -33,7 +33,7 @@ Description: "An example of the Mood Cohort's PlanDefinition"
 
 * action[+].title = "Demographics"
 * action[=].prefix = "1.2"
-* action[=].description = "Gather Demogrpahics that need to be collected"
+* action[=].description = "Gather Demographics that need to be collected"
 * action[=].priority = #routine
 
 
@@ -55,7 +55,7 @@ Description: "An example of the Mood Cohort's PlanDefinition"
 
 * action[=].action[+].title = "Prolonged vowel: ​Count to 3 and say “e” for 5 seconds "
 * action[=].action[=].prefix = "1.3 Task 1"
-* action[=].action[=].description = "his tasks helps us analyze features in your voice"
+* action[=].action[=].description = "This task helps us analyze features in your voice"
 * action[=].action[=].priority = #routine
 
 
@@ -70,7 +70,7 @@ Description: "An example of the Mood Cohort's PlanDefinition"
 
 * action[=].action[+].title = "Glides: “Using the sound “e”, glide from your lowest pitch possible to the highest pitch possible. Rest, take a breath and then glide from your highest pitch possible to the lowest pitch possible”"
 * action[=].action[=].prefix = "1.3 Task 3"
-* action[=].action[=].description = "this task helps us understand how your vocal folds stretch"
+* action[=].action[=].description = "This task helps us understand how your vocal folds stretch"
 * action[=].action[=].priority = #routine
 
 
@@ -80,13 +80,13 @@ Description: "An example of the Mood Cohort's PlanDefinition"
 * action[=].action[=].priority = #routine
 
 
-* action[=].action[+].title = "    Task 5: Cape-V Sentences: “Read these sentences using your normal voice” 
-     The blue spot is on the key again,
-     How hard did he hit him?,
-     We were away a year ago,
-     We eat eggs every easter,
-     My momma makes lemon muffins,
-     Peter will keep at the peak "
+* action[=].action[+].title = "Task 5: Cape-V Sentences: “Read these sentences using your normal voice” 
+      The blue spot is on the key again,
+      How hard did he hit him?,
+      We were away a year ago,
+      We eat eggs every easter,
+      My momma makes lemon muffins,
+      Peter will keep at the peak "
 * action[=].action[=].prefix = "1.3 Task 5"
 * action[=].action[=].description = "This is a standardized passage that contains all the important sounds of the English language"
 * action[=].action[=].priority = #routine
@@ -106,12 +106,12 @@ Description: "An example of the Mood Cohort's PlanDefinition"
     Now repeat the word /buttercup/ as fast as possible 10 times "
 
 * action[=].action[=].prefix = "1.3 Task 7"
-* action[=].action[=].description = "This task tests the way you can articulate the sounds and can gives  neurological queues"
+* action[=].action[=].description = "This task tests the way you can articulate the sounds and can gives neurological queues"
 * action[=].action[=].priority = #routine
 
 
 * action[=].action[+].title = "Task 8: Free speech: Open ended question (generic) chose 1-2 
- “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)[Text Wrapping Break]- Options:  
+ “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)- Options:  
 
     Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?,
 
@@ -127,10 +127,9 @@ Description: "An example of the Mood Cohort's PlanDefinition"
 
 
 * action[=].action[+].title = "Task 9: Respiration and cough:  
-'Respiratory sounds can also provide information on your[Text Wrapping Break]health, let’s record them” - 
+'Respiratory sounds can also provide information on your health, let’s record them” - 
 
 First, let's hear you breath comfortably for 30 seconds,
-After pressing on record, take 5 big breaths in and out through your nose with your mouth closed, 
 After pressing on record, take 5 big breaths in and out through your nose with your mouth closed,
 After pressing record, cough 5 times,
 Now try again (need that task twice) "
@@ -197,9 +196,12 @@ Now try again (need that task twice) "
 * action[=].action[=].priority = #routine
 
 
-* action[=].action[+].title = "Task 2: Open response questions “ Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)"
+* action[=].action[+].title = "Task 2: Open response questions"
 * action[=].action[=].prefix = "2.1.2"
-* action[=].action[=].description = ""
+* action[=].action[=].description = " “ Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds):
+    
+Think of a single issue, feeling, emotion or symptom you have been experiencing lately. For example, sadness, fatigue, anxiety, loneliness, sleep issues, concentration issues, agitation, motivation, numbness, guilt, shame. If you are not experiencing anything negative, think of a positive one such as calmness or gratitude. Then describe how it shows up for you mentally and physically, what you see as its causes, and what situations trigger it.​​ 
+"
 * action[=].action[=].priority = #routine
 
 
@@ -216,7 +218,26 @@ Now try again (need that task twice) "
     Describe something good that happened in the last month (big or small)? Maybe you helped someone or there was some good news or there was a moment of joy and peace. Where were you, what happened, how did you feel? 
     How have you grown in the past? Have you learned important lessons about yourself? 
     Please think about your best possible social and professional self in the next month. Imagine that everything will go as well as it possibly can. Let your creativity flow and describe what exactly would improve, how your daily routine would be, and how you would feel.  
-    Describe something that makes you happy. Are you with someone or by yourself? How do you feel? Why does it make you happy? Can you do this often?"
+    Describe something that makes you happy. Are you with someone or by yourself? How do you feel? Why does it make you happy? Can you do this often?
+    
+    [If participants answer positively to any suicidal ideation items, such as the PHQ9, this prompt with resources will become available:]
+
+    If you're thinking about suicide or hurting yourself, are worried about a friend or loved one, or would like emotional support, the Lifeline network is available 24/7 and experience helping people in crisis. Your call or text is confidential and free. You can call the Suicide Prevention Lifeline in the United States right now: 
+
+    988 ,
+
+    English: 1-800-273-8255,
+
+    Español: 1-888-628-9454, 
+
+    Or text the Crisis TextLine now, also free and confidential: 
+
+    ​​SMS in the ​US or Canada: 741741 ,
+
+    Chat using WhatsApp or Browser: https://www.crisistextline.org/ ,
+
+    For other countries: www.befrienders.org 
+    "
 * action[=].action[=].priority = #routine
 
 * action[+].title = "Past medical history and confounders specific to Mood Disorder Cohort"
@@ -256,23 +277,23 @@ Now try again (need that task twice) "
 
 * action[=].action[+].title = "National Stressful Events Survey PTSD Short Scale (NSESSS)"
 * action[=].action[=].prefix = "2.3.5"
-* action[=].action[=].description = "Administer NSESSS Questionnaire"
+* action[=].action[=].description = "Depending on response to DSM-5, administer NSESSS Questionnaire"
 * action[=].action[=].priority = #routine
 
 * action[=].action[+].title = "Severity Measure for Social Anxiety Disorder (Social Phobia)—Adult - 10"
 * action[=].action[=].prefix = "2.3.6"
-* action[=].action[=].description = "Administer SMSAD Questionnaire"
+* action[=].action[=].description = "Depending on response to DSM-5, administer SMSAD Questionnaire"
 * action[=].action[=].priority = #routine
 
 
 * action[=].action[+].title = "Adult ADHD Self-Report Scale (ASRS-v1.1) Symptom Checklist Part A"
 * action[=].action[=].prefix = "2.3.7"
-* action[=].action[=].description = "Administer ASRS-v1.1 Questionnaire"
+* action[=].action[=].description = "Depending on response to DSM-5, administer ASRS-v1.1 Questionnaire"
 * action[=].action[=].priority = #routine
 
 
 
-* action[=].action[+].title = "Well-being: Secure Flourishing Index  "
+* action[=].action[+].title = "Well-being: Secure Flourishing Index"
 * action[=].action[=].prefix = "2.3.8"
 * action[=].action[=].description = "Administer SFI Questionnaire"
 * action[=].action[=].priority = #routine
