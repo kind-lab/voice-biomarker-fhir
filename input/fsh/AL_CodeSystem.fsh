@@ -28,3 +28,12 @@ Alias: $ConsentCategoryCodes = http://terminology.hl7.org/CodeSystem/consentcate
 Alias: $QuestionnaireGenderIdentityCodes = http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-gender-identity
 
 Alias: $QuestionnaireSexualOrientationCodes  = http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-sexual-orientation
+
+
+// race ethnicity and sex
+Alias: $UsCoreRaceExtension = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
+Alias: $UsCoreEthnicityExtension = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
+Alias: $UsCoreBirthSexExtension = http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
+
+Alias: $GAD7AndPHQOtionsCodeSystem =  https://voicecollab.ai/fhir/CodeSystem/survey-options
+Alias: $GAD7AndPHQOtionsValueSet =  https://voicecollab.ai/fhir/ValueSet/survey-options
