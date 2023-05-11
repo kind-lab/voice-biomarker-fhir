@@ -1,5 +1,5 @@
 Instance: VbaiQuestionnaireCofoundersExample
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "vbaiQuestionnaireCofoundersExample"
 Description: "VbaiQuestionnaire cofounders Example"

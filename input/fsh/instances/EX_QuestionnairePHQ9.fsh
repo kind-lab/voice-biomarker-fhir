@@ -1,5 +1,5 @@
 Instance: QuestionnairePHQ9Example
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "QuestionnairePHQ9Example"
 Description: "QuestionnairePHQ9Example"

@@ -1,5 +1,5 @@
 Instance: QuestionnaireGAD7Example
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "QuestionnaireGAD7Example"
 Description: "QuestionnaireGAD7Example"
