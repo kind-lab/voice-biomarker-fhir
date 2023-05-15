@@ -5,12 +5,12 @@ Title: "VbaiPlanDefinitionVoiceExample"
 Description: "An example of the Voice Cohort's PlanDefinition"
 * status = #active
 * date = "2023-04-28"
-* description = "This is a plandefinition for cohort protocol"
-* title = "Cohort Protcol"
+* description = "This is a plandefinition for Voice cohort protocol"
+* title = "Voice Cohort Protcol"
 
 * action[0].title = "Consent"
 * action[=].prefix = "1.1"
-* action[=].description = "Ask particpant for consent"
+* action[=].description = "Ask participant for consent"
 * action[=].participant.type = #patient
 * action[=].priority = #routine
 
@@ -20,9 +20,9 @@ Description: "An example of the Voice Cohort's PlanDefinition"
 * action[=].action[=].priority = #routine
 
 
-* action[=].action[+].title = "enrolled participant"
+* action[=].action[+].title = "Enroll participant"
 * action[=].action[=].prefix = "1.1.2"
-* action[=].action[=].description = "enrolled participant"
+* action[=].action[=].description = "Enroll participant"
 * action[=].action[=].priority = #routine
 
 * action[=].action[+].title = "Retrieve Consent"
@@ -33,9 +33,9 @@ Description: "An example of the Voice Cohort's PlanDefinition"
 
 * action[+].title = "Demographics"
 * action[=].prefix = "1.2"
-* action[=].description = "Gather Demogrpahics that need to be collected"
+* action[=].description = "Gather Demographics that need to be collected"
 * action[=].priority = #routine
-
+* action[=].definitionUri = $Demographic
 
 
 
@@ -55,7 +55,7 @@ Description: "An example of the Voice Cohort's PlanDefinition"
 
 * action[=].action[+].title = "Prolonged vowel: ​Count to 3 and say “e” for 5 seconds "
 * action[=].action[=].prefix = "1.3 Task 1"
-* action[=].action[=].description = "his tasks helps us analyze features in your voice"
+* action[=].action[=].description = "This task helps us analyze features in your voice"
 * action[=].action[=].priority = #routine
 
 
@@ -70,7 +70,7 @@ Description: "An example of the Voice Cohort's PlanDefinition"
 
 * action[=].action[+].title = "Glides: “Using the sound “e”, glide from your lowest pitch possible to the highest pitch possible. Rest, take a breath and then glide from your highest pitch possible to the lowest pitch possible”"
 * action[=].action[=].prefix = "1.3 Task 3"
-* action[=].action[=].description = "this task helps us understand how your vocal folds stretch"
+* action[=].action[=].description = "This task helps us understand how your vocal folds stretch"
 * action[=].action[=].priority = #routine
 
 
@@ -80,13 +80,13 @@ Description: "An example of the Voice Cohort's PlanDefinition"
 * action[=].action[=].priority = #routine
 
 
-* action[=].action[+].title = "    Task 5: Cape-V Sentences: “Read these sentences using your normal voice” 
-     The blue spot is on the key again,
-     How hard did he hit him?,
-     We were away a year ago,
-     We eat eggs every easter,
-     My momma makes lemon muffins,
-     Peter will keep at the peak "
+* action[=].action[+].title = "Task 5: Cape-V Sentences: “Read these sentences using your normal voice” 
+      The blue spot is on the key again,
+      How hard did he hit him?,
+      We were away a year ago,
+      We eat eggs every easter,
+      My momma makes lemon muffins,
+      Peter will keep at the peak "
 * action[=].action[=].prefix = "1.3 Task 5"
 * action[=].action[=].description = "This is a standardized passage that contains all the important sounds of the English language"
 * action[=].action[=].priority = #routine
@@ -106,12 +106,12 @@ Description: "An example of the Voice Cohort's PlanDefinition"
     Now repeat the word /buttercup/ as fast as possible 10 times "
 
 * action[=].action[=].prefix = "1.3 Task 7"
-* action[=].action[=].description = "This task tests the way you can articulate the sounds and can gives  neurological queues"
+* action[=].action[=].description = "This task tests the way you can articulate the sounds and can gives neurological queues"
 * action[=].action[=].priority = #routine
 
 
 * action[=].action[+].title = "Task 8: Free speech: Open ended question (generic) chose 1-2 
- “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)[Text Wrapping Break]- Options:  
+ “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)- Options:  
 
     Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?,
 
@@ -127,10 +127,9 @@ Description: "An example of the Voice Cohort's PlanDefinition"
 
 
 * action[=].action[+].title = "Task 9: Respiration and cough:  
-'Respiratory sounds can also provide information on your[Text Wrapping Break]health, let’s record them” - 
+'Respiratory sounds can also provide information on your health, let’s record them” - 
 
 First, let's hear you breath comfortably for 30 seconds,
-After pressing on record, take 5 big breaths in and out through your nose with your mouth closed, 
 After pressing on record, take 5 big breaths in and out through your nose with your mouth closed,
 After pressing record, cough 5 times,
 Now try again (need that task twice) "
