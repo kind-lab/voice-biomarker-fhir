@@ -13,65 +13,43 @@ Description: "QuestionnaireGAD7Example"
 * item[=].item[0].linkId = "Q1"
 * item[=].item[=].text = "Feeling nervous, anxious, or on edge"
 * item[=].item[=].type = #choice
-* item[=].item[=].answerOption[0].valueString = "Not at all (0)"
-* item[=].item[=].answerOption[+].valueString = "Several days (1)"
-* item[=].item[=].answerOption[+].valueString = "More than half the days (2)"
-* item[=].item[=].answerOption[+].valueString = "Nearly every day (3)"
+* item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
 
 * item[=].item[+].linkId = "Q2"
 * item[=].item[=].text = "Not being able to stop or control worrying"
 * item[=].item[=].type = #choice
-* item[=].item[=].answerOption[0].valueString = "Not at all (0)"
-* item[=].item[=].answerOption[+].valueString = "Several days (1)"
-* item[=].item[=].answerOption[+].valueString = "More than half the days (2)"
-* item[=].item[=].answerOption[+].valueString = "Nearly every day (3)"
+* item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
 
 
 
 * item[=].item[+].linkId = "Q3"
 * item[=].item[=].text = "Worrying too much about different things"
 * item[=].item[=].type = #choice
-* item[=].item[=].answerOption[0].valueString = "Not at all (0)"
-* item[=].item[=].answerOption[+].valueString = "Several days (1)"
-* item[=].item[=].answerOption[+].valueString = "More than half the days (2)"
-* item[=].item[=].answerOption[+].valueString = "Nearly every day (3)"
+* item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
 
 
 * item[=].item[+].linkId = "Q4"
 * item[=].item[=].text = "Trouble relaxing"
 * item[=].item[=].type = #choice
-* item[=].item[=].answerOption[0].valueString = "Not at all (0)"
-* item[=].item[=].answerOption[+].valueString = "Several days (1)"
-* item[=].item[=].answerOption[+].valueString = "More than half the days (2)"
-* item[=].item[=].answerOption[+].valueString = "Nearly every day (3)"
+* item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
 
 
 * item[=].item[+].linkId = "Q5"
 * item[=].item[=].text = "Being so restless that it is hard to sit still"
 * item[=].item[=].type = #choice
-* item[=].item[=].answerOption[0].valueString = "Not at all (0)"
-* item[=].item[=].answerOption[+].valueString = "Several days (1)"
-* item[=].item[=].answerOption[+].valueString = "More than half the days (2)"
-* item[=].item[=].answerOption[+].valueString = "Nearly every day (3)"
+* item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
 
 
 
 * item[=].item[+].linkId = "Q6"
 * item[=].item[=].text = "Becoming easily annoyed or irritable"
 * item[=].item[=].type = #choice
-* item[=].item[=].answerOption[0].valueString = "Not at all (0)"
-* item[=].item[=].answerOption[+].valueString = "Several days (1)"
-* item[=].item[=].answerOption[+].valueString = "More than half the days (2)"
-* item[=].item[=].answerOption[+].valueString = "Nearly every day (3)"
-
+* item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
 
 * item[=].item[+].linkId = "Q7"
 * item[=].item[=].text = "Feeling afraid, as if something awful might happen"
 * item[=].item[=].type = #choice
-* item[=].item[=].answerOption[0].valueString = "Not at all (0)"
-* item[=].item[=].answerOption[+].valueString = "Several days (1)"
-* item[=].item[=].answerOption[+].valueString = "More than half the days (2)"
-* item[=].item[=].answerOption[+].valueString = "Nearly every day (3)"
+* item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
 
 * item[+].linkId = "Total"
 * item[=].text = "Column Totals :"
