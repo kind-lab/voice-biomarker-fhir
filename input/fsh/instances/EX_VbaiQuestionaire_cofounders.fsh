@@ -311,24 +311,24 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].answerOption[+].valueString = "None"
 * item[=].answerOption[+].valueString = "Other"
 
-* item[=].item[0].linkId = "emt_history_q2"
+* item[=].item[0].linkId = "ent_history_q2"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "Do you currently have these conditions or currently experience symptoms as a result of having had these conditions or interventions? "
-* item[=].item[=].enableWhen.question = "emt_history"
+* item[=].item[=].enableWhen.question = "ent_history"
 * item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If != None"
 * item[=].item[=].answerOption[+].valueString = "Yes"
 * item[=].item[=].answerOption[+].valueString = "No"
 * item[=].item[=].answerOption[+].valueString = "Only Some"
 
-* item[=].item[=].item[0].linkId = "emt_history_q3"
+* item[=].item[=].item[0].linkId = "ent_history_q3"
 * item[=].item[=].item[=].type = #string
 * item[=].item[=].item[=].text = "Which ones do you currently have?"
-* item[=].item[=].item[=].enableWhen.question = "emt_history_q2"
+* item[=].item[=].item[=].enableWhen.question = "ent_history_q2"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerString = "only some"
 
-* item[=].item[+].linkId = "emt_history_q4"
+* item[=].item[+].linkId = "ent_history_q4"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "Do you currently receive treatment for these conditions?"
 * item[=].item[=].answerOption[+].valueString = "Yes"
@@ -336,10 +336,10 @@ Description: "VbaiQuestionnaire cofounders Example"
 * item[=].item[=].answerOption[+].valueString = "Only Some"
 
 
-* item[=].item[=].item[0].linkId = "emt_history_q5"
+* item[=].item[=].item[0].linkId = "ent_history_q5"
 * item[=].item[=].item[=].type = #string
 * item[=].item[=].item[=].text = "Which ones do you currently receive treatment for?"
-* item[=].item[=].item[=].enableWhen.question = "emt_history_q4"
+* item[=].item[=].item[=].enableWhen.question = "ent_history_q4"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerString = "only some"
 
