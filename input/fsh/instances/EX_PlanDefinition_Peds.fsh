@@ -160,6 +160,7 @@ Now try again (need that task twice) "
 * action[=].prefix = "1.4"
 * action[=].description = "Gather PMHx and Cofounders that need to be collected"
 * action[=].priority = #routine
+* action[=].definitionUri = $Cofounders
 
 * action[+].title = "Questionnaires"
 * action[=].prefix = "1.5"
