@@ -39,10 +39,11 @@ Description: "The codes required for questionnaires"
 * ^date = "2023-05-11"
 * ^caseSensitive = true
 * ^content = #complete
-* ^count = 15
+* ^count = 16
 * #NFE "No Formal Education" "User has no formal Education"
 * #PS "Pre-school" "User's highest level of education was the Pre-school level"
 * #K "Kindergarden" "User's highest level of education was the Kindergarden level"
+* #SE "Some elementary school education" "User's highest level of education was the Elementary level"
 * #G1 "Grade 1" "User's highest level of education was Grade 1"
 * #G2 "Grade 2" "User's highest level of education was Grade 2"
 * #G3 "Grade 3" "User's highest level of education was Grade 3"
@@ -235,13 +236,13 @@ Description: "The  Gender Identity Codes contains the codes to be used vbai Demo
 * ^caseSensitive = true
 * ^content = #complete
 * ^count = 7
-* #M "Man" "Gender identity is a Man."
-* #F "Woman" "Gender identity is a Woman."
+* #CM "Cis Man" "Gender identity is a cis Man."
+* #CF "Cis Woman" "Gender identity is a cis Woman."
 * #TM "Transgender male/Transman/Female-to-male" "Gender identity is Transgender male or Transman or Female-to-Male."
 * #TF "Transgender female/Transwoman/Male-tofemale" "Gender identity is Transgender female or Transwoman or Male-to-female."
 * #GQ "Genderqueer/Non-binary" "Gender identity is GenderQueer/Non-binary."
 * #DC "Decline to Answer" "Person has declined to answer about their gender identity."
-* #OT "Other" "Person's gender identity is Other."
+* #UN "Unknown" "Person's gender identity is unknown."
 
 CodeSystem: SurveyOptions
 Id: survey-options
