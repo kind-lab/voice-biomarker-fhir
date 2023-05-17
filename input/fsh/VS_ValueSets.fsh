@@ -51,6 +51,7 @@ Description: "For Capturing a users highest education level"
 * $ChildEdcationCodeSystem#NFE "No Formal Education"
 * $ChildEdcationCodeSystem#PS "Pre-School"
 * $ChildEdcationCodeSystem#K "Kindergarden"
+* $ChildEdcationCodeSystem#SE "Some elementary school education"
 * $ChildEdcationCodeSystem#G1 "transportationGrade 1"
 * $ChildEdcationCodeSystem#G2 "Grade 2"
 * $ChildEdcationCodeSystem#G3 "Grade 3"
@@ -72,6 +73,9 @@ Description: "For Capturing a users highest education level"
 * ^expansion.contains[+].system = $ChildEdcationCodeSystem
 * ^expansion.contains[=].code = #K
 * ^expansion.contains[=].display = "Kindergarden"
+* ^expansion.contains[+].system = $ChildEdcationCodeSystem
+* ^expansion.contains[=].code = #SE
+* ^expansion.contains[=].display = "Some elementary school education"
 * ^expansion.contains[+].system = $ChildEdcationCodeSystem
 * ^expansion.contains[=].code = #G1
 * ^expansion.contains[=].display = "Grade 1"

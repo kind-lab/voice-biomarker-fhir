@@ -3,6 +3,7 @@ Alias: $GAD7AndPHQOtionsValueSet =  https://voicecollab.ai/fhir/ValueSet/survey-
 // Demographic
 Alias: $YesNo = http://terminology.hl7.org/ValueSet/v2-0136
 Alias: $Race = http://hl7.org/fhir/us/core/ValueSet/detailed-race
+Alias: $Ethnicity = http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity
 Alias: $QuestionnaireGenderIdentityValueSet = https://voicecollab.ai/fhir/ValueSet/gender-identity
 
 Alias: $QuestionnaireSexualOrientationValueSet = http://hl7.org/fhir/us/core/ValueSet/us-core-sexual-orientation

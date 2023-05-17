@@ -68,24 +68,31 @@ Description: "VbaiQuestionnaireDemographic Example2"
 * item[=].type = #group
 * item[=].item[0].linkId = "gender_identity"
 * item[=].item[=].text = "What is your gender identity?"
-* item[=].item[=].type = #choice
+* item[=].item[=].type = #open-choice
 // * item[=].item[=].answerConstraint = #optionsOrString only supported in r5
 * item[=].item[=].answerValueSet = $QuestionnaireGenderIdentityValueSet
+* item[=].item[=].answerOption[0].valueString = "Not listed, Please Specify"
+* item[=].item[=].answerOption[+].valueString = "Intersex, Please Specify"
 
 * item[=].item[+].linkId = "sexual_orientation"
 * item[=].item[=].text = "What is your sexual orientation?"
-* item[=].item[=].type = #choice
+* item[=].item[=].type = #open-choice
 * item[=].item[=].answerValueSet = $QuestionnaireSexualOrientationValueSet
 
-* item[=].item[+].linkId = "race_ethnicity"
-* item[=].item[=].text = "What is your race/ethnicity? Choose all that apply"
-* item[=].item[=].type = #choice
+* item[=].item[+].linkId = "ethnicity"
+* item[=].item[=].text = "What is your ethnicity? Choose all that apply"
+* item[=].item[=].type = #open-choice
+* item[=].item[=].answerValueSet = $Ethnicity
+
+* item[=].item[+].linkId = "race"
+* item[=].item[=].text = "What is your race? Choose all that apply"
+* item[=].item[=].type = #open-choice
 * item[=].item[=].answerValueSet = $Race
 
 
 * item[+].linkId = "education_completed"
 * item[=].text = "What is your highest level of education?"
-* item[=].type = #open-choice
+* item[=].type = #choice
 * item[=].answerValueSet = $HighestEducationValueSet
 
 * item[+].linkId = "iep"
@@ -96,7 +103,7 @@ Description: "VbaiQuestionnaireDemographic Example2"
 * item[+].linkId = "education_caregiver"
 * item[=].text = "What is your parent’s/caregiver's highest level of education?"
 * item[=].type = #choice
-* item[=].answerValueSet = $AdultEducationValueSet
+* item[=].answerValueSet = $HighestEducationValueSet
 
 * item[+].linkId = "disability_status"
 * item[=].text = "What is your disability status?"
