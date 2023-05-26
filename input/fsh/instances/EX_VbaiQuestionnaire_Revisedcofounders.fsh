@@ -1,10 +1,10 @@
 
-Instance: VbaiQuestionnaireCofoundersExample2
+Instance: VbaiQuestionnaireConfoundersExample2
 InstanceOf: VbaiQuestionnaire
 Usage: #example
-Title: "vbaiQuestionnaireCofoundersExample2"
-Description: "VbaiQuestionnaire cofounders Example"
-* title = "Cofounder Surveys"
+Title: "VbaiQuestionnaireConfoundersExample2"
+Description: "VbaiQuestionnaire confounders Example"
+* title = "Confounder Surveys"
 * date = 2023-04-14
 * subjectType = #Patient
 * status = #active

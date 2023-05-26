@@ -57,7 +57,7 @@ Alias: $TransportationTypeCodeSystem = https://voicecollab.ai/fhir/CodeSystem/tr
 
 
 
-// Cofounders
+// Confounders
 
 Alias: $WHODASCodeSystem = https://voicecollab.ai/fhir/CodeSystem/whodas
 Alias: $SmokingCodeSystem = https://voicecollab.ai/fhir/CodeSystem/smoking

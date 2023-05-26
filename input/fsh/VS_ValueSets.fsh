@@ -464,7 +464,7 @@ Description: "The SurveyOptions Codes used by PHQ9 and GAD7 questionnaire"
 * ^date = "2023-05-11"
 * include codes from system $GAD7AndPHQOtionsCodeSystem
 
-// Cofounders
+// confounders
 ValueSet: WHODAS
 Id: whodas
 Title: "WHODAS ValueSet"
@@ -499,7 +499,7 @@ Description: "The  Codes used by WHODAS questionnaire"
 ValueSet: SmokingTimes
 Id: smoking-times
 Title: "Smoking times ValueSet"
-Description: "The  Codes used by Cofounder questionnaire"
+Description: "The  Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -510,7 +510,7 @@ Description: "The  Codes used by Cofounder questionnaire"
 ValueSet: DrinkingTimes
 Id: drinking-times
 Title: "Drinking times ValueSet"
-Description: "The Codes used by Cofounder questionnaire"
+Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -519,7 +519,7 @@ Description: "The Codes used by Cofounder questionnaire"
 ValueSet: DrinkNumber
 Id: drink-number
 Title: "Drinking number ValueSet"
-Description: "The Codes used by Cofounder questionnaire"
+Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -529,7 +529,7 @@ Description: "The Codes used by Cofounder questionnaire"
 ValueSet: Sweat
 Id: sweat
 Title: "Sweat ValueSet"
-Description: "The Codes used by Cofounder questionnaire"
+Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -539,7 +539,7 @@ Description: "The Codes used by Cofounder questionnaire"
 ValueSet: MenstrationMenopause
 Id: menstration-menopause
 Title: "Menstration MenopauseValueSet"
-Description: "The Codes used by Cofounder questionnaire"
+Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -549,7 +549,7 @@ Description: "The Codes used by Cofounder questionnaire"
 ValueSet: VocalActivity
 Id: vocal-activity
 Title: "Vocal Activity ValueSet"
-Description: "The Codes used by Cofounder questionnaire"
+Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -558,7 +558,7 @@ Description: "The Codes used by Cofounder questionnaire"
 ValueSet: ReadingAbility
 Id: reading-ability
 Title: "Reading ability ValueSet"
-Description: "The Codes used by Cofounder questionnaire"
+Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -568,7 +568,7 @@ Description: "The Codes used by Cofounder questionnaire"
 ValueSet: Medication
 Id: medication
 Title: "Medication ValueSet"
-Description: "The Codes used by Cofounder questionnaire"
+Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -577,7 +577,7 @@ Description: "The Codes used by Cofounder questionnaire"
 ValueSet: PsychiatricHistory
 Id: psychiatric-history
 Title: "Psychiatric History ValueSet"
-Description: "The Codes used by Cofounder questionnaire"
+Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -587,7 +587,7 @@ Description: "The Codes used by Cofounder questionnaire"
 ValueSet: NeurologicalHistory
 Id: neurological-history
 Title: "NeurologicalHistory ValueSet"
-Description: "The Codes used by Cofounder questionnaire"
+Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -598,7 +598,7 @@ Description: "The Codes used by Cofounder questionnaire"
 ValueSet: ENTHistory
 Id: ent-history
 Title: "ENT History ValueSet"
-Description: "The Codes used by Cofounder questionnaire"
+Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"

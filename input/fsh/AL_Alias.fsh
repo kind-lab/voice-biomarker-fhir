@@ -1,2 +1,2 @@
 Alias: $Demographic = https://voicecollab.ai/fhir/Questionnaire/VbaiQuestionnaireDemographicExample2
-Alias: $Cofounders = https://voicecollab.ai/fhir/Questionnaire/VbaiQuestionnaireCofoundersExample2
+Alias: $Confounders = https://voicecollab.ai/fhir/Questionnaire/VbaiQuestionnaireConfoundersExample2
