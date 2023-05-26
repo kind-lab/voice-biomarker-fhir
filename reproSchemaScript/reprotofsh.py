@@ -132,19 +132,27 @@ def convert_to_fsh(questionnaire, output_file):
 
 
 if __name__ == '__main__':
+    error = open("error_file.txt", "w+")
+    file_error = ""
     if len(sys.argv) == 1:
         sys.exit("Please select either single or group mode")
     elif sys.argv[1] == "single" and len(sys.argv) == 4:
-        convert_to_fsh(sys.argv[2], sys.argv[3])
+        
+        #convert_to_fsh(sys.argv[2], sys.argv[3])
+        try:
+            convert_to_fsh(sys.argv[2] ,sys.argv[3])
+        except Exception as e:
+            file_error += "\n" + str(sys.argv[2])
+            logging.error(e)
+            file_error += "\n" + str(e) + "\n"
     elif sys.argv[1] == "group":
-        error = open("error_file.txt", "w+")
+        
         folder_names = []
         for entry_name in os.listdir("."):
             entry_path = os.path.join(".", entry_name)
             if os.path.isdir(entry_path):
                 folder_names.append(entry_name)
-
-        file_error = ""
+        
         # loop through all questionnaire folders
         for folder in folder_names:
             file_name = str(folder)+"_fsh.fsh"
