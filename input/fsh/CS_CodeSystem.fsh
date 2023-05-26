@@ -259,7 +259,7 @@ Description: "The  Codes used for PHQ9 and GAD7 Questionnaires"
 * #MH "More than half the days"
 * #NE "Nearly everyday"
 
-// Cofounders
+// confounders
 
 CodeSystem: WHODAS
 Id: whodas
@@ -281,7 +281,7 @@ Description: "The codes required for WHODAS Questionnaires "
 CodeSystem: Smoking
 Id: smoking
 Title: "Questionnaire smoking codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -298,7 +298,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: SmokingTypes
 Id: smoking-types
 Title: "Questionnaire smoking type codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -318,7 +318,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: SmokingTimes
 Id: smoking-times
 Title: "Questionnaire smoking times codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -335,7 +335,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: DrinkingTimes
 Id: drinking-times
 Title: "Questionnaire alchohol times codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -351,7 +351,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: DrinkNumber
 Id: drink-number
 Title: "Questionnaire alchohol number codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -366,7 +366,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: Sweat
 Id: sweat
 Title: "Questionnaire sweat codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -382,7 +382,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: MenstrationMenopause
 Id: menstration-menopause
 Title: "Questionnaire sweat codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -398,7 +398,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: VocalActivity
 Id: vocal-activity
 Title: "Questionnaire sweat codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -417,7 +417,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: ReadingAbility
 Id: reading-ability
 Title: "Questionnaire sweat codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -434,7 +434,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: Medication
 Id: medication
 Title: "Questionnaire medication codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -457,7 +457,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: PsychiatricHistory
 Id: psychiatric-history
 Title: "Questionnaire psychiatric history codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -492,7 +492,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: NeurologicalHistory
 Id: neurological-history
 Title: "Questionnaire neurological history codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -520,7 +520,7 @@ Description: "The codes required for Questionnaire Cofounders"
 CodeSystem: ENTHistory
 Id: ent-history
 Title: "Questionnaire ent history codes"
-Description: "The codes required for Questionnaire Cofounders"
+Description: "The codes required for Questionnaire confounders"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
