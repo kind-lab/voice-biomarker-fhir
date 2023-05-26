@@ -335,39 +335,10 @@ ValueSet: MaritalStatus
 Id: marital-status
 Title: "Marital Status"
 Description: "Valueset for capturing Marital Status"
-* ^status = #draft
-* ^experimental = true
-* $MaritalStatusCodeSystem#D "Divorced"
-* $MaritalStatusCodeSystem#RL "In a relationship, not married, living with partner"
-* $MaritalStatusCodeSystem#RNL "In a relationship, not married, not living with partner"
-* $MaritalStatusCodeSystem#M "Married"
-* $MaritalStatusCodeSystem#SD "Separated"
-* $MaritalStatusCodeSystem#S "Single"
-* $MaritalStatusCodeSystem#W "Widowed"
-* ^expansion.timestamp = "2023-05-11T10:00:00Z"
-* ^expansion.contains[0].system = $MaritalStatusCodeSystem
-* ^expansion.contains[=].code = #D
-* ^expansion.contains[=].display = "Divorced"
-* ^expansion.contains[+].system = $MaritalStatusCodeSystem
-* ^expansion.contains[=].code = #RL
-* ^expansion.contains[=].display = "In a relationship, not married, living with partner"
-* ^expansion.contains[+].system = $MaritalStatusCodeSystem
-* ^expansion.contains[=].code = #RNL
-* ^expansion.contains[=].display = "In a relationship, not married, not living with partner"
-* ^expansion.contains[+].system = $MaritalStatusCodeSystem
-* ^expansion.contains[=].code = #M
-* ^expansion.contains[=].display = "Married"
-* ^expansion.contains[+].system = $MaritalStatusCodeSystem
-* ^expansion.contains[=].code = #SN
-* ^expansion.contains[=].display = "Separated"
-* ^expansion.contains[+].system = $MaritalStatusCodeSystem
-* ^expansion.contains[=].code = #UT
-* ^expansion.contains[=].display = "Single"
-* ^expansion.contains[+].system = $MaritalStatusCodeSystem
-* ^expansion.contains[=].code = #UP
-* ^expansion.contains[=].display = "Widowed"
-
-
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-05-11"
+* include codes from system $MaritalStatusCodeSystem
 
 
 
