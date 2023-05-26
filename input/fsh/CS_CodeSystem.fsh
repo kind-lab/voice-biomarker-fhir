@@ -177,14 +177,17 @@ Description: "The codes required for marital status"
 * ^date = "2023-05-11"
 * ^caseSensitive = true
 * ^content = #complete
-* ^count = 7
+* ^count = 10
 * #D "Divorced"
-* #RL "In a relationship, not married, living with partner"
+* #RL "In a relationship, not married, living with partner (Domestic Partner)"
 * #RNL "In a relationship, not married, not living with partner"
 * #M "Married"
-* #SD "Separated"
-* #S "Single"
+* #SD "Legally Separated"
+* #S "Never Married"
 * #W "Widowed"
+* #A "Annuled"
+* #I "Interlocutory"
+* #P "Polygamous"
 
 
 CodeSystem: HouseholdMakeup

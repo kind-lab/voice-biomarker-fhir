@@ -24,7 +24,7 @@ Alias: $TransportationTypeValueSet = https://voicecollab.ai/fhir/ValueSet/transp
 Alias: $WHODASValueSet = https://voicecollab.ai/fhir/ValueSet/whodas
 
 
-// Cofounders
+// Confounders
 Alias: $SmokingValueSet = https://voicecollab.ai/fhir/ValueSet/smoking
 Alias: $SmokingTypeValueSet = https://voicecollab.ai/fhir/ValueSet/smoking-types
 Alias: $SmokingTimesValueSet = https://voicecollab.ai/fhir/ValueSet/smoking-times
