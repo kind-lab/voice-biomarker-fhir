@@ -1,8 +1,8 @@
 
-Instance: VbaiQuestionnaireConfoundersExample2
+Instance: VbaiQuestionnaireConfoundersExample
 InstanceOf: VbaiQuestionnaire
 Usage: #example
-Title: "VbaiQuestionnaireConfoundersExample2"
+Title: "VbaiQuestionnaireConfoundersExample"
 Description: "VbaiQuestionnaire confounders Example"
 * title = "Confounder Surveys"
 * date = 2023-04-14

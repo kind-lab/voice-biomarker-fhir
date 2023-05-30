@@ -1,66 +1,42 @@
-Instance: QuestionnaireGAD7Example
+Instance: GAD7schema
 InstanceOf: VbaiQuestionnaire
 Usage: #example
-Title: "QuestionnaireGAD7Example"
-Description: "QuestionnaireGAD7Example"
-* title = "Questionnaire GAD7"
-* date = 2023-04-13
-* subjectType = #Patient
-* status = #active
+Title: "GAD7_schema"
+Description: "GAD7 assessment schema"
+* date = 2023-05-11
 * item[0].linkId = "T1"
-* item[=].text = "Over the last 2 weeks, how often have you been bothered by any of the following problems?"
+* item[=].text = "Over the last 2 weeks, how often have you been bothered by the following problems?"
 * item[=].type = #group
-* item[=].item[0].linkId = "Q1"
-* item[=].item[=].text = "Feeling nervous, anxious, or on edge"
+* title = "GAD7_schema"
+* status = #active
+* item[=].item[+].linkId = "gad7_1"
 * item[=].item[=].type = #choice
+* item[=].item[=].text = "Feeling nervous, anxious or on edge?"
 * item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
-
-* item[=].item[+].linkId = "Q2"
-* item[=].item[=].text = "Not being able to stop or control worrying"
+* item[=].item[+].linkId = "gad7_2"
 * item[=].item[=].type = #choice
+* item[=].item[=].text = "Not being able to stop or control worrying?"
 * item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
-
-
-
-* item[=].item[+].linkId = "Q3"
-* item[=].item[=].text = "Worrying too much about different things"
+* item[=].item[+].linkId = "gad7_3"
 * item[=].item[=].type = #choice
+* item[=].item[=].text = "Worrying too much about different things?"
 * item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
-
-
-* item[=].item[+].linkId = "Q4"
-* item[=].item[=].text = "Trouble relaxing"
+* item[=].item[+].linkId = "gad7_4"
 * item[=].item[=].type = #choice
+* item[=].item[=].text = "Trouble relaxing?"
 * item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
-
-
-* item[=].item[+].linkId = "Q5"
-* item[=].item[=].text = "Being so restless that it is hard to sit still"
+* item[=].item[+].linkId = "gad7_5"
 * item[=].item[=].type = #choice
+* item[=].item[=].text = "Being so restless that it is hard to sit still?"
 * item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
-
-
-
-* item[=].item[+].linkId = "Q6"
-* item[=].item[=].text = "Becoming easily annoyed or irritable"
+* item[=].item[+].linkId = "gad7_6"
 * item[=].item[=].type = #choice
+* item[=].item[=].text = "Becoming easily annoyed or irritable?"
 * item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
-
-* item[=].item[+].linkId = "Q7"
-* item[=].item[=].text = "Feeling afraid, as if something awful might happen"
+* item[=].item[+].linkId = "gad7_7"
 * item[=].item[=].type = #choice
+* item[=].item[=].text = "Feeling afraid as if something awful might happen?"
 * item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
-
-* item[+].linkId = "Total"
-* item[=].text = "Column Totals :"
-* item[=].type = #quantity
-
-
-
-* item[+].linkId = "Q10"
-* item[=].text = "If you checked any problems, how difficult have they made it for you to do your work, take care of things at home, or get along with other people?"
-* item[=].type = #choice
-* item[=].answerOption[0].valueString = "Not difficult at all" 
-* item[=].answerOption[+].valueString = "Somewhat difficult" 
-* item[=].answerOption[+].valueString = "Very difficult " 
-* item[=].answerOption[+].valueString = "Extremely difficult" 
+* item[=].item[+].linkId = "gad7_total_score"
+* item[=].item[=].type = #integer
+* item[=].item[=].text = "GAD7 Score"
