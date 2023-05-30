@@ -17,3 +17,15 @@
 [VbaiVitalSigns]: StructureDefinition-vbai-vital-signs.html
 [VbaiWavefromDevice]: StructureDefinition-vbai-waveform-device.html
 [VbaiWaveformMedia]: StructureDefinition-vbai-waveform-media.html
+[PlanDefinition]: StructureDefinition-vbai-plan-definition.html
+[VbaiPlanDefinitionExample]: PlanDefinition-VbaiPlanDefinitionExample.html
+[Demographics]: Questionnaire-VbaiQuestionnaireDemographicExample2.html
+[Confounders]: Questionnaire-VbaiQuestionnaireConfoundersExample2.html
+[PHQ9]: Questionnaire-PHQ9schema.html
+[GAD7]: Questionnaire-GAD7schema.html
+[Mood-PlanDefinition]: PlanDefinition-VbaiPlanDefinitionMoodExample.html
+[Neurology-PlanDefinition]: PlanDefinition-VbaiPlanDefinitionNeurologyExample.html
+[Pediatric-PlanDefinition]: PlanDefinition-VbaiPlanDefinitionPedsExample.html
+[Respiratory-PlanDefinition]: PlanDefinition-VbaiPlanDefinitionRespiratoryExample.html
+[Voice-PlanDefinition]: PlanDefinition-VbaiPlanDefinitionVoiceExample.html
+[Questionnaire]: StructureDefinition-vbai-questionnaire.html

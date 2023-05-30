@@ -30,6 +30,7 @@ The VBAI Profiles are meant for use in research and development. The audience th
 - [VbaiVitalSigns]
 - [VbaiWavefromDevice]
 - [VbaiWaveformMedia]
+- [PlanDefinition]
 
 
 {% include link-list.md %}
