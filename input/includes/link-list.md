@@ -19,8 +19,8 @@
 [VbaiWaveformMedia]: StructureDefinition-vbai-waveform-media.html
 [PlanDefinition]: StructureDefinition-vbai-plan-definition.html
 [VbaiPlanDefinitionExample]: PlanDefinition-VbaiPlanDefinitionExample.html
-[Demographics]: Questionnaire-VbaiQuestionnaireDemographicExample2.html
-[Confounders]: Questionnaire-VbaiQuestionnaireConfoundersExample2.html
+[Demographics]: Questionnaire-VbaiQuestionnaireDemographicExample.html
+[Confounders]: Questionnaire-VbaiQuestionnaireConfoundersExample.html
 [PHQ9]: Questionnaire-PHQ9schema.html
 [GAD7]: Questionnaire-GAD7schema.html
 [Mood-PlanDefinition]: PlanDefinition-VbaiPlanDefinitionMoodExample.html
