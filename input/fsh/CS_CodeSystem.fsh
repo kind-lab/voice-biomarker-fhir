@@ -596,4 +596,122 @@ Description: "The codes required for Questionnaire confounders"
 * #N "None"
 
 
+// ---------------------------Enrollment--------------------------------
+CodeSystem: EnrollmentSelectLanguage
+Id: enrollment-select-language
+Title: "Questionnaire enrollment language codes"
+Description: "The codes required for Questionnaire enrollment"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-07"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #EN "English"
+* #FR "French"
+* #SP "Spanish"
 
+CodeSystem: FluentLanguage
+Id: fluent-language
+Title: "Questionnaire enrollment Fluent language codes"
+Description: "The codes required for Questionnaire enrollment"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-07"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #N "None"
+* #EN "English"
+* #FR "French"
+* #SP "Spanish"
+* #O "Other, Please Specify"
+
+CodeSystem: CheckedUnchecked
+Id: checked-unchecked
+Title: "Questionnaire enrollment condition codes"
+Description: "The codes required for Questionnaire enrollment"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-07"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #C "Checked"
+* #UC "Unchecked"
+
+CodeSystem: EligibleStudies
+Id: eligible-studies
+Title: "Questionnaire enrollment eligible studies codes"
+Description: "The codes required for Questionnaire enrollment"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-07"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #ES1 "Voice Disorders"
+* #ES2 "Neurological and Neurodegenerative Disorders"
+* #ES3 "Mood and Psychiatric Disorders"
+* #ES4 "Respiratory Disorders"
+* #ES5 "Pediatric Disorders"
+
+CodeSystem: Enroll
+Id: enroll
+Title: "Questionnaire enrollment eligible studies codes"
+Description: "The codes required for Questionnaire enrollment"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-07"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #E "Enroll"
+* #D "Decline"
+
+
+CodeSystem: DeclineReason
+Id: decline-reason
+Title: "Questionnaire enrollment eligible studies codes"
+Description: "The codes required for Questionnaire enrollment"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-07"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #R1 "I am not interested in having my voice recorded"
+* #R2 "I do not have enough time today and want to be contacted later"
+* #R3 "I do not have enough time and do not want to be contacted later"
+* #R4 "I prefer not to share any health information for research"
+* #R5 "Other, Please Specify"
+
+
+CodeSystem: EnrollmentInstitution
+Id: enrollment-institution
+Title: "Questionnaire enrollment  codes"
+Description: "The codes required for Questionnaire enrollment"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-07"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #USF "USF"
+* #WCM "WCM"
+* #MIT "MIT"
+
+
+CodeSystem: EnrollmentComplete
+Id: enrollment-complete
+Title: "Questionnaire enrollment  codes"
+Description: "The codes required for Questionnaire enrollment"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-07"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #I "Incomplete"
+* #UV "Unverified"
+* #C "Complete"

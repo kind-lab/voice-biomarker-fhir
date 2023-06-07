@@ -38,3 +38,17 @@ Alias: $MedicationValueSet = https://voicecollab.ai/fhir/ValueSet/medication
 Alias: $PsychiatricHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/psychiatric-history
 Alias: $NeurologicalHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/neurological-history
 Alias: $ENTHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/ent-history
+
+// Enrollment
+Alias: $EnrollmentSelectLanguageValueSet = https://voicecollab.ai/fhir/ValueSet/select-language
+Alias: $FluentLanguageValueSet = https://voicecollab.ai/fhir/ValueSet/fluent-language
+Alias: $CheckedUncheckedValueSet = https://voicecollab.ai/fhir/ValueSet/checked-unchecked
+
+
+Alias: $EligibleStudiesValueSet = https://voicecollab.ai/fhir/ValueSet/eligible-studies
+Alias: $EnrollValueSet = https://voicecollab.ai/fhir/ValueSet/enroll
+
+
+Alias: $DeclineReasonValueSet = https://voicecollab.ai/fhir/ValueSet/decline-reason
+Alias: $EnrollmentInstitutionValueSet = https://voicecollab.ai/fhir/ValueSet/enrollment-institution
+Alias: $EnrollmentCompleteValueSet = https://voicecollab.ai/fhir/ValueSet/enrollment-complete

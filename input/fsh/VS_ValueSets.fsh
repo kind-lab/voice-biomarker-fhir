@@ -576,3 +576,79 @@ Description: "The Codes used by confounder questionnaire"
 * include codes from system $ENTHistoryCodeSystem
 
 
+//------------------------------------Enrollment-----------------------
+ValueSet: EfSelectLanguage
+Id: select-language
+Title: "EF Select ValueSet"
+Description: "The Codes used by enrollment questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-06"
+* include codes from system $EnrollmentSelectLanguageCodeSystem
+
+ValueSet: EfFluentLanguage
+Id: fluent-language
+Title: "Ef Fluent ValueSet"
+Description:  "The Codes used by enrollment questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-06"
+* include codes from system $FluentLanguageCodeSystem
+
+ValueSet: CheckedUnchecked
+Id: checked-unchecked
+Title: "Conditions ValueSet"
+Description:  "The Codes used by enrollment questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-06"
+* include codes from system $CheckedUncheckedCodeSystem
+
+ValueSet: EligibleStudies
+Id: eligible-studies
+Title: "Eligible studies ValueSet"
+Description:  "The Codes used by enrollment questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-06"
+* include codes from system $EligibleStudiesCodeSystem
+
+
+ValueSet: Enroll
+Id: enroll
+Title: "Enroll ValueSet"
+Description:  "The Codes used by enrollment questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-06"
+* include codes from system $EnrollCodeSystem
+
+
+ValueSet: DeclineReason
+Id: decline-reason
+Title: "Decline Reason ValueSet"
+Description:  "The Codes used by enrollment questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-06"
+* include codes from system $DeclineReasonCodeSystem
+
+
+ValueSet: EnrollmentInstitution
+Id: enrollment-institution
+Title: "Enrollment Institution ValueSet"
+Description:  "The Codes used by enrollment questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-06"
+* include codes from system $EnrollmentInstitutionCodeSystem
+
+
+ValueSet: EnrollmentComplete
+Id: enrollment-complete
+Title: "Enrollment Complete ValueSet"
+Description:  "The Codes used by enrollment questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-06"
+* include codes from system $EnrollmentCompleteCodeSystem
