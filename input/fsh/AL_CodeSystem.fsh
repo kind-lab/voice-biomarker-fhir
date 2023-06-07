@@ -73,3 +73,16 @@ Alias: $MedicationCodeSystem = https://voicecollab.ai/fhir/CodeSystem/medication
 Alias: $PsychiatricHistoryCodeSystem = https://voicecollab.ai/fhir/CodeSystem/psychiatric-history
 Alias: $NeurologicalHistoryCodeSystem = https://voicecollab.ai/fhir/CodeSystem/neurological-history
 Alias: $ENTHistoryCodeSystem = https://voicecollab.ai/fhir/CodeSystem/ent-history
+
+
+// Enrollment
+Alias: $EnrollmentSelectLanguageCodeSystem = https://voicecollab.ai/fhir/CodeSystem/enrollment-select-language
+Alias: $FluentLanguageCodeSystem = https://voicecollab.ai/fhir/CodeSystem/fluent-language
+Alias: $CheckedUncheckedCodeSystem = https://voicecollab.ai/fhir/CodeSystem/checked-unchecked
+Alias: $EligibleStudiesCodeSystem = https://voicecollab.ai/fhir/CodeSystem/eligible-studies
+Alias: $EnrollCodeSystem = https://voicecollab.ai/fhir/CodeSystem/enroll
+
+
+Alias: $DeclineReasonCodeSystem = https://voicecollab.ai/fhir/CodeSystem/decline-reason
+Alias: $EnrollmentInstitutionCodeSystem = https://voicecollab.ai/fhir/CodeSystem/enrollment-institution
+Alias: $EnrollmentCompleteCodeSystem = https://voicecollab.ai/fhir/CodeSystem/enrollment-complete
