@@ -577,18 +577,18 @@ Description: "The Codes used by confounder questionnaire"
 
 
 //------------------------------------Enrollment-----------------------
-ValueSet: EfSelectLanguage
+ValueSet: SelectLanguage
 Id: select-language
-Title: "EF Select ValueSet"
+Title: "Select ValueSet"
 Description: "The Codes used by enrollment questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-06"
 * include codes from system $EnrollmentSelectLanguageCodeSystem
 
-ValueSet: EfFluentLanguage
+ValueSet: FluentLanguage
 Id: fluent-language
-Title: "Ef Fluent ValueSet"
+Title: "Fluent ValueSet"
 Description:  "The Codes used by enrollment questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
