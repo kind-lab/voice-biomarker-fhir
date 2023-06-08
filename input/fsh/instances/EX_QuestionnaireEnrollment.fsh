@@ -46,7 +46,7 @@ Description: "Enrollment Questionnaire"
 * item[=].type = #date
 * item[=].text = "What is your date of birth? " 
 
-* item[+].linkId = "conditios_header"
+* item[+].linkId = "conditions_header"
 * item[=].type = #group
 * item[=].text = "Do you have any of these conditions, diagnosed by a clinician? (Check all that apply if you currently have the condition) Voice Disorders" 
 
