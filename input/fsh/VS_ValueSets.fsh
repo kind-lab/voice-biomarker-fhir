@@ -652,3 +652,14 @@ Description:  "The Codes used by enrollment questionnaire"
 * ^status = #active
 * ^date = "2023-06-06"
 * include codes from system $EnrollmentCompleteCodeSystem
+
+//---------------------------General Information-------------------------
+ValueSet: ConsentStatus
+Id: consent-status
+Title: "Consent status ValueSet"
+Description:  "The Codes used by general information questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-06"
+* include codes from system $ConsentStatusCodeSystem 
+

@@ -86,3 +86,6 @@ Alias: $EnrollCodeSystem = https://voicecollab.ai/fhir/CodeSystem/enroll
 Alias: $DeclineReasonCodeSystem = https://voicecollab.ai/fhir/CodeSystem/decline-reason
 Alias: $EnrollmentInstitutionCodeSystem = https://voicecollab.ai/fhir/CodeSystem/enrollment-institution
 Alias: $EnrollmentCompleteCodeSystem = https://voicecollab.ai/fhir/CodeSystem/enrollment-complete
+
+// General Information
+Alias: $ConsentStatusCodeSystem = https://voicecollab.ai/fhir/CodeSystem/consent-status

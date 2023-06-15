@@ -52,3 +52,7 @@ Alias: $EnrollValueSet = https://voicecollab.ai/fhir/ValueSet/enroll
 Alias: $DeclineReasonValueSet = https://voicecollab.ai/fhir/ValueSet/decline-reason
 Alias: $EnrollmentInstitutionValueSet = https://voicecollab.ai/fhir/ValueSet/enrollment-institution
 Alias: $EnrollmentCompleteValueSet = https://voicecollab.ai/fhir/ValueSet/enrollment-complete
+
+// General Information
+Alias: $ConsentStatusValueSet = https://voicecollab.ai/fhir/ValueSet/consent-status
+

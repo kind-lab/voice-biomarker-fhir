@@ -715,3 +715,20 @@ Description: "The codes required for Questionnaire enrollment"
 * #I "Incomplete"
 * #UV "Unverified"
 * #C "Complete"
+
+// -------------------General Information----------------------------------
+CodeSystem: ConsentStatus
+Id: consent-status
+Title: "Questionnaire general info codes"
+Description: "The codes required for general information questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-15"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #P "Pending"
+* #C "Consented"
+* #W "Withdrawn Consent"
+
+
