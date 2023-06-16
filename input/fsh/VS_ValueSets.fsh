@@ -663,3 +663,32 @@ Description:  "The Codes used by general information questionnaire"
 * ^date = "2023-06-06"
 * include codes from system $ConsentStatusCodeSystem 
 
+// -------------------------Session--------------------------------------
+ValueSet: Session
+Id: session
+Title: "session ValueSet"
+Description:  "The Codes used by session"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-16"
+* include codes from system $SessionCodeSystem 
+
+// -----------------------Acoustic Tasks---------------------------------
+ValueSet: AcousticTaskStatus
+Id: acoustic-task-status
+Title: "acoustic ValueSet"
+Description:  "The Codes used by acoustic status"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-16"
+* include codes from system $AcousticTaskStatusCodeSystem
+
+// ----------------------Recording----------------------------------------
+ValueSet: Recording
+Id: recording
+Title: "recordigg ValueSet"
+Description:  "The Codes used by recording"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-16"
+* include codes from system $RecordingValueSet
