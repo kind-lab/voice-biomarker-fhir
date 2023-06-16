@@ -56,3 +56,11 @@ Alias: $EnrollmentCompleteValueSet = https://voicecollab.ai/fhir/ValueSet/enroll
 // General Information
 Alias: $ConsentStatusValueSet = https://voicecollab.ai/fhir/ValueSet/consent-status
 
+// Session
+Alias: $SessionValueSet = https://voicecollab.ai/fhir/ValueSet/session
+
+// Acoustic Task
+Alias: $AcousticTaskStatusValueSet = https://voicecollab.ai/fhir/ValueSet/acoutstic-task-status
+
+// Recoding
+Alias: $RecordingValueSet = https://voicecollab.ai/fhir/ValueSet/recording

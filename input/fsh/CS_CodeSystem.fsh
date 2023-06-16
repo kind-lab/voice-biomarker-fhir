@@ -731,4 +731,46 @@ Description: "The codes required for general information questionnaire"
 * #C "Consented"
 * #W "Withdrawn Consent"
 
+// ---------------------Session---------------------------------------------
+CodeSystem: Session
+Id: session
+Title: "Session info codes"
+Description: "The codes required for session"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-15"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #IPR "In Progress"
+* #C "Completed"
+
+
+//--------------------------Acoustic Tasks---------------------------------
+CodeSystem: AcousticTaskStatus
+Id: acoustic-task-status
+Title: "Acoustic Task Status codes"
+Description: "The codes required for Acoustic Tasks"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-15"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #S "Skipped"
+* #C "Completed"
+
+
+//------------------------------Recroding----------------------------------
+CodeSystem: Recording
+Id: recording
+Title: "Recording codes"
+Description: "The codes required for Recording"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-15"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 1
+* #V1 "v1.0.0"
 

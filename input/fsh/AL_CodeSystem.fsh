@@ -89,3 +89,12 @@ Alias: $EnrollmentCompleteCodeSystem = https://voicecollab.ai/fhir/CodeSystem/en
 
 // General Information
 Alias: $ConsentStatusCodeSystem = https://voicecollab.ai/fhir/CodeSystem/consent-status
+
+// Session
+Alias: $SessionCodeSystem = https://voicecollab.ai/fhir/CodeSystem/session
+
+// Acoustic Tasks
+Alias: $AcousticTaskStatusCodeSystem = https://voicecollab.ai/fhir/CodeSystem/acoustic-task-status
+
+// Recording
+Alias: $RecordingCodeSystem = https://voicecollab.ai/fhir/CodeSystem/recording
