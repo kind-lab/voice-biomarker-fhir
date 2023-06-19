@@ -774,3 +774,20 @@ Description: "The codes required for Recording"
 * ^count = 1
 * #V1 "v1.0.0"
 
+//------------------------------VHI=10----------------------------------
+CodeSystem: VoiceHandicapIndex
+Id: voice-handicap-index
+Title: "Voice Handicap Index codes"
+Description: "The codes required for Voice Handicap Index"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "Never"
+* #2 "Almost Never"
+* #3 "Sometimes"
+* #4 "Almost Always"
+* #5 "Always"
+

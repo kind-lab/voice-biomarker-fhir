@@ -98,3 +98,6 @@ Alias: $AcousticTaskStatusCodeSystem = https://voicecollab.ai/fhir/CodeSystem/ac
 
 // Recording
 Alias: $RecordingCodeSystem = https://voicecollab.ai/fhir/CodeSystem/recording
+
+// VHI-10
+Alias: $VoiceHandicapIndexCodeSystem = https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index
