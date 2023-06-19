@@ -686,9 +686,19 @@ Description:  "The Codes used by acoustic status"
 // ----------------------Recording----------------------------------------
 ValueSet: Recording
 Id: recording
-Title: "recordigg ValueSet"
+Title: "recordig ValueSet"
 Description:  "The Codes used by recording"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-16"
 * include codes from system $RecordingValueSet
+
+// -----------------------VHI-10------------------------------------------
+ValueSet: VoiceHandicapIndex
+Id: voice-handicap-index
+Title: "Voice Handicap Index ValueSet"
+Description:  "The Codes used by Voice Handicap Index"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* include codes from system $VoiceHandicapIndexCodeSystem

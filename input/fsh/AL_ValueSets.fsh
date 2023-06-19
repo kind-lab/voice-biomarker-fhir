@@ -64,3 +64,6 @@ Alias: $AcousticTaskStatusValueSet = https://voicecollab.ai/fhir/ValueSet/acouts
 
 // Recoding
 Alias: $RecordingValueSet = https://voicecollab.ai/fhir/ValueSet/recording
+
+// VHI-10
+Alias: $VoiceHandicapIndexValueset = https://voicecollab.ai/fhir/ValueSet/voice-handicap-index
