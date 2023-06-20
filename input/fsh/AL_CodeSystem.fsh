@@ -101,3 +101,13 @@ Alias: $RecordingCodeSystem = https://voicecollab.ai/fhir/CodeSystem/recording
 
 // VHI-10
 Alias: $VoiceHandicapIndexCodeSystem = https://voicecollab.ai/fhir/CodeSystem/voice-handicap-index
+
+// DSM-5
+Alias: $DSM5CodeSystem = https://voicecollab.ai/fhir/CodeSystem/dsm5
+
+// PTSD
+Alias: $PTSDCodeSystem = https://voicecollab.ai/fhir/CodeSystem/ptsd
+
+// ADHD
+Alias: $ADHDCodeSystem = https://voicecollab.ai/fhir/CodeSystem/adhd
+

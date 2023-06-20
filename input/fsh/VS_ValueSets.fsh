@@ -702,3 +702,32 @@ Description:  "The Codes used by Voice Handicap Index"
 * ^status = #active
 * ^date = "2023-06-19"
 * include codes from system $VoiceHandicapIndexCodeSystem
+
+// -----------------------DSM-5-----------------------------------------
+ValueSet: DSM5
+Id: dsm5
+Title: "DSM5"
+Description:  "The Codes used by DSM5"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $DSM5CodeSystem
+
+// -----------------------PTSD-----------------------------------------
+ValueSet: PTSD
+Id: ptsd
+Title: "PTSD"
+Description:  "The Codes used by PTSD"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $PTSDCodeSystem
+
+ValueSet: ADHD
+Id: adhd
+Title: "ADHD"
+Description:  "The Codes used by adhd"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $ADHDCodeSystem
