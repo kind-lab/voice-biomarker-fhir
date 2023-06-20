@@ -67,3 +67,12 @@ Alias: $RecordingValueSet = https://voicecollab.ai/fhir/ValueSet/recording
 
 // VHI-10
 Alias: $VoiceHandicapIndexValueset = https://voicecollab.ai/fhir/ValueSet/voice-handicap-index
+
+// DSM-5
+Alias: $DSM5ValueSet = https://voicecollab.ai/fhir/ValueSet/dsm5
+
+// PTSD
+Alias: $PTSDValueSet = https://voicecollab.ai/fhir/ValueSet/ptsd
+
+// ADHD
+Alias: $ADHDValueSet = https://voicecollab.ai/fhir/ValueSet/adhd

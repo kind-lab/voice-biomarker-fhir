@@ -774,7 +774,7 @@ Description: "The codes required for Recording"
 * ^count = 1
 * #V1 "v1.0.0"
 
-//------------------------------VHI=10----------------------------------
+//------------------------------VHI-10----------------------------------
 CodeSystem: VoiceHandicapIndex
 Id: voice-handicap-index
 Title: "Voice Handicap Index codes"
@@ -791,3 +791,56 @@ Description: "The codes required for Voice Handicap Index"
 * #4 "Almost Always"
 * #5 "Always"
 
+//------------------------------DSM-5----------------------------------
+CodeSystem: DSM5
+Id: dsm5
+Title: "dsm5"
+Description: "The codes required for dsm5 questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "None (Not at all)"
+* #2 "Slight (Rare, less than a day or two)"
+* #3 "Mild (Several days)"
+* #4 "Moderate (More than half the dayd)"
+* #5 "Severe (Nearly every day)"
+
+//---------------------------PTSD-------------------------------------
+
+CodeSystem: PTSD
+Id: ptsd
+Title: "ptsd"
+Description: "The codes required for ptsd questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #0 "Not at all"
+* #1 "A little bit"
+* #2 "Moderately"
+* #3 "Quite a bit"
+* #4 "Extremely"
+
+
+//---------------------------ADHD-------------------------------------
+
+CodeSystem: ADHD
+Id: adhd
+Title: "adhd"
+Description: "The codes required for adhd questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "Never"
+* #2 "Rarely"
+* #3 "Sometimes"
+* #4 "Often"
+* #5 "Very Often"
