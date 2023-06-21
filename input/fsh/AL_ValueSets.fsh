@@ -70,7 +70,13 @@ Alias: $VoiceHandicapIndexValueset = https://voicecollab.ai/fhir/ValueSet/voice-
 
 // DSM-5
 Alias: $DSM5ValueSet = https://voicecollab.ai/fhir/ValueSet/dsm5
+Alias: $DSM5Q1ValueSet = https://voicecollab.ai/fhir/ValueSet/dsm5-q1
+Alias: $DSM5Q2ValueSet = https://voicecollab.ai/fhir/ValueSet/dsm5-q2
+Alias: $DSM5Q3ValueSet = https://voicecollab.ai/fhir/ValueSet/dsm5-q3
+Alias: $DSM5Q4ValueSet = https://voicecollab.ai/fhir/ValueSet/dsm5-q4
+Alias: $DSM5Q5ValueSet = https://voicecollab.ai/fhir/ValueSet/dsm5-q5
 
+Alias: $DSM5PhobiaValueSet = https://voicecollab.ai/fhir/ValueSet/dsm5-phobia
 // PTSD
 Alias: $PTSDValueSet = https://voicecollab.ai/fhir/ValueSet/ptsd
 

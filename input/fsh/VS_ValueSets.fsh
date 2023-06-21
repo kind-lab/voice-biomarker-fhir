@@ -713,6 +713,62 @@ Description:  "The Codes used by DSM5"
 * ^date = "2023-06-20"
 * include codes from system $DSM5CodeSystem
 
+
+ValueSet: DSM5Q1
+Id: dsm5-q1
+Title: "DSM5 Q1"
+Description:  "The Codes used by DSM5 Q1"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* include codes from system $DSM5Q1CodeSystem
+
+ValueSet: DSM5Q2
+Id: dsm5-q2
+Title: "DSM5 Q3"
+Description:  "The Codes used by DSM5 Q2"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* include codes from system $DSM5Q2CodeSystem
+
+ValueSet: DSM5Q3
+Id: dsm5-q3
+Title: "DSM5 Q3"
+Description:  "The Codes used by DSM5 Q3"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* include codes from system $DSM5Q3CodeSystem
+
+ValueSet: DSM5Q4
+Id: dsm5-q4
+Title: "DSM5 Q4"
+Description:  "The Codes used by DSM5 Q4"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* include codes from system $DSM5Q4CodeSystem
+
+
+ValueSet: DSM5Q5
+Id: dsm5-q5
+Title: "DSM5 Q5"
+Description:  "The Codes used by DSM5 Q5"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* include codes from system $DSM5Q5CodeSystem
+
+
+ValueSet: DSM5Phobia
+Id: dsm5-phobia
+Title: "DSM5 Q5"
+Description:  "The Codes used by DSM5 phobia"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* include codes from system $DSM5PhobiaCodeSystem
 // -----------------------PTSD-----------------------------------------
 ValueSet: PTSD
 Id: ptsd
@@ -723,6 +779,7 @@ Description:  "The Codes used by PTSD"
 * ^date = "2023-06-20"
 * include codes from system $PTSDCodeSystem
 
+// -----------------------ADHD-----------------------------------------
 ValueSet: ADHD
 Id: adhd
 Title: "ADHD"

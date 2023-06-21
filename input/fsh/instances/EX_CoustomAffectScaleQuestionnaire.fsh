@@ -20,7 +20,7 @@ Description: "Custom Affect Scale Questionnaire"
 * item[=].text = "Questionnaire Completed At"
 * item[=].type = #string
 
-* item[+].linkId = "" 
+* item[+].linkId = "think_about_yourself" 
 * item[=].text = "Thinking about yourself and how you normally feel, to what extent do you generally feel? 0=Not at all, 10=Extremely"
 * item[=].type = #group
 

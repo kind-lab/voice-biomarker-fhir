@@ -29,8 +29,8 @@ Description: "PTSD Questionnaire"
 * item[=].text = "Date of the traumatic event: "
 * item[=].type = #date
 
-* item[+].linkId = "" 
-* item[=].text = "People sometimes have problems after extremelystressful events or experiences. How much have you been bothered during the PAST SEVEN (7) DAYS by each of the following problems that occurred or became worse after an extremely stressful event/experience? 0=Not at all, 1=A little bit, 2=Moderately, 3=Quite a bit, 4=Extremely"
+* item[+].linkId = "questions" 
+* item[=].text = "People sometimes have problems after extremely stressful events or experiences. How much have you been bothered during the PAST SEVEN (7) DAYS by each of the following problems that occurred or became worse after an extremely stressful event/experience? 0=Not at all, 1=A little bit, 2=Moderately, 3=Quite a bit, 4=Extremely"
 * item[=].type = #group
 
 * item[=].item[0].linkId = "flashbacks"
