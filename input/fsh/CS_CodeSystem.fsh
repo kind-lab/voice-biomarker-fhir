@@ -808,6 +808,109 @@ Description: "The codes required for dsm5 questionnaire"
 * #4 "Moderate (More than half the dayd)"
 * #5 "Severe (Nearly every day)"
 
+
+CodeSystem: DSM5Q1
+Id: dsm5-q1
+Title: "dsm5 q1"
+Description: "The codes required for dsm5 q1 questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "I do not feel happier or more cheerful than usual."
+* #2 "I occasionally feel happier or more cheerful than usual."
+* #3 "I often feel happier or more cheerful than usual."
+* #4 "I feel happier or more cheerful than usual most of the time."
+* #5 "I feel happier of more cheerful than usual all of the time"
+
+CodeSystem: DSM5Q2
+Id: dsm5-q2
+Title: "dsm5 q2"
+Description: "The codes required for dsm5 q2 questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "I do not feel more self-confident than usual."
+* #2 "I occasionally feel more self-confident thanusual."
+* #3 "I often feel more self-confident than usual"
+* #4 "I frequently feel more self-confident than usual."
+* #5 "I feel extremely self-confident all of the time."
+
+
+
+
+CodeSystem: DSM5Q3
+Id: dsm5-q3
+Title: "dsm5 q3"
+Description: "The codes required for dsm5 q3 questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "I do not need less sleep than usual"
+* #2 "I occasionally need less sleep than usual"
+* #3 "I need less sleep than usual"
+* #4 "I frequently need less sleep than usual."
+* #5 "I can go all day and all night without any sleep and still not feel tired."
+
+
+CodeSystem: DSM5Q4
+Id: dsm5-q4
+Title: "dsm5 q4"
+Description: "The codes required for dsm5 q4 questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "I do not talk more than usual."
+* #2 "I occasionally talk more than usual."
+* #3 "I often talk more than usual"
+* #4 "I frequently talk more than usual"
+* #5 "I talk constantly and cannot be interrupted."
+
+
+CodeSystem: DSM5Q5
+Id: dsm5-q5
+Title: "dsm5 q5"
+Description: "The codes required for dsm5 q5 questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "I have not been more active (either socially, sexually, at work, home, or school) than usual."
+* #2 "I have occasionally been more active than usual."
+* #3 "I have often been more active than usual"
+* #4 "I have frequently been more active than usual."
+* #5 "I am constantly more active or on the go all the time."
+
+CodeSystem: DSM5Phobia
+Id: dsm5-phobia
+Title: "dsm5 q5"
+Description: "The codes required for dsm5 phobia questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "Never"
+* #2 "Occasionally"
+* #3 "Half of the time"
+* #4 "Most of the time"
+* #5 "All of the time"
+
+
 //---------------------------PTSD-------------------------------------
 
 CodeSystem: PTSD

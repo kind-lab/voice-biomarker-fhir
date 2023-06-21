@@ -20,7 +20,7 @@ Description: "ADHD Questionnaire"
 * item[=].text = "Questionnaire Completed At"
 * item[=].type = #string
 
-* item[+].linkId = "" 
+* item[+].linkId = "rate_yourself" 
 * item[=].text = "Please answer the questions below, rating yourself on
 each of the criteria shown using the scale on the right side of the page. As
 you answer each question, select the box that best describes how you

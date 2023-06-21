@@ -31,12 +31,6 @@ Description: "VHI-10 Questionnaire"
 * item[=].type = #choice
 * item[=].answerValueSet = $VoiceHandicapIndexValueset
 
-* item[+].linkId = "tough_to_understand" 
-* item[=].text = "People have difficulty understanding me in a noisy room."
-* item[=].type = #choice
-* item[=].answerValueSet = $VoiceHandicapIndexValueset
-
-
 * item[+].linkId = "voice_restrict_social" 
 * item[=].text = "My voice difficulties restrict personal and social life."
 * item[=].type = #choice

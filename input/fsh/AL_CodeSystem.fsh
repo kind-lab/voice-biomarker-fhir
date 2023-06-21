@@ -104,7 +104,13 @@ Alias: $VoiceHandicapIndexCodeSystem = https://voicecollab.ai/fhir/CodeSystem/vo
 
 // DSM-5
 Alias: $DSM5CodeSystem = https://voicecollab.ai/fhir/CodeSystem/dsm5
+Alias: $DSM5Q1CodeSystem = https://voicecollab.ai/fhir/CodeSystem/dsm5-q1
+Alias: $DSM5Q2CodeSystem = https://voicecollab.ai/fhir/CodeSystem/dsm5-q2
+Alias: $DSM5Q3CodeSystem = https://voicecollab.ai/fhir/CodeSystem/dsm5-q3
+Alias: $DSM5Q4CodeSystem = https://voicecollab.ai/fhir/CodeSystem/dsm5-q4
+Alias: $DSM5Q5CodeSystem = https://voicecollab.ai/fhir/CodeSystem/dsm5-q5
 
+Alias: $DSM5PhobiaCodeSystem = https://voicecollab.ai/fhir/CodeSystem/dsm5-phobia
 // PTSD
 Alias: $PTSDCodeSystem = https://voicecollab.ai/fhir/CodeSystem/ptsd
 

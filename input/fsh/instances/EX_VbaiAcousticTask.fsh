@@ -16,10 +16,6 @@ Description: "Questonnaire"
 * item[=].text = "Session ID"
 * item[=].type = #string
 
-* item[+].linkId = "acoustic_task_session_id" 
-* item[=].text = "Session ID"
-* item[=].type = #string
-
 * item[+].linkId = "acoustic_task_name" 
 * item[=].text = "Acoustic Task Name"
 * item[=].type = #string

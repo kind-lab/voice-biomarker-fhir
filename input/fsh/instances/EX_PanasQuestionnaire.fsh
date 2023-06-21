@@ -21,7 +21,7 @@ Description: "PANAS Questionnaire"
 * item[=].text = "Questionnaire Completed At"
 * item[=].type = #string
 
-* item[+].linkId = "" 
+* item[+].linkId = "thinking_about_yourself" 
 * item[=].text = "Thinking about yourself and how you normally feel, to
 what extent do you generally feel? Interval measure: never 1 2 3 4 5
 always"
@@ -67,7 +67,7 @@ always"
 * item[=].item[=].text = "Active"
 * item[=].item[=].type = #integer
 
-* item[+].linkId = "questionnaire_mood_disorders_panas_complet"
+* item[+].linkId = "questionnaire_mood_disorders_panas_complete"
 * item[=].text = "Completed"
 * item[=].type = #choice
 * item[=].answerValueSet = $EnrollmentCompleteValueSet
