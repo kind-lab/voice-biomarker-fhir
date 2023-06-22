@@ -82,3 +82,35 @@ Alias: $PTSDValueSet = https://voicecollab.ai/fhir/ValueSet/ptsd
 
 // ADHD
 Alias: $ADHDValueSet = https://voicecollab.ai/fhir/ValueSet/adhd
+
+
+// Diagnosis
+Alias: $YesNoNotCertainValueSet = https://voicecollab.ai/fhir/ValueSet/yes-no-not-certain
+
+Alias: $LeftRightValueSet = https://voicecollab.ai/fhir/ValueSet/left-right
+
+Alias: $EtiologyValueSet = https://voicecollab.ai/fhir/ValueSet/etiology
+
+Alias: $IatrogeniValueSet = https://voicecollab.ai/fhir/ValueSet/iatrogenic
+
+Alias: $TumorRlnValueSet = https://voicecollab.ai/fhir/ValueSet/tumor-rln
+
+
+Alias: $GlotticGapValueSet = https://voicecollab.ai/fhir/ValueSet/glottic-gap
+
+
+Alias: $DegreeValueSet = https://voicecollab.ai/fhir/ValueSet/degree
+
+
+Alias: $CommentsValueSet = https://voicecollab.ai/fhir/ValueSet/comments
+
+
+Alias: $TreatmentValueSet = https://voicecollab.ai/fhir/ValueSet/treatment
+
+
+Alias: $SurgerySubCategoryValueSet = https://voicecollab.ai/fhir/ValueSet/surgery-sub-category
+
+Alias: $ThyroplastyValueSet = https://voicecollab.ai/fhir/ValueSet/thyroplasty 
+
+
+Alias: $VocalFoldInjectionAugmentationValueSet = https://voicecollab.ai/fhir/ValueSet/vocal-fold-injection-augmentation
