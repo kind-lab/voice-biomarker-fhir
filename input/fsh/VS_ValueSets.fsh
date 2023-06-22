@@ -788,3 +788,124 @@ Description:  "The Codes used by adhd"
 * ^status = #active
 * ^date = "2023-06-20"
 * include codes from system $ADHDCodeSystem
+
+// -----------------------Diagnosis------------------------------------
+ValueSet: YesNoNotCertain
+Id: yes-no-not-certain
+Title: "YesNoNotCertain"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $YesNoNotCertainCodeSystem
+
+
+ValueSet: LeftRight
+Id: left-right
+Title: "leftRight"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $LeftRightCodeSystem
+
+
+ValueSet: Etiology
+Id: etiology
+Title: "etiology"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $EtiologyCodeSystem
+
+ValueSet: Iatrogenic
+Id: iatrogenic
+Title: "Iatrogenic"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $IatrogenicCodeSystem
+
+
+ValueSet: TumorRLN
+Id: tumor-rln
+Title: "Tumor RLN"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $TumorRlnCodeSystem
+
+
+ValueSet: GlotticGap
+Id: glottic-gap
+Title: "Glottic Gap"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $GlotticGapCodeSystem 
+
+
+ValueSet: Degree
+Id: degree
+Title: "Degree"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $DegreeCodeSystem
+
+ValueSet: Comments
+Id: comments
+Title: "Comments"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $CommentsCodeSystem
+
+
+ValueSet: Treatment
+Id: treatment
+Title: "treatment"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $TreatmentCodeSystem
+
+
+
+ValueSet: SurgerySubCategory
+Id: surgery-sub-category
+Title: "Surgery Sub Category"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $SurgerySubCategoryCodeSystem
+
+
+
+ValueSet: Thyroplasty
+Id: thyroplasty 
+Title: "Thyroplasty"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $ThyroplastyCodeSystem
+
+
+
+ValueSet: VocalFoldInjectionAugmentation
+Id: vocal-fold-injection-augmentation
+Title: "Vocal Fold Injection Augmentation"
+Description:  "The Codes used by Diagnosis"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $VocalFoldInjectionAugmentationCodeSystem

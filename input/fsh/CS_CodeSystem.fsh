@@ -947,3 +947,181 @@ Description: "The codes required for adhd questionnaire"
 * #3 "Sometimes"
 * #4 "Often"
 * #5 "Very Often"
+
+// ---------------------------Vocal Fold Paralysis------------------------------
+CodeSystem: YesNoNotCertain
+Id: yes-no-not-certain
+Title: "YesNoNotCertain"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #Y "Yes"
+* #N "No"
+* #NC "Not Certain"
+
+CodeSystem: LeftRight
+Id: left-right
+Title: "leftRight"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #L "Left"
+* #R "Right"
+
+CodeSystem: Etiology
+Id: etiology
+Title: "etiology"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 4
+* #1 "Idiopathic"
+* #2 "Latrogenic (surgery/intubation)"
+* #3 "Tumor invading RLN"
+* #4 "Radiation"
+
+
+CodeSystem: Iatrogenic
+Id: iatrogenic
+Title: "iatrogenic"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 6
+* #1 "Thyroidectomy"
+* #2 "ACDF"
+* #3 "Lung surgery"
+* #4 "Heart Surgery"
+* #5 "Intubation"
+* #6 "Brain Surgery"
+
+CodeSystem: TumorRLN
+Id: tumor-rln
+Title: "Tumor invading RLN "
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #1 "Brain"
+* #2 "Chest"
+* #3 "Neck"
+
+CodeSystem: GlotticGap
+Id: glottic-gap
+Title: "Tumor invading RLN "
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #1 "Small"
+* #2 "Moderate"
+* #3 "Large"
+
+
+CodeSystem: Degree
+Id: degree
+Title: "Degree"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "C"
+* #2 "I"
+
+
+CodeSystem: Comments
+Id: comments
+Title: "Comments"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "Normal"
+* #2 "Other (Provide Description)"
+
+
+
+
+
+
+CodeSystem: Treatment
+Id: treatment
+Title: "treatment"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #1 "Surgery"
+* #2 "Speech Therapy"
+* #3 "No Treatment"
+
+
+CodeSystem: SurgerySubCategory
+Id: surgery-sub-category
+Title: "surgery sub-category"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "Thyroplasty"
+* #2 "Vocal fold injection augmentation"
+
+CodeSystem: Thyroplasty 
+Id: thyroplasty 
+Title: "Thyroplasty "
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "Goretex"
+* #2 "Silastic"
+
+CodeSystem: VocalFoldInjectionAugmentation
+Id: vocal-fold-injection-augmentation
+Title: "Vocal Fold Injection Augmentation"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 4
+* #1 "Caha"
+* #2 "Gel"
+* #3 "Hyaluronic Acid augmentation"
+* #4 "Fat Injection"

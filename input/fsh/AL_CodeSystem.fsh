@@ -117,3 +117,33 @@ Alias: $PTSDCodeSystem = https://voicecollab.ai/fhir/CodeSystem/ptsd
 // ADHD
 Alias: $ADHDCodeSystem = https://voicecollab.ai/fhir/CodeSystem/adhd
 
+// Diagnosis
+Alias: $YesNoNotCertainCodeSystem = https://voicecollab.ai/fhir/CodeSystem/yes-no-not-certain
+
+Alias: $LeftRightCodeSystem = https://voicecollab.ai/fhir/CodeSystem/left-right
+
+Alias: $EtiologyCodeSystem = https://voicecollab.ai/fhir/CodeSystem/etiology
+
+Alias: $IatrogenicCodeSystem = https://voicecollab.ai/fhir/CodeSystem/iatrogenic
+
+Alias: $TumorRlnCodeSystem = https://voicecollab.ai/fhir/CodeSystem/tumor-rln
+
+
+Alias: $GlotticGapCodeSystem = https://voicecollab.ai/fhir/CodeSystem/glottic-gap
+
+
+Alias: $DegreeCodeSystem = https://voicecollab.ai/fhir/CodeSystem/degree
+
+
+Alias: $CommentsCodeSystem = https://voicecollab.ai/fhir/CodeSystem/comments
+
+
+Alias: $TreatmentCodeSystem = https://voicecollab.ai/fhir/CodeSystem/treatment
+
+
+Alias: $SurgerySubCategoryCodeSystem = https://voicecollab.ai/fhir/CodeSystem/surgery-sub-category
+
+Alias: $ThyroplastyCodeSystem = https://voicecollab.ai/fhir/CodeSystem/thyroplasty 
+
+
+Alias: $VocalFoldInjectionAugmentationCodeSystem = https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation
