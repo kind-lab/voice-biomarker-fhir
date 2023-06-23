@@ -114,3 +114,7 @@ Alias: $ThyroplastyValueSet = https://voicecollab.ai/fhir/ValueSet/thyroplasty
 
 
 Alias: $VocalFoldInjectionAugmentationValueSet = https://voicecollab.ai/fhir/ValueSet/vocal-fold-injection-augmentation
+
+// Consent ICF USF
+
+Alias: $ConsentUsfQuestionValueSet = https://voicecollab.ai/fhir/ValueSet/consent-usf-question
