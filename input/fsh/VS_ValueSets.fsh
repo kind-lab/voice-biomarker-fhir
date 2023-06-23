@@ -909,3 +909,16 @@ Description:  "The Codes used by Diagnosis"
 * ^status = #active
 * ^date = "2023-06-20"
 * include codes from system $VocalFoldInjectionAugmentationCodeSystem
+
+// ------------------------------Consent-----------------------------------
+
+ValueSet: ConsentUsfQuestion
+Id: consent-usf-question
+Title: "Consent Main ICF (USF)"
+Description:  "The Codes used by Consent Main ICF (USF)"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-20"
+* include codes from system $ConsentUsfQuestionCodeSystem
+
+

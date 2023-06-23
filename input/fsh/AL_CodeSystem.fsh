@@ -147,3 +147,7 @@ Alias: $ThyroplastyCodeSystem = https://voicecollab.ai/fhir/CodeSystem/thyroplas
 
 
 Alias: $VocalFoldInjectionAugmentationCodeSystem = https://voicecollab.ai/fhir/CodeSystem/vocal-fold-injection-augmentation
+
+// Consent ICF USF
+
+Alias: $ConsentUsfQuestionCodeSystem = https://voicecollab.ai/fhir/CodeSystem/consent-usf-question

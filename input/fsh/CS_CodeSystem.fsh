@@ -1125,3 +1125,29 @@ Description: "The codes required for Diagnosis questionnaire"
 * #2 "Gel"
 * #3 "Hyaluronic Acid augmentation"
 * #4 "Fat Injection"
+
+// -------------------------Consent Main ICF -----------------------------
+
+CodeSystem: ConsentUsfQuestion
+Id: consent-usf-question
+Title: "Consent Usf Question"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #1 "I consent to having all data I submit shared only with the researchers of this study."
+* #2 "I consent to having all data I submit shared with
+the researchers of this study and to having my
+audio recordings and de-identified written
+responses shared with other qualified
+researchers."
+* #3 "I consent to having all data I submit shared with
+the researchers of this study and to having my
+audio recordings and de-identified written
+responses shared with other qualified
+researchers as well as publicly in the form of an
+open-source database"
+
