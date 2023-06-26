@@ -2,7 +2,7 @@ Instance: Session
 InstanceOf: Questionnaire
 Usage: #example
 Title: "Session"
-Description: "Quesionnaire"
+Description: "Questionnaire"
 * date = 2023-06-16
 * title = "Session"
 * status = #active

@@ -138,7 +138,7 @@ Description: "Main ICF Combined PDF"
 Instance: AddendumWCM
 InstanceOf: Questionnaire
 Usage: #example
-Title: "AddendumWCM"
+Title: "Addendum WCM"
 Description: "AddendumWCM"
 * date = 2023-06-22
 * title = "Addendum WCM"
