@@ -1,7 +1,7 @@
 Instance: PANASQuestionnaire
 InstanceOf: Questionnaire
 Usage: #example
-Title: "PANASQuestionnaire"
+Title: "PANAS Questionnaire"
 Description: "PANAS Questionnaire"
 
 * date = 2023-06-20

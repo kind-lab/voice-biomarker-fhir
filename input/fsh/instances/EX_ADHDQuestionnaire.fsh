@@ -1,7 +1,7 @@
 Instance: ADHDQuestionnaire
 InstanceOf: Questionnaire
 Usage: #example
-Title: "ADHDQuestionnaire"
+Title: "ADHD Questionnaire"
 Description: "ADHD Questionnaire"
 
 * date = 2023-06-20

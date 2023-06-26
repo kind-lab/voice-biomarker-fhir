@@ -1,8 +1,8 @@
 Instance: AcousticTask
 InstanceOf: Questionnaire
 Usage: #example
-Title: "AcousticTask"
-Description: "Questonnaire"
+Title: "Acoustic Task"
+Description: "Acoustic Task Questionnaire"
 
 * date = 2023-06-16
 * title = "Accoustic Tasks"

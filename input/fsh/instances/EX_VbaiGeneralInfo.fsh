@@ -2,7 +2,7 @@ Instance: GeneralInformation
 InstanceOf: Questionnaire
 Usage: #example
 Title: "General Information Questionnaire"
-Description: "Questonnaire"
+Description: "Questionnaire"
 * date = 2023-06-15
 * title = "General Information Questionnaire"
 * status = #active
