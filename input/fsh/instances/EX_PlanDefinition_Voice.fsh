@@ -65,7 +65,8 @@ Description: "An example of the Voice Cohort's PlanDefinition"
 * action[=].action[=].priority = #routine
 
 
-* action[=].action[+].title = "Overall severity scale "
+* action[=].action[+].title = "Overall Voice Problem severity scale "
 * action[=].action[=].prefix = "B.3.2"
-* action[=].action[=].description = "Describe the severity of auditory-perceptual attributes of a voice problem (0-100)"
+* action[=].action[=].description = "Administer Voice Problem Severity Questionnaire"
 * action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $VoiceProblemSeverity

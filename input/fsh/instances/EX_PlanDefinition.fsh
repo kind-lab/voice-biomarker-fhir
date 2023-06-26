@@ -24,12 +24,13 @@ Description: "An example of a Voice as a Biomarker for PlanDefinition"
 * action[=].action[=].prefix = "1.1.2"
 * action[=].action[=].description = "Enroll participant"
 * action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $Enrollment
 
 * action[=].action[+].title = "Retrieve Consent"
 * action[=].action[=].prefix = "1.1.1"
 * action[=].action[=].description = "Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent."
 * action[=].action[=].priority = #routine
-
+* action[=].action[=].definitionUri = $MainICF
 
 * action[+].title = "Demographics"
 * action[=].prefix = "1.2"
@@ -43,6 +44,7 @@ Description: "An example of a Voice as a Biomarker for PlanDefinition"
 * action[=].prefix = "1.3"
 * action[=].description = "Acoustic tasks across all cohorts"
 * action[=].priority = #routine
+* action[=].definitionUri = $AcousticTask
 
 
 
@@ -171,13 +173,27 @@ Now try again (need that task twice) "
 * action[=].action[=].prefix = "1.5.1"
 * action[=].action[=].description = "Administer PHQ9 Questionnaire"
 * action[=].action[=].priority = #routine
-* action[=].action[=].definitionUri = "https://voicecollab.ai/fhir/Questionnaire/PHQ9schema"
+* action[=].action[=].definitionUri = $PHQ9
 
 * action[=].action[+].title = "GAD7 Questionniare"
 * action[=].action[=].prefix = "1.5.2"
 * action[=].action[=].description = "Administer GAD7 Questionnaire"
 * action[=].action[=].priority = #routine
-* action[=].action[=].definitionUri = "https://voicecollab.ai/fhir/Questionnaire/GAD7schema"
+* action[=].action[=].definitionUri = $GAD7
+
+* action[=].action[+].title = "Voice Perception Questionniare"
+* action[=].action[=].prefix = "1.5.3"
+* action[=].action[=].description = "Administer Voice Perception Questionnaire"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $VoicePerception
+
+
+* action[=].action[+].title = "VHI-10 Questionniare"
+* action[=].action[=].prefix = "1.5.4"
+* action[=].action[=].description = "Administer VHI-10 Questionnaire"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $VHI10
+
 
 
 * action[+].title = "Feedback Pilot"
