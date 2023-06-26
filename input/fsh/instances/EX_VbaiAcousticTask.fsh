@@ -5,7 +5,7 @@ Title: "AcousticTask"
 Description: "Questonnaire"
 
 * date = 2023-06-16
-* title = "Eligible Studies Questionnaire"
+* title = "Accoustic Tasks"
 * status = #active
 
 * item[0].linkId = "acoustic_task_id" 
@@ -27,7 +27,7 @@ Description: "Questonnaire"
 * item[+].linkId = "acoustic_task_status" 
 * item[=].text = "Acoustic Task Status"
 * item[=].type = #choice
-* item[=].answerValueSet = $AcousticTaskStatusCodeSystem
+* item[=].answerValueSet = $AcousticTaskStatusValueSet
 
 * item[+].linkId = "acoustic_task_started_at" 
 * item[=].text = "Acoustic Task Started At"

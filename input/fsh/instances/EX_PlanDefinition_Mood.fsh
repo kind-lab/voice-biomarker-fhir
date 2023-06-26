@@ -85,18 +85,20 @@ Think of a single issue, feeling, emotion or symptom you have been experiencing 
 * action[=].action[=].prefix = "2.3.1"
 * action[=].action[=].description = "Administer PANAS Questionnaire"
 * action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $Panas
 
 
 * action[=].action[+].title = "Custom Affect scale "
 * action[=].action[=].prefix = "2.3.2"
 * action[=].action[=].description = "Administer CAS Questionnaire"
 * action[=].action[=].priority = #routine
-
+* action[=].action[=].definitionUri = $CustomAffectScale
 
 * action[=].action[+].title = "DSM-5 Cross Cutting Measure, Adult Version (23 items)."
 * action[=].action[=].prefix = "2.3.3"
 * action[=].action[=].description = "Administer DSM5 Questionnaire"
 * action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $DSM5
 
 
 * action[=].action[+].title = "Altman Self-Rating Mania Scale"
@@ -157,6 +159,20 @@ Think of a single issue, feeling, emotion or symptom you have been experiencing 
 
     How have you grown in the past? Have you learned important lessons about yourself? "
 * action[=].action[=].priority = #routine
+
+
+* action[=].action[+].title = "PTSD Adult"
+* action[=].action[=].prefix = "2.3.13"
+* action[=].action[=].description = "Administer PTSD Adult Questionnaire"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $PTSD
+
+* action[=].action[+].title = "ADHD Adult"
+* action[=].action[=].prefix = "2.3.14"
+* action[=].action[=].description = "Administer ADHD Adult Questionnaire"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $ADHD
+
 
 
 * action[+].title = "Feedback"
