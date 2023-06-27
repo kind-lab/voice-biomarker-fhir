@@ -13,3 +13,19 @@ Alias: $CustomAffectScale = https://voicecollab.ai/fhir/Questionnaire/CustomAffe
 Alias: $DSM5 = https://voicecollab.ai/fhir/Questionnaire/DSM5
 Alias: $PTSD = https://voicecollab.ai/fhir/Questionnaire/PTSD
 Alias: $ADHD = https://voicecollab.ai/fhir/Questionnaire/ADHDQuestionnaire
+Alias: $ResearcherStatement = https://voicecollab.ai/fhir/Questionnaire/MainICFResearcherStatement
+Alias: $CombinedPDF = https://voicecollab.ai/fhir/Questionnaire/MainICFCombinedPDF
+Alias: $AddendumWCM = https://voicecollab.ai/fhir/Questionnaire/AddendumWCM
+Alias: $ResearcherStatementAddendum = https://voicecollab.ai/fhir/Questionnaire/AddendumWCMResearcherStatement
+Alias: $CombinedPDFAddendum = https://voicecollab.ai/fhir/Questionnaire/AddendumCombinedPDF
+
+// PlanDefinitions
+Alias: $MoodCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionMoodExample
+
+Alias: $VoiceCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceExample
+Alias: $PediatricsCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPedsExample
+
+Alias: $NeurologyCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeurologyExample
+
+
+Alias: $RespiratoryCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionRespiratoryExample

@@ -6,7 +6,7 @@ Description: "An example of a Voice as a Biomarker for PlanDefinition"
 * status = #active
 * date = "2023-04-28"
 * description = "This is a plandefinition for cohort protocol"
-* title = "Cohort Protcol"
+* title = "Cohort Protocol"
 
 * action[0].title = "Consent"
 * action[=].prefix = "1.1"
@@ -26,11 +26,50 @@ Description: "An example of a Voice as a Biomarker for PlanDefinition"
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $Enrollment
 
-* action[=].action[+].title = "Retrieve Consent"
-* action[=].action[=].prefix = "1.1.1"
+* action[=].action[+].title = "Have patient read and sign consent "
+* action[=].action[=].prefix = "1.1.3"
 * action[=].action[=].description = "Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent."
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $MainICF
+
+
+* action[=].action[+].title = "Retreive Researcher Statement"
+* action[=].action[=].prefix = "1.1.4"
+* action[=].action[=].description = ""
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $ResearcherStatement
+
+* action[=].action[+].title = "Upload Combined Consent Document"
+* action[=].action[=].prefix = "1.1.5"
+* action[=].action[=].description = ""
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $CombinedPDF
+
+* action[=].action[+].title = "Have patient sign Addendum "
+* action[=].action[=].prefix = "1.1.6"
+* action[=].action[=].description = ""
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $AddendumWCM
+
+
+* action[=].action[+].title = "Retrieve researcher statement for Addendum"
+* action[=].action[=].prefix = "1.1.7"
+* action[=].action[=].description = ""
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $ResearcherStatementAddendum
+
+
+* action[=].action[+].title = "Upload Combined Document of Addendum"
+* action[=].action[=].prefix = "1.1.8"
+* action[=].action[=].description = ""
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $CombinedPDFAddendum
+
+
+
+
+
+
 
 * action[+].title = "Demographics"
 * action[=].prefix = "1.2"
@@ -200,3 +239,45 @@ Now try again (need that task twice) "
 * action[=].prefix = "1.6"
 * action[=].description = "Questions for feedback for pilot​"
 * action[=].priority = #routine
+
+
+* action[+].title = "Cohort Specific PlanDefinitions"
+* action[=].prefix = "2.x"
+* action[=].description = "PlanDefinitions specifics based on cohort"
+* action[=].priority = #routine
+
+* action[=].action[+].title = "Mood Cohort"
+* action[=].action[=].prefix = "2.1"
+* action[=].action[=].description = "PlanDefinition Mood Cohort"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $MoodCohortPlanDefinition
+
+* action[=].action[+].title = "Voice Cohort"
+* action[=].action[=].prefix = "2.2"
+* action[=].action[=].description = "PlanDefinition Voice Cohort"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $VoiceCohortPlanDefinition
+
+
+* action[=].action[+].title = "Peds Cohort"
+* action[=].action[=].prefix = "2.3"
+* action[=].action[=].description = "PlanDefinition Peds Cohort"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $PediatricsCohortPlanDefinition
+
+* action[=].action[+].title = "Neurology Cohort"
+* action[=].action[=].prefix = "2.4"
+* action[=].action[=].description = "PlanDefinition Neurology Cohort"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $NeurologyCohortPlanDefinition
+
+* action[=].action[+].title = "Respiratory Cohort"
+* action[=].action[=].prefix = "2.5"
+* action[=].action[=].description = "PlanDefinition Respiratory  Cohort"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $RespiratoryCohortPlanDefinition
+
+
+
+
+
