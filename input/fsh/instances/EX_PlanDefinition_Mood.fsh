@@ -9,7 +9,7 @@ Description: "An example of the Mood Cohort's PlanDefinition"
 * title = "Mood Cohort Protocol"
 
 * action[0].title = "Required task across all chorts"
-* action[=].prefix = "1.1 - 1.6"
+* action[=].prefix = "1.1 - 1.8"
 * action[=].description = "List of tasks and actions done across all 5 cohorts"
 * action[=].priority = #routine
 * action[=].definitionUri = "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionExample"
