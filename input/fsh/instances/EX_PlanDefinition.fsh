@@ -8,9 +8,9 @@ Description: "An example of a Voice as a Biomarker for PlanDefinition"
 * description = "This is a plandefinition for cohort protocol"
 * title = "Cohort Protocol"
 
-* action[0].title = "Consent"
+* action[0].title = "Information Gathering & Consent"
 * action[=].prefix = "1.1"
-* action[=].description = "Ask participant for consent"
+* action[=].description = "Prepare participant for protocol by retrieving basic & contact information, eligibility, and consent"
 * action[=].participant.type = #patient
 * action[=].priority = #routine
 
@@ -19,55 +19,70 @@ Description: "An example of a Voice as a Biomarker for PlanDefinition"
 * action[=].action[=].description = "Login for clinician"
 * action[=].action[=].priority = #routine
 
+* action[=].action[+].title = "Retrieve Basic Information"
+* action[=].action[=].prefix = "1.1.2"
+* action[=].action[=].description = "Retrieve Basic Information from Participant"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $BasicInformation
+
+* action[=].action[+].title = "Retrieve Contact Information"
+* action[=].action[=].prefix = "1.1.3"
+* action[=].action[=].description = "Retrieve Contact Information from Participant"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $ContactInformation 
+
+
+* action[=].action[+].title = "Determine Eligibility"
+* action[=].action[=].prefix = "1.1.4"
+* action[=].action[=].description = "Determine Eligibility of Participant"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $EligibilityOfParticipant
+
 
 * action[=].action[+].title = "Enroll participant"
-* action[=].action[=].prefix = "1.1.2"
+* action[=].action[=].prefix = "1.1.5"
 * action[=].action[=].description = "Enroll participant"
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $Enrollment
 
 * action[=].action[+].title = "Have patient read and sign consent "
-* action[=].action[=].prefix = "1.1.3"
+* action[=].action[=].prefix = "1.1.6"
 * action[=].action[=].description = "Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent."
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $MainICF
 
 
 * action[=].action[+].title = "Retreive Researcher Statement"
-* action[=].action[=].prefix = "1.1.4"
+* action[=].action[=].prefix = "1.1.7"
 * action[=].action[=].description = ""
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $ResearcherStatement
 
 * action[=].action[+].title = "Upload Combined Consent Document"
-* action[=].action[=].prefix = "1.1.5"
+* action[=].action[=].prefix = "1.1.8"
 * action[=].action[=].description = ""
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $CombinedPDF
 
 * action[=].action[+].title = "Have patient sign Addendum "
-* action[=].action[=].prefix = "1.1.6"
+* action[=].action[=].prefix = "1.1.9"
 * action[=].action[=].description = ""
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $AddendumWCM
 
 
 * action[=].action[+].title = "Retrieve researcher statement for Addendum"
-* action[=].action[=].prefix = "1.1.7"
+* action[=].action[=].prefix = "1.1.10"
 * action[=].action[=].description = ""
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $ResearcherStatementAddendum
 
 
 * action[=].action[+].title = "Upload Combined Document of Addendum"
-* action[=].action[=].prefix = "1.1.8"
+* action[=].action[=].prefix = "1.1.11"
 * action[=].action[=].description = ""
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $CombinedPDFAddendum
-
-
-
-
 
 
 
