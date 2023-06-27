@@ -110,6 +110,7 @@ Think of a single issue, feeling, emotion or symptom you have been experiencing 
 * action[=].action[=].prefix = "2.3.5"
 * action[=].action[=].description = "Depending on response to DSM-5, administer NSESSS Questionnaire"
 * action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $PTSD
 
 * action[=].action[+].title = "Severity Measure for Social Anxiety Disorder (Social Phobia)—Adult - 10"
 * action[=].action[=].prefix = "2.3.6"
@@ -121,8 +122,7 @@ Think of a single issue, feeling, emotion or symptom you have been experiencing 
 * action[=].action[=].prefix = "2.3.7"
 * action[=].action[=].description = "Depending on response to DSM-5, administer ASRS-v1.1 Questionnaire"
 * action[=].action[=].priority = #routine
-
-
+* action[=].action[=].definitionUri = $ADHD
 
 * action[=].action[+].title = "Well-being: Secure Flourishing Index"
 * action[=].action[=].prefix = "2.3.8"
@@ -159,21 +159,6 @@ Think of a single issue, feeling, emotion or symptom you have been experiencing 
 
     How have you grown in the past? Have you learned important lessons about yourself? "
 * action[=].action[=].priority = #routine
-
-
-* action[=].action[+].title = "PTSD Adult"
-* action[=].action[=].prefix = "2.3.13"
-* action[=].action[=].description = "Administer PTSD Adult Questionnaire"
-* action[=].action[=].priority = #routine
-* action[=].action[=].definitionUri = $PTSD
-
-* action[=].action[+].title = "ADHD Adult"
-* action[=].action[=].prefix = "2.3.14"
-* action[=].action[=].description = "Administer ADHD Adult Questionnaire"
-* action[=].action[=].priority = #routine
-* action[=].action[=].definitionUri = $ADHD
-
-
 
 * action[+].title = "Feedback"
 * action[=].prefix = "2.4"
