@@ -21,7 +21,8 @@ Alias: $CombinedPDFAddendum = https://voicecollab.ai/fhir/Questionnaire/Addendum
 Alias: $BasicInformation = https://voicecollab.ai/fhir/Questionnaire/GeneralInformation
 Alias: $ContactInformation = https://voicecollab.ai/fhir/Questionnaire/ContactInformation
 Alias: $EligibilityOfParticipant = https://voicecollab.ai/fhir/Questionnaire/EligibleStudies
-
+Alias: $Session = https://voicecollab.ai/fhir/Questionnaire/Session
+Alias: $VocalFoldParalysis = https://voicecollab.ai/fhir/Questionnaire/VocalFoldParalysis
 // PlanDefinitions
 Alias: $MoodCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionMoodExample
 
