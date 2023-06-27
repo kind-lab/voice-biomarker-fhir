@@ -6,7 +6,7 @@ Description: "An example of a Voice as a Biomarker for  Neurology PlanDefinition
 * status = #active
 * date = "2023-04-28"
 * description = "This is a plandefinition for Neurology cohort protocol"
-* title = "Neurology Cohort Protcol"
+* title = "Neurology Cohort Protocol"
 
 
 * action[0].title = "Required task across all chorts"

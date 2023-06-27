@@ -6,7 +6,7 @@ Description: "An example of a Voice as a Biomarker for Peds PlanDefinition"
 * status = #active
 * date = "2023-04-28"
 * description = "This is a plandefinition for Pediatrics cohort protocol"
-* title = "Pediatrics Cohort Protcol"
+* title = "Pediatrics Cohort Protocol"
 
 
 * action[0].title = "Required task across all chorts"

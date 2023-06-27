@@ -6,7 +6,7 @@ Description: "An example of the Mood Cohort's PlanDefinition"
 * status = #active
 * date = "2023-04-28"
 * description = "This is a plandefinition for Mood cohort protocol"
-* title = "Mood Cohort Protcol"
+* title = "Mood Cohort Protocol"
 
 * action[0].title = "Required task across all chorts"
 * action[=].prefix = "1.1 - 1.6"

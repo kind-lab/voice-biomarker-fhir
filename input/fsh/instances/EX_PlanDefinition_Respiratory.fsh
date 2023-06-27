@@ -6,7 +6,7 @@ Description: "An example of a Voice as a Biomarker for Respiratory Cohort PlanDe
 * status = #active
 * date = "2023-04-28"
 * description = "This is a plandefinition for Respiratory cohort protocol"
-* title = "Respiratory Cohort Protcol"
+* title = "Respiratory Cohort Protocol"
 
 
 * action[0].title = "Required task across all chorts"

@@ -6,7 +6,7 @@ Description: "An example of the Voice Cohort's PlanDefinition"
 * status = #active
 * date = "2023-04-28"
 * description = "This is a plandefinition for Voice cohort protocol"
-* title = "Voice Cohort Protcol"
+* title = "Voice Cohort Protocol"
 
 
 * action[0].title = "Required task across all chorts"
