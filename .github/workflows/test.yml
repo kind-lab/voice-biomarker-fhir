@@ -1,0 +1,10 @@
+name: Build the IG
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: qligier/fhir-ig-action@v0.2.0
+        with:
+          sushi: "2.7.0"
