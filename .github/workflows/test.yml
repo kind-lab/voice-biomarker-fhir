@@ -40,6 +40,13 @@ jobs:
           sushi --version
           sushi .
 
+      - name: "Download the IG Publisher"
+        shell: bash
+        run: |
+          mkdir ./input-cache
+          curl -sS -L https://github.com/HL7/fhir-ig-publisher/releases/${{ inputs.ig-publisher }}/download/publisher.jar -o ./input-cache/publisher.jar
+          chmod +x ./input-cache/publisher.jar
+
     # Download the IG Publisher
       - name: "Download the IG Publisher"
         shell: bash
