@@ -48,12 +48,6 @@ jobs:
           chmod +x ./input-cache/publisher.jar
 
     # Download the IG Publisher
-      - name: "Download the IG Publisher"
-        shell: bash
-        run: |
-          ./_updatePublisher.sh
-
-    # Download the IG Publisher
       - name: "Create IG"
         shell: bash
         run: |
