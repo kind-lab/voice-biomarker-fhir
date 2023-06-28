@@ -4,7 +4,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Git Repository
       - uses: actions/checkout@v3
+
       - name: "Install Java"
         uses: actions/setup-java@v3
         with:
@@ -41,13 +43,13 @@ jobs:
           sushi --version
 
     # Download the IG Publisher
-    - name: "Download the IG Publisher"
-      shell: bash
-      run: |
+      - name: "Download the IG Publisher"
+        shell: bash
+        run: |
           ./_updatePublisher.sh
 
     # Download the IG Publisher
-    - name: "Create IG"
-      shell: bash
-      run: |
+      - name: "Create IG"
+        shell: bash
+        run: |
           ./_genonce.sh
