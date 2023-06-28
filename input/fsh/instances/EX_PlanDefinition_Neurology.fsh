@@ -40,7 +40,7 @@ Description: "An example of a Voice as a Biomarker for  Neurology PlanDefinition
 * action[=].action[=].description = "You will have to speak a series of (I) random, non-repeating letters or numbers, or (ii) items from a given category (e.g., cities, animals, etc.), with the goal of maximizing the number of items. (time limit: 60 seconds). "
 
 
-* action[=].action[+].title = "Winograd schemas link "
+* action[=].action[+].title = "Winograd schemas link"
 * action[=].action[=].prefix = "B.1 Task 5"
 * action[=].action[=].description = "Read each sentence, and answer the question by selecting one of the options:
     
