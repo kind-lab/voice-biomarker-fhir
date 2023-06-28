@@ -44,9 +44,7 @@ jobs:
         shell: bash
         run: |
           mkdir ./input-cache
-          curl -sS -L https://github.com/HL7/fhir-ig-publisher/releases/${{ inputs.ig-publisher }}/download/publisher.jar -o ./input-cache/publisher.jar
-          chmod +x ./input-cache/publisher.jar
-
+          ./_updatePublisher.sh
     # Download the IG Publisher
       - name: "Create IG"
         shell: bash
