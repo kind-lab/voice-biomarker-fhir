@@ -36,7 +36,7 @@ jobs:
       - name: "Install SUSHI"
         shell: bash
         run: |
-          npm install -g fsh-sushi@${{ 2.7.0 }}
+          npm install -g fsh-sushi@2.7.0
           sushi --version
           sushi .
 
