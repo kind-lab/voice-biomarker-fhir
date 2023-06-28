@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - uses: actions/setup-java@v3
         with:
           distribution: "temurin"
@@ -36,8 +36,9 @@ jobs:
       - name: "Install SUSHI"
         shell: bash
         run: |
-          npm install -g fsh-sushi@${{ inputs.sushi }}
+          npm install -g fsh-sushi@${{ 2.7.0 }}
           sushi --version
+          sushi .
 
     # Download the IG Publisher
       - name: "Download the IG Publisher"
