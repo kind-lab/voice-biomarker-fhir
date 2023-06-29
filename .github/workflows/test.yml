@@ -53,3 +53,5 @@ jobs:
         shell: bash
         run: |
           java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
+          cd output/
+          ls | wc -l
