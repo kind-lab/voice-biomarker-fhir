@@ -10,7 +10,6 @@ jobs:
 
       - uses: actions/setup-java@v3
         with:
-          distribution: "temurin"
           java-version: "17"
 
     # Install ruby
@@ -52,4 +51,4 @@ jobs:
       - name: "Create IG"
         shell: bash
         run: |
-          ./_genonce.sh
+          java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
