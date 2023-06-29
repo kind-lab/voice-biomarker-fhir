@@ -52,4 +52,4 @@ jobs:
       - name: "Create IG"
         shell: bash
         run: |
-          java -ms1024m -mx30g -jar input-cache/publisher.jar ig.ini
+          ./_genonce.sh
