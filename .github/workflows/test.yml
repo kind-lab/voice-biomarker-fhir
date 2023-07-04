@@ -56,7 +56,7 @@ jobs:
           java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
           mkdir ./vbai-fhir
           echo "Vbai Fhhir File:"
-          cp -r ./output ./vbai-fhir 
-          cd vbai-fhir/
+          cp -r ./output/* ./vbai-fhir 
+          cd ./vbai-fhir
           ls | wc -l
      
