@@ -1,8 +1,9 @@
 name: Build the IG
-on: [release]
+on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+    container: ubuntu
     strategy:
       fail-fast: false
     steps:
@@ -53,6 +54,11 @@ jobs:
         shell: bash
         run: |
           java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
+          mkdir ./vbai-fhir
           cd output/
+          ls | wc -l
+          cd ..
+          cp -r ./output ./vbai-fhir 
+          cd vbai-fhir/
           ls | wc -l
      
