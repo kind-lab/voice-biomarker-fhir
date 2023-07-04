@@ -67,7 +67,7 @@ jobs:
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
         with:
           source-directory: 'vbai-fhir'
-          destination-github-username: 'Evan8456'
+          destination-github-username: 'kind-lab'
           destination-repository-name: 'kind-lab.github.io'
        
           
