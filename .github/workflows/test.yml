@@ -59,4 +59,16 @@ jobs:
           cp -r ./output/* ./vbai-fhir 
           cd ./vbai-fhir
           ls | wc -l
+      
+      # Download the IG Publisher
+      - name: Deploy to external repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env: 
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+        with:
+          source-directory: 'vbai-fhir'
+          destination-github-username: 'Evan8456'
+          destination-repository-name: 'kind-lab.github.io'
+       
+          
      
