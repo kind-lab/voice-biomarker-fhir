@@ -54,11 +54,11 @@ jobs:
         shell: bash
         run: |
           java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
-          mkdir ./vbai-fhir
-          echo "Vbai Fhhir File:"
-          cp -r ./output/* ./vbai-fhir 
-          cd ./vbai-fhir
-          ls | wc -l
+          mkdir -p ./git-output/vbai-fhir
+          cp -r ./output/* ./git-output/vbai-fhir 
+          echo "Kind Lab GitHub Pages for external webpages." > ./git-output/README.md
+      
+
       
       # Download the IG Publisher
       - name: Deploy to external repository
@@ -66,7 +66,7 @@ jobs:
         env: 
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
         with:
-          source-directory: 'vbai-fhir'
+          source-directory: 'git-output'
           destination-github-username: 'kind-lab'
           destination-repository-name: 'kind-lab.github.io'
        
