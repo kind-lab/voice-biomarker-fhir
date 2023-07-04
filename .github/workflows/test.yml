@@ -60,7 +60,7 @@ jobs:
       
 
       
-      # Download the IG Publisher
+      # Deploy IG
       - name: Deploy to external repository
         uses: cpina/github-action-push-to-another-repository@main
         env: 
