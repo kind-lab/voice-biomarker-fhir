@@ -44,10 +44,6 @@ Description: "Main ICF"
 * item[=].text = ""
 * item[=].type = #display
 
-* item[+].linkId = "page_1" 
-* item[=].text = ""
-* item[=].type = #display
-
 * item[+].linkId = "consent_usf_question" 
 * item[=].text = "Consent to Take Part in Research and Authorization for the
 Collection, Use and Disclosure of Health Information:I

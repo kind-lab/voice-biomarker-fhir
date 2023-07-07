@@ -20,7 +20,7 @@ Description: "DSM5 Questionnaire"
 * item[=].text = "Questionnaire Completed At"
 * item[=].type = #string
 
-* item[+].linkId = "" 
+* item[+].linkId = "questions" 
 * item[=].text = "During the past TWO (2) WEEKS, how much (or how
 often) have you been bothered by the following problems? 0=None (Not
 at all), 1=Slight (Rare, less than a day or two), 2=Mild (Several days),
