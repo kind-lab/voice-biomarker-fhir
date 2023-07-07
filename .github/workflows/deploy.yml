@@ -1,7 +1,7 @@
 name: Build the IG
-on: [release, push]
+on: [release]
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
 
     strategy:
