@@ -64,6 +64,7 @@ Description: "For Capturing a users highest education level"
 * $ChildEdcationCodeSystem#G10 "Grade 10"
 * $ChildEdcationCodeSystem#G11 "Grade 11"
 * $ChildEdcationCodeSystem#G12 "Grade 12"
+* ^expansion.timestamp = "2023-07-07"
 * ^expansion.contains[0].system = $ChildEdcationCodeSystem
 * ^expansion.contains[=].code = #NFE
 * ^expansion.contains[=].display = "No Formal Education"
@@ -691,7 +692,7 @@ Description:  "The Codes used by recording"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-16"
-* include codes from system $RecordingValueSet
+* include codes from system $RecordingCodeSystem
 
 // -----------------------VHI-10------------------------------------------
 ValueSet: VoiceHandicapIndex

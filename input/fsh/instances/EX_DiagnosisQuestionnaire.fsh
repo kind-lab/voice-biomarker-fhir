@@ -71,7 +71,7 @@ Severely Deviant"
 * item[=].text = "Roughness 0-100"
 * item[=].type = #integer
 
-* item[+].linkId = "diagnosis_degree_r" 
+* item[+].linkId = "diagnosis_degree_r_2" 
 * item[=].text = "Roughness"
 * item[=].type = #choice
 * item[=].answerValueSet = $DegreeValueSet
@@ -80,17 +80,17 @@ Severely Deviant"
 * item[=].text = "Breathiness 0-100"
 * item[=].type = #integer
 
-* item[+].linkId = "diagnosis_degree_b" 
+* item[+].linkId = "diagnosis_degree_b_2" 
 * item[=].text = "Breathiness"
 * item[=].type = #choice
 * item[=].answerValueSet = $DegreeValueSet
 
 
-* item[+].linkId = "diagnosis_degree_b_2" 
+* item[+].linkId = "diagnosis_degree_s" 
 * item[=].text = "Strain 0-100"
 * item[=].type = #integer
 
-* item[+].linkId = "diagnosis_degree_b_2" 
+* item[+].linkId = "diagnosis_degree_s_2" 
 * item[=].text = "Strain"
 * item[=].type = #choice
 * item[=].answerValueSet = $DegreeValueSet

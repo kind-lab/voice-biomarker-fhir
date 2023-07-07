@@ -31,7 +31,7 @@ Description: "Enrollment Questionnaire"
 * item[=].type = #open-choice
 * item[=].text = "What is your primary language?" 
 * item[=].answerValueSet = $EnrollmentSelectLanguageValueSet
-* item[=].answerOption[0].valueString = "Other, Please Specify" 
+
 
 
 
