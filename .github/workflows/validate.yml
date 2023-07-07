@@ -1,7 +1,7 @@
 name: Build the IG
 on: [pull_request]
 jobs:
-  deploy:
+  validate:
     runs-on: ubuntu-latest
 
     strategy:
