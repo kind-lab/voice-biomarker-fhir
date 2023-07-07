@@ -121,23 +121,7 @@ Title: "Disability Status"
 Description: "Valueset for capturing disability status"
 * ^status = #draft
 * ^experimental = true
-* $DisabilityStatusCodeSystem#AB "Able-bodied"
-* $DisabilityStatusCodeSystem#DAW "Disabled, able to work"
-* $DisabilityStatusCodeSystem#DUW "Disabled, unable to work"
-* $DisabilityStatusCodeSystem#PNA "Prefer not to answer"
-* ^expansion.timestamp = "2023-05-11T10:00:00Z"
-* ^expansion.contains[0].system = $DisabilityStatusCodeSystem
-* ^expansion.contains[=].code = #AB
-* ^expansion.contains[=].display = "Able-bodied"
-* ^expansion.contains[+].system = $DisabilityStatusCodeSystem
-* ^expansion.contains[=].code = #DAW
-* ^expansion.contains[=].display = "Disabled, able to work"
-* ^expansion.contains[+].system = $DisabilityStatusCodeSystem
-* ^expansion.contains[=].code = #DUW
-* ^expansion.contains[=].display = "Disabled, unable to work"
-* ^expansion.contains[+].system = $DisabilityStatusCodeSystem
-* ^expansion.contains[=].code = #PNA
-* ^expansion.contains[=].display = "Prefer not to answer"
+* include codes from system $DisabilityStatusCodeSystem
 
 
 ValueSet: DisabilityType
@@ -146,43 +130,7 @@ Title: "Disability Type"
 Description: "Valueset for capturing disability status"
 * ^status = #draft
 * ^experimental = true
-* $DisabilityTypeCodeSystem#V "Vision"
-* $DisabilityTypeCodeSystem#M "Movement"
-* $DisabilityTypeCodeSystem#T "Thinking"
-* $DisabilityTypeCodeSystem#R "Remembering"
-* $DisabilityTypeCodeSystem#L "Learning"
-* $DisabilityTypeCodeSystem#C "Communicating"
-* $DisabilityTypeCodeSystem#H "Hearing"
-* $DisabilityTypeCodeSystem#MH "Mental Health"
-* $DisabilityTypeCodeSystem#SR "Social Relationships"
-* ^expansion.timestamp = "2023-05-11T10:00:00Z"
-* ^expansion.contains[0].system = $DisabilityTypeCodeSystem
-* ^expansion.contains[=].code = #V
-* ^expansion.contains[=].display = "Vision"
-* ^expansion.contains[+].system = $DisabilityTypeCodeSystem
-* ^expansion.contains[=].code = #DAW
-* ^expansion.contains[=].display = "Movement"
-* ^expansion.contains[+].system = $DisabilityTypeCodeSystem
-* ^expansion.contains[=].code = #DUW
-* ^expansion.contains[=].display = "Thinking"
-* ^expansion.contains[+].system = $DisabilityTypeCodeSystem
-* ^expansion.contains[=].code = #R
-* ^expansion.contains[=].display = "Remembering"
-* ^expansion.contains[+].system = $DisabilityTypeCodeSystem
-* ^expansion.contains[=].code = #L
-* ^expansion.contains[=].display = "Learning"
-* ^expansion.contains[+].system = $DisabilityTypeCodeSystem
-* ^expansion.contains[=].code = #C
-* ^expansion.contains[=].display = "Communicating"
-* ^expansion.contains[+].system = $DisabilityTypeCodeSystem
-* ^expansion.contains[=].code = #H
-* ^expansion.contains[=].display = "Hearing"
-* ^expansion.contains[+].system = $DisabilityTypeCodeSystem
-* ^expansion.contains[=].code = #MH
-* ^expansion.contains[=].display = "Mental Health"
-* ^expansion.contains[+].system = $DisabilityTypeCodeSystem
-* ^expansion.contains[=].code = #SR
-* ^expansion.contains[=].display = "Social Relationships"
+* include codes from system $DisabilityTypeCodeSystem
 
 
 ValueSet: EmploymentStatus
@@ -235,24 +183,7 @@ Title: "Financial Assistance"
 Description: "Valueset for capturing Financial Assistance Programs user is using"
 * ^status = #draft
 * ^experimental = true
-* $FinancialAssistanceCodeSystem#SSI "Supplemental Security Income (SSI)"
-* $FinancialAssistanceCodeSystem#SNAP "Supplemental Nutrition Assistance Program (SNAP)"
-* $FinancialAssistanceCodeSystem#WIC "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)"
-* $FinancialAssistanceCodeSystem#TANFGA "Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) "
-* ^expansion.timestamp = "2023-05-11T10:00:00Z"
-* ^expansion.contains[0].system = $DisabilityStatusCodeSystem
-* ^expansion.contains[=].code = #SSI 
-* ^expansion.contains[=].display = "Supplemental Security Income (SSI)"
-* ^expansion.contains[+].system = $DisabilityStatusCodeSystem
-* ^expansion.contains[=].code = #SNAP
-* ^expansion.contains[=].display = "Supplemental Nutrition Assistance Program (SNAP)"
-* ^expansion.contains[+].system = $DisabilityStatusCodeSystem
-* ^expansion.contains[=].code = #WIC
-* ^expansion.contains[=].display = "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)"
-* ^expansion.contains[+].system = $DisabilityStatusCodeSystem
-* ^expansion.contains[=].code = #TANFGA
-* ^expansion.contains[=].display = "Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) "
-
+* include codes from system $FinancialAssistanceCodeSystem
 
 ValueSet: ImmigrationStatus
 Id: immigration-status
@@ -384,39 +315,7 @@ Title: "Transportation Type"
 Description: "Valueset for capturing Transportation Type"
 * ^status = #draft
 * ^experimental = true
-* $TransportationTypeCodeSystem#P "Personal vehicle"
-* $TransportationTypeCodeSystem#S "Shared vehicle"
-* $TransportationTypeCodeSystem#PT "Public transportation"
-* $TransportationTypeCodeSystem#R "Ride with someone else"
-* $TransportationTypeCodeSystem#RS "Ride service"
-* $TransportationTypeCodeSystem#M "Bicycle/Motorbike"
-* $TransportationTypeCodeSystem#W "Walking"
-* $TransportationTypeCodeSystem#O "Other, please specify"
-* ^expansion.timestamp = "2023-05-11T10:00:00Z"
-* ^expansion.contains[0].system = $TransportationTypeCodeSystem
-* ^expansion.contains[=].code = #p
-* ^expansion.contains[=].display = "Personal vehicle"
-* ^expansion.contains[+].system = $TransportationTypeCodeSystem
-* ^expansion.contains[=].code = #S
-* ^expansion.contains[=].display = "Shared vehicle"
-* ^expansion.contains[+].system = $TransportationTypeCodeSystem
-* ^expansion.contains[=].code = #PT
-* ^expansion.contains[=].display = "Public transportation"
-* ^expansion.contains[+].system = $TransportationTypeCodeSystem
-* ^expansion.contains[=].code = #R
-* ^expansion.contains[=].display = "Ride with someone else"
-* ^expansion.contains[+].system = $TransportationTypeCodeSystem
-* ^expansion.contains[=].code = #RS
-* ^expansion.contains[=].display = "Ride service"
-* ^expansion.contains[+].system = $TransportationTypeCodeSystem
-* ^expansion.contains[=].code = #M
-* ^expansion.contains[=].display = "Bicycle/Motorbike"
-* ^expansion.contains[+].system = $TransportationTypeCodeSystem
-* ^expansion.contains[=].code = #W
-* ^expansion.contains[=].display = "Walking"
-* ^expansion.contains[+].system = $TransportationTypeCodeSystem
-* ^expansion.contains[=].code = #O
-* ^expansion.contains[=].display = "Other, please specify"
+* include codes from system $TransportationTypeCodeSystem
 
 ValueSet: GenderIdentity
 Id: gender-identity
