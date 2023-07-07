@@ -13,15 +13,34 @@ Description: "An example of the Voice Cohort's PlanDefinition"
 * action[=].prefix = "1.1 - 1.8"
 * action[=].description = "List of tasks and actions done across all 5 cohorts"
 * action[=].priority = #routine
-* action[=].definitionUri = "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionExample"
+* action[=].definitionUri = $DefaultPlanDefinition
 
 
-* action[+].title = "Part B Voice Disorders"
+* action[+].title = "Patient Questionnaire"
 * action[=].prefix = "B"
+* action[=].description = "Questions for the patient to answer"
+* action[=].priority = #routine
+* action[=].definitionUri = $PatientQuestionnaire
+
+
+* action[+].title = "VHI-10"
+* action[=].prefix = "B.2"
+* action[=].description = "Have patient complete VHI-10 Questionnaire"
+* action[=].priority = #routine
+* action[=].definitionUri = $VHI10
+
+
+* action[+].title = "CAPE-V"
+* action[=].prefix = "B.3"
+* action[=].description = "Have patient complete CAPE-V"
+* action[=].priority = #routine
+* action[=].definitionUri = $CAPEV
+
+
+* action[+].title = " Voice Disorders"
+* action[=].prefix = "B.1"
 * action[=].description = "Acoustic Tasks specific to voice cohort ​"
 * action[=].priority = #routine
-
-
 
 * action[=].action[0].title = "Task 1: Caterpillar passage     Read the following passage using your normal voice:
     Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever! "
