@@ -33,3 +33,9 @@ Alias: $NeurologyCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefiniti
 
 
 Alias: $RespiratoryCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionRespiratoryExample
+
+Alias: $PatientQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PatientQuestions
+
+Alias: $DefaultPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionExample
+
+Alias: $CAPEV = https://voicecollab.ai/fhir/Questionnaire/CAPEVQuestionnaire
