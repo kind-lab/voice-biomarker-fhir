@@ -1,7 +1,7 @@
 '''
 script to convert repro scheme to fsh for fhir questionnaire
 Not perfect conversion
-#example: python reprotofsh.py <mode: 'single' or 'group'> <reproschema_folder> <output_file>
+#example: python reprotofsh.py <mode: 'single' or 'group'> <reproschema_folder> <output_file> <version: valueset or options>
 must be in the file structure specified in:
 https://github.com/ReproNim/reproschema-library/tree/43e7afab312596708c0ad4dfd45b69c8904088ae/activities
 
@@ -11,7 +11,68 @@ import sys
 import os
 import logging
 
-def add_options(file_contents, question_json, questionnaire):
+
+def generate_codeSystem(options_json, linkId,questionnaire):
+    codeSystem = ""
+    id = questionnaire + linkId
+    codeSystem += "\nCodeSystem: " + id
+    codeSystem += "\nId: " + id
+    codeSystem += "\nTitle: " + questionnaire+ linkId
+    codeSystem += "\nDescription: " + questionnaire + linkId
+    codeSystem += "\n* ^version = " + "1.0.0"
+    codeSystem += "\n* ^status = " + "#active" + "\n* ^caseSensitive = 'true' \n* ^content = #complete"
+
+    codeSystem += "\n* ^count = " + str(len(options_json))
+
+
+    for j in options_json["choices"]:
+        if "name" in j and j["name"] != "":
+            choice = j["name"]
+        else:
+            choice = j["value"]
+        
+        if choice and not isinstance(choice, int) and "en" in choice and isinstance(choice, dict):
+            choice = choice["en"]
+        if choice and j == options_json["choices"][0]:
+            codeSystem += ("\n* #" + choice.replace(" ", "") + " " \
+                + "'" + str(choice)+ "'")
+        else:
+            codeSystem += ("\n* #" + choice.replace(" ", "") + " " \
+                + "'" + str(choice)+ "'")
+
+    code_system_file = open("code_system.fsh", "a+")
+    code_system_file.write(codeSystem + "\n")
+    code_system_file.close()
+    alias = open("alias.fsh", "a+")
+    alias_output = "\nAlias: $" + id+ "CodeSystem = " + "https://voicecollab.ai/fhir/CodeSystem/" + id
+    alias.write(alias_output+ "\n")
+    alias.close()
+    
+    return (id)
+
+
+        
+def generate_valueSet(file_contents, options, linkId,questionnaire):
+    id = generate_codeSystem(options, linkId,questionnaire)
+    valueset = "\nValueSet: " + id+ "\nId: " + id + "\nTitle: '"+ id + "'" + "\nDescription: 'test'" 
+    valueset += "\n* ^version = '1.0.0'" + "\n* ^status = #active" + "\n* ^date = '2023-05-11'"
+    valueset += "\n* include codes from system " + "$" + id + "CodeSystem"
+    value_set_file = open("valueSet.fsh", "a+")
+    value_set_file.write(valueset+ "\n")
+    value_set_file.close()
+    alias = open("alias.fsh", "a+")
+    alias_output = "\nAlias: $" + id+ "ValueSet = " + "https://voicecollab.ai/fhir/ValueSet/" + id
+    alias.write(alias_output+ "\n")
+    alias.close()
+    file_contents += "\n* item[=].item[=].answerValueSet = " + "$" + id + "ValueSet"
+    return file_contents
+
+
+
+
+
+
+def add_options(file_contents, question_json, questionnaire, linkId, mode):
     '''
     Helper function to add options to each question.
     '''
@@ -27,28 +88,34 @@ def add_options(file_contents, question_json, questionnaire):
      # case where there are not options ie free text
     else:
         return file_contents
+    
+    if mode == "options":
+        for j in options_json["choices"]:
+            # edge case where json is missing name tag
+            if "name" in j and j["name"] != "":
+                choice = j["name"]
+            else:
+                choice = j["value"]
+        
+            if choice and not isinstance(choice, int) and "en" in choice and isinstance(choice, dict):
+                choice = choice["en"]
+            if choice and j == options_json["choices"][0]:
+                file_contents += ("\n* item[=].item[=].answerOption[0].valueString = " \
+                    + "'" + str(choice)+ "'")
+            else:
+                file_contents += ("\n* item[=].item[=].answerOption[+].valueString = " \
+                    + "'" + str(choice)+ "'")
+        return file_contents
 
+    elif mode == "valueset":
+        file_contents = generate_valueSet(file_contents, options_json, linkId,questionnaire)
 
-    for j in options_json["choices"]:
-        # edge case where json is missing name tag
-        if "name" in j and j["name"] != "":
-            choice = j["name"]
-        else:
-            choice = j["value"]
-     
-        if choice and not isinstance(choice, int) and "en" in choice and isinstance(choice, dict):
-            choice = choice["en"]
-        if choice and j == options_json["choices"][0]:
-            file_contents += ("\n* item[=].item[=].answerOption[0].valueString = " \
-                + "'" + str(choice)+ "'")
-        else:
-            file_contents += ("\n* item[=].item[=].answerOption[+].valueString = " \
-                + "'" + str(choice)+ "'")
+        
 
     return file_contents
 
 
-def convert_to_fsh(questionnaire, output_file):
+def convert_to_fsh(questionnaire, output_file, mode):
     '''
     Function used to convert reproschema questionnaire into a fsh file
     '''
@@ -120,7 +187,7 @@ def convert_to_fsh(questionnaire, output_file):
 
         # add options
         if "responseOptions" in question_json:
-            file_contents = add_options(file_contents, question_json, questionnaire)
+            file_contents = add_options(file_contents, question_json, questionnaire, question_json["@id"],  mode)
 
 
     file_contents = file_contents.replace("'", '"')
@@ -134,13 +201,19 @@ def convert_to_fsh(questionnaire, output_file):
 if __name__ == '__main__':
     error = open("error_file.txt", "w+")
     file_error = ""
+    code_system = open("code_system.fsh", "w+")
+    code_system.close()
+    value_set = open("valueSet.fsh", "w+")
+    value_set.close()
+    alias = open("alias.fsh", "w+")
+    alias.close()
     if len(sys.argv) == 1:
         sys.exit("Please select either single or group mode")
-    elif sys.argv[1] == "single" and len(sys.argv) == 4:
+    elif sys.argv[1] == "single" and len(sys.argv) == 5:
         
         #convert_to_fsh(sys.argv[2], sys.argv[3])
         try:
-            convert_to_fsh(sys.argv[2] ,sys.argv[3])
+            convert_to_fsh(sys.argv[2] ,sys.argv[3], sys.argv[4])
         except Exception as e:
             file_error += "\n" + str(sys.argv[2])
             logging.error(e)
@@ -161,7 +234,7 @@ if __name__ == '__main__':
             else:
                 # logs all folders which caused errors
                 try:
-                    convert_to_fsh(folder ,file_name)
+                    convert_to_fsh(folder ,file_name, sys.argv[4])
                 except Exception as e:
                     file_error += "\n" + str(folder)
                     logging.error(e)
