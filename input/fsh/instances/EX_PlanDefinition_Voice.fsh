@@ -38,54 +38,62 @@ Description: "An example of the Voice Cohort's PlanDefinition"
 
 
 * action[+].title = " Voice Disorders"
-* action[=].prefix = "B.1"
+* action[=].prefix = "B.4"
 * action[=].description = "Acoustic Tasks specific to voice cohort ​"
 * action[=].priority = #routine
 
-* action[=].action[0].title = "Task 1: Caterpillar passage     Read the following passage using your normal voice:
-    Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever! "
-* action[=].action[=].prefix = "B.1 Task 1"
-* action[=].action[=].description = "This is a standardized passage that contains all the important words to test your articulation"
+* action[=].action[0].title = "Prolonged vowel (1)"
+* action[=].action[=].prefix = "B.4 Task 1"
+* action[=].action[=].description = "Relax, take a deep breath, and sustain the sound “ah” for as long aspossible."
 
 
 
-* action[=].action[+].title = "Task 2: Cape V sentences "
-* action[=].action[=].prefix = "B.1 Task 2"
-* action[=].action[=].description = "Please read the following sentences out loud: 
-·The blue spot is on the key again. 
-·How hard did he hit him? 
-·We were away a year ago. 
-·We eat eggs every easter. 
-·My mama makes lemon muffins. 
-·Peter will keep at the peak "
+* action[=].action[+].title = "Prolonged vowel (2)"
+* action[=].action[=].prefix = "B.4 Task 2"
+* action[=].action[=].description = "Chant the numbers 1 through 3 and say “ah” for 3-5 seconds."
 
 
 
-* action[=].action[+].title = "Task 3: Free Speechs"
-* action[=].action[=].prefix = "B.1 Task 3"
-* action[=].action[=].description = "Please answer the following questions. You can read the question, then click on the recording button when you are ready to answer. You can keep talking until the timer is up. (Leave the timer for 30 seconds) 
--  Can you explain your voice/speech problems and why you consulted a physician for it?"
+* action[=].action[+].title = "Sentences CAPE-V"
+* action[=].action[=].prefix = "B.4 Task 3"
+* action[=].action[=].description = "Please read the sentences on your screen: 1. The blue spot is on the key again 2. How hard did he hit him? 3. We were
+away a year ago. 4. We eat eggs every easter. 5. My mama makes lemon muffins. 6. Peter will keep at the peak"
 
+* action[=].action[+].title = "Connected speech passage Reading 'Rainbow passage'"
+* action[=].action[=].prefix = "B.4 Task 4"
+* action[=].action[=].description = "Please read the passage on your screen: 
+When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow. The rainbow is a division of white light into many beautiful colors. These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon."
+
+* action[=].action[+].title = "Pitch range & intensity"
+* action[=].action[=].prefix = "B.4 Task 5"
+* action[=].action[=].description = "Using the sound
+'e', glide from your
+lowest pitch
+possible to the
+highest pitch
+possible. Rest, take
+a breath and then
+glide from your
+highest pitch
+possible to the
+lowest pitch
+possible."
 
 * action[+].title = "PMHx and Confounders specific to voice cohort"
-* action[=].prefix = "B.2"
+* action[=].prefix = "B.5"
 * action[=].description = ""
 * action[=].priority = #routine
 
 * action[+].title = "Validated questionnaires specific to voice cohort "
-* action[=].prefix = "B.3"
+* action[=].prefix = "B.6"
 * action[=].description = ""    
 * action[=].priority = #routine
 
 
-* action[=].action[0].title = "Consensus Auditory-Perceptual Evaluation of Voice (CAPE-V) "
-* action[=].action[=].prefix = "B.3.1"
-* action[=].action[=].description = "Administer CAPE-V Questionnaire"
-* action[=].action[=].priority = #routine
 
 
-* action[=].action[+].title = "Overall Voice Problem severity scale "
-* action[=].action[=].prefix = "B.3.2"
+* action[=].action[0].title = "Overall Voice Problem severity scale "
+* action[=].action[=].prefix = "B.7.2"
 * action[=].action[=].description = "Administer Voice Problem Severity Questionnaire"
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $VoiceProblemSeverity
