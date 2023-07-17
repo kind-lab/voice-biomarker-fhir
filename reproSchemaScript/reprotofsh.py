@@ -10,9 +10,17 @@ import json
 import sys
 import os
 import logging
+from dotenv import load_dotenv
 
+load_dotenv()
+CODESYSTEM_URI = os.getenv('CODESYSTEM_URI')
+VALUESET_URI = os.getenv('VALUESET_URI')
+
+
+codeSystem_dict = dict()
 
 def generate_codeSystem(options_json, linkId,questionnaire):
+   # default headers for codesystem
     codeSystem = ""
     id = questionnaire + linkId
     codeSystem += "\nCodeSystem: " + id
@@ -22,9 +30,10 @@ def generate_codeSystem(options_json, linkId,questionnaire):
     codeSystem += "\n* ^version = " + "1.0.0"
     codeSystem += "\n* ^status = " + "#active" + "\n* ^caseSensitive = 'true' \n* ^content = #complete"
 
-    codeSystem += "\n* ^count = " + str(len(options_json))
+    codeSystem += "\n* ^count = " + str(len(options_json["choices"]))
 
-
+    options = []
+    # loops through the options and appends them to the codesystem
     for j in options_json["choices"]:
         if "name" in j and j["name"] != "":
             choice = j["name"]
@@ -33,37 +42,42 @@ def generate_codeSystem(options_json, linkId,questionnaire):
         
         if choice and not isinstance(choice, int) and "en" in choice and isinstance(choice, dict):
             choice = choice["en"]
-        if choice and j == options_json["choices"][0]:
-            codeSystem += ("\n* #" + choice.replace(" ", "") + " " \
-                + "'" + str(choice)+ "'")
-        else:
-            codeSystem += ("\n* #" + choice.replace(" ", "") + " " \
-                + "'" + str(choice)+ "'")
-
+        # checks if the codesystem already exists
+        choice = str(choice)
+        codeSystem += ("\n* #" + choice.replace(" ", "-") + " " \
+            + "'" + str(choice)+ "'")
+        options.append(choice.replace(" ", ""))
+    if tuple(options) not in codeSystem_dict:
+        codeSystem_dict[tuple(options)] = id
+    else:
+        return (codeSystem_dict[tuple(options)], True)
+    # writes to the file if the codesystem doesnt exist
     code_system_file = open("code_system.fsh", "a+")
     code_system_file.write(codeSystem + "\n")
     code_system_file.close()
     alias = open("alias.fsh", "a+")
-    alias_output = "\nAlias: $" + id+ "CodeSystem = " + "https://voicecollab.ai/fhir/CodeSystem/" + id
+    alias_output = "\nAlias: $" + id+ "CodeSystem = " + str(CODESYSTEM_URI)+ id
     alias.write(alias_output+ "\n")
     alias.close()
     
-    return (id)
+    return (id, False)
 
 
         
 def generate_valueSet(file_contents, options, linkId,questionnaire):
-    id = generate_codeSystem(options, linkId,questionnaire)
-    valueset = "\nValueSet: " + id+ "\nId: " + id + "\nTitle: '"+ id + "'" + "\nDescription: 'test'" 
-    valueset += "\n* ^version = '1.0.0'" + "\n* ^status = #active" + "\n* ^date = '2023-05-11'"
-    valueset += "\n* include codes from system " + "$" + id + "CodeSystem"
-    value_set_file = open("valueSet.fsh", "a+")
-    value_set_file.write(valueset+ "\n")
-    value_set_file.close()
-    alias = open("alias.fsh", "a+")
-    alias_output = "\nAlias: $" + id+ "ValueSet = " + "https://voicecollab.ai/fhir/ValueSet/" + id
-    alias.write(alias_output+ "\n")
-    alias.close()
+    # generates the codesystem for the options
+    (id, exists) = generate_codeSystem(options, linkId,questionnaire)
+    if not exists:
+        valueset = "\nValueSet: " + id+ "\nId: " + id + "\nTitle: '"+ id + "'" + "\nDescription: 'test'" 
+        valueset += "\n* ^version = '1.0.0'" + "\n* ^status = #active" + "\n* ^date = '2023-05-11'"
+        valueset += "\n* include codes from system " + "$" + id + "CodeSystem"
+        value_set_file = open("valueSet.fsh", "a+")
+        value_set_file.write(valueset+ "\n")
+        value_set_file.close()
+        alias = open("alias.fsh", "a+")
+        alias_output = "\nAlias: $" + id+ "ValueSet = " + str(VALUESET_URI) + id
+        alias.write(alias_output+ "\n")
+        alias.close()
     file_contents += "\n* item[=].item[=].answerValueSet = " + "$" + id + "ValueSet"
     return file_contents
 
