@@ -118,3 +118,8 @@ Alias: $VocalFoldInjectionAugmentationValueSet = https://voicecollab.ai/fhir/Val
 // Consent ICF USF
 
 Alias: $ConsentUsfQuestionValueSet = https://voicecollab.ai/fhir/ValueSet/consent-usf-question
+// Dyspnea Index
+Alias: $DysnpeaIndexValueSet = https://voicecollab.ai/fhir/ValueSet/dysnpea-index
+
+// Leicester Cough Questionnaire
+Alias: $LeicesterCoughValueSet = https://voicecollab.ai/fhir/ValueSet/leicester-cough
