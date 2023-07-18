@@ -1152,3 +1152,39 @@ responses shared with other qualified
 researchers as well as publicly in the form of an
 open-source database"
 
+//----------------------------Dysnpea Index-----------------------------------
+CodeSystem: DysnpeaIndex
+Id: dysnpea-index
+Title: "Dysnpea Index"
+Description: "Dysnpea Index"
+* ^version = 1.0.0
+* ^status = #active
+* ^date = "2023-07-18"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #0 "Never"
+* #1 "Almost Never"
+* #2 "Sometimes"
+* #3 "Almost always"
+* #4 "Always"
+
+
+//----------------------------Leicester Cough Questionnaire-----------------------------------
+CodeSystem: LeicesterCough
+Id: leicester-cough
+Title: "Leicester Cough Questionnaire"
+Description: "Leicester Cough Questionnaire"
+* ^version = 1.0.0
+* ^status = #active
+* ^date = "2023-07-18"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 7
+* #1 "None of the time"
+* #2 "Hardly any of the time"
+* #3 "A little of the time"
+* #4 "Some of the time"
+* #5 "A good bit of time"
+* #6 "Most of the time"
+* #7 "All of the time"

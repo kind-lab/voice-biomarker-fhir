@@ -821,4 +821,24 @@ Description:  "The Codes used by Consent Main ICF (USF)"
 * ^date = "2023-06-20"
 * include codes from system $ConsentUsfQuestionCodeSystem
 
+//----------------------------Dysnpea Index-----------------------------------
 
+ValueSet: DysnpeaIndex
+Id: dysnpea-index
+Title: "Dysnpea Index ValueSet"
+Description:  "The Codes used by Dysnpea Index"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-07-18"
+* include codes from system $DysnpeaIndexCodeSystem
+
+//----------------------------Leicester Cough Questionnaire-----------------------------------
+
+ValueSet: LeicesterCough
+Id: leicester-cough
+Title: "Leicester Cough ValueSet"
+Description:  "The Codes used by Leicester Cough Questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-07-18"
+* include codes from system $LeicesterCoughCodeSystem

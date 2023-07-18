@@ -151,3 +151,10 @@ Alias: $VocalFoldInjectionAugmentationCodeSystem = https://voicecollab.ai/fhir/C
 // Consent ICF USF
 
 Alias: $ConsentUsfQuestionCodeSystem = https://voicecollab.ai/fhir/CodeSystem/consent-usf-question
+
+// Dyspnea Index
+Alias: $DysnpeaIndexCodeSystem = https://voicecollab.ai/fhir/CodeSystem/dysnpea-index
+
+
+// Leicester Cough Questionnaire
+Alias: $LeicesterCoughCodeSystem = https://voicecollab.ai/fhir/CodeSystem/leicester-cough
