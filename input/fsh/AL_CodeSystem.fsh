@@ -158,3 +158,7 @@ Alias: $DysnpeaIndexCodeSystem = https://voicecollab.ai/fhir/CodeSystem/dysnpea-
 
 // Leicester Cough Questionnaire
 Alias: $LeicesterCoughCodeSystem = https://voicecollab.ai/fhir/CodeSystem/leicester-cough
+
+
+// Urge to Cough Questionnaire
+Alias: $UrgeToCoughCodeSystem = https://voicecollab.ai/fhir/CodeSystem/urge-to-cough

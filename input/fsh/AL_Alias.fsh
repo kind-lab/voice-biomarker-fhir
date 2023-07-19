@@ -39,3 +39,9 @@ Alias: $PatientQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/Patient
 Alias: $DefaultPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionExample
 
 Alias: $CAPEV = https://voicecollab.ai/fhir/Questionnaire/CAPEVQuestionnaire
+
+Alias: $DysneaIndex = https://voicecollab.ai/fhir/Questionnaire/DyspneaIndex
+
+Alias: $LeicesterCough = https://voicecollab.ai/fhir/Questionnaire/LeicesterCough
+
+Alias: $UrgeToCough = https://voicecollab.ai/fhir/Questionnaire/UrgeToCough

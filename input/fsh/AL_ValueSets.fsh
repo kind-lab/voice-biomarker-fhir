@@ -123,3 +123,7 @@ Alias: $DysnpeaIndexValueSet = https://voicecollab.ai/fhir/ValueSet/dysnpea-inde
 
 // Leicester Cough Questionnaire
 Alias: $LeicesterCoughValueSet = https://voicecollab.ai/fhir/ValueSet/leicester-cough
+
+
+// Urge to Cough Questionnaire
+Alias: $UrgeToCoughValueSet = https://voicecollab.ai/fhir/ValueSet/urge-to-cough
