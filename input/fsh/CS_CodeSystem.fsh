@@ -1188,3 +1188,28 @@ Description: "Leicester Cough Questionnaire"
 * #5 "A good bit of time"
 * #6 "Most of the time"
 * #7 "All of the time"
+
+
+
+//----------------------------Urge to Cough--------------------------------------
+CodeSystem: UrgeToCough
+Id: urge-to-cough
+Title: "Urge to Cough Questionnaire"
+Description: "Urge to Cough Questionnaire"
+* ^version = 1.0.0
+* ^status = #active
+* ^date = "2023-07-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 11
+* #1 "No need to cough"
+* #1.5 "Just noticeable urge to cough"
+* #2 "Slight urge to cough"
+* #3 "Slight-to-moderate urge to cough"
+* #4 "Moderate urge to cough"
+* #5 "Moderate-to-strong urge to cough"
+* #6 "Strong urge to cough"
+* #7 "Strong-to-severe urge to cough"
+* #8 "Strong urge to cough"
+* #9 "Severe-to-maxium urge to cough"
+* #10 "Maxium urge to cough"

@@ -13,22 +13,28 @@ Description: "An example of a Voice as a Biomarker for Respiratory Cohort PlanDe
 * action[=].prefix = "1.1 - 1.8"
 * action[=].description = "List of tasks and actions done across all 5 cohorts"
 * action[=].priority = #routine
-* action[=].definitionUri = "https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionExample"
+* action[=].definitionUri = $DefaultPlanDefinition
 
 
 // Based on Methods Respiratory Document
-* action[+].title = "Functional Assessments and Health-Related Quality of Life"
+* action[+].title = "Dyspnea Index (DI)"
 * action[=].prefix = "1.7"
-* action[=].description = "Baseline functional data will be collected on all patients.  Full pulmonary function testing will be performed as standard of care for all patients included in the trial. "
+* action[=].description = "Perform Dysnea Index Questionnaire"
 * action[=].priority = #routine
+* action[=].definitionUri = $DysneaIndex 
 
 
-
-* action[+].title = "CRQ (Chronic Respiratory Disease Questionnaire)"
+* action[+].title = "Leicester Cough Questionnaire"
 * action[=].prefix = "1.8"
-* action[=].description = "The short form of the CRQ is aimed at assessing the impact of 4 discreet domains of health-related quality of life for respiratory patients. These include dyspnea, emotional function, disease control and fatigue.  This tool is widely used to assess impact of treatment on symptom management and disease progression."
+* action[=].description = "Perform Leicester Cough Questionnaire"
 * action[=].priority = #routine
+* action[=].definitionUri = $LeicesterCough
 
+* action[+].title = "Urge to Cough Scale"
+* action[=].prefix = "1.9"
+* action[=].description = "Get the participant to rate their urge to cough"
+* action[=].priority = #routine
+* action[=].definitionUri = $UrgeToCough
 
 * action[+].title = "Part B Respiratory"
 * action[=].prefix = "B"
@@ -36,16 +42,10 @@ Description: "An example of a Voice as a Biomarker for Respiratory Cohort PlanDe
 * action[=].priority = #routine
 
 
-* action[=].action[+].title = "Study Participant"
+* action[=].action[+].title = "Breath Sounds"
 * action[=].action[=].prefix = "B.1 Task 1"
-* action[=].action[=].description = "Using a dedicated, validated and commercially available electronic stethoscope (3MTM Littman CORE Digital Stethoscope), the study participant is examined by the attending physician. "
+* action[=].action[=].description = "Relax until the task starts.“Take three deep breaths in a row in andout the mouth.”"
 
-* action[=].action[+].title = "Acquire Sound Clips"
+* action[=].action[+].title = "Voluntary cough"
 * action[=].action[=].prefix = "B.1 Task 2"
-* action[=].action[=].description = "Cough sound clips will be acquired for each subject per the protocol validated in other work by Dr Rameau.  Subjects will be in seated position and asked to perform a maximal voluntary cough following the example of the trained research associate.  The subject is instructed to take a deep, full breath in then cough as forcefully as possible.  The maneuver is repeated to complete 3 voluntary coughs that are reproducible and of sufficient sound quality."
-
-
-* action[=].action[+].title = "Documentation"
-* action[=].action[=].prefix = "B.1 Task 3"
-* action[=].action[=].description = "The physician performing the examination documents breathing pattern, description of inspiratory and expiratory breath sounds, presence or absence of adventitious breath sounds and quantification of intensity of adventitious breath sounds when present (see list below).  For the sleep apnea patients, a recording will be performed during in lab and home testing with polysomnogram split-night study.  Recordings will include both the diagnostic portion of the night as well as the titration. A high-fidelity recorder will be placed on the head of the bed for in lab studies and in the case of home study on the chest strap."
-
+* action[=].action[=].description = "“Breathe normally, then when you areready, cough HARD as if something werestuck in your throat.”Complete this three times."

@@ -842,3 +842,15 @@ Description:  "The Codes used by Leicester Cough Questionnaire"
 * ^status = #active
 * ^date = "2023-07-18"
 * include codes from system $LeicesterCoughCodeSystem
+
+
+//----------------------------Urge to Cough Questionnaire-----------------------------------
+
+ValueSet: UrgeToCough
+Id: urge-to-cough
+Title: "Urge to Cough ValueSet"
+Description:  "The Codes used by Urge to Cough Questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-07-19"
+* include codes from system $UrgeToCoughCodeSystem
