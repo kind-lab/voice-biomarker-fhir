@@ -1,5 +1,5 @@
 Instance: PatientQuestions
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Patient Questionnaire"
 Description: "Patient Questionnaire"

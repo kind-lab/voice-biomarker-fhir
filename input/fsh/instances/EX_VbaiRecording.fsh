@@ -1,5 +1,5 @@
 Instance: Recording
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Recording"
 Description: "Questionnaire"

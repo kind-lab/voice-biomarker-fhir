@@ -1,5 +1,5 @@
 Instance: PTSD
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "PTSD"
 Description: "PTSD Questionnaire"

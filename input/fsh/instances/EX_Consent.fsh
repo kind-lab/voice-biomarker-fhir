@@ -1,5 +1,5 @@
 Instance: MainICF 
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Main ICF"
 Description: "Main ICF"

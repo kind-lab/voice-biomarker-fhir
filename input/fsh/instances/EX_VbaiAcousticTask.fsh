@@ -1,5 +1,5 @@
 Instance: AcousticTask
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Acoustic Task"
 Description: "Acoustic Task Questionnaire"

@@ -1,5 +1,5 @@
 Instance: ADHDQuestionnaire
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "ADHD Questionnaire"
 Description: "ADHD Questionnaire"

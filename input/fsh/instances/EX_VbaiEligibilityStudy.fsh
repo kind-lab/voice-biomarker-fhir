@@ -1,5 +1,5 @@
 Instance: EligibleStudies
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Eligible Studies"
 Description: "Eligible Studies"

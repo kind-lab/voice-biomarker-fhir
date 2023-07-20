@@ -1,5 +1,5 @@
 Instance: DyspneaIndex
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "DyspneaIndex"
 Description: "Dyspnea Index Questionnaire"

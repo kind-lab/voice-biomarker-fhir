@@ -1,5 +1,5 @@
 Instance: CAPEVQuestionnaire
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "CAPE-V Questionnaire"
 Description: "Questinnaire"
