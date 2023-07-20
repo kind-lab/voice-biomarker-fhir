@@ -1,5 +1,5 @@
 Instance: CustomAffectScaleQuestionnaire
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "CustomAffectScaleQuestionnaire"
 Description: "Custom Affect Scale Questionnaire"

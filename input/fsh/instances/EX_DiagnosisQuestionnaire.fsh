@@ -1,5 +1,5 @@
 Instance: VocalFoldParalysis
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "VocalFoldParalysis"
 Description: "Vocal Fold Paralysis Questionnaire"

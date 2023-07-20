@@ -1,5 +1,5 @@
 Instance: VoicePerception
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "VoicePerception"
 Description: "Questionnaire"

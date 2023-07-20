@@ -1,5 +1,5 @@
 Instance: DSM5
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "DSM5"
 Description: "DSM5 Questionnaire"

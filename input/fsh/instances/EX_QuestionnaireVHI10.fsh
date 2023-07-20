@@ -1,5 +1,5 @@
 Instance: VHI10
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "VHI10"
 Description: "VHI-10 Questionnaire"

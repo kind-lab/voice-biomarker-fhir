@@ -1,5 +1,5 @@
 Instance: GeneralInformation
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "General Information Questionnaire"
 Description: "Questionnaire"

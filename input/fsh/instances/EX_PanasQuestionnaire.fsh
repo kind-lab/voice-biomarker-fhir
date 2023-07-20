@@ -1,5 +1,5 @@
 Instance: PANASQuestionnaire
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "PANAS Questionnaire"
 Description: "PANAS Questionnaire"

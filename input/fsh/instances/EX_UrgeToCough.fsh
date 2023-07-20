@@ -1,5 +1,5 @@
 Instance: UrgeToCough
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "UrgeToCough"
 Description: "Urge to cough Questionnaire"

@@ -1,5 +1,5 @@
 Instance: VoiceProblemSeverity
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Voice problem severity Questionnaire"
 Description: "Voice problem severity "

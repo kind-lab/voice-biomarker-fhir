@@ -1,5 +1,5 @@
 Instance: Session
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Session"
 Description: "Questionnaire"
