@@ -162,3 +162,5 @@ Alias: $LeicesterCoughCodeSystem = https://voicecollab.ai/fhir/CodeSystem/leices
 
 // Urge to Cough Questionnaire
 Alias: $UrgeToCoughCodeSystem = https://voicecollab.ai/fhir/CodeSystem/urge-to-cough
+
+Alias: $PSC17CodeSystem = https://voicecollab.ai/fhir/CodeSystem/psc-17
