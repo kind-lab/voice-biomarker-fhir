@@ -854,3 +854,15 @@ Description:  "The Codes used by Urge to Cough Questionnaire"
 * ^status = #active
 * ^date = "2023-07-19"
 * include codes from system $UrgeToCoughCodeSystem
+
+//---------------------------Pediatric Symptom Checklist (PSC-17)-----------------------------
+
+
+ValueSet: PSC17
+Id: psc-17
+Title: "Pediatric Symptom Checklist (PSC-17) ValueSet"
+Description:  "The Codes used by Pediatric Symptom Checklist (PSC-17)"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-07-21"
+* include codes from system $PSC17CodeSystem

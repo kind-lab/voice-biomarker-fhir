@@ -22,14 +22,12 @@ Description: "An example of a Voice as a Biomarker for Peds PlanDefinition"
 * action[=].priority = #routine
 
 
-* action[=].action[0].title = "Produce sustained /a/ sound "
+* action[=].action[0].title = "Task 1 a: Spontaneous Conversations:"
 * action[=].action[=].prefix = "B.1 Task 1"
 * action[=].action[=].description = "    
-    a) App demonstration first 
-
-    b) At a comfortable pitch and volume using a normal speaking voice 
-
-    C) Duration: 4 seconds "
+   As we look at this book together, tell me what you see.
+    Task 1 b: Spontaneous Conversations 
+    Describe your favorite thing to do on weekends."
 
 
 
@@ -144,3 +142,9 @@ Record for 60 seconds and then end protocol "
 
 
 
+
+* action[=].action[+].title = "Pediatric Symptom Checklist (PSC-17)"
+* action[=].action[=].prefix = "B.2"
+* action[=].action[=].description = "Administer Pediatric Symptom Checklist (PSC-17)"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $PSC17ValueSet 

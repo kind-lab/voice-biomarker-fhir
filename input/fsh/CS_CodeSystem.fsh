@@ -1213,3 +1213,18 @@ Description: "Urge to Cough Questionnaire"
 * #8 "Strong urge to cough"
 * #9 "Severe-to-maxium urge to cough"
 * #10 "Maxium urge to cough"
+
+//------------------------------------PSC-17--------------------------------------
+CodeSystem: PSC17
+Id: psc-17
+Title: "Pediatric Symptom Checklist (PSC-17)"
+Description: "The codes required for Pediatric Symptom Checklist (PSC-17) questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-07-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #0 "Never"
+* #1 "Sometimes"
+* #2 "Often"
