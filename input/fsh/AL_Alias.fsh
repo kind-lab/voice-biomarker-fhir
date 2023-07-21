@@ -45,3 +45,5 @@ Alias: $DysneaIndex = https://voicecollab.ai/fhir/Questionnaire/DyspneaIndex
 Alias: $LeicesterCough = https://voicecollab.ai/fhir/Questionnaire/LeicesterCough
 
 Alias: $UrgeToCough = https://voicecollab.ai/fhir/Questionnaire/UrgeToCough
+
+Alias: $PSC17 = https://voicecollab.ai/fhir/Questionnaire/PSC17
