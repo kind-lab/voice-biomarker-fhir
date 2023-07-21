@@ -143,8 +143,8 @@ Record for 60 seconds and then end protocol "
 
 
 
-* action[=].action[+].title = "Pediatric Symptom Checklist (PSC-17)"
-* action[=].action[=].prefix = "B.2"
-* action[=].action[=].description = "Administer Pediatric Symptom Checklist (PSC-17)"
-* action[=].action[=].priority = #routine
-* action[=].action[=].definitionUri = $PSC17ValueSet 
+* action[+].title = "Pediatric Symptom Checklist (PSC-17)"
+* action[=].prefix = "B.2"
+* action[=].description = "Administer Pediatric Symptom Checklist (PSC-17)"
+* action[=].priority = #routine
+* action[=].definitionUri = $PSC17
