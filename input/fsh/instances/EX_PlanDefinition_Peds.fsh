@@ -31,116 +31,91 @@ Description: "An example of a Voice as a Biomarker for Peds PlanDefinition"
 
 
 
-* action[=].action[+].title = "Diadochokinetic task with “patty-cake”"
+* action[=].action[+].title = "Make some long sounds"
 * action[=].action[=].prefix = "B.1 Task 2"
-* action[=].action[=].description = "Record the time that it takes to repeat the syllables 
-    'pat' 10 times 
+* action[=].action[=].description = "For this task we want you to make some long sounds – not too loud. 
 
-    'tee' 10 times 
+Begin by saying ‘ahhhh’.We’re going to do this task three
+times. Take a break after each attempt. 
 
-    'cake' 10 times 
-
-    Repeat whole word as fast as possible for 30 seconds "
-
+Next say the sound ‘eeee’ as steady as you can. We’ll do
+this sound three times as well. "
 
 
-* action[=].action[+].title = "Recite the alphabet (ABC’s)"
+
+* action[=].action[+].title = "Trying differnet sounds"
 * action[=].action[=].prefix = "B.1 Task 3"
-* action[=].action[=].description = "Duration: until complete, or for 60 seconds"
+* action[=].action[=].description = "First, we’re going to say ‘PUH PUH PUH’ over and over.
+
+Remember to take a breath if you need one! Next, let’s do the same thing this time saying TUH TUH TUH over and over .
+
+And now we want you to say KUH KUH KUH over and over
+
+Now, let’s try to put them together by
+saying PUH-TUH-KUH over and over.
+
+ If that word is a little too tricky, you can try saying “Pattycake” over and over instead. 
+"
 
 
-* action[=].action[+].title = "Count as high as you can"
+* action[=].action[+].title = "ABC's"
 * action[=].action[=].prefix = "B.1 Task 4"
-* action[=].action[=].description = "Duration: 60 seconds "
+* action[=].action[=].description = "Can you say the alphabet (ABC’s)"
 
 
 
-* action[=].action[+].title = "Name daily life pictures"
+* action[=].action[+].title = "Counting"
 * action[=].action[=].prefix = "B.1 Task 5"
-* action[=].action[=].description = "App prompts child to name 36 randomly-selected pictures
-
-    Duration of task: 60 seconds
-
-    Modification if unable to see: repeat after adult"
+* action[=].action[=].description = "Count as high as you can."
 
 
 
-* action[=].action[+].title = "Read or repeat CAPE-V sentences:"
+* action[=].action[+].title = "Pictures"
 * action[=].action[=].prefix = "B.1 Task 6"
-* action[=].action[=].description = "Please read the following sentences one at a time, as if you were speaking to somebody in a real conversation.” If the individual has difficulty reading, the clinician may ask him or her to repeat sentences after verbal examples. App to show sentences appearing one at a time. 
-
-    “The blue spot is on the key again”
-
-    “How hard did he hit him?” 
-
-    “We were away a year ago”
-
-    “We eat eggs every Easter”
-
-    “My mama makes lemon jam”
-
-    “Peter will keep at the peak”"
+* action[=].action[=].description = "Next, we are going to show you some different pictures on the screen.
+Tell us the name of the picture if you know what it is. If you’re not sure you can easily
+skip it by clicking the arrow to move on to the next one."
 
 
-* action[=].action[+].title = "Read or repeat the Caterpillar Passage – in app, passage will appear one sentence at a time "
+* action[=].action[+].title = "Reading or Repeating with modified CAPE-V:"
 * action[=].action[=].prefix = "B.1 Task 7"
-* action[=].action[=].description = "Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic roller coaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever!” 
-    Modification: recite passage sentence by sentence after adult"
+* action[=].action[=].description = "Now I will show you some
+sentences. Read them like you are speaking to somebody in a real conversation. If you
+think you can read them on your own, go right ahead. If you’d prefer, someone else in
+the room can say them first and then you can repeat.
+i. “The blue spot is on the key again”
+ii. “How hard did he hit him?”
+iii. “We were away a year ago”
+iv. “We eat eggs every eve”
+v. “My mama makes lemon muffins”
+vi. “Peter will keep at the park”"
 
 
-* action[=].action[+].title = "Cued conversation:"
+* action[=].action[+].title = "Caterpillar Passage:"
 * action[=].action[=].prefix = "B.1 Task 8"
-* action[=].action[=].description = " If child responds, record for 60 seconds and then end protocol  
-    If preferred toy present:  
+* action[=].action[=].description = "Great job! Next, I will show you some longer sentences read
+the following passage. The passage will appear in short paragraphs. Go ahead if you can
+read them on your own. If you’d prefer to repeat the sentences, have someone else in
+the room say them first.
+a. “Do you like amusement parks? Well, I sure do. To amuse myself, I went twice
+last spring.
+b. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic
+roller coaster high above the ground. When I saw how high the Caterpillar rose
+into the bright blue sky, I knew it was for me.
 
-    “what is that?” 
-
-    “what can it do?” 
-
-    “does it make any sounds?” 
-
-    “why do you like it?” 
-
-If preferred toy not present:  
-
-    “What is your favorite animal?” 
-
-    “what does it sound like?” 
-
-    “what can it do?”  
-
-    “why do you like it?” 
-
-If child does not respond, proceed to #9 "
-
-
-* action[=].action[+].title = "Spontaneous vocalizations/cry sounds "
-* action[=].action[=].prefix = "B.1 Task 9"
-* action[=].action[=].description = "If preferred toy present:  
-
-    “I like your toy! Does your toy have a name?” 
-
-    “what does your toy say?” 
-
-    “what does your toy do?” (parent encourages child to play with toy) 
-
-    If preferred toy not present, bring out animal toys (barn setup):  
-
-    Parent and child sit down together 
-
-    Child picks up animal toys 
-
-    Parent makes animal sounds with each toy the child picks up 
-
-Parent may also want to move animals around the barn scene if child not engaging with the toys and make noises with each animal they hold 
-
-    Hopefully, this inspires child to vocalize, too 
-
-Record for 60 seconds and then end protocol "
-
-
-
-
+c. After waiting in line for thirty minutes, I made it to the front where the man
+measured my height to see if I was tall enough. I gave the man my coins, asked
+for change, and jumped on the cart.
+d. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I
+could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no
+turning back now.”
+e. People were so scared they screamed as we swiftly zoomed fast, fast, and faster
+along the tracks.
+f. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time
+to pack the car and drive home.
+g. That night I dreamt of the wild ride on the Caterpillar.
+h. Taking a trip to the amusement park and riding on the Caterpillar was my MOST
+memorable moment ever!"
 
 
 * action[+].title = "Pediatric Symptom Checklist (PSC-17)"
