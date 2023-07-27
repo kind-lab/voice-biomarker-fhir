@@ -6,7 +6,7 @@ Description: "An example of the PreQuestion Cohort's PlanDefinition"
 * status = #active
 * date = "2023-07-27"
 * description = "This is a plandefinition for PreQuestion"
-* title = "Pre-Questions"
+* title = "Pre-Questions PlanDefinition"
 
 
 * action[0].title = "Information Gathering"

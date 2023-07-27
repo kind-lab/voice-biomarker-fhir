@@ -6,7 +6,7 @@ Description: "An example of the Confounders Cohort's PlanDefinition"
 * status = #active
 * date = "2023-07-27"
 * description = "This is a plandefinition for Confounders"
-* title = "Confounders"
+* title = "Confounders PlanDefintion"
 
 * action[0].title = "PMHX and List of Confounders"
 * action[=].prefix = "1.6.1"
