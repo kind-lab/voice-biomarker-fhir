@@ -48,10 +48,16 @@ Alias: $UrgeToCough = https://voicecollab.ai/fhir/Questionnaire/UrgeToCough
 
 Alias: $PSC17 = https://voicecollab.ai/fhir/Questionnaire/PSC17
 
-// PlanDefintions
+// General flow PlanDefintions
 
 Alias: $PreQuestionsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPreQuestionExample
 
 Alias: $ConsentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConsentExample
 
 Alias: $DemographicsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionDemographicsExample
+
+Alias: $VoiceImpactingPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceImpactingExample
+
+Alias: $SessionPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionSessionExample
+
+Alias: $CounfoundersPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample
