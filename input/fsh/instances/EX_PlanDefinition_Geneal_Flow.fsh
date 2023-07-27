@@ -13,16 +13,19 @@ Description: "An example of the GeneralFlow Cohort's PlanDefinition"
 * action[=].prefix = "1.0"
 * action[=].description = "Adminisiter Pre-consent Questions "
 * action[=].priority = #routine
+* action[=].definitionUri = $PreQuestionsPlanDefinition
 
 * action[+].title = "Consent/Assent"
 * action[=].prefix = "1.1"
 * action[=].description = "Retrieve consent/assesnt"
 * action[=].priority = #routine
+* action[=].definitionUri = $ConsentPlanDefinition
 
 * action[+].title = "Demographics"
 * action[=].prefix = "1.2"
 * action[=].description = "Retrieve Demographcs"
 * action[=].priority = #routine
+* action[=].definitionUri = $DemographicsPlanDefinition
 
 * action[+].title = "Voice Impacting Q's"
 * action[=].prefix = "1.3"
