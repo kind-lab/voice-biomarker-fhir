@@ -47,3 +47,11 @@ Alias: $LeicesterCough = https://voicecollab.ai/fhir/Questionnaire/LeicesterCoug
 Alias: $UrgeToCough = https://voicecollab.ai/fhir/Questionnaire/UrgeToCough
 
 Alias: $PSC17 = https://voicecollab.ai/fhir/Questionnaire/PSC17
+
+// PlanDefintions
+
+Alias: $PreQuestionsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPreQuestionExample
+
+Alias: $ConsentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConsentExample
+
+Alias: $DemographicsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionDemographicsExample
