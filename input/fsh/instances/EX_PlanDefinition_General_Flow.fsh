@@ -31,11 +31,13 @@ Description: "An example of the GeneralFlow Cohort's PlanDefinition"
 * action[=].prefix = "1.3"
 * action[=].description = "Administer Voice Impacting Questions"
 * action[=].priority = #routine
+* action[=].definitionUri = $VoiceImpactingPlanDefinition
 
 * action[+].title = "Session"
 * action[=].prefix = "1.4"
 * action[=].description = "Start Session"
 * action[=].priority = #routine
+* action[=].definitionUri = $SessionPlanDefinition
 
 * action[+].title = "Acoustic Tasks"
 * action[=].prefix = "1.5"
@@ -46,6 +48,7 @@ Description: "An example of the GeneralFlow Cohort's PlanDefinition"
 * action[=].prefix = "1.6"
 * action[=].description = "Retrieve Confounders"
 * action[=].priority = #routine
+* action[=].definitionUri = $CounfoundersPlanDefinition
 
 * action[+].title = "Questionnaires"
 * action[=].prefix = "1.7"
