@@ -4,7 +4,7 @@ Usage: #example
 Title: "VbaiPlanDefinitionGeneralFlowExample"
 Description: "An example of the GeneralFlow Cohort's PlanDefinition"
 * status = #active
-* date = "2023-04-28"
+* date = "2023-07-28"
 * description = "This is a plandefinition for GeneralFlow"
 * title = "GeneralFlow Cohort Protocol"
 
@@ -43,6 +43,7 @@ Description: "An example of the GeneralFlow Cohort's PlanDefinition"
 * action[=].prefix = "1.5"
 * action[=].description = "Perform Acoustic Tasks"
 * action[=].priority = #routine
+* action[=].definitionUri = $AcousticTasksPlanDefinition
 
 * action[+].title = "Confounders"
 * action[=].prefix = "1.6"
@@ -54,10 +55,11 @@ Description: "An example of the GeneralFlow Cohort's PlanDefinition"
 * action[=].prefix = "1.7"
 * action[=].description = "Administier Validated Questionnaires"
 * action[=].priority = #routine
+* action[=].definitionUri = $QuestionnairePlanDefinition
 
 * action[+].title = "Other"
 * action[=].prefix = "1.8"
-* action[=].description = "Administier Validated Questionnaires"
+* action[=].description = "Other"
 * action[=].priority = #routine
 
 * action[+].title = "Feedback"
