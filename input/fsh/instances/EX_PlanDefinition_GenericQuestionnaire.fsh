@@ -31,3 +31,9 @@ Description: "An example of the GeneralQuestionnaire Cohort's PlanDefinition"
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $VoicePerception
 
+
+* action[=].action[+].title = "VHI-10"
+* action[=].action[=].prefix = "1.7.1.4"
+* action[=].action[=].description = "Have patient complete VHI-10 Questionnaire"
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $VHI10
