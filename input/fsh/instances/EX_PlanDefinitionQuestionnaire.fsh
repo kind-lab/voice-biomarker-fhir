@@ -14,8 +14,3 @@ Description: "An example of the Questionnaire Cohort's PlanDefinition"
 * action[=].priority = #routine
 * action[=].definitionUri = $GeneralQuestionnairePlanDefinition
 
-* action[+].title = "Questionnaires From Peds Cohorts"
-* action[=].prefix = "1.7.2"
-* action[=].description = "Questionnaires From Peds Cohorts"
-* action[=].priority = #routine
-* action[=].definitionUri = $PedsQuestionnairePlanDefinition 

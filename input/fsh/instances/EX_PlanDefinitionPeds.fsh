@@ -11,13 +11,13 @@ Description: "An example PlanDefinition of the Acoustic Tasks for Peds Cohort's 
 
 
 * action[0].title = "Peds Protocol"
-* action[=].prefix = "1.5.2"
+* action[=].prefix = "1.8.2"
 * action[=].description = "Tasks specific to Peds cohort ​"
 * action[=].priority = #routine
 
 
 * action[=].action[0].title = "Task 1 a: Spontaneous Conversations:"
-* action[=].action[=].prefix = "1.5.2 Task 1"
+* action[=].action[=].prefix = "1.8.2 Task 1"
 * action[=].action[=].description = "    
    As we look at this book together, tell me what you see.
     Task 1 b: Spontaneous Conversations 
@@ -26,7 +26,7 @@ Description: "An example PlanDefinition of the Acoustic Tasks for Peds Cohort's 
 
 
 * action[=].action[+].title = "Make some long sounds"
-* action[=].action[=].prefix = "1.5.2 Task 2"
+* action[=].action[=].prefix = "1.8.2 Task 2"
 * action[=].action[=].description = "For this task we want you to make some long sounds – not too loud. 
 
 Begin by saying ‘ahhhh’.We’re going to do this task three
@@ -38,7 +38,7 @@ this sound three times as well. "
 
 
 * action[=].action[+].title = "Trying differnet sounds"
-* action[=].action[=].prefix = "1.5.2 Task 3"
+* action[=].action[=].prefix = "1.8.2 Task 3"
 * action[=].action[=].description = "First, we’re going to say ‘PUH PUH PUH’ over and over.
 
 Remember to take a breath if you need one! Next, let’s do the same thing this time saying TUH TUH TUH over and over .
@@ -53,26 +53,26 @@ saying PUH-TUH-KUH over and over.
 
 
 * action[=].action[+].title = "ABC's"
-* action[=].action[=].prefix = "1.5.2 Task 4"
+* action[=].action[=].prefix = "1.8.2 Task 4"
 * action[=].action[=].description = "Can you say the alphabet (ABC’s)"
 
 
 
 * action[=].action[+].title = "Counting"
-* action[=].action[=].prefix = "1.5.2 Task 5"
+* action[=].action[=].prefix = "1.8.2 Task 5"
 * action[=].action[=].description = "Count as high as you can."
 
 
 
 * action[=].action[+].title = "Pictures"
-* action[=].action[=].prefix = "1.5.2 Task 6"
+* action[=].action[=].prefix = "1.8.2 Task 6"
 * action[=].action[=].description = "Next, we are going to show you some different pictures on the screen.
 Tell us the name of the picture if you know what it is. If you’re not sure you can easily
 skip it by clicking the arrow to move on to the next one."
 
 
 * action[=].action[+].title = "Reading or Repeating with modified CAPE-V:"
-* action[=].action[=].prefix = "1.5.2 Task 7"
+* action[=].action[=].prefix = "1.8.2 Task 7"
 * action[=].action[=].description = "Now I will show you some
 sentences. Read them like you are speaking to somebody in a real conversation. If you
 think you can read them on your own, go right ahead. If you’d prefer, someone else in
@@ -86,7 +86,7 @@ vi. “Peter will keep at the park”"
 
 
 * action[=].action[+].title = "Caterpillar Passage:"
-* action[=].action[=].prefix = "1.5.2 Task 8"
+* action[=].action[=].prefix = "1.8.2 Task 8"
 * action[=].action[=].description = "Great job! Next, I will show you some longer sentences read
 the following passage. The passage will appear in short paragraphs. Go ahead if you can
 read them on your own. If you’d prefer to repeat the sentences, have someone else in
