@@ -1,12 +1,12 @@
-Instance: PedsCohortProtocolExample
+Instance: CohortProtocolExampleNeuro
 InstanceOf: VbaiCohortProtocol
 Usage: #example
-Title: "PedsCohortProtocolExample"
-Description: "VbaiPedsCohortProtocol"
+Title: "CohortProtocolNeuroExample"
+Description: "VbaiCohortProtocol Neuro version"
 * status = #active
 * date = "2023-07-31"
-* description = "This is a plandefinition for peds cohort protocol"
-* title = "Peds Cohort Protocol"
+* description = "This is a plandefinition for Neuro cohort protocol"
+* title = "Neuro Cohort Protocol"
 
 * action[0].title = "Pre-Questions"
 * action[=].prefix = "1.0"
@@ -18,7 +18,7 @@ Description: "VbaiPedsCohortProtocol"
 * action[=].prefix = "1.1"
 * action[=].description = "Retieve consent/assent from participant"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $AssentPlanDefinition
+* action[=].definitionCanonical = $ConsentPlanDefinition
 
 * action[+].title = "Demographics"
 * action[=].prefix = "1.2"
@@ -60,7 +60,7 @@ Description: "VbaiPedsCohortProtocol"
 * action[=].prefix = "1.8"
 * action[=].description = "Administer cohort specific acoustic tasks"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $AcousticTasksPedsPlanDefinition
+* action[=].definitionCanonical = $AcousticTaskNeuroPlanDefinition
 
 * action[+].title = "Cohort specific confounders"
 * action[=].prefix = "1.9"
@@ -72,7 +72,7 @@ Description: "VbaiPedsCohortProtocol"
 * action[=].prefix = "1.10"
 * action[=].description = "Administer cohort specific questionnaires"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $PedsQuestionnairePlanDefinition
+* action[=].definitionCanonical = $NeuroQuestionnairePlanDefinition
 
 * action[+].title = "Clinician input"
 * action[=].prefix = "1.11"

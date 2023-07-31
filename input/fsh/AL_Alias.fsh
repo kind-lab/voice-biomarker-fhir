@@ -27,12 +27,12 @@ Alias: $VocalFoldParalysis = https://voicecollab.ai/fhir/Questionnaire/VocalFold
 Alias: $MoodCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionMoodExample
 
 Alias: $VoiceCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceExample
-Alias: $PediatricsCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPedsExample
+// Alias: $PediatricsCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPedsExample
 
-Alias: $NeurologyCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeurologyExample
+// Alias: $NeurologyCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeurologyExample
 
 
-Alias: $RespiratoryCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionRespiratoryExample
+// Alias: $RespiratoryCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionRespiratoryExample
 
 Alias: $PatientQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PatientQuestions
 
@@ -81,3 +81,14 @@ Alias: $ClinicianInputPlanDefinition = https://voicecollab.ai/fhir/PlanDefinitio
 Alias: $OtherPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionOtherExample
 
 Alias: $FeedbackPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionFeedbackExample
+
+// Respiratory Cohort PlanDefinitions
+
+
+Alias: $RespiratoryQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireRespiratoryExample
+
+Alias: $AcousticTasksRespiratoryPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksRespiratoryExample
+
+Alias: $AcousticTaskNeuroPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksNeuroExample
+
+Alias: $NeuroQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireNeuroExample
