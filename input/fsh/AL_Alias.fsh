@@ -54,13 +54,15 @@ Alias: $PreQuestionsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/
 
 Alias: $ConsentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConsentExample
 
+Alias: $AssentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAssentExample
+
 Alias: $DemographicsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionDemographicsExample
 
 Alias: $VoiceImpactingPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceImpactingExample
 
 Alias: $SessionPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionSessionExample
 
-Alias: $CounfoundersPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample
+Alias: $ConfoundersPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample
 
 Alias: $AcousticTasksGeneralPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksGeneralExample
 
@@ -74,3 +76,8 @@ Alias: $GeneralQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDef
 
 Alias: $QuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireExample
 
+Alias: $ClinicianInputPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionClinicianInputExample
+
+Alias: $OtherPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionOtherExample
+
+Alias: $FeedbackPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionFeedbackExample

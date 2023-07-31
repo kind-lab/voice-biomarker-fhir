@@ -13,9 +13,3 @@ Description: "An example of the AcousticTasks Cohort's PlanDefinition"
 * action[=].description = "Acoustic Tasks for All cohorts"
 * action[=].priority = #routine
 * action[=].definitionUri = $AcousticTasksGeneralPlanDefinition
-
-* action[+].title = "Acoustic Tasks Peds"
-* action[=].prefix = "1.5.2"
-* action[=].description = "Acoustic Tasks for Peds cohorts"
-* action[=].priority = #routine
-* action[=].definitionUri = $AcousticTasksPedsPlanDefinition
