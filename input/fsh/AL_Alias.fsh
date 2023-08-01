@@ -92,3 +92,11 @@ Alias: $AcousticTasksRespiratoryPlanDefinition = https://voicecollab.ai/fhir/Pla
 Alias: $AcousticTaskNeuroPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksNeuroExample
 
 Alias: $NeuroQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireNeuroExample
+
+Alias: $AcousticTaskVoicePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksVoiceExample
+
+Alias: $VoiceQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireVoiceExample
+
+Alias: $AcousticTaskMoodPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksMoodExample
+
+Alias: $MoodQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireMoodExample
