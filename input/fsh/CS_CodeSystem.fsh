@@ -1228,3 +1228,94 @@ Description: "The codes required for Pediatric Symptom Checklist (PSC-17) questi
 * #0 "Never"
 * #1 "Sometimes"
 * #2 "Often"
+
+//------------------------------------Peds Enrollment--------------------------------------
+CodeSystem: PedsEnrollment
+Id: peds-enrollment
+Title: "Pediatric Enrollment"
+Description: "The codes required for Pediatric enrollment pre-question questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #Adult "18 or above"
+* #Pediatric "2-10 year olds"
+
+CodeSystem: PedsLanguageFluency
+Id: peds-language-fluency
+Title: "Pediatric Enrollment"
+Description: "The codes required for Pediatric enrollment pre-question questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 12
+* #English "English"
+* #Spanish "Spanish"
+* #HaitianCreole "Haitian Creole"
+* #Mandarin "Mandarin"
+* #Vietnamese "Vietnamese"
+* #Cantonese "Cantonese"
+* #CapeVerdeanCreole "Cape Verdean Creole"
+* #Russian "Russian"
+* #Arabic "Arabic"
+* #Portuguese "Portuguese"
+* #French "French"
+* #Other "Other Please write"
+
+CodeSystem: PedsWhoCompletedSurvey
+Id: peds-who-completed-survey
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #RA "Research Assistant" "Survey was completed by an assistant"
+* #P "Parent/Caregiver" "Survey was completed by a parent/cargiver"
+
+
+CodeSystem: PedsMedicalHistory
+Id: peds-medical-history
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 12
+* #None "None"
+* #ASD "Autism Spectrum Disorder" 
+* #CF "Cystic Fibrosis"
+* #CA "Craniofacial anomalies (such as cleft lip or palate)"
+* #SLD "Speech and Language Delay"
+* #A "Asthma"
+* #HL "Hearing Losss"
+* #RRP "Recurrent laryngeal papilloma"
+* #VCD "Vocal Cord Dysfunction"
+* #OSA "Obstructive Sleep Apnea"
+* #SEA "Seasonal or Environmental Allergies"
+* #O "Other, Please Specify"
+
+CodeSystem: PedsReasonToDecline
+Id: peds-reason-to-decline
+Title: "Questionnaire codes for peds reason to decline"
+Description: "The codes required for Questionnaires"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 6
+* #1 "I am not interested in having my child’s voice recorded"
+* #2 "My child will not tolerate voice recording"
+* #3 "Is do not have enough time today and want to be contacted later"
+* #4 "I do not have enough time and do NOT want to be contacted later"
+* #5 "I prefer not to share any health information for research"
+* #6 "Other, Please Specify"

@@ -23,6 +23,8 @@ Alias: $ContactInformation = https://voicecollab.ai/fhir/Questionnaire/ContactIn
 Alias: $EligibilityOfParticipant = https://voicecollab.ai/fhir/Questionnaire/EligibleStudies
 Alias: $Session = https://voicecollab.ai/fhir/Questionnaire/Session
 Alias: $VocalFoldParalysis = https://voicecollab.ai/fhir/Questionnaire/VocalFoldParalysis
+
+Alias: $PedsPreQuestionQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PedsPreQuestionQuestionnaire
 // PlanDefinitions
 Alias: $MoodCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionMoodExample
 
@@ -50,7 +52,7 @@ Alias: $PSC17 = https://voicecollab.ai/fhir/Questionnaire/PSC17
 
 // General flow PlanDefintions
 
-Alias: $PreQuestionsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPreQuestionExample
+Alias: $AdultPreQuestionsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiAdultPlanDefinitionPreQuestionExample
 
 Alias: $ConsentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConsentExample
 
@@ -100,3 +102,5 @@ Alias: $VoiceQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefin
 Alias: $AcousticTaskMoodPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksMoodExample
 
 Alias: $MoodQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireMoodExample
+
+Alias: $PedsPreQuestionPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPedsPlanDefinitionPreQuestionExample
