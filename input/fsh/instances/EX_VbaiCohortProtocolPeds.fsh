@@ -12,7 +12,7 @@ Description: "VbaiPedsCohortProtocol"
 * action[=].prefix = "1.0"
 * action[=].description = "List of pre-questions"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $PreQuestionsPlanDefinition
+* action[=].definitionCanonical = $PedsPreQuestionPlanDefinition
 
 * action[+].title = "Consent/Assent"
 * action[=].prefix = "1.1"

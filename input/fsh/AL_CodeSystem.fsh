@@ -164,3 +164,15 @@ Alias: $LeicesterCoughCodeSystem = https://voicecollab.ai/fhir/CodeSystem/leices
 Alias: $UrgeToCoughCodeSystem = https://voicecollab.ai/fhir/CodeSystem/urge-to-cough
 
 Alias: $PSC17CodeSystem = https://voicecollab.ai/fhir/CodeSystem/psc-17
+
+// Pre-Questions Peds
+Alias: $PedsEnrollmentCodeSystem = https://voicecollab.ai/fhir/CodeSystem/peds-enrollment
+
+Alias: $PedsLanguageFluencyCodeSystem = https://voicecollab.ai/fhir/CodeSystem/peds-language-fluency
+
+Alias: $PedsWhoCompletedSurveyCodeSystem = https://voicecollab.ai/fhir/CodeSystem/peds-who-completed-survey
+
+Alias: $PedsMedicalHistoryCodeSystem = https://voicecollab.ai/fhir/CodeSystem/peds-medical-history
+
+
+Alias: $PedsReasonToDeclineCodeSystem = https://voicecollab.ai/fhir/CodeSystem/peds-reason-to-decline

@@ -129,3 +129,20 @@ Alias: $LeicesterCoughValueSet = https://voicecollab.ai/fhir/ValueSet/leicester-
 Alias: $UrgeToCoughValueSet = https://voicecollab.ai/fhir/ValueSet/urge-to-cough
 
 Alias: $PSC17ValueSet = https://voicecollab.ai/fhir/ValueSet/psc-17
+
+// Peds PreQuestionEnrollment
+Alias: $PedsEnrollmentValueSet = https://voicecollab.ai/fhir/ValueSet/peds-enrollment
+
+
+Alias: $PedsLanguageFluencyValueSet = https://voicecollab.ai/fhir/ValueSet/peds-language-fluency
+
+
+Alias: $PedsWhoCompletedSurveyValueSet = https://voicecollab.ai/fhir/ValueSet/peds-who-completed-survey
+
+
+Alias: $PedsMedicalHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/peds-medical-history
+
+Alias: $PedsMedicalHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/peds-medical-history
+
+
+Alias: $PedsReasonToDeclineValueSet = https://voicecollab.ai/fhir/ValueSet/peds-reason-to-decline

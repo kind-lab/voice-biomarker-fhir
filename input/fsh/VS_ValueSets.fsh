@@ -866,3 +866,55 @@ Description:  "The Codes used by Pediatric Symptom Checklist (PSC-17)"
 * ^status = #active
 * ^date = "2023-07-21"
 * include codes from system $PSC17CodeSystem
+
+
+//---------------------------Pediatric Pre-Questionss-----------------------------
+
+ValueSet: PedsEnrollment
+Id: peds-enrollment
+Title: "Pediatric Enrollment"
+Description: "The codes required for Pediatric enrollment pre-question questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-07-21"
+* include codes from system $PedsEnrollmentCodeSystem
+
+
+ValueSet: PedsLanguageFluency
+Id: peds-language-fluency
+Title: "Pediatric Language Fluency"
+Description: "The codes required for Pediatric enrollment pre-question questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* include codes from system $PedsLanguageFluencyCodeSystem
+
+
+
+ValueSet: PedsWhoCompletedSurvey
+Id: peds-who-completed-survey
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* include codes from system $PedsWhoCompletedSurveyCodeSystem
+
+
+ValueSet: PedsMedicalHistory
+Id: peds-medical-history
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires Medical History"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* include codes from system $PedsMedicalHistoryCodeSystem
+
+ValueSet: PedsReasonToDecline
+Id: peds-reason-to-decline
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires Medical History"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* include codes from system $PedsReasonToDeclineCodeSystem 

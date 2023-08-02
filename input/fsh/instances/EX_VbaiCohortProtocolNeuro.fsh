@@ -12,7 +12,7 @@ Description: "VbaiCohortProtocol Neuro version"
 * action[=].prefix = "1.0"
 * action[=].description = "List of pre-questions"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $PreQuestionsPlanDefinition
+* action[=].definitionCanonical = $AdultPreQuestionsPlanDefinition
 
 * action[+].title = "Consent/Assent"
 * action[=].prefix = "1.1"
