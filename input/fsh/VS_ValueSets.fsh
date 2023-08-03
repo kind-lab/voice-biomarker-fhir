@@ -918,3 +918,12 @@ Description: "The codes required for Questionnaires Medical History"
 * ^status = #active
 * ^date = "2023-08-02"
 * include codes from system $PedsReasonToDeclineCodeSystem 
+
+ValueSet: DifficultyBreathing
+Id: difficulty-breathing
+Title: "Questionnaire codes for difficulty breahing"
+Description: "The codes required for Questionnaires"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* include codes from system $RespiratoryDifficultyBreathingCodeSystem

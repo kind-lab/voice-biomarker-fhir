@@ -176,3 +176,5 @@ Alias: $PedsMedicalHistoryCodeSystem = https://voicecollab.ai/fhir/CodeSystem/pe
 
 
 Alias: $PedsReasonToDeclineCodeSystem = https://voicecollab.ai/fhir/CodeSystem/peds-reason-to-decline
+
+Alias: $RespiratoryDifficultyBreathingCodeSystem = https://voicecollab.ai/fhir/CodeSystem/difficulty-breathing

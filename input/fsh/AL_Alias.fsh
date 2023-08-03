@@ -50,6 +50,9 @@ Alias: $UrgeToCough = https://voicecollab.ai/fhir/Questionnaire/UrgeToCough
 
 Alias: $PSC17 = https://voicecollab.ai/fhir/Questionnaire/PSC17
 
+
+Alias: $PatientQuestionnaireRespiratory = https://voicecollab.ai/fhir/Questionnaire/RespiratoryPatientQuestionnaire
+
 // General flow PlanDefintions
 
 Alias: $AdultPreQuestionsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiAdultPlanDefinitionPreQuestionExample
