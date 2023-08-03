@@ -1319,3 +1319,17 @@ Description: "The codes required for Questionnaires"
 * #4 "I do not have enough time and do NOT want to be contacted later"
 * #5 "I prefer not to share any health information for research"
 * #6 "Other, Please Specify"
+
+CodeSystem: DifficultyBreathing
+Id: difficulty-breathing
+Title: "Questionnaire codes for difficulty breahing"
+Description: "The codes required for Questionnaires"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-03"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #SID "Significant difficulty"
+* #MD "Moderate difficulty"
+* #SLD "Slight difficulty"

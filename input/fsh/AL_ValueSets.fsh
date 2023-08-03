@@ -146,3 +146,6 @@ Alias: $PedsMedicalHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/peds-m
 
 
 Alias: $PedsReasonToDeclineValueSet = https://voicecollab.ai/fhir/ValueSet/peds-reason-to-decline
+
+Alias: $RespiratoryDifficultyBreathingValueSet = https://voicecollab.ai/fhir/ValueSet/difficulty-breathing
+
