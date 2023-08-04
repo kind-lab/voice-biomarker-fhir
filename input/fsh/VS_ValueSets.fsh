@@ -927,3 +927,52 @@ Description: "The codes required for Questionnaires"
 * ^status = #active
 * ^date = "2023-08-02"
 * include codes from system $RespiratoryDifficultyBreathingCodeSystem
+
+//------------------------------Winograd Questions-------------------------------
+ValueSet: WinogradQ1
+Id: winograd-q1
+Title: "Questionnaire ValueSet for Winograd schema Question 1"
+Description: "The ValueSet required for Winograd Questionnaires Question 1"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* include codes from system $WinogradSchemaQ1CodeSystem
+
+ValueSet: WinogradQ2
+Id: winograd-q2
+Title: "Questionnaire ValueSet for Winograd schema Question 2"
+Description: "The ValueSet required for Winograd Questionnaires Question 2"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* include codes from system $WinogradSchemaQ2CodeSystem
+
+
+ValueSet: WinogradQ3
+Id: winograd-q3
+Title: "Questionnaire ValueSet for Winograd schema Question 3"
+Description: "The ValueSet required for Winograd Questionnaires Question 3"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* include codes from system $WinogradSchemaQ3CodeSystem
+
+
+ValueSet: WinogradQ4
+Id: winograd-q4
+Title: "Questionnaire ValueSet for Winograd schema Question 4"
+Description: "The ValueSet required for Winograd Questionnaires Question 4"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* include codes from system $WinogradSchemaQ4CodeSystem
+
+
+ValueSet: WinogradQ5
+Id: winograd-q5
+Title: "Questionnaire ValueSet for Winograd schema Question 5"
+Description: "The ValueSet required for Winograd Questionnaires Question 5"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* include codes from system $WinogradSchemaQ5CodeSystem

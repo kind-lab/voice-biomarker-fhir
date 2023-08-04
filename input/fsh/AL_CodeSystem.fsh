@@ -178,3 +178,11 @@ Alias: $PedsMedicalHistoryCodeSystem = https://voicecollab.ai/fhir/CodeSystem/pe
 Alias: $PedsReasonToDeclineCodeSystem = https://voicecollab.ai/fhir/CodeSystem/peds-reason-to-decline
 
 Alias: $RespiratoryDifficultyBreathingCodeSystem = https://voicecollab.ai/fhir/CodeSystem/difficulty-breathing
+
+//------------------------------Winograd Questions-------------------------------
+
+Alias: $WinogradSchemaQ1CodeSystem = https://voicecollab.ai/fhir/CodeSystem/winograd-q1
+Alias: $WinogradSchemaQ2CodeSystem = https://voicecollab.ai/fhir/CodeSystem/winograd-q2
+Alias: $WinogradSchemaQ3CodeSystem = https://voicecollab.ai/fhir/CodeSystem/winograd-q3
+Alias: $WinogradSchemaQ4CodeSystem = https://voicecollab.ai/fhir/CodeSystem/winograd-q4
+Alias: $WinogradSchemaQ5CodeSystem = https://voicecollab.ai/fhir/CodeSystem/winograd-q5

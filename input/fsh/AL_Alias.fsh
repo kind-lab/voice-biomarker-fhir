@@ -50,6 +50,7 @@ Alias: $UrgeToCough = https://voicecollab.ai/fhir/Questionnaire/UrgeToCough
 
 Alias: $PSC17 = https://voicecollab.ai/fhir/Questionnaire/PSC17
 
+Alias: $WinogradQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/WinogradSchema
 
 Alias: $PatientQuestionnaireRespiratory = https://voicecollab.ai/fhir/Questionnaire/RespiratoryPatientQuestionnaire
 
@@ -107,3 +108,4 @@ Alias: $AcousticTaskMoodPlanDefinition = https://voicecollab.ai/fhir/PlanDefinit
 Alias: $MoodQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireMoodExample
 
 Alias: $PedsPreQuestionPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPedsPlanDefinitionPreQuestionExample
+
