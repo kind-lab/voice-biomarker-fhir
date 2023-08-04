@@ -1,43 +1,58 @@
 ### Introduction
-This guide walks through the profiles and artifact found in the Vbai Profiles.
 
+The goal of this implementation guide is to comprehensively document the data collection process for the Bridge2AI Voice as a Biomarker of Health project. Where possible, the FHIR profiles aim to validate data content and ensure data quality.
 
-#### [PlanDefinition]
-The PlanDefinition helps describes how a certain protocol is conducted in a step by step set of actions. Within the team there are 5 major cohorts: Mood, Neurology, Pediatrics, Respiratory, and Voice. Each cohort must follow a general list of actions defined in [VbaiPlanDefinitionExample]. These actions include:
-1. Asking a Patient for consent
-2. Gathering [Demographics]
-3. Acoustic Tasks
-4. [Confounders]
-5. Questionnaires (ie. [PHQ9] & [GAD7])
-6. Patient Feedback
+The initial phase of the project focused on the collection of voice data with relevant clinical context in five groups: neurological disorders, mood disorders, respiratory disorders, voice disorders, and a pediatric cohort.
+To ensure consistency across these groups, a standardized protocol was created which aligned the high level workflow.
+In FHIR, the canonical [PlanDefinition](http://hl7.org/fhir/R4/plandefinition.html) resource can be used to structure protocols. At its core, a PlanDefinition is a pre-defined group of actions to be taken in particular circumstances. In our case, these actions are the data collection steps undertaken as a part of the data collection process.
 
-In addition to the actions listed above, each cohort will also have an individual PlanDefinition that describes cohort specific tasks.
+To provide consistency across the protocols, we extend the base PlanDefinition resource and defining a base [VbaiCohortProtocol]. This protocol constrains there to be exactly 12 steps. Though the title is not constrained by the profile, these steps are assumed to be:
 
- * [Mood-PlanDefinition]
- * [Neurology-PlanDefinition]
- * [Pediatric-PlanDefinition]
- * [Respiratory-PlanDefinition]
- * [Voice-PlanDefinition]
+1. Pre-Questions
+2. Consent/Assent
+3. Demographics
+4. Voice Impacting Qs
+5. Acoustic Tasks (General)
+6. Confounders (General)
+7. Questionnaires (General)
+8. Acoustic Tasks (Cohort specific)
+9. Confounders (Cohort Specific)
+10. Questionnaires (Cohort Specific)
+11. Clinician Input
+12. Feedback
 
+Each group's specific protocol will be an instance of the overarching [VbaiCohortProtocol]. Currently this includes:
 
-#### [Questionnaire]
-The Questionnaire resource captures the structure for any particular survey/questionnaire. Each question within the Questionnaire resource is bounded to a set of options and valuesets, with each having their own codesystem. Some example questionnaire include:
+* [MoodCohortProtocol]
+* [NeurologyCohortProtocol]
+* [PediatricCohortProtocol]
+* [RespiratoryCohortProtocol]
+* [VoiceCohortProtocol]
+
+Every step in these protocols points to a separate PlanDefinition. This is an abstraction that makes it easy in FHIR to have the individual steps vary across the groups.
+#### Elements of each protocol
+
+Protocols are composed of chronological actions. These actions have either:
+
+1. A title and a description only. This is typical for acoustic tasks. In this case, the action is described as it is intended to be performed.
+2. A title, description, and a definition. The definition is typically a Questionnaire resource.
+
+The latter type is more interesting, as the [Questionnaire] resource allows us to specify both the questions being asked *and* the structure of the responses. This specification will allow a FHIR server using this profile to validate data content.
+
+#### [Questionnaire] examples
+
+There are two resources related to a questionnaire:
+
+* [Questionnaire] - the Questionnaire structure itself
+* [QuestionnaireResponse] - an individual's answers to a particular questionnaire.
+
+The Questionnaire resource captures the structure for any particular survey/questionnaire. Each question within the Questionnaire resource is bounded to a set of options and valuesets, with each having their own codesystem.
+
+Some example questionnaires in the protocols include:
+
 * [PHQ9]
 * [GAD7]
 * [Confounders]
 * [Demographics]
 
-
-
-#### [VbaiBodyHeight]
-An observation profile based on US Core Body Height Profile.
-
-#### [VbaiBodyWeight]
-An observation profile based on US Core Body Weight Profile.
-
-#### [VbaiEncounter]
-An encounter profile based on US Core Encounter.
-
-
-
- {% include link-list.md %}
+{% include link-list.md %}
