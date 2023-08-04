@@ -10,7 +10,7 @@ Description: "An example of the Assent Cohort's PlanDefinition"
 
 * action[0].title = "Assent (Adults)"
 * action[=].prefix = "1.1.0"
-* action[=].description = "Retrieve Assent from adult participants"
+* action[=].description = "Retrieve Assent from participants"
 * action[=].participant.type = #patient
 * action[=].priority = #routine
 
