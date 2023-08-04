@@ -1333,3 +1333,74 @@ Description: "The codes required for Questionnaires"
 * #SID "Significant difficulty"
 * #MD "Moderate difficulty"
 * #SLD "Slight difficulty"
+
+//------------------------------Winograd Questions-------------------------------
+CodeSystem: WinogradQ1
+Id: winograd-q1
+Title: "Questionnaire codes for Winograd schema Question 1"
+Description: "The codes required for Winograd Questionnaires Question 1"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #S "The Scientists"
+* #F "The Fish"
+
+CodeSystem: WinogradQ2
+Id: winograd-q2
+Title: "Questionnaire codes for Winograd schema Question 2"
+Description: "The codes required for Winograd Questionnaires Question 2"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #F "Fred"
+* #G "George"
+
+
+CodeSystem: WinogradQ3
+Id: winograd-q3
+Title: "Questionnaire codes for Winograd schema Question 3"
+Description: "The codes required for Winograd Questionnaires Question 3"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #J "Joan"
+* #S "Susan"
+
+
+CodeSystem: WinogradQ4
+Id: winograd-q4
+Title: "Questionnaire codes for Winograd schema Question 4"
+Description: "The codes required for Winograd Questionnaires Question 4"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #J "Joe"
+* #U "Joe's Uncle"
+
+CodeSystem: WinogradQ5
+Id: winograd-q5
+Title: "Questionnaire codes for Winograd schema Question 5"
+Description: "The codes required for Winograd Questionnaires Question 5"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #B "The Bus"
+* #T "The Truck"
+
+
+

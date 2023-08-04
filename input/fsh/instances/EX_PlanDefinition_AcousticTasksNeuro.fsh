@@ -30,37 +30,8 @@ Description: "An example of a Voice as a Biomarker for Acoustic Tasks Neuro Coho
 
 * action[+].title = "Winograd schemas link"
 * action[=].prefix = "1.8 Task 5"
-* action[=].description = "Read each sentence, and answer the question by selecting one of the options:
-    
-The scientists are studying three species of fish that have recently been found living in the Indian Ocean. They began two years ago. Who or what began two years ago? 
-
-    - The Scientists
-
-    - The fish
-
-Fred watched TV while George went out to buy groceries. After an hour he got up. Who got up?
-
-    - Fred
-
-    - George
-
-Joan made sure to thank Susan for all the help she had received. Who had received help?
-
-    - Joan
-
-    - Susan
-
-Joe’s uncle can still beat him at tennis, even though he is 30 years older. Who is older?
-
-    - Joe
-
-    - Joe’s uncle
-
-The delivery truck zoomed by the school bus because it was going so fast. What was going so fast?
-
-    - The bus
-
-    - The truck"
+* action[=].description = "Read each sentence, and answer the question by selecting one of the options"
+* action[=].definitionCanonical = $WinogradQuestionnaire
 
 * action[+].title = "Montreal Cognitive Assessment (MoCA Test)"
 * action[=].prefix = "1.8 Task 6"

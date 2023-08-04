@@ -149,3 +149,11 @@ Alias: $PedsReasonToDeclineValueSet = https://voicecollab.ai/fhir/ValueSet/peds-
 
 Alias: $RespiratoryDifficultyBreathingValueSet = https://voicecollab.ai/fhir/ValueSet/difficulty-breathing
 
+//------------------------------Winograd Questions-------------------------------
+
+Alias: $WinogradSchemaQ1ValueSet = https://voicecollab.ai/fhir/ValueSet/winograd-q1
+Alias: $WinogradSchemaQ2ValueSet = https://voicecollab.ai/fhir/ValueSet/winograd-q2
+Alias: $WinogradSchemaQ3ValueSet = https://voicecollab.ai/fhir/ValueSet/winograd-q3
+Alias: $WinogradSchemaQ4ValueSet = https://voicecollab.ai/fhir/ValueSet/winograd-q4
+Alias: $WinogradSchemaQ5ValueSet = https://voicecollab.ai/fhir/ValueSet/winograd-q5
+
