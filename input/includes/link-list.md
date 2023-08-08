@@ -3,7 +3,7 @@
 [Guidance]: guidance.html
 [Home]: index.html
 
-
+[VbaiCohortProtocol]: StructureDefinition-vbai-cohort-protocol.html
 [VbaiBodyHeight]: StructureDefinition-vbai-body-height.html
 [VbaiBodyWeight]: StructureDefinition-vbai-body-weight.html
 [VbaiCondition]: StructureDefinition-vbai-condition.html
@@ -23,9 +23,9 @@
 [Confounders]: Questionnaire-VbaiQuestionnaireConfoundersExample.html
 [PHQ9]: Questionnaire-PHQ9schema.html
 [GAD7]: Questionnaire-GAD7schema.html
-[Mood-PlanDefinition]: PlanDefinition-VbaiPlanDefinitionMoodExample.html
-[Neurology-PlanDefinition]: PlanDefinition-VbaiPlanDefinitionNeurologyExample.html
-[Pediatric-PlanDefinition]: PlanDefinition-VbaiPlanDefinitionPedsExample.html
-[Respiratory-PlanDefinition]: PlanDefinition-VbaiPlanDefinitionRespiratoryExample.html
-[Voice-PlanDefinition]: PlanDefinition-VbaiPlanDefinitionVoiceExample.html
 [Questionnaire]: StructureDefinition-vbai-questionnaire.html
+[MoodCohortProtocol]: PlanDefinition-MoodCohortProtocolExample.html
+[NeurologyCohortProtocol]: PlanDefinition-CohortProtocolExampleNeuro.html
+[PediatricCohortProtocol]: PlanDefinition-PedsCohortProtocolExample.html
+[RespiratoryCohortProtocol]: PlanDefinition-RespiratoryCohortProtocolExample.html
+[VoiceCohortProtocol]: PlanDefinition-VoiceCohortProtocolExample.html
