@@ -9,34 +9,28 @@ Description: "VbaiRespiratoryCohortProtocol"
 * title = "Respiratory Cohort Protocol"
 
 * action[0].title = "Pre-Questions"
-* action[=].prefix = "1.0"
+* action[=].prefix = "1.1"
 * action[=].description = "List of pre-questions"
 * action[=].priority = #routine
 * action[=].definitionCanonical = $AdultPreQuestionsPlanDefinition
 
 * action[+].title = "Consent/Assent"
-* action[=].prefix = "1.1"
+* action[=].prefix = "1.2"
 * action[=].description = "Retieve consent/assent from participant"
 * action[=].priority = #routine
 * action[=].definitionCanonical = $ConsentPlanDefinition
 
 * action[+].title = "Demographics"
-* action[=].prefix = "1.2"
+* action[=].prefix = "1.3"
 * action[=].description = "have Participant complete demographics"
 * action[=].priority = #routine
 * action[=].definitionCanonical = $DemographicsPlanDefinition
 
 * action[+].title = "Voice Impacting Q's"
-* action[=].prefix = "1.3"
+* action[=].prefix = "1.4"
 * action[=].description = "Administer Voice Impacting Questions"
 * action[=].priority = #routine
 * action[=].definitionCanonical = $VoiceImpactingPlanDefinition
-
-* action[+].title = "Session"
-* action[=].prefix = "1.4"
-* action[=].description = "Start Session"
-* action[=].priority = #routine
-* action[=].definitionCanonical = $SessionPlanDefinition
 
 * action[+].title = "Acoustic Tasks"
 * action[=].prefix = "1.5"
@@ -66,7 +60,7 @@ Description: "VbaiRespiratoryCohortProtocol"
 * action[=].prefix = "1.9"
 * action[=].description = "Administer cohort specific confounders"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $ConfoundersPlanDefinition
+* action[=].definitionCanonical = $CohortSpecificConfoundersPlanDefinition
 
 * action[+].title = "Cohort specific Questionnaires"
 * action[=].prefix = "1.10"
@@ -80,14 +74,9 @@ Description: "VbaiRespiratoryCohortProtocol"
 * action[=].priority = #routine
 * action[=].definitionCanonical = $ClinicianInputPlanDefinition 
 
-* action[+].title = "Other"
-* action[=].prefix = "1.12"
-* action[=].description = "Other"
-* action[=].priority = #routine
-* action[=].definitionCanonical = $OtherPlanDefinition
 
 * action[+].title = "Feedback"
-* action[=].prefix = "1.13"
+* action[=].prefix = "1.12"
 * action[=].description = "Recieve Feedback"
 * action[=].priority = #routine
 * action[=].definitionCanonical = $FeedbackPlanDefinition
