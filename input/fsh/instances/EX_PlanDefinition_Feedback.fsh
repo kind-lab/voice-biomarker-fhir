@@ -9,7 +9,7 @@ Description: "An example of the Feedback Cohort's PlanDefinition"
 * title = "Feedback PlanDefintion"
 
 * action[0].title = "Feedback"
-* action[=].prefix = "1.13.1"
+* action[=].prefix = "1.12.1"
 * action[=].description = "Please leave any comments or suggestions on the study so we can improve it (or skip)"
 * action[=].priority = #routine
 

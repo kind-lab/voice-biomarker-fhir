@@ -84,7 +84,7 @@ Alias: $QuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition
 
 Alias: $ClinicianInputPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionClinicianInputExample
 
-Alias: $OtherPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionOtherExample
+Alias: $CohortSpecificConfoundersPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionCohortSpecificConfoundersExample
 
 Alias: $FeedbackPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionFeedbackExample
 
