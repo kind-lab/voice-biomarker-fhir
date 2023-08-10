@@ -24,6 +24,7 @@
 [PHQ9]: Questionnaire-PHQ9schema.html
 [GAD7]: Questionnaire-GAD7schema.html
 [Questionnaire]: StructureDefinition-vbai-questionnaire.html
+[QuestionnaireResponse]: StructureDefinition-vbai-questionnaire-response.html
 [MoodCohortProtocol]: PlanDefinition-MoodCohortProtocolExample.html
 [NeurologyCohortProtocol]: PlanDefinition-CohortProtocolExampleNeuro.html
 [PediatricCohortProtocol]: PlanDefinition-PedsCohortProtocolExample.html
