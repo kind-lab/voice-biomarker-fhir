@@ -26,8 +26,6 @@ Alias: $VocalFoldParalysis = https://voicecollab.ai/fhir/Questionnaire/VocalFold
 
 Alias: $PedsPreQuestionQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PedsPreQuestionQuestionnaire
 // PlanDefinitions
-Alias: $MoodCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionMoodExample
-
 Alias: $PatientQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PatientQuestions
 
 Alias: $DefaultPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionExample
