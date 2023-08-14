@@ -28,14 +28,6 @@ Alias: $PedsPreQuestionQuestionnaire = https://voicecollab.ai/fhir/Questionnaire
 // PlanDefinitions
 Alias: $MoodCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionMoodExample
 
-Alias: $VoiceCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceExample
-// Alias: $PediatricsCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionPedsExample
-
-// Alias: $NeurologyCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeurologyExample
-
-
-// Alias: $RespiratoryCohortPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionRespiratoryExample
-
 Alias: $PatientQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PatientQuestions
 
 Alias: $DefaultPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionExample
