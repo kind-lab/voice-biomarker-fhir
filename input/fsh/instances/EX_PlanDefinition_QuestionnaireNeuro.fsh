@@ -1,7 +1,7 @@
 Instance: VbaiPlanDefinitionQuestionnaireNeuroExample
 InstanceOf: VbaiPlanDefinition
 Usage: #example
-Title: "VbaiPlanDefinition Questionnaire Neuro Example"
+Title: " Questionnaire Neuro PlanDefinition"
 Description: "An example of a Voice as a Biomarker for Questionnaire Neuro Cohort PlanDefinition"
 * status = #active
 * date = "2023-07-31"

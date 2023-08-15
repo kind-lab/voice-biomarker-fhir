@@ -1,7 +1,7 @@
 Instance: CohortProtocolExampleNeuro
 InstanceOf: VbaiCohortProtocol
 Usage: #example
-Title: "CohortProtocolNeuroExample"
+Title: "Cohort Protocol Neuro"
 Description: "VbaiCohortProtocol Neuro version"
 * status = #active
 * date = "2023-07-31"

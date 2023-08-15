@@ -1,7 +1,7 @@
 Instance: VbaiPlanDefinitionAcousticTasksNeuroExample
 InstanceOf: VbaiPlanDefinition
 Usage: #example
-Title: "VbaiPlanDefinitionAcousticTasksNeuroExample"
+Title: "Acoustic Tasks Neuro PlanDefinition"
 Description: "An example of a Voice as a Biomarker for Acoustic Tasks Neuro Cohort PlanDefinition"
 
 * status = #active

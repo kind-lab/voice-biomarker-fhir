@@ -1,7 +1,7 @@
 Instance: VbaiPlanDefinitionQuestionnaireExample
 InstanceOf: VbaiPlanDefinition
 Usage: #example
-Title: "VbaiPlanDefinitionQuestionnaireExample"
+Title: "Questionnaire PlanDefinition"
 Description: "An example of the Questionnaire Cohort's PlanDefinition"
 * status = #active
 * date = "2023-07-28"

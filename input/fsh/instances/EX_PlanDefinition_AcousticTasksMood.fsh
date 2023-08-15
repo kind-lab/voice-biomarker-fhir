@@ -1,7 +1,7 @@
 Instance: VbaiPlanDefinitionAcousticTasksMoodExample
 InstanceOf: VbaiPlanDefinition
 Usage: #example
-Title: "VbaiPlanDefinitionAcousticTasksMoodExample"
+Title: "Acoustic Tasks Mood PlanDefinition"
 Description: "An example PlanDefinition of the Acoustic Tasks for Mood Cohort's "
 * status = #active
 * date = "2023-07-29"

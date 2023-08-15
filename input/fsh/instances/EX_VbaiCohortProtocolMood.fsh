@@ -1,7 +1,7 @@
 Instance: MoodCohortProtocolExample
 InstanceOf: VbaiCohortProtocol
 Usage: #example
-Title: "CohortProtocolMoodExample"
+Title: "Cohort Protocol Mood"
 Description: "VbaiMoodCohortProtocol"
 * status = #active
 * date = "2023-07-31"

@@ -1,7 +1,7 @@
 Instance: VbaiPlanDefinitionAcousticTasksPedsExample
 InstanceOf: VbaiPlanDefinition
 Usage: #example
-Title: "VbaiPlanDefinitionAcousticTasksPedsExample"
+Title: "Acoustic Tasks Peds PlanDefinition"
 Description: "An example PlanDefinition of the Acoustic Tasks for Peds Cohort's "
 * status = #active
 * date = "2023-07-29"

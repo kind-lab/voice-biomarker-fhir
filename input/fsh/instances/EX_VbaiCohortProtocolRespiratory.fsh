@@ -1,7 +1,7 @@
 Instance: RespiratoryCohortProtocolExample
 InstanceOf: VbaiCohortProtocol
 Usage: #example
-Title: "CohortProtocolRespiratoryExample"
+Title: "Cohort Protocol Respiratory"
 Description: "VbaiRespiratoryCohortProtocol"
 * status = #active
 * date = "2023-07-31"

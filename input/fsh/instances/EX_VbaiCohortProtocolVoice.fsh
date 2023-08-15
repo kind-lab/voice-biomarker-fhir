@@ -1,7 +1,7 @@
 Instance: VoiceCohortProtocolExample
 InstanceOf: VbaiCohortProtocol
 Usage: #example
-Title: "CohortProtocolVoiceExample"
+Title: "Cohort Protocol Voice"
 Description: "VbaiVoiceCohortProtocol"
 * status = #active
 * date = "2023-07-31"
