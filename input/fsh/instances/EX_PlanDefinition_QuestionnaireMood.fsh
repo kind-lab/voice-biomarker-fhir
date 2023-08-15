@@ -1,7 +1,7 @@
 Instance: VbaiPlanDefinitionQuestionnaireMoodExample
 InstanceOf: VbaiPlanDefinition
 Usage: #example
-Title: "VbaiPlanDefinitionQuestionnaireMoodExample"
+Title: "Questionnaire Mood PlanDefinition"
 Description: "An example of a Mood as a Biomarker for QuestionnaireMood Cohort PlanDefinition"
 * status = #active
 * date = "2023-07-31"

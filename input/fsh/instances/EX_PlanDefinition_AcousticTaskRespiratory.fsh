@@ -1,7 +1,7 @@
 Instance: VbaiPlanDefinitionAcousticTasksRespiratoryExample
 InstanceOf: VbaiPlanDefinition
 Usage: #example
-Title: "VbaiPlanDefinitionAcousticTasksRespiratoryExample"
+Title: "Acoustic Tasks Respiratory PlanDefinition"
 Description: "An example of a Voice as a Biomarker for Acoustic Tasks Respiratory Cohort PlanDefinition"
 * status = #active
 * date = "2023-07-31"

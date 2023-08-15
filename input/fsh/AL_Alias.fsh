@@ -21,7 +21,6 @@ Alias: $CombinedPDFAddendum = https://voicecollab.ai/fhir/Questionnaire/Addendum
 Alias: $BasicInformation = https://voicecollab.ai/fhir/Questionnaire/GeneralInformation
 Alias: $ContactInformation = https://voicecollab.ai/fhir/Questionnaire/ContactInformation
 Alias: $EligibilityOfParticipant = https://voicecollab.ai/fhir/Questionnaire/EligibleStudies
-Alias: $Session = https://voicecollab.ai/fhir/Questionnaire/Session
 Alias: $VocalFoldParalysis = https://voicecollab.ai/fhir/Questionnaire/VocalFoldParalysis
 
 Alias: $PedsPreQuestionQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PedsPreQuestionQuestionnaire
@@ -55,8 +54,6 @@ Alias: $AssentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPl
 Alias: $DemographicsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionDemographicsExample
 
 Alias: $VoiceImpactingPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceImpactingExample
-
-Alias: $SessionPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionSessionExample
 
 Alias: $ConfoundersPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample
 

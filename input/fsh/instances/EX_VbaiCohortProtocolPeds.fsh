@@ -1,7 +1,7 @@
 Instance: PedsCohortProtocolExample
 InstanceOf: VbaiCohortProtocol
 Usage: #example
-Title: "CohortProtocolPedsExample"
+Title: "Cohort Protocol Peds"
 Description: "VbaiPedsCohortProtocol"
 * status = #active
 * date = "2023-07-31"

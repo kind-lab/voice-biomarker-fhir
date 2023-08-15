@@ -1,7 +1,7 @@
 Instance: VbaiPlanDefinitionAcousticTasksVoiceExample
 InstanceOf: VbaiPlanDefinition
 Usage: #example
-Title: "VbaiPlanDefinitionAcousticTasksVoiceExample"
+Title: "Acoustic Tasks Voice PlanDefinition"
 Description: "An example PlanDefinition of the Acoustic Tasks for Voice Cohort's "
 * status = #active
 * date = "2023-07-29"
