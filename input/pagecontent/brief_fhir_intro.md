@@ -39,9 +39,9 @@ Think of a multiple choice exam. In this case, [Questionnaire] describes the exa
 #### Reading a resource
 
 With some knowledge of the resources involved in the cohort, it will be useful to understand how to read a resource page.
-The following is a sample of the [DemographicsQuestionnaire]:
+The following is a sample of the [Demographics]:
 
-{% include img.html img=demographics_questionnaire.png caption="Top rows of the demographic questionnaire." %}
+{% include img.html img="demographics_questionnaire.png" caption="Top rows of the demographic questionnaire." %}
 
 Let's look at the "completed_by" field, the last row in the above screenshot. From left to right, we can read:
 
