@@ -2,6 +2,11 @@
 [Change Log]: changelog.html
 [Guidance]: guidance.html
 [Home]: index.html
+[MoodTutorial]: tutorial_mood.html
+[VoiceTutorial]: tutorial_voice.html
+[PedsTutorial]: tutorial_peds.html
+[RespiratoryTutorial]: tutorial_respiratory.html
+[NeuroTutorial]: tutorial_neuro.html
 
 [VbaiCohortProtocol]: StructureDefinition-vbai-cohort-protocol.html
 [VbaiBodyHeight]: StructureDefinition-vbai-body-height.html
@@ -46,5 +51,25 @@
 [VbaiPlanDefinitionAcousticTasksMoodExample]: PlanDefinition-VbaiPlanDefinitionAcousticTasksMoodExample.html
 [VbaiPlanDefinitionCohortSpecificConfoundersExample]: PlanDefinition-VbaiPlanDefinitionCohortSpecificConfoundersExample.html
 [VbaiPlanDefinitionQuestionnaireMoodExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireMoodExample.html
+
+
+[VbaiPlanDefinitionAcousticTasksVoiceExample]: PlanDefinition-VbaiPlanDefinitionAcousticTasksVoiceExample.html
+[VbaiPlanDefinitionQuestionnaireVoiceExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireVoiceExample.html
+
+
+[VbaiPlanDefinitionAcousticTasksPedsExample]: PlanDefinition-VbaiPlanDefinitionAcousticTasksPedsExample.html
+[VbaiPlanDefinitionQuestionnairePedsExample]: PlanDefinition-VbaiPlanDefinitionQuestionnairePedsExample.html
+[Assent]: PlanDefinition-VbaiPlanDefinitionAssentExample.html
+
+
+[VbaiPlanDefinitionAcousticTasksRespiratoryExample]: PlanDefinition-VbaiPlanDefinitionAcousticTasksRespiratoryExample.html
+
+[VbaiPlanDefinitionQuestionnaireRespiratoryExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireRespiratoryExample.html
+
+
+[VbaiPlanDefinitionAcousticTasksNeuroExample]: PlanDefinition-VbaiPlanDefinitionAcousticTasksNeuroExample.html
+[VbaiPlanDefinitionQuestionnaireNeuroExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireNeuroExample.html
+
+
 [VbaiPlanDefinitionClinicianInputExample]: PlanDefinition-VbaiPlanDefinitionClinicianInputExample.html
 [Feedback]: PlanDefinition-VbaiPlanDefinitionFeedbackExample.html
