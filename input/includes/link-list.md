@@ -30,3 +30,21 @@
 [PediatricCohortProtocol]: PlanDefinition-PedsCohortProtocolExample.html
 [RespiratoryCohortProtocol]: PlanDefinition-RespiratoryCohortProtocolExample.html
 [VoiceCohortProtocol]: PlanDefinition-VoiceCohortProtocolExample.html
+
+[PreQuestions]: PlanDefinition-VbaiAdultPlanDefinitionPreQuestionExample.html
+[GeneralInformation]: Questionnaire-GeneralInformation.html
+[ContactInformation]: Questionnaire-ContactInformation.html
+[EligibleStudies]: Questionnaire-EligibleStudies.html
+[Enrollment]: Questionnaire-Enrollment.html
+[Consent]: PlanDefinition-VbaiPlanDefinitionConsentExample.html
+[DemographicQuestionnaire]: Questionnaire-VbaiQuestionnaireDemographicExample.html
+[VoiceImpactingQuestionnaire]: Questionnaire-VocalFoldParalysis.html
+[AcousticTasks]: PlanDefinition-VbaiPlanDefinitionAcousticTasksGeneralExample.html
+[ConfounderQuestionnaire]: Questionnaire-VbaiQuestionnaireConfoundersExample.html
+[ValidatedQuestionnaires]: PlanDefinition-VbaiPlanDefinitionGeneralQuestionnaireExample.html
+
+[VbaiPlanDefinitionAcousticTasksMoodExample]: PlanDefinition-VbaiPlanDefinitionAcousticTasksMoodExample.html
+[VbaiPlanDefinitionCohortSpecificConfoundersExample]: PlanDefinition-VbaiPlanDefinitionCohortSpecificConfoundersExample.html
+[VbaiPlanDefinitionQuestionnaireMoodExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireMoodExample.html
+[VbaiPlanDefinitionClinicianInputExample]: PlanDefinition-VbaiPlanDefinitionClinicianInputExample.html
+[Feedback]: PlanDefinition-VbaiPlanDefinitionFeedbackExample.html
