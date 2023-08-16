@@ -4,7 +4,7 @@ The goal of this tutorial is to support understanding the voice disorder protoco
 
 <div class="alert info">
   <span class="closebtn">×</span>  
-  <strong>Note:</strong> If you don't know what the PlanDefinition, Questionnaire, and QuestionnaireResponse resources are, head over to the <a href="/vbai-fhir/brief_fhir_intro.md">brief FHIR intro</a> page.
+  <strong>Note:</strong> If you don't know what the PlanDefinition, Questionnaire, and QuestionnaireResponse resources are, head over to the <a href="/vbai-fhir/brief_fhir_intro.html">brief FHIR intro</a> page.
 </div>
 
 As with all protocols, the voice protocol has 12 sequential actions.
