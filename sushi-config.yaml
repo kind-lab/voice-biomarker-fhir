@@ -53,9 +53,16 @@ menu:
   Guidance: guidance.html
   Artifacts: artifacts.html
   Change Log: changelog.html
+  Tutorial: tutorial_table_of_contents.html
   
 pages:
    index.md:
    guidance.md:
    artifacts.html:
    changelog.md:
+   tutorial_mood.md:
+   tutorial_voice.md:
+   tutorial_peds.md:
+   tutorial_respiratory.md:
+   tutorial_neuro.md:
+   tutorial_table_of_contents.md:
