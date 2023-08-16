@@ -35,6 +35,10 @@ Each group's specific protocol will be an instance of the overarching [VbaiCohor
 * [RespiratoryCohortProtocol]
 * [VoiceCohortProtocol]
 
+
 Every step in these protocols points to a separate PlanDefinition. This is an abstraction that makes it easy in FHIR to have the individual steps vary across the groups.
+
+For further information and guides, a table of contents listing a tutorial for each protocol can be found here:
+* [Tutorials]
 
 {% include link-list.md %}

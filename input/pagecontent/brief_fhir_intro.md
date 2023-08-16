@@ -35,3 +35,5 @@ The [QuestionnaireResponse] resource is a natural counterpart to the [Questionna
 Whereas the [Questionnaire] describes the format of the questions being asked, the [QuestionnaireResponse] describes the format of the answers being provided. We use [QuestionnaireResponse] resources to validate the answers to the question.
 
 Think of a multiple choice exam. In this case, [Questionnaire] describes the exam questions, and the possible answers to each question (e.g. a, b, c, or d). The [QuestionnaireResponse] is just the set of answers provided by an individual.
+
+{% include link-list.md %}
