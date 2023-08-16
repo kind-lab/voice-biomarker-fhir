@@ -8,7 +8,7 @@ Description: "An example of the Assent Cohort's PlanDefinition"
 * description = "This is a plandefinition for Assent"
 * title = "Assent"
 
-* action[0].title = "Assent"
+* action[0].title = "Assent (Peds)"
 * action[=].prefix = "1.2.0"
 * action[=].description = "Retrieve Assent from participants"
 * action[=].participant.type = #patient
