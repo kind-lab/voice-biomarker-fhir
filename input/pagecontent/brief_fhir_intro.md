@@ -36,4 +36,20 @@ Whereas the [Questionnaire] describes the format of the questions being asked, t
 
 Think of a multiple choice exam. In this case, [Questionnaire] describes the exam questions, and the possible answers to each question (e.g. a, b, c, or d). The [QuestionnaireResponse] is just the set of answers provided by an individual.
 
+#### Reading a resource
+
+With some knowledge of the resources involved in the cohort, it will be useful to understand how to read a resource page.
+The following is a sample of the [DemographicsQuestionnaire]:
+
+{% include img.html img=demographics_questionnaire.png caption="Top rows of the demographic questionnaire." %}
+
+Let's look at the "completed_by" field, the last row in the above screenshot. From left to right, we can read:
+
+- The level of the item in the hierarchy. Many items in FHIR are hierarchical or grouped. The questions above "completed_by" are grouped under a "general" group. These groups are useful for storing related items. Visually we can see that "completed_by" is not in the general group.
+- The name of the item (e.g. "completed_by")
+- A description (e.g. "Who is completing this survey?")
+- The cardinality of the identifier, which stipulates how many responses are allowed. The most common entry is "0..1", which means both 0 and 1 responses are allowed. More clearly, we expect one response, but it's OK for there to be no response, and we don't allow more than one response to this question.
+- The type of the response. Types enforce certain rules on the response. A "choice" type can only be one of a predecided set of choices. A "string" type can be any text. A "date" type must follow rules for well-formed dates, and so on.
+- Optionally, a ValueSet is listed. For the "choice" data type, the ValueSet lists out the allowed choices. For "completed_by", this is the [whocompletedsurvey] ValueSet.
+
 {% include link-list.md %}

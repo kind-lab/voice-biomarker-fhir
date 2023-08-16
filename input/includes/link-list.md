@@ -37,6 +37,7 @@
 [PediatricCohortProtocol]: PlanDefinition-PedsCohortProtocolExample.html
 [RespiratoryCohortProtocol]: PlanDefinition-RespiratoryCohortProtocolExample.html
 [VoiceCohortProtocol]: PlanDefinition-VoiceCohortProtocolExample.html
+[whocompletedsurvey]: ValueSet-whocompletedsurvey.html
 
 [PreQuestions]: PlanDefinition-VbaiAdultPlanDefinitionPreQuestionExample.html
 [GeneralInformation]: Questionnaire-GeneralInformation.html
