@@ -7,6 +7,8 @@
 [PedsTutorial]: tutorial_peds.html
 [RespiratoryTutorial]: tutorial_respiratory.html
 [NeuroTutorial]: tutorial_neuro.html
+[Tutorials]: tutorial_table_of_contents.html
+[IntroToFhir]: brief_fhir_intro.html
 
 [VbaiCohortProtocol]: StructureDefinition-vbai-cohort-protocol.html
 [VbaiBodyHeight]: StructureDefinition-vbai-body-height.html
