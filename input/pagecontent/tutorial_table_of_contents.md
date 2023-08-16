@@ -1,28 +1,9 @@
-## Mood Cohort Tutorial
-[MoodTutorial]
+Cohort specific tutorials are provided. These tutorials provide a guide for the FHIR resources which constitute each protocol.
 
-## Voice Cohort Tutorial
-[VoiceTutorial]
-
-## Peds Cohort Tutorial
-[PedsTutorial]
-
-## Respiratory Cohort Tutorial
-[RespiratoryTutorial]
-
-## Neuro Cohort Tutorial
-[NeuroTutorial]
-
-
-
-
-
-
-
-
-
-
-
-
+* [MoodTutorial]
+* [VoiceTutorial]
+* [PedsTutorial]
+* [RespiratoryTutorial]
+* [NeuroTutorial]
 
 {% include link-list.md %}
