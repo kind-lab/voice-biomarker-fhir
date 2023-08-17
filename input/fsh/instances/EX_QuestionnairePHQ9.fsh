@@ -45,10 +45,42 @@ Description: "PHQ-9 assessment schema"
 * item[=].item[=].type = #choice
 * item[=].item[=].text = "Thoughts that you would be better off dead or of hurting yourself in some way?"
 * item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
+
+
 * item[=].item[+].linkId = "phq9_10"
 * item[=].item[=].type = #choice
 * item[=].item[=].text = "How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
 * item[=].item[=].answerValueSet = $GAD7AndPHQOtionsValueSet
+* item[=].item[=].enableWhen[0].question = "phq9_1"
+* item[=].item[=].enableWhen[=].operator = #!=
+* item[=].item[=].enableWhen[=].answerString = "Not at all"
+* item[=].item[=].enableWhen[+].question = "phq9_2"
+* item[=].item[=].enableWhen[=].operator = #!=
+* item[=].item[=].enableWhen[=].answerString = "Not at all"
+* item[=].item[=].enableWhen[+].question = "phq9_3"
+* item[=].item[=].enableWhen[=].operator = #!=
+* item[=].item[=].enableWhen[=].answerString = "Not at all"
+* item[=].item[=].enableWhen[+].question = "phq9_4"
+* item[=].item[=].enableWhen[=].operator = #!=
+* item[=].item[=].enableWhen[=].answerString = "Not at all"
+* item[=].item[=].enableWhen[+].question = "phq9_5"
+* item[=].item[=].enableWhen[=].operator = #!=
+* item[=].item[=].enableWhen[=].answerString = "Not at all"
+* item[=].item[=].enableWhen[+].question = "phq9_6"
+* item[=].item[=].enableWhen[=].operator = #!=
+* item[=].item[=].enableWhen[=].answerString = "Not at all"
+* item[=].item[=].enableWhen[+].question = "phq9_7"
+* item[=].item[=].enableWhen[=].operator = #!=
+* item[=].item[=].enableWhen[=].answerString = "Not at all"
+* item[=].item[=].enableWhen[+].question = "phq9_8"
+* item[=].item[=].enableWhen[=].operator = #!=
+* item[=].item[=].enableWhen[=].answerString = "Not at all"
+* item[=].item[=].enableWhen[+].question = "phq9_9"
+* item[=].item[=].enableWhen[=].operator = #!=
+* item[=].item[=].enableWhen[=].answerString = "Not at all"
+* item[=].item[=].enableBehavior = #any
+
+
 * item[=].item[+].linkId = "phq9_total_score"
 * item[=].item[=].type = #integer
 * item[=].item[=].text = "PHQ-9 Score"
