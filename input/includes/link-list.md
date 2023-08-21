@@ -76,3 +76,4 @@
 
 [VbaiPlanDefinitionClinicianInputExample]: PlanDefinition-VbaiPlanDefinitionClinicianInputExample.html
 [Feedback]: PlanDefinition-VbaiPlanDefinitionFeedbackExample.html
+[NeuroConsent]: PlanDefinition-VbaiPlanDefinitionNeuroConsentExample.html
