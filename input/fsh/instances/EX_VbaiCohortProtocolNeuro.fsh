@@ -18,7 +18,7 @@ Description: "VbaiCohortProtocol Neuro version"
 * action[=].prefix = "1.2"
 * action[=].description = "Retieve consent/assent from participant"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $ConsentPlanDefinition
+* action[=].definitionCanonical = $NeuroConsentPlanDefinition
 
 * action[+].title = "Demographics"
 * action[=].prefix = "1.3"

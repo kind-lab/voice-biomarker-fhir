@@ -186,3 +186,9 @@ Alias: $WinogradSchemaQ2CodeSystem = https://voicecollab.ai/fhir/CodeSystem/wino
 Alias: $WinogradSchemaQ3CodeSystem = https://voicecollab.ai/fhir/CodeSystem/winograd-q3
 Alias: $WinogradSchemaQ4CodeSystem = https://voicecollab.ai/fhir/CodeSystem/winograd-q4
 Alias: $WinogradSchemaQ5CodeSystem = https://voicecollab.ai/fhir/CodeSystem/winograd-q5
+
+//-------------------------------Neuro Consent-----------------------------------
+Alias: $NeuroConsentCodeSystem = https://voicecollab.ai/fhir/CodeSystem/neuro-consent
+Alias: $PermissionToShareWithDoctorCodeSystem = https://voicecollab.ai/fhir/CodeSystem/permission-to-share-with-doctor
+Alias: $PermissionToShareWithFamilyCodeSystem = https://voicecollab.ai/fhir/CodeSystem/permission-to-share-with-family
+Alias: $NeuroParticipationConsentCodeSystem = https://voicecollab.ai/fhir/CodeSystem/neuro-participation-consent

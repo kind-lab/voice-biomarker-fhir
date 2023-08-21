@@ -157,3 +157,10 @@ Alias: $WinogradSchemaQ3ValueSet = https://voicecollab.ai/fhir/ValueSet/winograd
 Alias: $WinogradSchemaQ4ValueSet = https://voicecollab.ai/fhir/ValueSet/winograd-q4
 Alias: $WinogradSchemaQ5ValueSet = https://voicecollab.ai/fhir/ValueSet/winograd-q5
 
+
+//-------------------------------Neuro Consent-----------------------------------
+Alias: $NeuroConsentValueSet = https://voicecollab.ai/fhir/ValueSet/neuro-consent
+
+Alias: $PermissionToShareWithDoctorValueSet = https://voicecollab.ai/fhir/ValueSet/permission-to-share-with-doctor
+Alias: $PermissionToShareWithFamilyValueSet = https://voicecollab.ai/fhir/ValueSet/permission-to-share-with-family
+Alias: $NeuroParticipationConsentValueSet = https://voicecollab.ai/fhir/ValueSet/neuro-participation-consent

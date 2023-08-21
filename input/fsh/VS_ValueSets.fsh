@@ -976,3 +976,43 @@ Description: "The ValueSet required for Winograd Questionnaires Question 5"
 * ^status = #active
 * ^date = "2023-08-04"
 * include codes from system $WinogradSchemaQ5CodeSystem
+
+
+ValueSet: NeuroConsent
+Id: neuro-consent
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $NeuroConsentCodeSystem
+
+
+ValueSet: PermissionToShareWithDoctor
+Id: permission-to-share-with-doctor
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $PermissionToShareWithDoctorCodeSystem
+
+
+ValueSet: PermissionToShareWithFamily
+Id: permission-to-share-with-family
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $PermissionToShareWithFamilyCodeSystem
+
+
+ValueSet: NeuroParticipationConsent
+Id: neuro-participation-consent
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system  $NeuroParticipationConsentCodeSystem
