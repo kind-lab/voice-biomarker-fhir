@@ -10,7 +10,7 @@ The goal of this tutorial is to support understanding the Neuro disorder protoco
 As with all protocols, the Neuro protocol has 12 sequential actions.
 
 1. [PreQuestions] - A standard set of actions taken before enrollment. These include the [GeneralInformation], [ContactInformation], [EligibleStudies], and the [Enrollment] questionnaires.
-2. [Consent] - Questions regarding consenting the individual.
+2. [NeuroConsent] - Questions regarding consenting the individual.
 3. [DemographicQuestionnaire] - A questionnaire asking demographic related questions.
 4. [VoiceImpactingQuestionnaire] - A set of questions related to factors which would an impact an individual's voice.
 5. [AcousticTasks] - A description of the acoustic tasks undertaken during the protocol.
