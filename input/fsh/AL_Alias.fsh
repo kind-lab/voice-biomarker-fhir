@@ -96,3 +96,6 @@ Alias: $MoodQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefini
 
 Alias: $PedsPreQuestionPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPedsPlanDefinitionPreQuestionExample
 
+Alias: $NeuroConsentQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/NeuroConsent
+
+Alias: $NeuroConsentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeuroConsentExample

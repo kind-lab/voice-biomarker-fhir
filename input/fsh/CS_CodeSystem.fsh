@@ -1402,5 +1402,56 @@ Description: "The codes required for Winograd Questionnaires Question 5"
 * #B "The Bus"
 * #T "The Truck"
 
+CodeSystem: NeuroConsent
+Id: neuro-consent
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #1 "I consent to having all data I submit shared only with the researchers of this study."
+* #2 "I consent to having all data I submit shared with the researchers of this study and to having my audio recordings and de-identified written responses shared with other qualified researchers."
+* #3 "I consent to having all data I submit shared with the researchers of this study and to having my audio recordings and de-identified written responses shared with other qualified researchers as well as publicly in the form of an open-source database."
+
+CodeSystem: PermissionToShareWithDoctor
+Id: permission-to-share-with-doctor
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "I give permission to share my research test results with the referring doctor or my family physician."
+* #2 "I do not give permission to share my research test results with the referring doctor or my family physician."
+
+CodeSystem: PermissionToShareWithFamily
+Id: permission-to-share-with-family
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "I give permission to share my medical, family history and genomic sequencing test results with a designated family member."
+* #2 "I do not give permission to share my medical, family history and genomic sequencing test results with a designated family member."
 
 
+CodeSystem: NeuroParticipationConsent
+Id: neuro-participation-consent
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "I consent to continue my participation in this study. "
+* #2 "I DO NOT consent to continue my participation in this study but consent to keep the data collected up to this time"
