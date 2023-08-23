@@ -7,7 +7,7 @@ Description: "The codes required for Questionnaires yes/no/some"
 * ^status = #active
 * ^date = "2023-05-11"
 * ^caseSensitive = true
-* ^valueSet = https://voicecollab.ai/fhir/ValueSet/yesnodontknow
+* ^valueSet = https://voicecollab.ai/fhir/ValueSet/yesnosome
 * ^content = #complete
 * ^count = 3
 * #Y "Yes" "Yes"
