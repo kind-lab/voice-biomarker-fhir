@@ -1,8 +1,8 @@
-// Demographic
+// Demographic related code systems
 CodeSystem: YesNoSome
 Id: Yes-No-Some
-Title: "Questionnaire Yes/No/Some codes"
-Description: "The codes required for Questionnaires yes/no/some"
+Title: "Yes/No/Some Response Codes"
+Description: "A set of codes representing 'Yes', 'No', and 'Some' responses for questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -14,11 +14,10 @@ Description: "The codes required for Questionnaires yes/no/some"
 * #N "No" "No"
 * #S "Some" "Some"
 
-
 CodeSystem: WhoCompletedSurvey
 Id: Who-Completed-Survey
-Title: "Questionnaire codes"
-Description: "The codes required for Questionnaires survey completion"
+Title: "Survey Completion Identifier Codes"
+Description: "This code system identifies who has completed a specific survey or questionnaire."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -29,38 +28,37 @@ Description: "The codes required for Questionnaires survey completion"
 * #A "Assistant" "Survey was completed by an assistant"
 * #P "Parent/Caregiver" "Survey was completed by a parent/cargiver"
 
-
 CodeSystem: ChildEducation
 Id: child-education
-Title: "Questionnaire codes for child education"
-Description: "The codes required for questionnaires"
+Title: "Child Education Level Code System"
+Description: "A comprehensive code system for identifying the highest level of education attained by a child, used in questionnaire contexts."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
 * ^caseSensitive = true
 * ^content = #complete
 * ^count = 16
-* #NFE "No Formal Education" "User has no formal Education"
-* #PS "Pre-school" "User's highest level of education was the Pre-school level"
-* #K "Kindergarden" "User's highest level of education was the Kindergarden level"
-* #SE "Some elementary school education" "User's highest level of education was the Elementary level"
-* #G1 "Grade 1" "User's highest level of education was Grade 1"
-* #G2 "Grade 2" "User's highest level of education was Grade 2"
-* #G3 "Grade 3" "User's highest level of education was Grade 3"
-* #G4 "Grade 4" "User's highest level of education was Grade 4"
-* #G5 "Grade 5" "User's highest level of education was Grade 5"
-* #G6 "Grade 6" "User's highest level of education was Grade 6"
-* #G7 "Grade 7" "User's highest level of education was Grade 7"
-* #G8 "Grade 8" "User's highest level of education was Grade 8"
-* #G9 "Grade 9" "User's highest level of education was Grade 9"
-* #G10 "Grade 10" "User's highest level of education was Grade 10"
-* #G11 "Grade 11" "User's highest level of education was Grade 11"
-* #G12 "Grade 12" "User's highest level of education was Grade 12"
+* #NFE "No Formal Education" "The child has not received any formal education."
+* #PS "Pre-school" "The child's highest level of education is pre-school."
+* #K "Kindergarten" "The child's highest level of education is kindergarten."
+* #SE "Some elementary school education" "The child has some elementary school education."
+* #G1 "Grade 1" "The child's highest level of education is Grade 1."
+* #G2 "Grade 2" "The child's highest level of education is Grade 2."
+* #G3 "Grade 3" "The child's highest level of education is Grade 3."
+* #G4 "Grade 4" "The child's highest level of education is Grade 4."
+* #G5 "Grade 5" "The child's highest level of education is Grade 5."
+* #G6 "Grade 6" "The child's highest level of education is Grade 6."
+* #G7 "Grade 7" "The child's highest level of education is Grade 7."
+* #G8 "Grade 8" "The child's highest level of education is Grade 8."
+* #G9 "Grade 9" "The child's highest level of education is Grade 9."
+* #G10 "Grade 10" "The child's highest level of education is Grade 10."
+* #G11 "Grade 11" "The child's highest level of education is Grade 11."
+* #G12 "Grade 12" "The child's highest level of education is Grade 12."
 
 CodeSystem: DisabilityStatus
 Id: disability-status
-Title: "Questionnaire codes Disability Status"
-Description: "The codes required for Questionnaire's Disability Status"
+Title: "Disability Status Code System"
+Description: "A comprehensive code system for categorizing disability status in a questionnaire format."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -74,8 +72,8 @@ Description: "The codes required for Questionnaire's Disability Status"
 
 CodeSystem: DisabilityType
 Id: disability-type
-Title: "Questionnaire codes Disability Type"
-Description: "The codes required for Questionnaire's Disability Type"
+Title: "Disability Classification Codes"
+Description: "A comprehensive set of codes representing different types of disabilities for use in questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -94,8 +92,8 @@ Description: "The codes required for Questionnaire's Disability Type"
 
 CodeSystem: EmploymentStatus
 Id: employment-status
-Title: "Questionnaire codes Employment Status"
-Description: "The codes required for Questionnaire's Employment Status"
+Title: "Employment Status Code System"
+Description: "A comprehensive code system for categorizing employment status in a questionnaire."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -112,11 +110,10 @@ Description: "The codes required for Questionnaire's Employment Status"
 * #U "Unemployed"
 * #O "Other, please specify"
 
-
 CodeSystem: FinancialAssistance
 Id: financial-assistance
-Title: "Questionnaire codes Financial Assistance Programs"
-Description: "The codes required for Questionnaire's Financial Assistance Programs"
+Title: "Financial Aid Programs Questionnaire Codes"
+Description: "Existence of a financial aid program."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -128,12 +125,10 @@ Description: "The codes required for Questionnaire's Financial Assistance Progra
 * #WIC "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)"
 * #TANFGA "Temporary Assistance for Needy Families (TANF), including Pass through Child Support General Assistance (GA) "
 
-
-
 CodeSystem: ImmigrationStatus
 Id: immigration-status
-Title: "Questionnaire codes for immigration status"
-Description: "The codes required for immigration status"
+Title: "Immigration Status Classification Codes"
+Description: "A comprehensive set of codes representing different immigration statuses."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -151,8 +146,8 @@ Description: "The codes required for immigration status"
 
 CodeSystem: HouseholdStatus
 Id: household-status
-Title: "Questionnaire codes for Household status"
-Description: "The codes required for household status"
+Title: "Residential Status Code System"
+Description: "A comprehensive code system defining various residential statuses."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -163,15 +158,14 @@ Description: "The codes required for household status"
 * #PC "Live with parent/care giver"
 * #OH "Own home"
 * #R "Rent home"
-* #SN "Skilled nursing facility/nursing home    "
+* #SN "Skilled nursing facility/nursing home"
 * #UT "Unhoused-temporarily"
 * #UP "Unhoused-permanently"
 
-
 CodeSystem: MaritalStatus
 Id: marital-status
-Title: "Questionnaire codes for marital status"
-Description: "The codes required for marital status"
+Title: "Marital Status Classification Codes"
+Description: "A comprehensive set of codes representing different marital statuses for use in questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -189,11 +183,10 @@ Description: "The codes required for marital status"
 * #I "Interlocutory"
 * #P "Polygamous"
 
-
 CodeSystem: HouseholdMakeup
 Id: household-makeup
-Title: "Questionnaire codes for household makeup"
-Description: "The codes required for household makeup"
+Title: "Household Composition Classification Codes"
+Description: "A comprehensive set of codes defining different household compositions."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -207,12 +200,10 @@ Description: "The codes required for household makeup"
 * #GP "One or more grandparent"
 * #O "Other, please specify"
 
-
-
 CodeSystem: TransportationType
 Id: transportation-type
-Title: "Questionnaire codes for Transportation Type"
-Description: "The codes required for Transportation Type"
+Title: "Transportation Mode Classification"
+Description: "A comprehensive code system categorizing various modes of transportation."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -228,29 +219,28 @@ Description: "The codes required for Transportation Type"
 * #W "Walking"
 * #O "Other, please specify"
 
-
 CodeSystem: GenderIdentity
 Id: gender-identity
-Title: " Gender Identity Codes"
-Description: "The  Gender Identity Codes contains the codes to be used vbai Demographic Questionnaire"
+Title: "Comprehensive Gender Identity Codes"
+Description: "This code system provides a comprehensive list of gender identity codes for use in demographic questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
 * ^caseSensitive = true
 * ^content = #complete
 * ^count = 7
-* #CM "Cis Man" "Gender identity is a cis Man."
-* #CF "Cis Woman" "Gender identity is a cis Woman."
-* #TM "Transgender male/Transman/Female-to-male" "Gender identity is Transgender male or Transman or Female-to-Male."
-* #TF "Transgender female/Transwoman/Male-tofemale" "Gender identity is Transgender female or Transwoman or Male-to-female."
-* #GQ "Genderqueer/Non-binary" "Gender identity is GenderQueer/Non-binary."
-* #DC "Decline to Answer" "Person has declined to answer about their gender identity."
-* #UN "Unknown" "Person's gender identity is unknown."
+* #CM "Cis Man" "Identifies as a cisgender man."
+* #CF "Cis Woman" "Identifies as a cisgender woman."
+* #TM "Transgender male/Transman/Female-to-male" "Identifies as a transgender male, transman, or female-to-male."
+* #TF "Transgender female/Transwoman/Male-tofemale" "Identifies as a transgender female, transwoman, or male-to-female."
+* #GQ "Genderqueer/Non-binary" "Identifies as genderqueer or non-binary."
+* #DC "Decline to Answer" "Chose not to disclose gender identity."
+* #UN "Unknown" "Gender identity is not known."
 
 CodeSystem: SurveyOptions
 Id: survey-options
-Title: "Option Codes for PHQ9 and GAD7"
-Description: "The  Codes used for PHQ9 and GAD7 Questionnaires"
+Title: "PHQ9 and GAD7 Survey Response Codes"
+Description: "This code system defines the response options for PHQ9 and GAD7 questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -266,8 +256,8 @@ Description: "The  Codes used for PHQ9 and GAD7 Questionnaires"
 
 CodeSystem: WHODAS
 Id: whodas
-Title: "Questionnaire WHODAS codes"
-Description: "The codes required for WHODAS Questionnaires "
+Title: "WHODAS Questionnaire Code System"
+Description: "A comprehensive code system for categorizing responses in WHODAS Questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -278,13 +268,12 @@ Description: "The codes required for WHODAS Questionnaires "
 * #MI "Mild"
 * #MO "Moderate"
 * #S "Severe"
-* #EC "Exstreme or cannot do"
+* #EC "Extreme or cannot do"
 
-
-CodeSystem: Smoking
-Id: smoking
-Title: "Questionnaire smoking codes"
-Description: "The codes required for Questionnaire confounders"
+CodeSystem: SmokingStatus
+Id: smoking-status
+Title: "Smoking Status Codes for Questionnaires"
+Description: "This code system defines the necessary codes for identifying smoking status in health questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -295,13 +284,10 @@ Description: "The codes required for Questionnaire confounders"
 * #U "I used to smoke"
 * #C "I currently smoke"
 
-
-
-
 CodeSystem: SmokingTypes
-Id: smoking-types
-Title: "Questionnaire smoking type codes"
-Description: "The codes required for Questionnaire confounders"
+Id: types-of-smoking
+Title: "Classification of Smoking Methods"
+Description: "This code system categorizes the various methods of smoking for use in questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -316,12 +302,10 @@ Description: "The codes required for Questionnaire confounders"
 * #P "Pipes"
 * #O "Other, please specify"
 
-
-
 CodeSystem: SmokingTimes
-Id: smoking-times
-Title: "Questionnaire smoking times codes"
-Description: "The codes required for Questionnaire confounders"
+Id: frequency-of-smoking
+Title: "Frequency of Smoking Codes for Questionnaires"
+Description: "This code system includes specific codes used in questionnaires to assess the frequency of a respondent's smoking habits."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -334,11 +318,10 @@ Description: "The codes required for Questionnaire confounders"
 * #FM "A few times a month" 
 * #FY "A few times a year"
 
-
-CodeSystem: DrinkingTimes
-Id: drinking-times
-Title: "Questionnaire alchohol times codes"
-Description: "The codes required for Questionnaire confounders"
+CodeSystem: AlcoholConsumptionFrequency
+Id: alcohol-consumption-frequency
+Title: "Alcohol Consumption Frequency Codes"
+Description: "This code system defines the frequency of alcohol consumption for use in questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -351,10 +334,10 @@ Description: "The codes required for Questionnaire confounders"
 * #TTW "2-3 times a week" 
 * #FM "4 or more times a week"
 
-CodeSystem: DrinkNumber
-Id: drink-number
-Title: "Questionnaire alchohol number codes"
-Description: "The codes required for Questionnaire confounders"
+CodeSystem: AlcoholConsumptionAmount
+Id: alcohol-consumption-amount
+Title: "Alcohol Consumption Frequency Codes"
+Description: "This code system defines the frequency of alcohol consumption for use in questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -366,10 +349,10 @@ Description: "The codes required for Questionnaire confounders"
 * #SN "7 to 9"
 * #TM "10 to more"
 
-CodeSystem: Sweat
-Id: sweat
-Title: "Questionnaire sweat codes"
-Description: "The codes required for Questionnaire confounders"
+CodeSystem: PerspirationFrequency
+Id: perspiration-frequency
+Title: "Perspiration Frequency Codes for Questionnaires"
+Description: "This code system includes specific codes for indicating the frequency of perspiration in questionnaire responses."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -381,11 +364,10 @@ Description: "The codes required for Questionnaire confounders"
 * #O "Often"
 * #A "Always"
 
-
-CodeSystem: MenstrationMenopause
-Id: menstration-menopause
-Title: "Questionnaire sweat codes"
-Description: "The codes required for Questionnaire confounders"
+CodeSystem: MenstruationMenopauseStatus
+Id: menstruation-menopause-status
+Title: "Menstruation and Menopause Status Codes"
+Description: "This code system defines the possible responses for a questionnaire regarding menstruation and menopause status."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -397,11 +379,10 @@ Description: "The codes required for Questionnaire confounders"
 * #M "I have gone through menopause"
 * #O "Other, Please Specify"
 
-
-CodeSystem: VocalActivity
-Id: vocal-activity
-Title: "Questionnaire sweat codes"
-Description: "The codes required for Questionnaire confounders"
+CodeSystem: VocalProfessionCodes
+Id: vocal-profession
+Title: "Vocal Profession Codes"
+Description: "A comprehensive set of codes representing various professions that involve significant vocal activity."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -419,8 +400,8 @@ Description: "The codes required for Questionnaire confounders"
 
 CodeSystem: ReadingAbility
 Id: reading-ability
-Title: "Questionnaire sweat codes"
-Description: "The codes required for Questionnaire confounders"
+Title: "Reading Proficiency Levels"
+Description: "A comprehensive set of codes representing different levels of reading proficiency for questionnaire respondents."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -433,11 +414,10 @@ Description: "The codes required for Questionnaire confounders"
 * #F "Fair"
 * #P "Poor"
 
-
 CodeSystem: Medication
 Id: medication
-Title: "Questionnaire medication codes"
-Description: "The codes required for Questionnaire confounders"
+Title: "Comprehensive Medication Code System"
+Description: "This code system encompasses a broad range of medications used in questionnaires, including antibiotics, antihistamines, cocaine, diuretics, hormones, inhaled corticosteroids for asthma, pain medications, psychotropic medications, tricyclic antidepressants, vitamins, and others."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -456,11 +436,10 @@ Description: "The codes required for Questionnaire confounders"
 * #V "Vitamins"
 * #O "Other"
 
-
 CodeSystem: PsychiatricHistory
 Id: psychiatric-history
-Title: "Questionnaire psychiatric history codes"
-Description: "The codes required for Questionnaire confounders"
+Title: "Psychiatric History Classification Codes"
+Description: "A comprehensive set of codes representing various psychiatric conditions, used in psychiatric history questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -489,13 +468,10 @@ Description: "The codes required for Questionnaire confounders"
 * #O "Other Please Specify"
 * #N "None"
 
-
-
-
 CodeSystem: NeurologicalHistory
 Id: neurological-history
-Title: "Questionnaire neurological history codes"
-Description: "The codes required for Questionnaire confounders"
+Title: "Neurological History Questionnaire Codes"
+Description: "A comprehensive set of codes used for identifying and categorizing neurological conditions in a questionnaire."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -518,12 +494,10 @@ Description: "The codes required for Questionnaire confounders"
 * #O "Other"
 * #N "None"
 
-
-
 CodeSystem: ENTHistory
 Id: ent-history
-Title: "Questionnaire ent history codes"
-Description: "The codes required for Questionnaire confounders"
+Title: "Ear, Nose, and Throat (ENT) History Codes"
+Description: "This code system encompasses the complete set of codes used for documenting patient's ear, nose, and throat (ENT) history in questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-15"
@@ -595,12 +569,11 @@ Description: "The codes required for Questionnaire confounders"
 * #O "Other"
 * #N "None"
 
-
 // ---------------------------Enrollment--------------------------------
 CodeSystem: EnrollmentSelectLanguage
 Id: enrollment-select-language
-Title: "Questionnaire enrollment language codes"
-Description: "The codes required for Questionnaire enrollment"
+Title: "Language Selection Codes for Enrollment Questionnaire"
+Description: "This code system defines the language options available for the enrollment questionnaire."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-07"
@@ -614,8 +587,8 @@ Description: "The codes required for Questionnaire enrollment"
 
 CodeSystem: FluentLanguage
 Id: fluent-language
-Title: "Questionnaire enrollment Fluent language codes"
-Description: "The codes required for Questionnaire enrollment"
+Title: "Fluent Language Identification Codes"
+Description: "A set of codes identifying languages for questionnaire enrollment purposes."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-07"
@@ -630,8 +603,8 @@ Description: "The codes required for Questionnaire enrollment"
 
 CodeSystem: CheckedUnchecked
 Id: checked-unchecked
-Title: "Questionnaire enrollment condition codes"
-Description: "The codes required for Questionnaire enrollment"
+Title: "Enrollment Status Codes for Questionnaires"
+Description: "This code system defines the status codes used to indicate the enrollment condition in questionnaires."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-07"
@@ -643,8 +616,8 @@ Description: "The codes required for Questionnaire enrollment"
 
 CodeSystem: EligibleStudies
 Id: eligible-studies
-Title: "Questionnaire enrollment eligible studies codes"
-Description: "The codes required for Questionnaire enrollment"
+Title: "Eligibility Criteria for Study Enrollment"
+Description: "A comprehensive set of codes representing different study fields for questionnaire enrollment."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-07"
@@ -659,8 +632,8 @@ Description: "The codes required for Questionnaire enrollment"
 
 CodeSystem: Enroll
 Id: enroll
-Title: "Questionnaire enrollment eligible studies codes"
-Description: "The codes required for Questionnaire enrollment"
+Title: "Eligibility Status Codes for Study Enrollment"
+Description: "This code system defines the possible status codes for study enrollment eligibility in a questionnaire."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-07"
@@ -670,11 +643,10 @@ Description: "The codes required for Questionnaire enrollment"
 * #E "Enroll"
 * #D "Decline"
 
-
 CodeSystem: DeclineReason
 Id: decline-reason
-Title: "Questionnaire enrollment eligible studies codes"
-Description: "The codes required for Questionnaire enrollment"
+Title: "Reasons for Declining Participation Codes"
+Description: "This code system specifies the various reasons an individual might decline participation in a study, as used in questionnaire enrollment."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-07"
@@ -687,11 +659,10 @@ Description: "The codes required for Questionnaire enrollment"
 * #R4 "I prefer not to share any health information for research"
 * #R5 "Other, Please Specify"
 
-
 CodeSystem: EnrollmentInstitution
 Id: enrollment-institution
-Title: "Questionnaire enrollment  codes"
-Description: "The codes required for Questionnaire enrollment"
+Title: "Institution Enrollment Codes"
+Description: "Specific codes representing different institutions for questionnaire enrollment."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-07"
@@ -702,11 +673,10 @@ Description: "The codes required for Questionnaire enrollment"
 * #WCM "WCM"
 * #MIT "MIT"
 
-
 CodeSystem: EnrollmentComplete
 Id: enrollment-complete
-Title: "Questionnaire enrollment  codes"
-Description: "The codes required for Questionnaire enrollment"
+Title: "Enrollment Status Codes"
+Description: "The set of codes representing the status of a Questionnaire enrollment"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-07"
@@ -720,8 +690,8 @@ Description: "The codes required for Questionnaire enrollment"
 // -------------------General Information----------------------------------
 CodeSystem: ConsentStatus
 Id: consent-status
-Title: "Questionnaire general info codes"
-Description: "The codes required for general information questionnaire"
+Title: "Consent Status Codes"
+Description: "Code system representing various statuses of patient consent"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-15"
@@ -735,8 +705,8 @@ Description: "The codes required for general information questionnaire"
 // ---------------------Session---------------------------------------------
 CodeSystem: Session
 Id: session
-Title: "Session info codes"
-Description: "The codes required for session"
+Title: "Session Status Codes"
+Description: "A comprehensive set of codes representing the status of a session."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-15"
@@ -746,12 +716,11 @@ Description: "The codes required for session"
 * #IPR "In Progress"
 * #C "Completed"
 
-
 //--------------------------Acoustic Tasks---------------------------------
 CodeSystem: AcousticTaskStatus
 Id: acoustic-task-status
-Title: "Acoustic Task Status codes"
-Description: "The codes required for Acoustic Tasks"
+Title: "Status Codes for Acoustic Tasks"
+Description: "A comprehensive set of codes representing the status of Acoustic Tasks."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-15"
@@ -761,12 +730,10 @@ Description: "The codes required for Acoustic Tasks"
 * #S "Skipped"
 * #C "Completed"
 
-
-//------------------------------Recroding----------------------------------
 CodeSystem: Recording
 Id: recording
-Title: "Recording codes"
-Description: "The codes required for Recording"
+Title: "Recording Version Codes"
+Description: "A comprehensive set of codes representing different versions of recordings."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-15"
@@ -775,11 +742,10 @@ Description: "The codes required for Recording"
 * ^count = 1
 * #V1 "v1.0.0"
 
-//------------------------------VHI-10----------------------------------
 CodeSystem: VoiceHandicapIndex
 Id: voice-handicap-index
-Title: "Voice Handicap Index codes"
-Description: "The codes required for Voice Handicap Index"
+Title: "Voice Handicap Index Assessment Codes"
+Description: "A comprehensive set of codes used for the Voice Handicap Index assessment."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-19"
@@ -792,11 +758,10 @@ Description: "The codes required for Voice Handicap Index"
 * #4 "Almost Always"
 * #5 "Always"
 
-//------------------------------DSM-5----------------------------------
 CodeSystem: DSM5
 Id: dsm5
-Title: "dsm5"
-Description: "The codes required for dsm5 questionnaire"
+Title: "Diagnostic and Statistical Manual of Mental Disorders (DSM-5) Code System"
+Description: "This code system is designed for the DSM-5 questionnaire, providing severity codes for mental health conditions."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-06-19"
@@ -808,650 +773,3 @@ Description: "The codes required for dsm5 questionnaire"
 * #3 "Mild (Several days)"
 * #4 "Moderate (More than half the dayd)"
 * #5 "Severe (Nearly every day)"
-
-
-CodeSystem: DSM5Q1
-Id: dsm5-q1
-Title: "dsm5 q1"
-Description: "The codes required for dsm5 q1 questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-21"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 5
-* #1 "I do not feel happier or more cheerful than usual."
-* #2 "I occasionally feel happier or more cheerful than usual."
-* #3 "I often feel happier or more cheerful than usual."
-* #4 "I feel happier or more cheerful than usual most of the time."
-* #5 "I feel happier of more cheerful than usual all of the time"
-
-CodeSystem: DSM5Q2
-Id: dsm5-q2
-Title: "dsm5 q2"
-Description: "The codes required for dsm5 q2 questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-21"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 5
-* #1 "I do not feel more self-confident than usual."
-* #2 "I occasionally feel more self-confident thanusual."
-* #3 "I often feel more self-confident than usual"
-* #4 "I frequently feel more self-confident than usual."
-* #5 "I feel extremely self-confident all of the time."
-
-
-
-
-CodeSystem: DSM5Q3
-Id: dsm5-q3
-Title: "dsm5 q3"
-Description: "The codes required for dsm5 q3 questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-21"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 5
-* #1 "I do not need less sleep than usual"
-* #2 "I occasionally need less sleep than usual"
-* #3 "I need less sleep than usual"
-* #4 "I frequently need less sleep than usual."
-* #5 "I can go all day and all night without any sleep and still not feel tired."
-
-
-CodeSystem: DSM5Q4
-Id: dsm5-q4
-Title: "dsm5 q4"
-Description: "The codes required for dsm5 q4 questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-21"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 5
-* #1 "I do not talk more than usual."
-* #2 "I occasionally talk more than usual."
-* #3 "I often talk more than usual"
-* #4 "I frequently talk more than usual"
-* #5 "I talk constantly and cannot be interrupted."
-
-
-CodeSystem: DSM5Q5
-Id: dsm5-q5
-Title: "dsm5 q5"
-Description: "The codes required for dsm5 q5 questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-21"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 5
-* #1 "I have not been more active (either socially, sexually, at work, home, or school) than usual."
-* #2 "I have occasionally been more active than usual."
-* #3 "I have often been more active than usual"
-* #4 "I have frequently been more active than usual."
-* #5 "I am constantly more active or on the go all the time."
-
-CodeSystem: DSM5Phobia
-Id: dsm5-phobia
-Title: "dsm5 q5"
-Description: "The codes required for dsm5 phobia questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-21"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 5
-* #1 "Never"
-* #2 "Occasionally"
-* #3 "Half of the time"
-* #4 "Most of the time"
-* #5 "All of the time"
-
-
-//---------------------------PTSD-------------------------------------
-
-CodeSystem: PTSD
-Id: ptsd
-Title: "ptsd"
-Description: "The codes required for ptsd questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 5
-* #0 "Not at all"
-* #1 "A little bit"
-* #2 "Moderately"
-* #3 "Quite a bit"
-* #4 "Extremely"
-
-
-//---------------------------ADHD-------------------------------------
-
-CodeSystem: ADHD
-Id: adhd
-Title: "adhd"
-Description: "The codes required for adhd questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 5
-* #1 "Never"
-* #2 "Rarely"
-* #3 "Sometimes"
-* #4 "Often"
-* #5 "Very Often"
-
-// ---------------------------Vocal Fold Paralysis------------------------------
-CodeSystem: YesNoNotCertain
-Id: yes-no-not-certain
-Title: "YesNoNotCertain"
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 3
-* #Y "Yes"
-* #N "No"
-* #NC "Not Certain"
-
-CodeSystem: LeftRight
-Id: left-right
-Title: "leftRight"
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #L "Left"
-* #R "Right"
-
-CodeSystem: Etiology
-Id: etiology
-Title: "etiology"
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 4
-* #1 "Idiopathic"
-* #2 "Latrogenic (surgery/intubation)"
-* #3 "Tumor invading RLN"
-* #4 "Radiation"
-
-
-CodeSystem: Iatrogenic
-Id: iatrogenic
-Title: "iatrogenic"
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 6
-* #1 "Thyroidectomy"
-* #2 "ACDF"
-* #3 "Lung surgery"
-* #4 "Heart Surgery"
-* #5 "Intubation"
-* #6 "Brain Surgery"
-
-CodeSystem: TumorRLN
-Id: tumor-rln
-Title: "Tumor invading RLN "
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 3
-* #1 "Brain"
-* #2 "Chest"
-* #3 "Neck"
-
-CodeSystem: GlotticGap
-Id: glottic-gap
-Title: "Tumor invading RLN "
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 3
-* #1 "Small"
-* #2 "Moderate"
-* #3 "Large"
-
-
-CodeSystem: Degree
-Id: degree
-Title: "Degree"
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #1 "C"
-* #2 "I"
-
-
-CodeSystem: Comments
-Id: comments
-Title: "Comments"
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #1 "Normal"
-* #2 "Other (Provide Description)"
-
-
-
-
-
-
-CodeSystem: Treatment
-Id: treatment
-Title: "treatment"
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 3
-* #1 "Surgery"
-* #2 "Speech Therapy"
-* #3 "No Treatment"
-
-
-CodeSystem: SurgerySubCategory
-Id: surgery-sub-category
-Title: "surgery sub-category"
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #1 "Thyroplasty"
-* #2 "Vocal fold injection augmentation"
-
-CodeSystem: Thyroplasty 
-Id: thyroplasty 
-Title: "Thyroplasty "
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #1 "Goretex"
-* #2 "Silastic"
-
-CodeSystem: VocalFoldInjectionAugmentation
-Id: vocal-fold-injection-augmentation
-Title: "Vocal Fold Injection Augmentation"
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 4
-* #1 "Caha"
-* #2 "Gel"
-* #3 "Hyaluronic Acid augmentation"
-* #4 "Fat Injection"
-
-// -------------------------Consent Main ICF -----------------------------
-
-CodeSystem: ConsentUsfQuestion
-Id: consent-usf-question
-Title: "Consent Usf Question"
-Description: "The codes required for Diagnosis questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-06-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 3
-* #1 "I consent to having all data I submit shared only with the researchers of this study."
-* #2 "I consent to having all data I submit shared with
-the researchers of this study and to having my
-audio recordings and de-identified written
-responses shared with other qualified
-researchers."
-* #3 "I consent to having all data I submit shared with
-the researchers of this study and to having my
-audio recordings and de-identified written
-responses shared with other qualified
-researchers as well as publicly in the form of an
-open-source database"
-
-//----------------------------Dysnpea Index-----------------------------------
-CodeSystem: DysnpeaIndex
-Id: dysnpea-index
-Title: "Dysnpea Index"
-Description: "Dysnpea Index"
-* ^version = 1.0.0
-* ^status = #active
-* ^date = "2023-07-18"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 5
-* #0 "Never"
-* #1 "Almost Never"
-* #2 "Sometimes"
-* #3 "Almost always"
-* #4 "Always"
-
-
-//----------------------------Leicester Cough Questionnaire-----------------------------------
-CodeSystem: LeicesterCough
-Id: leicester-cough
-Title: "Leicester Cough Questionnaire"
-Description: "Leicester Cough Questionnaire"
-* ^version = 1.0.0
-* ^status = #active
-* ^date = "2023-07-18"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 7
-* #1 "None of the time"
-* #2 "Hardly any of the time"
-* #3 "A little of the time"
-* #4 "Some of the time"
-* #5 "A good bit of time"
-* #6 "Most of the time"
-* #7 "All of the time"
-
-
-
-//----------------------------Urge to Cough--------------------------------------
-CodeSystem: UrgeToCough
-Id: urge-to-cough
-Title: "Urge to Cough Questionnaire"
-Description: "Urge to Cough Questionnaire"
-* ^version = 1.0.0
-* ^status = #active
-* ^date = "2023-07-19"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 11
-* #1 "No need to cough"
-* #1.5 "Just noticeable urge to cough"
-* #2 "Slight urge to cough"
-* #3 "Slight-to-moderate urge to cough"
-* #4 "Moderate urge to cough"
-* #5 "Moderate-to-strong urge to cough"
-* #6 "Strong urge to cough"
-* #7 "Strong-to-severe urge to cough"
-* #8 "Strong urge to cough"
-* #9 "Severe-to-maxium urge to cough"
-* #10 "Maxium urge to cough"
-
-//------------------------------------PSC-17--------------------------------------
-CodeSystem: PSC17
-Id: psc-17
-Title: "Pediatric Symptom Checklist (PSC-17)"
-Description: "The codes required for Pediatric Symptom Checklist (PSC-17) questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-07-21"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 3
-* #0 "Never"
-* #1 "Sometimes"
-* #2 "Often"
-
-//------------------------------------Peds Enrollment--------------------------------------
-CodeSystem: PedsEnrollment
-Id: peds-enrollment
-Title: "Pediatric Enrollment"
-Description: "The codes required for Pediatric enrollment pre-question questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-02"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #Adult "18 or above"
-* #Pediatric "2-10 year olds"
-
-CodeSystem: PedsLanguageFluency
-Id: peds-language-fluency
-Title: "Pediatric Enrollment"
-Description: "The codes required for Pediatric enrollment pre-question questionnaire"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-02"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 12
-* #English "English"
-* #Spanish "Spanish"
-* #HaitianCreole "Haitian Creole"
-* #Mandarin "Mandarin"
-* #Vietnamese "Vietnamese"
-* #Cantonese "Cantonese"
-* #CapeVerdeanCreole "Cape Verdean Creole"
-* #Russian "Russian"
-* #Arabic "Arabic"
-* #Portuguese "Portuguese"
-* #French "French"
-* #Other "Other Please write"
-
-CodeSystem: PedsWhoCompletedSurvey
-Id: peds-who-completed-survey
-Title: "Questionnaire codes"
-Description: "The codes required for Questionnaires survey completion"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-02"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #RA "Research Assistant" "Survey was completed by an assistant"
-* #P "Parent/Caregiver" "Survey was completed by a parent/cargiver"
-
-
-CodeSystem: PedsMedicalHistory
-Id: peds-medical-history
-Title: "Questionnaire codes"
-Description: "The codes required for Questionnaires survey completion"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-02"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 12
-* #None "None"
-* #ASD "Autism Spectrum Disorder" 
-* #CF "Cystic Fibrosis"
-* #CA "Craniofacial anomalies (such as cleft lip or palate)"
-* #SLD "Speech and Language Delay"
-* #A "Asthma"
-* #HL "Hearing Losss"
-* #RRP "Recurrent laryngeal papilloma"
-* #VCD "Vocal Cord Dysfunction"
-* #OSA "Obstructive Sleep Apnea"
-* #SEA "Seasonal or Environmental Allergies"
-* #O "Other, Please Specify"
-
-CodeSystem: PedsReasonToDecline
-Id: peds-reason-to-decline
-Title: "Questionnaire codes for peds reason to decline"
-Description: "The codes required for Questionnaires"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-02"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 6
-* #1 "I am not interested in having my child’s voice recorded"
-* #2 "My child will not tolerate voice recording"
-* #3 "Is do not have enough time today and want to be contacted later"
-* #4 "I do not have enough time and do NOT want to be contacted later"
-* #5 "I prefer not to share any health information for research"
-* #6 "Other, Please Specify"
-
-CodeSystem: DifficultyBreathing
-Id: difficulty-breathing
-Title: "Questionnaire codes for difficulty breahing"
-Description: "The codes required for Questionnaires"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-03"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 3
-* #SID "Significant difficulty"
-* #MD "Moderate difficulty"
-* #SLD "Slight difficulty"
-
-//------------------------------Winograd Questions-------------------------------
-CodeSystem: WinogradQ1
-Id: winograd-q1
-Title: "Questionnaire codes for Winograd schema Question 1"
-Description: "The codes required for Winograd Questionnaires Question 1"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-04"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #S "The Scientists"
-* #F "The Fish"
-
-CodeSystem: WinogradQ2
-Id: winograd-q2
-Title: "Questionnaire codes for Winograd schema Question 2"
-Description: "The codes required for Winograd Questionnaires Question 2"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-04"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #F "Fred"
-* #G "George"
-
-
-CodeSystem: WinogradQ3
-Id: winograd-q3
-Title: "Questionnaire codes for Winograd schema Question 3"
-Description: "The codes required for Winograd Questionnaires Question 3"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-04"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #J "Joan"
-* #S "Susan"
-
-
-CodeSystem: WinogradQ4
-Id: winograd-q4
-Title: "Questionnaire codes for Winograd schema Question 4"
-Description: "The codes required for Winograd Questionnaires Question 4"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-04"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #J "Joe"
-* #U "Joe's Uncle"
-
-CodeSystem: WinogradQ5
-Id: winograd-q5
-Title: "Questionnaire codes for Winograd schema Question 5"
-Description: "The codes required for Winograd Questionnaires Question 5"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-04"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #B "The Bus"
-* #T "The Truck"
-
-CodeSystem: NeuroConsent
-Id: neuro-consent
-Title: "Questionnaire codes for neuro consent"
-Description: "The codes required for neuro consent"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-21"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 3
-* #1 "I consent to having all data I submit shared only with the researchers of this study."
-* #2 "I consent to having all data I submit shared with the researchers of this study and to having my audio recordings and de-identified written responses shared with other qualified researchers."
-* #3 "I consent to having all data I submit shared with the researchers of this study and to having my audio recordings and de-identified written responses shared with other qualified researchers as well as publicly in the form of an open-source database."
-
-CodeSystem: PermissionToShareWithDoctor
-Id: permission-to-share-with-doctor
-Title: "Questionnaire codes for neuro consent"
-Description: "The codes required for neuro consent"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-21"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #1 "I give permission to share my research test results with the referring doctor or my family physician."
-* #2 "I do not give permission to share my research test results with the referring doctor or my family physician."
-
-CodeSystem: PermissionToShareWithFamily
-Id: permission-to-share-with-family
-Title: "Questionnaire codes for neuro consent"
-Description: "The codes required for neuro consent"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-21"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #1 "I give permission to share my medical, family history and genomic sequencing test results with a designated family member."
-* #2 "I do not give permission to share my medical, family history and genomic sequencing test results with a designated family member."
-
-
-CodeSystem: NeuroParticipationConsent
-Id: neuro-participation-consent
-Title: "Questionnaire codes for neuro consent"
-Description: "The codes required for neuro consent"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-21"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-* #1 "I consent to continue my participation in this study. "
-* #2 "I DO NOT consent to continue my participation in this study but consent to keep the data collected up to this time"

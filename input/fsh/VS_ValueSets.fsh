@@ -347,10 +347,10 @@ Description: "The  Codes used by WHODAS questionnaire"
 
 
 
-ValueSet: Smoking
-Id: smoking
-Title: "Smoking ValueSet"
-Description: "The  Codes used by WHODAS questionnaire"
+ValueSet: SmokingStatus
+Id: smoking-status
+Title: "Smoking Status ValueSet"
+Description: "The codes used by WHODAS questionnaire for an individual's smoking status"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
@@ -378,17 +378,17 @@ Description: "The  Codes used by confounder questionnaire"
 
 
 
-ValueSet: DrinkingTimes
-Id: drinking-times
-Title: "Drinking times ValueSet"
+ValueSet: AlcoholConsumptionFrequency
+Id: alcohol-consumption-frequency
+Title: "Alcohol Consumption ValueSet"
 Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
 * include codes from system $DrinkingTimesCodeSystem 
 
-ValueSet: DrinkNumber
-Id: drink-number
+ValueSet: AlcoholConsumptionAmount
+Id: alcohol-consumption-amount
 Title: "Drinking number ValueSet"
 Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
@@ -397,9 +397,9 @@ Description: "The Codes used by confounder questionnaire"
 * include codes from system $DrinkNumberCodeSystem
 
 
-ValueSet: Sweat
-Id: sweat
-Title: "Sweat ValueSet"
+ValueSet: PerspirationFrequency
+Id: perspiration-frequency
+Title: "Perspiration ValueSet"
 Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
@@ -408,8 +408,8 @@ Description: "The Codes used by confounder questionnaire"
 
 
 ValueSet: MenstrationMenopause
-Id: menstration-menopause
-Title: "Menstration MenopauseValueSet"
+Id: menstruation-menopause-status
+Title: "Menstratio / Menopause ValueSet"
 Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
@@ -417,9 +417,9 @@ Description: "The Codes used by confounder questionnaire"
 * include codes from system $MenopauseCodeSystem
 
 
-ValueSet: VocalActivity
-Id: vocal-activity
-Title: "Vocal Activity ValueSet"
+ValueSet: VocalProfession
+Id: vocal-profession
+Title: "Vocal Profession ValueSet"
 Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
