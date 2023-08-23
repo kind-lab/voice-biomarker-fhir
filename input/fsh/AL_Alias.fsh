@@ -43,6 +43,8 @@ Alias: $WinogradQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/Winogr
 
 Alias: $PatientQuestionnaireRespiratory = https://voicecollab.ai/fhir/Questionnaire/RespiratoryPatientQuestionnaire
 
+Alias: $MoCAQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/MOCA
+
 // General flow PlanDefintions
 
 Alias: $AdultPreQuestionsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiAdultPlanDefinitionPreQuestionExample
@@ -99,3 +101,5 @@ Alias: $PedsPreQuestionPlanDefinition = https://voicecollab.ai/fhir/PlanDefiniti
 Alias: $NeuroConsentQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/NeuroConsent
 
 Alias: $NeuroConsentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionNeuroConsentExample
+
+Alias: $VocabularyQuestionniare = https://voicecollab.ai/fhir/Questionnaire/Vocabulary

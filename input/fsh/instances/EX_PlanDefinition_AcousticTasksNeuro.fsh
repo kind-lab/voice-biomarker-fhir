@@ -12,6 +12,7 @@ Description: "An example of a Voice as a Biomarker for Acoustic Tasks Neuro Coho
 * action[0].title = "Montreal Cognitive Assessment (MoCA Test)"
 * action[=].prefix = "1.8 Task 1"
 * action[=].description = "Have participant complete MoCA Test"
+* action[=].definitionCanonical = $MoCAQuestionnaire
 
 
 * action[+].title = "Word-colour Stroop:"
@@ -21,7 +22,7 @@ Description: "An example of a Voice as a Biomarker for Acoustic Tasks Neuro Coho
 * action[+].title = "Productive vocabulary link:"
 * action[=].prefix = "1.8 Task 3"
 * action[=].description = "You will be shown a target word. You will have to provide a definition for it (no time limit)."
-
+* action[=].definitionCanonical = $VocabularyQuestionniare
 
 * action[+].title = "Random item generation / semantic fluency link:"
 * action[=].prefix = "1.8 Task 4"
@@ -32,7 +33,3 @@ Description: "An example of a Voice as a Biomarker for Acoustic Tasks Neuro Coho
 * action[=].prefix = "1.8 Task 5"
 * action[=].description = "Read each sentence, and answer the question by selecting one of the options"
 * action[=].definitionCanonical = $WinogradQuestionnaire
-
-* action[+].title = "Montreal Cognitive Assessment (MoCA Test)"
-* action[=].prefix = "1.8 Task 6"
-* action[=].description = "Have participant complete MoCA Test"
