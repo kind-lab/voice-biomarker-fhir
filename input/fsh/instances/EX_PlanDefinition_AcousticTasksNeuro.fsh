@@ -27,7 +27,7 @@ Description: "An example of a Voice as a Biomarker for Acoustic Tasks Neuro Coho
 * action[+].title = "Random item generation / semantic fluency link:"
 * action[=].prefix = "1.8 Task 4"
 * action[=].description = "You will have to speak a series of (I) random, non-repeating letters or numbers, or (ii) items from a given category (e.g., cities, animals, etc.), with the goal of maximizing the number of items. (time limit: 60 seconds). "
-
+* action[=].definitionCanonical = $RandomItemGenerationQuestionnaire
 
 * action[+].title = "Winograd schemas link"
 * action[=].prefix = "1.8 Task 5"
