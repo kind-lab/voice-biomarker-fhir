@@ -60,14 +60,14 @@ Alias: $TransportationTypeCodeSystem = https://voicecollab.ai/fhir/CodeSystem/tr
 // Confounders
 
 Alias: $WHODASCodeSystem = https://voicecollab.ai/fhir/CodeSystem/whodas
-Alias: $SmokingCodeSystem = https://voicecollab.ai/fhir/CodeSystem/smoking
+Alias: $SmokingStatusCodeSystem = https://voicecollab.ai/fhir/CodeSystem/smoking-status
 Alias: $SmokingTypeCodeSystem = https://voicecollab.ai/fhir/CodeSystem/smoking-types
 Alias: $SmokingTimesCodeSystem = https://voicecollab.ai/fhir/CodeSystem/smoking-times
-Alias: $DrinkingTimesCodeSystem = https://voicecollab.ai/fhir/CodeSystem/drinking-times
-Alias: $DrinkNumberCodeSystem = https://voicecollab.ai/fhir/CodeSystem/drink-number
-Alias: $SweatCodeSystem = https://voicecollab.ai/fhir/CodeSystem/sweat
-Alias: $MenopauseCodeSystem = https://voicecollab.ai/fhir/CodeSystem/menstration-menopause
-Alias: $VocalActivityCodeSystem = https://voicecollab.ai/fhir/CodeSystem/vocal-activity
+Alias: $AlcoholConsumptionFrequencyCodeSystem = https://voicecollab.ai/fhir/CodeSystem/alcohol-consumption-frequency
+Alias: $AlcoholConsumptionAmountCodeSystem = https://voicecollab.ai/fhir/CodeSystem/alcohol-consumption-amount
+Alias: $PerspirationFrequencyCodeSystem = https://voicecollab.ai/fhir/CodeSystem/perspiration-frequency
+Alias: $MenstruationMenopauseCodeSystem = https://voicecollab.ai/fhir/CodeSystem/menstruation-menopause-status
+Alias: $VocalProfessionCodeSystem = https://voicecollab.ai/fhir/CodeSystem/vocal-profession
 Alias: $ReadingAbilityCodeSystem = https://voicecollab.ai/fhir/CodeSystem/reading-ability
 Alias: $MedicationCodeSystem = https://voicecollab.ai/fhir/CodeSystem/medication
 Alias: $PsychiatricHistoryCodeSystem = https://voicecollab.ai/fhir/CodeSystem/psychiatric-history

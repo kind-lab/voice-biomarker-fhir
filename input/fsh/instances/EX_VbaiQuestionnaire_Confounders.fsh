@@ -13,7 +13,7 @@ Description: "VbaiQuestionnaire confounders Example"
 * item[0].linkId = "smoking"
 * item[=].text = "Have you ever smoked regularly (more than a few times a month for at least two months)? This includes tobacco, cannabis, vapes, e-cigarettes, hookah, or pipes."
 * item[=].type = #choice
-* item[=].answerValueSet = $SmokingValueSet
+* item[=].answerValueSet = $SmokingStatusValueSet
 * item[=].item[0].linkId = "smoking_q2"
 * item[=].item[=].type = #integer
 * item[=].item[=].text = "At what age did you start smoking?" 
@@ -62,28 +62,17 @@ Description: "VbaiQuestionnaire confounders Example"
 * item[=].item[=].enableWhen.question = "alcohol"
 * item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Yes"
-* item[=].item[=].answerValueSet = $DrinkingTimesValueSet
+* item[=].item[=].answerValueSet = $AlcoholConsumptionFrequencyValueSet
 * item[=].item[+].linkId = "alcohol_q3"
-* item[=].item[=].type = #integer
+* item[=].item[=].type = #choice
 * item[=].item[=].text = "How many drinks containing alcohol do you have on a typical day when you are drinking? One drink is 12 oz. beer, 5 oz. wine, 1.5 oz. (one shot) liquor" 
 
 * item[=].item[=].enableWhen.question = "alcohol"
 * item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Yes"
-
+* item[=].item[=].answerValueSet = $AlcoholConsumptionAmountValueSet
 
 * item[=].item[+].linkId = "alcohol_q4"
-* item[=].item[=].type = #choice
-* item[=].item[=].text = "How often do you have at least one drink containing alcohol? Drinks can be beer, wine, shots of liquor, cocktails containing a shot of liquor" 
-
-* item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerString = "If Yes"
-* item[=].item[=].answerValueSet = $DrinkNumberValueSet
-
-
-
-* item[=].item[+].linkId = "alcohol_q5"
 * item[=].item[=].type = #choice
 * item[=].item[=].text = "Have you drunk alcohol today?" 
 
@@ -92,17 +81,17 @@ Description: "VbaiQuestionnaire confounders Example"
 * item[=].item[=].enableWhen.answerString = "If Yes"
 * item[=].item[=].answerValueSet = $YesNo
 
-* item[=].item[=].item[0].linkId = "alcohol_q6"
+* item[=].item[=].item[0].linkId = "alcohol_q5"
 * item[=].item[=].item[=].type = #integer
 * item[=].item[=].item[=].text = "How many drinks did you have?" 
-* item[=].item[=].item[=].enableWhen.question = "alcohol_q5"
+* item[=].item[=].item[=].enableWhen.question = "alcohol_q4"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerString = "If Yes"
 
 
 
 
-* item[=].item[+].linkId = "alcohol_q7"
+* item[=].item[+].linkId = "alcohol_q6"
 * item[=].item[=].type = #choice
 * item[=].item[=].text = "Have you ever required rehab/counseling for heavy alcohol use?" 
 
@@ -111,7 +100,7 @@ Description: "VbaiQuestionnaire confounders Example"
 * item[=].item[=].enableWhen.answerString = "If Yes"
 * item[=].item[=].answerValueSet = $YesNo
 
-* item[=].item[+].linkId = "alcohol_q8"
+* item[=].item[+].linkId = "alcohol_q7"
 * item[=].item[=].type = #choice
 * item[=].item[=].text = "Are you currently in recovery for alcohol use?" 
 
@@ -148,11 +137,11 @@ Description: "VbaiQuestionnaire confounders Example"
 * item[=].type = #integer
 * item[=].text = "How many 8 oz / 230 ml / small) cups of water have you had today?" 
 
-//hydration_unarmaed_sweat
+// under arm perspiration
 * item[+].linkId = "hydration_underarm_sweat"
 * item[=].type = #string
-* item[=].text = "Do you experience underarm sweat?" 
-* item[=].answerValueSet = $SweatValueSet
+* item[=].text = "Do you experience underarm perspiration (sweat)?" 
+* item[=].answerValueSet = $PerspirationFrequencyValueSet
 
 
 // oral_dental
@@ -375,30 +364,27 @@ Description: "VbaiQuestionnaire confounders Example"
 * item[=].item[=].enableWhen.answerString = "If Other"
 
 
-
-// menstration
-* item[+].linkId = "menstration_menopause"
+* item[+].linkId = "menstruation_menopause"
 * item[=].type = #open-choice
 * item[=].text = "Do you menstruate?" 
-* item[=].answerValueSet = $MenopauseValueSet
+* item[=].answerValueSet = $MenstruationMenopauseValueSet
 
 * item[=].item[0].linkId = "menstration_menopause_please_specify"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "Please specify ___. " 
-* item[=].item[=].enableWhen.question = "menstration_menopause"
+* item[=].item[=].enableWhen.question = "menstruation_menopause"
 * item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If Other"
 
-// vocal_activity
-* item[+].linkId = "vocal_activity"
+* item[+].linkId = "vocal_profession"
 * item[=].type = #string
 * item[=].text = "Do you do one of these jobs or hobbies that requires using your voice for many hours a day (check all that apply): " 
-* item[=].answerValueSet = $VocalActivityValueSet
+* item[=].answerValueSet = $VocalProfessionValueSet
 
 * item[=].item[0].linkId = "vocal_activity_not_None"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "How many hours per day do you do this activity with a loud voice or in a loud environment that requires elevating your voice (for instance, a noisy bar or a noisy classroom)?" 
-* item[=].item[=].enableWhen.question = "menstration_menopause"
+* item[=].item[=].enableWhen.question = "menstruation_menopause"
 * item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerString = "If != None"
 
