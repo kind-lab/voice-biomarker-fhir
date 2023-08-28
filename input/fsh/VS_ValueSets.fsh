@@ -929,53 +929,53 @@ Description: "The codes required for Questionnaires"
 * include codes from system $RespiratoryDifficultyBreathingCodeSystem
 
 //------------------------------Winograd Questions-------------------------------
-ValueSet: WinogradQ1
-Id: winograd-q1
-Title: "Questionnaire ValueSet for Winograd schema Question 1"
-Description: "The ValueSet required for Winograd Questionnaires Question 1"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-04"
-* include codes from system $WinogradSchemaQ1CodeSystem
+// ValueSet: WinogradQ1
+// Id: winograd-q1
+// Title: "Questionnaire ValueSet for Winograd schema Question 1"
+// Description: "The ValueSet required for Winograd Questionnaires Question 1"
+// * ^version = "1.0.0"
+// * ^status = #active
+// * ^date = "2023-08-04"
+// * include codes from system $WinogradSchemaQ1CodeSystem
 
-ValueSet: WinogradQ2
-Id: winograd-q2
-Title: "Questionnaire ValueSet for Winograd schema Question 2"
-Description: "The ValueSet required for Winograd Questionnaires Question 2"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-04"
-* include codes from system $WinogradSchemaQ2CodeSystem
-
-
-ValueSet: WinogradQ3
-Id: winograd-q3
-Title: "Questionnaire ValueSet for Winograd schema Question 3"
-Description: "The ValueSet required for Winograd Questionnaires Question 3"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-04"
-* include codes from system $WinogradSchemaQ3CodeSystem
+// ValueSet: WinogradQ2
+// Id: winograd-q2
+// Title: "Questionnaire ValueSet for Winograd schema Question 2"
+// Description: "The ValueSet required for Winograd Questionnaires Question 2"
+// * ^version = "1.0.0"
+// * ^status = #active
+// * ^date = "2023-08-04"
+// * include codes from system $WinogradSchemaQ2CodeSystem
 
 
-ValueSet: WinogradQ4
-Id: winograd-q4
-Title: "Questionnaire ValueSet for Winograd schema Question 4"
-Description: "The ValueSet required for Winograd Questionnaires Question 4"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-04"
-* include codes from system $WinogradSchemaQ4CodeSystem
+// ValueSet: WinogradQ3
+// Id: winograd-q3
+// Title: "Questionnaire ValueSet for Winograd schema Question 3"
+// Description: "The ValueSet required for Winograd Questionnaires Question 3"
+// * ^version = "1.0.0"
+// * ^status = #active
+// * ^date = "2023-08-04"
+// * include codes from system $WinogradSchemaQ3CodeSystem
 
 
-ValueSet: WinogradQ5
-Id: winograd-q5
-Title: "Questionnaire ValueSet for Winograd schema Question 5"
-Description: "The ValueSet required for Winograd Questionnaires Question 5"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-08-04"
-* include codes from system $WinogradSchemaQ5CodeSystem
+// ValueSet: WinogradQ4
+// Id: winograd-q4
+// Title: "Questionnaire ValueSet for Winograd schema Question 4"
+// Description: "The ValueSet required for Winograd Questionnaires Question 4"
+// * ^version = "1.0.0"
+// * ^status = #active
+// * ^date = "2023-08-04"
+// * include codes from system $WinogradSchemaQ4CodeSystem
+
+
+// ValueSet: WinogradQ5
+// Id: winograd-q5
+// Title: "Questionnaire ValueSet for Winograd schema Question 5"
+// Description: "The ValueSet required for Winograd Questionnaires Question 5"
+// * ^version = "1.0.0"
+// * ^status = #active
+// * ^date = "2023-08-04"
+// * include codes from system $WinogradSchemaQ5CodeSystem
 
 
 ValueSet: NeuroConsent
@@ -1017,4 +1017,1386 @@ Description: "The codes required for neuro consent"
 * ^date = "2023-08-21"
 * include codes from system  $NeuroParticipationConsentCodeSystem
 
+
+//------------------------------Winograd Questions-------------------------------
+
+
+ValueSet: Winograd1
+Id: Winograd-1
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd1CodeSystem
+
+
+ValueSet: Winograd2
+Id: Winograd-2
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd2CodeSystem
+
+
+ValueSet: Winograd3
+Id: Winograd-3
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd3CodeSystem
+
+
+ValueSet: Winograd4
+Id: Winograd-4
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd4CodeSystem
+
+
+ValueSet: Winograd5
+Id: Winograd-5
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd5CodeSystem
+
+
+ValueSet: Winograd6
+Id: Winograd-6
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd6CodeSystem
+
+
+ValueSet: Winograd7
+Id: Winograd-7
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd7CodeSystem
+
+
+ValueSet: Winograd8
+Id: Winograd-8
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd8CodeSystem
+
+
+ValueSet: Winograd9
+Id: Winograd-9
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd9CodeSystem
+
+
+ValueSet: Winograd10
+Id: Winograd-10
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd10CodeSystem
+
+
+ValueSet: Winograd11
+Id: Winograd-11
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd11CodeSystem
+
+
+ValueSet: Winograd12
+Id: Winograd-12
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd12CodeSystem
+
+
+ValueSet: Winograd13
+Id: Winograd-13
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd13CodeSystem
+
+
+ValueSet: Winograd14
+Id: Winograd-14
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd14CodeSystem
+
+
+ValueSet: Winograd15
+Id: Winograd-15
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd15CodeSystem
+
+
+ValueSet: Winograd16
+Id: Winograd-16
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd16CodeSystem
+
+
+ValueSet: Winograd17
+Id: Winograd-17
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd17CodeSystem
+
+
+ValueSet: Winograd18
+Id: Winograd-18
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd18CodeSystem
+
+
+ValueSet: Winograd19
+Id: Winograd-19
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd19CodeSystem
+
+
+ValueSet: Winograd20
+Id: Winograd-20
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd20CodeSystem
+
+
+ValueSet: Winograd21
+Id: Winograd-21
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd21CodeSystem
+
+
+ValueSet: Winograd22
+Id: Winograd-22
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd22CodeSystem
+
+
+ValueSet: Winograd23
+Id: Winograd-23
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd23CodeSystem
+
+
+ValueSet: Winograd24
+Id: Winograd-24
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd24CodeSystem
+
+
+ValueSet: Winograd25
+Id: Winograd-25
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd25CodeSystem
+
+
+ValueSet: Winograd26
+Id: Winograd-26
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd26CodeSystem
+
+
+ValueSet: Winograd27
+Id: Winograd-27
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd27CodeSystem
+
+
+ValueSet: Winograd28
+Id: Winograd-28
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd28CodeSystem
+
+
+ValueSet: Winograd29
+Id: Winograd-29
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd29CodeSystem
+
+
+ValueSet: Winograd30
+Id: Winograd-30
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd30CodeSystem
+
+
+ValueSet: Winograd31
+Id: Winograd-31
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd31CodeSystem
+
+
+ValueSet: Winograd32
+Id: Winograd-32
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd32CodeSystem
+
+
+ValueSet: Winograd33
+Id: Winograd-33
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd33CodeSystem
+
+
+ValueSet: Winograd34
+Id: Winograd-34
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd34CodeSystem
+
+
+ValueSet: Winograd35
+Id: Winograd-35
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd35CodeSystem
+
+
+ValueSet: Winograd36
+Id: Winograd-36
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd36CodeSystem
+
+
+ValueSet: Winograd37
+Id: Winograd-37
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd37CodeSystem
+
+
+ValueSet: Winograd38
+Id: Winograd-38
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd38CodeSystem
+
+
+ValueSet: Winograd39
+Id: Winograd-39
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd39CodeSystem
+
+
+ValueSet: Winograd40
+Id: Winograd-40
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd40CodeSystem
+
+
+ValueSet: Winograd41
+Id: Winograd-41
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd41CodeSystem
+
+
+ValueSet: Winograd42
+Id: Winograd-42
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd42CodeSystem
+
+
+ValueSet: Winograd43
+Id: Winograd-43
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd43CodeSystem
+
+
+ValueSet: Winograd44
+Id: Winograd-44
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd44CodeSystem
+
+
+ValueSet: Winograd45
+Id: Winograd-45
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd45CodeSystem
+
+
+ValueSet: Winograd46
+Id: Winograd-46
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd46CodeSystem
+
+
+ValueSet: Winograd47
+Id: Winograd-47
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd47CodeSystem
+
+
+ValueSet: Winograd48
+Id: Winograd-48
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd48CodeSystem
+
+
+ValueSet: Winograd49
+Id: Winograd-49
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd49CodeSystem
+
+
+ValueSet: Winograd50
+Id: Winograd-50
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd50CodeSystem
+
+
+ValueSet: Winograd51
+Id: Winograd-51
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd51CodeSystem
+
+
+ValueSet: Winograd52
+Id: Winograd-52
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd52CodeSystem
+
+
+ValueSet: Winograd53
+Id: Winograd-53
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd53CodeSystem
+
+
+ValueSet: Winograd54
+Id: Winograd-54
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd54CodeSystem
+
+
+ValueSet: Winograd55
+Id: Winograd-55
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd55CodeSystem
+
+
+ValueSet: Winograd56
+Id: Winograd-56
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd56CodeSystem
+
+
+ValueSet: Winograd57
+Id: Winograd-57
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd57CodeSystem
+
+
+ValueSet: Winograd58
+Id: Winograd-58
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd58CodeSystem
+
+
+ValueSet: Winograd59
+Id: Winograd-59
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd59CodeSystem
+
+
+ValueSet: Winograd60
+Id: Winograd-60
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd60CodeSystem
+
+
+ValueSet: Winograd61
+Id: Winograd-61
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd61CodeSystem
+
+
+ValueSet: Winograd62
+Id: Winograd-62
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd62CodeSystem
+
+
+ValueSet: Winograd63
+Id: Winograd-63
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd63CodeSystem
+
+
+ValueSet: Winograd64
+Id: Winograd-64
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd64CodeSystem
+
+
+ValueSet: Winograd65
+Id: Winograd-65
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd65CodeSystem
+
+
+ValueSet: Winograd66
+Id: Winograd-66
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd66CodeSystem
+
+
+ValueSet: Winograd67
+Id: Winograd-67
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd67CodeSystem
+
+
+ValueSet: Winograd68
+Id: Winograd-68
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd68CodeSystem
+
+
+ValueSet: Winograd69
+Id: Winograd-69
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd69CodeSystem
+
+
+ValueSet: Winograd70
+Id: Winograd-70
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd70CodeSystem
+
+
+ValueSet: Winograd71
+Id: Winograd-71
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd71CodeSystem
+
+
+ValueSet: Winograd72
+Id: Winograd-72
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd72CodeSystem
+
+
+ValueSet: Winograd73
+Id: Winograd-73
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd73CodeSystem
+
+
+ValueSet: Winograd74
+Id: Winograd-74
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd74CodeSystem
+
+
+ValueSet: Winograd75
+Id: Winograd-75
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd75CodeSystem
+
+
+ValueSet: Winograd76
+Id: Winograd-76
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd76CodeSystem
+
+
+ValueSet: Winograd77
+Id: Winograd-77
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd77CodeSystem
+
+
+ValueSet: Winograd78
+Id: Winograd-78
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd78CodeSystem
+
+
+ValueSet: Winograd79
+Id: Winograd-79
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd79CodeSystem
+
+
+ValueSet: Winograd80
+Id: Winograd-80
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd80CodeSystem
+
+
+ValueSet: Winograd81
+Id: Winograd-81
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd81CodeSystem
+
+
+ValueSet: Winograd82
+Id: Winograd-82
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd82CodeSystem
+
+
+ValueSet: Winograd83
+Id: Winograd-83
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd83CodeSystem
+
+
+ValueSet: Winograd84
+Id: Winograd-84
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd84CodeSystem
+
+
+ValueSet: Winograd85
+Id: Winograd-85
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd85CodeSystem
+
+
+ValueSet: Winograd86
+Id: Winograd-86
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd86CodeSystem
+
+
+ValueSet: Winograd87
+Id: Winograd-87
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd87CodeSystem
+
+
+ValueSet: Winograd88
+Id: Winograd-88
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd88CodeSystem
+
+
+ValueSet: Winograd89
+Id: Winograd-89
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd89CodeSystem
+
+
+ValueSet: Winograd90
+Id: Winograd-90
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd90CodeSystem
+
+
+ValueSet: Winograd91
+Id: Winograd-91
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd91CodeSystem
+
+
+ValueSet: Winograd92
+Id: Winograd-92
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd92CodeSystem
+
+
+ValueSet: Winograd93
+Id: Winograd-93
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd93CodeSystem
+
+
+ValueSet: Winograd94
+Id: Winograd-94
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd94CodeSystem
+
+
+ValueSet: Winograd95
+Id: Winograd-95
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd95CodeSystem
+
+
+ValueSet: Winograd96
+Id: Winograd-96
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd96CodeSystem
+
+
+ValueSet: Winograd97
+Id: Winograd-97
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd97CodeSystem
+
+
+ValueSet: Winograd98
+Id: Winograd-98
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd98CodeSystem
+
+
+ValueSet: Winograd99
+Id: Winograd-99
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd99CodeSystem
+
+
+ValueSet: Winograd100
+Id: Winograd-100
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd100CodeSystem
+
+
+ValueSet: Winograd101
+Id: Winograd-101
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd101CodeSystem
+
+
+ValueSet: Winograd102
+Id: Winograd-102
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd102CodeSystem
+
+
+ValueSet: Winograd103
+Id: Winograd-103
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd103CodeSystem
+
+
+ValueSet: Winograd104
+Id: Winograd-104
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd104CodeSystem
+
+
+ValueSet: Winograd105
+Id: Winograd-105
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd105CodeSystem
+
+
+ValueSet: Winograd106
+Id: Winograd-106
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd106CodeSystem
+
+
+ValueSet: Winograd107
+Id: Winograd-107
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd107CodeSystem
+
+
+ValueSet: Winograd108
+Id: Winograd-108
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd108CodeSystem
+
+
+ValueSet: Winograd109
+Id: Winograd-109
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd109CodeSystem
+
+
+ValueSet: Winograd110
+Id: Winograd-110
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd110CodeSystem
+
+
+ValueSet: Winograd111
+Id: Winograd-111
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd111CodeSystem
+
+
+ValueSet: Winograd112
+Id: Winograd-112
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd112CodeSystem
+
+
+ValueSet: Winograd113
+Id: Winograd-113
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd113CodeSystem
+
+
+ValueSet: Winograd114
+Id: Winograd-114
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd114CodeSystem
+
+
+ValueSet: Winograd115
+Id: Winograd-115
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd115CodeSystem
+
+
+ValueSet: Winograd116
+Id: Winograd-116
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd116CodeSystem
+
+
+ValueSet: Winograd117
+Id: Winograd-117
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd117CodeSystem
+
+
+ValueSet: Winograd118
+Id: Winograd-118
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd118CodeSystem
+
+
+ValueSet: Winograd119
+Id: Winograd-119
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd119CodeSystem
+
+
+ValueSet: Winograd120
+Id: Winograd-120
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd120CodeSystem
+
+
+ValueSet: Winograd121
+Id: Winograd-121
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd121CodeSystem
+
+
+ValueSet: Winograd122
+Id: Winograd-122
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd122CodeSystem
+
+
+ValueSet: Winograd123
+Id: Winograd-123
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd123CodeSystem
+
+
+ValueSet: Winograd124
+Id: Winograd-124
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd124CodeSystem
+
+
+ValueSet: Winograd125
+Id: Winograd-125
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd125CodeSystem
+
+
+ValueSet: Winograd126
+Id: Winograd-126
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd126CodeSystem
+
+
+ValueSet: Winograd127
+Id: Winograd-127
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd127CodeSystem
+
+
+ValueSet: Winograd128
+Id: Winograd-128
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd128CodeSystem
+
+
+ValueSet: Winograd129
+Id: Winograd-129
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd129CodeSystem
+
+
+ValueSet: Winograd130
+Id: Winograd-130
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd130CodeSystem
+
+
+ValueSet: Winograd131
+Id: Winograd-131
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd131CodeSystem
+
+
+ValueSet: Winograd132
+Id: Winograd-132
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd132CodeSystem
+
+
+ValueSet: Winograd133
+Id: Winograd-133
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd133CodeSystem
+
+
+ValueSet: Winograd134
+Id: Winograd-134
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd134CodeSystem
+
+
+ValueSet: Winograd135
+Id: Winograd-135
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd135CodeSystem
+
+
+ValueSet: Winograd136
+Id: Winograd-136
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd136CodeSystem
+
+
+ValueSet: Winograd137
+Id: Winograd-137
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd137CodeSystem
+
+
+ValueSet: Winograd138
+Id: Winograd-138
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system $Winograd138CodeSystem
 
