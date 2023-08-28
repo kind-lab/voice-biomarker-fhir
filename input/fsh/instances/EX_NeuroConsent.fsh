@@ -389,6 +389,13 @@ Reports about research tests done with your samples will be shared with members 
 * item[=].text = "Signiture, Printed name and date"
 * item[=].type = #string
 
+* item[+].linkId = "If consent is provided by Substitute Decision Maker" 
+* item[=].text = "Printed Name of Participant, Signitture of person Condcting the Consent Discussion and Date"
+* item[=].type = #string
+* item[=].enableWhen[0].question = "Signiture of participant"
+* item[=].enableWhen[=].operator = #exists
+* item[=].enableWhen[=].answerString = ""
+
 
 * item[+].linkId = "Signiture of Interpreter" 
 * item[=].text = "The following attestation must be provided if the participant is unable to read or requires an oral translation: 
