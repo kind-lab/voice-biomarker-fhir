@@ -7,7 +7,6 @@ Description: "A set of codes representing 'Yes', 'No', and 'Some' responses for 
 * ^status = #active
 * ^date = "2023-05-11"
 * ^caseSensitive = true
-* ^valueSet = https://voicecollab.ai/fhir/ValueSet/yesnosome
 * ^content = #complete
 * ^count = 3
 * #Y "Yes" "Yes"

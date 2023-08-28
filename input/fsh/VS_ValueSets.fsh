@@ -354,7 +354,7 @@ Description: "The codes used by WHODAS questionnaire for an individual's smoking
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
-* include codes from system $SmokingCodeSystem
+* include codes from system $SmokingStatusCodeSystem
 
 
 ValueSet: SmokingTypes
@@ -385,7 +385,7 @@ Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
-* include codes from system $DrinkingTimesCodeSystem 
+* include codes from system $AlcoholConsumptionFrequencyCodeSystem
 
 ValueSet: AlcoholConsumptionAmount
 Id: alcohol-consumption-amount
@@ -394,7 +394,7 @@ Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
-* include codes from system $DrinkNumberCodeSystem
+* include codes from system $AlcoholConsumptionAmountCodeSystem
 
 
 ValueSet: PerspirationFrequency
@@ -404,7 +404,7 @@ Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
-* include codes from system $SweatCodeSystem
+* include codes from system $PerspirationFrequencyCodeSystem
 
 
 ValueSet: MenstrationMenopause
@@ -414,7 +414,7 @@ Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
-* include codes from system $MenopauseCodeSystem
+* include codes from system $MenstruationMenopauseCodeSystem
 
 
 ValueSet: VocalProfession
@@ -424,7 +424,7 @@ Description: "The Codes used by confounder questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
-* include codes from system $VocalActivityCodeSystem
+* include codes from system $VocalProfessionCodeSystem
 
 ValueSet: ReadingAbility
 Id: reading-ability
