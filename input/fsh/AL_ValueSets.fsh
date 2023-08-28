@@ -25,14 +25,14 @@ Alias: $WHODASValueSet = https://voicecollab.ai/fhir/ValueSet/whodas
 
 
 // Confounders
-Alias: $SmokingValueSet = https://voicecollab.ai/fhir/ValueSet/smoking
+Alias: $SmokingStatusValueSet = https://voicecollab.ai/fhir/ValueSet/smoking-status
 Alias: $SmokingTypeValueSet = https://voicecollab.ai/fhir/ValueSet/smoking-types
 Alias: $SmokingTimesValueSet = https://voicecollab.ai/fhir/ValueSet/smoking-times
-Alias: $DrinkingTimesValueSet = https://voicecollab.ai/fhir/ValueSet/drinking-times
-Alias: $DrinkNumberValueSet = https://voicecollab.ai/fhir/ValueSet/drink-number
-Alias: $SweatValueSet = https://voicecollab.ai/fhir/ValueSet/sweat
-Alias: $MenopauseValueSet = https://voicecollab.ai/fhir/ValueSet/menstration-menopause
-Alias: $VocalActivityValueSet = https://voicecollab.ai/fhir/ValueSet/vocal-activity
+Alias: $AlcoholConsumptionFrequencyValueSet = https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-frequency
+Alias: $AlcoholConsumptionAmountValueSet = https://voicecollab.ai/fhir/ValueSet/alcohol-consumption-amount
+Alias: $PerspirationFrequencyValueSet = https://voicecollab.ai/fhir/ValueSet/perspiration-frequency
+Alias: $MenstruationMenopauseValueSet = https://voicecollab.ai/fhir/ValueSet/menstruation-menopause-status
+Alias: $VocalProfessionValueSet = https://voicecollab.ai/fhir/ValueSet/vocal-profession
 Alias: $ReadingAbilityValueSet = https://voicecollab.ai/fhir/ValueSet/reading-ability
 Alias: $MedicationValueSet = https://voicecollab.ai/fhir/ValueSet/medication
 Alias: $PsychiatricHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/psychiatric-history
