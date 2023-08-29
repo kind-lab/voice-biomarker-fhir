@@ -2,9 +2,9 @@ Instance: Words
 InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Random Item Generation Questionniare" 
-Description: "Random Item Generation Questionniare for Neuro Cohort" 
+Description: "Random Item Generation Questionniare" 
 * date = 2023-08-21 
-* title = "Random Item Generation Questionniare for Neuro Cohort" 
+* title = "Random Item Generation Questionniare" 
 * status = #active
 * item[0].linkId = "Word_1"
 * item[=].text = "Numbers"

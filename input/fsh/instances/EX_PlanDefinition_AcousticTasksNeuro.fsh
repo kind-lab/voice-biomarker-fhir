@@ -18,6 +18,7 @@ Description: "An example of a Voice as a Biomarker for Acoustic Tasks Neuro Coho
 * action[+].title = "Word-colour Stroop:"
 * action[=].prefix = "1.8 Task 2"
 * action[=].description = "You will be shown a word (one of 5 colour words - red, green, blue, brown, purple; such as ‘blue’, or a baseline stimulus, ‘oooo’), which is displayed in a congruent or incongruent colour (one of 5 colour stimuli). You have to name the colour in which the word is displayed. (no time limit) "
+* action[=].definitionCanonical = $StroopQuestionnaire
 
 * action[+].title = "Productive vocabulary link:"
 * action[=].prefix = "1.8 Task 3"

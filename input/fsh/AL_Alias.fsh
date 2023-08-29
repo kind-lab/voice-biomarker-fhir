@@ -105,3 +105,5 @@ Alias: $NeuroConsentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/
 Alias: $VocabularyQuestionniare = https://voicecollab.ai/fhir/Questionnaire/Vocabulary
 
 Alias: $RandomItemGenerationQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/Words
+
+Alias: $StroopQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/Stroop
