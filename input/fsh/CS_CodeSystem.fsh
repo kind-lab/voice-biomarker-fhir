@@ -772,3 +772,1938 @@ Description: "This code system is designed for the DSM-5 questionnaire, providin
 * #3 "Mild (Several days)"
 * #4 "Moderate (More than half the dayd)"
 * #5 "Severe (Nearly every day)"
+
+
+//-------------------------------------WinoGrad----------------------------------
+
+CodeSystem: Winograd1
+Id: Winograd-1
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The city councilmen"
+* #2 "the demonstrators."
+
+
+CodeSystem: Winograd2
+Id: Winograd-2
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "The suitcase"
+* #2 "the trophy."
+
+
+CodeSystem: Winograd3
+Id: Winograd-3
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Susan"
+* #2 "Joan."
+
+
+CodeSystem: Winograd4
+Id: Winograd-4
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Paul"
+* #2 "George"
+
+
+CodeSystem: Winograd5
+Id: Winograd-5
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The witness"
+* #2 "the lawyer."
+
+
+CodeSystem: Winograd6
+Id: Winograd-6
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The truck"
+* #2 "the bus"
+
+
+CodeSystem: Winograd7
+Id: Winograd-7
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Frank"
+* #2 "Bill"
+
+
+CodeSystem: Winograd8
+Id: Winograd-8
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The man"
+* #2 "the son."
+
+
+CodeSystem: Winograd9
+Id: Winograd-9
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The ball"
+* #2 "the table."
+
+
+CodeSystem: Winograd10
+Id: Winograd-10
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " John"
+* #2 "Billy."
+
+
+CodeSystem: Winograd11
+Id: Winograd-11
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Tom"
+* #2 "Ray."
+
+
+CodeSystem: Winograd12
+Id: Winograd-12
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Sue"
+* #2 "Sally."
+
+
+CodeSystem: Winograd13
+Id: Winograd-13
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The sculpture"
+* #2 "the shelf."
+
+
+CodeSystem: Winograd14
+Id: Winograd-14
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Sam's drawing"
+* #2 "Tina's drawing."
+
+
+CodeSystem: Winograd15
+Id: Winograd-15
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Anna"
+* #2 "Lucy"
+
+
+CodeSystem: Winograd16
+Id: Winograd-16
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The firemen"
+* #2 "the police."
+
+
+CodeSystem: Winograd17
+Id: Winograd-17
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Frank"
+* #2 "Tom."
+
+
+CodeSystem: Winograd18
+Id: Winograd-18
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Jim"
+* #2 "Kevin."
+
+
+CodeSystem: Winograd19
+Id: Winograd-19
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The sack of potatoes"
+* #2 "the bag of flour."
+
+
+CodeSystem: Winograd20
+Id: Winograd-20
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Martin"
+* #2 "Pete."
+
+
+CodeSystem: Winograd21
+Id: Winograd-21
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " the bottle"
+* #2 "the table."
+
+
+CodeSystem: Winograd22
+Id: Winograd-22
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " the table"
+* #2 "the cloth."
+
+
+CodeSystem: Winograd23
+Id: Winograd-23
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The younger students"
+* #2 "the older students."
+
+
+CodeSystem: Winograd24
+Id: Winograd-24
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The cup"
+* #2 "the bottle."
+
+
+CodeSystem: Winograd25
+Id: Winograd-25
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Susan"
+* #2 "Anne."
+
+
+CodeSystem: Winograd26
+Id: Winograd-26
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Susan"
+* #2 "Ann."
+
+
+CodeSystem: Winograd27
+Id: Winograd-27
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "Joe's uncle"
+* #2 "Joe."
+
+
+CodeSystem: Winograd28
+Id: Winograd-28
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " In the garage"
+* #2 "in the house."
+
+
+CodeSystem: Winograd29
+Id: Winograd-29
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The painting"
+* #2 "the tree."
+
+
+CodeSystem: Winograd30
+Id: Winograd-30
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The gap"
+* #2 "the wall."
+
+
+CodeSystem: Winograd31
+Id: Winograd-31
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The drain"
+* #2 "the hair."
+
+
+CodeSystem: Winograd32
+Id: Winograd-32
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The meeting"
+* #2 "the train."
+
+
+CodeSystem: Winograd33
+Id: Winograd-33
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The stage"
+* #2 "the pillar."
+
+
+CodeSystem: Winograd34
+Id: Winograd-34
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The announcement"
+* #2 "the subway."
+
+
+CodeSystem: Winograd35
+Id: Winograd-35
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The rain"
+* #2 "the concert."
+
+
+CodeSystem: Winograd36
+Id: Winograd-36
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The knife"
+* #2 "the rag."
+
+
+CodeSystem: Winograd37
+Id: Winograd-37
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "Mary"
+* #2 "Ann."
+
+
+CodeSystem: Winograd38
+Id: Winograd-38
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The backpack"
+* #2 "the bottle."
+
+
+CodeSystem: Winograd39
+Id: Winograd-39
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The shelf"
+* #2 "the pot."
+
+
+CodeSystem: Winograd40
+Id: Winograd-40
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The building"
+* #2 "the map."
+
+
+CodeSystem: Winograd41
+Id: Winograd-41
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Bob"
+* #2 "Charlie."
+
+
+CodeSystem: Winograd42
+Id: Winograd-42
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Bob"
+* #2 "Charlie"
+
+
+CodeSystem: Winograd43
+Id: Winograd-43
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Bob"
+* #2 "Adam."
+
+
+CodeSystem: Winograd44
+Id: Winograd-44
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Bob"
+* #2 "Adam"
+
+
+CodeSystem: Winograd45
+Id: Winograd-45
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The con artist"
+* #2 "Sam."
+
+
+CodeSystem: Winograd46
+Id: Winograd-46
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The dog"
+* #2 "The spot under the tree."
+
+
+CodeSystem: Winograd47
+Id: Winograd-47
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The mouse"
+* #2 "the cat."
+
+
+CodeSystem: Winograd48
+Id: Winograd-48
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Anne"
+* #2 "Anne's daughter."
+
+
+CodeSystem: Winograd49
+Id: Winograd-49
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Alice"
+* #2 "Alice's daughter."
+
+
+CodeSystem: Winograd50
+Id: Winograd-50
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The guy in the uniform"
+* #2 "Jim."
+
+
+CodeSystem: Winograd51
+Id: Winograd-51
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The worm"
+* #2 "the fish."
+
+
+CodeSystem: Winograd52
+Id: Winograd-52
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The key"
+* #2 "the chewing gum."
+
+
+CodeSystem: Winograd53
+Id: Winograd-53
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The cat"
+* #2 "the dog."
+
+
+CodeSystem: Winograd54
+Id: Winograd-54
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The tree"
+* #2 "the roof."
+
+
+CodeSystem: Winograd55
+Id: Winograd-55
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The teller"
+* #2 "the customer."
+
+
+CodeSystem: Winograd56
+Id: Winograd-56
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "John"
+* #2 "the hummer."
+
+
+CodeSystem: Winograd57
+Id: Winograd-57
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " John"
+* #2 "the juggler."
+
+
+CodeSystem: Winograd58
+Id: Winograd-58
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Bob"
+* #2 "Carl."
+
+
+CodeSystem: Winograd59
+Id: Winograd-59
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Amy's parents"
+* #2 "Sam and Amy."
+
+
+CodeSystem: Winograd60
+Id: Winograd-60
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Mark"
+* #2 "Pete."
+
+
+CodeSystem: Winograd61
+Id: Winograd-61
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The old house"
+* #2 "the new house."
+
+
+CodeSystem: Winograd62
+Id: Winograd-62
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The readers"
+* #2 "the books."
+
+
+CodeSystem: Winograd63
+Id: Winograd-63
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The piece"
+* #2 "the flute."
+
+
+CodeSystem: Winograd64
+Id: Winograd-64
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The chair"
+* #2 "the piano."
+
+
+CodeSystem: Winograd65
+Id: Winograd-65
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The backpack"
+* #2 "the newspaper."
+
+
+CodeSystem: Winograd66
+Id: Winograd-66
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The book"
+* #2 "the article."
+
+
+CodeSystem: Winograd67
+Id: Winograd-67
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The flag"
+* #2 "the sand castle."
+
+
+CodeSystem: Winograd68
+Id: Winograd-68
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Susan"
+* #2 "Jane."
+
+
+CodeSystem: Winograd69
+Id: Winograd-69
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Jane invited Susan"
+* #2 "Susan invited Jane."
+
+
+CodeSystem: Winograd70
+Id: Winograd-70
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Sam"
+* #2 "Adam."
+
+
+CodeSystem: Winograd71
+Id: Winograd-71
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The lake"
+* #2 "the path."
+
+
+CodeSystem: Winograd72
+Id: Winograd-72
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The cloud"
+* #2 "the sun."
+
+
+CodeSystem: Winograd73
+Id: Winograd-73
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The beach"
+* #2 "the lake."
+
+
+CodeSystem: Winograd74
+Id: Winograd-74
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "the sheep"
+* #2 "the shepherds."
+
+
+CodeSystem: Winograd75
+Id: Winograd-75
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Anne"
+* #2 "Mary."
+
+
+CodeSystem: Winograd76
+Id: Winograd-76
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The coats"
+* #2 "Fred and Alice."
+
+
+CodeSystem: Winograd77
+Id: Winograd-77
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Cooper"
+* #2 "Thomson"
+
+
+CodeSystem: Winograd78
+Id: Winograd-78
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Arnold"
+* #2 "Jackson."
+
+
+CodeSystem: Winograd79
+Id: Winograd-79
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Tom and Dr. Stewart "
+* #2 " Eva and Dr. Stewart. "
+
+
+CodeSystem: Winograd80
+Id: Winograd-80
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The tree"
+* #2 "the axe."
+
+
+CodeSystem: Winograd81
+Id: Winograd-81
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The chickens"
+* #2 "the foxes."
+
+
+CodeSystem: Winograd82
+Id: Winograd-82
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The foxes"
+* #2 "the chickens."
+
+
+CodeSystem: Winograd83
+Id: Winograd-83
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " His eyes"
+* #2 "his hands."
+
+
+CodeSystem: Winograd84
+Id: Winograd-84
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Tina"
+* #2 "Terpsichore."
+
+
+CodeSystem: Winograd85
+Id: Winograd-85
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Fred"
+* #2 "George."
+
+
+CodeSystem: Winograd86
+Id: Winograd-86
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The dishwasher"
+* #2 "the television."
+
+
+CodeSystem: Winograd87
+Id: Winograd-87
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Fred"
+* #2 "my great-grandfather."
+
+
+CodeSystem: Winograd88
+Id: Winograd-88
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Fred"
+* #2 "my father."
+
+
+CodeSystem: Winograd89
+Id: Winograd-89
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Yakutsk"
+* #2 "Kamchatka. "
+
+
+CodeSystem: Winograd90
+Id: Winograd-90
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " In Sparta"
+* #2 "In Troy "
+
+
+CodeSystem: Winograd91
+Id: Winograd-91
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Springfield"
+* #2 "Franklin. "
+
+
+CodeSystem: Winograd92
+Id: Winograd-92
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The wolves"
+* #2 "the deer. "
+
+
+CodeSystem: Winograd93
+Id: Winograd-93
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The prehistoric humans"
+* #2 "the archaeologists."
+
+
+CodeSystem: Winograd94
+Id: Winograd-94
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The fish"
+* #2 "the scientists."
+
+
+CodeSystem: Winograd95
+Id: Winograd-95
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The stars"
+* #2 "the journalists"
+
+
+CodeSystem: Winograd96
+Id: Winograd-96
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The gang"
+* #2 "the police."
+
+
+CodeSystem: Winograd97
+Id: Winograd-97
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The cake"
+* #2 "the refrigerator."
+
+
+CodeSystem: Winograd98
+Id: Winograd-98
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The ankles"
+* #2 "the crutches."
+
+
+CodeSystem: Winograd99
+Id: Winograd-99
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The opponents "
+* #2 "the sponsors."
+
+
+CodeSystem: Winograd100
+Id: Winograd-100
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The oatmeal cookies"
+* #2 "the chocolate chip."
+
+
+CodeSystem: Winograd101
+Id: Winograd-101
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " chairs"
+* #2 "copies of the newsletter."
+
+
+CodeSystem: Winograd102
+Id: Winograd-102
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The pin"
+* #2 "the carrot."
+
+
+CodeSystem: Winograd103
+Id: Winograd-103
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "The coffee"
+* #2 "the pen."
+
+
+CodeSystem: Winograd104
+Id: Winograd-104
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Steve admires Fred"
+* #2 "Fred influences Steve."
+
+
+CodeSystem: Winograd105
+Id: Winograd-105
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The table"
+* #2 "the doorway."
+
+
+CodeSystem: Winograd106
+Id: Winograd-106
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The jacket"
+* #2 "the sweater."
+
+
+CodeSystem: Winograd107
+Id: Winograd-107
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Bill"
+* #2 "Bert. "
+
+
+CodeSystem: Winograd108
+Id: Winograd-108
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Bill is taking care of John"
+* #2 "John is taking care of Bill. "
+
+
+CodeSystem: Winograd109
+Id: Winograd-109
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " John"
+* #2 "Bill."
+
+
+CodeSystem: Winograd110
+Id: Winograd-110
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Xenophanes"
+* #2 "Sam."
+
+
+CodeSystem: Winograd111
+Id: Winograd-111
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Emma's mother"
+* #2 "Emma."
+
+
+CodeSystem: Winograd112
+Id: Winograd-112
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Susan"
+* #2 "Jane"
+
+
+CodeSystem: Winograd113
+Id: Winograd-113
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Joe"
+* #2 "the detective."
+
+
+CodeSystem: Winograd114
+Id: Winograd-114
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Beth"
+* #2 "Sally"
+
+
+CodeSystem: Winograd115
+Id: Winograd-115
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Jim"
+* #2 "the barman."
+
+
+CodeSystem: Winograd116
+Id: Winograd-116
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Bill"
+* #2 "Dan"
+
+
+CodeSystem: Winograd117
+Id: Winograd-117
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Ralph's"
+* #2 "Tom's"
+
+
+CodeSystem: Winograd118
+Id: Winograd-118
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Andrea"
+* #2 "Susan"
+
+
+CodeSystem: Winograd119
+Id: Winograd-119
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Ralph"
+* #2 "Tom"
+
+
+CodeSystem: Winograd120
+Id: Winograd-120
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Bill"
+* #2 "John"
+
+
+CodeSystem: Winograd121
+Id: Winograd-121
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Bill"
+* #2 "John"
+
+
+CodeSystem: Winograd122
+Id: Winograd-122
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The boy's"
+* #2 "the man's."
+
+
+CodeSystem: Winograd123
+Id: Winograd-123
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The girl's"
+* #2 "the woman's"
+
+
+CodeSystem: Winograd124
+Id: Winograd-124
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Toby"
+* #2 "Billy"
+
+
+CodeSystem: Winograd125
+Id: Winograd-125
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Donna"
+* #2 " Lily"
+
+
+CodeSystem: Winograd126
+Id: Winograd-126
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Timmy"
+* #2 "Tommy"
+
+
+CodeSystem: Winograd127
+Id: Winograd-127
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Tommy"
+* #2 "Ollie"
+
+
+CodeSystem: Winograd128
+Id: Winograd-128
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The father"
+* #2 "the boy "
+
+
+CodeSystem: Winograd129
+Id: Winograd-129
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The woman's"
+* #2 "the girl's"
+
+
+CodeSystem: Winograd130
+Id: Winograd-130
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Pam and Paul"
+* #2 "Pam's parents."
+
+
+CodeSystem: Winograd131
+Id: Winograd-131
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Kate"
+* #2 "Dr. Adams"
+
+
+CodeSystem: Winograd132
+Id: Winograd-132
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Dan"
+* #2 "Bill"
+
+
+CodeSystem: Winograd133
+Id: Winograd-133
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Joan"
+* #2 "Jane."
+
+
+CodeSystem: Winograd134
+Id: Winograd-134
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " The lemons "
+* #2 " the trees"
+
+
+CodeSystem: Winograd135
+Id: Winograd-135
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Robert"
+* #2 "James"
+
+
+CodeSystem: Winograd136
+Id: Winograd-136
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Shatov"
+* #2 "Kirilov"
+
+
+CodeSystem: Winograd137
+Id: Winograd-137
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Janie"
+* #2 "Emma"
+
+
+CodeSystem: Winograd138
+Id: Winograd-138
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-28"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 " Joe"
+* #2 "Joe's brother. "
+

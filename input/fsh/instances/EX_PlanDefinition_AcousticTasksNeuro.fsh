@@ -18,6 +18,7 @@ Description: "An example of a Voice as a Biomarker for Acoustic Tasks Neuro Coho
 * action[+].title = "Word-colour Stroop:"
 * action[=].prefix = "1.8 Task 2"
 * action[=].description = "You will be shown a word (one of 5 colour words - red, green, blue, brown, purple; such as ‘blue’, or a baseline stimulus, ‘oooo’), which is displayed in a congruent or incongruent colour (one of 5 colour stimuli). You have to name the colour in which the word is displayed. (no time limit) "
+* action[=].definitionCanonical = $StroopQuestionnaire
 
 * action[+].title = "Productive vocabulary link:"
 * action[=].prefix = "1.8 Task 3"
@@ -27,7 +28,7 @@ Description: "An example of a Voice as a Biomarker for Acoustic Tasks Neuro Coho
 * action[+].title = "Random item generation / semantic fluency link:"
 * action[=].prefix = "1.8 Task 4"
 * action[=].description = "You will have to speak a series of (I) random, non-repeating letters or numbers, or (ii) items from a given category (e.g., cities, animals, etc.), with the goal of maximizing the number of items. (time limit: 60 seconds). "
-
+* action[=].definitionCanonical = $RandomItemGenerationQuestionnaire
 
 * action[+].title = "Winograd schemas link"
 * action[=].prefix = "1.8 Task 5"
