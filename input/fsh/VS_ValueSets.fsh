@@ -968,8 +968,6 @@ Description: "The codes required for neuro consent"
 * ^date = "2023-08-21"
 * include codes from system  $NeuroParticipationConsentCodeSystem
 
-
-
 //------------------------------Winograd Questions-------------------------------
 
 

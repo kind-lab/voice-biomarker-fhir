@@ -20,7 +20,6 @@ Alias: $ResearcherStatementAddendum = https://voicecollab.ai/fhir/Questionnaire/
 Alias: $CombinedPDFAddendum = https://voicecollab.ai/fhir/Questionnaire/AddendumCombinedPDF
 Alias: $BasicInformation = https://voicecollab.ai/fhir/Questionnaire/GeneralInformation
 Alias: $ContactInformation = https://voicecollab.ai/fhir/Questionnaire/ContactInformation
-Alias: $EligibilityOfParticipant = https://voicecollab.ai/fhir/Questionnaire/EligibleStudies
 Alias: $VocalFoldParalysis = https://voicecollab.ai/fhir/Questionnaire/VocalFoldParalysis
 
 Alias: $PedsPreQuestionQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PedsPreQuestionQuestionnaire
@@ -107,3 +106,5 @@ Alias: $VocabularyQuestionniare = https://voicecollab.ai/fhir/Questionnaire/Voca
 Alias: $RandomItemGenerationQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/Words
 
 Alias: $StroopQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/Stroop
+
+Alias: $SurveyCompletionQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/SurveyCompletionQuestionnaire

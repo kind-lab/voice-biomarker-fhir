@@ -32,13 +32,11 @@ Description: "An example of the Adult PreQuestion PlanDefinition"
 * action[=].action[=].priority = #routine
 * action[=].action[=].definitionUri = $ContactInformation 
 
-
-* action[=].action[+].title = "Determine Eligibility"
+* action[=].action[+].title = "Survey Completion Questionnaire"
 * action[=].action[=].prefix = "1.1.4"
-* action[=].action[=].description = "Determine Eligibility of Participant"
+* action[=].action[=].description = "Survey Completion Questionnaire"
 * action[=].action[=].priority = #routine
-* action[=].action[=].definitionUri = $EligibilityOfParticipant
-
+* action[=].action[=].definitionUri = $SurveyCompletionQuestionnaire
 
 * action[=].action[+].title = "Enroll participant"
 * action[=].action[=].prefix = "1.1.5"
