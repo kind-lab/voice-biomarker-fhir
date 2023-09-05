@@ -149,6 +149,8 @@ Alias: $PedsReasonToDeclineValueSet = https://voicecollab.ai/fhir/ValueSet/peds-
 
 Alias: $RespiratoryDifficultyBreathingValueSet = https://voicecollab.ai/fhir/ValueSet/difficulty-breathing
 
+Alias: $IsoLanguages = http://hl7.org/fhir/us/core/ValueSet/simple-language
+
 //------------------------------Winograd Questions-------------------------------
 
 // Alias: $WinogradSchemaQ1ValueSet = https://voicecollab.ai/fhir/ValueSet/winograd-q1

@@ -27,6 +27,22 @@ Description: "This code system identifies who has completed a specific survey or
 * #A "Assistant" "Survey was completed by an assistant"
 * #P "Parent/Caregiver" "Survey was completed by a parent/cargiver"
 
+CodeSystem: PedsWhoCompletedSurvey
+Id: peds-who-completed-survey
+Title: "Survey Completion Identifier Codes"
+Description: "This code system identifies who has completed a specific survey or questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-05-11"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #S "Self" "Survey was completed by self"
+* #A "Assistant" "Survey was completed by an assistant"
+* #P "Parent/Caregiver" "Survey was completed by a parent/cargiver"
+
+
+
 CodeSystem: ChildEducation
 Id: child-education
 Title: "Child Education Level Code System"
