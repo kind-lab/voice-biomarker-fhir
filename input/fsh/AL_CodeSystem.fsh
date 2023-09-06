@@ -179,6 +179,8 @@ Alias: $PedsReasonToDeclineCodeSystem = https://voicecollab.ai/fhir/CodeSystem/p
 
 Alias: $RespiratoryDifficultyBreathingCodeSystem = https://voicecollab.ai/fhir/CodeSystem/difficulty-breathing
 
+Alias: $EducationLevelCodeSystem = https://voicecollab.ai/fhir/CodeSystem/education-level
+
 //------------------------------Winograd Questions-------------------------------
 
 // Alias: $WinogradSchemaQ1CodeSystem = https://voicecollab.ai/fhir/CodeSystem/winograd-q1

@@ -11,16 +11,15 @@ Description: "VbaiQuestionnaireDemographic Example"
 * item[=].type = #group
 * item[=].item[0].linkId = "country"
 * item[=].item[=].text = "Country of survery completed"
-* item[=].item[=].type = #string
-* item[=].item[+].linkId = "name"
-* item[=].item[=].text = "What is your name?"
-* item[=].item[=].type = #string
+* item[=].item[=].type = #choice
+* item[=].item[=].answerValueSet = $IsoCountry
 * item[=].item[+].linkId = "dob"
 * item[=].item[=].text = "what is your date of birth?"
 * item[=].item[=].type = #date
 * item[=].item[+].linkId = "address"
+* item[=].item[=].answerOption.valueReference = Reference(https://voicecollab.ai/fhir/StructureDefinition/vbai-patient)
 * item[=].item[=].text = "Patient address"
-* item[=].item[=].type = #string
+* item[=].item[=].type = #reference
 * item[+].linkId = "completed_by"
 * item[=].text = "Who is completing this survey?"
 * item[=].type = #choice
@@ -70,9 +69,15 @@ Description: "VbaiQuestionnaireDemographic Example"
 * item[=].item[=].text = "What is your gender identity?"
 * item[=].item[=].type = #open-choice
 // * item[=].item[=].answerConstraint = #optionsOrString only supported in r5
-* item[=].item[=].answerValueSet = $QuestionnaireGenderIdentityValueSet
+* item[=].item[=].answerValueSet = $USCoreGenderIdentityValueSet
 * item[=].item[=].answerOption[0].valueString = "Not listed, Please Specify"
 * item[=].item[=].answerOption[+].valueString = "Intersex, Please Specify"
+
+* item[=].item[+].linkId = "birth_sex"
+* item[=].item[=].text = "What is your sex assigned at birth?"
+* item[=].item[=].type = #choice
+* item[=].item[=].answerValueSet = $UsCoreBirthSexValueSet
+
 
 * item[=].item[+].linkId = "sexual_orientation"
 * item[=].item[=].text = "What is your sexual orientation?"
@@ -93,31 +98,84 @@ Description: "VbaiQuestionnaireDemographic Example"
 * item[+].linkId = "education_completed"
 * item[=].text = "What is your highest level of education?"
 * item[=].type = #choice
-* item[=].answerValueSet = $HighestEducationValueSet
+* item[=].answerValueSet = $HighestEducationLevelValueSet
 
-* item[+].linkId = "iep"
-* item[=].text = "Do you have an individualized education plan or some other adaptive education plan? "
-* item[=].type = #choice
-* item[=].answerValueSet = $YesNo
+// peds only
+// * item[+].linkId = "iep"
+// * item[=].text = "Do you have an individualized education plan or some other adaptive education plan? "
+// * item[=].type = #choice
+// * item[=].answerValueSet = $YesNo
 
-* item[+].linkId = "education_caregiver"
-* item[=].text = "What is your parent’s/caregiver's highest level of education?"
-* item[=].type = #choice
-* item[=].answerValueSet = $HighestEducationValueSet
+// * item[+].linkId = "education_caregiver"
+// * item[=].text = "What is your parent’s/caregiver's highest level of education?"
+// * item[=].type = #choice
+// * item[=].answerValueSet = $HighestEducationValueSet
 
-* item[+].linkId = "disability_status"
-* item[=].text = "What is your disability status?"
-* item[=].type = #choice
-* item[=].answerValueSet = $DisabilityStatusValueSet
 
-* item[+].linkId = "disability_type"
-* item[=].text = "What types of disability(s) do you experience? Please choose all that apply"
-* item[=].type = #choice
-* item[=].answerValueSet = $DisabilityTypeValueSet
 
-* item[+].linkId = "disability_label"
-* item[=].text = "Please specify your disability(s)? Consider those that are visible to others and those that are not visible to others."
-* item[=].type = #string
+
+
+
+
+
+
+
+
+
+* item[+].linkId = "disability"
+* item[=].text = "Disability"
+* item[=].type = #group
+
+* item[=].item[0].linkId = "disability_status"
+* item[=].item[=].text = "What is your disability status?"
+* item[=].item[=].type = #choice
+* item[=].item[=].answerValueSet = $DisabilityStatusValueSet
+
+* item[=].item[+].linkId = "disability_type"
+* item[=].item[=].text = "What types of disability(s) do you experience? Please choose all that apply"
+* item[=].item[=].type = #choice
+* item[=].item[=].answerValueSet = $DisabilityTypeValueSet
+
+* item[=].item[+].linkId = "disability_label"
+* item[=].item[=].text = "Please specify your disability(s)? Consider those that are visible to others and those that are not visible to others."
+* item[=].item[=].type = #string
+
+* item[=].item[+].linkId = "six_disability_questions"
+* item[=].item[=].text = "Please complete the following questions. Documentation: https://www2.census.gov/programs-surveys/acs/methodology/questionnaires/2023/quest23.pdf AND https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2021_ACSSubjectDefinitions.pdf (page 61)"
+* item[=].item[=].type = #group
+
+* item[=].item[=].item[+].linkId = "disability_Q1"
+* item[=].item[=].item[=].text = "Are you deaf, or do you have serious difficulty hearing?"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].answerValueSet = $YesNo
+
+
+* item[=].item[=].item[+].linkId = "disability_Q2"
+* item[=].item[=].item[=].text = "Are you blind, or do you have serious difficulty seeing, even when wearing glasses?"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].answerValueSet = $YesNo
+
+* item[=].item[=].item[+].linkId = "disability_Q3"
+* item[=].item[=].item[=].text = "Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions? (5 years old or older)"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].answerValueSet = $YesNo
+
+
+* item[=].item[=].item[+].linkId = "disability_Q4"
+* item[=].item[=].item[=].text = "Do you have serious difficulty walking or climbing stairs? (5 years old or older)"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].answerValueSet = $YesNo
+
+* item[=].item[=].item[+].linkId = "disability_Q5"
+* item[=].item[=].item[=].text = "Do you have difficulty dressing or bathing? (5 years old or older)"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].answerValueSet = $YesNo
+
+
+* item[=].item[=].item[+].linkId = "disability_Q6"
+* item[=].item[=].item[=].text = "Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor’s office or shopping? (15 years old or older)"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].answerValueSet = $YesNo
 
 
 * item[+].linkId = "employment_status"
@@ -141,17 +199,22 @@ Description: "VbaiQuestionnaireDemographic Example"
 * item[=].type = #integer
 
 
-
 * item[+].linkId = "financial_assistance"
-* item[=].type = #group
-* item[=].item[0].linkId = "Q1"
-* item[=].item[=].text = "Do you take advantage of any of the following programs? Choose all that apply"
-* item[=].item[=].type = #choice
-* item[=].item[=].answerValueSet = $FinancialAssistanceValueSet
-* item[=].item[+].linkId = "Q2"
-* item[=].item[=].text = "Do you participate in any federally-funded income assistance programs?"
-* item[=].item[=].type = #choice
-* item[=].item[=].answerValueSet = $YesNo
+* item[=].text = "Do you take advantage of an income assistance program?"
+* item[=].type = #choice
+* item[=].answerValueSet = $YesNoSome
+
+
+// * item[+].linkId = "financial_assistance"
+// * item[=].type = #group
+// * item[=].item[0].linkId = "Q1"
+// * item[=].item[=].text = "Do you take advantage of any of the following programs? Choose all that apply"
+// * item[=].item[=].type = #choice
+// * item[=].item[=].answerValueSet = $FinancialAssistanceValueSet
+// * item[=].item[+].linkId = "Q2"
+// * item[=].item[=].text = "Do you participate in any federally-funded income assistance programs?"
+// * item[=].item[=].type = #choice
+// * item[=].item[=].answerValueSet = $YesNo
 
 
 * item[+].linkId = "immigration_status"

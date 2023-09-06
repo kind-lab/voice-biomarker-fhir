@@ -9,3 +9,8 @@ Description: "An example of a Voice as a Biomarker for AI Patient"
   * family = "Smith"
 * birthDate = "1999-04-01"
 * gender = #male
+* address.line = "100 Main St"
+* address.city = "Metropolis"
+* address.state = "Il"
+* address.postalCode = "44130"
+* address.country = "USA"
