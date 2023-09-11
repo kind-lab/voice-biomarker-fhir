@@ -447,6 +447,16 @@ Description: "The Codes used by confounder questionnaire"
 * include codes from system $ENTHistoryCodeSystem
 
 
+ValueSet: SeasonalAlergies
+Id: seasonal-allergies
+Title: "ValueSet for Confounders Season Allergies"
+Description: "This Valueset is designed for confounders questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-09-06"
+* include codes from system $SeasonalAlergiesCodeSystem
+
+
 //------------------------------------Enrollment-----------------------
 ValueSet: SelectLanguage
 Id: select-language
@@ -640,6 +650,7 @@ Description:  "The Codes used by DSM5 phobia"
 * ^status = #active
 * ^date = "2023-06-21"
 * include codes from system $DSM5PhobiaCodeSystem
+
 // -----------------------PTSD-----------------------------------------
 ValueSet: PTSD
 Id: ptsd

@@ -73,6 +73,8 @@ Alias: $MedicationCodeSystem = https://voicecollab.ai/fhir/CodeSystem/medication
 Alias: $PsychiatricHistoryCodeSystem = https://voicecollab.ai/fhir/CodeSystem/psychiatric-history
 Alias: $NeurologicalHistoryCodeSystem = https://voicecollab.ai/fhir/CodeSystem/neurological-history
 Alias: $ENTHistoryCodeSystem = https://voicecollab.ai/fhir/CodeSystem/ent-history
+Alias: $SeasonalAlergiesCodeSystem = https://voicecollab.ai/fhir/CodeSystem/seasonal-allergies
+
 
 
 // Enrollment

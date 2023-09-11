@@ -41,6 +41,7 @@ Alias: $MedicationValueSet = https://voicecollab.ai/fhir/ValueSet/medication
 Alias: $PsychiatricHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/psychiatric-history
 Alias: $NeurologicalHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/neurological-history
 Alias: $ENTHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/ent-history
+Alias: $SeasonalAllergiesValueSet = https://voicecollab.ai/fhir/ValueSet/seasonal-allergies
 
 // Enrollment
 Alias: $EnrollmentSelectLanguageValueSet = https://voicecollab.ai/fhir/ValueSet/select-language

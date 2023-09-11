@@ -17,9 +17,8 @@ Description: "VbaiQuestionnaireDemographic Example"
 * item[=].item[=].text = "what is your date of birth?"
 * item[=].item[=].type = #date
 * item[=].item[+].linkId = "address"
-* item[=].item[=].answerOption.valueReference = Reference(https://voicecollab.ai/fhir/StructureDefinition/vbai-patient)
 * item[=].item[=].text = "Patient address"
-* item[=].item[=].type = #reference
+* item[=].item[=].type = #string
 * item[+].linkId = "completed_by"
 * item[=].text = "Who is completing this survey?"
 * item[=].type = #choice

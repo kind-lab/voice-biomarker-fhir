@@ -10,139 +10,163 @@ Description: "VbaiQuestionnaire confounders Example"
 * status = #active
 
 // smoking
-* item[0].linkId = "smoking"
-* item[=].text = "Have you ever smoked regularly (more than a few times a month for at least two months)? This includes tobacco, cannabis, vapes, e-cigarettes, hookah, or pipes."
-* item[=].type = #choice
-* item[=].answerValueSet = $SmokingStatusValueSet
-* item[=].item[0].linkId = "smoking_q2"
-* item[=].item[=].type = #integer
-* item[=].item[=].text = "At what age did you start smoking?" 
-* item[=].item[=].enableWhen.question = "smoking"
-* item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerString = "If I used to smoke OR I currently smoke"
-* item[=].item[+].linkId = "smoking_q3"
-* item[=].item[=].type = #integer
-* item[=].item[=].text = "What age did you stop?" 
-* item[=].item[=].enableWhen.question = "smoking"
-* item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerString = "If I used to smoke"
-* item[=].item[+].linkId = "smoking_q4"
-* item[=].item[=].type = #open-choice
-* item[=].item[=].text = "Checklist of different types (choose all that apply):" 
-* item[=].item[=].enableWhen.question = "smoking"
-* item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerString = "If I used to smoke OR I currently smoke"
-* item[=].item[=].answerValueSet = $SmokingTypeValueSet
 
 
-* item[=].item[+].linkId = "smoking_q5"
-* item[=].item[=].type = #string
-* item[=].item[=].text = "How often do/did you smoke?" 
-* item[=].item[=].enableWhen.question = "smoking"
-* item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerString = "If I used to smoke OR I currently smoke"
-* item[=].item[=].answerValueSet = $SmokingTimesValueSet
+* item[0].linkId = "Lifestyle"
+* item[=].text = "LifeStyle"
+* item[=].type = #group
 
 
-* item[=].item[+].linkId = "smoking_q6"
+* item[=].item[0].linkId = "smoking"
+* item[=].item[=].text = "Have you ever smoked regularly (more than a few times a month for at least two months)? This includes tobacco, cannabis, vapes, e-cigarettes, hookah, or pipes."
 * item[=].item[=].type = #choice
-* item[=].item[=].text = "Have you been a regular smoker or not within the last 3 years?" 
-* item[=].item[=].answerValueSet = $YesNo
-// alchohol
-* item[+].linkId = "alcohol"
-* item[=].type = #choice
-* item[=].text = "Do you drink alcohol?" 
-* item[=].answerValueSet = $YesNo
-
-
-* item[=].item[0].linkId = "alcohol_q2"
-* item[=].item[=].type = #choice
-* item[=].item[=].text = "How often do you have at least one drink containing alcohol? Drinks can be beer, wine, shots of liquor, cocktails containing a shot of liquor" 
-
-* item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerString = "If Yes"
-* item[=].item[=].answerValueSet = $AlcoholConsumptionFrequencyValueSet
-* item[=].item[+].linkId = "alcohol_q3"
-* item[=].item[=].type = #choice
-* item[=].item[=].text = "How many drinks containing alcohol do you have on a typical day when you are drinking? One drink is 12 oz. beer, 5 oz. wine, 1.5 oz. (one shot) liquor" 
-
-* item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerString = "If Yes"
-* item[=].item[=].answerValueSet = $AlcoholConsumptionAmountValueSet
-
-* item[=].item[+].linkId = "alcohol_q4"
-* item[=].item[=].type = #choice
-* item[=].item[=].text = "Have you drunk alcohol today?" 
-
-* item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerString = "If Yes"
-* item[=].item[=].answerValueSet = $YesNo
-
-* item[=].item[=].item[0].linkId = "alcohol_q5"
+* item[=].item[=].answerValueSet = $SmokingStatusValueSet
+* item[=].item[=].item[0].linkId = "smoking_q2"
 * item[=].item[=].item[=].type = #integer
-* item[=].item[=].item[=].text = "How many drinks did you have?" 
-* item[=].item[=].item[=].enableWhen.question = "alcohol_q4"
+* item[=].item[=].item[=].text = "At what age did you start smoking?" 
+* item[=].item[=].item[=].enableWhen.question = "smoking"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerString = "If I used to smoke OR I currently smoke"
+* item[=].item[=].item[+].linkId = "smoking_q3"
+* item[=].item[=].item[=].type = #integer
+* item[=].item[=].item[=].text = "What age did you stop?" 
+* item[=].item[=].item[=].enableWhen.question = "smoking"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerString = "If I used to smoke"
+* item[=].item[=].item[+].linkId = "smoking_q4"
+* item[=].item[=].item[=].type = #open-choice
+* item[=].item[=].item[=].text = "Checklist of different types (choose all that apply):" 
+* item[=].item[=].item[=].enableWhen.question = "smoking"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerString = "If I used to smoke OR I currently smoke"
+* item[=].item[=].item[=].answerValueSet = $SmokingTypeValueSet
+
+
+* item[=].item[=].item[+].linkId = "smoking_q5"
+* item[=].item[=].item[=].type = #string
+* item[=].item[=].item[=].text = "How often do/did you smoke?" 
+* item[=].item[=].item[=].enableWhen.question = "smoking"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerString = "If I used to smoke OR I currently smoke"
+* item[=].item[=].item[=].answerValueSet = $SmokingTimesValueSet
+
+
+* item[=].item[=].item[+].linkId = "smoking_q6"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].text = "Have you been a regular smoker or not within the last 3 years?" 
+* item[=].item[=].item[=].answerValueSet = $YesNo
+// alchohol
+* item[=].item[+].linkId = "alcohol"
+* item[=].item[=].type = #choice
+* item[=].item[=].text = "Do you drink alcohol?" 
+* item[=].item[=].answerValueSet = $YesNo
+
+
+* item[=].item[=].item[0].linkId = "alcohol_q2"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].text = "How often do you have at least one drink containing alcohol? Drinks can be beer, wine, shots of liquor, cocktails containing a shot of liquor" 
+
+* item[=].item[=].item[=].enableWhen.question = "alcohol"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerString = "If Yes"
+* item[=].item[=].item[=].answerValueSet = $AlcoholConsumptionFrequencyValueSet
+* item[=].item[=].item[+].linkId = "alcohol_q3"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].text = "How many drinks containing alcohol do you have on a typical day when you are drinking? One drink is 12 oz. beer, 5 oz. wine, 1.5 oz. (one shot) liquor" 
+
+* item[=].item[=].item[=].enableWhen.question = "alcohol"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerString = "If Yes"
+* item[=].item[=].item[=].answerValueSet = $AlcoholConsumptionAmountValueSet
+
+* item[=].item[=].item[+].linkId = "alcohol_q4"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].text = "Have you drunk alcohol today?" 
+
+* item[=].item[=].item[=].enableWhen.question = "alcohol"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerString = "If Yes"
+* item[=].item[=].item[=].answerValueSet = $YesNo
+
+* item[=].item[=].item[=].item[0].linkId = "alcohol_q5"
+* item[=].item[=].item[=].item[=].type = #integer
+* item[=].item[=].item[=].item[=].text = "How many drinks did you have?" 
+* item[=].item[=].item[=].item[=].enableWhen.question = "alcohol_q4"
+* item[=].item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].item[=].enableWhen.answerString = "If Yes"
 
 
 
 
-* item[=].item[+].linkId = "alcohol_q6"
-* item[=].item[=].type = #choice
-* item[=].item[=].text = "Have you ever required rehab/counseling for heavy alcohol use?" 
+* item[=].item[=].item[+].linkId = "alcohol_q6"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].text = "Have you ever required rehab/counseling for heavy alcohol use?" 
 
-* item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerString = "If Yes"
-* item[=].item[=].answerValueSet = $YesNo
+* item[=].item[=].item[=].enableWhen.question = "alcohol"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerString = "If Yes"
+* item[=].item[=].item[=].answerValueSet = $YesNo
 
-* item[=].item[+].linkId = "alcohol_q7"
-* item[=].item[=].type = #choice
-* item[=].item[=].text = "Are you currently in recovery for alcohol use?" 
+* item[=].item[=].item[+].linkId = "alcohol_q7"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].text = "Are you currently in recovery for alcohol use?" 
 
-* item[=].item[=].enableWhen.question = "alcohol"
-* item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerString = "If Yes"
-* item[=].item[=].answerValueSet = $YesNo
+* item[=].item[=].item[=].enableWhen.question = "alcohol"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerString = "If Yes"
+* item[=].item[=].item[=].answerValueSet = $YesNo
 
 // Substance_use
-* item[+].linkId = "substance_use"
-* item[=].type = #boolean
-* item[=].text = "How many times in the past year have you used a recreational substance or used a prescription medication for nonmedical reasons? (Recreational substances include methamphetamines (speed, crystal), cannabis (marijuana, pot), inhalants (paint thinner, aerosol, glue), tranquilizers (Valium), barbiturates, cocaine, ecstasy, hallucinogens (LSD, mushrooms), or narcotics (heroin). )" 
+* item[=].item[+].linkId = "substance_use"
+* item[=].item[=].type = #boolean
+* item[=].item[=].text = "How many times in the past year have you used a recreational substance or used a prescription medication for nonmedical reasons? (Recreational substances include methamphetamines (speed, crystal), cannabis (marijuana, pot), inhalants (paint thinner, aerosol, glue), tranquilizers (Valium), barbiturates, cocaine, ecstasy, hallucinogens (LSD, mushrooms), or narcotics (heroin). )" 
 
 
-* item[=].item[0].linkId = "substance_use_q2"
-* item[=].item[=].type = #string
-* item[=].item[=].text = "Are you currently in recovery for substance use? " 
-* item[=].item[=].answerValueSet = $YesNo
+* item[=].item[=].item[0].linkId = "substance_use_q2"
+* item[=].item[=].item[=].type = #string
+* item[=].item[=].item[=].text = "Are you currently in recovery for substance use? " 
+* item[=].item[=].item[=].answerValueSet = $YesNo
 
-* item[=].item[+].linkId = "substance_use_q3"
-* item[=].item[=].type = #string
-* item[=].item[=].text = "During the past TWO (2) WEEKS, about how often did you use any of the following medicines ON YOUR OWN, that is, without a doctor’s prescription, in greater amounts or longer than prescribed? " 
+* item[=].item[=].item[+].linkId = "substance_use_q3"
+* item[=].item[=].item[=].type = #string
+* item[=].item[=].item[=].text = "During the past TWO (2) WEEKS, about how often did you use any of the following medicines ON YOUR OWN, that is, without a doctor’s prescription, in greater amounts or longer than prescribed? " 
 
 
 //caffeine
 
 * item[+].linkId = "caffeine"
-* item[=].type = #integer
-* item[=].text = "How many 8 oz / 230 ml / small) cups of coffee OR shots of espresso OR caffeinated teas have you had today?" 
+* item[=].type = #group
+* item[=].text = "Caffeine"
 
+
+* item[=].item[0].linkId = "caffeine_q1"
+* item[=].item[=].type = #integer
+* item[=].item[=].text = "How many (8 oz / 230 ml / small) cups of coffee OR shots of espresso OR caffeinated teas have you had today?" 
+
+* item[=].item[+].linkId = "caffeine_q2"
+* item[=].item[=].type = #string
+* item[=].item[=].text = "What is your regular intake of caffeine?" 
 
 // hydration
 * item[+].linkId = "hydration"
-* item[=].type = #integer
-* item[=].text = "How many 8 oz / 230 ml / small) cups of water have you had today?" 
+* item[=].type = #group
+* item[=].text = "Hydration" 
 
-// under arm perspiration
-* item[+].linkId = "hydration_underarm_sweat"
-* item[=].type = #string
-* item[=].text = "Do you experience underarm perspiration (sweat)?" 
-* item[=].answerValueSet = $PerspirationFrequencyValueSet
 
+
+* item[=].item[0].linkId = "hydration_q1"
+* item[=].item[=].type = #integer
+* item[=].item[=].text = "How many small (8 oz / 230 ml) cups of water have you had today?" 
+
+
+* item[=].item[+].linkId = "hydration_q2"
+* item[=].item[=].type = #integer
+* item[=].item[=].text = "What is your regular intake of water?" 
+
+* item[+].linkId = "recent_use"
+* item[=].type = #choice
+* item[=].text = "Did you smoke/drink/use substances/caffeine/hydration in the last 12 hours?" 
+* item[=].answerValueSet = $YesNo
 
 // oral_dental
 * item[+].linkId = "oral_dental"
@@ -161,6 +185,11 @@ Description: "VbaiQuestionnaire confounders Example"
 * item[+].linkId = "allergies_cold"
 * item[=].type = #boolean
 * item[=].text = "Do you currently have allergies or cold-like symptoms?" 
+
+* item[+].linkId = "seasonal_allergies"
+* item[=].type = #choice
+* item[=].text = "Do you have seasonal allergies or cold-like symptoms which could impact your voice today? " 
+* item[=].answerValueSet = $SeasonalAllergiesValueSet
 
 // tiredness
 * item[+].linkId = "tiredness"
@@ -389,11 +418,3 @@ Description: "VbaiQuestionnaire confounders Example"
 * item[=].item[=].enableWhen.answerString = "If != None"
 
 // exercise
-
-
-//reading ability
-
-* item[+].linkId = "reading_ability"
-* item[=].type = #string
-* item[=].text = "How good do you think you are at reading out loud in [English/Spanish/French], that is reading out loud without making mistakes and understanding what you read at a normal rate?" 
-* item[=].answerValueSet = $ReadingAbilityValueSet

@@ -805,6 +805,24 @@ Description: "This code system is designed for the DSM-5 questionnaire, providin
 * #4 "Moderate (More than half the dayd)"
 * #5 "Severe (Nearly every day)"
 
+CodeSystem: SeasonalAlergies
+Id: seasonal-allergies
+Title: "Codes for Confounders Season Allergies"
+Description: "This code system is designed for confounders questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-09-06"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "Nasal Congestion"
+* #2 "Cough"
+* #3 "Shortness of Breath"
+* #4 "Sore Throat"
+* #5 "Other"
+
+
+
 
 //-------------------------------------WinoGrad----------------------------------
 
