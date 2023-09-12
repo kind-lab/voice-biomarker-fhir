@@ -9,6 +9,8 @@
 [NeuroTutorial]: tutorial_neuro.html
 [Tutorials]: tutorial_table_of_contents.html
 [IntroToFhir]: brief_fhir_intro.html
+[Protocol]: protocol.html
+
 
 [VbaiCohortProtocol]: StructureDefinition-vbai-cohort-protocol.html
 [VbaiBodyHeight]: StructureDefinition-vbai-body-height.html
@@ -30,6 +32,8 @@
 [Confounders]: Questionnaire-VbaiQuestionnaireConfoundersExample.html
 [PHQ9]: Questionnaire-PHQ9schema.html
 [GAD7]: Questionnaire-GAD7schema.html
+[VoicePerception]: Questionnaire-VoicePerception.html
+[VHI10]: Questionnaire-VHI10.html
 [Questionnaire]: StructureDefinition-vbai-questionnaire.html
 [QuestionnaireResponse]: StructureDefinition-vbai-questionnaire-response.html
 [MoodCohortProtocol]: PlanDefinition-MoodCohortProtocolExample.html
@@ -38,6 +42,25 @@
 [RespiratoryCohortProtocol]: PlanDefinition-RespiratoryCohortProtocolExample.html
 [VoiceCohortProtocol]: PlanDefinition-VoiceCohortProtocolExample.html
 [whocompletedsurvey]: ValueSet-whocompletedsurvey.html
+[Moca]: Questionnaire-MOCA.html
+[Stroop]: Questionnaire-Stroop.html
+[Vocabulary]: Questionnaire-Vocabulary.html
+[RandomItemGeneration]: Questionnaire-Words.html
+[Winograd]: Questionnaire-WinogradSchema.html
+[Panas]: Questionnaire-PANASQuestionnaire.html
+[CustomAffectScale]: Questionnaire-CustomAffectScaleQuestionnaire.html
+[DSM5]: Questionnaire-DSM5.html
+[PTSD]: Questionnaire-PTSD.html
+[ADHD]: Questionnaire-ADHDQuestionnaire.html
+[PatientQueestionnaire]: Questionnaire-PatientQuestions.html
+[CapeV]: Questionnaire-CAPEVQuestionnaire.html
+[VoiceProblemSeverity]: Questionnaire-VoiceProblemSeverity.html
+[PSC17]: Questionnaire-PSC17.html
+[PatientRespiratoryQuestionnaire]: Questionnaire-RespiratoryPatientQuestionnaire.html
+[DyspneaIndex]: Questionnaire-DyspneaIndex.html
+[LeicesterCough]: Questionnaire-LeicesterCough.html 
+[UrgeToCough]: Questionnaire-UrgeToCough.html
+
 
 [PreQuestions]: PlanDefinition-VbaiAdultPlanDefinitionPreQuestionExample.html
 [GeneralInformation]: Questionnaire-GeneralInformation.html

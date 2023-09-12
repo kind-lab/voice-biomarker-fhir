@@ -5,6 +5,7 @@ Alias: $YesNo = http://terminology.hl7.org/ValueSet/v2-0136
 Alias: $Race = http://hl7.org/fhir/us/core/ValueSet/detailed-race
 Alias: $Ethnicity = http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity
 Alias: $QuestionnaireGenderIdentityValueSet = https://voicecollab.ai/fhir/ValueSet/gender-identity
+Alias: $USCoreGenderIdentityValueSet = http://terminology.hl7.org/ValueSet/gender-identity
 
 Alias: $QuestionnaireSexualOrientationValueSet = http://hl7.org/fhir/us/core/ValueSet/us-core-sexual-orientation
 Alias: $YesNoSome = https://voicecollab.ai/fhir/ValueSet/yesnosome
@@ -15,6 +16,7 @@ Alias: $HighestEducationValueSet = https://voicecollab.ai/fhir/ValueSet/Highest-
 Alias: $DisabilityStatusValueSet = https://voicecollab.ai/fhir/ValueSet/disability-status
 Alias: $DisabilityTypeValueSet = https://voicecollab.ai/fhir/ValueSet/disability-type
 Alias: $EmploymentStatusValueSet = https://voicecollab.ai/fhir/ValueSet/employment-status
+Alias: $HL7EmploymentStatusValueSet = http://terminology.hl7.org/ValueSet/v2-0066
 Alias: $FinancialAssistanceValueSet = https://voicecollab.ai/fhir/ValueSet/financial-assistance
 Alias: $ImmigrationStatusValueSet = https://voicecollab.ai/fhir/ValueSet/immigration-status
 Alias: $HouseholdStatusValueSet = https://voicecollab.ai/fhir/ValueSet/household-status
@@ -22,6 +24,7 @@ Alias: $MaritalStatusValueSet = https://voicecollab.ai/fhir/ValueSet/marital-sta
 Alias: $HouseholdMakeupValueSet = https://voicecollab.ai/fhir/ValueSet/household-makeup
 Alias: $TransportationTypeValueSet = https://voicecollab.ai/fhir/ValueSet/transportation-type
 Alias: $WHODASValueSet = https://voicecollab.ai/fhir/ValueSet/whodas
+Alias: $UsCoreBirthSexValueSet = http://hl7.org/fhir/us/core/ValueSet/birthsex
 
 
 // Confounders
@@ -38,6 +41,7 @@ Alias: $MedicationValueSet = https://voicecollab.ai/fhir/ValueSet/medication
 Alias: $PsychiatricHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/psychiatric-history
 Alias: $NeurologicalHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/neurological-history
 Alias: $ENTHistoryValueSet = https://voicecollab.ai/fhir/ValueSet/ent-history
+Alias: $SeasonalAllergiesValueSet = https://voicecollab.ai/fhir/ValueSet/seasonal-allergies
 
 // Enrollment
 Alias: $EnrollmentSelectLanguageValueSet = https://voicecollab.ai/fhir/ValueSet/select-language
@@ -150,6 +154,13 @@ Alias: $PedsReasonToDeclineValueSet = https://voicecollab.ai/fhir/ValueSet/peds-
 Alias: $RespiratoryDifficultyBreathingValueSet = https://voicecollab.ai/fhir/ValueSet/difficulty-breathing
 
 Alias: $IsoLanguages = http://hl7.org/fhir/us/core/ValueSet/simple-language
+
+//Alias: $IsoCountry = http://hl7.org/fhir/ValueSet/country
+Alias: $IsoCountry = http://terminology.hl7.org/ValueSet/v3-Country
+
+Alias: $HL7EducationLevel = http://terminology.hl7.org/ValueSet/v3-EducationLevel
+
+Alias: $HighestEducationLevelValueSet = https://voicecollab.ai/fhir/ValueSet/EducationLevel
 
 //------------------------------Winograd Questions-------------------------------
 

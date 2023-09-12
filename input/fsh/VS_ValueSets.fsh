@@ -115,6 +115,17 @@ Description: "For Capturing a users highest education level"
 * ^expansion.contains[=].display = "Grade 12"
 
 
+
+ValueSet: EducationLevel
+Id: EducationLevel
+Title: "Highest form of Education"
+Description: "For Capturing a users highest education level"
+* ^status = #draft
+* ^experimental = true
+* include codes from valueset $HL7EducationLevel
+* include codes from system $EducationLevelCodeSystem
+
+
 ValueSet: DisabilityStatus
 Id: disability-status
 Title: "Disability Status"
@@ -139,43 +150,7 @@ Title: "Employment Status"
 Description: "Valueset for capturing Employment status"
 * ^status = #draft
 * ^experimental = true
-* $EmploymentStatusCodeSystem#EF "Employed, freelance"
-* $EmploymentStatusCodeSystem#EFT "Employed, full time"
-* $EmploymentStatusCodeSystem#EPT "Employed, part time"
-* $EmploymentStatusCodeSystem#EMPTJ "Employed, multiple part time jobs"
-* $EmploymentStatusCodeSystem#S "Student"
-* $EmploymentStatusCodeSystem#SE "Self-employed"
-* $EmploymentStatusCodeSystem#R "Retired"
-* $EmploymentStatusCodeSystem#U "Unemployed"
-* $EmploymentStatusCodeSystem#O "Other"
-* ^expansion.timestamp = "2023-05-11T10:00:00Z"
-* ^expansion.contains[0].system = $EmploymentStatusCodeSystem
-* ^expansion.contains[=].code = #EF
-* ^expansion.contains[=].display = "Employed, freelance "
-* ^expansion.contains[+].system = $EmploymentStatusCodeSystem
-* ^expansion.contains[=].code = #EFT
-* ^expansion.contains[=].display = "Employed, full time"
-* ^expansion.contains[+].system = $EmploymentStatusCodeSystem
-* ^expansion.contains[=].code = #EPT
-* ^expansion.contains[=].display = "Employed, part time"
-* ^expansion.contains[+].system = $EmploymentStatusCodeSystem
-* ^expansion.contains[=].code = #EMPTJ
-* ^expansion.contains[=].display = "Employed, multiple part time jobs"
-* ^expansion.contains[+].system = $EmploymentStatusCodeSystem
-* ^expansion.contains[=].code = #S
-* ^expansion.contains[=].display = "Student"
-* ^expansion.contains[+].system = $EmploymentStatusCodeSystem
-* ^expansion.contains[=].code = #SE
-* ^expansion.contains[=].display = "Self-employed"
-* ^expansion.contains[+].system = $EmploymentStatusCodeSystem
-* ^expansion.contains[=].code = #R
-* ^expansion.contains[=].display = "Retired"
-* ^expansion.contains[+].system = $EmploymentStatusCodeSystem
-* ^expansion.contains[=].code = #U
-* ^expansion.contains[=].display = "Unemployed"
-* ^expansion.contains[+].system = $EmploymentStatusCodeSystem
-* ^expansion.contains[=].code = #O
-* ^expansion.contains[=].display = "Other, please specify "
+* include codes from valueset $HL7EmploymentStatusValueSet
 
 ValueSet: FinancialAssistance
 Id: financial-assistance
@@ -193,7 +168,7 @@ Description: "Valueset for capturing Immigration Status"
 * ^experimental = true
 * $ImmigrationStatusCodeSystem#C "Citizen"
 * $ImmigrationStatusCodeSystem#PR "Permanent Resident"
-* $ImmigrationStatusCodeSystem#NC "Non-citizen US national"
+* $ImmigrationStatusCodeSystem#FN "Foreign national"
 * $ImmigrationStatusCodeSystem#R "Refugee"
 * $ImmigrationStatusCodeSystem#AS "Asylum seeker"
 * $ImmigrationStatusCodeSystem#NIS "Non-immigrant student"
@@ -207,8 +182,8 @@ Description: "Valueset for capturing Immigration Status"
 * ^expansion.contains[=].code = #PR
 * ^expansion.contains[=].display = "Permanent Resident"
 * ^expansion.contains[+].system = $ImmigrationStatusCodeSystem 
-* ^expansion.contains[=].code = #NC
-* ^expansion.contains[=].display = "Non-citizen US/CAD national"
+* ^expansion.contains[=].code = #FN
+* ^expansion.contains[=].display = "Foreign national"
 * ^expansion.contains[+].system = $ImmigrationStatusCodeSystem 
 * ^expansion.contains[=].code = #R
 * ^expansion.contains[=].display = "Refugee"
@@ -233,7 +208,6 @@ Description: "Valueset for capturing Household Status"
 * ^status = #draft
 * ^experimental = true
 * $HouseholdStatusCodeSystem#AL "Assisted living"
-* $HouseholdStatusCodeSystem#PC "Live with parent/care giver"
 * $HouseholdStatusCodeSystem#OH "Own home"
 * $HouseholdStatusCodeSystem#R "Rent home"
 * $HouseholdStatusCodeSystem#SN "Skilled nursing facility/nursing home"
@@ -243,9 +217,6 @@ Description: "Valueset for capturing Household Status"
 * ^expansion.contains[0].system = $HouseholdStatusCodeSystem
 * ^expansion.contains[=].code = #AL
 * ^expansion.contains[=].display = "Assisted living"
-* ^expansion.contains[+].system = $HouseholdStatusCodeSystem
-* ^expansion.contains[=].code = #PC
-* ^expansion.contains[=].display = "Live with parent/care giver"
 * ^expansion.contains[+].system = $HouseholdStatusCodeSystem
 * ^expansion.contains[=].code = #OH
 * ^expansion.contains[=].display = "Own home"
@@ -476,6 +447,16 @@ Description: "The Codes used by confounder questionnaire"
 * include codes from system $ENTHistoryCodeSystem
 
 
+ValueSet: SeasonalAlergies
+Id: seasonal-allergies
+Title: "ValueSet for Confounders Season Allergies"
+Description: "This Valueset is designed for confounders questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-09-06"
+* include codes from system $SeasonalAlergiesCodeSystem
+
+
 //------------------------------------Enrollment-----------------------
 ValueSet: SelectLanguage
 Id: select-language
@@ -669,6 +650,7 @@ Description:  "The Codes used by DSM5 phobia"
 * ^status = #active
 * ^date = "2023-06-21"
 * include codes from system $DSM5PhobiaCodeSystem
+
 // -----------------------PTSD-----------------------------------------
 ValueSet: PTSD
 Id: ptsd

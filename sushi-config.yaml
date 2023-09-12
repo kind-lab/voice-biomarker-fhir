@@ -21,6 +21,12 @@ publisher:
 #
 dependencies:
   hl7.fhir.us.core: 5.0.1
+  hl7.fhir.uv.extensions: 1.0.0
+  hl7.terminology: 5.2.0
+  # hl7.fhir.ca-baseline:
+  #   id: baseline
+  #   uri: https://build.fhir.org/ig/HL7-Canada/ca-baseline/
+  #   version: 1.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -54,6 +60,7 @@ menu:
   Artifacts: artifacts.html
   Change Log: changelog.html
   Tutorial: tutorial_table_of_contents.html
+  Protocol: protocol.html
   
 pages:
    index.md:
@@ -67,3 +74,4 @@ pages:
    tutorial_neuro.md:
    tutorial_table_of_contents.md:
    brief_fhir_intro.md:
+   protocol.md:
