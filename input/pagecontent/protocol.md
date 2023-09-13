@@ -1,3 +1,5 @@
+<div><a href="https://github.com/kind-lab/voice-biomarker-fhir/edit/main/input/pagecontent/protocol.md">Edit</a></div>
+
 #### Cohort Protocol
 
 The goal of this tutorial is to support understanding the protocol.
@@ -93,9 +95,9 @@ After the last step, the cohort specific tasks begin. These steps differ based o
 
 #### Respiratory
 
-    - Task 1: Breath Sounds: Relax until the task starts.“Take three deep breaths in a row in andout the mouth.
+  - Task 1: Breath Sounds: Relax until the task starts.“Take three deep breaths in a row in andout the mouth.
 
-    - Task 2: Voluntary cough: Breathe normally, then when you are ready, cough HARD as if something werestuck in your throat.”Complete this three times.
+  - Task 2: Voluntary cough: Breathe normally, then when you are ready, cough HARD as if something werestuck in your throat.”Complete this three times.
 
 #### Neuro
 
