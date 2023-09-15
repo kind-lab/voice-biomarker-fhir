@@ -115,9 +115,10 @@ After the last step, the cohort specific tasks begin. These steps differ based o
 
 ### [VbaiPlanDefinitionCohortSpecificConfoundersExample] 
 - A questionnaire relating to past medical history.
+
 ### Validated questionnaires.
 	
-  #### Mood
+#### Mood
 
   - [Panas]
   - [CustomAffectScale]
@@ -131,25 +132,25 @@ After the last step, the cohort specific tasks begin. These steps differ based o
   - Chalder Fatigue Scale 11
   - The Big Five Inventory–2 Extra Short Form 
 
-  #### Voice
+#### Voice
   
   - [PatienQuestionnaire]
   - [VHI10]
   - [CAPEV]
   - [VoiceProblemSeverity]
 
-  #### PEDS
+#### PEDS
 
   - [PSC17]
 
-  #### Respiratory
+#### Respiratory
 
   - [PatientRespiratoryQuestionnaire]
   - [DyspneaIndex]
   - [LeicesterCough]
   - [UrgeToCough]
 
-  #### Neuro
+#### Neuro
   - N/A
 
 
