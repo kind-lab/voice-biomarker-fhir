@@ -95,9 +95,10 @@ After the last step, the cohort specific tasks begin. These steps differ based o
 
 #### Respiratory
 
-  - Task 1: Breath Sounds: Relax until the task starts.“Take three deep breaths in a row in andout the mouth.
+  - Task 1: Breath Sounds: Relax until the task starts.“Take three deep breaths in a row in and out the mouth.Pleasant visual distraction for 1 minute. (note: attending to breathing changes breathing patterns).
+{% include img.html img="flowers.png" %}
 
-  - Task 2: Voluntary cough: Breathe normally, then when you are ready, cough HARD as if something werestuck in your throat.”Complete this three times.
+  - Task 2: Voluntary cough: Breathe normally, then when you are ready, cough HARD as if something werestuck in your throat.Complete this three times.
 
 #### Neuro
 
@@ -134,7 +135,7 @@ After the last step, the cohort specific tasks begin. These steps differ based o
 
 #### Voice
   
-  - [PatienQuestionnaire]
+  - [PatientQueestionnaire]
   - [VHI10]
   - [CAPEV]
   - [VoiceProblemSeverity]
