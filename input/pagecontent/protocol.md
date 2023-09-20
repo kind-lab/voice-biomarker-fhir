@@ -45,9 +45,11 @@ A questionnaire asking demographic related questions.
 {% include img.html img="picture_description.png" %}
 12. Story Recall: “You are given a text. Read the text so you familiarize yourself with it. You have up to 5 minutes to read it as many times as you want. When you are ready, you will be asked to recall the story. This can be in your own words.”  -  You wished to know all about my grandfather. Well, he is nearly ninety-three years old. He dresses himself in an ancient black frock coat, usually minus several buttons; yet he still thinks as swiftly as ever. A long, flowing beard clings to his chin, giving those who observe him a pronounced feeling of the utmost respect. When he speaks his voice is just a bit cracked and quivers a trifle. Twice each day he plays skillfully and with zest upon our small organ. Except in the winter when the ooze or snow or ice prevents, he slowly takes a short walk in the open air each day. We have often urged him to walk more and smoke less, but he always answers, “Banana Oil!” Grandfather likes to be modern in his language. 
 
-[ConfounderQuestionnaire] - A questionnaire asking about factors which relate to past medical history.
+### [ConfounderQuestionnaire] 
+- A questionnaire asking about factors which relate to past medical history.
 
-[ValidatedQuestionnaires] - A series of "validated" questionnaires, i.e. they have some amount of validation for measuring a particular construct. 
+### [ValidatedQuestionnaires] 
+- A series of "validated" questionnaires, i.e. they have some amount of validation for measuring a particular construct. 
   - [GAD7]
   - [PHQ9]
   - [VoicePerception]
