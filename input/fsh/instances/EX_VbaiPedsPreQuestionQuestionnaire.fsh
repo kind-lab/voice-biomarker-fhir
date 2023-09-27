@@ -1,9 +1,9 @@
-Instance: PedsPreQuestionQuestionnaire
+Instance: PedsEligibilityQuestionnaire
 InstanceOf: VbaiQuestionnaire
 Usage: #example
-Title: "PedsPreQuestionQuestionnaire"
-Description: "Vbai Peds Pre-Question Questionnaire"
-* title = "Peds Pre-Question Questionnaire"
+Title: "PedsEligibilityQuestionnaire"
+Description: "Vbai Peds Eligibility Questionnaire"
+* title = "Peds Eligibility Questionnaire"
 * date = 2023-08-02
 * subjectType = #Patient
 * status = #active

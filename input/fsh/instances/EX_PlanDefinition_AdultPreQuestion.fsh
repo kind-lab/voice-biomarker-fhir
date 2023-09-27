@@ -1,12 +1,12 @@
-Instance: VbaiAdultPlanDefinitionPreQuestionExample
+Instance: VbaiAdultPlanDefinitionEligibilityExample
 InstanceOf: VbaiPlanDefinition
 Usage: #example
-Title: "VbaiAdultPlanDefinitionPreQuestionExample"
-Description: "An example of the Adult PreQuestion PlanDefinition"
+Title: "VbaiAdultPlanDefinitionEligibilityExample"
+Description: "An example of the Adult Eligibility PlanDefinition"
 * status = #active
 * date = "2023-07-27"
-* description = "This is a plandefinition for Adult Pre-Question"
-* title = "Adult Pre-Questions PlanDefinition"
+* description = "This is a plandefinition for Adult Eligibility"
+* title = "Adult Eligibility PlanDefinition"
 
 
 * action[0].title = "Information Gathering"

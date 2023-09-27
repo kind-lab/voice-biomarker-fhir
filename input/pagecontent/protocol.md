@@ -39,7 +39,7 @@ was collaboratively decided by the Bridge2AI-Voice Consortium.
 
 Data collection was standardized into a set of sequential phases:
 
-1. Pre-Questions
+1. Eligibility
 2. Consent
 3. Demographic Questionnaire
 4. Acoustic Tasks

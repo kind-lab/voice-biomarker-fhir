@@ -803,6 +803,25 @@ Description:  "The Codes used by Consent Main ICF (USF)"
 * ^date = "2023-06-20"
 * include codes from system $ConsentUsfQuestionCodeSystem
 
+
+ValueSet: ConsentAgreement
+Id: consent-agreement
+Title: "Questionnaire codes for consent agreement"
+Description: "The codes required for consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system  $ConsentAgreementCodeSystem
+
+ValueSet: ConsentSigning
+Id: consent-signing
+Title: "Questionnaire codes for consent signing"
+Description: "The codes required for consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* include codes from system  $ConsentSigningCodeSystem
+
 //----------------------------Dysnpea Index-----------------------------------
 
 ValueSet: DysnpeaIndex
@@ -850,12 +869,12 @@ Description:  "The Codes used by Pediatric Symptom Checklist (PSC-17)"
 * include codes from system $PSC17CodeSystem
 
 
-//---------------------------Pediatric Pre-Questionss-----------------------------
+//---------------------------Pediatric Eligibilitys-----------------------------
 
 ValueSet: PedsEnrollment
 Id: peds-enrollment
 Title: "Pediatric Enrollment"
-Description: "The codes required for Pediatric enrollment pre-question questionnaire"
+Description: "The codes required for Pediatric enrollment Eligibility questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-07-21"
@@ -865,7 +884,7 @@ Description: "The codes required for Pediatric enrollment pre-question questionn
 ValueSet: PedsLanguageFluency
 Id: peds-language-fluency
 Title: "Pediatric Language Fluency"
-Description: "The codes required for Pediatric enrollment pre-question questionnaire"
+Description: "The codes required for Pediatric enrollment Eligibility questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-08-02"
