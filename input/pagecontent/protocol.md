@@ -1,26 +1,83 @@
-<div><a href="https://github.com/kind-lab/voice-biomarker-fhir/edit/main/input/pagecontent/protocol.md">Edit</a></div>
+<div><a href="https://github.com/kind-lab/voice-biomarker-fhir/edit/main/input/pagecontent/protocol.md">Suggest an edit to this protocol.</a></div>
 
-#### Cohort Protocol
+## Protocol
 
-The goal of this tutorial is to support understanding the protocol.
+This document describes the protocol used in data collection for the Voice as a Biomarker of Health project, a large multi-institutional study funded by the National Institute of Health’s (NIH) Bridge2AI program.
+
+## About this study
+
+Voice as a Biomarker of Health is a study from the Bridge2AI-Voice Consortium with the
+mission to create a large-ethically sourced and diverse voice database linked to other
+health information to diagnose diseases.
+We collect voice and health data from many patients with different many different
+diseases from 5 broad categories:
+
+* **Voice Disorders**, including laryngeal Cancer, vocal fold paralysis, spasmodic dysphonia, recurrent laryngeal papilloma (RRP), benign vocal cord lesion 
+* **Neurological and Neurodegenerative Disorders**, such as Dementia, Alzheimer's, Stroke, ALS, Ataxia, Parkinsons
+* **Respiratory Disorders**, including Asthma, Pneumonia, COPD, Chronic Cough, Heart failure, OSA, Airway Stenosis 
+* **Mood Disorders**, including Depression, Bipolar disorder, Anxiety disorder, Schizophrenia
+* **Pediatrics Disorders**, such as Autism, Speech Delay
+
+The data collected in this study will be used to create algorithms to diagnose diseases
+based on voice recordings. The data will be made available to researchers and
+developers to create applications to improve the health of patients.
+
+## About this protocol
+
+This protocol is used to collect data from patients in the Voice as a Biomarker of Health
+study. The protocol is designed to be portable, allowing sharing of the collected data
+across a diverse set of stakeholders.
+
+At its core, the protocol constitutes a number of Fast Healthcare Interoperability
+Resources (FHIR) which strictly define acceptable inputs. The design of these FHIR resources
+was collaboratively decided by the Bridge2AI-Voice Consortium.
 
 <div class="alert info">
   <span class="closebtn">×</span>  
   <strong>Note:</strong> If you don't know what the PlanDefinition, Questionnaire, and QuestionnaireResponse resources are, head over to the <a href="/vbai-fhir/brief_fhir_intro.html">brief FHIR intro</a> page.
 </div>
 
-As with all protocols, the protocol has 12 sequential actions.
+Data collection was standardized into a set of sequential phases:
 
-### [PreQuestions] 
-A standard set of actions taken before enrollment. These include the [GeneralInformation], [ContactInformation], [EligibleStudies], and the [Enrollment] questionnaires.
+1. Pre-Questions
+2. Consent
+3. Demographic Questionnaire
+4. Acoustic Tasks
+5. Cohort Specific Tasks
+6. Confounder Questionnaire
+7. Validated Questionnaires
+8. Clinician Input
+9. Feedback
 
-### [Consent] 
-Questions regarding consenting the individual.
+The first 3 phases are collected once for each individual upon enrollment into the study.
+The subsequent phases are collected for each data collection session.
+The following sections describe each of these phases in detail.
 
-### [DemographicQuestionnaire] 
-A questionnaire asking demographic related questions.
+## Protocol
 
-### [AcousticTasks] 
+### [Eligibility]
+
+*A standard set of actions taken before enrollment.*
+
+Before you decide if you want to enroll in this study, we will ask you a few questions to determine if you are eligible.
+
+Health information: Some of your non-identifying health information will be uploaded from your chart 
+These include the [GeneralInformation], [ContactInformation], [EligibleStudies], and the [Enrollment] questionnaires.
+
+### [Consent]
+
+*Collection of informed consent or assent of the individual.*
+
+Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent
+
+### [DemographicQuestionnaire]
+
+*Demographic related questions, intended to be collected once after study enrollment.*
+
+### [AcousticTasks]
+
+*A set of acoustic tasks to be performed by the individual.*
+
 1. Audio check (Audio check: Before we start, let’s test your microphone. Click on the Start button below and say something out loud like “Testing 1, 2, 3”. Recording will stop automatically after 5 seconds. Click Play to hear your recording. If you hear background noise, please go to a quieter place and try again by selecting Redo Recording. If it sounds good, continue.
 
 2. ​Count to 3 and say “e” for 5 seconds (This task helps us analyze features in your voice)
@@ -38,14 +95,21 @@ A questionnaire asking demographic related questions.
 8. Diadocokinesis:Say the syllables as they appear on your screen – Pa / Ta / Ka, Now record yourself repeating the syllable /PA/ as fast as possible 10 times, Record yourself repeating the syllable /TA/ as fast as possible 10 times, Record yourself repeating the syllable /KA/ as fast as possible 10 times, Now repeat the work /Pataka/ as fast as possible 10 times, Now repeat the word /buttercup/ as fast as possible 10 times 
 
 9. Free speech: Open ended question (generic) chose 1-2  “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)- Options:   Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?, Can you tell us a little bit about your health condition? When did it start, what kind of symptoms have you had and for how long? Tell us how you are managing it and how you are doing?​​​, ​​​​ How would you get from where you are now to the grocery store? Explain with as much detail as possible.​​​​​​​
-
 10. Respiration and cough:   'Respiratory sounds can also provide information on your health, let’s record them” -  First, let's hear you breath comfortably for 30 seconds, After pressing on record, take 5 big breaths in and out through your nose with your mouth closed, After pressing record, cough 5 times, Now try again (need that task twice) 
 
 11. Picture description: “You will be shown a picture, please describe what you see in your own words. You can keep talking until the time runs out” (1 min)
 {% include img.html img="picture_description.png" %}
 12. Story Recall: “You are given a text. Read the text so you familiarize yourself with it. You have up to 5 minutes to read it as many times as you want. When you are ready, you will be asked to recall the story. This can be in your own words.”  -  You wished to know all about my grandfather. Well, he is nearly ninety-three years old. He dresses himself in an ancient black frock coat, usually minus several buttons; yet he still thinks as swiftly as ever. A long, flowing beard clings to his chin, giving those who observe him a pronounced feeling of the utmost respect. When he speaks his voice is just a bit cracked and quivers a trifle. Twice each day he plays skillfully and with zest upon our small organ. Except in the winter when the ooze or snow or ice prevents, he slowly takes a short walk in the open air each day. We have often urged him to walk more and smoke less, but he always answers, “Banana Oil!” Grandfather likes to be modern in his language. 
 
+### Session confounders
+
+*Collect information which may impact the voice recording of the session.*
+
 [ConfounderQuestionnaire] - A questionnaire asking about factors which relate to past medical history.
+
+### Validated questionnaires
+
+*A series of questionnaires which have been demonstrated to measure a particular construct.*
 
 [ValidatedQuestionnaires] - A series of "validated" questionnaires, i.e. they have some amount of validation for measuring a particular construct. 
   - [GAD7]
