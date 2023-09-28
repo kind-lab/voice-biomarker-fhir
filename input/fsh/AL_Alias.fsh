@@ -108,3 +108,5 @@ Alias: $RandomItemGenerationQuestionnaire = https://voicecollab.ai/fhir/Question
 Alias: $StroopQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/Stroop
 
 Alias: $SurveyCompletionQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/SurveyCompletionQuestionnaire
+
+Alias: $ConsentQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/ConsentQuestionnaire
