@@ -64,15 +64,33 @@ Before you decide if you want to enroll in this study, we will ask you a few que
 Health information: Some of your non-identifying health information will be uploaded from your chart 
 These include the [GeneralInformation], [ContactInformation], [EligibleStudies], and the [Enrollment] questionnaires.
 
-### [Consent]
+### Consent
 
 *Collection of informed consent or assent of the individual.*
 
 Before you participate in this study, we need your consent. The consent gives you information of what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent
 
-### [DemographicQuestionnaire]
+#### Neuro Consent
+Questionnaire resources:
+  - [NeuroConsent]
+
+### General
+Questionnaire resources:
+  - [ConsentMainICF]
+  - [ConsentMainICFResearcherStatement]
+  - [ConsentMainICFCombined]
+  - [AddendumWCM]
+  - [AddendumWCMResearcherStatement]
+  - [AddendumCombinedPDF]
+  - [ConsentQuestionnaire]
+
+### Demographics
 
 *Demographic related questions, intended to be collected once after study enrollment.*
+
+Questionnaire resources:
+  - [DemographicQuestionnaire]
+
 
 ### [AcousticTasks]
 
@@ -105,7 +123,8 @@ Before you participate in this study, we need your consent. The consent gives yo
 
 *Collect information which may impact the voice recording of the session.*
 
-[ConfounderQuestionnaire] - A questionnaire asking about factors which relate to past medical history.
+Questionnaire resources:
+  [ConfounderQuestionnaire] - A questionnaire asking about factors which relate to past medical history.
 
 ### Validated questionnaires
 
@@ -181,10 +200,11 @@ After the last step, the cohort specific tasks begin. These steps differ based o
 ### [VbaiPlanDefinitionCohortSpecificConfoundersExample] 
 - A questionnaire relating to past medical history.
 
-### Validated questionnaires.
-	
-#### Mood
+### Cohort Specific Validated questionnaires.
+*A series of cohort-specific validated questionnaires which have been demonstrated to measure a particular construct.*
 
+#### Mood
+Questionnaire resources:
   - [Panas]
   - [CustomAffectScale]
   - [DSM5]
@@ -198,18 +218,18 @@ After the last step, the cohort specific tasks begin. These steps differ based o
   - The Big Five Inventory–2 Extra Short Form 
 
 #### Voice
-  
+  Questionnaire resources:
   - [PatientQueestionnaire]
   - [VHI10]
   - [CAPEV]
   - [VoiceProblemSeverity]
 
 #### PEDS
-
+Questionnaire resources:
   - [PSC17]
 
 #### Respiratory
-
+Questionnaire resources:
   - [PatientRespiratoryQuestionnaire]
   - [DyspneaIndex]
   - [LeicesterCough]

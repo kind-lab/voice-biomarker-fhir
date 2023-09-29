@@ -116,7 +116,7 @@ Usage: #example
 Title: "Main ICF Combined PDF"
 Description: "Main ICF Combined PDF"
 * date = 2023-06-22
-* title = "Consent Main ICF Researcher Statement"
+* title = "Consent Main ICF Combined"
 * status = #active
 
 * item[0].linkId = "combined_pdf_main_icf_usf" 
