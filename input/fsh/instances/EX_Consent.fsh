@@ -81,7 +81,7 @@ statements below that you consent to."
 
 
 Instance: MainICFResearcherStatement 
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Main ICF Researcher Statement"
 Description: "Main ICF Researcher Statement"
@@ -116,7 +116,7 @@ Usage: #example
 Title: "Main ICF Combined PDF"
 Description: "Main ICF Combined PDF"
 * date = 2023-06-22
-* title = "Consent Main ICF Researcher Statement"
+* title = "Consent Main ICF Combined"
 * status = #active
 
 * item[0].linkId = "combined_pdf_main_icf_usf" 
@@ -132,7 +132,7 @@ Description: "Main ICF Combined PDF"
 
 
 Instance: AddendumWCM
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Addendum WCM"
 Description: "AddendumWCM"
@@ -239,7 +239,7 @@ to link the data to you."
 
 
 Instance: AddendumWCMResearcherStatement
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Addendum WCM Researcher Statement"
 Description: "Addendum WCM Researcher Statement"
@@ -272,7 +272,7 @@ Description: "Addendum WCM Researcher Statement"
 
 
 Instance: AddendumCombinedPDF
-InstanceOf: Questionnaire
+InstanceOf: VbaiQuestionnaire
 Usage: #example
 Title: "Addendum Combined PDF"
 Description: "Addendum Combined PDF"
@@ -288,3 +288,30 @@ Description: "Addendum Combined PDF"
 * item[=].text = "Complete?"
 * item[=].type = #choice
 * item[=].answerValueSet = $EnrollmentCompleteValueSet
+
+
+Instance: ConsentQuestionnaire
+InstanceOf: VbaiQuestionnaire
+Usage: #example
+Title: "Consent Questionnaire"
+Description: "Consent Agreement Questionnaire"
+* date = 2023-09-27
+* title = "Consent Questionnaire"
+* status = #active
+
+* item[0].linkId = "consent"
+* item[=].text = "Consent"
+* item[=].type = #choice
+* item[=].answerValueSet = $ConsentAgreementValueSet
+
+
+* item[+].linkId = "consent_signing"
+* item[=].text = "Who is signing this consent?"
+* item[=].type = #choice
+* item[=].answerValueSet = $ConsentSigningValueSet
+
+
+
+
+
+

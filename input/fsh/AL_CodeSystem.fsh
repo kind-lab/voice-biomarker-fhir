@@ -22,6 +22,9 @@ Alias: $ConsentScope = http://terminology.hl7.org/CodeSystem/consentscope
 Alias: $ConsentPolicyCodes = http://terminology.hl7.org/CodeSystem/consentpolicycodes
 Alias: $ConsentStateCodes = http://hl7.org/fhir/consent-state-codes 
 Alias: $ConsentCategoryCodes = http://terminology.hl7.org/CodeSystem/consentcategorycodes
+Alias: $ConsentAgreementCodeSystem = https://voicecollab.ai/fhir/CodeSystem/consent-aggreement
+Alias: $ConsentSigningCodeSystem = https://voicecollab.ai/fhir/CodeSystem/consent-signing
+
 
 
 // Questionnaire
@@ -167,7 +170,7 @@ Alias: $UrgeToCoughCodeSystem = https://voicecollab.ai/fhir/CodeSystem/urge-to-c
 
 Alias: $PSC17CodeSystem = https://voicecollab.ai/fhir/CodeSystem/psc-17
 
-// Pre-Questions Peds
+// Eligibility Peds
 Alias: $PedsEnrollmentCodeSystem = https://voicecollab.ai/fhir/CodeSystem/peds-enrollment
 
 Alias: $PedsLanguageFluencyCodeSystem = https://voicecollab.ai/fhir/CodeSystem/peds-language-fluency

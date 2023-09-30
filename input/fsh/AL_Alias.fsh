@@ -22,7 +22,7 @@ Alias: $BasicInformation = https://voicecollab.ai/fhir/Questionnaire/GeneralInfo
 Alias: $ContactInformation = https://voicecollab.ai/fhir/Questionnaire/ContactInformation
 Alias: $VocalFoldParalysis = https://voicecollab.ai/fhir/Questionnaire/VocalFoldParalysis
 
-Alias: $PedsPreQuestionQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PedsPreQuestionQuestionnaire
+Alias: $PedsEligibilityQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PedsEligibilityQuestionnaire
 // PlanDefinitions
 Alias: $PatientQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PatientQuestions
 
@@ -46,7 +46,7 @@ Alias: $MoCAQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/MOCA
 
 // General flow PlanDefintions
 
-Alias: $AdultPreQuestionsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiAdultPlanDefinitionPreQuestionExample
+Alias: $AdultEligibilityPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiAdultPlanDefinitionEligibilityExample
 
 Alias: $ConsentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConsentExample
 
@@ -95,7 +95,7 @@ Alias: $AcousticTaskMoodPlanDefinition = https://voicecollab.ai/fhir/PlanDefinit
 
 Alias: $MoodQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireMoodExample
 
-Alias: $PedsPreQuestionPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPedsPlanDefinitionPreQuestionExample
+Alias: $PedsEligibilityPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPedsPlanDefinitionEligibilityExample
 
 Alias: $NeuroConsentQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/NeuroConsent
 
@@ -108,3 +108,5 @@ Alias: $RandomItemGenerationQuestionnaire = https://voicecollab.ai/fhir/Question
 Alias: $StroopQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/Stroop
 
 Alias: $SurveyCompletionQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/SurveyCompletionQuestionnaire
+
+Alias: $ConsentQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/ConsentQuestionnaire

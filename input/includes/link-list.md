@@ -62,12 +62,24 @@
 [UrgeToCough]: Questionnaire-UrgeToCough.html
 
 
-[PreQuestions]: PlanDefinition-VbaiAdultPlanDefinitionPreQuestionExample.html
+[Eligibility]: PlanDefinition-VbaiAdultPlanDefinitionEligibilityExample.html
 [GeneralInformation]: Questionnaire-GeneralInformation.html
 [ContactInformation]: Questionnaire-ContactInformation.html
 [EligibleStudies]: Questionnaire-EligibleStudies.html
 [Enrollment]: Questionnaire-Enrollment.html
+
+<!--- Consent --->
 [Consent]: PlanDefinition-VbaiPlanDefinitionConsentExample.html
+[NeuroConsent]: Questionnaire-NeuroConsent.html
+[ConsentMainICF]: Questionnaire-MainICF.html
+[ConsentMainICFResearcherStatement]: Questionnaire-MainICFResearcherStatement.html
+[ConsentMainICFCombined]: Questionnaire-MainICFCombinedPDF.html
+[AddendumWCM]: Questionnaire-AddendumWCM.html
+[AddendumWCMResearcherStatement]: Questionnaire-AddendumWCMResearcherStatement.html
+[AddendumCombinedPDF]: Questionnaire-AddendumCombinedPDF.html
+[ConsentQuestionnaire]: Questionnaire-ConsentQuestionnaire.html
+
+
 [DemographicQuestionnaire]: Questionnaire-VbaiQuestionnaireDemographicExample.html
 [VoiceImpactingQuestionnaire]: Questionnaire-VocalFoldParalysis.html
 [AcousticTasks]: PlanDefinition-VbaiPlanDefinitionAcousticTasksGeneralExample.html

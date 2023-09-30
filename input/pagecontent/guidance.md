@@ -10,7 +10,7 @@ In FHIR, the canonical [PlanDefinition](http://hl7.org/fhir/R4/plandefinition.ht
 
 To provide consistency across the protocols, the base PlanDefinition resource was extended to create [VbaiCohortProtocol]. Each individual disease group follows the same protocol with exactly 12 steps:
 
-1. Pre-Questions
+1. Eligibility
 2. Consent/Assent
 3. Demographics
 4. Voice Impacting Qs

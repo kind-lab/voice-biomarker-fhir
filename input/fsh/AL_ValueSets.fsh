@@ -134,7 +134,7 @@ Alias: $UrgeToCoughValueSet = https://voicecollab.ai/fhir/ValueSet/urge-to-cough
 
 Alias: $PSC17ValueSet = https://voicecollab.ai/fhir/ValueSet/psc-17
 
-// Peds PreQuestionEnrollment
+// Peds EligibilityEnrollment
 Alias: $PedsEnrollmentValueSet = https://voicecollab.ai/fhir/ValueSet/peds-enrollment
 
 
@@ -161,6 +161,10 @@ Alias: $IsoCountry = http://terminology.hl7.org/ValueSet/v3-Country
 Alias: $HL7EducationLevel = http://terminology.hl7.org/ValueSet/v3-EducationLevel
 
 Alias: $HighestEducationLevelValueSet = https://voicecollab.ai/fhir/ValueSet/EducationLevel
+
+Alias: $ConsentAgreementValueSet = https://voicecollab.ai/fhir/ValueSet/consent-agreement
+
+Alias: $ConsentSigningValueSet = https://voicecollab.ai/fhir/ValueSet/consent-signing
 
 //------------------------------Winograd Questions-------------------------------
 

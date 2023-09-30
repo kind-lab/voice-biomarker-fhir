@@ -55,3 +55,10 @@ Description: "An example of the Consent Cohort's PlanDefinition"
 * action[=].action[=].definitionUri = $CombinedPDFAddendum
 
 
+* action[=].action[+].title = "Consent Declaration"
+* action[=].action[=].prefix = "1.2.7"
+* action[=].action[=].description = ""
+* action[=].action[=].priority = #routine
+* action[=].action[=].definitionUri = $ConsentQuestionnaire
+
+

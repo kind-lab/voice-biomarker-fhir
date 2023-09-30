@@ -8,11 +8,11 @@ Description: "VbaiRespiratoryCohortProtocol"
 * description = "This is a plandefinition for Respiratory cohort protocol"
 * title = "Respiratory Cohort Protocol"
 
-* action[0].title = "Pre-Questions"
+* action[0].title = "Eligibility"
 * action[=].prefix = "1.1"
-* action[=].description = "List of pre-questions"
+* action[=].description = "List of Eligibility questions"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $AdultPreQuestionsPlanDefinition
+* action[=].definitionCanonical = $AdultEligibilityPlanDefinition
 
 * action[+].title = "Consent/Assent"
 * action[=].prefix = "1.2"

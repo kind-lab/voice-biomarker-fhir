@@ -822,6 +822,35 @@ Description: "This code system is designed for confounders questionnaire."
 * #5 "Other"
 
 
+// Consent
+
+CodeSystem: ConsentAgreement
+Id: consent-aggreement
+Title: "Codes for Consent"
+Description: "This code system is designed for consent questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-09-27"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #1 "I consent to having all data I submit shared only with the researchers of this study."
+* #2 "I consent to having all data I submit shared with the researchers of this study and to having my audio recordings and de-identified written responses shared with other qualified researchers."
+* #3 "I consent to having all data I submit shared with the researchers of this study and to having my audio recordings and de-identified written responses shared with other qualified researchers as well as publicly in the form of an open-source database."
+
+CodeSystem: ConsentSigning
+Id: consent-signing
+Title: "Codes for Consent signing"
+Description: "This code system is designed for consent questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-09-27"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "Patient (self)"
+* #2 "Proxy (on behalf of the patient)"
+
 
 
 //-------------------------------------WinoGrad----------------------------------

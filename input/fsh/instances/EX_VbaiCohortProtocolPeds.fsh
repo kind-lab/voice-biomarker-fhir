@@ -8,11 +8,11 @@ Description: "VbaiPedsCohortProtocol"
 * description = "This is a plandefinition for peds cohort protocol"
 * title = "Peds Cohort Protocol"
 
-* action[0].title = "Pre-Questions"
+* action[0].title = "Eligibility"
 * action[=].prefix = "1.1"
-* action[=].description = "List of pre-questions"
+* action[=].description = "List of eligibility questions"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $PedsPreQuestionPlanDefinition
+* action[=].definitionCanonical = $PedsEligibilityPlanDefinition
 
 * action[+].title = "Consent/Assent"
 * action[=].prefix = "1.2"
