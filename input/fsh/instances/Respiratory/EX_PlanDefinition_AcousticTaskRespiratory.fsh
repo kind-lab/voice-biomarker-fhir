@@ -10,7 +10,7 @@ Description: "An example of a Voice as a Biomarker for Acoustic Tasks Respirator
 
 * action[0].title = "Breath Sounds"
 * action[=].prefix = "1.8 Task 1"
-* action[=].description = "Relax until the task starts.“Take three deep breaths in a row in and out the mouth.”"
+* action[=].description = "Relax until the task starts.Take three deep breaths in a row in and out the mouth."
 
 * action[+].title = "Voluntary cough"
 * action[=].prefix = "1.8 Task 2"

@@ -63,6 +63,7 @@
 
 
 [Eligibility]: PlanDefinition-VbaiAdultPlanDefinitionEligibilityExample.html
+[EligibilityPeds]: PlanDefinition-VbaiPedsPlanDefinitionEligibilityExample.html
 [GeneralInformation]: Questionnaire-GeneralInformation.html
 [ContactInformation]: Questionnaire-ContactInformation.html
 [EligibleStudies]: Questionnaire-EligibleStudies.html
