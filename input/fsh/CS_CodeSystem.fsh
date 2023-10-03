@@ -852,6 +852,69 @@ Description: "This code system is designed for consent questionnaire."
 * #2 "Proxy (on behalf of the patient)"
 
 
+CodeSystem: DysnpeaIndex
+Id: dysnpea-index
+Title: "Codes for Dysnpea Index"
+Description: "This code system is designed for dysnpea index questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-10-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #0 "Never"
+* #1 "Almost Never"
+* #2 "Sometimes"
+* #3 "Almost Always"
+* #4 "Always"
+
+
+CodeSystem: LeicesterCough
+Id: leicester-cough
+Title: "Codes for Leicester Cough"
+Description: "This code system is designed for leicester cough questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-10-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 7
+* #1 "None of the time"
+* #2 "Hardly any of the time"
+* #3 "A little of the time"
+* #4 "Some of the time"
+* #5 "A good bit of the time"
+* #6 "Most of the time"
+* #7 "All of the time"
+
+
+CodeSystem: UrgeToCough
+Id: urge-to-cough
+Title: "Codes for Urge to Cough"
+Description: "This code system is designed for urge to cough questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-10-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 11
+* #1 "No need to cough"
+* #1.5 "Just noticeable urge to cough"
+* #2 "Slight urge to cough"
+* #3 "Slight-to-moderate urge to cough"
+* #4 "Moderate urge to cough"
+* #5 "Moderate-to-strong urge to cough"
+* #6 "Strong urge to cough"
+* #7 "Strong-to-severe urge to cough"
+* #8 "Severe urge to cough"
+* #9 "Severe-to-maximum urge to cough"
+* #10 "Maximum urge to cough"
+
+
+
+
+
+
 
 //-------------------------------------WinoGrad----------------------------------
 

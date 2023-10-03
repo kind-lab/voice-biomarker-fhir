@@ -12,30 +12,21 @@ Description: "An example of a Voice as a Biomarker for QuestionnaireRespiratory 
 // Based on Methods QuestionnaireRespiratory Document
 
 
-
-* action[0].title = "Patient Questionnaire"
+* action[0].title = "Dyspnea Index (DI)"
 * action[=].prefix = "1.10.1"
-* action[=].description = "Patient Questionnaire"
-* action[=].priority = #routine
-* action[=].definitionCanonical = $PatientQuestionnaireRespiratory
- 
-
-
-* action[+].title = "Dyspnea Index (DI)"
-* action[=].prefix = "1.10.2"
 * action[=].description = "Perform Dysnea Index Questionnaire"
 * action[=].priority = #routine
 * action[=].definitionCanonical = $DysneaIndex 
 
 
 * action[+].title = "Leicester Cough Questionnaire"
-* action[=].prefix = "1.10.3"
+* action[=].prefix = "1.10.2"
 * action[=].description = "Perform Leicester Cough Questionnaire"
 * action[=].priority = #routine
 * action[=].definitionCanonical = $LeicesterCough
 
 * action[+].title = "Urge to Cough Scale"
-* action[=].prefix = "1.10.4"
+* action[=].prefix = "1.10.3"
 * action[=].description = "Get the participant to rate their urge to cough"
 * action[=].priority = #routine
 * action[=].definitionCanonical = $UrgeToCough
