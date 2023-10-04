@@ -8,7 +8,7 @@ Description: "Urge to cough Questionnaire"
 * title = "Urge to Cough Questionnaire"
 * status = #active
 
-* item[0].linkId = "dyspnea_index_q1"
+* item[0].linkId = "urge_to_cough_q1"
 * item[=].text = "Please estimate your urge to cough"
 * item[=].type = #choice
 * item[=].answerValueSet = $UrgeToCoughValueSet

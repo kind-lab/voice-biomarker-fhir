@@ -27,19 +27,19 @@ Description: "This code system identifies who has completed a specific survey or
 * #A "Assistant" "Survey was completed by an assistant"
 * #P "Parent/Caregiver" "Survey was completed by a parent/cargiver"
 
-CodeSystem: PedsWhoCompletedSurvey
-Id: peds-who-completed-survey
-Title: "Survey Completion Identifier Codes"
-Description: "This code system identifies who has completed a specific survey or questionnaire."
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-05-11"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 3
-* #S "Self" "Survey was completed by self"
-* #A "Assistant" "Survey was completed by an assistant"
-* #P "Parent/Caregiver" "Survey was completed by a parent/cargiver"
+// CodeSystem: PedsWhoCompletedSurvey
+// Id: peds-who-completed-survey
+// Title: "Survey Completion Identifier Codes"
+// Description: "This code system identifies who has completed a specific survey or questionnaire."
+// * ^version = "1.0.0"
+// * ^status = #active
+// * ^date = "2023-05-11"
+// * ^caseSensitive = true
+// * ^content = #complete
+// * ^count = 3
+// * #S "Self" "Survey was completed by self"
+// * #A "Assistant" "Survey was completed by an assistant"
+// * #P "Parent/Caregiver" "Survey was completed by a parent/cargiver"
 
 
 
@@ -821,6 +821,594 @@ Description: "This code system is designed for confounders questionnaire."
 * #4 "Sore Throat"
 * #5 "Other"
 
+CodeSystem: DSM5Q1
+Id: dsm5-q1
+Title: "dsm5 q1"
+Description: "The codes required for dsm5 q1 questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "I do not feel happier or more cheerful than usual."
+* #2 "I occasionally feel happier or more cheerful than usual."
+* #3 "I often feel happier or more cheerful than usual."
+* #4 "I feel happier or more cheerful than usual most of the time."
+* #5 "I feel happier of more cheerful than usual all of the time"
+
+CodeSystem: DSM5Q2
+Id: dsm5-q2
+Title: "dsm5 q2"
+Description: "The codes required for dsm5 q2 questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "I do not feel more self-confident than usual."
+* #2 "I occasionally feel more self-confident thanusual."
+* #3 "I often feel more self-confident than usual"
+* #4 "I frequently feel more self-confident than usual."
+* #5 "I feel extremely self-confident all of the time."
+
+
+
+
+CodeSystem: DSM5Q3
+Id: dsm5-q3
+Title: "dsm5 q3"
+Description: "The codes required for dsm5 q3 questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "I do not need less sleep than usual"
+* #2 "I occasionally need less sleep than usual"
+* #3 "I need less sleep than usual"
+* #4 "I frequently need less sleep than usual."
+* #5 "I can go all day and all night without any sleep and still not feel tired."
+
+
+CodeSystem: DSM5Q4
+Id: dsm5-q4
+Title: "dsm5 q4"
+Description: "The codes required for dsm5 q4 questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "I do not talk more than usual."
+* #2 "I occasionally talk more than usual."
+* #3 "I often talk more than usual"
+* #4 "I frequently talk more than usual"
+* #5 "I talk constantly and cannot be interrupted."
+
+
+CodeSystem: DSM5Q5
+Id: dsm5-q5
+Title: "dsm5 q5"
+Description: "The codes required for dsm5 q5 questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "I have not been more active (either socially, sexually, at work, home, or school) than usual."
+* #2 "I have occasionally been more active than usual."
+* #3 "I have often been more active than usual"
+* #4 "I have frequently been more active than usual."
+* #5 "I am constantly more active or on the go all the time."
+
+CodeSystem: DSM5Phobia
+Id: dsm5-phobia
+Title: "dsm5 q5"
+Description: "The codes required for dsm5 phobia questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "Never"
+* #2 "Occasionally"
+* #3 "Half of the time"
+* #4 "Most of the time"
+* #5 "All of the time"
+
+
+//---------------------------PTSD-------------------------------------
+
+CodeSystem: PTSD
+Id: ptsd
+Title: "ptsd"
+Description: "The codes required for ptsd questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #0 "Not at all"
+* #1 "A little bit"
+* #2 "Moderately"
+* #3 "Quite a bit"
+* #4 "Extremely"
+
+
+//---------------------------ADHD-------------------------------------
+
+CodeSystem: ADHD
+Id: adhd
+Title: "adhd"
+Description: "The codes required for adhd questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #1 "Never"
+* #2 "Rarely"
+* #3 "Sometimes"
+* #4 "Often"
+* #5 "Very Often"
+
+// ---------------------------Vocal Fold Paralysis------------------------------
+CodeSystem: YesNoNotCertain
+Id: yes-no-not-certain
+Title: "YesNoNotCertain"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #Y "Yes"
+* #N "No"
+* #NC "Not Certain"
+
+CodeSystem: LeftRight
+Id: left-right
+Title: "leftRight"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #L "Left"
+* #R "Right"
+
+CodeSystem: Etiology
+Id: etiology
+Title: "etiology"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 4
+* #1 "Idiopathic"
+* #2 "Latrogenic (surgery/intubation)"
+* #3 "Tumor invading RLN"
+* #4 "Radiation"
+
+
+CodeSystem: Iatrogenic
+Id: iatrogenic
+Title: "iatrogenic"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 6
+* #1 "Thyroidectomy"
+* #2 "ACDF"
+* #3 "Lung surgery"
+* #4 "Heart Surgery"
+* #5 "Intubation"
+* #6 "Brain Surgery"
+
+CodeSystem: TumorRLN
+Id: tumor-rln
+Title: "Tumor invading RLN "
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #1 "Brain"
+* #2 "Chest"
+* #3 "Neck"
+
+CodeSystem: GlotticGap
+Id: glottic-gap
+Title: "Tumor invading RLN "
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #1 "Small"
+* #2 "Moderate"
+* #3 "Large"
+
+
+CodeSystem: Degree
+Id: degree
+Title: "Degree"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "C"
+* #2 "I"
+
+
+CodeSystem: Comments
+Id: comments
+Title: "Comments"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "Normal"
+* #2 "Other (Provide Description)"
+
+
+
+
+
+
+CodeSystem: Treatment
+Id: treatment
+Title: "treatment"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #1 "Surgery"
+* #2 "Speech Therapy"
+* #3 "No Treatment"
+
+
+CodeSystem: SurgerySubCategory
+Id: surgery-sub-category
+Title: "surgery sub-category"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "Thyroplasty"
+* #2 "Vocal fold injection augmentation"
+
+CodeSystem: Thyroplasty 
+Id: thyroplasty 
+Title: "Thyroplasty "
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "Goretex"
+* #2 "Silastic"
+
+CodeSystem: VocalFoldInjectionAugmentation
+Id: vocal-fold-injection-augmentation
+Title: "Vocal Fold Injection Augmentation"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 4
+* #1 "Caha"
+* #2 "Gel"
+* #3 "Hyaluronic Acid augmentation"
+* #4 "Fat Injection"
+
+// -------------------------Consent Main ICF -----------------------------
+
+CodeSystem: ConsentUsfQuestion
+Id: consent-usf-question
+Title: "Consent Usf Question"
+Description: "The codes required for Diagnosis questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-06-19"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #1 "I consent to having all data I submit shared only with the researchers of this study."
+* #2 "I consent to having all data I submit shared with
+the researchers of this study and to having my
+audio recordings and de-identified written
+responses shared with other qualified
+researchers."
+* #3 "I consent to having all data I submit shared with
+the researchers of this study and to having my
+audio recordings and de-identified written
+responses shared with other qualified
+researchers as well as publicly in the form of an
+open-source database"
+
+
+
+//------------------------------------PSC-17--------------------------------------
+CodeSystem: PSC17
+Id: psc-17
+Title: "Pediatric Symptom Checklist (PSC-17)"
+Description: "The codes required for Pediatric Symptom Checklist (PSC-17) questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-07-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #0 "Never"
+* #1 "Sometimes"
+* #2 "Often"
+
+//------------------------------------Peds Enrollment--------------------------------------
+CodeSystem: PedsEnrollment
+Id: peds-enrollment
+Title: "Pediatric Enrollment"
+Description: "The codes required for Pediatric enrollment pre-question questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #Adult "18 or above"
+* #Pediatric "2-10 year olds"
+
+CodeSystem: PedsLanguageFluency
+Id: peds-language-fluency
+Title: "Pediatric Enrollment"
+Description: "The codes required for Pediatric enrollment pre-question questionnaire"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 12
+* #English "English"
+* #Spanish "Spanish"
+* #HaitianCreole "Haitian Creole"
+* #Mandarin "Mandarin"
+* #Vietnamese "Vietnamese"
+* #Cantonese "Cantonese"
+* #CapeVerdeanCreole "Cape Verdean Creole"
+* #Russian "Russian"
+* #Arabic "Arabic"
+* #Portuguese "Portuguese"
+* #French "French"
+* #Other "Other Please write"
+
+CodeSystem: PedsWhoCompletedSurvey
+Id: peds-who-completed-survey
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #RA "Research Assistant" "Survey was completed by an assistant"
+* #P "Parent/Caregiver" "Survey was completed by a parent/cargiver"
+
+
+CodeSystem: PedsMedicalHistory
+Id: peds-medical-history
+Title: "Questionnaire codes"
+Description: "The codes required for Questionnaires survey completion"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 12
+* #None "None"
+* #ASD "Autism Spectrum Disorder" 
+* #CF "Cystic Fibrosis"
+* #CA "Craniofacial anomalies (such as cleft lip or palate)"
+* #SLD "Speech and Language Delay"
+* #A "Asthma"
+* #HL "Hearing Losss"
+* #RRP "Recurrent laryngeal papilloma"
+* #VCD "Vocal Cord Dysfunction"
+* #OSA "Obstructive Sleep Apnea"
+* #SEA "Seasonal or Environmental Allergies"
+* #O "Other, Please Specify"
+
+CodeSystem: PedsReasonToDecline
+Id: peds-reason-to-decline
+Title: "Questionnaire codes for peds reason to decline"
+Description: "The codes required for Questionnaires"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 6
+* #1 "I am not interested in having my child’s voice recorded"
+* #2 "My child will not tolerate voice recording"
+* #3 "Is do not have enough time today and want to be contacted later"
+* #4 "I do not have enough time and do NOT want to be contacted later"
+* #5 "I prefer not to share any health information for research"
+* #6 "Other, Please Specify"
+
+CodeSystem: DifficultyBreathing
+Id: difficulty-breathing
+Title: "Questionnaire codes for difficulty breahing"
+Description: "The codes required for Questionnaires"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-03"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #SID "Significant difficulty"
+* #MD "Moderate difficulty"
+* #SLD "Slight difficulty"
+
+//------------------------------Winograd Questions-------------------------------
+CodeSystem: WinogradQ1
+Id: winograd-q1
+Title: "Questionnaire codes for Winograd schema Question 1"
+Description: "The codes required for Winograd Questionnaires Question 1"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #S "The Scientists"
+* #F "The Fish"
+
+CodeSystem: WinogradQ2
+Id: winograd-q2
+Title: "Questionnaire codes for Winograd schema Question 2"
+Description: "The codes required for Winograd Questionnaires Question 2"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #F "Fred"
+* #G "George"
+
+
+CodeSystem: WinogradQ3
+Id: winograd-q3
+Title: "Questionnaire codes for Winograd schema Question 3"
+Description: "The codes required for Winograd Questionnaires Question 3"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #J "Joan"
+* #S "Susan"
+
+
+CodeSystem: WinogradQ4
+Id: winograd-q4
+Title: "Questionnaire codes for Winograd schema Question 4"
+Description: "The codes required for Winograd Questionnaires Question 4"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #J "Joe"
+* #U "Joe's Uncle"
+
+CodeSystem: WinogradQ5
+Id: winograd-q5
+Title: "Questionnaire codes for Winograd schema Question 5"
+Description: "The codes required for Winograd Questionnaires Question 5"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-04"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #B "The Bus"
+* #T "The Truck"
+
+CodeSystem: NeuroConsent
+Id: neuro-consent
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #1 "I consent to having all data I submit shared only with the researchers of this study."
+* #2 "I consent to having all data I submit shared with the researchers of this study and to having my audio recordings and de-identified written responses shared with other qualified researchers."
+* #3 "I consent to having all data I submit shared with the researchers of this study and to having my audio recordings and de-identified written responses shared with other qualified researchers as well as publicly in the form of an open-source database."
+
+CodeSystem: PermissionToShareWithDoctor
+Id: permission-to-share-with-doctor
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "I give permission to share my research test results with the referring doctor or my family physician."
+* #2 "I do not give permission to share my research test results with the referring doctor or my family physician."
+
+CodeSystem: PermissionToShareWithFamily
+Id: permission-to-share-with-family
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "I give permission to share my medical, family history and genomic sequencing test results with a designated family member."
+* #2 "I do not give permission to share my medical, family history and genomic sequencing test results with a designated family member."
+
+
+CodeSystem: NeuroParticipationConsent
+Id: neuro-participation-consent
+Title: "Questionnaire codes for neuro consent"
+Description: "The codes required for neuro consent"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-08-21"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+* #1 "I consent to continue my participation in this study. "
+* #2 "I DO NOT consent to continue my participation in this study but consent to keep the data collected up to this time"
+
+
+
 
 // Consent
 
@@ -850,6 +1438,72 @@ Description: "This code system is designed for consent questionnaire."
 * ^count = 2
 * #1 "Patient (self)"
 * #2 "Proxy (on behalf of the patient)"
+
+
+//----------------------------Dysnpea Index-----------------------------------
+CodeSystem: DysnpeaIndex
+Id: dysnpea-index
+Title: "Codes for Dysnpea Index"
+Description: "This code system is designed for dysnpea index questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-10-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #0 "Never"
+* #1 "Almost Never"
+* #2 "Sometimes"
+* #3 "Almost Always"
+* #4 "Always"
+
+
+//----------------------------Leicester Cough Questionnaire-----------------------------------
+CodeSystem: LeicesterCough
+Id: leicester-cough
+Title: "Codes for Leicester Cough"
+Description: "This code system is designed for leicester cough questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-10-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 7
+* #1 "None of the time"
+* #2 "Hardly any of the time"
+* #3 "A little of the time"
+* #4 "Some of the time"
+* #5 "A good bit of the time"
+* #6 "Most of the time"
+* #7 "All of the time"
+
+//----------------------------Urge to Cough--------------------------------------
+
+CodeSystem: UrgeToCough
+Id: urge-to-cough
+Title: "Codes for Urge to Cough"
+Description: "This code system is designed for urge to cough questionnaire."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-10-02"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 11
+* #1 "No need to cough"
+* #1.5 "Just noticeable urge to cough"
+* #2 "Slight urge to cough"
+* #3 "Slight-to-moderate urge to cough"
+* #4 "Moderate urge to cough"
+* #5 "Moderate-to-strong urge to cough"
+* #6 "Strong urge to cough"
+* #7 "Strong-to-severe urge to cough"
+* #8 "Severe urge to cough"
+* #9 "Severe-to-maximum urge to cough"
+* #10 "Maximum urge to cough"
+
+
+
+
 
 
 
