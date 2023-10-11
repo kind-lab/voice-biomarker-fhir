@@ -10,12 +10,12 @@ Description: "GeneralAcousticTasks Questionnaire"
 
 * item[0].prefix = "1.5.1" 
 * item[=].linkId = "Perform Acoustic tasks"
-* item[=].text = "Audio check (Audio check: Before we start, let’s test your microphone. Click on the Start button below and say something out loud like “Testing 1, 2, 3”. Recording will stop automatically after 5 seconds. Click Play to hear your recording. If you hear background noise, please go to a quieter place and try again by selecting Redo Recording. If it sounds good, continue."
+* item[=].text = "Audio check (Audio check: Before we start, lets test your microphone. Click on the Start button below and say something out loud like “Testing 1, 2, 3”. Recording will stop automatically after 5 seconds. Click Play to hear your recording. If you hear background noise, please go to a quieter place and try again by selecting Redo Recording. If it sounds good, continue."
 * item[=].type = #attachment
 
 * item[+].prefix = "1.5.1 Task 1" 
-* item[=].linkId = "Prolonged vowel: ​Count to 3 and say “e” for 5 seconds "
-* item[=].text = "This task helps us analyze features in your voice"
+* item[=].linkId = "Prolonged vowel"
+* item[=].text = "Count to 3 and say “e” for 5 seconds.This task helps us analyze features in your voice"
 * item[=].type = #attachment
 
 * item[+].prefix = "1.5.1 Task 2" 
@@ -41,25 +41,25 @@ Description: "GeneralAcousticTasks Questionnaire"
 
 * item[+].prefix = "1.5.1 Task 6" 
 * item[=].linkId = "Caterpillar passage"
-* item[=].text = "Read the following passage using your normal voice:' Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, “There’s no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever!"
+* item[=].text = "Read the following passage using your normal voice:' Caterpillar passage: Do you like amusement parks? Well, I sure do. To amuse myself, I went twice last spring. My most MEMORABLE moment was riding on the Caterpillar, which is a gigantic rollercoaster high above the ground. When I saw how high the Caterpillar rose into the bright blue sky I knew it was for me. After waiting in line for thirty minutes, I made it to the front where the man measured my height to see if I was tall enough. I gave the man my coins, asked for change, and jumped on the cart. Tick, tick, tick, the Caterpillar climbed slowly up the tracks. It went SO high I could see the parking lot. Boy was I SCARED! I thought to myself, Theres no turning back now.” People were so scared they screamed as we swiftly zoomed fast, fast, and faster along the tracks. As quickly as it started, the Caterpillar came to a stop. Unfortunately, it was time to pack the car and drive home. That night I dreamt of the wild ride on the Caterpillar. Taking a trip to the amusement park and riding on the Caterpillar was my MOST memorable moment ever!"
 * item[=].type = #attachment
 
 
 
 * item[+].prefix = "1.5.1 Task 7" 
-* item[=].linkId = " Task 7: ​￼​Diadocokinesis: Say the syllables as they appear on your screen – Pa / Ta / Ka, Now record yourself repeating the syllable /PA/ as fast as possible 10 times, Record yourself repeating the syllable /TA/ as fast as possible 10 times, Record yourself repeating the syllable /KA/ as fast as possible 10 times, Now repeat the work /Pataka/ as fast as possible 10 times, Now repeat the word /buttercup/ as fast as possible 10 times "
-* item[=].text = "This task tests the way you can articulate the sounds and can gives neurological queues"
+* item[=].linkId = "​Diadocokinesis"
+* item[=].text = " Say the syllables as they appear on your screen – Pa / Ta / Ka, Now record yourself repeating the syllable /PA/ as fast as possible 10 times, Record yourself repeating the syllable /TA/ as fast as possible 10 times, Record yourself repeating the syllable /KA/ as fast as possible 10 times, Now repeat the work /Pataka/ as fast as possible 10 times, Now repeat the word /buttercup/ as fast as possible 10 times."
 * item[=].type = #attachment
 
 
 
 * item[+].prefix = "1.5.1 Task 8" 
-* item[=].linkId = "Task 8: Free speech"
-* item[=].text = "Open ended question (generic) chose 1-2  “This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops” (leave for 30 seconds)- Options:   Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?, Can you tell us a little bit about your health condition? When did it start, what kind of symptoms have you had and for how long? Tell us how you are managing it and how you are doing?​​​, ​​​​ How would you get from where you are now to the grocery store? Explain with as much detail as possible.​​​​​​​"
+* item[=].linkId = "Free speech"
+* item[=].text = "Open ended question (generic) chose 1-2 This section is meant to hear you speak freely by answering an open ended question” “Please answer the following questions and record your answer. Keep talking until the time stops (leave for 30 seconds)- Options: Can you talk to us about why you are interested by this study? Who told you about it? Why is it meaningful or valuable to you? How do you think it will help patients in the future?, Can you tell us a little bit about your health condition? When did it start, what kind of symptoms have you had and for how long? Tell us how you are managing it and how you are doing?​​​, ​​​​ How would you get from where you are now to the grocery store? Explain with as much detail as possible.​​​​​​​"
 * item[=].type = #attachment
 
 * item[+].prefix = "1.5.1 Task 9" 
-* item[=].linkId = "Task 9: Respiration and cough"
+* item[=].linkId = "Respiration and cough"
 * item[=].text = " 'Respiratory sounds can also provide information on your health, let’s record them” -  First, let's hear you breath comfortably for 30 seconds, After pressing on record, take 5 big breaths in and out through your nose with your mouth closed, After pressing record, cough 5 times, Now try again (need that task twice) "
 * item[=].type = #attachment
 

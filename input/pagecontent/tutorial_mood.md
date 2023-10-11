@@ -19,7 +19,7 @@ As with all protocols, the mood protocol has 12 sequential actions.
 
 After the last step, the cohort specific tasks begin. These steps differ based on each task, and have been specifically chosen for this cohort.
 
-8. [VbaiPlanDefinitionAcousticTasksMoodExample] - Acoustic tasks specifically conducted for this cohort.
+8. [MoodAcousticTasks] - Acoustic tasks specifically conducted for this cohort.
 9. [VbaiPlanDefinitionCohortSpecificConfoundersExample] - A questionnaire relating to past medical history.
 10. [VbaiPlanDefinitionQuestionnaireMoodExample] - Validated questionnaires.
 
@@ -29,6 +29,6 @@ After these sections, some cohorts allow for clinician input.
 
 Finally, the user may provide feedback about the study.
 
-12. [Feedback] - A section for providing feedback about the application, study, or anything else.
+12. [FeedbackQuestionnaire] - A section for providing feedback about the application, study, or anything else.
 
 {% include link-list.md %}
