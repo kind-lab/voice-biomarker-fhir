@@ -12,10 +12,10 @@ Description: "Questionnaire for providing feedback on the study"
 * item[=].text = "Please leave any comments you may have on the application."
 * item[=].type = #string
 
-* item[0].linkId = "Q2"
+* item[+].linkId = "Q2"
 * item[=].text = "Please leave any comments you may have on the acoustic recording"
 * item[=].type = #string
 
-* item[0].linkId = "Q3"
+* item[+].linkId = "Q3"
 * item[=].text = "Please leave any comments you may have on the study"
 * item[=].type = #string

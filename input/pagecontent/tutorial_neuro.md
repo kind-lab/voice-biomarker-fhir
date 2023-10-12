@@ -29,6 +29,6 @@ After these sections, some cohorts allow for clinician input.
 
 Finally, the user may provide feedback about the study.
 
-12. [Feedback] - A section for providing feedback about the application, study, or anything else.
+12. [FeedbackQuestionnaire] - A section for providing feedback about the application, study, or anything else.
 
 {% include link-list.md %}

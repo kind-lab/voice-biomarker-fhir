@@ -59,7 +59,8 @@
 [PatientRespiratoryQuestionnaire]: Questionnaire-RespiratoryPatientQuestionnaire.html
 [DyspneaIndex]: Questionnaire-DyspneaIndex.html
 [LeicesterCough]: Questionnaire-LeicesterCough.html 
-[UrgeToCough]: Questionnaire-UrgeToCough.html
+[UrgeToCough]: Questionnaire-UrgeToCough.htmls
+
 
 
 [Eligibility]: PlanDefinition-VbaiAdultPlanDefinitionEligibilityExample.html
@@ -83,24 +84,26 @@
 
 [DemographicQuestionnaire]: Questionnaire-VbaiQuestionnaireDemographicExample.html
 [VoiceImpactingQuestionnaire]: Questionnaire-VocalFoldParalysis.html
-[AcousticTasks]: PlanDefinition-VbaiPlanDefinitionAcousticTasksGeneralExample.html
+[AcousticTasks]: Questionnaire-GeneralAcousticTasksQuestionnaire.html
 [ConfounderQuestionnaire]: Questionnaire-VbaiQuestionnaireConfoundersExample.html
 [ValidatedQuestionnaires]: PlanDefinition-VbaiPlanDefinitionGeneralQuestionnaireExample.html
 
 [VbaiPlanDefinitionAcousticTasksMoodExample]: PlanDefinition-VbaiPlanDefinitionAcousticTasksMoodExample.html
+[MoodAcousticTasks]: Questionnaire-MoodAcousticTasksQuestionnaire.html
 [VbaiPlanDefinitionCohortSpecificConfoundersExample]: PlanDefinition-VbaiPlanDefinitionCohortSpecificConfoundersExample.html
 [VbaiPlanDefinitionQuestionnaireMoodExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireMoodExample.html
 
-
+[VoiceAcousticTasks]: Questionnaire-VoiceAcousticTasksQuestionnaire.html
 [VbaiPlanDefinitionAcousticTasksVoiceExample]: PlanDefinition-VbaiPlanDefinitionAcousticTasksVoiceExample.html
 [VbaiPlanDefinitionQuestionnaireVoiceExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireVoiceExample.html
 
-
+[PediatricAcousticTasks]: Questionnaire-PedsAcousticTasksQuestionnaire.html
 [VbaiPlanDefinitionAcousticTasksPedsExample]: PlanDefinition-VbaiPlanDefinitionAcousticTasksPedsExample.html
 [VbaiPlanDefinitionQuestionnairePedsExample]: PlanDefinition-VbaiPlanDefinitionQuestionnairePedsExample.html
 [Assent]: PlanDefinition-VbaiPlanDefinitionAssentExample.html
 
 
+[RespiratoryAcousticTasks]: Questionnaire-RespiratoryAcousticTasksQuestionnaire.html
 [VbaiPlanDefinitionAcousticTasksRespiratoryExample]: PlanDefinition-VbaiPlanDefinitionAcousticTasksRespiratoryExample.html
 
 [VbaiPlanDefinitionQuestionnaireRespiratoryExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireRespiratoryExample.html
