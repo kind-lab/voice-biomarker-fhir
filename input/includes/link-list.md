@@ -52,7 +52,7 @@
 [DSM5]: Questionnaire-DSM5.html
 [PTSD]: Questionnaire-PTSD.html
 [ADHD]: Questionnaire-ADHDQuestionnaire.html
-[PatientQueestionnaire]: Questionnaire-PatientQuestions.html
+[PatientQuestionnaire]: Questionnaire-PatientQuestions.html
 [CapeV]: Questionnaire-CAPEVQuestionnaire.html
 [VoiceProblemSeverity]: Questionnaire-VoiceProblemSeverity.html
 [PSC17]: Questionnaire-PSC17.html
@@ -68,6 +68,7 @@
 [GeneralInformation]: Questionnaire-GeneralInformation.html
 [ContactInformation]: Questionnaire-ContactInformation.html
 [EligibleStudies]: Questionnaire-EligibleStudies.html
+[SurveyCompletion]: Questionnaire-SurveyCompletionQuestionnaire.html
 [Enrollment]: Questionnaire-Enrollment.html
 
 <!--- Consent --->
@@ -80,6 +81,7 @@
 [AddendumWCMResearcherStatement]: Questionnaire-AddendumWCMResearcherStatement.html
 [AddendumCombinedPDF]: Questionnaire-AddendumCombinedPDF.html
 [ConsentQuestionnaire]: Questionnaire-ConsentQuestionnaire.html
+
 
 
 [DemographicQuestionnaire]: Questionnaire-VbaiQuestionnaireDemographicExample.html
