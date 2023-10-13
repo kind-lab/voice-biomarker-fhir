@@ -58,8 +58,6 @@ Alias: $VoiceImpactingPlanDefinition = https://voicecollab.ai/fhir/PlanDefinitio
 
 Alias: $ConfoundersPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample
 
-Alias: $AcousticTasksGeneralPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksGeneralExample
-
 Alias: $AcousticTasksPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksExample
 
 Alias: $AcousticTasksPedsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksPedsExample
@@ -110,3 +108,5 @@ Alias: $StroopQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/Stroop
 Alias: $SurveyCompletionQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/SurveyCompletionQuestionnaire
 
 Alias: $ConsentQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/ConsentQuestionnaire
+
+Alias: $AcousticTasksGeneralQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/GeneralAcousticTasksQuestionnaire
