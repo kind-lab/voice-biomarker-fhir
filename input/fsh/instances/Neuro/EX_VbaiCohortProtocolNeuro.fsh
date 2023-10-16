@@ -80,5 +80,5 @@ Description: "VbaiCohortProtocol Neuro version"
 * action[=].prefix = "1.12"
 * action[=].description = "Recieve Feedback"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $FeedbackPlanDefinition
+* action[=].definitionCanonical = $FeedbackQuestionnaire
 

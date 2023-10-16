@@ -72,8 +72,6 @@ Alias: $ClinicianInputPlanDefinition = https://voicecollab.ai/fhir/PlanDefinitio
 
 Alias: $CohortSpecificConfoundersPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionCohortSpecificConfoundersExample
 
-Alias: $FeedbackPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionFeedbackExample
-
 // Respiratory Cohort PlanDefinitions
 
 
@@ -110,3 +108,5 @@ Alias: $SurveyCompletionQuestionnaire = https://voicecollab.ai/fhir/Questionnair
 Alias: $ConsentQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/ConsentQuestionnaire
 
 Alias: $AcousticTasksGeneralQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/GeneralAcousticTasksQuestionnaire
+
+Alias: $FeedbackQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/FeedbackQuestionnaire
