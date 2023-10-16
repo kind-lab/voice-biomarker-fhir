@@ -10,7 +10,7 @@ Description: "VbaiQuestionnaireDemographic Example"
 * item[0].linkId = "general"
 * item[=].type = #group
 * item[=].item[0].linkId = "country"
-* item[=].item[=].text = "Country of survery completed"
+* item[=].item[=].text = "Country of survey completed"
 * item[=].item[=].type = #choice
 * item[=].item[=].answerValueSet = $IsoCountry
 * item[=].item[+].linkId = "dob"
@@ -25,17 +25,17 @@ Description: "VbaiQuestionnaireDemographic Example"
 * item[=].answerValueSet = $SurveyUserValueSet
 // * item[=].answerValueSet = "https://voicecollab.ai/fhir/ValueSet/UspsTwoLetterAphabeticCodes"
 
-* item[+].linkId = "Proficencies"
+* item[+].linkId = "Proficiencies"
 * item[=].type = #group
 * item[=].item[0].linkId = "language_primary"
 * item[=].item[=].text = "What is your PRIMARY language spoken at home?"
 * item[=].item[=].type = #open-choice
-* item[=].item[=].answerValueSet = $Langauges
+* item[=].item[=].answerValueSet = $Languages
 * item[=].item[=].answerOption[0].valueString = "Other, Please specify"
 * item[=].item[+].linkId = "language_other"
 * item[=].item[=].text = "Do you speak an additional language(s) fluently (similar to a native speaker)? Choose all that apply"
 * item[=].item[=].type = #open-choice
-* item[=].item[=].answerValueSet = $Langauges
+* item[=].item[=].answerValueSet = $Languages
 * item[=].item[=].answerOption[0].valueString = "Other, Please specify"
 * item[=].item[+].linkId = "read"
 * item[=].item[=].text = "Can you read?"
@@ -62,7 +62,7 @@ Description: "VbaiQuestionnaireDemographic Example"
 * item[=].text = "Insurance Status"
 * item[=].type = #string
 
-* item[+].linkId = "Idenification"
+* item[+].linkId = "Identification"
 * item[=].type = #group
 * item[=].item[0].linkId = "gender_identity"
 * item[=].item[=].text = "What is your gender identity?"
