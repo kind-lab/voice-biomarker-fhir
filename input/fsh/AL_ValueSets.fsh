@@ -9,7 +9,7 @@ Alias: $USCoreGenderIdentityValueSet = http://terminology.hl7.org/ValueSet/gende
 
 Alias: $QuestionnaireSexualOrientationValueSet = http://hl7.org/fhir/us/core/ValueSet/us-core-sexual-orientation
 Alias: $YesNoSome = https://voicecollab.ai/fhir/ValueSet/yesnosome
-Alias: $Langauges = http://hl7.org/fhir/us/core/ValueSet/simple-language
+Alias: $Languages = http://hl7.org/fhir/us/core/ValueSet/simple-language
 Alias: $SurveyUserValueSet = https://voicecollab.ai/fhir/ValueSet/whocompletedsurvey
 Alias: $AdultEducationValueSet = http://terminology.hl7.org/ValueSet/v3-EducationLevel
 Alias: $HighestEducationValueSet = https://voicecollab.ai/fhir/ValueSet/Highest-Education
