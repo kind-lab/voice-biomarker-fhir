@@ -10,7 +10,7 @@ Description: "VbaiQuestionnaireDemographic Example"
 * item[0].linkId = "general"
 * item[=].type = #group
 * item[=].item[0].linkId = "country"
-* item[=].item[=].text = "Country of survery completed"
+* item[=].item[=].text = "Country of survey completed"
 * item[=].item[=].type = #choice
 * item[=].item[=].answerValueSet = $IsoCountry
 * item[=].item[+].linkId = "dob"
@@ -62,7 +62,7 @@ Description: "VbaiQuestionnaireDemographic Example"
 * item[=].text = "Insurance Status"
 * item[=].type = #string
 
-* item[+].linkId = "Idenification"
+* item[+].linkId = "Identification"
 * item[=].type = #group
 * item[=].item[0].linkId = "gender_identity"
 * item[=].item[=].text = "What is your gender identity?"
