@@ -166,7 +166,7 @@ After the last step, the cohort specific tasks begin. These steps differ based o
   - Chalder Fatigue Scale 11
   - The Big Five Inventory–2 Extra Short Form 
 * Voice  
-  - [PatientQueestionnaire]
+  - [PatientQuestionnaire]
   - [VHI10]
   - [CAPEV]
   - [VoiceProblemSeverity]
