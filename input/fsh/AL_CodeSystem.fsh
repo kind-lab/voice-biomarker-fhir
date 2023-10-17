@@ -38,7 +38,7 @@ Alias: $UsCoreRaceExtension = http://hl7.org/fhir/us/core/StructureDefinition/us
 Alias: $UsCoreEthnicityExtension = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
 Alias: $UsCoreBirthSexExtension = http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
 
-Alias: $GAD7AndPHQOtionsCodeSystem =  https://voicecollab.ai/fhir/CodeSystem/survey-options
+Alias: $GAD7AndPHQOptionsCodeSystem =  https://voicecollab.ai/fhir/CodeSystem/survey-options
 
 
 

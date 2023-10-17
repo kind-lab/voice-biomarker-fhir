@@ -19,7 +19,7 @@ Description: "PedsAcousticTasks Questionnaire"
 * item[=].type = #attachment
 
 * item[+].prefix = "1.8.2 Task 3" 
-* item[=].linkId = "Trying differnet sounds"
+* item[=].linkId = "Trying different sounds"
 * item[=].text = "First, we’re going to say ‘PUH PUH PUH’ over and over. Remember to take a breath if you need one! Next, let’s do the same thing this time saying TUH TUH TUH over and over . And now we want you to say KUH KUH KUH over and over Now, let’s try to put them together by saying PUH-TUH-KUH over and over. If that word is a little too tricky, you can try saying “Pattycake” over and over instead. "
 * item[=].type = #attachment
 
