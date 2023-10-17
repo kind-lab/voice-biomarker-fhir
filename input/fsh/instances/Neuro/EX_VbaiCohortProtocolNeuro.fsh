@@ -24,7 +24,7 @@ Description: "VbaiCohortProtocol Neuro version"
 * action[=].prefix = "1.3"
 * action[=].description = "have Participant complete demographics"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $DemographicsPlanDefinition
+* action[=].definitionCanonical = $Demographic
 
 * action[+].title = "Voice Impacting Q's"
 * action[=].prefix = "1.4"
@@ -37,13 +37,13 @@ Description: "VbaiCohortProtocol Neuro version"
 * action[=].prefix = "1.5"
 * action[=].description = "Perform Acoustic Tasks"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $AcousticTasksPlanDefinition
+* action[=].definitionCanonical = $AcousticTasksGeneralQuestionnaire
 
 * action[+].title = "Confounders"
 * action[=].prefix = "1.6"
 * action[=].description = "Retrieve Confounders"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $ConfoundersPlanDefinition
+* action[=].definitionCanonical = $Confounders
 
 * action[+].title = "Questionnaires"
 * action[=].prefix = "1.7"

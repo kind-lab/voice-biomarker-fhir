@@ -52,13 +52,7 @@ Alias: $ConsentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiP
 
 Alias: $AssentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAssentExample
 
-Alias: $DemographicsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionDemographicsExample
-
 Alias: $VoiceImpactingPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceImpactingExample
-
-Alias: $ConfoundersPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample
-
-Alias: $AcousticTasksPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksExample
 
 Alias: $AcousticTasksPedsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksPedsExample
 
