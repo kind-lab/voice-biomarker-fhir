@@ -30,7 +30,7 @@ Description: "VbaiPedsCohortProtocol"
 * action[=].prefix = "1.4"
 * action[=].description = "Administer Voice Impacting Questions"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $VoiceImpactingPlanDefinition
+* action[=].definitionCanonical = $VocalFoldParalysis
 
 * action[+].title = "Acoustic Tasks"
 * action[=].prefix = "1.5"
@@ -48,13 +48,13 @@ Description: "VbaiPedsCohortProtocol"
 * action[=].prefix = "1.7"
 * action[=].description = "Administier Validated Questionnaires"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $QuestionnairePlanDefinition
+* action[=].definitionCanonical = $GeneralQuestionnairePlanDefinition
 
 * action[+].title = "Cohort specific acoustic tasks"
 * action[=].prefix = "1.8"
 * action[=].description = "Administer cohort specific acoustic tasks"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $AcousticTasksPedsPlanDefinition
+* action[=].definitionCanonical = $PedsAcousticTasksQuestionnaire
 
 * action[+].title = "Cohort specific confounders"
 * action[=].prefix = "1.9"

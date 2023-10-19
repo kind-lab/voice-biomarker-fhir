@@ -8,5 +8,5 @@ Description: "This profile extends PlanDefinition to restrict the number of acti
 * date 1..1 MS
 * action 12..12 MS
 * action.definitionCanonical MS
-* action.definitionCanonical only Canonical(http://hl7.org/fhir/StructureDefinition/PlanDefinition)
-* action.action.definitionCanonical only Canonical(http://hl7.org/fhir/StructureDefinition/PlanDefinition)
+* action.definitionCanonical only Canonical(http://hl7.org/fhir/StructureDefinition/PlanDefinition or http://hl7.org/fhir/StructureDefinition/Questionnaire)
+* action.action.definitionCanonical only Canonical(http://hl7.org/fhir/StructureDefinition/PlanDefinition or http://hl7.org/fhir/StructureDefinition/Questionnaire)

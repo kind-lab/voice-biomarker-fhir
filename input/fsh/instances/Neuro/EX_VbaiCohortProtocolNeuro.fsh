@@ -30,7 +30,7 @@ Description: "VbaiCohortProtocol Neuro version"
 * action[=].prefix = "1.4"
 * action[=].description = "Administer Voice Impacting Questions"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $VoiceImpactingPlanDefinition
+* action[=].definitionCanonical = $VocalFoldParalysis
 
 
 * action[+].title = "Acoustic Tasks"
@@ -49,7 +49,7 @@ Description: "VbaiCohortProtocol Neuro version"
 * action[=].prefix = "1.7"
 * action[=].description = "Administier Validated Questionnaires"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $QuestionnairePlanDefinition
+* action[=].definitionCanonical = $GeneralQuestionnairePlanDefinition
 
 * action[+].title = "Cohort specific acoustic tasks"
 * action[=].prefix = "1.8"
