@@ -14,42 +14,40 @@ var api = (function(){
         }
     }
 
-    async function sendFiles(method, url, data){
+    async function sendFiles(methodType, url, data){
+        console.log(data)
         let formdata = new FormData();
         Object.keys(data).forEach(function(key){
             let value = data[key];
             formdata.append(key, value);
         });
-        // console.log(formdata)
-        // console.log("YOLO");
-        // let xhr = new XMLHttpRequest();
-        // xhr.onload = function() {
-        //     if (xhr.status !== 200) callback("[" + xhr.status + "]" + xhr.responseText, null);
-        //     else callback(null, JSON.parse(xhr.responseText));
-        // };
-        // xhr.open(method, url, true);
-        // xhr.send(formdata);
-
-        const r = await fetch("http://localhost:3000/diff",{
-            method: "GET",
-            formdata
-        }).then(console.log)
+                
+        const r = await fetch(`http://localhost:3000${url}`,{
+            method: methodType,
+            body: formdata
+        })
+        console.log(r)
+        return r;
     }
 
 
     var module = {};
     
-    // add an image to the gallery
+ 
+
+    module.getDiffJson2 = function(fhir, redcap){
+       return sendFiles("POST",  "/filediff", {"fhir": fhir, "redcap": redcap}).then((res) => {
+        console.log(res);   
+        return res.json()})
+    };
+
+
     module.getDiffJson = function(fhir, redcap, callback){
-        console.log(fhir);
-        console.log(redcap);
         fhir.text().then((f) => {
             fhir = f
             redcap.text().then((red) => {
                 redcap = red
-                console.log(typeof redcap)
-                console.log(typeof fhir)
-                send("POST", "/diff2", {"fhir": fhir, "redcap": redcap}, callback)
+                send("POST", "/diff", {"fhir": fhir, "redcap": redcap}, callback)
 
             })
            
@@ -58,7 +56,6 @@ var api = (function(){
         )
        
     };
-    
     
     return module;
 })();
