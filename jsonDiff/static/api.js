@@ -35,14 +35,14 @@ var api = (function(){
     
  
 
-    module.getDiffJson2 = function(fhir, redcap){
+    module.getDiffJson = function(fhir, redcap){
        return sendFiles("POST",  "/filediff", {"fhir": fhir, "redcap": redcap}).then((res) => {
         console.log(res);   
         return res.json()})
     };
 
 
-    module.getDiffJson = function(fhir, redcap, callback){
+    module.getDiffJson2 = function(fhir, redcap, callback){
         fhir.text().then((f) => {
             fhir = f
             redcap.text().then((red) => {
