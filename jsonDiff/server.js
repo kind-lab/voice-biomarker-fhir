@@ -14,9 +14,6 @@ const multer = require('multer');
 
 let upload = multer({ dest: path.join(__dirname, 'uploads')});
 
-
-// app.use("/", express.static(__dirname));
-
 app.use(function (req, res, next){
     console.log("HTTP request", req.method, req.url, req.body);
     next();
@@ -27,32 +24,28 @@ app.use(function (req, res, next){
  })
 
 
-app.get('/diff', upload.any(),function (req, res, next) {
-    console.log(req)
+app.post('/filediff', upload.any(),function (req, res, next) {
+
     let fhir =  JSON.parse(fs.readFileSync(req.files[0].path).toString('utf8'))
     let redcap =  JSON.parse(fs.readFileSync(req.files[1].path).toString('utf8'))
-
-    
     let diff = jsonDiff.diffString(fhir, redcap, {color:false}, { full: true });
-    console.log(diff)
 
     fs.writeFile('json-diff.txt', diff, function(err){
         if(err) throw err;
         console.log("File Created");
     })
+
     return res.json(diff)
-    //return res.json({})
+
 });
 
 
-app.post('/diff2',function (req, res, next) {
-    console.log(req.body);
-     let fhir =  JSON.parse(req.body.fhir)
-     let redcap =  JSON.parse(req.body.redcap)
+app.post('/diff',function (req, res, next) {
 
-    console.log(fhir)
-    console.log(redcap)
-    
+    let fhir =  JSON.parse(req.body.fhir)
+    let redcap =  JSON.parse(req.body.redcap)
+
+
     let diff = jsonDiff.diffString(fhir, redcap, {color:false}, { full: true });
     console.log(diff)
 
@@ -67,10 +60,6 @@ app.post('/diff2',function (req, res, next) {
 
 const http = require('http');
 const PORT = 3000;
-
-
-
-
 
 
 http.createServer(app).listen(PORT, function (err) {
