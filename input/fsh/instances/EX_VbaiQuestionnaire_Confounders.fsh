@@ -55,7 +55,7 @@ Description: "VbaiQuestionnaire confounders Example"
 * item[=].item[=].item[=].type = #choice
 * item[=].item[=].item[=].text = "Have you been a regular smoker or not within the last 3 years?" 
 * item[=].item[=].item[=].answerValueSet = $YesNo
-// alchohol
+
 * item[=].item[+].linkId = "alcohol"
 * item[=].item[=].type = #choice
 * item[=].item[=].text = "Do you drink alcohol?" 
@@ -119,12 +119,12 @@ Description: "VbaiQuestionnaire confounders Example"
 // Substance_use
 * item[=].item[+].linkId = "substance_use"
 * item[=].item[=].type = #boolean
-* item[=].item[=].text = "How many times in the past year have you used a recreational substance or used a prescription medication for nonmedical reasons? (Recreational substances include methamphetamines (speed, crystal), cannabis (marijuana, pot), inhalants (paint thinner, aerosol, glue), tranquilizers (Valium), barbiturates, cocaine, ecstasy, hallucinogens (LSD, mushrooms), or narcotics (heroin). )" 
+* item[=].item[=].text = "How many times in the past year have you used a recreational substance or used a prescription medication for nonmedical reasons? (Recreational substances include methamphetamine's (speed, crystal), cannabis (marijuana, pot), inhalants (paint thinner, aerosol, glue), tranquilizers (Valium), barbiturates, cocaine, ecstasy, hallucinogens (LSD, mushrooms), or narcotics (heroin). )" 
 
 
 * item[=].item[=].item[0].linkId = "substance_use_q2"
 * item[=].item[=].item[=].type = #string
-* item[=].item[=].item[=].text = "Are you currently in recovery for substance use? " 
+* item[=].item[=].item[=].text = "Are you currently in recovery for substance use?" 
 * item[=].item[=].item[=].answerValueSet = $YesNo
 
 * item[=].item[=].item[+].linkId = "substance_use_q3"
@@ -334,7 +334,7 @@ Description: "VbaiQuestionnaire confounders Example"
 * item[=].item[=].answerValueSet = $WHODASValueSet
 
 * item[=].item[+].linkId = "S7" 
-* item[=].item[=].text = "Walking a long distance such as a kilometre [or equivalent]?" 
+* item[=].item[=].text = "Walking a long distance such as a kilometer [or equivalent]?" 
 * item[=].item[=].type = #choice
 * item[=].item[=].answerValueSet = $WHODASValueSet
 
@@ -398,7 +398,7 @@ Description: "VbaiQuestionnaire confounders Example"
 * item[=].text = "Do you menstruate?" 
 * item[=].answerValueSet = $MenstruationMenopauseValueSet
 
-* item[=].item[0].linkId = "menstration_menopause_please_specify"
+* item[=].item[0].linkId = "menstruation_menopause_please_specify"
 * item[=].item[=].type = #string
 * item[=].item[=].text = "Please specify ___. " 
 * item[=].item[=].enableWhen.question = "menstruation_menopause"

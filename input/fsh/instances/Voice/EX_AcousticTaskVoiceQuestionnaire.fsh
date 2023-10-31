@@ -10,7 +10,7 @@ Description: "VoiceAcousticTasks Questionnaire"
 
 * item[0].prefix = "1.8 Task 1" 
 * item[=].linkId = "Prolonged vowel (1)"
-* item[=].text = "Relax, take a deep breath, and sustain the sound “ah” for as long aspossible."
+* item[=].text = "Relax, take a deep breath, and sustain the sound “ah” for as long as possible."
 * item[=].type = #attachment
 
 * item[+].prefix = "1.8 Task 2" 

@@ -52,21 +52,9 @@ Alias: $ConsentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiP
 
 Alias: $AssentPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAssentExample
 
-Alias: $DemographicsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionDemographicsExample
-
-Alias: $VoiceImpactingPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionVoiceImpactingExample
-
-Alias: $ConfoundersPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionConfoundersExample
-
-Alias: $AcousticTasksPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksExample
-
-Alias: $AcousticTasksPedsPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksPedsExample
-
 Alias: $PedsQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnairePedsExample
 
 Alias: $GeneralQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionGeneralQuestionnaireExample
-
-Alias: $QuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireExample
 
 Alias: $ClinicianInputPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionClinicianInputExample
 
@@ -77,17 +65,11 @@ Alias: $CohortSpecificConfoundersPlanDefinition = https://voicecollab.ai/fhir/Pl
 
 Alias: $RespiratoryQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireRespiratoryExample
 
-Alias: $AcousticTasksRespiratoryPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksRespiratoryExample
-
 Alias: $AcousticTaskNeuroPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksNeuroExample
 
 Alias: $NeuroQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireNeuroExample
 
-Alias: $AcousticTaskVoicePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksVoiceExample
-
 Alias: $VoiceQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireVoiceExample
-
-Alias: $AcousticTaskMoodPlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionAcousticTasksMoodExample
 
 Alias: $MoodQuestionnairePlanDefinition = https://voicecollab.ai/fhir/PlanDefinition/VbaiPlanDefinitionQuestionnaireMoodExample
 
@@ -110,3 +92,11 @@ Alias: $ConsentQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/Consent
 Alias: $AcousticTasksGeneralQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/GeneralAcousticTasksQuestionnaire
 
 Alias: $FeedbackQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/FeedbackQuestionnaire
+
+Alias: $MoodAcousticTasksQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/MoodAcousticTasksQuestionnaire
+
+Alias: $PedsAcousticTasksQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/PedsAcousticTasksQuestionnaire
+
+Alias: $RespiratoryAcousticTasksQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/RespiratoryAcousticTasksQuestionnaire
+
+Alias: $VoiceAcousticTasksQuestionnaire = https://voicecollab.ai/fhir/Questionnaire/VoiceAcousticTasksQuestionnaire

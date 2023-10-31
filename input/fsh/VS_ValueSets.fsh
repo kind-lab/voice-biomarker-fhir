@@ -304,7 +304,7 @@ Description: "The SurveyOptions Codes used by PHQ9 and GAD7 questionnaire"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2023-05-11"
-* include codes from system $GAD7AndPHQOtionsCodeSystem
+* include codes from system $GAD7AndPHQOptionsCodeSystem
 
 // confounders
 ValueSet: WHODAS
@@ -378,7 +378,7 @@ Description: "The Codes used by confounder questionnaire"
 * include codes from system $PerspirationFrequencyCodeSystem
 
 
-ValueSet: MenstrationMenopause
+ValueSet: MenstruationMenopause
 Id: menstruation-menopause-status
 Title: "Menstratio / Menopause ValueSet"
 Description: "The Codes used by confounder questionnaire"

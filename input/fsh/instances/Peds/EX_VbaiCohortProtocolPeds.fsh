@@ -24,37 +24,37 @@ Description: "VbaiPedsCohortProtocol"
 * action[=].prefix = "1.3"
 * action[=].description = "have Participant complete demographics"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $DemographicsPlanDefinition
+* action[=].definitionCanonical = $Demographic
 
 * action[+].title = "Voice Impacting Q's"
 * action[=].prefix = "1.4"
 * action[=].description = "Administer Voice Impacting Questions"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $VoiceImpactingPlanDefinition
+* action[=].definitionCanonical = $VocalFoldParalysis
 
 * action[+].title = "Acoustic Tasks"
 * action[=].prefix = "1.5"
 * action[=].description = "Perform Acoustic Tasks"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $AcousticTasksPlanDefinition
+* action[=].definitionCanonical = $AcousticTasksGeneralQuestionnaire
 
 * action[+].title = "Confounders"
 * action[=].prefix = "1.6"
 * action[=].description = "Retrieve Confounders"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $ConfoundersPlanDefinition
+* action[=].definitionCanonical = $Confounders
 
 * action[+].title = "Questionnaires"
 * action[=].prefix = "1.7"
 * action[=].description = "Administier Validated Questionnaires"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $QuestionnairePlanDefinition
+* action[=].definitionCanonical = $GeneralQuestionnairePlanDefinition
 
 * action[+].title = "Cohort specific acoustic tasks"
 * action[=].prefix = "1.8"
 * action[=].description = "Administer cohort specific acoustic tasks"
 * action[=].priority = #routine
-* action[=].definitionCanonical = $AcousticTasksPedsPlanDefinition
+* action[=].definitionCanonical = $PedsAcousticTasksQuestionnaire
 
 * action[+].title = "Cohort specific confounders"
 * action[=].prefix = "1.9"
