@@ -1,0 +1,165 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/sanuann/reproschema/master/activities/questionnaire_across_all_cohorts_gad7_anxiety/questionnaire_across_all_cohorts_gad7_anxiety_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "questionnaire_across_all_cohorts_gad7_anxiety_schema",
+    "skos:altLabel": "questionnaire_across_all_cohorts_gad7_anxiety_schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "variableMap": [
+        {
+            "variableName": "gad_7_session_id",
+            "isAbout": "gad_7_session_id"
+        },
+        {
+            "variableName": "gad_7_started_at",
+            "isAbout": "gad_7_started_at"
+        },
+        {
+            "variableName": "gad_7_completed_at",
+            "isAbout": "gad_7_completed_at"
+        },
+        {
+            "variableName": "gad_7_duration",
+            "isAbout": "gad_7_duration"
+        },
+        {
+            "variableName": "nervous_anxious",
+            "isAbout": "nervous_anxious"
+        },
+        {
+            "variableName": "cant_control_worry",
+            "isAbout": "cant_control_worry"
+        },
+        {
+            "variableName": "worry_too_much",
+            "isAbout": "worry_too_much"
+        },
+        {
+            "variableName": "trouble_relaxing",
+            "isAbout": "trouble_relaxing"
+        },
+        {
+            "variableName": "hard_to_sit_still",
+            "isAbout": "hard_to_sit_still"
+        },
+        {
+            "variableName": "easily_agitated",
+            "isAbout": "easily_agitated"
+        },
+        {
+            "variableName": "afraid_of_things",
+            "isAbout": "afraid_of_things"
+        },
+        {
+            "variableName": "tough_to_work",
+            "isAbout": "tough_to_work"
+        }
+    ],
+    "ui": {
+        "order": [
+            "gad_7_session_id",
+            "gad_7_started_at",
+            "gad_7_completed_at",
+            "gad_7_duration",
+            "nervous_anxious",
+            "cant_control_worry",
+            "worry_too_much",
+            "trouble_relaxing",
+            "hard_to_sit_still",
+            "easily_agitated",
+            "afraid_of_things",
+            "tough_to_work"
+        ],
+        "shuffle": false,
+        "visibility": [
+            {
+                "variableName": "gad_7_session_id",
+                "isVis": true
+            },
+            {
+                "variableName": "gad_7_started_at",
+                "isVis": true
+            },
+            {
+                "variableName": "gad_7_completed_at",
+                "isVis": true
+            },
+            {
+                "variableName": "gad_7_duration",
+                "isVis": true
+            },
+            {
+                "variableName": "nervous_anxious",
+                "isVis": true
+            },
+            {
+                "variableName": "cant_control_worry",
+                "isVis": true
+            },
+            {
+                "variableName": "worry_too_much",
+                "isVis": true
+            },
+            {
+                "variableName": "trouble_relaxing",
+                "isVis": true
+            },
+            {
+                "variableName": "hard_to_sit_still",
+                "isVis": true
+            },
+            {
+                "variableName": "easily_agitated",
+                "isVis": true
+            },
+            {
+                "variableName": "afraid_of_things",
+                "isVis": true
+            },
+            {
+                "variableName": "tough_to_work",
+                "isVis": "nervous_anxious > 1 or\ncant_control_worry > 1 || \nworry_too_much > 1 or\ntrouble_relaxing > 1 or\nhard_to_sit_still > 1 || \neasily_agitated > 1 or\nafraid_of_things > 1"
+            }
+        ]
+    },
+    "matrixInfo": [
+        {
+            "variableName": "nervous_anxious",
+            "matrixGroupName": "gad_7_anxiety",
+            "matrixRanking": ""
+        },
+        {
+            "variableName": "cant_control_worry",
+            "matrixGroupName": "gad_7_anxiety",
+            "matrixRanking": ""
+        },
+        {
+            "variableName": "worry_too_much",
+            "matrixGroupName": "gad_7_anxiety",
+            "matrixRanking": ""
+        },
+        {
+            "variableName": "trouble_relaxing",
+            "matrixGroupName": "gad_7_anxiety",
+            "matrixRanking": ""
+        },
+        {
+            "variableName": "hard_to_sit_still",
+            "matrixGroupName": "gad_7_anxiety",
+            "matrixRanking": ""
+        },
+        {
+            "variableName": "easily_agitated",
+            "matrixGroupName": "gad_7_anxiety",
+            "matrixRanking": ""
+        },
+        {
+            "variableName": "afraid_of_things",
+            "matrixGroupName": "gad_7_anxiety",
+            "matrixRanking": ""
+        }
+    ]
+}

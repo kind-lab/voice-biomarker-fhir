@@ -1,0 +1,22 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "text"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "requiredValue": true
+    },
+    "preamble": {
+        "en": "Questionnaire - Metadata"
+    },
+    "question": {
+        "en": "Session ID"
+    },
+    "schema:description": {
+        "en": " @READONLY"
+    }
+}
