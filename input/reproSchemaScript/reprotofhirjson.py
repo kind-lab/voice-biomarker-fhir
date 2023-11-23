@@ -213,7 +213,7 @@ def convert_to_fsh(questionnaire, mode):
     schema.close()
 
     fhir_questionnaire["resourceType"] = "Questionnaire"
-    fhir_questionnaire["profile"]= {
+    fhir_questionnaire["meta"]= {
     "profile" : [
       "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     ]
@@ -259,7 +259,7 @@ def convert_to_fsh(questionnaire, mode):
     else:
         group["text"] = ""
     
-    group["type"] = "#group"
+    group["type"] = "group"
     group["item"] = []
 
 
@@ -311,9 +311,27 @@ def convert_to_fsh(questionnaire, mode):
 if __name__ == '__main__':
     #example: python reprotofhirjson.py <mode: 'single' or 'group'> <reproschema_folder> <output_file> <version: valueset or options>
     convert_to_fsh(sys.argv[1], sys.argv[2] )
-    #r = json.dumps(fhir_questionnaire)
-    #print(r)
-    print(fhir_codesystems)
+    q = json.dumps(fhir_questionnaire)
+    #print(fhir_questionnaire)
+    f = open("GAD7.json", "w+")
+    f.write(str(q))
+    f.close()
+
+    vs = json.dumps(fhir_valuesets)
+
+    #print(fhir_questionnaire)
+    f = open("GAD7-valuesets.json", "w+")
+    f.write(str(vs))
+    f.close()
+
+    cs = json.dumps(fhir_codesystems)
+
+    #print(fhir_questionnaire)
+    f = open("GAD7-codesystems.json", "w+")
+    f.write(str(cs))
+    f.close()
+
+
     # error = open("error_file.txt", "w+")
     # file_error = ""
     # code_system = open("code_system.fsh", "w+")
