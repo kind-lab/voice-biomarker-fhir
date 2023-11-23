@@ -136,7 +136,7 @@ def generate_valueSet(curr_question, options, linkId,questionnaire):
         valueset["description"] = id
         valueset["compose"] = dict()
         
-        valueset["compose"]["include"] = {"system": f"{CODESYSTEM_URI}{id}"}
+        valueset["compose"]["include"] = [{"system": f"{CODESYSTEM_URI}{id}"}]
 
         fhir_valuesets.append(valueset)
 
