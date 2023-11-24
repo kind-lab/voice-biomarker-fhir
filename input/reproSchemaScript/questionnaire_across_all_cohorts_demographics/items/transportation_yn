@@ -1,0 +1,15 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "yesno"
+    },
+    "question": {
+        "en": "Do you have a reliable mode of transportation?"
+    },
+    "responseOptions": {
+        "requiredValue": true
+    }
+}

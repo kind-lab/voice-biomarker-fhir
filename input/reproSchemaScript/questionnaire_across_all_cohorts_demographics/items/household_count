@@ -1,0 +1,16 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "text"
+    },
+    "responseOptions": {
+        "valueType": "xsd:int",
+        "requiredValue": true
+    },
+    "question": {
+        "en": "How many people live in your household? Please specify a number"
+    }
+}

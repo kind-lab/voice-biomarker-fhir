@@ -1,0 +1,57 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "valueType": "radio",
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": "Spaniard ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "Mexican ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "Central American ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 4,
+                "schema:name": "South American ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 5,
+                "schema:name": "Latin American ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 6,
+                "schema:name": "Puerto Rican ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 7,
+                "schema:name": "Cuban ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 8,
+                "schema:name": "Dominican",
+                "@type": "schema:option"
+            }
+        ]
+    },
+    "question": {
+        "en": "Check all that apply"
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "valueType": "radio",
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": "Single ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "Married ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "In a relationship ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 4,
+                "schema:name": "Not married ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 5,
+                "schema:name": "Separated ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 6,
+                "schema:name": "Divorced ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 7,
+                "schema:name": "Widowed",
+                "@type": "schema:option"
+            }
+        ]
+    },
+    "question": {
+        "en": "What is your marital status?\nChoose all that apply"
+    }
+}

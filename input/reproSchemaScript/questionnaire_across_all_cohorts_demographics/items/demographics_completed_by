@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "valueType": "radio",
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": "Self ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "Assistant ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "Parent/Caregiver",
+                "@type": "schema:option"
+            }
+        ]
+    },
+    "question": {
+        "en": "Who is completing this survey?"
+    }
+}
