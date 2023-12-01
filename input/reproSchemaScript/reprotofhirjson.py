@@ -1,6 +1,6 @@
 '''
 script to convert repro scheme to json for fhir questionnaire
-Not perfect conversion
+Currently supports reproschema to fhir json in en.
 #example: "python reprotofhirjson.py <reproschema_folder> valueset"
 must be in the file structure specified in:
 https://github.com/ReproNim/reproschema-library/tree/43e7afab312596708c0ad4dfd45b69c8904088ae/activities
@@ -9,6 +9,7 @@ https://github.com/ReproNim/reproschema-library/tree/43e7afab312596708c0ad4dfd45
 import json
 import sys
 import os
+import argparse
 import logging
 from dotenv import load_dotenv
 
@@ -17,266 +18,272 @@ CODESYSTEM_URI = os.getenv('CODESYSTEM_URI')
 VALUESET_URI = os.getenv('VALUESET_URI')
 QUESTIONNAIRE_URI = os.getenv('QUESTIONNAIRE_URI')
 
-codeSystem_dict = dict()
 
-fhir_questionnaire = dict()
-
-fhir_valuesets = []
-fhir_codesystems = []
-
-
-
-def generate_codeSystem(options_json, linkId,questionnaire):
+def generate_codeSystem(options_json, linkId,questionnaire, fhir_codesystems, codeSystem_dict):
    # default headers for codesystem
     codeSystem = dict()
     id = questionnaire + linkId
     id = id.replace("_","-")
     id = id.lower()
 
-    codeSystem["resourceType"] = "CodeSystem"
-    codeSystem["id"] = id
-    codeSystem["text"] = {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"}
+    codeSystem[f"resourceType"] = f"CodeSystem"
+    codeSystem[f"id"] = id
+    codeSystem[f"text"] = {
+    f"status" : f"generated",
+    f"div" : f"<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"}
 
-    codeSystem["url"] = str(CODESYSTEM_URI) + id
-    codeSystem["version"] = "1.4.0"
-    codeSystem["name"] = (id).capitalize().replace("_","")
-    codeSystem["title"] = id
-    codeSystem["status"] = "active"
-    codeSystem["date"] = "2023-11-20T11:33:15-05:00"
-    codeSystem["publisher"] = "KinD Lab"
-    codeSystem["contact"] = [
+    codeSystem[f"url"] = f"{CODESYSTEM_URI}{id}"
+    codeSystem[f"version"] = f"1.4.0"
+    codeSystem[f"name"] = (id).capitalize().replace("_","")
+    codeSystem[f"title"] = id
+    codeSystem[f"status"] = f"active"
+    codeSystem[f"date"] = f"2023-11-20T11:33:15-05:00"
+    codeSystem[f"publisher"] = f"KinD Lab"
+    codeSystem[f"contact"] = [
         {
-        "name" : "KinD Lab",
-        "telecom" : [
+        f"name" : f"KinD Lab",
+        f"telecom" : [
             {
-            "system" : "url",
-            "value" : "http://fhir.kindlab.sickkids.ca"
+            f"system" : f"url",
+            f"value" : f"http://fhir.kindlab.sickkids.ca"
             }
         ]
         }
     ]
 
-    codeSystem["description"] = id
-    codeSystem["caseSensitive"] = True
-    codeSystem["content"] = "complete"
-    codeSystem["count"] = len(options_json["choices"])
-    codeSystem["concept"] = []
+    codeSystem[f"description"] = id
+    codeSystem[f"caseSensitive"] = True
+    codeSystem[f"content"] = f"complete"
+    codeSystem[f"count"] = len(options_json[f"choices"])
+    codeSystem[f"concept"] = []
     
     options = []
-    # loops through the options and appends them to the codesystem
-    for j in options_json["choices"]:
+    # we wish to retrieve each option stored in the reproschema json list. We do this by parsing the list
+    # of jsons and append then contents to an outlined codesystem
+    for j in options_json[f"choices"]:
         codeSystem_option = dict()
-        if "schema:name" in j and j["schema:name"] != "":
-            choice = j["schema:name"]
+        if f"schema:name" in j and j[f"schema:name"] != "":
+            choice = j[f"schema:name"]
         else:
-            choice = j["schema:value"]
+            choice = j[f"schema:value"]
         
-        if choice and not isinstance(choice, int) and "en" in choice and isinstance(choice, dict):
+        if choice and not isinstance(choice, int) and f"en" in choice and isinstance(choice, dict):
             choice = choice["en"]
-        # checks if the codesystem already exists
+       
         choice = str(choice)
-        codeSystem_option["code"] = choice.replace(" ", "-") 
-        codeSystem_option["display"] = str(choice)
+        codeSystem_option[f"code"] = j[f"schema:value"]
+        codeSystem_option[f"display"] = str(choice)
 
         options.append(choice.replace(" ", ""))
-        codeSystem["concept"].append(codeSystem_option)
+        codeSystem[f"concept"].append(codeSystem_option)
         
     if tuple(options) not in codeSystem_dict:
         codeSystem_dict[tuple(options)] = id
     else:
-        return (codeSystem_dict[tuple(options)], True)
+        return (codeSystem_dict[tuple(options)], True, fhir_codesystems, codeSystem_dict)
     
     fhir_codesystems.append(codeSystem)
-    return (id, False)
+    return (id, False, fhir_codesystems, codeSystem_dict)
 
 
         
-def generate_valueSet(curr_question, options, linkId,questionnaire):
-    # generates the codesystem for the options
-    (id, exists) = generate_codeSystem(options, linkId,questionnaire)
+def generate_valueSet(curr_question, options, linkId,questionnaire, fhir_valuesets, fhir_codesystems, codeSystem_dict):
+    # we avoid creating redundant valuesets and try to reuse previously created valuesets for efficiency
+    (id, exists, fhir_codesystems, codeSystem_dict) = generate_codeSystem(options, linkId,questionnaire, fhir_codesystems, codeSystem_dict)
     if not exists:
 
         valueset = dict()
-        valueset["resourceType"] = "ValueSet"
-        valueset["id"] = id
-        valueset["text"] = {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+        valueset[f"resourceType"] = f"ValueSet"
+        valueset[f"id"] = id
+        valueset[f"text"] = {
+        f"status" : f"generated",
+        f"div" : f"<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
         }
-        valueset["url"] = str(VALUESET_URI) + id
-        valueset["version"] = "1.4.0"
+        valueset[f"url"] = f"{VALUESET_URI}{id}"
+        valueset[f"version"] = f"1.4.0"
 
-        valueset["name"] = (id).capitalize().replace("_","")
-        valueset["title"] = id
-        valueset["status"] = "active"
-        valueset["date"] = "2023-11-20"
-        valueset["publisher"] = "KinD Lab"
-        valueset["contact"] = [
+        valueset[f"name"] = (id).capitalize().replace("_","")
+        valueset[f"title"] = id
+        valueset[f"status"] = f"active"
+        valueset[f"date"] = f"2023-11-20"
+        valueset[f"publisher"] = f"KinD Lab"
+        valueset[f"contact"] = [
         {
-            "name" : "KinD Lab",
-            "telecom" : [
+            f"name" : f"KinD Lab",
+            f"telecom" : [
             {
-                "system" : "url",
-                "value" : "http://fhir.kindlab.sickkids.ca"
+                f"system" : f"url",
+                f"value" : f"http://fhir.kindlab.sickkids.ca"
             }
             ]
         }
         ]
 
-        valueset["description"] = id
-        valueset["compose"] = dict()
+        valueset[f"description"] = id
+        valueset[f"compose"] = dict()
         
-        valueset["compose"]["include"] = [{"system": f"{CODESYSTEM_URI}{id}"}]
+        valueset[f"compose"][f"include"] = [{f"system": f"{CODESYSTEM_URI}{id}"}]
 
         fhir_valuesets.append(valueset)
 
-    curr_question["answerValueSet"] = str(VALUESET_URI) + id
-    return curr_question
+    curr_question[f"answerValueSet"] = f"{VALUESET_URI}{id}"
+    return (curr_question, fhir_valuesets, fhir_codesystems, codeSystem_dict)
 
 
 
 
 
 
-def add_options(curr_question, question_json, questionnaire, linkId, mode):
+def add_options(curr_question, question_json, questionnaire, linkId, mode, fhir_valuesets, fhir_codesystems, codeSystem_dict):
     '''
     Helper function to add options to each question.
     '''
     # case where constraint file is referenced
-    if not isinstance(question_json["responseOptions"], dict):
-        options = open(questionnaire + question_json["responseOptions"].replace("..", ""), "r")
+    if not isinstance(question_json[f"responseOptions"], dict):
+        options = open(questionnaire + question_json[f"responseOptions"].replace("..", ""), "r")
         options_contents = options.read()
         options_json = json.loads(options_contents)
         options.close()
     # case where the options are layed out
-    elif "choices" in question_json["responseOptions"]:
-        options_json = question_json["responseOptions"]
-     # case where there are not options ie free text
+    elif f"choices" in question_json[f"responseOptions"]:
+        options_json = question_json[f"responseOptions"]
+    # case where there are not options ie free text
     else:
-        return curr_question
+        return (curr_question, fhir_valuesets, fhir_codesystems, codeSystem_dict)
     
-    if mode == "options":
-        return curr_question
+    if mode == f"options":
+        return (curr_question, fhir_valuesets, fhir_codesystems, codeSystem_dict)
 
-    elif mode == "valueset":
-        curr_question = generate_valueSet(curr_question, options_json, linkId,questionnaire)
+    elif mode == f"valueset":
+        (curr_question, fhir_valuesets, fhir_codesystems, codeSystem_dict) = generate_valueSet(curr_question, options_json, linkId,questionnaire, fhir_valuesets, fhir_codesystems, codeSystem_dict)
 
         
 
-    return curr_question
+    return (curr_question, fhir_valuesets, fhir_codesystems, codeSystem_dict)
 
 
-def convert_to_fsh(questionnaire, mode):
+def convert_to_fhir(questionnaire, mode):
     '''
-    Function used to convert reproschema questionnaire into a fsh file
-    '''
+    Function used to convert reproschema questionnaire into a fhir json
 
-    schema = open(questionnaire + "/"+ questionnaire+"_schema", "r")
+    '''
+    fhir_questionnaire = dict()
+    fhir_valuesets = []
+    fhir_codesystems = []
+    codeSystem_dict = dict()
+
+    file_name = questionnaire.split("/")[len(questionnaire.split("/"))-1]
+    
+    schema = open(f"{questionnaire}/{file_name}_schema", "r")
+    
+    questionnaire = file_name
     contents = schema.read()
     j = json.loads(contents)
     schema.close()
 
-    fhir_questionnaire["resourceType"] = "Questionnaire"
-    fhir_questionnaire["meta"]= {
-    "profile" : [
-      "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
+    fhir_questionnaire[f"resourceType"] = f"Questionnaire"
+    fhir_questionnaire[f"meta"]= {
+    f"profile" : [
+      f"https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
     ]
     }
-    fhir_questionnaire["id"] = j["@id"].replace('_', '')
-    fhir_questionnaire["url"] = QUESTIONNAIRE_URI + j["@id"].replace('_', '')
-    fhir_questionnaire["title"] =  j["@id"]
+    fhir_questionnaire[f"id"] = j[f"@id"].replace('_', '')
+    fhir_questionnaire[f"url"] = QUESTIONNAIRE_URI + j[f"@id"].replace('_', '')
+    fhir_questionnaire[f"title"] =  j[f"@id"]
 
-    fhir_questionnaire["text"] =  {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"}
-    fhir_questionnaire["version"] = "1.4.0"
-    fhir_questionnaire["status"] = "active"
-    fhir_questionnaire["date"] = "2023-11-20T11:33:15-05:00"
-    fhir_questionnaire["publisher"] = "KinD Lab"
-    fhir_questionnaire["contact"] =  [
+    fhir_questionnaire[f"text"] =  {f"status" : f"generated",f"div" : f"<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"}
+    fhir_questionnaire[f"version"] = f"1.4.0"
+    fhir_questionnaire[f"status"] = f"active"
+    fhir_questionnaire[f"date"] = f"2023-11-20T11:33:15-05:00"
+    fhir_questionnaire[f"publisher"] = f"KinD Lab"
+    fhir_questionnaire[f"contact"] =  [
     {
-      "name" : "KinD Lab",
-      "telecom" : [
+      f"name" : f"KinD Lab",
+      f"telecom" : [
         {
-          "system" : "url",
-          "value" : "http://fhir.kindlab.sickkids.ca"
+          f"system" : f"url",
+          f"value" : f"http://fhir.kindlab.sickkids.ca"
         }
       ]
     }
   ]
 
-    fhir_questionnaire["item"] = []
+    fhir_questionnaire[f"item"] = []
     group = dict()
-    # default description
-
-    group["linkId"] = "T1"
-
-    if "preamble" in j.keys():
-        if isinstance(j["preamble"], dict):
-            group["text"] = j["preamble"]["en"]
-        elif isinstance(j["preamble"], str):
-            group["text"]= j["preamble"]
-    else:
-        group["text"] = ""
     
-    group["type"] = "group"
-    group["item"] = []
+    group[f"linkId"] = f"T1"
+
+    if f"preamble" in j.keys():
+        if isinstance(j[f"preamble"], dict):
+            group[f"text"] = j[f"preamble"]["en"]
+        elif isinstance(j[f"preamble"], str):
+            group[f"text"]= j[f"preamble"]
+    else:
+        group[f"text"] = ""
+    
+    group[f"type"] = f"group"
+    group[f"item"] = []
 
 
-    questions = j["ui"]["visibility"]
+    questions = j[f"ui"][f"visibility"]
 
 
-    # iterate over every questions
     for i in questions:
         curr_question = dict()
-        question_file = open(questionnaire +"/items/"+i["variableName"], "r")
+        var_name = i[f"variableName"]
+        question_file = open(f"{questionnaire}/items/{var_name}", "r")
         question_contents = question_file.read()
 
         question_json = json.loads(question_contents)
         question_file.close()
 
-        curr_question["linkId"] =  i["variableName"]
-        # default assigned type
-        item_type = "string"
-        # adding questions type
-        if "inputType" in question_json["ui"]:
-            if question_json["ui"]["inputType"] == "radio":
-                item_type = "choice"
-            elif question_json["ui"]["inputType"] in ("number", "xsd:int"):
-                item_type = "integer"
+        curr_question[f"linkId"] =  i[f"variableName"]
+        
+        item_type = f"string"
+        if f"inputType" in question_json[f"ui"]:
+            if question_json[f"ui"][f"inputType"] == f"radio":
+                item_type = f"choice"
+            elif question_json[f"ui"][f"inputType"] in (f"number", f"xsd:int"):
+                item_type = f"integer"
 
-        curr_question["type"] = item_type
-        # adding questions text
-        if "question" in question_json and isinstance(question_json["question"], dict):
-            curr_question["text"] = str(question_json["question"]["en"])
+        curr_question[f"type"] = item_type
+       
+        if f"question" in question_json and isinstance(question_json[f"question"], dict):
+            curr_question[f"text"] = str(question_json[f"question"][f"en"])
         else:           
-            curr_question["text"] = str(question_json["prefLabel"])
+            curr_question[f"text"] = str(question_json[f"prefLabel"])
 
-        # add options
-        if "responseOptions" in question_json:
-            curr_question = add_options(curr_question, question_json, questionnaire, i["variableName"],  mode)
-        group["item"].append(curr_question)
+       
+        if f"responseOptions" in question_json:
+            (curr_question, fhir_valuesets, fhir_codesystems, codeSystem_dict) = add_options(curr_question, question_json, questionnaire, i[f"variableName"],  mode, fhir_valuesets, fhir_codesystems, codeSystem_dict)
+        group[f"item"].append(curr_question)
 
-    fhir_questionnaire["item"].append(group)
+    fhir_questionnaire[f"item"].append(group)
+    return (fhir_questionnaire, fhir_valuesets, fhir_codesystems) 
   
 
 if __name__ == '__main__':
-    convert_to_fsh(sys.argv[1], sys.argv[2] )
-    questionnaire_name = sys.argv[1]
+    parser = argparse.ArgumentParser()
+    parser.add_argument("questionnaire_name")
+    parser.add_argument("version")
+    args = parser.parse_args()
+
+    (fhir_questionnaire, fhir_valuesets, fhir_codesystems) = convert_to_fhir(args.questionnaire_name, args.version)
+    file_name = args.questionnaire_name.split("/")[len(args.questionnaire_name.split("/"))-1]
     q = json.dumps(fhir_questionnaire)
-
-    f = open(f"{questionnaire_name}.json", "w+")
-    f.write(str(q))
-    f.close()
-
+    
+    with open(f"{file_name}.json", "w+") as f:
+        f.write(q)
+        f.close()
+    
     vs = json.dumps(fhir_valuesets)
 
-    f = open(f"{questionnaire_name}-valuesets.json", "w+")
-    f.write(str(vs))
-    f.close()
+    with open(f"{file_name}-valuesets.json", "w+") as f:
+        f.write(vs)
+        f.close()
 
     cs = json.dumps(fhir_codesystems)
 
-    f = open(f"{questionnaire_name}-codesystems.json", "w+")
-    f.write(str(cs))
-    f.close()
+    with open(f"{file_name}-codesystems.json", "w+") as f:
+        f.write(cs)
+        f.close()
