@@ -1,0 +1,54 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "questionnaire_across_all_cohorts_gad7_anxiety": "https://raw.githubusercontent.com/sanuann/reproschema/master/activities/questionnaire_across_all_cohorts_gad7_anxiety/items/",
+        "gad_7_session_id": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:gad_7_session_id",
+            "@type": "@id"
+        },
+        "gad_7_started_at": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:gad_7_started_at",
+            "@type": "@id"
+        },
+        "gad_7_completed_at": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:gad_7_completed_at",
+            "@type": "@id"
+        },
+        "gad_7_duration": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:gad_7_duration",
+            "@type": "@id"
+        },
+        "nervous_anxious": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:nervous_anxious",
+            "@type": "@id"
+        },
+        "cant_control_worry": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:cant_control_worry",
+            "@type": "@id"
+        },
+        "worry_too_much": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:worry_too_much",
+            "@type": "@id"
+        },
+        "trouble_relaxing": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:trouble_relaxing",
+            "@type": "@id"
+        },
+        "hard_to_sit_still": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:hard_to_sit_still",
+            "@type": "@id"
+        },
+        "easily_agitated": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:easily_agitated",
+            "@type": "@id"
+        },
+        "afraid_of_things": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:afraid_of_things",
+            "@type": "@id"
+        },
+        "tough_to_work": {
+            "@id": "questionnaire_across_all_cohorts_gad7_anxiety:tough_to_work",
+            "@type": "@id"
+        }
+    }
+}

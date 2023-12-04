@@ -1,0 +1,70 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "valueType": "radio",
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": "Employed",
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/freelance .png"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "Employed",
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/full time .png"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "Employed",
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/part time .png"
+            },
+            {
+                "schema:value": 4,
+                "schema:name": "Employed",
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/multiple part time jobs .png"
+            },
+            {
+                "schema:value": 5,
+                "schema:name": "Student ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 6,
+                "schema:name": "Self-employed ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 7,
+                "schema:name": "Retired ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 8,
+                "schema:name": "Unemployed ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 9,
+                "schema:name": "Other (Please specify)",
+                "@type": "schema:option"
+            }
+        ],
+        "requiredValue": true
+    },
+    "preamble": {
+        "en": "Employment Status"
+    },
+    "question": {
+        "en": "What is your employment status?\n\nChoose all that apply\n"
+    }
+}

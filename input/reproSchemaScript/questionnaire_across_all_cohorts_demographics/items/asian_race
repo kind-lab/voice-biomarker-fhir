@@ -1,0 +1,137 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "valueType": "radio",
+        "choices": [
+            {
+                "schema:value": 2029,
+                "schema:name": "Asian Indian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2030,
+                "schema:name": "Bangladeshi ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2031,
+                "schema:name": "Bhutanese ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2032,
+                "schema:name": "Burmese ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2033,
+                "schema:name": "Cambodian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2034,
+                "schema:name": "Chinese ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2035,
+                "schema:name": "Taiwanese ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2036,
+                "schema:name": "Filipino ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2037,
+                "schema:name": "Hmong ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2038,
+                "schema:name": "Indonesian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2039,
+                "schema:name": "Japanese ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2040,
+                "schema:name": "Korean ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2041,
+                "schema:name": "Laotian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2042,
+                "schema:name": "Malaysian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2043,
+                "schema:name": "Okinawan ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2044,
+                "schema:name": "Pakistani ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2045,
+                "schema:name": "Sri Lankan ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2046,
+                "schema:name": "Thai ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2047,
+                "schema:name": "Vietnamese ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2048,
+                "schema:name": "Iwo Jiman ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2049,
+                "schema:name": "Maldivian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2050,
+                "schema:name": "Nepalese ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2051,
+                "schema:name": "Singaporean ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2052,
+                "schema:name": "Madagascar",
+                "@type": "schema:option"
+            }
+        ]
+    },
+    "question": {
+        "en": "Asian"
+    }
+}

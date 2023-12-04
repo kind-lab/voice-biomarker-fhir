@@ -5,6 +5,8 @@ Not perfect conversion
 must be in the file structure specified in:
 https://github.com/ReproNim/reproschema-library/tree/43e7afab312596708c0ad4dfd45b69c8904088ae/activities
 
+
+questionnaire_across_all_cohorts_gad7_anxiety_schema
 '''
 import json
 import sys
@@ -23,22 +25,25 @@ def generate_codeSystem(options_json, linkId,questionnaire):
    # default headers for codesystem
     codeSystem = ""
     id = questionnaire + linkId
-    codeSystem += "\nCodeSystem: " + id
+    id = id.replace("_","-")
+    id = id.capitalize()
+    codeSystem += "\nCodeSystem: " + id.replace("-","")
+    id = id.lower()
     codeSystem += "\nId: " + id
-    codeSystem += "\nTitle: " + questionnaire+ linkId
-    codeSystem += "\nDescription: " + questionnaire + linkId
+    codeSystem += "\nTitle: '" + questionnaire+ linkId + "'"
+    codeSystem += "\nDescription: '" + questionnaire + linkId + "'"
     codeSystem += "\n* ^version = " + "1.0.0"
-    codeSystem += "\n* ^status = " + "#active" + "\n* ^caseSensitive = 'true' \n* ^content = #complete"
+    codeSystem += "\n* ^status = " + "#active" + "\n* ^caseSensitive = true \n* ^content = #complete"
 
     codeSystem += "\n* ^count = " + str(len(options_json["choices"]))
 
     options = []
     # loops through the options and appends them to the codesystem
     for j in options_json["choices"]:
-        if "name" in j and j["name"] != "":
-            choice = j["name"]
+        if "schema:name" in j and j["schema:name"] != "":
+            choice = j["schema:name"]
         else:
-            choice = j["value"]
+            choice = j["schema:value"]
         
         if choice and not isinstance(choice, int) and "en" in choice and isinstance(choice, dict):
             choice = choice["en"]
@@ -47,10 +52,12 @@ def generate_codeSystem(options_json, linkId,questionnaire):
         codeSystem += ("\n* #" + choice.replace(" ", "-") + " " \
             + "'" + str(choice)+ "'")
         options.append(choice.replace(" ", ""))
+        
     if tuple(options) not in codeSystem_dict:
         codeSystem_dict[tuple(options)] = id
     else:
         return (codeSystem_dict[tuple(options)], True)
+    codeSystem = codeSystem.replace("'", "\"")
     # writes to the file if the codesystem doesnt exist
     code_system_file = open("code_system.fsh", "a+")
     code_system_file.write(codeSystem + "\n")
@@ -68,9 +75,10 @@ def generate_valueSet(file_contents, options, linkId,questionnaire):
     # generates the codesystem for the options
     (id, exists) = generate_codeSystem(options, linkId,questionnaire)
     if not exists:
-        valueset = "\nValueSet: " + id+ "\nId: " + id + "\nTitle: '"+ id + "'" + "\nDescription: 'test'" 
+        valueset = "\nValueSet: " + (id.replace("-","")).capitalize()+ "\nId: " + id.lower() + "\nTitle: '"+ id + "'" + "\nDescription: 'test'" 
         valueset += "\n* ^version = '1.0.0'" + "\n* ^status = #active" + "\n* ^date = '2023-05-11'"
         valueset += "\n* include codes from system " + "$" + id + "CodeSystem"
+        valueset = valueset.replace("'", "\"")
         value_set_file = open("valueSet.fsh", "a+")
         value_set_file.write(valueset+ "\n")
         value_set_file.close()
@@ -164,22 +172,22 @@ def convert_to_fsh(questionnaire, output_file, mode):
     file_contents += ("\n* item[=].type = #group")
     file_contents += ("\n* title = "+ "'"+ j["@id"]+ "'")
     file_contents += ("\n* status = #active")
-    questions = j["ui"]["addProperties"]
+    questions = j["ui"]["visibility"]
 
 
     # iterate over every questions
     for i in questions:
-        question_file = open(questionnaire +"/"+i["isAbout"], "r")
+        question_file = open(questionnaire +"/items/"+i["variableName"], "r")
         question_contents = question_file.read()
 
         question_json = json.loads(question_contents)
         question_file.close()
 
         # adding linkid for every questions
-        if i["isAbout"] == questions[0]:
-            file_contents += ("\n* item[=].item[0].linkId = " + "'" + question_json["@id"] + "'")
+        if i == questions[0]:
+            file_contents += ("\n* item[=].item[0].linkId = " + "'" + i["variableName"] + "'")
         else:
-            file_contents += ("\n* item[=].item[+].linkId = " + "'" + question_json["@id"] + "'")
+            file_contents += ("\n* item[=].item[+].linkId = " + "'" + i["variableName"] + "'")
         # default assigned type
         item_type = "#string"
         # adding questions type
@@ -201,7 +209,7 @@ def convert_to_fsh(questionnaire, output_file, mode):
 
         # add options
         if "responseOptions" in question_json:
-            file_contents = add_options(file_contents, question_json, questionnaire, question_json["@id"],  mode)
+            file_contents = add_options(file_contents, question_json, questionnaire, i["variableName"],  mode)
 
 
     file_contents = file_contents.replace("'", '"')

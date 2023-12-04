@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "valueType": "radio",
+        "choices": [
+            {
+                "schema:value": 2078,
+                "schema:name": "Polynesian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2085,
+                "schema:name": "Micronesian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2100,
+                "schema:name": "Melanesian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2500,
+                "schema:name": "Other Pacific Islander",
+                "@type": "schema:option"
+            }
+        ]
+    },
+    "question": {
+        "en": "Native Hawaiian or other Pacific Islander"
+    }
+}

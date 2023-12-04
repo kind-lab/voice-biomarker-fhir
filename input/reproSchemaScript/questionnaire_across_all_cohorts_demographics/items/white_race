@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "valueType": "radio",
+        "choices": [
+            {
+                "schema:value": 2108,
+                "schema:name": "European ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2118,
+                "schema:name": "Middle Eastern Or North African ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2129,
+                "schema:name": "Arab",
+                "@type": "schema:option"
+            }
+        ]
+    },
+    "question": {
+        "en": "White"
+    }
+}

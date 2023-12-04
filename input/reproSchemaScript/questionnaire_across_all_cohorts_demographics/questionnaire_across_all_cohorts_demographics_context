@@ -1,0 +1,226 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "questionnaire_across_all_cohorts_demographics": "https://raw.githubusercontent.com/sanuann/reproschema/master/activities/questionnaire_across_all_cohorts_demographics/items/",
+        "demographics_session_id": {
+            "@id": "questionnaire_across_all_cohorts_demographics:demographics_session_id",
+            "@type": "@id"
+        },
+        "demographics_started_at": {
+            "@id": "questionnaire_across_all_cohorts_demographics:demographics_started_at",
+            "@type": "@id"
+        },
+        "demographics_completed_at": {
+            "@id": "questionnaire_across_all_cohorts_demographics:demographics_completed_at",
+            "@type": "@id"
+        },
+        "demographics_duration": {
+            "@id": "questionnaire_across_all_cohorts_demographics:demographics_duration",
+            "@type": "@id"
+        },
+        "demographics_completed_by": {
+            "@id": "questionnaire_across_all_cohorts_demographics:demographics_completed_by",
+            "@type": "@id"
+        },
+        "city": {
+            "@id": "questionnaire_across_all_cohorts_demographics:city",
+            "@type": "@id"
+        },
+        "state_province": {
+            "@id": "questionnaire_across_all_cohorts_demographics:state_province",
+            "@type": "@id"
+        },
+        "zipcode": {
+            "@id": "questionnaire_across_all_cohorts_demographics:zipcode",
+            "@type": "@id"
+        },
+        "country": {
+            "@id": "questionnaire_across_all_cohorts_demographics:country",
+            "@type": "@id"
+        },
+        "gender_identity": {
+            "@id": "questionnaire_across_all_cohorts_demographics:gender_identity",
+            "@type": "@id"
+        },
+        "other_gender_identity": {
+            "@id": "questionnaire_across_all_cohorts_demographics:other_gender_identity",
+            "@type": "@id"
+        },
+        "specify_gender_identity": {
+            "@id": "questionnaire_across_all_cohorts_demographics:specify_gender_identity",
+            "@type": "@id"
+        },
+        "sexual_orientation": {
+            "@id": "questionnaire_across_all_cohorts_demographics:sexual_orientation",
+            "@type": "@id"
+        },
+        "other_sex_orientation": {
+            "@id": "questionnaire_across_all_cohorts_demographics:other_sex_orientation",
+            "@type": "@id"
+        },
+        "race": {
+            "@id": "questionnaire_across_all_cohorts_demographics:race",
+            "@type": "@id"
+        },
+        "native_american_race": {
+            "@id": "questionnaire_across_all_cohorts_demographics:native_american_race",
+            "@type": "@id"
+        },
+        "asian_race": {
+            "@id": "questionnaire_across_all_cohorts_demographics:asian_race",
+            "@type": "@id"
+        },
+        "black_race": {
+            "@id": "questionnaire_across_all_cohorts_demographics:black_race",
+            "@type": "@id"
+        },
+        "pacific_islander_race": {
+            "@id": "questionnaire_across_all_cohorts_demographics:pacific_islander_race",
+            "@type": "@id"
+        },
+        "white_race": {
+            "@id": "questionnaire_across_all_cohorts_demographics:white_race",
+            "@type": "@id"
+        },
+        "canadian_race": {
+            "@id": "questionnaire_across_all_cohorts_demographics:canadian_race",
+            "@type": "@id"
+        },
+        "other_race_specify": {
+            "@id": "questionnaire_across_all_cohorts_demographics:other_race_specify",
+            "@type": "@id"
+        },
+        "ethnicity": {
+            "@id": "questionnaire_across_all_cohorts_demographics:ethnicity",
+            "@type": "@id"
+        },
+        "hispanic_latino_selection": {
+            "@id": "questionnaire_across_all_cohorts_demographics:hispanic_latino_selection",
+            "@type": "@id"
+        },
+        "edu_level": {
+            "@id": "questionnaire_across_all_cohorts_demographics:edu_level",
+            "@type": "@id"
+        },
+        "other_edu_level": {
+            "@id": "questionnaire_across_all_cohorts_demographics:other_edu_level",
+            "@type": "@id"
+        },
+        "hearing": {
+            "@id": "questionnaire_across_all_cohorts_demographics:hearing",
+            "@type": "@id"
+        },
+        "vision": {
+            "@id": "questionnaire_across_all_cohorts_demographics:vision",
+            "@type": "@id"
+        },
+        "cognition": {
+            "@id": "questionnaire_across_all_cohorts_demographics:cognition",
+            "@type": "@id"
+        },
+        "mobility": {
+            "@id": "questionnaire_across_all_cohorts_demographics:mobility",
+            "@type": "@id"
+        },
+        "self_care": {
+            "@id": "questionnaire_across_all_cohorts_demographics:self_care",
+            "@type": "@id"
+        },
+        "independent_living": {
+            "@id": "questionnaire_across_all_cohorts_demographics:independent_living",
+            "@type": "@id"
+        },
+        "employ_status": {
+            "@id": "questionnaire_across_all_cohorts_demographics:employ_status",
+            "@type": "@id"
+        },
+        "other_employ_specify": {
+            "@id": "questionnaire_across_all_cohorts_demographics:other_employ_specify",
+            "@type": "@id"
+        },
+        "occupation": {
+            "@id": "questionnaire_across_all_cohorts_demographics:occupation",
+            "@type": "@id"
+        },
+        "veteran": {
+            "@id": "questionnaire_across_all_cohorts_demographics:veteran",
+            "@type": "@id"
+        },
+        "household_income_usa": {
+            "@id": "questionnaire_across_all_cohorts_demographics:household_income_usa",
+            "@type": "@id"
+        },
+        "financial_assistance_usa": {
+            "@id": "questionnaire_across_all_cohorts_demographics:financial_assistance_usa",
+            "@type": "@id"
+        },
+        "assistance_programs_usa": {
+            "@id": "questionnaire_across_all_cohorts_demographics:assistance_programs_usa",
+            "@type": "@id"
+        },
+        "household_income_ca": {
+            "@id": "questionnaire_across_all_cohorts_demographics:household_income_ca",
+            "@type": "@id"
+        },
+        "financial_assistance_ca": {
+            "@id": "questionnaire_across_all_cohorts_demographics:financial_assistance_ca",
+            "@type": "@id"
+        },
+        "assistance_programs_ca": {
+            "@id": "questionnaire_across_all_cohorts_demographics:assistance_programs_ca",
+            "@type": "@id"
+        },
+        "citizen": {
+            "@id": "questionnaire_across_all_cohorts_demographics:citizen",
+            "@type": "@id"
+        },
+        "marital_status": {
+            "@id": "questionnaire_across_all_cohorts_demographics:marital_status",
+            "@type": "@id"
+        },
+        "housing_status": {
+            "@id": "questionnaire_across_all_cohorts_demographics:housing_status",
+            "@type": "@id"
+        },
+        "household_count": {
+            "@id": "questionnaire_across_all_cohorts_demographics:household_count",
+            "@type": "@id"
+        },
+        "spouse_partner_sig_other": {
+            "@id": "questionnaire_across_all_cohorts_demographics:spouse_partner_sig_other",
+            "@type": "@id"
+        },
+        "children": {
+            "@id": "questionnaire_across_all_cohorts_demographics:children",
+            "@type": "@id"
+        },
+        "parent": {
+            "@id": "questionnaire_across_all_cohorts_demographics:parent",
+            "@type": "@id"
+        },
+        "grandparent": {
+            "@id": "questionnaire_across_all_cohorts_demographics:grandparent",
+            "@type": "@id"
+        },
+        "other_live_with": {
+            "@id": "questionnaire_across_all_cohorts_demographics:other_live_with",
+            "@type": "@id"
+        },
+        "others_household_specify": {
+            "@id": "questionnaire_across_all_cohorts_demographics:others_household_specify",
+            "@type": "@id"
+        },
+        "transportation_yn": {
+            "@id": "questionnaire_across_all_cohorts_demographics:transportation_yn",
+            "@type": "@id"
+        },
+        "primary_transportation": {
+            "@id": "questionnaire_across_all_cohorts_demographics:primary_transportation",
+            "@type": "@id"
+        },
+        "other_transportation": {
+            "@id": "questionnaire_across_all_cohorts_demographics:other_transportation",
+            "@type": "@id"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "valueType": "radio",
+        "choices": [
+            {
+                "schema:value": 1004,
+                "schema:name": "American Indian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 1735,
+                "schema:name": "Alaska Native",
+                "@type": "schema:option"
+            }
+        ]
+    },
+    "question": {
+        "en": "American Indian or Alaska Native"
+    }
+}

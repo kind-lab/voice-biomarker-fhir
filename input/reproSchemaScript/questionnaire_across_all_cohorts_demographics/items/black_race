@@ -1,0 +1,72 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "valueType": "radio",
+        "choices": [
+            {
+                "schema:value": 2058,
+                "schema:name": "African American ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2060,
+                "schema:name": "African ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2067,
+                "schema:name": "Bahamian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2068,
+                "schema:name": "Barbadian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2069,
+                "schema:name": "Dominican ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2070,
+                "schema:name": "Dominica Islander ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2071,
+                "schema:name": "Haitian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2072,
+                "schema:name": "Jamaican ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2073,
+                "schema:name": "Tobagoan ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2074,
+                "schema:name": "Trinidadian ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2075,
+                "schema:name": "West Indian",
+                "@type": "schema:option"
+            }
+        ]
+    },
+    "question": {
+        "en": "Black or African American"
+    }
+}

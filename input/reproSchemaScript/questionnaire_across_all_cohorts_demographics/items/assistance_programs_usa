@@ -1,0 +1,43 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "radio"
+    },
+    "responseOptions": {
+        "valueType": "radio",
+        "choices": [
+            {
+                "schema:value": 1,
+                "schema:name": "Supplemental Security Income (SSI) ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "Supplemental Nutrition Assistance Program (SNAP) ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "Special Supplemental Nutrition Program for Women",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 4,
+                "schema:name": "Temporary Assistance for Needy Families (TANF)",
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/including Pass through Child Support .png"
+            },
+            {
+                "schema:value": 5,
+                "schema:name": "General Assistance (GA)",
+                "@type": "schema:option"
+            }
+        ]
+    },
+    "question": {
+        "en": "Do you take advantage of any of the following programs? \nChoose all that apply"
+    }
+}

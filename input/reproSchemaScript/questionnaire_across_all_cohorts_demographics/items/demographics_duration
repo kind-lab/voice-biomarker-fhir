@@ -1,0 +1,19 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "ui": {
+        "inputType": "text"
+    },
+    "responseOptions": {
+        "valueType": "xsd:int",
+        "schema:minValue": "0"
+    },
+    "question": {
+        "en": "Questionnaire Duration (seconds)"
+    },
+    "schema:description": {
+        "en": " @READONLY"
+    }
+}
