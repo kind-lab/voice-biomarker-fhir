@@ -68,6 +68,10 @@ jobs:
           cd ./tofsh
           pip install -e .
           ls
+          cp .env.example .env
+          cd b2ai-reproschemav3.1
+          ls -a
+          cd ..
           ./job.sh
           ls
           cd ..
