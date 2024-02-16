@@ -66,6 +66,7 @@ jobs:
         shell: bash
         run: |
           cd ./tofsh
+          pip install -e .
           ./job.sh
           ls
           cd ..
