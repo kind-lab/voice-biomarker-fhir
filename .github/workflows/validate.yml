@@ -13,7 +13,10 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "17"
-
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' 
     # Install ruby
     # https://github.com/ruby/setup-ruby
       - uses: ruby/setup-ruby@v1
@@ -43,13 +46,48 @@ jobs:
           sushi --version
           sushi .
 
+
+    # Install GOFSH if needed
+      - name: "Install GOFSH"
+        shell: bash
+        run: |
+          npm install -g gofsh@1.6.4
+          gofsh --version
+
+    # Install reproschema2fhir if needed
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: kind-lab/reproschema-to-fhir
+          submodules: 'true'
+          path: './tofsh'
+          ssh-key: ${{ secrets.SSH_DEPLOY_KEY }}
+    
+    # Call Gofsh if needed
+      - name: Checkout
+        shell: bash
+        run: |
+          cd ./tofsh
+          pip install -e .
+          cp .env.example .env
+          git submodule update --init --recursive
+          echo -e "CODESYSTEM_URI = https://voicecollab.ai/fhir/CodeSystem/\nVALUESET_URI = https://voicecollab.ai/fhir/ValueSet/\nQUESTIONNAIRE_URI = https://voicecollab.ai/fhir/Questionnaire/\nQUESTIONNAIRE_LANGUAGE = en\nFHIR_QUESTIONNAIRE_MODE = AnswerOptions" >> .env
+          ./job.sh
+          cd ..
+          cp -r ./tofsh/output/ fsh_files
+          gofsh fsh_files
+          rm -r ./input/fsh
+          cp -r gofsh/input/fsh ./input/fsh
+          sushi .
+
+
       - name: "Download the IG Publisher"
         shell: bash
         run: |
           mkdir ./input-cache
           curl -sS -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar
           chmod +x ./input-cache/publisher.jar
-    # Download the IG Publisher
+      
       - name: "Create IG"
         shell: bash
         run: |
