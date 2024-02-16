@@ -104,7 +104,7 @@ jobs:
             cd website
             ls
             echo "removing vbai-fhir"
-            cp ../output website/vbai-fhir
+            cp -r ../output website/vbai-fhir
             git add vbai-fhir
             git commit -a -m "$(date): update vbai-fhir"
             git push
