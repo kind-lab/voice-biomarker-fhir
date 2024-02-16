@@ -1,5 +1,7 @@
 name: Build the IG
-on: [push]
+on:
+  release:
+    types: [published]
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -71,7 +73,6 @@ jobs:
           pip install -e .
           cp .env.example .env
           git submodule update --init --recursive
-          ls -a
           echo -e "CODESYSTEM_URI = https://voicecollab.ai/fhir/CodeSystem/\nVALUESET_URI = https://voicecollab.ai/fhir/ValueSet/\nQUESTIONNAIRE_URI = https://voicecollab.ai/fhir/Questionnaire/\nQUESTIONNAIRE_LANGUAGE = en\nFHIR_QUESTIONNAIRE_MODE = AnswerOptions" >> .env
           ./job.sh
           cd ..
@@ -79,7 +80,6 @@ jobs:
           gofsh fsh_files
           rm -r ./input/fsh
           cp -r gofsh/input/fsh ./input/fsh
-          ls -lR
           sushi .
 
 
@@ -99,13 +99,13 @@ jobs:
       
       - name: "Deploy to kind-lab.github.io"
         run: |
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git config --global user.name "github-actions[bot]"
-            git config --global credential.helper cache
-            git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/kind-lab.github.io website
-            mkdir -p website/vbai-fhir
-            cp -r ./git-output/vbai-fhir website
-            cd website
-            git add vbai-fhir
-            git commit -a -m "$(date): update vbai-fhir"
-            git push
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global credential.helper cache
+          git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/kind-lab.github.io website
+          mkdir -p website/vbai-fhir
+          cp -r ./git-output/vbai-fhir website
+          cd website
+          git add vbai-fhir
+          git commit -a -m "$(date): update vbai-fhir"
+          git push
