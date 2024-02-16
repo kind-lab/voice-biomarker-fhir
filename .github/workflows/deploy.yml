@@ -13,7 +13,10 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "17"
-
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' 
     # Install ruby
     # https://github.com/ruby/setup-ruby
       - uses: ruby/setup-ruby@v1
@@ -62,10 +65,9 @@ jobs:
       - name: Checkout
         shell: bash
         run: |
-
           cd ./tofsh
-          ls 
           ./job.sh
+          ls
           cd ..
           cp -r ./tofsh/output/ .
           gofsh /
