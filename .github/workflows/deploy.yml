@@ -62,6 +62,7 @@ jobs:
       - name: Checkout
         shell: bash
         run: |
+          ls
           cd ./tofsh
           ./job.sh
           cd ..
