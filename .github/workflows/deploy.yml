@@ -77,6 +77,7 @@ jobs:
           cd ..
           cp -r ./tofsh/output/ fsh_files
           gofsh fsh_files
+          rm -r ./input
           cp -r gofsh/input ./input
           ls -lR
           sushi .
