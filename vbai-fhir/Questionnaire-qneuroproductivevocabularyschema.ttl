@@ -1,0 +1,2391 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/Questionnaire/qneuroproductivevocabularyschema> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "qneuroproductivevocabularyschema"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The linkId for the item\">LinkId</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the itemcan appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">https://voicecollab.ai/fhir/Questionnaire/qneuroproductivevocabularyschema#1.5.1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_session_id\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> vocabulary_session_id</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Session ID</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_started_at\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> vocabulary_started_at</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Started At</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_recording_acoustic_task_id\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> vocabulary_recording_acoustic_task_id</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Acoustic Task ID</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_completed_at\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> vocabulary_completed_at</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Completed At</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_duration\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> vocabulary_duration</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Duration (seconds)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_1\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 1\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_1\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_1\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 1\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_1\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_correct_1\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 1\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_1\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_2\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_2</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 2\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_2\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_2\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_2</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 2\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_2\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_correct_2\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_2</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 2\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_2\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_3\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_3</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 3\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_3\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_3\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_3</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 3\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_3\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_correct_3\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_3</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 3\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_3\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_4\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_4</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 4\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_4\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_4\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_4</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 4\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_4\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_correct_4\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_4</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 4\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_4\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_5\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_5</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 5\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_5\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_5\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_5</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 5\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_5\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_correct_5\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_5</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 5\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_5\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_6\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_6</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 6\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_6\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_6\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_6</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 6\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_6\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" id=\"item.vocabulary_item_correct_6\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_6</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 6\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_6\">2 options</a></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Option Sets</b></p><a name=\"opt-item.vocabulary_item_word_1\"> </a><p><b>Answer options for vocabulary_item_word_1</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_1\"> </a><p><b>Answer options for vocabulary_item_difficulty_1</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_1\"> </a><p><b>Answer options for vocabulary_item_correct_1</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul><a name=\"opt-item.vocabulary_item_word_2\"> </a><p><b>Answer options for vocabulary_item_word_2</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_2\"> </a><p><b>Answer options for vocabulary_item_difficulty_2</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_2\"> </a><p><b>Answer options for vocabulary_item_correct_2</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul><a name=\"opt-item.vocabulary_item_word_3\"> </a><p><b>Answer options for vocabulary_item_word_3</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_3\"> </a><p><b>Answer options for vocabulary_item_difficulty_3</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_3\"> </a><p><b>Answer options for vocabulary_item_correct_3</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul><a name=\"opt-item.vocabulary_item_word_4\"> </a><p><b>Answer options for vocabulary_item_word_4</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_4\"> </a><p><b>Answer options for vocabulary_item_difficulty_4</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_4\"> </a><p><b>Answer options for vocabulary_item_correct_4</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul><a name=\"opt-item.vocabulary_item_word_5\"> </a><p><b>Answer options for vocabulary_item_word_5</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_5\"> </a><p><b>Answer options for vocabulary_item_difficulty_5</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_5\"> </a><p><b>Answer options for vocabulary_item_correct_5</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul><a name=\"opt-item.vocabulary_item_word_6\"> </a><p><b>Answer options for vocabulary_item_word_6</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_6\"> </a><p><b>Answer options for vocabulary_item_difficulty_6</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_6\"> </a><p><b>Answer options for vocabulary_item_correct_6</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/qneuroproductivevocabularyschema"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.5.1"] ; # 
+  fhir:title [ fhir:v "q_neuro_productive_vocabulary_schema"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-02-16T18:42:10Z"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "vocabulary_session_id" ] ;
+     fhir:text [ fhir:v "Session ID" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_started_at" ] ;
+     fhir:text [ fhir:v "Questionnaire Started At" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_recording_acoustic_task_id" ] ;
+     fhir:text [ fhir:v "Acoustic Task ID" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_completed_at" ] ;
+     fhir:text [ fhir:v "Questionnaire Completed At" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_duration" ] ;
+     fhir:text [ fhir:v "Questionnaire Duration (seconds)" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_word_1" ] ;
+     fhir:text [ fhir:v "Item 1\nWord" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "boil " ]
+     ] [
+       fhir:value [ fhir:v "duckling " ]
+     ] [
+       fhir:value [ fhir:v "cupboard " ]
+     ] [
+       fhir:value [ fhir:v "workbench " ]
+     ] [
+       fhir:value [ fhir:v "agreeable " ]
+     ] [
+       fhir:value [ fhir:v "swear " ]
+     ] [
+       fhir:value [ fhir:v "cap " ]
+     ] [
+       fhir:value [ fhir:v "unwire " ]
+     ] [
+       fhir:value [ fhir:v "guitarist " ]
+     ] [
+       fhir:value [ fhir:v "hardcover " ]
+     ] [
+       fhir:value [ fhir:v "broccoli " ]
+     ] [
+       fhir:value [ fhir:v "unsolved " ]
+     ] [
+       fhir:value [ fhir:v "coral " ]
+     ] [
+       fhir:value [ fhir:v "gladiator " ]
+     ] [
+       fhir:value [ fhir:v "monkey " ]
+     ] [
+       fhir:value [ fhir:v "jobless " ]
+     ] [
+       fhir:value [ fhir:v "capitalization " ]
+     ] [
+       fhir:value [ fhir:v "selfish " ]
+     ] [
+       fhir:value [ fhir:v "emptiness " ]
+     ] [
+       fhir:value [ fhir:v "pain " ]
+     ] [
+       fhir:value [ fhir:v "brainpower " ]
+     ] [
+       fhir:value [ fhir:v "lettuce " ]
+     ] [
+       fhir:value [ fhir:v "wartime " ]
+     ] [
+       fhir:value [ fhir:v "newsboy " ]
+     ] [
+       fhir:value [ fhir:v "equipment " ]
+     ] [
+       fhir:value [ fhir:v "sensation " ]
+     ] [
+       fhir:value [ fhir:v "burglar " ]
+     ] [
+       fhir:value [ fhir:v "idiotic " ]
+     ] [
+       fhir:value [ fhir:v "spoils " ]
+     ] [
+       fhir:value [ fhir:v "belong " ]
+     ] [
+       fhir:value [ fhir:v "greeter " ]
+     ] [
+       fhir:value [ fhir:v "screech " ]
+     ] [
+       fhir:value [ fhir:v "tardy " ]
+     ] [
+       fhir:value [ fhir:v "viewing " ]
+     ] [
+       fhir:value [ fhir:v "heating " ]
+     ] [
+       fhir:value [ fhir:v "homeward " ]
+     ] [
+       fhir:value [ fhir:v "payment " ]
+     ] [
+       fhir:value [ fhir:v "refereeing " ]
+     ] [
+       fhir:value [ fhir:v "canyon " ]
+     ] [
+       fhir:value [ fhir:v "nutmeg " ]
+     ] [
+       fhir:value [ fhir:v "birdcage " ]
+     ] [
+       fhir:value [ fhir:v "killer " ]
+     ] [
+       fhir:value [ fhir:v "waistband " ]
+     ] [
+       fhir:value [ fhir:v "mutter " ]
+     ] [
+       fhir:value [ fhir:v "specific " ]
+     ] [
+       fhir:value [ fhir:v "clerk " ]
+     ] [
+       fhir:value [ fhir:v "orphaned " ]
+     ] [
+       fhir:value [ fhir:v "bat " ]
+     ] [
+       fhir:value [ fhir:v "bakeshop " ]
+     ] [
+       fhir:value [ fhir:v "hilarious " ]
+     ] [
+       fhir:value [ fhir:v "cheeseburger " ]
+     ] [
+       fhir:value [ fhir:v "able " ]
+     ] [
+       fhir:value [ fhir:v "morning " ]
+     ] [
+       fhir:value [ fhir:v "tradition " ]
+     ] [
+       fhir:value [ fhir:v "jean " ]
+     ] [
+       fhir:value [ fhir:v "merry " ]
+     ] [
+       fhir:value [ fhir:v "sunset " ]
+     ] [
+       fhir:value [ fhir:v "stand " ]
+     ] [
+       fhir:value [ fhir:v "sportsmanlike " ]
+     ] [
+       fhir:value [ fhir:v "superstitious " ]
+     ] [
+       fhir:value [ fhir:v "weightless " ]
+     ] [
+       fhir:value [ fhir:v "vibration " ]
+     ] [
+       fhir:value [ fhir:v "spotless " ]
+     ] [
+       fhir:value [ fhir:v "plank " ]
+     ] [
+       fhir:value [ fhir:v "pebble " ]
+     ] [
+       fhir:value [ fhir:v "wastebasket " ]
+     ] [
+       fhir:value [ fhir:v "envy " ]
+     ] [
+       fhir:value [ fhir:v "hammer " ]
+     ] [
+       fhir:value [ fhir:v "sun " ]
+     ] [
+       fhir:value [ fhir:v "whole " ]
+     ] [
+       fhir:value [ fhir:v "faucet " ]
+     ] [
+       fhir:value [ fhir:v "cursive " ]
+     ] [
+       fhir:value [ fhir:v "tire " ]
+     ] [
+       fhir:value [ fhir:v "perch " ]
+     ] [
+       fhir:value [ fhir:v "invitation " ]
+     ] [
+       fhir:value [ fhir:v "continent " ]
+     ] [
+       fhir:value [ fhir:v "membership " ]
+     ] [
+       fhir:value [ fhir:v "scramble " ]
+     ] [
+       fhir:value [ fhir:v "wood " ]
+     ] [
+       fhir:value [ fhir:v "pheasant " ]
+     ] [
+       fhir:value [ fhir:v "anonymous " ]
+     ] [
+       fhir:value [ fhir:v "strategic " ]
+     ] [
+       fhir:value [ fhir:v "polling " ]
+     ] [
+       fhir:value [ fhir:v "combustion " ]
+     ] [
+       fhir:value [ fhir:v "remembrance " ]
+     ] [
+       fhir:value [ fhir:v "obscure " ]
+     ] [
+       fhir:value [ fhir:v "cleric " ]
+     ] [
+       fhir:value [ fhir:v "outrank " ]
+     ] [
+       fhir:value [ fhir:v "absolution " ]
+     ] [
+       fhir:value [ fhir:v "priesthood " ]
+     ] [
+       fhir:value [ fhir:v "critic " ]
+     ] [
+       fhir:value [ fhir:v "uncensored " ]
+     ] [
+       fhir:value [ fhir:v "hobbyist " ]
+     ] [
+       fhir:value [ fhir:v "perilous " ]
+     ] [
+       fhir:value [ fhir:v "irate " ]
+     ] [
+       fhir:value [ fhir:v "global " ]
+     ] [
+       fhir:value [ fhir:v "hovel " ]
+     ] [
+       fhir:value [ fhir:v "sophomore " ]
+     ] [
+       fhir:value [ fhir:v "dirham " ]
+     ] [
+       fhir:value [ fhir:v "keen " ]
+     ] [
+       fhir:value [ fhir:v "fuddle " ]
+     ] [
+       fhir:value [ fhir:v "battlewagon " ]
+     ] [
+       fhir:value [ fhir:v "entail " ]
+     ] [
+       fhir:value [ fhir:v "scarab " ]
+     ] [
+       fhir:value [ fhir:v "dank " ]
+     ] [
+       fhir:value [ fhir:v "guarantee " ]
+     ] [
+       fhir:value [ fhir:v "adjuster " ]
+     ] [
+       fhir:value [ fhir:v "enliven " ]
+     ] [
+       fhir:value [ fhir:v "biodegradable " ]
+     ] [
+       fhir:value [ fhir:v "enfold " ]
+     ] [
+       fhir:value [ fhir:v "amputee " ]
+     ] [
+       fhir:value [ fhir:v "trench " ]
+     ] [
+       fhir:value [ fhir:v "ovation " ]
+     ] [
+       fhir:value [ fhir:v "unsuitable " ]
+     ] [
+       fhir:value [ fhir:v "suburban " ]
+     ] [
+       fhir:value [ fhir:v "memento " ]
+     ] [
+       fhir:value [ fhir:v "inevitable " ]
+     ] [
+       fhir:value [ fhir:v "marine " ]
+     ] [
+       fhir:value [ fhir:v "uncorrupted " ]
+     ] [
+       fhir:value [ fhir:v "mystique " ]
+     ] [
+       fhir:value [ fhir:v "behemoth " ]
+     ] [
+       fhir:value [ fhir:v "marshland " ]
+     ] [
+       fhir:value [ fhir:v "unaltered " ]
+     ] [
+       fhir:value [ fhir:v "minority " ]
+     ] [
+       fhir:value [ fhir:v "illicit " ]
+     ] [
+       fhir:value [ fhir:v "stockbroker " ]
+     ] [
+       fhir:value [ fhir:v "luster " ]
+     ] [
+       fhir:value [ fhir:v "contort " ]
+     ] [
+       fhir:value [ fhir:v "crimping " ]
+     ] [
+       fhir:value [ fhir:v "finery " ]
+     ] [
+       fhir:value [ fhir:v "feminist " ]
+     ] [
+       fhir:value [ fhir:v "hallmark " ]
+     ] [
+       fhir:value [ fhir:v "showy " ]
+     ] [
+       fhir:value [ fhir:v "tarantella " ]
+     ] [
+       fhir:value [ fhir:v "restaurateur " ]
+     ] [
+       fhir:value [ fhir:v "uncanny " ]
+     ] [
+       fhir:value [ fhir:v "kilter " ]
+     ] [
+       fhir:value [ fhir:v "legislation " ]
+     ] [
+       fhir:value [ fhir:v "illogical " ]
+     ] [
+       fhir:value [ fhir:v "entirety " ]
+     ] [
+       fhir:value [ fhir:v "irreparable " ]
+     ] [
+       fhir:value [ fhir:v "itinerary " ]
+     ] [
+       fhir:value [ fhir:v "concept " ]
+     ] [
+       fhir:value [ fhir:v "quivering " ]
+     ] [
+       fhir:value [ fhir:v "plagiarize " ]
+     ] [
+       fhir:value [ fhir:v "effectiveness " ]
+     ] [
+       fhir:value [ fhir:v "portrayal " ]
+     ] [
+       fhir:value [ fhir:v "civilization " ]
+     ] [
+       fhir:value [ fhir:v "variation " ]
+     ] [
+       fhir:value [ fhir:v "omen " ]
+     ] [
+       fhir:value [ fhir:v "teriyaki " ]
+     ] [
+       fhir:value [ fhir:v "oligarch " ]
+     ] [
+       fhir:value [ fhir:v "compartmentalize " ]
+     ] [
+       fhir:value [ fhir:v "lemma " ]
+     ] [
+       fhir:value [ fhir:v "aquaplane " ]
+     ] [
+       fhir:value [ fhir:v "homicidal " ]
+     ] [
+       fhir:value [ fhir:v "editorialize " ]
+     ] [
+       fhir:value [ fhir:v "inkling " ]
+     ] [
+       fhir:value [ fhir:v "valency " ]
+     ] [
+       fhir:value [ fhir:v "mesosphere " ]
+     ] [
+       fhir:value [ fhir:v "distillate " ]
+     ] [
+       fhir:value [ fhir:v "deduce " ]
+     ] [
+       fhir:value [ fhir:v "deformation " ]
+     ] [
+       fhir:value [ fhir:v "puerile " ]
+     ] [
+       fhir:value [ fhir:v "cynical " ]
+     ] [
+       fhir:value [ fhir:v "surreal " ]
+     ] [
+       fhir:value [ fhir:v "denigrate " ]
+     ] [
+       fhir:value [ fhir:v "unconventionality " ]
+     ] [
+       fhir:value [ fhir:v "maceration " ]
+     ] [
+       fhir:value [ fhir:v "jocularity " ]
+     ] [
+       fhir:value [ fhir:v "poignant " ]
+     ] [
+       fhir:value [ fhir:v "subornation " ]
+     ] [
+       fhir:value [ fhir:v "heliotrope " ]
+     ] [
+       fhir:value [ fhir:v "clef " ]
+     ] [
+       fhir:value [ fhir:v "exudation " ]
+     ] [
+       fhir:value [ fhir:v "inequitable " ]
+     ] [
+       fhir:value [ fhir:v "lox " ]
+     ] [
+       fhir:value [ fhir:v "loyalist " ]
+     ] [
+       fhir:value [ fhir:v "immutable " ]
+     ] [
+       fhir:value [ fhir:v "conga " ]
+     ] [
+       fhir:value [ fhir:v "affirmation " ]
+     ] [
+       fhir:value [ fhir:v "pejorative" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_difficulty_1" ] ;
+     fhir:text [ fhir:v "Item 1\nWord Difficulty" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "1 " ]
+     ] [
+       fhir:value [ fhir:v "2 " ]
+     ] [
+       fhir:value [ fhir:v "3" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_correct_1" ] ;
+     fhir:text [ fhir:v "Item 1\nCorrect?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Yes " ]
+     ] [
+       fhir:value [ fhir:v "No" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_word_2" ] ;
+     fhir:text [ fhir:v "Item 2\nWord" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "boil " ]
+     ] [
+       fhir:value [ fhir:v "duckling " ]
+     ] [
+       fhir:value [ fhir:v "cupboard " ]
+     ] [
+       fhir:value [ fhir:v "workbench " ]
+     ] [
+       fhir:value [ fhir:v "agreeable " ]
+     ] [
+       fhir:value [ fhir:v "swear " ]
+     ] [
+       fhir:value [ fhir:v "cap " ]
+     ] [
+       fhir:value [ fhir:v "unwire " ]
+     ] [
+       fhir:value [ fhir:v "guitarist " ]
+     ] [
+       fhir:value [ fhir:v "hardcover " ]
+     ] [
+       fhir:value [ fhir:v "broccoli " ]
+     ] [
+       fhir:value [ fhir:v "unsolved " ]
+     ] [
+       fhir:value [ fhir:v "coral " ]
+     ] [
+       fhir:value [ fhir:v "gladiator " ]
+     ] [
+       fhir:value [ fhir:v "monkey " ]
+     ] [
+       fhir:value [ fhir:v "jobless " ]
+     ] [
+       fhir:value [ fhir:v "capitalization " ]
+     ] [
+       fhir:value [ fhir:v "selfish " ]
+     ] [
+       fhir:value [ fhir:v "emptiness " ]
+     ] [
+       fhir:value [ fhir:v "pain " ]
+     ] [
+       fhir:value [ fhir:v "brainpower " ]
+     ] [
+       fhir:value [ fhir:v "lettuce " ]
+     ] [
+       fhir:value [ fhir:v "wartime " ]
+     ] [
+       fhir:value [ fhir:v "newsboy " ]
+     ] [
+       fhir:value [ fhir:v "equipment " ]
+     ] [
+       fhir:value [ fhir:v "sensation " ]
+     ] [
+       fhir:value [ fhir:v "burglar " ]
+     ] [
+       fhir:value [ fhir:v "idiotic " ]
+     ] [
+       fhir:value [ fhir:v "spoils " ]
+     ] [
+       fhir:value [ fhir:v "belong " ]
+     ] [
+       fhir:value [ fhir:v "greeter " ]
+     ] [
+       fhir:value [ fhir:v "screech " ]
+     ] [
+       fhir:value [ fhir:v "tardy " ]
+     ] [
+       fhir:value [ fhir:v "viewing " ]
+     ] [
+       fhir:value [ fhir:v "heating " ]
+     ] [
+       fhir:value [ fhir:v "homeward " ]
+     ] [
+       fhir:value [ fhir:v "payment " ]
+     ] [
+       fhir:value [ fhir:v "refereeing " ]
+     ] [
+       fhir:value [ fhir:v "canyon " ]
+     ] [
+       fhir:value [ fhir:v "nutmeg " ]
+     ] [
+       fhir:value [ fhir:v "birdcage " ]
+     ] [
+       fhir:value [ fhir:v "killer " ]
+     ] [
+       fhir:value [ fhir:v "waistband " ]
+     ] [
+       fhir:value [ fhir:v "mutter " ]
+     ] [
+       fhir:value [ fhir:v "specific " ]
+     ] [
+       fhir:value [ fhir:v "clerk " ]
+     ] [
+       fhir:value [ fhir:v "orphaned " ]
+     ] [
+       fhir:value [ fhir:v "bat " ]
+     ] [
+       fhir:value [ fhir:v "bakeshop " ]
+     ] [
+       fhir:value [ fhir:v "hilarious " ]
+     ] [
+       fhir:value [ fhir:v "cheeseburger " ]
+     ] [
+       fhir:value [ fhir:v "able " ]
+     ] [
+       fhir:value [ fhir:v "morning " ]
+     ] [
+       fhir:value [ fhir:v "tradition " ]
+     ] [
+       fhir:value [ fhir:v "jean " ]
+     ] [
+       fhir:value [ fhir:v "merry " ]
+     ] [
+       fhir:value [ fhir:v "sunset " ]
+     ] [
+       fhir:value [ fhir:v "stand " ]
+     ] [
+       fhir:value [ fhir:v "sportsmanlike " ]
+     ] [
+       fhir:value [ fhir:v "superstitious " ]
+     ] [
+       fhir:value [ fhir:v "weightless " ]
+     ] [
+       fhir:value [ fhir:v "vibration " ]
+     ] [
+       fhir:value [ fhir:v "spotless " ]
+     ] [
+       fhir:value [ fhir:v "plank " ]
+     ] [
+       fhir:value [ fhir:v "pebble " ]
+     ] [
+       fhir:value [ fhir:v "wastebasket " ]
+     ] [
+       fhir:value [ fhir:v "envy " ]
+     ] [
+       fhir:value [ fhir:v "hammer " ]
+     ] [
+       fhir:value [ fhir:v "sun " ]
+     ] [
+       fhir:value [ fhir:v "whole " ]
+     ] [
+       fhir:value [ fhir:v "faucet " ]
+     ] [
+       fhir:value [ fhir:v "cursive " ]
+     ] [
+       fhir:value [ fhir:v "tire " ]
+     ] [
+       fhir:value [ fhir:v "perch " ]
+     ] [
+       fhir:value [ fhir:v "invitation " ]
+     ] [
+       fhir:value [ fhir:v "continent " ]
+     ] [
+       fhir:value [ fhir:v "membership " ]
+     ] [
+       fhir:value [ fhir:v "scramble " ]
+     ] [
+       fhir:value [ fhir:v "wood " ]
+     ] [
+       fhir:value [ fhir:v "pheasant " ]
+     ] [
+       fhir:value [ fhir:v "anonymous " ]
+     ] [
+       fhir:value [ fhir:v "strategic " ]
+     ] [
+       fhir:value [ fhir:v "polling " ]
+     ] [
+       fhir:value [ fhir:v "combustion " ]
+     ] [
+       fhir:value [ fhir:v "remembrance " ]
+     ] [
+       fhir:value [ fhir:v "obscure " ]
+     ] [
+       fhir:value [ fhir:v "cleric " ]
+     ] [
+       fhir:value [ fhir:v "outrank " ]
+     ] [
+       fhir:value [ fhir:v "absolution " ]
+     ] [
+       fhir:value [ fhir:v "priesthood " ]
+     ] [
+       fhir:value [ fhir:v "critic " ]
+     ] [
+       fhir:value [ fhir:v "uncensored " ]
+     ] [
+       fhir:value [ fhir:v "hobbyist " ]
+     ] [
+       fhir:value [ fhir:v "perilous " ]
+     ] [
+       fhir:value [ fhir:v "irate " ]
+     ] [
+       fhir:value [ fhir:v "global " ]
+     ] [
+       fhir:value [ fhir:v "hovel " ]
+     ] [
+       fhir:value [ fhir:v "sophomore " ]
+     ] [
+       fhir:value [ fhir:v "dirham " ]
+     ] [
+       fhir:value [ fhir:v "keen " ]
+     ] [
+       fhir:value [ fhir:v "fuddle " ]
+     ] [
+       fhir:value [ fhir:v "battlewagon " ]
+     ] [
+       fhir:value [ fhir:v "entail " ]
+     ] [
+       fhir:value [ fhir:v "scarab " ]
+     ] [
+       fhir:value [ fhir:v "dank " ]
+     ] [
+       fhir:value [ fhir:v "guarantee " ]
+     ] [
+       fhir:value [ fhir:v "adjuster " ]
+     ] [
+       fhir:value [ fhir:v "enliven " ]
+     ] [
+       fhir:value [ fhir:v "biodegradable " ]
+     ] [
+       fhir:value [ fhir:v "enfold " ]
+     ] [
+       fhir:value [ fhir:v "amputee " ]
+     ] [
+       fhir:value [ fhir:v "trench " ]
+     ] [
+       fhir:value [ fhir:v "ovation " ]
+     ] [
+       fhir:value [ fhir:v "unsuitable " ]
+     ] [
+       fhir:value [ fhir:v "suburban " ]
+     ] [
+       fhir:value [ fhir:v "memento " ]
+     ] [
+       fhir:value [ fhir:v "inevitable " ]
+     ] [
+       fhir:value [ fhir:v "marine " ]
+     ] [
+       fhir:value [ fhir:v "uncorrupted " ]
+     ] [
+       fhir:value [ fhir:v "mystique " ]
+     ] [
+       fhir:value [ fhir:v "behemoth " ]
+     ] [
+       fhir:value [ fhir:v "marshland " ]
+     ] [
+       fhir:value [ fhir:v "unaltered " ]
+     ] [
+       fhir:value [ fhir:v "minority " ]
+     ] [
+       fhir:value [ fhir:v "illicit " ]
+     ] [
+       fhir:value [ fhir:v "stockbroker " ]
+     ] [
+       fhir:value [ fhir:v "luster " ]
+     ] [
+       fhir:value [ fhir:v "contort " ]
+     ] [
+       fhir:value [ fhir:v "crimping " ]
+     ] [
+       fhir:value [ fhir:v "finery " ]
+     ] [
+       fhir:value [ fhir:v "feminist " ]
+     ] [
+       fhir:value [ fhir:v "hallmark " ]
+     ] [
+       fhir:value [ fhir:v "showy " ]
+     ] [
+       fhir:value [ fhir:v "tarantella " ]
+     ] [
+       fhir:value [ fhir:v "restaurateur " ]
+     ] [
+       fhir:value [ fhir:v "uncanny " ]
+     ] [
+       fhir:value [ fhir:v "kilter " ]
+     ] [
+       fhir:value [ fhir:v "legislation " ]
+     ] [
+       fhir:value [ fhir:v "illogical " ]
+     ] [
+       fhir:value [ fhir:v "entirety " ]
+     ] [
+       fhir:value [ fhir:v "irreparable " ]
+     ] [
+       fhir:value [ fhir:v "itinerary " ]
+     ] [
+       fhir:value [ fhir:v "concept " ]
+     ] [
+       fhir:value [ fhir:v "quivering " ]
+     ] [
+       fhir:value [ fhir:v "plagiarize " ]
+     ] [
+       fhir:value [ fhir:v "effectiveness " ]
+     ] [
+       fhir:value [ fhir:v "portrayal " ]
+     ] [
+       fhir:value [ fhir:v "civilization " ]
+     ] [
+       fhir:value [ fhir:v "variation " ]
+     ] [
+       fhir:value [ fhir:v "omen " ]
+     ] [
+       fhir:value [ fhir:v "teriyaki " ]
+     ] [
+       fhir:value [ fhir:v "oligarch " ]
+     ] [
+       fhir:value [ fhir:v "compartmentalize " ]
+     ] [
+       fhir:value [ fhir:v "lemma " ]
+     ] [
+       fhir:value [ fhir:v "aquaplane " ]
+     ] [
+       fhir:value [ fhir:v "homicidal " ]
+     ] [
+       fhir:value [ fhir:v "editorialize " ]
+     ] [
+       fhir:value [ fhir:v "inkling " ]
+     ] [
+       fhir:value [ fhir:v "valency " ]
+     ] [
+       fhir:value [ fhir:v "mesosphere " ]
+     ] [
+       fhir:value [ fhir:v "distillate " ]
+     ] [
+       fhir:value [ fhir:v "deduce " ]
+     ] [
+       fhir:value [ fhir:v "deformation " ]
+     ] [
+       fhir:value [ fhir:v "puerile " ]
+     ] [
+       fhir:value [ fhir:v "cynical " ]
+     ] [
+       fhir:value [ fhir:v "surreal " ]
+     ] [
+       fhir:value [ fhir:v "denigrate " ]
+     ] [
+       fhir:value [ fhir:v "unconventionality " ]
+     ] [
+       fhir:value [ fhir:v "maceration " ]
+     ] [
+       fhir:value [ fhir:v "jocularity " ]
+     ] [
+       fhir:value [ fhir:v "poignant " ]
+     ] [
+       fhir:value [ fhir:v "subornation " ]
+     ] [
+       fhir:value [ fhir:v "heliotrope " ]
+     ] [
+       fhir:value [ fhir:v "clef " ]
+     ] [
+       fhir:value [ fhir:v "exudation " ]
+     ] [
+       fhir:value [ fhir:v "inequitable " ]
+     ] [
+       fhir:value [ fhir:v "lox " ]
+     ] [
+       fhir:value [ fhir:v "loyalist " ]
+     ] [
+       fhir:value [ fhir:v "immutable " ]
+     ] [
+       fhir:value [ fhir:v "conga " ]
+     ] [
+       fhir:value [ fhir:v "affirmation " ]
+     ] [
+       fhir:value [ fhir:v "pejorative" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_difficulty_2" ] ;
+     fhir:text [ fhir:v "Item 2\nWord Difficulty" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "1 " ]
+     ] [
+       fhir:value [ fhir:v "2 " ]
+     ] [
+       fhir:value [ fhir:v "3" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_correct_2" ] ;
+     fhir:text [ fhir:v "Item 2\nCorrect?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Yes " ]
+     ] [
+       fhir:value [ fhir:v "No" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_word_3" ] ;
+     fhir:text [ fhir:v "Item 3\nWord" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "boil " ]
+     ] [
+       fhir:value [ fhir:v "duckling " ]
+     ] [
+       fhir:value [ fhir:v "cupboard " ]
+     ] [
+       fhir:value [ fhir:v "workbench " ]
+     ] [
+       fhir:value [ fhir:v "agreeable " ]
+     ] [
+       fhir:value [ fhir:v "swear " ]
+     ] [
+       fhir:value [ fhir:v "cap " ]
+     ] [
+       fhir:value [ fhir:v "unwire " ]
+     ] [
+       fhir:value [ fhir:v "guitarist " ]
+     ] [
+       fhir:value [ fhir:v "hardcover " ]
+     ] [
+       fhir:value [ fhir:v "broccoli " ]
+     ] [
+       fhir:value [ fhir:v "unsolved " ]
+     ] [
+       fhir:value [ fhir:v "coral " ]
+     ] [
+       fhir:value [ fhir:v "gladiator " ]
+     ] [
+       fhir:value [ fhir:v "monkey " ]
+     ] [
+       fhir:value [ fhir:v "jobless " ]
+     ] [
+       fhir:value [ fhir:v "capitalization " ]
+     ] [
+       fhir:value [ fhir:v "selfish " ]
+     ] [
+       fhir:value [ fhir:v "emptiness " ]
+     ] [
+       fhir:value [ fhir:v "pain " ]
+     ] [
+       fhir:value [ fhir:v "brainpower " ]
+     ] [
+       fhir:value [ fhir:v "lettuce " ]
+     ] [
+       fhir:value [ fhir:v "wartime " ]
+     ] [
+       fhir:value [ fhir:v "newsboy " ]
+     ] [
+       fhir:value [ fhir:v "equipment " ]
+     ] [
+       fhir:value [ fhir:v "sensation " ]
+     ] [
+       fhir:value [ fhir:v "burglar " ]
+     ] [
+       fhir:value [ fhir:v "idiotic " ]
+     ] [
+       fhir:value [ fhir:v "spoils " ]
+     ] [
+       fhir:value [ fhir:v "belong " ]
+     ] [
+       fhir:value [ fhir:v "greeter " ]
+     ] [
+       fhir:value [ fhir:v "screech " ]
+     ] [
+       fhir:value [ fhir:v "tardy " ]
+     ] [
+       fhir:value [ fhir:v "viewing " ]
+     ] [
+       fhir:value [ fhir:v "heating " ]
+     ] [
+       fhir:value [ fhir:v "homeward " ]
+     ] [
+       fhir:value [ fhir:v "payment " ]
+     ] [
+       fhir:value [ fhir:v "refereeing " ]
+     ] [
+       fhir:value [ fhir:v "canyon " ]
+     ] [
+       fhir:value [ fhir:v "nutmeg " ]
+     ] [
+       fhir:value [ fhir:v "birdcage " ]
+     ] [
+       fhir:value [ fhir:v "killer " ]
+     ] [
+       fhir:value [ fhir:v "waistband " ]
+     ] [
+       fhir:value [ fhir:v "mutter " ]
+     ] [
+       fhir:value [ fhir:v "specific " ]
+     ] [
+       fhir:value [ fhir:v "clerk " ]
+     ] [
+       fhir:value [ fhir:v "orphaned " ]
+     ] [
+       fhir:value [ fhir:v "bat " ]
+     ] [
+       fhir:value [ fhir:v "bakeshop " ]
+     ] [
+       fhir:value [ fhir:v "hilarious " ]
+     ] [
+       fhir:value [ fhir:v "cheeseburger " ]
+     ] [
+       fhir:value [ fhir:v "able " ]
+     ] [
+       fhir:value [ fhir:v "morning " ]
+     ] [
+       fhir:value [ fhir:v "tradition " ]
+     ] [
+       fhir:value [ fhir:v "jean " ]
+     ] [
+       fhir:value [ fhir:v "merry " ]
+     ] [
+       fhir:value [ fhir:v "sunset " ]
+     ] [
+       fhir:value [ fhir:v "stand " ]
+     ] [
+       fhir:value [ fhir:v "sportsmanlike " ]
+     ] [
+       fhir:value [ fhir:v "superstitious " ]
+     ] [
+       fhir:value [ fhir:v "weightless " ]
+     ] [
+       fhir:value [ fhir:v "vibration " ]
+     ] [
+       fhir:value [ fhir:v "spotless " ]
+     ] [
+       fhir:value [ fhir:v "plank " ]
+     ] [
+       fhir:value [ fhir:v "pebble " ]
+     ] [
+       fhir:value [ fhir:v "wastebasket " ]
+     ] [
+       fhir:value [ fhir:v "envy " ]
+     ] [
+       fhir:value [ fhir:v "hammer " ]
+     ] [
+       fhir:value [ fhir:v "sun " ]
+     ] [
+       fhir:value [ fhir:v "whole " ]
+     ] [
+       fhir:value [ fhir:v "faucet " ]
+     ] [
+       fhir:value [ fhir:v "cursive " ]
+     ] [
+       fhir:value [ fhir:v "tire " ]
+     ] [
+       fhir:value [ fhir:v "perch " ]
+     ] [
+       fhir:value [ fhir:v "invitation " ]
+     ] [
+       fhir:value [ fhir:v "continent " ]
+     ] [
+       fhir:value [ fhir:v "membership " ]
+     ] [
+       fhir:value [ fhir:v "scramble " ]
+     ] [
+       fhir:value [ fhir:v "wood " ]
+     ] [
+       fhir:value [ fhir:v "pheasant " ]
+     ] [
+       fhir:value [ fhir:v "anonymous " ]
+     ] [
+       fhir:value [ fhir:v "strategic " ]
+     ] [
+       fhir:value [ fhir:v "polling " ]
+     ] [
+       fhir:value [ fhir:v "combustion " ]
+     ] [
+       fhir:value [ fhir:v "remembrance " ]
+     ] [
+       fhir:value [ fhir:v "obscure " ]
+     ] [
+       fhir:value [ fhir:v "cleric " ]
+     ] [
+       fhir:value [ fhir:v "outrank " ]
+     ] [
+       fhir:value [ fhir:v "absolution " ]
+     ] [
+       fhir:value [ fhir:v "priesthood " ]
+     ] [
+       fhir:value [ fhir:v "critic " ]
+     ] [
+       fhir:value [ fhir:v "uncensored " ]
+     ] [
+       fhir:value [ fhir:v "hobbyist " ]
+     ] [
+       fhir:value [ fhir:v "perilous " ]
+     ] [
+       fhir:value [ fhir:v "irate " ]
+     ] [
+       fhir:value [ fhir:v "global " ]
+     ] [
+       fhir:value [ fhir:v "hovel " ]
+     ] [
+       fhir:value [ fhir:v "sophomore " ]
+     ] [
+       fhir:value [ fhir:v "dirham " ]
+     ] [
+       fhir:value [ fhir:v "keen " ]
+     ] [
+       fhir:value [ fhir:v "fuddle " ]
+     ] [
+       fhir:value [ fhir:v "battlewagon " ]
+     ] [
+       fhir:value [ fhir:v "entail " ]
+     ] [
+       fhir:value [ fhir:v "scarab " ]
+     ] [
+       fhir:value [ fhir:v "dank " ]
+     ] [
+       fhir:value [ fhir:v "guarantee " ]
+     ] [
+       fhir:value [ fhir:v "adjuster " ]
+     ] [
+       fhir:value [ fhir:v "enliven " ]
+     ] [
+       fhir:value [ fhir:v "biodegradable " ]
+     ] [
+       fhir:value [ fhir:v "enfold " ]
+     ] [
+       fhir:value [ fhir:v "amputee " ]
+     ] [
+       fhir:value [ fhir:v "trench " ]
+     ] [
+       fhir:value [ fhir:v "ovation " ]
+     ] [
+       fhir:value [ fhir:v "unsuitable " ]
+     ] [
+       fhir:value [ fhir:v "suburban " ]
+     ] [
+       fhir:value [ fhir:v "memento " ]
+     ] [
+       fhir:value [ fhir:v "inevitable " ]
+     ] [
+       fhir:value [ fhir:v "marine " ]
+     ] [
+       fhir:value [ fhir:v "uncorrupted " ]
+     ] [
+       fhir:value [ fhir:v "mystique " ]
+     ] [
+       fhir:value [ fhir:v "behemoth " ]
+     ] [
+       fhir:value [ fhir:v "marshland " ]
+     ] [
+       fhir:value [ fhir:v "unaltered " ]
+     ] [
+       fhir:value [ fhir:v "minority " ]
+     ] [
+       fhir:value [ fhir:v "illicit " ]
+     ] [
+       fhir:value [ fhir:v "stockbroker " ]
+     ] [
+       fhir:value [ fhir:v "luster " ]
+     ] [
+       fhir:value [ fhir:v "contort " ]
+     ] [
+       fhir:value [ fhir:v "crimping " ]
+     ] [
+       fhir:value [ fhir:v "finery " ]
+     ] [
+       fhir:value [ fhir:v "feminist " ]
+     ] [
+       fhir:value [ fhir:v "hallmark " ]
+     ] [
+       fhir:value [ fhir:v "showy " ]
+     ] [
+       fhir:value [ fhir:v "tarantella " ]
+     ] [
+       fhir:value [ fhir:v "restaurateur " ]
+     ] [
+       fhir:value [ fhir:v "uncanny " ]
+     ] [
+       fhir:value [ fhir:v "kilter " ]
+     ] [
+       fhir:value [ fhir:v "legislation " ]
+     ] [
+       fhir:value [ fhir:v "illogical " ]
+     ] [
+       fhir:value [ fhir:v "entirety " ]
+     ] [
+       fhir:value [ fhir:v "irreparable " ]
+     ] [
+       fhir:value [ fhir:v "itinerary " ]
+     ] [
+       fhir:value [ fhir:v "concept " ]
+     ] [
+       fhir:value [ fhir:v "quivering " ]
+     ] [
+       fhir:value [ fhir:v "plagiarize " ]
+     ] [
+       fhir:value [ fhir:v "effectiveness " ]
+     ] [
+       fhir:value [ fhir:v "portrayal " ]
+     ] [
+       fhir:value [ fhir:v "civilization " ]
+     ] [
+       fhir:value [ fhir:v "variation " ]
+     ] [
+       fhir:value [ fhir:v "omen " ]
+     ] [
+       fhir:value [ fhir:v "teriyaki " ]
+     ] [
+       fhir:value [ fhir:v "oligarch " ]
+     ] [
+       fhir:value [ fhir:v "compartmentalize " ]
+     ] [
+       fhir:value [ fhir:v "lemma " ]
+     ] [
+       fhir:value [ fhir:v "aquaplane " ]
+     ] [
+       fhir:value [ fhir:v "homicidal " ]
+     ] [
+       fhir:value [ fhir:v "editorialize " ]
+     ] [
+       fhir:value [ fhir:v "inkling " ]
+     ] [
+       fhir:value [ fhir:v "valency " ]
+     ] [
+       fhir:value [ fhir:v "mesosphere " ]
+     ] [
+       fhir:value [ fhir:v "distillate " ]
+     ] [
+       fhir:value [ fhir:v "deduce " ]
+     ] [
+       fhir:value [ fhir:v "deformation " ]
+     ] [
+       fhir:value [ fhir:v "puerile " ]
+     ] [
+       fhir:value [ fhir:v "cynical " ]
+     ] [
+       fhir:value [ fhir:v "surreal " ]
+     ] [
+       fhir:value [ fhir:v "denigrate " ]
+     ] [
+       fhir:value [ fhir:v "unconventionality " ]
+     ] [
+       fhir:value [ fhir:v "maceration " ]
+     ] [
+       fhir:value [ fhir:v "jocularity " ]
+     ] [
+       fhir:value [ fhir:v "poignant " ]
+     ] [
+       fhir:value [ fhir:v "subornation " ]
+     ] [
+       fhir:value [ fhir:v "heliotrope " ]
+     ] [
+       fhir:value [ fhir:v "clef " ]
+     ] [
+       fhir:value [ fhir:v "exudation " ]
+     ] [
+       fhir:value [ fhir:v "inequitable " ]
+     ] [
+       fhir:value [ fhir:v "lox " ]
+     ] [
+       fhir:value [ fhir:v "loyalist " ]
+     ] [
+       fhir:value [ fhir:v "immutable " ]
+     ] [
+       fhir:value [ fhir:v "conga " ]
+     ] [
+       fhir:value [ fhir:v "affirmation " ]
+     ] [
+       fhir:value [ fhir:v "pejorative" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_difficulty_3" ] ;
+     fhir:text [ fhir:v "Item 3\nWord Difficulty" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "1 " ]
+     ] [
+       fhir:value [ fhir:v "2 " ]
+     ] [
+       fhir:value [ fhir:v "3" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_correct_3" ] ;
+     fhir:text [ fhir:v "Item 3\nCorrect?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Yes " ]
+     ] [
+       fhir:value [ fhir:v "No" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_word_4" ] ;
+     fhir:text [ fhir:v "Item 4\nWord" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "boil " ]
+     ] [
+       fhir:value [ fhir:v "duckling " ]
+     ] [
+       fhir:value [ fhir:v "cupboard " ]
+     ] [
+       fhir:value [ fhir:v "workbench " ]
+     ] [
+       fhir:value [ fhir:v "agreeable " ]
+     ] [
+       fhir:value [ fhir:v "swear " ]
+     ] [
+       fhir:value [ fhir:v "cap " ]
+     ] [
+       fhir:value [ fhir:v "unwire " ]
+     ] [
+       fhir:value [ fhir:v "guitarist " ]
+     ] [
+       fhir:value [ fhir:v "hardcover " ]
+     ] [
+       fhir:value [ fhir:v "broccoli " ]
+     ] [
+       fhir:value [ fhir:v "unsolved " ]
+     ] [
+       fhir:value [ fhir:v "coral " ]
+     ] [
+       fhir:value [ fhir:v "gladiator " ]
+     ] [
+       fhir:value [ fhir:v "monkey " ]
+     ] [
+       fhir:value [ fhir:v "jobless " ]
+     ] [
+       fhir:value [ fhir:v "capitalization " ]
+     ] [
+       fhir:value [ fhir:v "selfish " ]
+     ] [
+       fhir:value [ fhir:v "emptiness " ]
+     ] [
+       fhir:value [ fhir:v "pain " ]
+     ] [
+       fhir:value [ fhir:v "brainpower " ]
+     ] [
+       fhir:value [ fhir:v "lettuce " ]
+     ] [
+       fhir:value [ fhir:v "wartime " ]
+     ] [
+       fhir:value [ fhir:v "newsboy " ]
+     ] [
+       fhir:value [ fhir:v "equipment " ]
+     ] [
+       fhir:value [ fhir:v "sensation " ]
+     ] [
+       fhir:value [ fhir:v "burglar " ]
+     ] [
+       fhir:value [ fhir:v "idiotic " ]
+     ] [
+       fhir:value [ fhir:v "spoils " ]
+     ] [
+       fhir:value [ fhir:v "belong " ]
+     ] [
+       fhir:value [ fhir:v "greeter " ]
+     ] [
+       fhir:value [ fhir:v "screech " ]
+     ] [
+       fhir:value [ fhir:v "tardy " ]
+     ] [
+       fhir:value [ fhir:v "viewing " ]
+     ] [
+       fhir:value [ fhir:v "heating " ]
+     ] [
+       fhir:value [ fhir:v "homeward " ]
+     ] [
+       fhir:value [ fhir:v "payment " ]
+     ] [
+       fhir:value [ fhir:v "refereeing " ]
+     ] [
+       fhir:value [ fhir:v "canyon " ]
+     ] [
+       fhir:value [ fhir:v "nutmeg " ]
+     ] [
+       fhir:value [ fhir:v "birdcage " ]
+     ] [
+       fhir:value [ fhir:v "killer " ]
+     ] [
+       fhir:value [ fhir:v "waistband " ]
+     ] [
+       fhir:value [ fhir:v "mutter " ]
+     ] [
+       fhir:value [ fhir:v "specific " ]
+     ] [
+       fhir:value [ fhir:v "clerk " ]
+     ] [
+       fhir:value [ fhir:v "orphaned " ]
+     ] [
+       fhir:value [ fhir:v "bat " ]
+     ] [
+       fhir:value [ fhir:v "bakeshop " ]
+     ] [
+       fhir:value [ fhir:v "hilarious " ]
+     ] [
+       fhir:value [ fhir:v "cheeseburger " ]
+     ] [
+       fhir:value [ fhir:v "able " ]
+     ] [
+       fhir:value [ fhir:v "morning " ]
+     ] [
+       fhir:value [ fhir:v "tradition " ]
+     ] [
+       fhir:value [ fhir:v "jean " ]
+     ] [
+       fhir:value [ fhir:v "merry " ]
+     ] [
+       fhir:value [ fhir:v "sunset " ]
+     ] [
+       fhir:value [ fhir:v "stand " ]
+     ] [
+       fhir:value [ fhir:v "sportsmanlike " ]
+     ] [
+       fhir:value [ fhir:v "superstitious " ]
+     ] [
+       fhir:value [ fhir:v "weightless " ]
+     ] [
+       fhir:value [ fhir:v "vibration " ]
+     ] [
+       fhir:value [ fhir:v "spotless " ]
+     ] [
+       fhir:value [ fhir:v "plank " ]
+     ] [
+       fhir:value [ fhir:v "pebble " ]
+     ] [
+       fhir:value [ fhir:v "wastebasket " ]
+     ] [
+       fhir:value [ fhir:v "envy " ]
+     ] [
+       fhir:value [ fhir:v "hammer " ]
+     ] [
+       fhir:value [ fhir:v "sun " ]
+     ] [
+       fhir:value [ fhir:v "whole " ]
+     ] [
+       fhir:value [ fhir:v "faucet " ]
+     ] [
+       fhir:value [ fhir:v "cursive " ]
+     ] [
+       fhir:value [ fhir:v "tire " ]
+     ] [
+       fhir:value [ fhir:v "perch " ]
+     ] [
+       fhir:value [ fhir:v "invitation " ]
+     ] [
+       fhir:value [ fhir:v "continent " ]
+     ] [
+       fhir:value [ fhir:v "membership " ]
+     ] [
+       fhir:value [ fhir:v "scramble " ]
+     ] [
+       fhir:value [ fhir:v "wood " ]
+     ] [
+       fhir:value [ fhir:v "pheasant " ]
+     ] [
+       fhir:value [ fhir:v "anonymous " ]
+     ] [
+       fhir:value [ fhir:v "strategic " ]
+     ] [
+       fhir:value [ fhir:v "polling " ]
+     ] [
+       fhir:value [ fhir:v "combustion " ]
+     ] [
+       fhir:value [ fhir:v "remembrance " ]
+     ] [
+       fhir:value [ fhir:v "obscure " ]
+     ] [
+       fhir:value [ fhir:v "cleric " ]
+     ] [
+       fhir:value [ fhir:v "outrank " ]
+     ] [
+       fhir:value [ fhir:v "absolution " ]
+     ] [
+       fhir:value [ fhir:v "priesthood " ]
+     ] [
+       fhir:value [ fhir:v "critic " ]
+     ] [
+       fhir:value [ fhir:v "uncensored " ]
+     ] [
+       fhir:value [ fhir:v "hobbyist " ]
+     ] [
+       fhir:value [ fhir:v "perilous " ]
+     ] [
+       fhir:value [ fhir:v "irate " ]
+     ] [
+       fhir:value [ fhir:v "global " ]
+     ] [
+       fhir:value [ fhir:v "hovel " ]
+     ] [
+       fhir:value [ fhir:v "sophomore " ]
+     ] [
+       fhir:value [ fhir:v "dirham " ]
+     ] [
+       fhir:value [ fhir:v "keen " ]
+     ] [
+       fhir:value [ fhir:v "fuddle " ]
+     ] [
+       fhir:value [ fhir:v "battlewagon " ]
+     ] [
+       fhir:value [ fhir:v "entail " ]
+     ] [
+       fhir:value [ fhir:v "scarab " ]
+     ] [
+       fhir:value [ fhir:v "dank " ]
+     ] [
+       fhir:value [ fhir:v "guarantee " ]
+     ] [
+       fhir:value [ fhir:v "adjuster " ]
+     ] [
+       fhir:value [ fhir:v "enliven " ]
+     ] [
+       fhir:value [ fhir:v "biodegradable " ]
+     ] [
+       fhir:value [ fhir:v "enfold " ]
+     ] [
+       fhir:value [ fhir:v "amputee " ]
+     ] [
+       fhir:value [ fhir:v "trench " ]
+     ] [
+       fhir:value [ fhir:v "ovation " ]
+     ] [
+       fhir:value [ fhir:v "unsuitable " ]
+     ] [
+       fhir:value [ fhir:v "suburban " ]
+     ] [
+       fhir:value [ fhir:v "memento " ]
+     ] [
+       fhir:value [ fhir:v "inevitable " ]
+     ] [
+       fhir:value [ fhir:v "marine " ]
+     ] [
+       fhir:value [ fhir:v "uncorrupted " ]
+     ] [
+       fhir:value [ fhir:v "mystique " ]
+     ] [
+       fhir:value [ fhir:v "behemoth " ]
+     ] [
+       fhir:value [ fhir:v "marshland " ]
+     ] [
+       fhir:value [ fhir:v "unaltered " ]
+     ] [
+       fhir:value [ fhir:v "minority " ]
+     ] [
+       fhir:value [ fhir:v "illicit " ]
+     ] [
+       fhir:value [ fhir:v "stockbroker " ]
+     ] [
+       fhir:value [ fhir:v "luster " ]
+     ] [
+       fhir:value [ fhir:v "contort " ]
+     ] [
+       fhir:value [ fhir:v "crimping " ]
+     ] [
+       fhir:value [ fhir:v "finery " ]
+     ] [
+       fhir:value [ fhir:v "feminist " ]
+     ] [
+       fhir:value [ fhir:v "hallmark " ]
+     ] [
+       fhir:value [ fhir:v "showy " ]
+     ] [
+       fhir:value [ fhir:v "tarantella " ]
+     ] [
+       fhir:value [ fhir:v "restaurateur " ]
+     ] [
+       fhir:value [ fhir:v "uncanny " ]
+     ] [
+       fhir:value [ fhir:v "kilter " ]
+     ] [
+       fhir:value [ fhir:v "legislation " ]
+     ] [
+       fhir:value [ fhir:v "illogical " ]
+     ] [
+       fhir:value [ fhir:v "entirety " ]
+     ] [
+       fhir:value [ fhir:v "irreparable " ]
+     ] [
+       fhir:value [ fhir:v "itinerary " ]
+     ] [
+       fhir:value [ fhir:v "concept " ]
+     ] [
+       fhir:value [ fhir:v "quivering " ]
+     ] [
+       fhir:value [ fhir:v "plagiarize " ]
+     ] [
+       fhir:value [ fhir:v "effectiveness " ]
+     ] [
+       fhir:value [ fhir:v "portrayal " ]
+     ] [
+       fhir:value [ fhir:v "civilization " ]
+     ] [
+       fhir:value [ fhir:v "variation " ]
+     ] [
+       fhir:value [ fhir:v "omen " ]
+     ] [
+       fhir:value [ fhir:v "teriyaki " ]
+     ] [
+       fhir:value [ fhir:v "oligarch " ]
+     ] [
+       fhir:value [ fhir:v "compartmentalize " ]
+     ] [
+       fhir:value [ fhir:v "lemma " ]
+     ] [
+       fhir:value [ fhir:v "aquaplane " ]
+     ] [
+       fhir:value [ fhir:v "homicidal " ]
+     ] [
+       fhir:value [ fhir:v "editorialize " ]
+     ] [
+       fhir:value [ fhir:v "inkling " ]
+     ] [
+       fhir:value [ fhir:v "valency " ]
+     ] [
+       fhir:value [ fhir:v "mesosphere " ]
+     ] [
+       fhir:value [ fhir:v "distillate " ]
+     ] [
+       fhir:value [ fhir:v "deduce " ]
+     ] [
+       fhir:value [ fhir:v "deformation " ]
+     ] [
+       fhir:value [ fhir:v "puerile " ]
+     ] [
+       fhir:value [ fhir:v "cynical " ]
+     ] [
+       fhir:value [ fhir:v "surreal " ]
+     ] [
+       fhir:value [ fhir:v "denigrate " ]
+     ] [
+       fhir:value [ fhir:v "unconventionality " ]
+     ] [
+       fhir:value [ fhir:v "maceration " ]
+     ] [
+       fhir:value [ fhir:v "jocularity " ]
+     ] [
+       fhir:value [ fhir:v "poignant " ]
+     ] [
+       fhir:value [ fhir:v "subornation " ]
+     ] [
+       fhir:value [ fhir:v "heliotrope " ]
+     ] [
+       fhir:value [ fhir:v "clef " ]
+     ] [
+       fhir:value [ fhir:v "exudation " ]
+     ] [
+       fhir:value [ fhir:v "inequitable " ]
+     ] [
+       fhir:value [ fhir:v "lox " ]
+     ] [
+       fhir:value [ fhir:v "loyalist " ]
+     ] [
+       fhir:value [ fhir:v "immutable " ]
+     ] [
+       fhir:value [ fhir:v "conga " ]
+     ] [
+       fhir:value [ fhir:v "affirmation " ]
+     ] [
+       fhir:value [ fhir:v "pejorative" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_difficulty_4" ] ;
+     fhir:text [ fhir:v "Item 4\nWord Difficulty" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "1 " ]
+     ] [
+       fhir:value [ fhir:v "2 " ]
+     ] [
+       fhir:value [ fhir:v "3" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_correct_4" ] ;
+     fhir:text [ fhir:v "Item 4\nCorrect?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Yes " ]
+     ] [
+       fhir:value [ fhir:v "No" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_word_5" ] ;
+     fhir:text [ fhir:v "Item 5\nWord" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "boil " ]
+     ] [
+       fhir:value [ fhir:v "duckling " ]
+     ] [
+       fhir:value [ fhir:v "cupboard " ]
+     ] [
+       fhir:value [ fhir:v "workbench " ]
+     ] [
+       fhir:value [ fhir:v "agreeable " ]
+     ] [
+       fhir:value [ fhir:v "swear " ]
+     ] [
+       fhir:value [ fhir:v "cap " ]
+     ] [
+       fhir:value [ fhir:v "unwire " ]
+     ] [
+       fhir:value [ fhir:v "guitarist " ]
+     ] [
+       fhir:value [ fhir:v "hardcover " ]
+     ] [
+       fhir:value [ fhir:v "broccoli " ]
+     ] [
+       fhir:value [ fhir:v "unsolved " ]
+     ] [
+       fhir:value [ fhir:v "coral " ]
+     ] [
+       fhir:value [ fhir:v "gladiator " ]
+     ] [
+       fhir:value [ fhir:v "monkey " ]
+     ] [
+       fhir:value [ fhir:v "jobless " ]
+     ] [
+       fhir:value [ fhir:v "capitalization " ]
+     ] [
+       fhir:value [ fhir:v "selfish " ]
+     ] [
+       fhir:value [ fhir:v "emptiness " ]
+     ] [
+       fhir:value [ fhir:v "pain " ]
+     ] [
+       fhir:value [ fhir:v "brainpower " ]
+     ] [
+       fhir:value [ fhir:v "lettuce " ]
+     ] [
+       fhir:value [ fhir:v "wartime " ]
+     ] [
+       fhir:value [ fhir:v "newsboy " ]
+     ] [
+       fhir:value [ fhir:v "equipment " ]
+     ] [
+       fhir:value [ fhir:v "sensation " ]
+     ] [
+       fhir:value [ fhir:v "burglar " ]
+     ] [
+       fhir:value [ fhir:v "idiotic " ]
+     ] [
+       fhir:value [ fhir:v "spoils " ]
+     ] [
+       fhir:value [ fhir:v "belong " ]
+     ] [
+       fhir:value [ fhir:v "greeter " ]
+     ] [
+       fhir:value [ fhir:v "screech " ]
+     ] [
+       fhir:value [ fhir:v "tardy " ]
+     ] [
+       fhir:value [ fhir:v "viewing " ]
+     ] [
+       fhir:value [ fhir:v "heating " ]
+     ] [
+       fhir:value [ fhir:v "homeward " ]
+     ] [
+       fhir:value [ fhir:v "payment " ]
+     ] [
+       fhir:value [ fhir:v "refereeing " ]
+     ] [
+       fhir:value [ fhir:v "canyon " ]
+     ] [
+       fhir:value [ fhir:v "nutmeg " ]
+     ] [
+       fhir:value [ fhir:v "birdcage " ]
+     ] [
+       fhir:value [ fhir:v "killer " ]
+     ] [
+       fhir:value [ fhir:v "waistband " ]
+     ] [
+       fhir:value [ fhir:v "mutter " ]
+     ] [
+       fhir:value [ fhir:v "specific " ]
+     ] [
+       fhir:value [ fhir:v "clerk " ]
+     ] [
+       fhir:value [ fhir:v "orphaned " ]
+     ] [
+       fhir:value [ fhir:v "bat " ]
+     ] [
+       fhir:value [ fhir:v "bakeshop " ]
+     ] [
+       fhir:value [ fhir:v "hilarious " ]
+     ] [
+       fhir:value [ fhir:v "cheeseburger " ]
+     ] [
+       fhir:value [ fhir:v "able " ]
+     ] [
+       fhir:value [ fhir:v "morning " ]
+     ] [
+       fhir:value [ fhir:v "tradition " ]
+     ] [
+       fhir:value [ fhir:v "jean " ]
+     ] [
+       fhir:value [ fhir:v "merry " ]
+     ] [
+       fhir:value [ fhir:v "sunset " ]
+     ] [
+       fhir:value [ fhir:v "stand " ]
+     ] [
+       fhir:value [ fhir:v "sportsmanlike " ]
+     ] [
+       fhir:value [ fhir:v "superstitious " ]
+     ] [
+       fhir:value [ fhir:v "weightless " ]
+     ] [
+       fhir:value [ fhir:v "vibration " ]
+     ] [
+       fhir:value [ fhir:v "spotless " ]
+     ] [
+       fhir:value [ fhir:v "plank " ]
+     ] [
+       fhir:value [ fhir:v "pebble " ]
+     ] [
+       fhir:value [ fhir:v "wastebasket " ]
+     ] [
+       fhir:value [ fhir:v "envy " ]
+     ] [
+       fhir:value [ fhir:v "hammer " ]
+     ] [
+       fhir:value [ fhir:v "sun " ]
+     ] [
+       fhir:value [ fhir:v "whole " ]
+     ] [
+       fhir:value [ fhir:v "faucet " ]
+     ] [
+       fhir:value [ fhir:v "cursive " ]
+     ] [
+       fhir:value [ fhir:v "tire " ]
+     ] [
+       fhir:value [ fhir:v "perch " ]
+     ] [
+       fhir:value [ fhir:v "invitation " ]
+     ] [
+       fhir:value [ fhir:v "continent " ]
+     ] [
+       fhir:value [ fhir:v "membership " ]
+     ] [
+       fhir:value [ fhir:v "scramble " ]
+     ] [
+       fhir:value [ fhir:v "wood " ]
+     ] [
+       fhir:value [ fhir:v "pheasant " ]
+     ] [
+       fhir:value [ fhir:v "anonymous " ]
+     ] [
+       fhir:value [ fhir:v "strategic " ]
+     ] [
+       fhir:value [ fhir:v "polling " ]
+     ] [
+       fhir:value [ fhir:v "combustion " ]
+     ] [
+       fhir:value [ fhir:v "remembrance " ]
+     ] [
+       fhir:value [ fhir:v "obscure " ]
+     ] [
+       fhir:value [ fhir:v "cleric " ]
+     ] [
+       fhir:value [ fhir:v "outrank " ]
+     ] [
+       fhir:value [ fhir:v "absolution " ]
+     ] [
+       fhir:value [ fhir:v "priesthood " ]
+     ] [
+       fhir:value [ fhir:v "critic " ]
+     ] [
+       fhir:value [ fhir:v "uncensored " ]
+     ] [
+       fhir:value [ fhir:v "hobbyist " ]
+     ] [
+       fhir:value [ fhir:v "perilous " ]
+     ] [
+       fhir:value [ fhir:v "irate " ]
+     ] [
+       fhir:value [ fhir:v "global " ]
+     ] [
+       fhir:value [ fhir:v "hovel " ]
+     ] [
+       fhir:value [ fhir:v "sophomore " ]
+     ] [
+       fhir:value [ fhir:v "dirham " ]
+     ] [
+       fhir:value [ fhir:v "keen " ]
+     ] [
+       fhir:value [ fhir:v "fuddle " ]
+     ] [
+       fhir:value [ fhir:v "battlewagon " ]
+     ] [
+       fhir:value [ fhir:v "entail " ]
+     ] [
+       fhir:value [ fhir:v "scarab " ]
+     ] [
+       fhir:value [ fhir:v "dank " ]
+     ] [
+       fhir:value [ fhir:v "guarantee " ]
+     ] [
+       fhir:value [ fhir:v "adjuster " ]
+     ] [
+       fhir:value [ fhir:v "enliven " ]
+     ] [
+       fhir:value [ fhir:v "biodegradable " ]
+     ] [
+       fhir:value [ fhir:v "enfold " ]
+     ] [
+       fhir:value [ fhir:v "amputee " ]
+     ] [
+       fhir:value [ fhir:v "trench " ]
+     ] [
+       fhir:value [ fhir:v "ovation " ]
+     ] [
+       fhir:value [ fhir:v "unsuitable " ]
+     ] [
+       fhir:value [ fhir:v "suburban " ]
+     ] [
+       fhir:value [ fhir:v "memento " ]
+     ] [
+       fhir:value [ fhir:v "inevitable " ]
+     ] [
+       fhir:value [ fhir:v "marine " ]
+     ] [
+       fhir:value [ fhir:v "uncorrupted " ]
+     ] [
+       fhir:value [ fhir:v "mystique " ]
+     ] [
+       fhir:value [ fhir:v "behemoth " ]
+     ] [
+       fhir:value [ fhir:v "marshland " ]
+     ] [
+       fhir:value [ fhir:v "unaltered " ]
+     ] [
+       fhir:value [ fhir:v "minority " ]
+     ] [
+       fhir:value [ fhir:v "illicit " ]
+     ] [
+       fhir:value [ fhir:v "stockbroker " ]
+     ] [
+       fhir:value [ fhir:v "luster " ]
+     ] [
+       fhir:value [ fhir:v "contort " ]
+     ] [
+       fhir:value [ fhir:v "crimping " ]
+     ] [
+       fhir:value [ fhir:v "finery " ]
+     ] [
+       fhir:value [ fhir:v "feminist " ]
+     ] [
+       fhir:value [ fhir:v "hallmark " ]
+     ] [
+       fhir:value [ fhir:v "showy " ]
+     ] [
+       fhir:value [ fhir:v "tarantella " ]
+     ] [
+       fhir:value [ fhir:v "restaurateur " ]
+     ] [
+       fhir:value [ fhir:v "uncanny " ]
+     ] [
+       fhir:value [ fhir:v "kilter " ]
+     ] [
+       fhir:value [ fhir:v "legislation " ]
+     ] [
+       fhir:value [ fhir:v "illogical " ]
+     ] [
+       fhir:value [ fhir:v "entirety " ]
+     ] [
+       fhir:value [ fhir:v "irreparable " ]
+     ] [
+       fhir:value [ fhir:v "itinerary " ]
+     ] [
+       fhir:value [ fhir:v "concept " ]
+     ] [
+       fhir:value [ fhir:v "quivering " ]
+     ] [
+       fhir:value [ fhir:v "plagiarize " ]
+     ] [
+       fhir:value [ fhir:v "effectiveness " ]
+     ] [
+       fhir:value [ fhir:v "portrayal " ]
+     ] [
+       fhir:value [ fhir:v "civilization " ]
+     ] [
+       fhir:value [ fhir:v "variation " ]
+     ] [
+       fhir:value [ fhir:v "omen " ]
+     ] [
+       fhir:value [ fhir:v "teriyaki " ]
+     ] [
+       fhir:value [ fhir:v "oligarch " ]
+     ] [
+       fhir:value [ fhir:v "compartmentalize " ]
+     ] [
+       fhir:value [ fhir:v "lemma " ]
+     ] [
+       fhir:value [ fhir:v "aquaplane " ]
+     ] [
+       fhir:value [ fhir:v "homicidal " ]
+     ] [
+       fhir:value [ fhir:v "editorialize " ]
+     ] [
+       fhir:value [ fhir:v "inkling " ]
+     ] [
+       fhir:value [ fhir:v "valency " ]
+     ] [
+       fhir:value [ fhir:v "mesosphere " ]
+     ] [
+       fhir:value [ fhir:v "distillate " ]
+     ] [
+       fhir:value [ fhir:v "deduce " ]
+     ] [
+       fhir:value [ fhir:v "deformation " ]
+     ] [
+       fhir:value [ fhir:v "puerile " ]
+     ] [
+       fhir:value [ fhir:v "cynical " ]
+     ] [
+       fhir:value [ fhir:v "surreal " ]
+     ] [
+       fhir:value [ fhir:v "denigrate " ]
+     ] [
+       fhir:value [ fhir:v "unconventionality " ]
+     ] [
+       fhir:value [ fhir:v "maceration " ]
+     ] [
+       fhir:value [ fhir:v "jocularity " ]
+     ] [
+       fhir:value [ fhir:v "poignant " ]
+     ] [
+       fhir:value [ fhir:v "subornation " ]
+     ] [
+       fhir:value [ fhir:v "heliotrope " ]
+     ] [
+       fhir:value [ fhir:v "clef " ]
+     ] [
+       fhir:value [ fhir:v "exudation " ]
+     ] [
+       fhir:value [ fhir:v "inequitable " ]
+     ] [
+       fhir:value [ fhir:v "lox " ]
+     ] [
+       fhir:value [ fhir:v "loyalist " ]
+     ] [
+       fhir:value [ fhir:v "immutable " ]
+     ] [
+       fhir:value [ fhir:v "conga " ]
+     ] [
+       fhir:value [ fhir:v "affirmation " ]
+     ] [
+       fhir:value [ fhir:v "pejorative" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_difficulty_5" ] ;
+     fhir:text [ fhir:v "Item 5\nWord Difficulty" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "1 " ]
+     ] [
+       fhir:value [ fhir:v "2 " ]
+     ] [
+       fhir:value [ fhir:v "3" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_correct_5" ] ;
+     fhir:text [ fhir:v "Item 5\nCorrect?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Yes " ]
+     ] [
+       fhir:value [ fhir:v "No" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_word_6" ] ;
+     fhir:text [ fhir:v "Item 6\nWord" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "boil " ]
+     ] [
+       fhir:value [ fhir:v "duckling " ]
+     ] [
+       fhir:value [ fhir:v "cupboard " ]
+     ] [
+       fhir:value [ fhir:v "workbench " ]
+     ] [
+       fhir:value [ fhir:v "agreeable " ]
+     ] [
+       fhir:value [ fhir:v "swear " ]
+     ] [
+       fhir:value [ fhir:v "cap " ]
+     ] [
+       fhir:value [ fhir:v "unwire " ]
+     ] [
+       fhir:value [ fhir:v "guitarist " ]
+     ] [
+       fhir:value [ fhir:v "hardcover " ]
+     ] [
+       fhir:value [ fhir:v "broccoli " ]
+     ] [
+       fhir:value [ fhir:v "unsolved " ]
+     ] [
+       fhir:value [ fhir:v "coral " ]
+     ] [
+       fhir:value [ fhir:v "gladiator " ]
+     ] [
+       fhir:value [ fhir:v "monkey " ]
+     ] [
+       fhir:value [ fhir:v "jobless " ]
+     ] [
+       fhir:value [ fhir:v "capitalization " ]
+     ] [
+       fhir:value [ fhir:v "selfish " ]
+     ] [
+       fhir:value [ fhir:v "emptiness " ]
+     ] [
+       fhir:value [ fhir:v "pain " ]
+     ] [
+       fhir:value [ fhir:v "brainpower " ]
+     ] [
+       fhir:value [ fhir:v "lettuce " ]
+     ] [
+       fhir:value [ fhir:v "wartime " ]
+     ] [
+       fhir:value [ fhir:v "newsboy " ]
+     ] [
+       fhir:value [ fhir:v "equipment " ]
+     ] [
+       fhir:value [ fhir:v "sensation " ]
+     ] [
+       fhir:value [ fhir:v "burglar " ]
+     ] [
+       fhir:value [ fhir:v "idiotic " ]
+     ] [
+       fhir:value [ fhir:v "spoils " ]
+     ] [
+       fhir:value [ fhir:v "belong " ]
+     ] [
+       fhir:value [ fhir:v "greeter " ]
+     ] [
+       fhir:value [ fhir:v "screech " ]
+     ] [
+       fhir:value [ fhir:v "tardy " ]
+     ] [
+       fhir:value [ fhir:v "viewing " ]
+     ] [
+       fhir:value [ fhir:v "heating " ]
+     ] [
+       fhir:value [ fhir:v "homeward " ]
+     ] [
+       fhir:value [ fhir:v "payment " ]
+     ] [
+       fhir:value [ fhir:v "refereeing " ]
+     ] [
+       fhir:value [ fhir:v "canyon " ]
+     ] [
+       fhir:value [ fhir:v "nutmeg " ]
+     ] [
+       fhir:value [ fhir:v "birdcage " ]
+     ] [
+       fhir:value [ fhir:v "killer " ]
+     ] [
+       fhir:value [ fhir:v "waistband " ]
+     ] [
+       fhir:value [ fhir:v "mutter " ]
+     ] [
+       fhir:value [ fhir:v "specific " ]
+     ] [
+       fhir:value [ fhir:v "clerk " ]
+     ] [
+       fhir:value [ fhir:v "orphaned " ]
+     ] [
+       fhir:value [ fhir:v "bat " ]
+     ] [
+       fhir:value [ fhir:v "bakeshop " ]
+     ] [
+       fhir:value [ fhir:v "hilarious " ]
+     ] [
+       fhir:value [ fhir:v "cheeseburger " ]
+     ] [
+       fhir:value [ fhir:v "able " ]
+     ] [
+       fhir:value [ fhir:v "morning " ]
+     ] [
+       fhir:value [ fhir:v "tradition " ]
+     ] [
+       fhir:value [ fhir:v "jean " ]
+     ] [
+       fhir:value [ fhir:v "merry " ]
+     ] [
+       fhir:value [ fhir:v "sunset " ]
+     ] [
+       fhir:value [ fhir:v "stand " ]
+     ] [
+       fhir:value [ fhir:v "sportsmanlike " ]
+     ] [
+       fhir:value [ fhir:v "superstitious " ]
+     ] [
+       fhir:value [ fhir:v "weightless " ]
+     ] [
+       fhir:value [ fhir:v "vibration " ]
+     ] [
+       fhir:value [ fhir:v "spotless " ]
+     ] [
+       fhir:value [ fhir:v "plank " ]
+     ] [
+       fhir:value [ fhir:v "pebble " ]
+     ] [
+       fhir:value [ fhir:v "wastebasket " ]
+     ] [
+       fhir:value [ fhir:v "envy " ]
+     ] [
+       fhir:value [ fhir:v "hammer " ]
+     ] [
+       fhir:value [ fhir:v "sun " ]
+     ] [
+       fhir:value [ fhir:v "whole " ]
+     ] [
+       fhir:value [ fhir:v "faucet " ]
+     ] [
+       fhir:value [ fhir:v "cursive " ]
+     ] [
+       fhir:value [ fhir:v "tire " ]
+     ] [
+       fhir:value [ fhir:v "perch " ]
+     ] [
+       fhir:value [ fhir:v "invitation " ]
+     ] [
+       fhir:value [ fhir:v "continent " ]
+     ] [
+       fhir:value [ fhir:v "membership " ]
+     ] [
+       fhir:value [ fhir:v "scramble " ]
+     ] [
+       fhir:value [ fhir:v "wood " ]
+     ] [
+       fhir:value [ fhir:v "pheasant " ]
+     ] [
+       fhir:value [ fhir:v "anonymous " ]
+     ] [
+       fhir:value [ fhir:v "strategic " ]
+     ] [
+       fhir:value [ fhir:v "polling " ]
+     ] [
+       fhir:value [ fhir:v "combustion " ]
+     ] [
+       fhir:value [ fhir:v "remembrance " ]
+     ] [
+       fhir:value [ fhir:v "obscure " ]
+     ] [
+       fhir:value [ fhir:v "cleric " ]
+     ] [
+       fhir:value [ fhir:v "outrank " ]
+     ] [
+       fhir:value [ fhir:v "absolution " ]
+     ] [
+       fhir:value [ fhir:v "priesthood " ]
+     ] [
+       fhir:value [ fhir:v "critic " ]
+     ] [
+       fhir:value [ fhir:v "uncensored " ]
+     ] [
+       fhir:value [ fhir:v "hobbyist " ]
+     ] [
+       fhir:value [ fhir:v "perilous " ]
+     ] [
+       fhir:value [ fhir:v "irate " ]
+     ] [
+       fhir:value [ fhir:v "global " ]
+     ] [
+       fhir:value [ fhir:v "hovel " ]
+     ] [
+       fhir:value [ fhir:v "sophomore " ]
+     ] [
+       fhir:value [ fhir:v "dirham " ]
+     ] [
+       fhir:value [ fhir:v "keen " ]
+     ] [
+       fhir:value [ fhir:v "fuddle " ]
+     ] [
+       fhir:value [ fhir:v "battlewagon " ]
+     ] [
+       fhir:value [ fhir:v "entail " ]
+     ] [
+       fhir:value [ fhir:v "scarab " ]
+     ] [
+       fhir:value [ fhir:v "dank " ]
+     ] [
+       fhir:value [ fhir:v "guarantee " ]
+     ] [
+       fhir:value [ fhir:v "adjuster " ]
+     ] [
+       fhir:value [ fhir:v "enliven " ]
+     ] [
+       fhir:value [ fhir:v "biodegradable " ]
+     ] [
+       fhir:value [ fhir:v "enfold " ]
+     ] [
+       fhir:value [ fhir:v "amputee " ]
+     ] [
+       fhir:value [ fhir:v "trench " ]
+     ] [
+       fhir:value [ fhir:v "ovation " ]
+     ] [
+       fhir:value [ fhir:v "unsuitable " ]
+     ] [
+       fhir:value [ fhir:v "suburban " ]
+     ] [
+       fhir:value [ fhir:v "memento " ]
+     ] [
+       fhir:value [ fhir:v "inevitable " ]
+     ] [
+       fhir:value [ fhir:v "marine " ]
+     ] [
+       fhir:value [ fhir:v "uncorrupted " ]
+     ] [
+       fhir:value [ fhir:v "mystique " ]
+     ] [
+       fhir:value [ fhir:v "behemoth " ]
+     ] [
+       fhir:value [ fhir:v "marshland " ]
+     ] [
+       fhir:value [ fhir:v "unaltered " ]
+     ] [
+       fhir:value [ fhir:v "minority " ]
+     ] [
+       fhir:value [ fhir:v "illicit " ]
+     ] [
+       fhir:value [ fhir:v "stockbroker " ]
+     ] [
+       fhir:value [ fhir:v "luster " ]
+     ] [
+       fhir:value [ fhir:v "contort " ]
+     ] [
+       fhir:value [ fhir:v "crimping " ]
+     ] [
+       fhir:value [ fhir:v "finery " ]
+     ] [
+       fhir:value [ fhir:v "feminist " ]
+     ] [
+       fhir:value [ fhir:v "hallmark " ]
+     ] [
+       fhir:value [ fhir:v "showy " ]
+     ] [
+       fhir:value [ fhir:v "tarantella " ]
+     ] [
+       fhir:value [ fhir:v "restaurateur " ]
+     ] [
+       fhir:value [ fhir:v "uncanny " ]
+     ] [
+       fhir:value [ fhir:v "kilter " ]
+     ] [
+       fhir:value [ fhir:v "legislation " ]
+     ] [
+       fhir:value [ fhir:v "illogical " ]
+     ] [
+       fhir:value [ fhir:v "entirety " ]
+     ] [
+       fhir:value [ fhir:v "irreparable " ]
+     ] [
+       fhir:value [ fhir:v "itinerary " ]
+     ] [
+       fhir:value [ fhir:v "concept " ]
+     ] [
+       fhir:value [ fhir:v "quivering " ]
+     ] [
+       fhir:value [ fhir:v "plagiarize " ]
+     ] [
+       fhir:value [ fhir:v "effectiveness " ]
+     ] [
+       fhir:value [ fhir:v "portrayal " ]
+     ] [
+       fhir:value [ fhir:v "civilization " ]
+     ] [
+       fhir:value [ fhir:v "variation " ]
+     ] [
+       fhir:value [ fhir:v "omen " ]
+     ] [
+       fhir:value [ fhir:v "teriyaki " ]
+     ] [
+       fhir:value [ fhir:v "oligarch " ]
+     ] [
+       fhir:value [ fhir:v "compartmentalize " ]
+     ] [
+       fhir:value [ fhir:v "lemma " ]
+     ] [
+       fhir:value [ fhir:v "aquaplane " ]
+     ] [
+       fhir:value [ fhir:v "homicidal " ]
+     ] [
+       fhir:value [ fhir:v "editorialize " ]
+     ] [
+       fhir:value [ fhir:v "inkling " ]
+     ] [
+       fhir:value [ fhir:v "valency " ]
+     ] [
+       fhir:value [ fhir:v "mesosphere " ]
+     ] [
+       fhir:value [ fhir:v "distillate " ]
+     ] [
+       fhir:value [ fhir:v "deduce " ]
+     ] [
+       fhir:value [ fhir:v "deformation " ]
+     ] [
+       fhir:value [ fhir:v "puerile " ]
+     ] [
+       fhir:value [ fhir:v "cynical " ]
+     ] [
+       fhir:value [ fhir:v "surreal " ]
+     ] [
+       fhir:value [ fhir:v "denigrate " ]
+     ] [
+       fhir:value [ fhir:v "unconventionality " ]
+     ] [
+       fhir:value [ fhir:v "maceration " ]
+     ] [
+       fhir:value [ fhir:v "jocularity " ]
+     ] [
+       fhir:value [ fhir:v "poignant " ]
+     ] [
+       fhir:value [ fhir:v "subornation " ]
+     ] [
+       fhir:value [ fhir:v "heliotrope " ]
+     ] [
+       fhir:value [ fhir:v "clef " ]
+     ] [
+       fhir:value [ fhir:v "exudation " ]
+     ] [
+       fhir:value [ fhir:v "inequitable " ]
+     ] [
+       fhir:value [ fhir:v "lox " ]
+     ] [
+       fhir:value [ fhir:v "loyalist " ]
+     ] [
+       fhir:value [ fhir:v "immutable " ]
+     ] [
+       fhir:value [ fhir:v "conga " ]
+     ] [
+       fhir:value [ fhir:v "affirmation " ]
+     ] [
+       fhir:value [ fhir:v "pejorative" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_difficulty_6" ] ;
+     fhir:text [ fhir:v "Item 6\nWord Difficulty" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "1 " ]
+     ] [
+       fhir:value [ fhir:v "2 " ]
+     ] [
+       fhir:value [ fhir:v "3" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "vocabulary_item_correct_6" ] ;
+     fhir:text [ fhir:v "Item 6\nCorrect?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Yes " ]
+     ] [
+       fhir:value [ fhir:v "No" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,623 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/Questionnaire/qmooddsm5adultschema> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "qmooddsm5adultschema"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The linkId for the item\">LinkId</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the itemcan appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">https://voicecollab.ai/fhir/Questionnaire/qmooddsm5adultschema#1.5.1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.dsm_5_session_id\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> dsm_5_session_id</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Session ID</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.dsm_5_started_at\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> dsm_5_started_at</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Started At</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.dsm_5_completed_at\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> dsm_5_completed_at</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Completed At</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.dsm_5_duration\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> dsm_5_duration</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Duration (seconds)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.little_interest\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> little_interest</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Little interest or pleasure in doing things?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.little_interest\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.feeling_down\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> feeling_down</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling down, depressed, or hopeless?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.feeling_down\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.feeling_more_irritated\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> feeling_more_irritated</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling more irritated, grouchy, or angry than usual?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.feeling_more_irritated\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.sleeping_less\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> sleeping_less</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Sleeping less than usual, but still have a lot of energy?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.sleeping_less\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.starting_more_projects\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> starting_more_projects</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Starting lots more projects than usual or doing more risky things than usual?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.starting_more_projects\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.feeling_nervous\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> feeling_nervous</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling nervous, anxious, frightened, worried, or on edge?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.feeling_nervous\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.feeling_panic\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> feeling_panic</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling panic or being frightened?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.feeling_panic\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.avoiding_situations\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> avoiding_situations</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Avoiding situations that make you anxious?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.avoiding_situations\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.unexplained_aches\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> unexplained_aches</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Unexplained aches and pains (e.g., head, back, joints, abdomen, legs)?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.unexplained_aches\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.illness_not_taken_serious\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> illness_not_taken_serious</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling that your illnesses are not being taken seriously enough?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.illness_not_taken_serious\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.self_harm\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> self_harm</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Thoughts of actually hurting yourself?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.self_harm\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.hearing_things\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> hearing_things</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Hearing things other people couldn't hear, such as voices even when no one was around?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.hearing_things\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.someone_hear_thoughts\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> someone_hear_thoughts</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling that someone could hear your thoughts, or that you could hear what another person was thinking?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.someone_hear_thoughts\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.sleep_quality\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> sleep_quality</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Problems with sleep that affected your sleep quality over all?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.sleep_quality\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.memory_issues\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> memory_issues</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Problems with memory (e.g., learning new information) or with location (e.g., finding your way home)?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.memory_issues\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.unpleasant_thoughts\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> unpleasant_thoughts</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Unpleasant thoughts, urges, or images that repeatedly enter your mind?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.unpleasant_thoughts\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.repeat_acts\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> repeat_acts</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling driven to perform certain behaviors or mental acts over and over again?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.repeat_acts\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.feeling_detached\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> feeling_detached</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling detached or distant from yourself, your body, your physical surroundings, or your memories?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.feeling_detached\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.no_purpose\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> no_purpose</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not knowing who you really are or what you want out of life?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.no_purpose\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.isolated\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> isolated</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not feeling close to other people or enjoying your relationships with them?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.isolated\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.drinking_more\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> drinking_more</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Drinking at least 4 drinks of any kind of alcohol in a single day?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.drinking_more\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.smoking_more\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> smoking_more</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Smoking any cigarettes, a cigar, or pipe, or using snuff or chewing tobacco?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.smoking_more\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.medication_use\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> medication_use</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Using any of the following medicines ON YOUR OWN, that is, without a doctor's prescription, in greater amounts or longer than prescribed [e.g., painkillers (like Vicodin), stimulants (like Ritalin or Adderall), sedatives or tranquilizers (like sleeping pills or Valium), or drugs like marijuana, cocaine or crack, club drugs (like ecstasy), hallucinogens (like LSD), heroin, inhalants or solvents (like glue), or methamphetamine (like speed)]?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.medication_use\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.q1_happy\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> q1_happy</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Question 1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.q1_happy\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.q2_self_confident\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> q2_self_confident</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Question 2</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.q2_self_confident\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.q3_sleep\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> q3_sleep</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Question 3</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.q3_sleep\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.q4_talk\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> q4_talk</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Question 4</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.q4_talk\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.q5_active\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> q5_active</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Question 5</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.q5_active\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.social_phobia_1\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">felt moments of sudden terror, fear, or fright in social situations</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.social_phobia_1\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.social_phobia_2\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_2</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">felt anxious, worried, or nervous about social situations</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.social_phobia_2\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.social_phobia_3\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_3</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">had thoughts of being rejected, humiliated, embarrassed, ridiculed, or offending others</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.social_phobia_3\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.social_phobia_4\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_4</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">felt a racing heart, sweaty, trouble breathing, faint, or shaky in social situations</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.social_phobia_4\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.social_phobia_5\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_5</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">felt tense muscles, felt on edge or restless, or had trouble relaxing in social situations</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.social_phobia_5\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.social_phobia_6\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_6</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">avoided, or did not approach or enter, social situations</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.social_phobia_6\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.social_phobia_7\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_7</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">left social situations early or participated only minimally (e.g., said little, avoided eye contact)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.social_phobia_7\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.social_phobia_8\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_8</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">spent a lot of time preparing what to say or how to act in social situations</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.social_phobia_8\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.social_phobia_9\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_9</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">distracted myself to avoid thinking about social situations</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.social_phobia_9\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" id=\"item.social_phobia_10\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> social_phobia_10</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">needed help to cope with social situations (e.g., alcohol or medications, superstitious objects)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.social_phobia_10\">5 options</a></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Option Sets</b></p><a name=\"opt-item.little_interest\"> </a><p><b>Answer options for little_interest</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.feeling_down\"> </a><p><b>Answer options for feeling_down</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.feeling_more_irritated\"> </a><p><b>Answer options for feeling_more_irritated</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.sleeping_less\"> </a><p><b>Answer options for sleeping_less</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.starting_more_projects\"> </a><p><b>Answer options for starting_more_projects</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.feeling_nervous\"> </a><p><b>Answer options for feeling_nervous</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.feeling_panic\"> </a><p><b>Answer options for feeling_panic</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.avoiding_situations\"> </a><p><b>Answer options for avoiding_situations</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.unexplained_aches\"> </a><p><b>Answer options for unexplained_aches</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.illness_not_taken_serious\"> </a><p><b>Answer options for illness_not_taken_serious</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.self_harm\"> </a><p><b>Answer options for self_harm</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.hearing_things\"> </a><p><b>Answer options for hearing_things</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.someone_hear_thoughts\"> </a><p><b>Answer options for someone_hear_thoughts</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.sleep_quality\"> </a><p><b>Answer options for sleep_quality</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.memory_issues\"> </a><p><b>Answer options for memory_issues</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.unpleasant_thoughts\"> </a><p><b>Answer options for unpleasant_thoughts</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.repeat_acts\"> </a><p><b>Answer options for repeat_acts</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.feeling_detached\"> </a><p><b>Answer options for feeling_detached</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.no_purpose\"> </a><p><b>Answer options for no_purpose</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.isolated\"> </a><p><b>Answer options for isolated</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.drinking_more\"> </a><p><b>Answer options for drinking_more</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.smoking_more\"> </a><p><b>Answer options for smoking_more</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.medication_use\"> </a><p><b>Answer options for medication_use</b></p><ul><li style=\"font-size: 11px\">0=None (Not at all) </li><li style=\"font-size: 11px\">1=Slight (Rare</li><li style=\"font-size: 11px\">2=Mild (Several days) </li><li style=\"font-size: 11px\">3=Moderate (More than half the days) </li><li style=\"font-size: 11px\">4=Severe (Nearly every day)</li></ul><a name=\"opt-item.q1_happy\"> </a><p><b>Answer options for q1_happy</b></p><ul><li style=\"font-size: 11px\">I do not feel happier or more cheerful than usual. </li><li style=\"font-size: 11px\">I occasionally feel happier or more cheerful than usual. </li><li style=\"font-size: 11px\">I often feel happier or more cheerful than usual. </li><li style=\"font-size: 11px\">I feel happier or more cheerful than usual most of the time. </li><li style=\"font-size: 11px\">I feel happier or more cheerful than usual all of the time.</li></ul><a name=\"opt-item.q2_self_confident\"> </a><p><b>Answer options for q2_self_confident</b></p><ul><li style=\"font-size: 11px\">I do not feel more self-confident than usual. </li><li style=\"font-size: 11px\">I occasionally feel more self-confident than usual. </li><li style=\"font-size: 11px\">I often feel more self-confident than usual. </li><li style=\"font-size: 11px\">I frequently feel more self-confident than usual. </li><li style=\"font-size: 11px\">I feel extremely self-confident all of the time.</li></ul><a name=\"opt-item.q3_sleep\"> </a><p><b>Answer options for q3_sleep</b></p><ul><li style=\"font-size: 11px\">I do not need less sleep than usual. </li><li style=\"font-size: 11px\">I occasionally need less sleep than usual. </li><li style=\"font-size: 11px\">I often need less sleep than usual. </li><li style=\"font-size: 11px\">I frequently need less sleep than usual. </li><li style=\"font-size: 11px\">I can go all day and all night without any sleep and still not feel tired.</li></ul><a name=\"opt-item.q4_talk\"> </a><p><b>Answer options for q4_talk</b></p><ul><li style=\"font-size: 11px\">I do not talk more than usual. </li><li style=\"font-size: 11px\">I occasionally talk more than usual. </li><li style=\"font-size: 11px\">I often talk more than usual. </li><li style=\"font-size: 11px\">I frequently talk more than usual. </li><li style=\"font-size: 11px\">I talk constantly and cannot be interrupted.</li></ul><a name=\"opt-item.q5_active\"> </a><p><b>Answer options for q5_active</b></p><ul><li style=\"font-size: 11px\">I have not been more active (either socially</li><li style=\"font-size: 11px\">I have occasionally been more active than usual. </li><li style=\"font-size: 11px\">I have often been more active than usual. </li><li style=\"font-size: 11px\">I have frequently been more active than usual. </li><li style=\"font-size: 11px\">I am constantly more active or on the go all the time.</li></ul><a name=\"opt-item.social_phobia_1\"> </a><p><b>Answer options for social_phobia_1</b></p><ul><li style=\"font-size: 11px\">Never </li><li style=\"font-size: 11px\">Occasionally </li><li style=\"font-size: 11px\">Half of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.social_phobia_2\"> </a><p><b>Answer options for social_phobia_2</b></p><ul><li style=\"font-size: 11px\">Never </li><li style=\"font-size: 11px\">Occasionally </li><li style=\"font-size: 11px\">Half of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.social_phobia_3\"> </a><p><b>Answer options for social_phobia_3</b></p><ul><li style=\"font-size: 11px\">Never </li><li style=\"font-size: 11px\">Occasionally </li><li style=\"font-size: 11px\">Half of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.social_phobia_4\"> </a><p><b>Answer options for social_phobia_4</b></p><ul><li style=\"font-size: 11px\">Never </li><li style=\"font-size: 11px\">Occasionally </li><li style=\"font-size: 11px\">Half of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.social_phobia_5\"> </a><p><b>Answer options for social_phobia_5</b></p><ul><li style=\"font-size: 11px\">Never </li><li style=\"font-size: 11px\">Occasionally </li><li style=\"font-size: 11px\">Half of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.social_phobia_6\"> </a><p><b>Answer options for social_phobia_6</b></p><ul><li style=\"font-size: 11px\">Never </li><li style=\"font-size: 11px\">Occasionally </li><li style=\"font-size: 11px\">Half of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.social_phobia_7\"> </a><p><b>Answer options for social_phobia_7</b></p><ul><li style=\"font-size: 11px\">Never </li><li style=\"font-size: 11px\">Occasionally </li><li style=\"font-size: 11px\">Half of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.social_phobia_8\"> </a><p><b>Answer options for social_phobia_8</b></p><ul><li style=\"font-size: 11px\">Never </li><li style=\"font-size: 11px\">Occasionally </li><li style=\"font-size: 11px\">Half of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.social_phobia_9\"> </a><p><b>Answer options for social_phobia_9</b></p><ul><li style=\"font-size: 11px\">Never </li><li style=\"font-size: 11px\">Occasionally </li><li style=\"font-size: 11px\">Half of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.social_phobia_10\"> </a><p><b>Answer options for social_phobia_10</b></p><ul><li style=\"font-size: 11px\">Never </li><li style=\"font-size: 11px\">Occasionally </li><li style=\"font-size: 11px\">Half of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/qmooddsm5adultschema"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.5.1"] ; # 
+  fhir:title [ fhir:v "q_mood_dsm5_adult_schema"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-02-16T18:42:07Z"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "dsm_5_session_id" ] ;
+     fhir:text [ fhir:v "Session ID" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "dsm_5_started_at" ] ;
+     fhir:text [ fhir:v "Questionnaire Started At" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "dsm_5_completed_at" ] ;
+     fhir:text [ fhir:v "Questionnaire Completed At" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "dsm_5_duration" ] ;
+     fhir:text [ fhir:v "Questionnaire Duration (seconds)" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "little_interest" ] ;
+     fhir:text [ fhir:v "Little interest or pleasure in doing things?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "feeling_down" ] ;
+     fhir:text [ fhir:v "Feeling down, depressed, or hopeless?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "feeling_more_irritated" ] ;
+     fhir:text [ fhir:v "Feeling more irritated, grouchy, or angry than usual?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "sleeping_less" ] ;
+     fhir:text [ fhir:v "Sleeping less than usual, but still have a lot of energy?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "starting_more_projects" ] ;
+     fhir:text [ fhir:v "Starting lots more projects than usual or doing more risky things than usual?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "feeling_nervous" ] ;
+     fhir:text [ fhir:v "Feeling nervous, anxious, frightened, worried, or on edge?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "feeling_panic" ] ;
+     fhir:text [ fhir:v "Feeling panic or being frightened?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "avoiding_situations" ] ;
+     fhir:text [ fhir:v "Avoiding situations that make you anxious?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "unexplained_aches" ] ;
+     fhir:text [ fhir:v "Unexplained aches and pains (e.g., head, back, joints, abdomen, legs)?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "illness_not_taken_serious" ] ;
+     fhir:text [ fhir:v "Feeling that your illnesses are not being taken seriously enough?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "self_harm" ] ;
+     fhir:text [ fhir:v "Thoughts of actually hurting yourself?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "hearing_things" ] ;
+     fhir:text [ fhir:v "Hearing things other people couldn't hear, such as voices even when no one was around?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "someone_hear_thoughts" ] ;
+     fhir:text [ fhir:v "Feeling that someone could hear your thoughts, or that you could hear what another person was thinking?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "sleep_quality" ] ;
+     fhir:text [ fhir:v "Problems with sleep that affected your sleep quality over all?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "memory_issues" ] ;
+     fhir:text [ fhir:v "Problems with memory (e.g., learning new information) or with location (e.g., finding your way home)?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "unpleasant_thoughts" ] ;
+     fhir:text [ fhir:v "Unpleasant thoughts, urges, or images that repeatedly enter your mind?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "repeat_acts" ] ;
+     fhir:text [ fhir:v "Feeling driven to perform certain behaviors or mental acts over and over again?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "feeling_detached" ] ;
+     fhir:text [ fhir:v "Feeling detached or distant from yourself, your body, your physical surroundings, or your memories?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "no_purpose" ] ;
+     fhir:text [ fhir:v "Not knowing who you really are or what you want out of life?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "isolated" ] ;
+     fhir:text [ fhir:v "Not feeling close to other people or enjoying your relationships with them?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "drinking_more" ] ;
+     fhir:text [ fhir:v "Drinking at least 4 drinks of any kind of alcohol in a single day?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "smoking_more" ] ;
+     fhir:text [ fhir:v "Smoking any cigarettes, a cigar, or pipe, or using snuff or chewing tobacco?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "medication_use" ] ;
+     fhir:text [ fhir:v "Using any of the following medicines ON YOUR OWN, that is, without a doctor's prescription, in greater amounts or longer than prescribed [e.g., painkillers (like Vicodin), stimulants (like Ritalin or Adderall), sedatives or tranquilizers (like sleeping pills or Valium), or drugs like marijuana, cocaine or crack, club drugs (like ecstasy), hallucinogens (like LSD), heroin, inhalants or solvents (like glue), or methamphetamine (like speed)]?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "0=None (Not at all) " ]
+     ] [
+       fhir:value [ fhir:v "1=Slight (Rare" ]
+     ] [
+       fhir:value [ fhir:v "2=Mild (Several days) " ]
+     ] [
+       fhir:value [ fhir:v "3=Moderate (More than half the days) " ]
+     ] [
+       fhir:value [ fhir:v "4=Severe (Nearly every day)" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "q1_happy" ] ;
+     fhir:text [ fhir:v "Question 1" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "I do not feel happier or more cheerful than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I occasionally feel happier or more cheerful than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I often feel happier or more cheerful than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I feel happier or more cheerful than usual most of the time. " ]
+     ] [
+       fhir:value [ fhir:v "I feel happier or more cheerful than usual all of the time." ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "q2_self_confident" ] ;
+     fhir:text [ fhir:v "Question 2" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "I do not feel more self-confident than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I occasionally feel more self-confident than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I often feel more self-confident than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I frequently feel more self-confident than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I feel extremely self-confident all of the time." ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "q3_sleep" ] ;
+     fhir:text [ fhir:v "Question 3" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "I do not need less sleep than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I occasionally need less sleep than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I often need less sleep than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I frequently need less sleep than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I can go all day and all night without any sleep and still not feel tired." ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "q4_talk" ] ;
+     fhir:text [ fhir:v "Question 4" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "I do not talk more than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I occasionally talk more than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I often talk more than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I frequently talk more than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I talk constantly and cannot be interrupted." ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "q5_active" ] ;
+     fhir:text [ fhir:v "Question 5" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "I have not been more active (either socially" ]
+     ] [
+       fhir:value [ fhir:v "I have occasionally been more active than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I have often been more active than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I have frequently been more active than usual. " ]
+     ] [
+       fhir:value [ fhir:v "I am constantly more active or on the go all the time." ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "social_phobia_1" ] ;
+     fhir:text [ fhir:v "felt moments of sudden terror, fear, or fright in social situations" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Never " ]
+     ] [
+       fhir:value [ fhir:v "Occasionally " ]
+     ] [
+       fhir:value [ fhir:v "Half of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "social_phobia_2" ] ;
+     fhir:text [ fhir:v "felt anxious, worried, or nervous about social situations" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Never " ]
+     ] [
+       fhir:value [ fhir:v "Occasionally " ]
+     ] [
+       fhir:value [ fhir:v "Half of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "social_phobia_3" ] ;
+     fhir:text [ fhir:v "had thoughts of being rejected, humiliated, embarrassed, ridiculed, or offending others" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Never " ]
+     ] [
+       fhir:value [ fhir:v "Occasionally " ]
+     ] [
+       fhir:value [ fhir:v "Half of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "social_phobia_4" ] ;
+     fhir:text [ fhir:v "felt a racing heart, sweaty, trouble breathing, faint, or shaky in social situations" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Never " ]
+     ] [
+       fhir:value [ fhir:v "Occasionally " ]
+     ] [
+       fhir:value [ fhir:v "Half of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "social_phobia_5" ] ;
+     fhir:text [ fhir:v "felt tense muscles, felt on edge or restless, or had trouble relaxing in social situations" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Never " ]
+     ] [
+       fhir:value [ fhir:v "Occasionally " ]
+     ] [
+       fhir:value [ fhir:v "Half of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "social_phobia_6" ] ;
+     fhir:text [ fhir:v "avoided, or did not approach or enter, social situations" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Never " ]
+     ] [
+       fhir:value [ fhir:v "Occasionally " ]
+     ] [
+       fhir:value [ fhir:v "Half of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "social_phobia_7" ] ;
+     fhir:text [ fhir:v "left social situations early or participated only minimally (e.g., said little, avoided eye contact)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Never " ]
+     ] [
+       fhir:value [ fhir:v "Occasionally " ]
+     ] [
+       fhir:value [ fhir:v "Half of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "social_phobia_8" ] ;
+     fhir:text [ fhir:v "spent a lot of time preparing what to say or how to act in social situations" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Never " ]
+     ] [
+       fhir:value [ fhir:v "Occasionally " ]
+     ] [
+       fhir:value [ fhir:v "Half of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "social_phobia_9" ] ;
+     fhir:text [ fhir:v "distracted myself to avoid thinking about social situations" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Never " ]
+     ] [
+       fhir:value [ fhir:v "Occasionally " ]
+     ] [
+       fhir:value [ fhir:v "Half of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "social_phobia_10" ] ;
+     fhir:text [ fhir:v "needed help to cope with social situations (e.g., alcohol or medications, superstitious objects)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "Never " ]
+     ] [
+       fhir:value [ fhir:v "Occasionally " ]
+     ] [
+       fhir:value [ fhir:v "Half of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

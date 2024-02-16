@@ -1,0 +1,414 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://voicecollab.ai/fhir/Questionnaire/qrespleicestercoughquestionnairelcqschema> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "qrespleicestercoughquestionnairelcqschema"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"^^xsd:anyURI ;
+       fhir:link <https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The linkId for the item\">LinkId</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the itemcan appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">https://voicecollab.ai/fhir/Questionnaire/qrespleicestercoughquestionnairelcqschema#1.5.1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.leicester_cough_session_id\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> leicester_cough_session_id</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Session ID</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.leicester_cough_started_at\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> leicester_cough_started_at</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Started At</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.leicester_cough_completed_at\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> leicester_cough_completed_at</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Completed At</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.leicester_cough_duration\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> leicester_cough_duration</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Duration (seconds)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_chest_stomach_pains\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_chest_stomach_pains</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, have you had chest or stomach pains as a result of your cough?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_chest_stomach_pains\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_sputum_phlegm\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_sputum_phlegm</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, have you been bothered by sputum (phlegm) production when you cough?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_sputum_phlegm\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_tired\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_tired</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, have you been tired because of your cough?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_tired\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_embarrassed\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_embarrassed</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">How often during the last 2 weeks have you felt embarrassed by your coughing?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_embarrassed\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_anxious\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_anxious</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, my cough has made me feel anxious.</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_anxious\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_interfere_job\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_interfere_job</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, my cough has interfered with my job or other daily tasks.</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_interfere_job\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_interfere_life\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_interfere_life</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, I felt that my cough interfered with the overall enjoyment of my life.</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_interfere_life\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_exposure_paint\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_exposure_paint</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, exposure to paint or fumes has made me cough.</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_exposure_paint\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_sleep\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_sleep</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, has your cough disturbed your sleep?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_sleep\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_bout\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_bout</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, how many times a day have you had a coughing bout?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_bout\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_frustrated\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_frustrated</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, my cough has made me feel frustrated.</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_frustrated\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_fed_up\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_fed_up</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, my cough has made me feel fed up.</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_fed_up\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_hoarse_voice\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_hoarse_voice</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, have you suffered from a hoarse voice as a result of your cough?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_hoarse_voice\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_serious_illness\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_serious_illness</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, have you worried that your cough may indicate serious illness?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_serious_illness\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_other_people\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_other_people</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, have you been concerned that other people think something is wrong with you, because of your cough?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_other_people\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_interrupt_conversation\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_interrupt_conversation</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, my cough has interrupted conversation or telephone calls.</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_interrupt_conversation\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_partner\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_partner</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, I feel that my cough has annoyed my partner, family, or friends.</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_partner\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.lcq_felt_in_control\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_felt_in_control</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, have you felt in control of your cough?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_felt_in_control\">7 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" id=\"item.lcq_energy\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> lcq_energy</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In the last 2 weeks, have you had a lot of energy?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.lcq_energy\">7 options</a></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Option Sets</b></p><a name=\"opt-item.lcq_chest_stomach_pains\"> </a><p><b>Answer options for lcq_chest_stomach_pains</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_sputum_phlegm\"> </a><p><b>Answer options for lcq_sputum_phlegm</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_tired\"> </a><p><b>Answer options for lcq_tired</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_embarrassed\"> </a><p><b>Answer options for lcq_embarrassed</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_anxious\"> </a><p><b>Answer options for lcq_anxious</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_interfere_job\"> </a><p><b>Answer options for lcq_interfere_job</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_interfere_life\"> </a><p><b>Answer options for lcq_interfere_life</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_exposure_paint\"> </a><p><b>Answer options for lcq_exposure_paint</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_sleep\"> </a><p><b>Answer options for lcq_sleep</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_bout\"> </a><p><b>Answer options for lcq_bout</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_frustrated\"> </a><p><b>Answer options for lcq_frustrated</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_fed_up\"> </a><p><b>Answer options for lcq_fed_up</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_hoarse_voice\"> </a><p><b>Answer options for lcq_hoarse_voice</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_serious_illness\"> </a><p><b>Answer options for lcq_serious_illness</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_other_people\"> </a><p><b>Answer options for lcq_other_people</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_interrupt_conversation\"> </a><p><b>Answer options for lcq_interrupt_conversation</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_partner\"> </a><p><b>Answer options for lcq_partner</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_felt_in_control\"> </a><p><b>Answer options for lcq_felt_in_control</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul><a name=\"opt-item.lcq_energy\"> </a><p><b>Answer options for lcq_energy</b></p><ul><li style=\"font-size: 11px\">None of the time </li><li style=\"font-size: 11px\">Hardly any of the time </li><li style=\"font-size: 11px\">A little of the time </li><li style=\"font-size: 11px\">Some of the time </li><li style=\"font-size: 11px\">A good bit of the time </li><li style=\"font-size: 11px\">Most of the time </li><li style=\"font-size: 11px\">All of the time</li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://voicecollab.ai/fhir/Questionnaire/qrespleicestercoughquestionnairelcqschema"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.5.1"] ; # 
+  fhir:title [ fhir:v "q_resp_leicester_cough_questionnaire_lcq_schema"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-02-16T18:42:20Z"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KinD Lab"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KinD Lab" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://fhir.kindlab.sickkids.ca" ]
+     ] )
+  ] ) ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "leicester_cough_session_id" ] ;
+     fhir:text [ fhir:v "Session ID" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "leicester_cough_started_at" ] ;
+     fhir:text [ fhir:v "Questionnaire Started At" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "leicester_cough_completed_at" ] ;
+     fhir:text [ fhir:v "Questionnaire Completed At" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "leicester_cough_duration" ] ;
+     fhir:text [ fhir:v "Questionnaire Duration (seconds)" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:linkId [ fhir:v "lcq_chest_stomach_pains" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, have you had chest or stomach pains as a result of your cough?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_sputum_phlegm" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, have you been bothered by sputum (phlegm) production when you cough?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_tired" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, have you been tired because of your cough?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_embarrassed" ] ;
+     fhir:text [ fhir:v "How often during the last 2 weeks have you felt embarrassed by your coughing?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_anxious" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, my cough has made me feel anxious." ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_interfere_job" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, my cough has interfered with my job or other daily tasks." ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_interfere_life" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, I felt that my cough interfered with the overall enjoyment of my life." ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_exposure_paint" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, exposure to paint or fumes has made me cough." ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_sleep" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, has your cough disturbed your sleep?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_bout" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, how many times a day have you had a coughing bout?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_frustrated" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, my cough has made me feel frustrated." ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_fed_up" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, my cough has made me feel fed up." ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_hoarse_voice" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, have you suffered from a hoarse voice as a result of your cough?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_serious_illness" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, have you worried that your cough may indicate serious illness?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_other_people" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, have you been concerned that other people think something is wrong with you, because of your cough?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_interrupt_conversation" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, my cough has interrupted conversation or telephone calls." ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_partner" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, I feel that my cough has annoyed my partner, family, or friends." ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_felt_in_control" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, have you felt in control of your cough?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "lcq_energy" ] ;
+     fhir:text [ fhir:v "In the last 2 weeks, have you had a lot of energy?" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:value [ fhir:v "None of the time " ]
+     ] [
+       fhir:value [ fhir:v "Hardly any of the time " ]
+     ] [
+       fhir:value [ fhir:v "A little of the time " ]
+     ] [
+       fhir:value [ fhir:v "Some of the time " ]
+     ] [
+       fhir:value [ fhir:v "A good bit of the time " ]
+     ] [
+       fhir:value [ fhir:v "Most of the time " ]
+     ] [
+       fhir:value [ fhir:v "All of the time" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

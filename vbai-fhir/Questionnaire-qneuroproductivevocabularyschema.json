@@ -1,0 +1,3505 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "qneuroproductivevocabularyschema",
+  "meta" : {
+    "profile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The linkId for the item\">LinkId</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the itemcan appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">https://voicecollab.ai/fhir/Questionnaire/qneuroproductivevocabularyschema#1.5.1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_session_id\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> vocabulary_session_id</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Session ID</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_started_at\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> vocabulary_started_at</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Started At</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_recording_acoustic_task_id\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> vocabulary_recording_acoustic_task_id</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Acoustic Task ID</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_completed_at\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> vocabulary_completed_at</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Completed At</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_duration\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> vocabulary_duration</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire Duration (seconds)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_1\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 1\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_1\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_1\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 1\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_1\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_correct_1\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 1\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_1\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_2\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_2</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 2\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_2\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_2\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_2</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 2\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_2\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_correct_2\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_2</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 2\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_2\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_3\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_3</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 3\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_3\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_3\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_3</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 3\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_3\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_correct_3\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_3</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 3\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_3\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_4\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_4</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 4\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_4\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_4\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_4</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 4\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_4\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_correct_4\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_4</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 4\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_4\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_5\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_5</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 5\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_5\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_5\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_5</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 5\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_5\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_correct_5\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_5</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 5\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_5\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_word_6\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_word_6</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 6\nWord</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_word_6\">182 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.vocabulary_item_difficulty_6\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_difficulty_6</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 6\nWord Difficulty</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_difficulty_6\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" id=\"item.vocabulary_item_correct_6\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> vocabulary_item_correct_6</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item 6\nCorrect?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.vocabulary_item_correct_6\">2 options</a></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Option Sets</b></p><a name=\"opt-item.vocabulary_item_word_1\"> </a><p><b>Answer options for vocabulary_item_word_1</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_1\"> </a><p><b>Answer options for vocabulary_item_difficulty_1</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_1\"> </a><p><b>Answer options for vocabulary_item_correct_1</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul><a name=\"opt-item.vocabulary_item_word_2\"> </a><p><b>Answer options for vocabulary_item_word_2</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_2\"> </a><p><b>Answer options for vocabulary_item_difficulty_2</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_2\"> </a><p><b>Answer options for vocabulary_item_correct_2</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul><a name=\"opt-item.vocabulary_item_word_3\"> </a><p><b>Answer options for vocabulary_item_word_3</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_3\"> </a><p><b>Answer options for vocabulary_item_difficulty_3</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_3\"> </a><p><b>Answer options for vocabulary_item_correct_3</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul><a name=\"opt-item.vocabulary_item_word_4\"> </a><p><b>Answer options for vocabulary_item_word_4</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_4\"> </a><p><b>Answer options for vocabulary_item_difficulty_4</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_4\"> </a><p><b>Answer options for vocabulary_item_correct_4</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul><a name=\"opt-item.vocabulary_item_word_5\"> </a><p><b>Answer options for vocabulary_item_word_5</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_5\"> </a><p><b>Answer options for vocabulary_item_difficulty_5</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_5\"> </a><p><b>Answer options for vocabulary_item_correct_5</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul><a name=\"opt-item.vocabulary_item_word_6\"> </a><p><b>Answer options for vocabulary_item_word_6</b></p><ul><li style=\"font-size: 11px\">boil </li><li style=\"font-size: 11px\">duckling </li><li style=\"font-size: 11px\">cupboard </li><li style=\"font-size: 11px\">workbench </li><li style=\"font-size: 11px\">agreeable </li><li style=\"font-size: 11px\">swear </li><li style=\"font-size: 11px\">cap </li><li style=\"font-size: 11px\">unwire </li><li style=\"font-size: 11px\">guitarist </li><li style=\"font-size: 11px\">hardcover </li><li style=\"font-size: 11px\">broccoli </li><li style=\"font-size: 11px\">unsolved </li><li style=\"font-size: 11px\">coral </li><li style=\"font-size: 11px\">gladiator </li><li style=\"font-size: 11px\">monkey </li><li style=\"font-size: 11px\">jobless </li><li style=\"font-size: 11px\">capitalization </li><li style=\"font-size: 11px\">selfish </li><li style=\"font-size: 11px\">emptiness </li><li style=\"font-size: 11px\">pain </li><li style=\"font-size: 11px\">brainpower </li><li style=\"font-size: 11px\">lettuce </li><li style=\"font-size: 11px\">wartime </li><li style=\"font-size: 11px\">newsboy </li><li style=\"font-size: 11px\">equipment </li><li style=\"font-size: 11px\">sensation </li><li style=\"font-size: 11px\">burglar </li><li style=\"font-size: 11px\">idiotic </li><li style=\"font-size: 11px\">spoils </li><li style=\"font-size: 11px\">belong </li><li style=\"font-size: 11px\">greeter </li><li style=\"font-size: 11px\">screech </li><li style=\"font-size: 11px\">tardy </li><li style=\"font-size: 11px\">viewing </li><li style=\"font-size: 11px\">heating </li><li style=\"font-size: 11px\">homeward </li><li style=\"font-size: 11px\">payment </li><li style=\"font-size: 11px\">refereeing </li><li style=\"font-size: 11px\">canyon </li><li style=\"font-size: 11px\">nutmeg </li><li style=\"font-size: 11px\">birdcage </li><li style=\"font-size: 11px\">killer </li><li style=\"font-size: 11px\">waistband </li><li style=\"font-size: 11px\">mutter </li><li style=\"font-size: 11px\">specific </li><li style=\"font-size: 11px\">clerk </li><li style=\"font-size: 11px\">orphaned </li><li style=\"font-size: 11px\">bat </li><li style=\"font-size: 11px\">bakeshop </li><li style=\"font-size: 11px\">hilarious </li><li style=\"font-size: 11px\">cheeseburger </li><li style=\"font-size: 11px\">able </li><li style=\"font-size: 11px\">morning </li><li style=\"font-size: 11px\">tradition </li><li style=\"font-size: 11px\">jean </li><li style=\"font-size: 11px\">merry </li><li style=\"font-size: 11px\">sunset </li><li style=\"font-size: 11px\">stand </li><li style=\"font-size: 11px\">sportsmanlike </li><li style=\"font-size: 11px\">superstitious </li><li style=\"font-size: 11px\">weightless </li><li style=\"font-size: 11px\">vibration </li><li style=\"font-size: 11px\">spotless </li><li style=\"font-size: 11px\">plank </li><li style=\"font-size: 11px\">pebble </li><li style=\"font-size: 11px\">wastebasket </li><li style=\"font-size: 11px\">envy </li><li style=\"font-size: 11px\">hammer </li><li style=\"font-size: 11px\">sun </li><li style=\"font-size: 11px\">whole </li><li style=\"font-size: 11px\">faucet </li><li style=\"font-size: 11px\">cursive </li><li style=\"font-size: 11px\">tire </li><li style=\"font-size: 11px\">perch </li><li style=\"font-size: 11px\">invitation </li><li style=\"font-size: 11px\">continent </li><li style=\"font-size: 11px\">membership </li><li style=\"font-size: 11px\">scramble </li><li style=\"font-size: 11px\">wood </li><li style=\"font-size: 11px\">pheasant </li><li style=\"font-size: 11px\">anonymous </li><li style=\"font-size: 11px\">strategic </li><li style=\"font-size: 11px\">polling </li><li style=\"font-size: 11px\">combustion </li><li style=\"font-size: 11px\">remembrance </li><li style=\"font-size: 11px\">obscure </li><li style=\"font-size: 11px\">cleric </li><li style=\"font-size: 11px\">outrank </li><li style=\"font-size: 11px\">absolution </li><li style=\"font-size: 11px\">priesthood </li><li style=\"font-size: 11px\">critic </li><li style=\"font-size: 11px\">uncensored </li><li style=\"font-size: 11px\">hobbyist </li><li style=\"font-size: 11px\">perilous </li><li style=\"font-size: 11px\">irate </li><li style=\"font-size: 11px\">global </li><li style=\"font-size: 11px\">hovel </li><li style=\"font-size: 11px\">sophomore </li><li style=\"font-size: 11px\">dirham </li><li style=\"font-size: 11px\">keen </li><li style=\"font-size: 11px\">fuddle </li><li style=\"font-size: 11px\">battlewagon </li><li style=\"font-size: 11px\">entail </li><li style=\"font-size: 11px\">scarab </li><li style=\"font-size: 11px\">dank </li><li style=\"font-size: 11px\">guarantee </li><li style=\"font-size: 11px\">adjuster </li><li style=\"font-size: 11px\">enliven </li><li style=\"font-size: 11px\">biodegradable </li><li style=\"font-size: 11px\">enfold </li><li style=\"font-size: 11px\">amputee </li><li style=\"font-size: 11px\">trench </li><li style=\"font-size: 11px\">ovation </li><li style=\"font-size: 11px\">unsuitable </li><li style=\"font-size: 11px\">suburban </li><li style=\"font-size: 11px\">memento </li><li style=\"font-size: 11px\">inevitable </li><li style=\"font-size: 11px\">marine </li><li style=\"font-size: 11px\">uncorrupted </li><li style=\"font-size: 11px\">mystique </li><li style=\"font-size: 11px\">behemoth </li><li style=\"font-size: 11px\">marshland </li><li style=\"font-size: 11px\">unaltered </li><li style=\"font-size: 11px\">minority </li><li style=\"font-size: 11px\">illicit </li><li style=\"font-size: 11px\">stockbroker </li><li style=\"font-size: 11px\">luster </li><li style=\"font-size: 11px\">contort </li><li style=\"font-size: 11px\">crimping </li><li style=\"font-size: 11px\">finery </li><li style=\"font-size: 11px\">feminist </li><li style=\"font-size: 11px\">hallmark </li><li style=\"font-size: 11px\">showy </li><li style=\"font-size: 11px\">tarantella </li><li style=\"font-size: 11px\">restaurateur </li><li style=\"font-size: 11px\">uncanny </li><li style=\"font-size: 11px\">kilter </li><li style=\"font-size: 11px\">legislation </li><li style=\"font-size: 11px\">illogical </li><li style=\"font-size: 11px\">entirety </li><li style=\"font-size: 11px\">irreparable </li><li style=\"font-size: 11px\">itinerary </li><li style=\"font-size: 11px\">concept </li><li style=\"font-size: 11px\">quivering </li><li style=\"font-size: 11px\">plagiarize </li><li style=\"font-size: 11px\">effectiveness </li><li style=\"font-size: 11px\">portrayal </li><li style=\"font-size: 11px\">civilization </li><li style=\"font-size: 11px\">variation </li><li style=\"font-size: 11px\">omen </li><li style=\"font-size: 11px\">teriyaki </li><li style=\"font-size: 11px\">oligarch </li><li style=\"font-size: 11px\">compartmentalize </li><li style=\"font-size: 11px\">lemma </li><li style=\"font-size: 11px\">aquaplane </li><li style=\"font-size: 11px\">homicidal </li><li style=\"font-size: 11px\">editorialize </li><li style=\"font-size: 11px\">inkling </li><li style=\"font-size: 11px\">valency </li><li style=\"font-size: 11px\">mesosphere </li><li style=\"font-size: 11px\">distillate </li><li style=\"font-size: 11px\">deduce </li><li style=\"font-size: 11px\">deformation </li><li style=\"font-size: 11px\">puerile </li><li style=\"font-size: 11px\">cynical </li><li style=\"font-size: 11px\">surreal </li><li style=\"font-size: 11px\">denigrate </li><li style=\"font-size: 11px\">unconventionality </li><li style=\"font-size: 11px\">maceration </li><li style=\"font-size: 11px\">jocularity </li><li style=\"font-size: 11px\">poignant </li><li style=\"font-size: 11px\">subornation </li><li style=\"font-size: 11px\">heliotrope </li><li style=\"font-size: 11px\">clef </li><li style=\"font-size: 11px\">exudation </li><li style=\"font-size: 11px\">inequitable </li><li style=\"font-size: 11px\">lox </li><li style=\"font-size: 11px\">loyalist </li><li style=\"font-size: 11px\">immutable </li><li style=\"font-size: 11px\">conga </li><li style=\"font-size: 11px\">affirmation </li><li style=\"font-size: 11px\">pejorative</li></ul><a name=\"opt-item.vocabulary_item_difficulty_6\"> </a><p><b>Answer options for vocabulary_item_difficulty_6</b></p><ul><li style=\"font-size: 11px\">1 </li><li style=\"font-size: 11px\">2 </li><li style=\"font-size: 11px\">3</li></ul><a name=\"opt-item.vocabulary_item_correct_6\"> </a><p><b>Answer options for vocabulary_item_correct_6</b></p><ul><li style=\"font-size: 11px\">Yes </li><li style=\"font-size: 11px\">No</li></ul></div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/Questionnaire/qneuroproductivevocabularyschema",
+  "version" : "1.5.1",
+  "title" : "q_neuro_productive_vocabulary_schema",
+  "status" : "active",
+  "date" : "2024-02-16T18:42:10Z",
+  "publisher" : "KinD Lab",
+  "contact" : [{
+    "name" : "KinD Lab",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://fhir.kindlab.sickkids.ca"
+    }]
+  }],
+  "item" : [{
+    "linkId" : "vocabulary_session_id",
+    "text" : "Session ID",
+    "type" : "string"
+  },
+  {
+    "linkId" : "vocabulary_started_at",
+    "text" : "Questionnaire Started At",
+    "type" : "string"
+  },
+  {
+    "linkId" : "vocabulary_recording_acoustic_task_id",
+    "text" : "Acoustic Task ID",
+    "type" : "string"
+  },
+  {
+    "linkId" : "vocabulary_completed_at",
+    "text" : "Questionnaire Completed At",
+    "type" : "string"
+  },
+  {
+    "linkId" : "vocabulary_duration",
+    "text" : "Questionnaire Duration (seconds)",
+    "type" : "string"
+  },
+  {
+    "linkId" : "vocabulary_item_word_1",
+    "text" : "Item 1\nWord",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "boil "
+    },
+    {
+      "valueString" : "duckling "
+    },
+    {
+      "valueString" : "cupboard "
+    },
+    {
+      "valueString" : "workbench "
+    },
+    {
+      "valueString" : "agreeable "
+    },
+    {
+      "valueString" : "swear "
+    },
+    {
+      "valueString" : "cap "
+    },
+    {
+      "valueString" : "unwire "
+    },
+    {
+      "valueString" : "guitarist "
+    },
+    {
+      "valueString" : "hardcover "
+    },
+    {
+      "valueString" : "broccoli "
+    },
+    {
+      "valueString" : "unsolved "
+    },
+    {
+      "valueString" : "coral "
+    },
+    {
+      "valueString" : "gladiator "
+    },
+    {
+      "valueString" : "monkey "
+    },
+    {
+      "valueString" : "jobless "
+    },
+    {
+      "valueString" : "capitalization "
+    },
+    {
+      "valueString" : "selfish "
+    },
+    {
+      "valueString" : "emptiness "
+    },
+    {
+      "valueString" : "pain "
+    },
+    {
+      "valueString" : "brainpower "
+    },
+    {
+      "valueString" : "lettuce "
+    },
+    {
+      "valueString" : "wartime "
+    },
+    {
+      "valueString" : "newsboy "
+    },
+    {
+      "valueString" : "equipment "
+    },
+    {
+      "valueString" : "sensation "
+    },
+    {
+      "valueString" : "burglar "
+    },
+    {
+      "valueString" : "idiotic "
+    },
+    {
+      "valueString" : "spoils "
+    },
+    {
+      "valueString" : "belong "
+    },
+    {
+      "valueString" : "greeter "
+    },
+    {
+      "valueString" : "screech "
+    },
+    {
+      "valueString" : "tardy "
+    },
+    {
+      "valueString" : "viewing "
+    },
+    {
+      "valueString" : "heating "
+    },
+    {
+      "valueString" : "homeward "
+    },
+    {
+      "valueString" : "payment "
+    },
+    {
+      "valueString" : "refereeing "
+    },
+    {
+      "valueString" : "canyon "
+    },
+    {
+      "valueString" : "nutmeg "
+    },
+    {
+      "valueString" : "birdcage "
+    },
+    {
+      "valueString" : "killer "
+    },
+    {
+      "valueString" : "waistband "
+    },
+    {
+      "valueString" : "mutter "
+    },
+    {
+      "valueString" : "specific "
+    },
+    {
+      "valueString" : "clerk "
+    },
+    {
+      "valueString" : "orphaned "
+    },
+    {
+      "valueString" : "bat "
+    },
+    {
+      "valueString" : "bakeshop "
+    },
+    {
+      "valueString" : "hilarious "
+    },
+    {
+      "valueString" : "cheeseburger "
+    },
+    {
+      "valueString" : "able "
+    },
+    {
+      "valueString" : "morning "
+    },
+    {
+      "valueString" : "tradition "
+    },
+    {
+      "valueString" : "jean "
+    },
+    {
+      "valueString" : "merry "
+    },
+    {
+      "valueString" : "sunset "
+    },
+    {
+      "valueString" : "stand "
+    },
+    {
+      "valueString" : "sportsmanlike "
+    },
+    {
+      "valueString" : "superstitious "
+    },
+    {
+      "valueString" : "weightless "
+    },
+    {
+      "valueString" : "vibration "
+    },
+    {
+      "valueString" : "spotless "
+    },
+    {
+      "valueString" : "plank "
+    },
+    {
+      "valueString" : "pebble "
+    },
+    {
+      "valueString" : "wastebasket "
+    },
+    {
+      "valueString" : "envy "
+    },
+    {
+      "valueString" : "hammer "
+    },
+    {
+      "valueString" : "sun "
+    },
+    {
+      "valueString" : "whole "
+    },
+    {
+      "valueString" : "faucet "
+    },
+    {
+      "valueString" : "cursive "
+    },
+    {
+      "valueString" : "tire "
+    },
+    {
+      "valueString" : "perch "
+    },
+    {
+      "valueString" : "invitation "
+    },
+    {
+      "valueString" : "continent "
+    },
+    {
+      "valueString" : "membership "
+    },
+    {
+      "valueString" : "scramble "
+    },
+    {
+      "valueString" : "wood "
+    },
+    {
+      "valueString" : "pheasant "
+    },
+    {
+      "valueString" : "anonymous "
+    },
+    {
+      "valueString" : "strategic "
+    },
+    {
+      "valueString" : "polling "
+    },
+    {
+      "valueString" : "combustion "
+    },
+    {
+      "valueString" : "remembrance "
+    },
+    {
+      "valueString" : "obscure "
+    },
+    {
+      "valueString" : "cleric "
+    },
+    {
+      "valueString" : "outrank "
+    },
+    {
+      "valueString" : "absolution "
+    },
+    {
+      "valueString" : "priesthood "
+    },
+    {
+      "valueString" : "critic "
+    },
+    {
+      "valueString" : "uncensored "
+    },
+    {
+      "valueString" : "hobbyist "
+    },
+    {
+      "valueString" : "perilous "
+    },
+    {
+      "valueString" : "irate "
+    },
+    {
+      "valueString" : "global "
+    },
+    {
+      "valueString" : "hovel "
+    },
+    {
+      "valueString" : "sophomore "
+    },
+    {
+      "valueString" : "dirham "
+    },
+    {
+      "valueString" : "keen "
+    },
+    {
+      "valueString" : "fuddle "
+    },
+    {
+      "valueString" : "battlewagon "
+    },
+    {
+      "valueString" : "entail "
+    },
+    {
+      "valueString" : "scarab "
+    },
+    {
+      "valueString" : "dank "
+    },
+    {
+      "valueString" : "guarantee "
+    },
+    {
+      "valueString" : "adjuster "
+    },
+    {
+      "valueString" : "enliven "
+    },
+    {
+      "valueString" : "biodegradable "
+    },
+    {
+      "valueString" : "enfold "
+    },
+    {
+      "valueString" : "amputee "
+    },
+    {
+      "valueString" : "trench "
+    },
+    {
+      "valueString" : "ovation "
+    },
+    {
+      "valueString" : "unsuitable "
+    },
+    {
+      "valueString" : "suburban "
+    },
+    {
+      "valueString" : "memento "
+    },
+    {
+      "valueString" : "inevitable "
+    },
+    {
+      "valueString" : "marine "
+    },
+    {
+      "valueString" : "uncorrupted "
+    },
+    {
+      "valueString" : "mystique "
+    },
+    {
+      "valueString" : "behemoth "
+    },
+    {
+      "valueString" : "marshland "
+    },
+    {
+      "valueString" : "unaltered "
+    },
+    {
+      "valueString" : "minority "
+    },
+    {
+      "valueString" : "illicit "
+    },
+    {
+      "valueString" : "stockbroker "
+    },
+    {
+      "valueString" : "luster "
+    },
+    {
+      "valueString" : "contort "
+    },
+    {
+      "valueString" : "crimping "
+    },
+    {
+      "valueString" : "finery "
+    },
+    {
+      "valueString" : "feminist "
+    },
+    {
+      "valueString" : "hallmark "
+    },
+    {
+      "valueString" : "showy "
+    },
+    {
+      "valueString" : "tarantella "
+    },
+    {
+      "valueString" : "restaurateur "
+    },
+    {
+      "valueString" : "uncanny "
+    },
+    {
+      "valueString" : "kilter "
+    },
+    {
+      "valueString" : "legislation "
+    },
+    {
+      "valueString" : "illogical "
+    },
+    {
+      "valueString" : "entirety "
+    },
+    {
+      "valueString" : "irreparable "
+    },
+    {
+      "valueString" : "itinerary "
+    },
+    {
+      "valueString" : "concept "
+    },
+    {
+      "valueString" : "quivering "
+    },
+    {
+      "valueString" : "plagiarize "
+    },
+    {
+      "valueString" : "effectiveness "
+    },
+    {
+      "valueString" : "portrayal "
+    },
+    {
+      "valueString" : "civilization "
+    },
+    {
+      "valueString" : "variation "
+    },
+    {
+      "valueString" : "omen "
+    },
+    {
+      "valueString" : "teriyaki "
+    },
+    {
+      "valueString" : "oligarch "
+    },
+    {
+      "valueString" : "compartmentalize "
+    },
+    {
+      "valueString" : "lemma "
+    },
+    {
+      "valueString" : "aquaplane "
+    },
+    {
+      "valueString" : "homicidal "
+    },
+    {
+      "valueString" : "editorialize "
+    },
+    {
+      "valueString" : "inkling "
+    },
+    {
+      "valueString" : "valency "
+    },
+    {
+      "valueString" : "mesosphere "
+    },
+    {
+      "valueString" : "distillate "
+    },
+    {
+      "valueString" : "deduce "
+    },
+    {
+      "valueString" : "deformation "
+    },
+    {
+      "valueString" : "puerile "
+    },
+    {
+      "valueString" : "cynical "
+    },
+    {
+      "valueString" : "surreal "
+    },
+    {
+      "valueString" : "denigrate "
+    },
+    {
+      "valueString" : "unconventionality "
+    },
+    {
+      "valueString" : "maceration "
+    },
+    {
+      "valueString" : "jocularity "
+    },
+    {
+      "valueString" : "poignant "
+    },
+    {
+      "valueString" : "subornation "
+    },
+    {
+      "valueString" : "heliotrope "
+    },
+    {
+      "valueString" : "clef "
+    },
+    {
+      "valueString" : "exudation "
+    },
+    {
+      "valueString" : "inequitable "
+    },
+    {
+      "valueString" : "lox "
+    },
+    {
+      "valueString" : "loyalist "
+    },
+    {
+      "valueString" : "immutable "
+    },
+    {
+      "valueString" : "conga "
+    },
+    {
+      "valueString" : "affirmation "
+    },
+    {
+      "valueString" : "pejorative"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_difficulty_1",
+    "text" : "Item 1\nWord Difficulty",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "1 "
+    },
+    {
+      "valueString" : "2 "
+    },
+    {
+      "valueString" : "3"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_correct_1",
+    "text" : "Item 1\nCorrect?",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "Yes "
+    },
+    {
+      "valueString" : "No"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_word_2",
+    "text" : "Item 2\nWord",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "boil "
+    },
+    {
+      "valueString" : "duckling "
+    },
+    {
+      "valueString" : "cupboard "
+    },
+    {
+      "valueString" : "workbench "
+    },
+    {
+      "valueString" : "agreeable "
+    },
+    {
+      "valueString" : "swear "
+    },
+    {
+      "valueString" : "cap "
+    },
+    {
+      "valueString" : "unwire "
+    },
+    {
+      "valueString" : "guitarist "
+    },
+    {
+      "valueString" : "hardcover "
+    },
+    {
+      "valueString" : "broccoli "
+    },
+    {
+      "valueString" : "unsolved "
+    },
+    {
+      "valueString" : "coral "
+    },
+    {
+      "valueString" : "gladiator "
+    },
+    {
+      "valueString" : "monkey "
+    },
+    {
+      "valueString" : "jobless "
+    },
+    {
+      "valueString" : "capitalization "
+    },
+    {
+      "valueString" : "selfish "
+    },
+    {
+      "valueString" : "emptiness "
+    },
+    {
+      "valueString" : "pain "
+    },
+    {
+      "valueString" : "brainpower "
+    },
+    {
+      "valueString" : "lettuce "
+    },
+    {
+      "valueString" : "wartime "
+    },
+    {
+      "valueString" : "newsboy "
+    },
+    {
+      "valueString" : "equipment "
+    },
+    {
+      "valueString" : "sensation "
+    },
+    {
+      "valueString" : "burglar "
+    },
+    {
+      "valueString" : "idiotic "
+    },
+    {
+      "valueString" : "spoils "
+    },
+    {
+      "valueString" : "belong "
+    },
+    {
+      "valueString" : "greeter "
+    },
+    {
+      "valueString" : "screech "
+    },
+    {
+      "valueString" : "tardy "
+    },
+    {
+      "valueString" : "viewing "
+    },
+    {
+      "valueString" : "heating "
+    },
+    {
+      "valueString" : "homeward "
+    },
+    {
+      "valueString" : "payment "
+    },
+    {
+      "valueString" : "refereeing "
+    },
+    {
+      "valueString" : "canyon "
+    },
+    {
+      "valueString" : "nutmeg "
+    },
+    {
+      "valueString" : "birdcage "
+    },
+    {
+      "valueString" : "killer "
+    },
+    {
+      "valueString" : "waistband "
+    },
+    {
+      "valueString" : "mutter "
+    },
+    {
+      "valueString" : "specific "
+    },
+    {
+      "valueString" : "clerk "
+    },
+    {
+      "valueString" : "orphaned "
+    },
+    {
+      "valueString" : "bat "
+    },
+    {
+      "valueString" : "bakeshop "
+    },
+    {
+      "valueString" : "hilarious "
+    },
+    {
+      "valueString" : "cheeseburger "
+    },
+    {
+      "valueString" : "able "
+    },
+    {
+      "valueString" : "morning "
+    },
+    {
+      "valueString" : "tradition "
+    },
+    {
+      "valueString" : "jean "
+    },
+    {
+      "valueString" : "merry "
+    },
+    {
+      "valueString" : "sunset "
+    },
+    {
+      "valueString" : "stand "
+    },
+    {
+      "valueString" : "sportsmanlike "
+    },
+    {
+      "valueString" : "superstitious "
+    },
+    {
+      "valueString" : "weightless "
+    },
+    {
+      "valueString" : "vibration "
+    },
+    {
+      "valueString" : "spotless "
+    },
+    {
+      "valueString" : "plank "
+    },
+    {
+      "valueString" : "pebble "
+    },
+    {
+      "valueString" : "wastebasket "
+    },
+    {
+      "valueString" : "envy "
+    },
+    {
+      "valueString" : "hammer "
+    },
+    {
+      "valueString" : "sun "
+    },
+    {
+      "valueString" : "whole "
+    },
+    {
+      "valueString" : "faucet "
+    },
+    {
+      "valueString" : "cursive "
+    },
+    {
+      "valueString" : "tire "
+    },
+    {
+      "valueString" : "perch "
+    },
+    {
+      "valueString" : "invitation "
+    },
+    {
+      "valueString" : "continent "
+    },
+    {
+      "valueString" : "membership "
+    },
+    {
+      "valueString" : "scramble "
+    },
+    {
+      "valueString" : "wood "
+    },
+    {
+      "valueString" : "pheasant "
+    },
+    {
+      "valueString" : "anonymous "
+    },
+    {
+      "valueString" : "strategic "
+    },
+    {
+      "valueString" : "polling "
+    },
+    {
+      "valueString" : "combustion "
+    },
+    {
+      "valueString" : "remembrance "
+    },
+    {
+      "valueString" : "obscure "
+    },
+    {
+      "valueString" : "cleric "
+    },
+    {
+      "valueString" : "outrank "
+    },
+    {
+      "valueString" : "absolution "
+    },
+    {
+      "valueString" : "priesthood "
+    },
+    {
+      "valueString" : "critic "
+    },
+    {
+      "valueString" : "uncensored "
+    },
+    {
+      "valueString" : "hobbyist "
+    },
+    {
+      "valueString" : "perilous "
+    },
+    {
+      "valueString" : "irate "
+    },
+    {
+      "valueString" : "global "
+    },
+    {
+      "valueString" : "hovel "
+    },
+    {
+      "valueString" : "sophomore "
+    },
+    {
+      "valueString" : "dirham "
+    },
+    {
+      "valueString" : "keen "
+    },
+    {
+      "valueString" : "fuddle "
+    },
+    {
+      "valueString" : "battlewagon "
+    },
+    {
+      "valueString" : "entail "
+    },
+    {
+      "valueString" : "scarab "
+    },
+    {
+      "valueString" : "dank "
+    },
+    {
+      "valueString" : "guarantee "
+    },
+    {
+      "valueString" : "adjuster "
+    },
+    {
+      "valueString" : "enliven "
+    },
+    {
+      "valueString" : "biodegradable "
+    },
+    {
+      "valueString" : "enfold "
+    },
+    {
+      "valueString" : "amputee "
+    },
+    {
+      "valueString" : "trench "
+    },
+    {
+      "valueString" : "ovation "
+    },
+    {
+      "valueString" : "unsuitable "
+    },
+    {
+      "valueString" : "suburban "
+    },
+    {
+      "valueString" : "memento "
+    },
+    {
+      "valueString" : "inevitable "
+    },
+    {
+      "valueString" : "marine "
+    },
+    {
+      "valueString" : "uncorrupted "
+    },
+    {
+      "valueString" : "mystique "
+    },
+    {
+      "valueString" : "behemoth "
+    },
+    {
+      "valueString" : "marshland "
+    },
+    {
+      "valueString" : "unaltered "
+    },
+    {
+      "valueString" : "minority "
+    },
+    {
+      "valueString" : "illicit "
+    },
+    {
+      "valueString" : "stockbroker "
+    },
+    {
+      "valueString" : "luster "
+    },
+    {
+      "valueString" : "contort "
+    },
+    {
+      "valueString" : "crimping "
+    },
+    {
+      "valueString" : "finery "
+    },
+    {
+      "valueString" : "feminist "
+    },
+    {
+      "valueString" : "hallmark "
+    },
+    {
+      "valueString" : "showy "
+    },
+    {
+      "valueString" : "tarantella "
+    },
+    {
+      "valueString" : "restaurateur "
+    },
+    {
+      "valueString" : "uncanny "
+    },
+    {
+      "valueString" : "kilter "
+    },
+    {
+      "valueString" : "legislation "
+    },
+    {
+      "valueString" : "illogical "
+    },
+    {
+      "valueString" : "entirety "
+    },
+    {
+      "valueString" : "irreparable "
+    },
+    {
+      "valueString" : "itinerary "
+    },
+    {
+      "valueString" : "concept "
+    },
+    {
+      "valueString" : "quivering "
+    },
+    {
+      "valueString" : "plagiarize "
+    },
+    {
+      "valueString" : "effectiveness "
+    },
+    {
+      "valueString" : "portrayal "
+    },
+    {
+      "valueString" : "civilization "
+    },
+    {
+      "valueString" : "variation "
+    },
+    {
+      "valueString" : "omen "
+    },
+    {
+      "valueString" : "teriyaki "
+    },
+    {
+      "valueString" : "oligarch "
+    },
+    {
+      "valueString" : "compartmentalize "
+    },
+    {
+      "valueString" : "lemma "
+    },
+    {
+      "valueString" : "aquaplane "
+    },
+    {
+      "valueString" : "homicidal "
+    },
+    {
+      "valueString" : "editorialize "
+    },
+    {
+      "valueString" : "inkling "
+    },
+    {
+      "valueString" : "valency "
+    },
+    {
+      "valueString" : "mesosphere "
+    },
+    {
+      "valueString" : "distillate "
+    },
+    {
+      "valueString" : "deduce "
+    },
+    {
+      "valueString" : "deformation "
+    },
+    {
+      "valueString" : "puerile "
+    },
+    {
+      "valueString" : "cynical "
+    },
+    {
+      "valueString" : "surreal "
+    },
+    {
+      "valueString" : "denigrate "
+    },
+    {
+      "valueString" : "unconventionality "
+    },
+    {
+      "valueString" : "maceration "
+    },
+    {
+      "valueString" : "jocularity "
+    },
+    {
+      "valueString" : "poignant "
+    },
+    {
+      "valueString" : "subornation "
+    },
+    {
+      "valueString" : "heliotrope "
+    },
+    {
+      "valueString" : "clef "
+    },
+    {
+      "valueString" : "exudation "
+    },
+    {
+      "valueString" : "inequitable "
+    },
+    {
+      "valueString" : "lox "
+    },
+    {
+      "valueString" : "loyalist "
+    },
+    {
+      "valueString" : "immutable "
+    },
+    {
+      "valueString" : "conga "
+    },
+    {
+      "valueString" : "affirmation "
+    },
+    {
+      "valueString" : "pejorative"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_difficulty_2",
+    "text" : "Item 2\nWord Difficulty",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "1 "
+    },
+    {
+      "valueString" : "2 "
+    },
+    {
+      "valueString" : "3"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_correct_2",
+    "text" : "Item 2\nCorrect?",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "Yes "
+    },
+    {
+      "valueString" : "No"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_word_3",
+    "text" : "Item 3\nWord",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "boil "
+    },
+    {
+      "valueString" : "duckling "
+    },
+    {
+      "valueString" : "cupboard "
+    },
+    {
+      "valueString" : "workbench "
+    },
+    {
+      "valueString" : "agreeable "
+    },
+    {
+      "valueString" : "swear "
+    },
+    {
+      "valueString" : "cap "
+    },
+    {
+      "valueString" : "unwire "
+    },
+    {
+      "valueString" : "guitarist "
+    },
+    {
+      "valueString" : "hardcover "
+    },
+    {
+      "valueString" : "broccoli "
+    },
+    {
+      "valueString" : "unsolved "
+    },
+    {
+      "valueString" : "coral "
+    },
+    {
+      "valueString" : "gladiator "
+    },
+    {
+      "valueString" : "monkey "
+    },
+    {
+      "valueString" : "jobless "
+    },
+    {
+      "valueString" : "capitalization "
+    },
+    {
+      "valueString" : "selfish "
+    },
+    {
+      "valueString" : "emptiness "
+    },
+    {
+      "valueString" : "pain "
+    },
+    {
+      "valueString" : "brainpower "
+    },
+    {
+      "valueString" : "lettuce "
+    },
+    {
+      "valueString" : "wartime "
+    },
+    {
+      "valueString" : "newsboy "
+    },
+    {
+      "valueString" : "equipment "
+    },
+    {
+      "valueString" : "sensation "
+    },
+    {
+      "valueString" : "burglar "
+    },
+    {
+      "valueString" : "idiotic "
+    },
+    {
+      "valueString" : "spoils "
+    },
+    {
+      "valueString" : "belong "
+    },
+    {
+      "valueString" : "greeter "
+    },
+    {
+      "valueString" : "screech "
+    },
+    {
+      "valueString" : "tardy "
+    },
+    {
+      "valueString" : "viewing "
+    },
+    {
+      "valueString" : "heating "
+    },
+    {
+      "valueString" : "homeward "
+    },
+    {
+      "valueString" : "payment "
+    },
+    {
+      "valueString" : "refereeing "
+    },
+    {
+      "valueString" : "canyon "
+    },
+    {
+      "valueString" : "nutmeg "
+    },
+    {
+      "valueString" : "birdcage "
+    },
+    {
+      "valueString" : "killer "
+    },
+    {
+      "valueString" : "waistband "
+    },
+    {
+      "valueString" : "mutter "
+    },
+    {
+      "valueString" : "specific "
+    },
+    {
+      "valueString" : "clerk "
+    },
+    {
+      "valueString" : "orphaned "
+    },
+    {
+      "valueString" : "bat "
+    },
+    {
+      "valueString" : "bakeshop "
+    },
+    {
+      "valueString" : "hilarious "
+    },
+    {
+      "valueString" : "cheeseburger "
+    },
+    {
+      "valueString" : "able "
+    },
+    {
+      "valueString" : "morning "
+    },
+    {
+      "valueString" : "tradition "
+    },
+    {
+      "valueString" : "jean "
+    },
+    {
+      "valueString" : "merry "
+    },
+    {
+      "valueString" : "sunset "
+    },
+    {
+      "valueString" : "stand "
+    },
+    {
+      "valueString" : "sportsmanlike "
+    },
+    {
+      "valueString" : "superstitious "
+    },
+    {
+      "valueString" : "weightless "
+    },
+    {
+      "valueString" : "vibration "
+    },
+    {
+      "valueString" : "spotless "
+    },
+    {
+      "valueString" : "plank "
+    },
+    {
+      "valueString" : "pebble "
+    },
+    {
+      "valueString" : "wastebasket "
+    },
+    {
+      "valueString" : "envy "
+    },
+    {
+      "valueString" : "hammer "
+    },
+    {
+      "valueString" : "sun "
+    },
+    {
+      "valueString" : "whole "
+    },
+    {
+      "valueString" : "faucet "
+    },
+    {
+      "valueString" : "cursive "
+    },
+    {
+      "valueString" : "tire "
+    },
+    {
+      "valueString" : "perch "
+    },
+    {
+      "valueString" : "invitation "
+    },
+    {
+      "valueString" : "continent "
+    },
+    {
+      "valueString" : "membership "
+    },
+    {
+      "valueString" : "scramble "
+    },
+    {
+      "valueString" : "wood "
+    },
+    {
+      "valueString" : "pheasant "
+    },
+    {
+      "valueString" : "anonymous "
+    },
+    {
+      "valueString" : "strategic "
+    },
+    {
+      "valueString" : "polling "
+    },
+    {
+      "valueString" : "combustion "
+    },
+    {
+      "valueString" : "remembrance "
+    },
+    {
+      "valueString" : "obscure "
+    },
+    {
+      "valueString" : "cleric "
+    },
+    {
+      "valueString" : "outrank "
+    },
+    {
+      "valueString" : "absolution "
+    },
+    {
+      "valueString" : "priesthood "
+    },
+    {
+      "valueString" : "critic "
+    },
+    {
+      "valueString" : "uncensored "
+    },
+    {
+      "valueString" : "hobbyist "
+    },
+    {
+      "valueString" : "perilous "
+    },
+    {
+      "valueString" : "irate "
+    },
+    {
+      "valueString" : "global "
+    },
+    {
+      "valueString" : "hovel "
+    },
+    {
+      "valueString" : "sophomore "
+    },
+    {
+      "valueString" : "dirham "
+    },
+    {
+      "valueString" : "keen "
+    },
+    {
+      "valueString" : "fuddle "
+    },
+    {
+      "valueString" : "battlewagon "
+    },
+    {
+      "valueString" : "entail "
+    },
+    {
+      "valueString" : "scarab "
+    },
+    {
+      "valueString" : "dank "
+    },
+    {
+      "valueString" : "guarantee "
+    },
+    {
+      "valueString" : "adjuster "
+    },
+    {
+      "valueString" : "enliven "
+    },
+    {
+      "valueString" : "biodegradable "
+    },
+    {
+      "valueString" : "enfold "
+    },
+    {
+      "valueString" : "amputee "
+    },
+    {
+      "valueString" : "trench "
+    },
+    {
+      "valueString" : "ovation "
+    },
+    {
+      "valueString" : "unsuitable "
+    },
+    {
+      "valueString" : "suburban "
+    },
+    {
+      "valueString" : "memento "
+    },
+    {
+      "valueString" : "inevitable "
+    },
+    {
+      "valueString" : "marine "
+    },
+    {
+      "valueString" : "uncorrupted "
+    },
+    {
+      "valueString" : "mystique "
+    },
+    {
+      "valueString" : "behemoth "
+    },
+    {
+      "valueString" : "marshland "
+    },
+    {
+      "valueString" : "unaltered "
+    },
+    {
+      "valueString" : "minority "
+    },
+    {
+      "valueString" : "illicit "
+    },
+    {
+      "valueString" : "stockbroker "
+    },
+    {
+      "valueString" : "luster "
+    },
+    {
+      "valueString" : "contort "
+    },
+    {
+      "valueString" : "crimping "
+    },
+    {
+      "valueString" : "finery "
+    },
+    {
+      "valueString" : "feminist "
+    },
+    {
+      "valueString" : "hallmark "
+    },
+    {
+      "valueString" : "showy "
+    },
+    {
+      "valueString" : "tarantella "
+    },
+    {
+      "valueString" : "restaurateur "
+    },
+    {
+      "valueString" : "uncanny "
+    },
+    {
+      "valueString" : "kilter "
+    },
+    {
+      "valueString" : "legislation "
+    },
+    {
+      "valueString" : "illogical "
+    },
+    {
+      "valueString" : "entirety "
+    },
+    {
+      "valueString" : "irreparable "
+    },
+    {
+      "valueString" : "itinerary "
+    },
+    {
+      "valueString" : "concept "
+    },
+    {
+      "valueString" : "quivering "
+    },
+    {
+      "valueString" : "plagiarize "
+    },
+    {
+      "valueString" : "effectiveness "
+    },
+    {
+      "valueString" : "portrayal "
+    },
+    {
+      "valueString" : "civilization "
+    },
+    {
+      "valueString" : "variation "
+    },
+    {
+      "valueString" : "omen "
+    },
+    {
+      "valueString" : "teriyaki "
+    },
+    {
+      "valueString" : "oligarch "
+    },
+    {
+      "valueString" : "compartmentalize "
+    },
+    {
+      "valueString" : "lemma "
+    },
+    {
+      "valueString" : "aquaplane "
+    },
+    {
+      "valueString" : "homicidal "
+    },
+    {
+      "valueString" : "editorialize "
+    },
+    {
+      "valueString" : "inkling "
+    },
+    {
+      "valueString" : "valency "
+    },
+    {
+      "valueString" : "mesosphere "
+    },
+    {
+      "valueString" : "distillate "
+    },
+    {
+      "valueString" : "deduce "
+    },
+    {
+      "valueString" : "deformation "
+    },
+    {
+      "valueString" : "puerile "
+    },
+    {
+      "valueString" : "cynical "
+    },
+    {
+      "valueString" : "surreal "
+    },
+    {
+      "valueString" : "denigrate "
+    },
+    {
+      "valueString" : "unconventionality "
+    },
+    {
+      "valueString" : "maceration "
+    },
+    {
+      "valueString" : "jocularity "
+    },
+    {
+      "valueString" : "poignant "
+    },
+    {
+      "valueString" : "subornation "
+    },
+    {
+      "valueString" : "heliotrope "
+    },
+    {
+      "valueString" : "clef "
+    },
+    {
+      "valueString" : "exudation "
+    },
+    {
+      "valueString" : "inequitable "
+    },
+    {
+      "valueString" : "lox "
+    },
+    {
+      "valueString" : "loyalist "
+    },
+    {
+      "valueString" : "immutable "
+    },
+    {
+      "valueString" : "conga "
+    },
+    {
+      "valueString" : "affirmation "
+    },
+    {
+      "valueString" : "pejorative"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_difficulty_3",
+    "text" : "Item 3\nWord Difficulty",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "1 "
+    },
+    {
+      "valueString" : "2 "
+    },
+    {
+      "valueString" : "3"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_correct_3",
+    "text" : "Item 3\nCorrect?",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "Yes "
+    },
+    {
+      "valueString" : "No"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_word_4",
+    "text" : "Item 4\nWord",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "boil "
+    },
+    {
+      "valueString" : "duckling "
+    },
+    {
+      "valueString" : "cupboard "
+    },
+    {
+      "valueString" : "workbench "
+    },
+    {
+      "valueString" : "agreeable "
+    },
+    {
+      "valueString" : "swear "
+    },
+    {
+      "valueString" : "cap "
+    },
+    {
+      "valueString" : "unwire "
+    },
+    {
+      "valueString" : "guitarist "
+    },
+    {
+      "valueString" : "hardcover "
+    },
+    {
+      "valueString" : "broccoli "
+    },
+    {
+      "valueString" : "unsolved "
+    },
+    {
+      "valueString" : "coral "
+    },
+    {
+      "valueString" : "gladiator "
+    },
+    {
+      "valueString" : "monkey "
+    },
+    {
+      "valueString" : "jobless "
+    },
+    {
+      "valueString" : "capitalization "
+    },
+    {
+      "valueString" : "selfish "
+    },
+    {
+      "valueString" : "emptiness "
+    },
+    {
+      "valueString" : "pain "
+    },
+    {
+      "valueString" : "brainpower "
+    },
+    {
+      "valueString" : "lettuce "
+    },
+    {
+      "valueString" : "wartime "
+    },
+    {
+      "valueString" : "newsboy "
+    },
+    {
+      "valueString" : "equipment "
+    },
+    {
+      "valueString" : "sensation "
+    },
+    {
+      "valueString" : "burglar "
+    },
+    {
+      "valueString" : "idiotic "
+    },
+    {
+      "valueString" : "spoils "
+    },
+    {
+      "valueString" : "belong "
+    },
+    {
+      "valueString" : "greeter "
+    },
+    {
+      "valueString" : "screech "
+    },
+    {
+      "valueString" : "tardy "
+    },
+    {
+      "valueString" : "viewing "
+    },
+    {
+      "valueString" : "heating "
+    },
+    {
+      "valueString" : "homeward "
+    },
+    {
+      "valueString" : "payment "
+    },
+    {
+      "valueString" : "refereeing "
+    },
+    {
+      "valueString" : "canyon "
+    },
+    {
+      "valueString" : "nutmeg "
+    },
+    {
+      "valueString" : "birdcage "
+    },
+    {
+      "valueString" : "killer "
+    },
+    {
+      "valueString" : "waistband "
+    },
+    {
+      "valueString" : "mutter "
+    },
+    {
+      "valueString" : "specific "
+    },
+    {
+      "valueString" : "clerk "
+    },
+    {
+      "valueString" : "orphaned "
+    },
+    {
+      "valueString" : "bat "
+    },
+    {
+      "valueString" : "bakeshop "
+    },
+    {
+      "valueString" : "hilarious "
+    },
+    {
+      "valueString" : "cheeseburger "
+    },
+    {
+      "valueString" : "able "
+    },
+    {
+      "valueString" : "morning "
+    },
+    {
+      "valueString" : "tradition "
+    },
+    {
+      "valueString" : "jean "
+    },
+    {
+      "valueString" : "merry "
+    },
+    {
+      "valueString" : "sunset "
+    },
+    {
+      "valueString" : "stand "
+    },
+    {
+      "valueString" : "sportsmanlike "
+    },
+    {
+      "valueString" : "superstitious "
+    },
+    {
+      "valueString" : "weightless "
+    },
+    {
+      "valueString" : "vibration "
+    },
+    {
+      "valueString" : "spotless "
+    },
+    {
+      "valueString" : "plank "
+    },
+    {
+      "valueString" : "pebble "
+    },
+    {
+      "valueString" : "wastebasket "
+    },
+    {
+      "valueString" : "envy "
+    },
+    {
+      "valueString" : "hammer "
+    },
+    {
+      "valueString" : "sun "
+    },
+    {
+      "valueString" : "whole "
+    },
+    {
+      "valueString" : "faucet "
+    },
+    {
+      "valueString" : "cursive "
+    },
+    {
+      "valueString" : "tire "
+    },
+    {
+      "valueString" : "perch "
+    },
+    {
+      "valueString" : "invitation "
+    },
+    {
+      "valueString" : "continent "
+    },
+    {
+      "valueString" : "membership "
+    },
+    {
+      "valueString" : "scramble "
+    },
+    {
+      "valueString" : "wood "
+    },
+    {
+      "valueString" : "pheasant "
+    },
+    {
+      "valueString" : "anonymous "
+    },
+    {
+      "valueString" : "strategic "
+    },
+    {
+      "valueString" : "polling "
+    },
+    {
+      "valueString" : "combustion "
+    },
+    {
+      "valueString" : "remembrance "
+    },
+    {
+      "valueString" : "obscure "
+    },
+    {
+      "valueString" : "cleric "
+    },
+    {
+      "valueString" : "outrank "
+    },
+    {
+      "valueString" : "absolution "
+    },
+    {
+      "valueString" : "priesthood "
+    },
+    {
+      "valueString" : "critic "
+    },
+    {
+      "valueString" : "uncensored "
+    },
+    {
+      "valueString" : "hobbyist "
+    },
+    {
+      "valueString" : "perilous "
+    },
+    {
+      "valueString" : "irate "
+    },
+    {
+      "valueString" : "global "
+    },
+    {
+      "valueString" : "hovel "
+    },
+    {
+      "valueString" : "sophomore "
+    },
+    {
+      "valueString" : "dirham "
+    },
+    {
+      "valueString" : "keen "
+    },
+    {
+      "valueString" : "fuddle "
+    },
+    {
+      "valueString" : "battlewagon "
+    },
+    {
+      "valueString" : "entail "
+    },
+    {
+      "valueString" : "scarab "
+    },
+    {
+      "valueString" : "dank "
+    },
+    {
+      "valueString" : "guarantee "
+    },
+    {
+      "valueString" : "adjuster "
+    },
+    {
+      "valueString" : "enliven "
+    },
+    {
+      "valueString" : "biodegradable "
+    },
+    {
+      "valueString" : "enfold "
+    },
+    {
+      "valueString" : "amputee "
+    },
+    {
+      "valueString" : "trench "
+    },
+    {
+      "valueString" : "ovation "
+    },
+    {
+      "valueString" : "unsuitable "
+    },
+    {
+      "valueString" : "suburban "
+    },
+    {
+      "valueString" : "memento "
+    },
+    {
+      "valueString" : "inevitable "
+    },
+    {
+      "valueString" : "marine "
+    },
+    {
+      "valueString" : "uncorrupted "
+    },
+    {
+      "valueString" : "mystique "
+    },
+    {
+      "valueString" : "behemoth "
+    },
+    {
+      "valueString" : "marshland "
+    },
+    {
+      "valueString" : "unaltered "
+    },
+    {
+      "valueString" : "minority "
+    },
+    {
+      "valueString" : "illicit "
+    },
+    {
+      "valueString" : "stockbroker "
+    },
+    {
+      "valueString" : "luster "
+    },
+    {
+      "valueString" : "contort "
+    },
+    {
+      "valueString" : "crimping "
+    },
+    {
+      "valueString" : "finery "
+    },
+    {
+      "valueString" : "feminist "
+    },
+    {
+      "valueString" : "hallmark "
+    },
+    {
+      "valueString" : "showy "
+    },
+    {
+      "valueString" : "tarantella "
+    },
+    {
+      "valueString" : "restaurateur "
+    },
+    {
+      "valueString" : "uncanny "
+    },
+    {
+      "valueString" : "kilter "
+    },
+    {
+      "valueString" : "legislation "
+    },
+    {
+      "valueString" : "illogical "
+    },
+    {
+      "valueString" : "entirety "
+    },
+    {
+      "valueString" : "irreparable "
+    },
+    {
+      "valueString" : "itinerary "
+    },
+    {
+      "valueString" : "concept "
+    },
+    {
+      "valueString" : "quivering "
+    },
+    {
+      "valueString" : "plagiarize "
+    },
+    {
+      "valueString" : "effectiveness "
+    },
+    {
+      "valueString" : "portrayal "
+    },
+    {
+      "valueString" : "civilization "
+    },
+    {
+      "valueString" : "variation "
+    },
+    {
+      "valueString" : "omen "
+    },
+    {
+      "valueString" : "teriyaki "
+    },
+    {
+      "valueString" : "oligarch "
+    },
+    {
+      "valueString" : "compartmentalize "
+    },
+    {
+      "valueString" : "lemma "
+    },
+    {
+      "valueString" : "aquaplane "
+    },
+    {
+      "valueString" : "homicidal "
+    },
+    {
+      "valueString" : "editorialize "
+    },
+    {
+      "valueString" : "inkling "
+    },
+    {
+      "valueString" : "valency "
+    },
+    {
+      "valueString" : "mesosphere "
+    },
+    {
+      "valueString" : "distillate "
+    },
+    {
+      "valueString" : "deduce "
+    },
+    {
+      "valueString" : "deformation "
+    },
+    {
+      "valueString" : "puerile "
+    },
+    {
+      "valueString" : "cynical "
+    },
+    {
+      "valueString" : "surreal "
+    },
+    {
+      "valueString" : "denigrate "
+    },
+    {
+      "valueString" : "unconventionality "
+    },
+    {
+      "valueString" : "maceration "
+    },
+    {
+      "valueString" : "jocularity "
+    },
+    {
+      "valueString" : "poignant "
+    },
+    {
+      "valueString" : "subornation "
+    },
+    {
+      "valueString" : "heliotrope "
+    },
+    {
+      "valueString" : "clef "
+    },
+    {
+      "valueString" : "exudation "
+    },
+    {
+      "valueString" : "inequitable "
+    },
+    {
+      "valueString" : "lox "
+    },
+    {
+      "valueString" : "loyalist "
+    },
+    {
+      "valueString" : "immutable "
+    },
+    {
+      "valueString" : "conga "
+    },
+    {
+      "valueString" : "affirmation "
+    },
+    {
+      "valueString" : "pejorative"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_difficulty_4",
+    "text" : "Item 4\nWord Difficulty",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "1 "
+    },
+    {
+      "valueString" : "2 "
+    },
+    {
+      "valueString" : "3"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_correct_4",
+    "text" : "Item 4\nCorrect?",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "Yes "
+    },
+    {
+      "valueString" : "No"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_word_5",
+    "text" : "Item 5\nWord",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "boil "
+    },
+    {
+      "valueString" : "duckling "
+    },
+    {
+      "valueString" : "cupboard "
+    },
+    {
+      "valueString" : "workbench "
+    },
+    {
+      "valueString" : "agreeable "
+    },
+    {
+      "valueString" : "swear "
+    },
+    {
+      "valueString" : "cap "
+    },
+    {
+      "valueString" : "unwire "
+    },
+    {
+      "valueString" : "guitarist "
+    },
+    {
+      "valueString" : "hardcover "
+    },
+    {
+      "valueString" : "broccoli "
+    },
+    {
+      "valueString" : "unsolved "
+    },
+    {
+      "valueString" : "coral "
+    },
+    {
+      "valueString" : "gladiator "
+    },
+    {
+      "valueString" : "monkey "
+    },
+    {
+      "valueString" : "jobless "
+    },
+    {
+      "valueString" : "capitalization "
+    },
+    {
+      "valueString" : "selfish "
+    },
+    {
+      "valueString" : "emptiness "
+    },
+    {
+      "valueString" : "pain "
+    },
+    {
+      "valueString" : "brainpower "
+    },
+    {
+      "valueString" : "lettuce "
+    },
+    {
+      "valueString" : "wartime "
+    },
+    {
+      "valueString" : "newsboy "
+    },
+    {
+      "valueString" : "equipment "
+    },
+    {
+      "valueString" : "sensation "
+    },
+    {
+      "valueString" : "burglar "
+    },
+    {
+      "valueString" : "idiotic "
+    },
+    {
+      "valueString" : "spoils "
+    },
+    {
+      "valueString" : "belong "
+    },
+    {
+      "valueString" : "greeter "
+    },
+    {
+      "valueString" : "screech "
+    },
+    {
+      "valueString" : "tardy "
+    },
+    {
+      "valueString" : "viewing "
+    },
+    {
+      "valueString" : "heating "
+    },
+    {
+      "valueString" : "homeward "
+    },
+    {
+      "valueString" : "payment "
+    },
+    {
+      "valueString" : "refereeing "
+    },
+    {
+      "valueString" : "canyon "
+    },
+    {
+      "valueString" : "nutmeg "
+    },
+    {
+      "valueString" : "birdcage "
+    },
+    {
+      "valueString" : "killer "
+    },
+    {
+      "valueString" : "waistband "
+    },
+    {
+      "valueString" : "mutter "
+    },
+    {
+      "valueString" : "specific "
+    },
+    {
+      "valueString" : "clerk "
+    },
+    {
+      "valueString" : "orphaned "
+    },
+    {
+      "valueString" : "bat "
+    },
+    {
+      "valueString" : "bakeshop "
+    },
+    {
+      "valueString" : "hilarious "
+    },
+    {
+      "valueString" : "cheeseburger "
+    },
+    {
+      "valueString" : "able "
+    },
+    {
+      "valueString" : "morning "
+    },
+    {
+      "valueString" : "tradition "
+    },
+    {
+      "valueString" : "jean "
+    },
+    {
+      "valueString" : "merry "
+    },
+    {
+      "valueString" : "sunset "
+    },
+    {
+      "valueString" : "stand "
+    },
+    {
+      "valueString" : "sportsmanlike "
+    },
+    {
+      "valueString" : "superstitious "
+    },
+    {
+      "valueString" : "weightless "
+    },
+    {
+      "valueString" : "vibration "
+    },
+    {
+      "valueString" : "spotless "
+    },
+    {
+      "valueString" : "plank "
+    },
+    {
+      "valueString" : "pebble "
+    },
+    {
+      "valueString" : "wastebasket "
+    },
+    {
+      "valueString" : "envy "
+    },
+    {
+      "valueString" : "hammer "
+    },
+    {
+      "valueString" : "sun "
+    },
+    {
+      "valueString" : "whole "
+    },
+    {
+      "valueString" : "faucet "
+    },
+    {
+      "valueString" : "cursive "
+    },
+    {
+      "valueString" : "tire "
+    },
+    {
+      "valueString" : "perch "
+    },
+    {
+      "valueString" : "invitation "
+    },
+    {
+      "valueString" : "continent "
+    },
+    {
+      "valueString" : "membership "
+    },
+    {
+      "valueString" : "scramble "
+    },
+    {
+      "valueString" : "wood "
+    },
+    {
+      "valueString" : "pheasant "
+    },
+    {
+      "valueString" : "anonymous "
+    },
+    {
+      "valueString" : "strategic "
+    },
+    {
+      "valueString" : "polling "
+    },
+    {
+      "valueString" : "combustion "
+    },
+    {
+      "valueString" : "remembrance "
+    },
+    {
+      "valueString" : "obscure "
+    },
+    {
+      "valueString" : "cleric "
+    },
+    {
+      "valueString" : "outrank "
+    },
+    {
+      "valueString" : "absolution "
+    },
+    {
+      "valueString" : "priesthood "
+    },
+    {
+      "valueString" : "critic "
+    },
+    {
+      "valueString" : "uncensored "
+    },
+    {
+      "valueString" : "hobbyist "
+    },
+    {
+      "valueString" : "perilous "
+    },
+    {
+      "valueString" : "irate "
+    },
+    {
+      "valueString" : "global "
+    },
+    {
+      "valueString" : "hovel "
+    },
+    {
+      "valueString" : "sophomore "
+    },
+    {
+      "valueString" : "dirham "
+    },
+    {
+      "valueString" : "keen "
+    },
+    {
+      "valueString" : "fuddle "
+    },
+    {
+      "valueString" : "battlewagon "
+    },
+    {
+      "valueString" : "entail "
+    },
+    {
+      "valueString" : "scarab "
+    },
+    {
+      "valueString" : "dank "
+    },
+    {
+      "valueString" : "guarantee "
+    },
+    {
+      "valueString" : "adjuster "
+    },
+    {
+      "valueString" : "enliven "
+    },
+    {
+      "valueString" : "biodegradable "
+    },
+    {
+      "valueString" : "enfold "
+    },
+    {
+      "valueString" : "amputee "
+    },
+    {
+      "valueString" : "trench "
+    },
+    {
+      "valueString" : "ovation "
+    },
+    {
+      "valueString" : "unsuitable "
+    },
+    {
+      "valueString" : "suburban "
+    },
+    {
+      "valueString" : "memento "
+    },
+    {
+      "valueString" : "inevitable "
+    },
+    {
+      "valueString" : "marine "
+    },
+    {
+      "valueString" : "uncorrupted "
+    },
+    {
+      "valueString" : "mystique "
+    },
+    {
+      "valueString" : "behemoth "
+    },
+    {
+      "valueString" : "marshland "
+    },
+    {
+      "valueString" : "unaltered "
+    },
+    {
+      "valueString" : "minority "
+    },
+    {
+      "valueString" : "illicit "
+    },
+    {
+      "valueString" : "stockbroker "
+    },
+    {
+      "valueString" : "luster "
+    },
+    {
+      "valueString" : "contort "
+    },
+    {
+      "valueString" : "crimping "
+    },
+    {
+      "valueString" : "finery "
+    },
+    {
+      "valueString" : "feminist "
+    },
+    {
+      "valueString" : "hallmark "
+    },
+    {
+      "valueString" : "showy "
+    },
+    {
+      "valueString" : "tarantella "
+    },
+    {
+      "valueString" : "restaurateur "
+    },
+    {
+      "valueString" : "uncanny "
+    },
+    {
+      "valueString" : "kilter "
+    },
+    {
+      "valueString" : "legislation "
+    },
+    {
+      "valueString" : "illogical "
+    },
+    {
+      "valueString" : "entirety "
+    },
+    {
+      "valueString" : "irreparable "
+    },
+    {
+      "valueString" : "itinerary "
+    },
+    {
+      "valueString" : "concept "
+    },
+    {
+      "valueString" : "quivering "
+    },
+    {
+      "valueString" : "plagiarize "
+    },
+    {
+      "valueString" : "effectiveness "
+    },
+    {
+      "valueString" : "portrayal "
+    },
+    {
+      "valueString" : "civilization "
+    },
+    {
+      "valueString" : "variation "
+    },
+    {
+      "valueString" : "omen "
+    },
+    {
+      "valueString" : "teriyaki "
+    },
+    {
+      "valueString" : "oligarch "
+    },
+    {
+      "valueString" : "compartmentalize "
+    },
+    {
+      "valueString" : "lemma "
+    },
+    {
+      "valueString" : "aquaplane "
+    },
+    {
+      "valueString" : "homicidal "
+    },
+    {
+      "valueString" : "editorialize "
+    },
+    {
+      "valueString" : "inkling "
+    },
+    {
+      "valueString" : "valency "
+    },
+    {
+      "valueString" : "mesosphere "
+    },
+    {
+      "valueString" : "distillate "
+    },
+    {
+      "valueString" : "deduce "
+    },
+    {
+      "valueString" : "deformation "
+    },
+    {
+      "valueString" : "puerile "
+    },
+    {
+      "valueString" : "cynical "
+    },
+    {
+      "valueString" : "surreal "
+    },
+    {
+      "valueString" : "denigrate "
+    },
+    {
+      "valueString" : "unconventionality "
+    },
+    {
+      "valueString" : "maceration "
+    },
+    {
+      "valueString" : "jocularity "
+    },
+    {
+      "valueString" : "poignant "
+    },
+    {
+      "valueString" : "subornation "
+    },
+    {
+      "valueString" : "heliotrope "
+    },
+    {
+      "valueString" : "clef "
+    },
+    {
+      "valueString" : "exudation "
+    },
+    {
+      "valueString" : "inequitable "
+    },
+    {
+      "valueString" : "lox "
+    },
+    {
+      "valueString" : "loyalist "
+    },
+    {
+      "valueString" : "immutable "
+    },
+    {
+      "valueString" : "conga "
+    },
+    {
+      "valueString" : "affirmation "
+    },
+    {
+      "valueString" : "pejorative"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_difficulty_5",
+    "text" : "Item 5\nWord Difficulty",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "1 "
+    },
+    {
+      "valueString" : "2 "
+    },
+    {
+      "valueString" : "3"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_correct_5",
+    "text" : "Item 5\nCorrect?",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "Yes "
+    },
+    {
+      "valueString" : "No"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_word_6",
+    "text" : "Item 6\nWord",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "boil "
+    },
+    {
+      "valueString" : "duckling "
+    },
+    {
+      "valueString" : "cupboard "
+    },
+    {
+      "valueString" : "workbench "
+    },
+    {
+      "valueString" : "agreeable "
+    },
+    {
+      "valueString" : "swear "
+    },
+    {
+      "valueString" : "cap "
+    },
+    {
+      "valueString" : "unwire "
+    },
+    {
+      "valueString" : "guitarist "
+    },
+    {
+      "valueString" : "hardcover "
+    },
+    {
+      "valueString" : "broccoli "
+    },
+    {
+      "valueString" : "unsolved "
+    },
+    {
+      "valueString" : "coral "
+    },
+    {
+      "valueString" : "gladiator "
+    },
+    {
+      "valueString" : "monkey "
+    },
+    {
+      "valueString" : "jobless "
+    },
+    {
+      "valueString" : "capitalization "
+    },
+    {
+      "valueString" : "selfish "
+    },
+    {
+      "valueString" : "emptiness "
+    },
+    {
+      "valueString" : "pain "
+    },
+    {
+      "valueString" : "brainpower "
+    },
+    {
+      "valueString" : "lettuce "
+    },
+    {
+      "valueString" : "wartime "
+    },
+    {
+      "valueString" : "newsboy "
+    },
+    {
+      "valueString" : "equipment "
+    },
+    {
+      "valueString" : "sensation "
+    },
+    {
+      "valueString" : "burglar "
+    },
+    {
+      "valueString" : "idiotic "
+    },
+    {
+      "valueString" : "spoils "
+    },
+    {
+      "valueString" : "belong "
+    },
+    {
+      "valueString" : "greeter "
+    },
+    {
+      "valueString" : "screech "
+    },
+    {
+      "valueString" : "tardy "
+    },
+    {
+      "valueString" : "viewing "
+    },
+    {
+      "valueString" : "heating "
+    },
+    {
+      "valueString" : "homeward "
+    },
+    {
+      "valueString" : "payment "
+    },
+    {
+      "valueString" : "refereeing "
+    },
+    {
+      "valueString" : "canyon "
+    },
+    {
+      "valueString" : "nutmeg "
+    },
+    {
+      "valueString" : "birdcage "
+    },
+    {
+      "valueString" : "killer "
+    },
+    {
+      "valueString" : "waistband "
+    },
+    {
+      "valueString" : "mutter "
+    },
+    {
+      "valueString" : "specific "
+    },
+    {
+      "valueString" : "clerk "
+    },
+    {
+      "valueString" : "orphaned "
+    },
+    {
+      "valueString" : "bat "
+    },
+    {
+      "valueString" : "bakeshop "
+    },
+    {
+      "valueString" : "hilarious "
+    },
+    {
+      "valueString" : "cheeseburger "
+    },
+    {
+      "valueString" : "able "
+    },
+    {
+      "valueString" : "morning "
+    },
+    {
+      "valueString" : "tradition "
+    },
+    {
+      "valueString" : "jean "
+    },
+    {
+      "valueString" : "merry "
+    },
+    {
+      "valueString" : "sunset "
+    },
+    {
+      "valueString" : "stand "
+    },
+    {
+      "valueString" : "sportsmanlike "
+    },
+    {
+      "valueString" : "superstitious "
+    },
+    {
+      "valueString" : "weightless "
+    },
+    {
+      "valueString" : "vibration "
+    },
+    {
+      "valueString" : "spotless "
+    },
+    {
+      "valueString" : "plank "
+    },
+    {
+      "valueString" : "pebble "
+    },
+    {
+      "valueString" : "wastebasket "
+    },
+    {
+      "valueString" : "envy "
+    },
+    {
+      "valueString" : "hammer "
+    },
+    {
+      "valueString" : "sun "
+    },
+    {
+      "valueString" : "whole "
+    },
+    {
+      "valueString" : "faucet "
+    },
+    {
+      "valueString" : "cursive "
+    },
+    {
+      "valueString" : "tire "
+    },
+    {
+      "valueString" : "perch "
+    },
+    {
+      "valueString" : "invitation "
+    },
+    {
+      "valueString" : "continent "
+    },
+    {
+      "valueString" : "membership "
+    },
+    {
+      "valueString" : "scramble "
+    },
+    {
+      "valueString" : "wood "
+    },
+    {
+      "valueString" : "pheasant "
+    },
+    {
+      "valueString" : "anonymous "
+    },
+    {
+      "valueString" : "strategic "
+    },
+    {
+      "valueString" : "polling "
+    },
+    {
+      "valueString" : "combustion "
+    },
+    {
+      "valueString" : "remembrance "
+    },
+    {
+      "valueString" : "obscure "
+    },
+    {
+      "valueString" : "cleric "
+    },
+    {
+      "valueString" : "outrank "
+    },
+    {
+      "valueString" : "absolution "
+    },
+    {
+      "valueString" : "priesthood "
+    },
+    {
+      "valueString" : "critic "
+    },
+    {
+      "valueString" : "uncensored "
+    },
+    {
+      "valueString" : "hobbyist "
+    },
+    {
+      "valueString" : "perilous "
+    },
+    {
+      "valueString" : "irate "
+    },
+    {
+      "valueString" : "global "
+    },
+    {
+      "valueString" : "hovel "
+    },
+    {
+      "valueString" : "sophomore "
+    },
+    {
+      "valueString" : "dirham "
+    },
+    {
+      "valueString" : "keen "
+    },
+    {
+      "valueString" : "fuddle "
+    },
+    {
+      "valueString" : "battlewagon "
+    },
+    {
+      "valueString" : "entail "
+    },
+    {
+      "valueString" : "scarab "
+    },
+    {
+      "valueString" : "dank "
+    },
+    {
+      "valueString" : "guarantee "
+    },
+    {
+      "valueString" : "adjuster "
+    },
+    {
+      "valueString" : "enliven "
+    },
+    {
+      "valueString" : "biodegradable "
+    },
+    {
+      "valueString" : "enfold "
+    },
+    {
+      "valueString" : "amputee "
+    },
+    {
+      "valueString" : "trench "
+    },
+    {
+      "valueString" : "ovation "
+    },
+    {
+      "valueString" : "unsuitable "
+    },
+    {
+      "valueString" : "suburban "
+    },
+    {
+      "valueString" : "memento "
+    },
+    {
+      "valueString" : "inevitable "
+    },
+    {
+      "valueString" : "marine "
+    },
+    {
+      "valueString" : "uncorrupted "
+    },
+    {
+      "valueString" : "mystique "
+    },
+    {
+      "valueString" : "behemoth "
+    },
+    {
+      "valueString" : "marshland "
+    },
+    {
+      "valueString" : "unaltered "
+    },
+    {
+      "valueString" : "minority "
+    },
+    {
+      "valueString" : "illicit "
+    },
+    {
+      "valueString" : "stockbroker "
+    },
+    {
+      "valueString" : "luster "
+    },
+    {
+      "valueString" : "contort "
+    },
+    {
+      "valueString" : "crimping "
+    },
+    {
+      "valueString" : "finery "
+    },
+    {
+      "valueString" : "feminist "
+    },
+    {
+      "valueString" : "hallmark "
+    },
+    {
+      "valueString" : "showy "
+    },
+    {
+      "valueString" : "tarantella "
+    },
+    {
+      "valueString" : "restaurateur "
+    },
+    {
+      "valueString" : "uncanny "
+    },
+    {
+      "valueString" : "kilter "
+    },
+    {
+      "valueString" : "legislation "
+    },
+    {
+      "valueString" : "illogical "
+    },
+    {
+      "valueString" : "entirety "
+    },
+    {
+      "valueString" : "irreparable "
+    },
+    {
+      "valueString" : "itinerary "
+    },
+    {
+      "valueString" : "concept "
+    },
+    {
+      "valueString" : "quivering "
+    },
+    {
+      "valueString" : "plagiarize "
+    },
+    {
+      "valueString" : "effectiveness "
+    },
+    {
+      "valueString" : "portrayal "
+    },
+    {
+      "valueString" : "civilization "
+    },
+    {
+      "valueString" : "variation "
+    },
+    {
+      "valueString" : "omen "
+    },
+    {
+      "valueString" : "teriyaki "
+    },
+    {
+      "valueString" : "oligarch "
+    },
+    {
+      "valueString" : "compartmentalize "
+    },
+    {
+      "valueString" : "lemma "
+    },
+    {
+      "valueString" : "aquaplane "
+    },
+    {
+      "valueString" : "homicidal "
+    },
+    {
+      "valueString" : "editorialize "
+    },
+    {
+      "valueString" : "inkling "
+    },
+    {
+      "valueString" : "valency "
+    },
+    {
+      "valueString" : "mesosphere "
+    },
+    {
+      "valueString" : "distillate "
+    },
+    {
+      "valueString" : "deduce "
+    },
+    {
+      "valueString" : "deformation "
+    },
+    {
+      "valueString" : "puerile "
+    },
+    {
+      "valueString" : "cynical "
+    },
+    {
+      "valueString" : "surreal "
+    },
+    {
+      "valueString" : "denigrate "
+    },
+    {
+      "valueString" : "unconventionality "
+    },
+    {
+      "valueString" : "maceration "
+    },
+    {
+      "valueString" : "jocularity "
+    },
+    {
+      "valueString" : "poignant "
+    },
+    {
+      "valueString" : "subornation "
+    },
+    {
+      "valueString" : "heliotrope "
+    },
+    {
+      "valueString" : "clef "
+    },
+    {
+      "valueString" : "exudation "
+    },
+    {
+      "valueString" : "inequitable "
+    },
+    {
+      "valueString" : "lox "
+    },
+    {
+      "valueString" : "loyalist "
+    },
+    {
+      "valueString" : "immutable "
+    },
+    {
+      "valueString" : "conga "
+    },
+    {
+      "valueString" : "affirmation "
+    },
+    {
+      "valueString" : "pejorative"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_difficulty_6",
+    "text" : "Item 6\nWord Difficulty",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "1 "
+    },
+    {
+      "valueString" : "2 "
+    },
+    {
+      "valueString" : "3"
+    }]
+  },
+  {
+    "linkId" : "vocabulary_item_correct_6",
+    "text" : "Item 6\nCorrect?",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "Yes "
+    },
+    {
+      "valueString" : "No"
+    }]
+  }]
+}

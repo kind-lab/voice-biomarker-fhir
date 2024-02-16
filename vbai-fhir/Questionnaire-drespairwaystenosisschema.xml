@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="drespairwaystenosisschema"/>
+  <meta>
+    <profile value="https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The linkId for the item">LinkId</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the itemcan appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://voicecollab.ai/fhir/Questionnaire/drespairwaystenosisschema#1.5.1</td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_pft" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_pft</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Has the patient had pulmonary function testing within the past 3 months?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_pft">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_pft_document" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="String" class="hierarchy"/> diagnosis_as_pft_document</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Please upload the PFT document</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_gsd" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_gsd</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Does the patient have airway stenosis confirmed by a laryngoscopy/bronchoscopy or CT imaging?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_gsd">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_gsd_yes" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_gsd_yes</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Confirmed by</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_gsd_yes">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_ds" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_ds</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Disease Subtype</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_ds">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_ds_bvfi" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_ds_bvfi</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Bilateral Vocal fold immobility Subtype</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_ds_bvfi">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_etiology" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_etiology</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What is the etiology?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_etiology">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_etiology_auto_immune" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_etiology_auto_immune</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Auto-immune / granulomatous disease Subcategory</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_etiology_auto_immune">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_etiology_other" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_etiology_other</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Other Subcategory</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_etiology_other">5 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_ds_mcg" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_ds_mcg</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Degree of Stenosis (Myer-Cotton Grade)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_ds_mcg">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_ds_mcg_ref" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="String" class="hierarchy"/> diagnosis_as_ds_mcg_ref</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Degree of Stenosis (Myer-Cotton Grade) 
+Picture for reference</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_ds_ac_ref" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="String" class="hierarchy"/> diagnosis_as_ds_ac_ref</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Grade of Stenosis (Aziz Classification of Supraglottic Stenosis)
+Picture for reference</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_ds_bc" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_ds_bc</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Degree of Stenosis (Bogdasarian Classification)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_ds_bc">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_ds_ac" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_ds_ac</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Grade of Stenosis (Aziz Classification of Supraglottic Stenosis)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_ds_ac">5 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_ds_bc_ref" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="String" class="hierarchy"/> diagnosis_as_ds_bc_ref</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Degree of Stenosis (Bogdasarian Classification)
+Picture for reference</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_ds_ac_grade_4" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_ds_ac_grade_4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Grade of Stenosis (Aziz Classification of Supraglottic Stenosis)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_ds_ac_grade_4">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_ds_ods" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_ds_ods</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">How would you subjectively classify the overall degree of stenosis?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_ds_ods">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_treatment" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_treatment</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What treatment has the patient undergone for their stenosis?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_treatment">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.diagnosis_as_treatment_surgery" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_treatment_surgery</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Surgery options</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_treatment_surgery">5 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.diagnosis_as_treatment_in_office" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> diagnosis_as_treatment_in_office</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">In-office treatment options</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.diagnosis_as_treatment_in_office">3 options</a></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Option Sets</b></p><a name="opt-item.diagnosis_as_pft"> </a><p><b>Answer options for diagnosis_as_pft</b></p><ul><li style="font-size: 11px">No </li><li style="font-size: 11px">Yes </li><li style="font-size: 11px">Not certain</li></ul><a name="opt-item.diagnosis_as_gsd"> </a><p><b>Answer options for diagnosis_as_gsd</b></p><ul><li style="font-size: 11px">No </li><li style="font-size: 11px">Yes </li><li style="font-size: 11px">Not certain</li></ul><a name="opt-item.diagnosis_as_gsd_yes"> </a><p><b>Answer options for diagnosis_as_gsd_yes</b></p><ul><li style="font-size: 11px">Confirmed by bronchoscopy/laryngoscopy </li><li style="font-size: 11px">Confirmed by CT imaging</li></ul><a name="opt-item.diagnosis_as_ds"> </a><p><b>Answer options for diagnosis_as_ds</b></p><ul><li style="font-size: 11px">Subglottic Stenosis </li><li style="font-size: 11px">Bilateral Vocal fold immobility </li><li style="font-size: 11px">Glottic Stenosis </li><li style="font-size: 11px">Supraglottic Stenosis </li><li style="font-size: 11px">Tracheal Stenosis </li><li style="font-size: 11px">Multi-Level Upper Airway Stenosis</li></ul><a name="opt-item.diagnosis_as_ds_bvfi"> </a><p><b>Answer options for diagnosis_as_ds_bvfi</b></p><ul><li style="font-size: 11px">Posterior Glottic Stenosis </li><li style="font-size: 11px">Bilateral Vocal Fold Paralysis </li><li style="font-size: 11px">To be Determined/Not certain</li></ul><a name="opt-item.diagnosis_as_etiology"> </a><p><b>Answer options for diagnosis_as_etiology</b></p><ul><li style="font-size: 11px">Not certain / TBD </li><li style="font-size: 11px">Iatrogenic (surgery/intubation) </li><li style="font-size: 11px">Idiopathic </li><li style="font-size: 11px">Auto-immune / granulomatous disease </li><li style="font-size: 11px">Radiation </li><li style="font-size: 11px">Other</li></ul><a name="opt-item.diagnosis_as_etiology_auto_immune"> </a><p><b>Answer options for diagnosis_as_etiology_auto_immune</b></p><ul><li style="font-size: 11px">Granulomatosis with polyangiitis (GPA) (Formerly known as Wegner's disease) </li><li style="font-size: 11px">Relapsing Polychondritis </li><li style="font-size: 11px">Other</li></ul><a name="opt-item.diagnosis_as_etiology_other"> </a><p><b>Answer options for diagnosis_as_etiology_other</b></p><ul><li style="font-size: 11px">GERD </li><li style="font-size: 11px">Caustic Injury/Inhalation Injury </li><li style="font-size: 11px">Infectious (Diphteria</li><li style="font-size: 11px">Recurrent Respiratory Papillomatosis </li><li style="font-size: 11px">Other</li></ul><a name="opt-item.diagnosis_as_ds_mcg"> </a><p><b>Answer options for diagnosis_as_ds_mcg</b></p><ul><li style="font-size: 11px">Grade I </li><li style="font-size: 11px">Grade II </li><li style="font-size: 11px">Grade III </li><li style="font-size: 11px">Grade IV</li></ul><a name="opt-item.diagnosis_as_ds_bc"> </a><p><b>Answer options for diagnosis_as_ds_bc</b></p><ul><li style="font-size: 11px">Class 1 </li><li style="font-size: 11px">Class 2 </li><li style="font-size: 11px">Class 3 </li><li style="font-size: 11px">Class 4</li></ul><a name="opt-item.diagnosis_as_ds_ac"> </a><p><b>Answer options for diagnosis_as_ds_ac</b></p><ul><li style="font-size: 11px">Grade 1 </li><li style="font-size: 11px">Grade 2 </li><li style="font-size: 11px">Grade 3 </li><li style="font-size: 11px">Grade 4 </li><li style="font-size: 11px">Unsure</li></ul><a name="opt-item.diagnosis_as_ds_ac_grade_4"> </a><p><b>Answer options for diagnosis_as_ds_ac_grade_4</b></p><ul><li style="font-size: 11px">Grade 4T </li><li style="font-size: 11px">Grade 4G </li><li style="font-size: 11px">Grade 4TG</li></ul><a name="opt-item.diagnosis_as_ds_ods"> </a><p><b>Answer options for diagnosis_as_ds_ods</b></p><ul><li style="font-size: 11px">Mild </li><li style="font-size: 11px">Moderate </li><li style="font-size: 11px">Severe</li></ul><a name="opt-item.diagnosis_as_treatment"> </a><p><b>Answer options for diagnosis_as_treatment</b></p><ul><li style="font-size: 11px">No treatment </li><li style="font-size: 11px">Surgery </li><li style="font-size: 11px">In-office treatment</li></ul><a name="opt-item.diagnosis_as_treatment_surgery"> </a><p><b>Answer options for diagnosis_as_treatment_surgery</b></p><ul><li style="font-size: 11px">Endoscopic intervention with Laser and Balloon dilation and steroid injection </li><li style="font-size: 11px">Endoscopic laser wedge excision </li><li style="font-size: 11px">Laryngotracheal reconstruction </li><li style="font-size: 11px">Laryngotracheoplasty (Maddern procedure) </li><li style="font-size: 11px">Tracheostomy</li></ul><a name="opt-item.diagnosis_as_treatment_in_office"> </a><p><b>Answer options for diagnosis_as_treatment_in_office</b></p><ul><li style="font-size: 11px">Steroid injection(s) </li><li style="font-size: 11px">In-office dilation </li><li style="font-size: 11px">In-office laser</li></ul></div>
+  </text>
+  <url value="https://voicecollab.ai/fhir/Questionnaire/drespairwaystenosisschema"/>
+  <version value="1.5.1"/>
+  <title value="d_resp_airway_stenosis_schema"/>
+  <status value="active"/>
+  <date value="2024-02-16T18:41:57Z"/>
+  <publisher value="KinD Lab"/>
+  <contact>
+    <name value="KinD Lab"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.kindlab.sickkids.ca"/>
+    </telecom>
+  </contact>
+  <item>
+    <linkId value="diagnosis_as_pft"/>
+    <text value="Has the patient had pulmonary function testing within the past 3 months?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="No "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Yes "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Not certain"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_pft_document"/>
+    <text value="Please upload the PFT document"/>
+    <type value="string"/>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_gsd"/>
+    <text value="Does the patient have airway stenosis confirmed by a laryngoscopy/bronchoscopy or CT imaging?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="No "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Yes "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Not certain"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_gsd_yes"/>
+    <text value="Confirmed by"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Confirmed by bronchoscopy/laryngoscopy "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Confirmed by CT imaging"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_ds"/>
+    <text value="Disease Subtype"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Subglottic Stenosis "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Bilateral Vocal fold immobility "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Glottic Stenosis "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Supraglottic Stenosis "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Tracheal Stenosis "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Multi-Level Upper Airway Stenosis"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_ds_bvfi"/>
+    <text value="Bilateral Vocal fold immobility Subtype"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Posterior Glottic Stenosis "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Bilateral Vocal Fold Paralysis "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="To be Determined/Not certain"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_etiology"/>
+    <text value="What is the etiology?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Not certain / TBD "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Iatrogenic (surgery/intubation) "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Idiopathic "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Auto-immune / granulomatous disease "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Radiation "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Other"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_etiology_auto_immune"/>
+    <text value="Auto-immune / granulomatous disease Subcategory"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Granulomatosis with polyangiitis (GPA) (Formerly known as Wegner's disease) "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Relapsing Polychondritis "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Other"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_etiology_other"/>
+    <text value="Other Subcategory"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="GERD "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Caustic Injury/Inhalation Injury "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Infectious (Diphteria"/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Recurrent Respiratory Papillomatosis "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Other"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_ds_mcg"/>
+    <text value="Degree of Stenosis (Myer-Cotton Grade)"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Grade I "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Grade II "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Grade III "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Grade IV"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_ds_mcg_ref"/>
+    <text value="Degree of Stenosis (Myer-Cotton Grade) &#xA;Picture for reference"/>
+    <type value="string"/>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_ds_ac_ref"/>
+    <text value="Grade of Stenosis (Aziz Classification of Supraglottic Stenosis)&#xA;Picture for reference"/>
+    <type value="string"/>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_ds_bc"/>
+    <text value="Degree of Stenosis (Bogdasarian Classification)"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Class 1 "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Class 2 "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Class 3 "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Class 4"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_ds_ac"/>
+    <text value="Grade of Stenosis (Aziz Classification of Supraglottic Stenosis)"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Grade 1 "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Grade 2 "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Grade 3 "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Grade 4 "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Unsure"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_ds_bc_ref"/>
+    <text value="Degree of Stenosis (Bogdasarian Classification)&#xA;Picture for reference"/>
+    <type value="string"/>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_ds_ac_grade_4"/>
+    <text value="Grade of Stenosis (Aziz Classification of Supraglottic Stenosis)"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Grade 4T "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Grade 4G "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Grade 4TG"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_ds_ods"/>
+    <text value="How would you subjectively classify the overall degree of stenosis?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Mild "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Moderate "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Severe"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_treatment"/>
+    <text value="What treatment has the patient undergone for their stenosis?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="No treatment "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Surgery "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="In-office treatment"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_treatment_surgery"/>
+    <text value="Surgery options"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Endoscopic intervention with Laser and Balloon dilation and steroid injection "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Endoscopic laser wedge excision "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Laryngotracheal reconstruction "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Laryngotracheoplasty (Maddern procedure) "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="Tracheostomy"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="diagnosis_as_treatment_in_office"/>
+    <text value="In-office treatment options"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueString value="Steroid injection(s) "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="In-office dilation "/>
+    </answerOption>
+    <answerOption>
+      <valueString value="In-office laser"/>
+    </answerOption>
+  </item>
+</Questionnaire>
