@@ -93,17 +93,15 @@ jobs:
         shell: bash
         run: |
           java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
-
-      - name: "Deploy to kind-lab.github.io"
-        run: |
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git config --global user.name "github-actions[bot]"
-            git config --global credential.helper cache
-            git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/kind-lab.github.io website
-            cd website
-            git rm -r vbai-fhir
-            mv ../output website/vbai-fhir
-            git add vbai-fhir
-            git commit -a -m "$(date): update vbai-fhir"
-            git push
-     
+          mkdir -p ./git-output/vbai-fhir
+          cp -r ./output/* ./git-output/vbai-fhir 
+      
+      # Deploy IG
+      - name: Deploy to external repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env: 
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+        with:
+          source-directory: 'git-output'
+          destination-github-username: 'kind-lab'
+          destination-repository-name: 'kind-lab.github.io'
