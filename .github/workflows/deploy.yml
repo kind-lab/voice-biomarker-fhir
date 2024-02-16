@@ -77,15 +77,14 @@ jobs:
           ls -a
           cd ..
           echo -e "CODESYSTEM_URI = https://voicecollab.ai/fhir/CodeSystem/\nVALUESET_URI = https://voicecollab.ai/fhir/ValueSet/\nQUESTIONNAIRE_URI = https://voicecollab.ai/fhir/Questionnaire/\nQUESTIONNAIRE_LANGUAGE = en\nFHIR_QUESTIONNAIRE_MODE = AnswerOptions" >> .env
-          
-          
-    # ./job.sh
-          # ls
-          # cd ..
-          # cp -r ./tofsh/output/ .
-          # gofsh /
-          # cd output
-          # ls -a
+          ./job.sh
+          cd ..
+          cp -r ./tofsh/output/ fsh_files
+          gofsh fsh_files
+          cp -r gofsh/input ../input
+          cd ../input
+          ls -lR
+
 
     #   - name: "Download the IG Publisher"
     #     shell: bash
