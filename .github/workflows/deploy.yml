@@ -58,8 +58,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: kind-lab/reproschema-to-fhir  
+          repository: kind-lab/reproschema-to-fhir
+          submodules: 'true'
           path: './tofsh'
+          ssh-key: ${{ secrets.SSH_DEPLOY_KEY }}
     
     # Call Gofsh if needed
       - name: Checkout
