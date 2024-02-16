@@ -73,6 +73,7 @@ jobs:
           cp .env.example .env
           echo ""
           cd b2ai-reproschemav3.1
+          git submodule update --init --recursive
           ls -a
           cd ..
           echo -e "CODESYSTEM_URI = https://voicecollab.ai/fhir/CodeSystem/\nVALUESET_URI = https://voicecollab.ai/fhir/ValueSet/\nQUESTIONNAIRE_URI = https://voicecollab.ai/fhir/Questionnaire/\nQUESTIONNAIRE_LANGUAGE = en\nFHIR_QUESTIONNAIRE_MODE = AnswerOptions" >> .env
