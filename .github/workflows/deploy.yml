@@ -72,13 +72,16 @@ jobs:
           cd b2ai-reproschemav3.1
           ls -a
           cd ..
-          ./job.sh
-          ls
-          cd ..
-          cp -r ./tofsh/output/ .
-          gofsh /
-          cd output
-          ls -a
+          echo -e "CODESYSTEM_URI = https://voicecollab.ai/fhir/CodeSystem/\nVALUESET_URI = https://voicecollab.ai/fhir/ValueSet/\nQUESTIONNAIRE_URI = https://voicecollab.ai/fhir/Questionnaire/\nQUESTIONNAIRE_LANGUAGE = en\nFHIR_QUESTIONNAIRE_MODE = AnswerOptions" >> .env
+          
+          
+    # ./job.sh
+          # ls
+          # cd ..
+          # cp -r ./tofsh/output/ .
+          # gofsh /
+          # cd output
+          # ls -a
 
     #   - name: "Download the IG Publisher"
     #     shell: bash
