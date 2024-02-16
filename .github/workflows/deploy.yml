@@ -69,6 +69,7 @@ jobs:
           pip install -e .
           ls
           cp .env.example .env
+          echo ""
           cd b2ai-reproschemav3.1
           ls -a
           cd ..
