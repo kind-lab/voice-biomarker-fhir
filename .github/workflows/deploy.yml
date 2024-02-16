@@ -101,10 +101,10 @@ jobs:
             git config --global user.name "github-actions[bot]"
             git config --global credential.helper cache
             git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/kind-lab.github.io website
-            cd website
+            mkdir -p ./vbai-fhir
             ls
-            echo "removing vbai-fhir"
-            cp -r ../output website/vbai-fhir
+            echo "adding vbai-fhir"
+            cp -r ./output/* vbai-fhir
             git add vbai-fhir
             git commit -a -m "$(date): update vbai-fhir"
             git push
