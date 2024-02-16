@@ -1,7 +1,5 @@
 name: Build the IG
-on:
-  release:
-    types: [published]
+on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -45,32 +43,59 @@ jobs:
           sushi --version
           sushi .
 
-      - name: "Download the IG Publisher"
+
+    # Install GOFSH if needed
+      - name: "Install GOFSH"
         shell: bash
         run: |
-          mkdir ./input-cache
-          curl -sS -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar
-          chmod +x ./input-cache/publisher.jar
-    # Download the IG Publisher
-      - name: "Create IG"
+          npm install -g gofsh@1.6.4
+          gofsh --version
+
+    # Install reproschema2fhir if needed
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: kind-lab/reproschema-to-fhir  
+          path: './tofsh'
+    
+    # Call Gofsh if needed
+      - name: Checkout
         shell: bash
         run: |
-          java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
-          mkdir -p ./git-output/vbai-fhir
-          cp -r ./output/* ./git-output/vbai-fhir 
-          echo "Kind Lab GitHub Pages for external webpages." > ./git-output/README.md
+          cd ./tofsh
+          ./job.sh
+          cd ..
+          cp -r ./tofsh/output/ .
+          gofsh /
+          cd output
+          ls -a
+
+    #   - name: "Download the IG Publisher"
+    #     shell: bash
+    #     run: |
+    #       mkdir ./input-cache
+    #       curl -sS -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar
+    #       chmod +x ./input-cache/publisher.jar
+    # # Download the IG Publisher
+    #   - name: "Create IG"
+    #     shell: bash
+    #     run: |
+    #       java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
+    #       mkdir -p ./git-output/vbai-fhir
+    #       cp -r ./output/* ./git-output/vbai-fhir 
+    #       echo "Kind Lab GitHub Pages for external webpages." > ./git-output/README.md
       
 
       
-      # Deploy IG
-      - name: Deploy to external repository
-        uses: cpina/github-action-push-to-another-repository@main
-        env: 
-          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
-        with:
-          source-directory: 'git-output'
-          destination-github-username: 'kind-lab'
-          destination-repository-name: 'kind-lab.github.io'
+    #   # Deploy IG
+    #   - name: Deploy to external repository
+    #     uses: cpina/github-action-push-to-another-repository@main
+    #     env: 
+    #       SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+    #     with:
+    #       source-directory: 'git-output'
+    #       destination-github-username: 'kind-lab'
+    #       destination-repository-name: 'kind-lab.github.io'
        
           
      
