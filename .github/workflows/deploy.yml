@@ -104,7 +104,7 @@ jobs:
             git config --global credential.helper cache
             git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/kind-lab.github.io website
             mkdir -p website/vbai-fhir
-            cp -r ./git-output/vbai-fhir website/vbai-fhir
+            cp -r ./git-output/vbai-fhir website
             cd website
             git add vbai-fhir
             git commit -a -m "$(date): update vbai-fhir"
