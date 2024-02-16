@@ -78,8 +78,9 @@ jobs:
           cp -r ./tofsh/output/ fsh_files
           gofsh fsh_files
           cp -r gofsh/input ./input
-          cd ../input
+          cd ./input
           ls -lR
+          sushi .
 
 
     #   - name: "Download the IG Publisher"
