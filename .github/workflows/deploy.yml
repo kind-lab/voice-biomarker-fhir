@@ -72,7 +72,7 @@ jobs:
           ls
           cp .env.example .env
           echo ""
-          cd b2ai-reproschemav3.1
+          cd b2ai-reproschemav3.1/activities
           git submodule update --init --recursive
           ls -a
           cd ..
