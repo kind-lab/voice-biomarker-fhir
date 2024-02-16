@@ -89,6 +89,7 @@ jobs:
           mkdir ./input-cache
           curl -sS -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar
           chmod +x ./input-cache/publisher.jar
+      
       - name: "Create IG"
         shell: bash
         run: |
@@ -96,7 +97,7 @@ jobs:
           mkdir -p ./git-output/vbai-fhir
           cp -r ./output/* ./git-output/vbai-fhir 
       
-     - name: "Deploy to kind-lab.github.io"
+      - name: "Deploy to kind-lab.github.io"
         run: |
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
             git config --global user.name "github-actions[bot]"
