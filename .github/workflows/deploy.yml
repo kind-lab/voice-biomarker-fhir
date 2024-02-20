@@ -58,7 +58,7 @@ jobs:
 
     # Install reproschema2fhir if needed
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: kind-lab/reproschema-to-fhir
           submodules: 'true'
@@ -71,9 +71,13 @@ jobs:
         run: |
           cd ./tofsh
           pip install -e .
-          cp .env.example .env
+          touch .env
           git submodule update --init --recursive
-          echo -e "CODESYSTEM_URI = https://voicecollab.ai/fhir/CodeSystem/\nVALUESET_URI = https://voicecollab.ai/fhir/ValueSet/\nQUESTIONNAIRE_URI = https://voicecollab.ai/fhir/Questionnaire/\nQUESTIONNAIRE_LANGUAGE = en\nFHIR_QUESTIONNAIRE_MODE = AnswerOptions" >> .env
+          echo -e "CODESYSTEM_URI = https://voicecollab.ai/fhir/CodeSystem/" >> .env
+          echo -e "VALUESET_URI = https://voicecollab.ai/fhir/ValueSet/" >> .env
+          echo -e "QUESTIONNAIRE_URI = https://voicecollab.ai/fhir/Questionnaire/" >> .env
+          echo -e "QUESTIONNAIRE_LANGUAGE = en" >> .env
+          echo -e "FHIR_QUESTIONNAIRE_MODE = AnswerOptions" >> .env
           ./job.sh
           cd ..
           cp -r ./tofsh/output/ fsh_files
