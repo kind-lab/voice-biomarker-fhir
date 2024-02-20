@@ -15,7 +15,10 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "17"
-
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' 
     # Install ruby
     # https://github.com/ruby/setup-ruby
       - uses: ruby/setup-ruby@v1
@@ -45,28 +48,68 @@ jobs:
           sushi --version
           sushi .
 
+
+    # Install GOFSH if needed
+      - name: "Install GOFSH"
+        shell: bash
+        run: |
+          npm install -g gofsh@1.6.4
+          gofsh --version
+
+    # Install reproschema2fhir if needed
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          repository: kind-lab/reproschema-to-fhir
+          submodules: 'true'
+          path: './tofsh'
+          ssh-key: ${{ secrets.SSH_DEPLOY_KEY }}
+    
+    # Call Gofsh if needed
+      - name: Checkout
+        shell: bash
+        run: |
+          cd ./tofsh
+          pip install -e .
+          touch .env
+          git submodule update --init --recursive
+          echo -e "CODESYSTEM_URI = https://voicecollab.ai/fhir/CodeSystem/" >> .env
+          echo -e "VALUESET_URI = https://voicecollab.ai/fhir/ValueSet/" >> .env
+          echo -e "QUESTIONNAIRE_URI = https://voicecollab.ai/fhir/Questionnaire/" >> .env
+          echo -e "QUESTIONNAIRE_LANGUAGE = en" >> .env
+          echo -e "FHIR_QUESTIONNAIRE_MODE = AnswerOptions" >> .env
+          ./job.sh
+          cd ..
+          cp -r ./tofsh/output/ fsh_files
+          gofsh fsh_files
+          rm -r ./input/fsh
+          cp -r gofsh/input/fsh ./input/fsh
+          sushi .
+
+
       - name: "Download the IG Publisher"
         shell: bash
         run: |
           mkdir ./input-cache
           curl -sS -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar
           chmod +x ./input-cache/publisher.jar
-
+      
       - name: "Create IG"
         shell: bash
         run: |
           java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
-
+          mkdir -p ./git-output/vbai-fhir
+          cp -r ./output/* ./git-output/vbai-fhir 
+      
       - name: "Deploy to kind-lab.github.io"
         run: |
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git config --global user.name "github-actions[bot]"
-            git config --global credential.helper cache
-            git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/kind-lab.github.io website
-            cd website
-            git rm -r vbai-fhir
-            mv ../output website/vbai-fhir
-            git add vbai-fhir
-            git commit -a -m "$(date): update vbai-fhir"
-            git push
-     
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global credential.helper cache
+          git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/kind-lab.github.io website
+          mkdir -p website/vbai-fhir
+          cp -r ./git-output/vbai-fhir website
+          cd website
+          git add vbai-fhir
+          git commit -a -m "$(date): update vbai-fhir"
+          git push
