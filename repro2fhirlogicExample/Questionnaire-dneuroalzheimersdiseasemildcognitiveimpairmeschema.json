@@ -1,0 +1,275 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "dneuroalzheimersdiseasemildcognitiveimpairmeschema",
+  "meta" : {
+    "profile" : ["https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://voicecollab.ai/fhir/Questionnaire/dneuroalzheimersdiseasemildcognitiveimpairmeschema",
+  "version" : "0.1.0",
+  "title" : "d_neuro_alzheimers_disease_mild_cognitive_impairme_schema",
+  "status" : "active",
+  "date" : "2024-02-15T20:00:22Z",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "item" : [{
+    "linkId" : "diagnosis_alz_dementia_mci_gsd_clinical_history",
+    "text" : "1. Gold Standard Diagnosis\nDoes the patient have Major Neurocognitive Disorder - Alzheimer's Type, Mild Cognitive Impairment or other types of dementia confirmed by going through\n(must fill at least one):: Clinical history:",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_gsd_functional_inventory",
+    "text" : "Functional Inventory:",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_gsd_cognitive_testing",
+    "text" : "Cognitive Testing:",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_gsd_other_investigations",
+    "text" : "Other investigations:",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_causes",
+    "text" : "Have you excluded other causes of cognitive/functional changes (and/or other subtypes)?",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "No "
+    },
+    {
+      "valueString" : "Yes "
+    },
+    {
+      "valueString" : "Not certain"
+    }]
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_dt",
+    "text" : "2. Disease Type: Specify the disease type in the patient:",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "Mild Cognitive Impairment (MCI) "
+    },
+    {
+      "valueString" : "Typical Alzheimer's Disease (AD) "
+    },
+    {
+      "valueString" : "Frontotemporal Dementia (FTD) "
+    },
+    {
+      "valueString" : "Lewy Body Dementia (LBD) "
+    },
+    {
+      "valueString" : "Vascular Dementia (VaD) "
+    },
+    {
+      "valueString" : "Mixed Dementia (e.g."
+    },
+    {
+      "valueString" : "Other"
+    }]
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_dt_other",
+    "text" : "If you selected \"other\", please specify:",
+    "type" : "string",
+    "enableWhen" : [{
+      "question" : "diagnosis_alz_dementia_mci_dt",
+      "operator" : "=",
+      "answerString" : "other"
+    }]
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_etiology",
+    "text" : "3. Etiology: What is the suspected or known etiology in the patient?",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_etiology_gf",
+    "text" : "Genetic Factors Subcategory",
+    "type" : "string",
+    "enableWhen" : [{
+      "question" : "diagnosis_alz_dementia_mci_etiology",
+      "operator" : "=",
+      "answerString" : "1"
+    }]
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_etiology_gf_other",
+    "text" : "If you selected \"Other genetic factors\", please specify:",
+    "type" : "string",
+    "enableWhen" : [{
+      "question" : "diagnosis_alz_dementia_mci_etiology_gf",
+      "operator" : "=",
+      "answerString" : "1"
+    }]
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_etiology_other_medical_conditions",
+    "text" : "If you selected \"other medical conditions\", please specify:",
+    "type" : "string",
+    "enableWhen" : [{
+      "question" : "diagnosis_alz_dementia_mci_etiology",
+      "operator" : "=",
+      "answerString" : "1"
+    }]
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_etiology_other",
+    "text" : "If you selected \"other\", please specify:",
+    "type" : "string",
+    "enableWhen" : [{
+      "question" : "diagnosis_alz_dementia_mci_etiology",
+      "operator" : "=",
+      "answerString" : "1"
+    }]
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_ds",
+    "text" : "4. Disease Severity: What is the current stage/severity of cognitive impairment or dementia in the patient?",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_ds_cdr",
+    "text" : "Clinical dementia rating (CDR) staging subcategory:",
+    "type" : "choice",
+    "enableWhen" : [{
+      "question" : "diagnosis_alz_dementia_mci_ds",
+      "operator" : "=",
+      "answerString" : "1"
+    }],
+    "answerOption" : [{
+      "valueString" : "CDR 0.5 (Very mild impairment) "
+    },
+    {
+      "valueString" : "CDR 1 (Mild impairment) "
+    },
+    {
+      "valueString" : "CDR 2 (Moderate impairment) "
+    },
+    {
+      "valueString" : "CDR 3 (Severe impairment)"
+    }]
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_ca_rudas_score",
+    "text" : "5. Cognitive Assessment\n(must fill at least one): Rowland Universal Dementia Assessment Scale (RUDAS) score:",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_ca_mmse_score",
+    "text" : "Mini-Mental State Examination (MMSE) score:",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_ca_moca_score",
+    "text" : "Montreal Cognitive Assessment (MoCA) score:",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_ca_adas_cog_score",
+    "text" : "Alzheimer's Disease Assessment Scale-Cognitive Subscale (ADAS-Cog) score:",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_ca_other",
+    "text" : "Other cognitive assessment tool (Please Specify):",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_ca_other_score",
+    "text" : "Other cognitive assessment tool score:",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_treatment_obtained",
+    "text" : "6. Treatment Obtained: Has the patient undergone any treatment for Alzheimer's disease or cognitive impairment or other types of dementia?",
+    "type" : "choice",
+    "answerOption" : [{
+      "valueString" : "Yes "
+    },
+    {
+      "valueString" : "No"
+    }]
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_treatment_obtained_yes",
+    "text" : "Yes",
+    "type" : "string",
+    "enableWhen" : [{
+      "question" : "diagnosis_alz_dementia_mci_treatment_obtained",
+      "operator" : "=",
+      "answerString" : "yes"
+    }]
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_treatment_obtained_yes_medications",
+    "text" : "Medications:",
+    "type" : "string",
+    "enableWhen" : [{
+      "question" : "diagnosis_alz_dementia_mci_treatment_obtained",
+      "operator" : "=",
+      "answerString" : "yes"
+    },
+    {
+      "question" : "diagnosis_alz_dementia_mci_treatment_obtained_yes",
+      "operator" : "=",
+      "answerString" : "1"
+    }],
+    "enableBehavior" : "all"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_treatment_obtained_yes_medications_other",
+    "text" : "If you selected \"Other\", please specify:",
+    "type" : "string"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_treatment_obtained_yes_npi",
+    "text" : "Non-pharmacological interventions:",
+    "type" : "string",
+    "enableWhen" : [{
+      "question" : "diagnosis_alz_dementia_mci_treatment_obtained",
+      "operator" : "=",
+      "answerString" : "yes"
+    },
+    {
+      "question" : "diagnosis_alz_dementia_mci_treatment_obtained_yes",
+      "operator" : "=",
+      "answerString" : "1"
+    }],
+    "enableBehavior" : "all"
+  },
+  {
+    "linkId" : "diagnosis_alz_dementia_mci_treatment_obtained_yes_npi_other",
+    "text" : "If you selected \"Other\", please specify:",
+    "type" : "string",
+    "enableWhen" : [{
+      "question" : "diagnosis_alz_dementia_mci_treatment_obtained",
+      "operator" : "=",
+      "answerString" : "yes"
+    },
+    {
+      "question" : "diagnosis_alz_dementia_mci_treatment_obtained_yes",
+      "operator" : "=",
+      "answerString" : "1"
+    },
+    {
+      "question" : "diagnosis_alz_dementia_mci_treatment_obtained_yes_npi",
+      "operator" : "=",
+      "answerString" : "1"
+    }],
+    "enableBehavior" : "all"
+  }]
+}
