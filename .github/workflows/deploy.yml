@@ -89,6 +89,9 @@ jobs:
     # commit to current repo
       - name: "Overwrite fsh files"
         run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global credential.helper cache
           git add ./input/fsh
           git commit -a -m "$(date): update redcap2fhir resources"
           git push
