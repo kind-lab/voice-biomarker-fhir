@@ -1,7 +1,7 @@
 name: Build the IG
-on:
-  release:
-    types: [published]
+on: push
+  # release:
+  #   types: [published]
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -85,6 +85,14 @@ jobs:
           rm -r ./input/fsh
           cp -r gofsh/input/fsh ./input/fsh
           sushi .
+
+    # commit to current repo
+      - name: "Overwrite fsh files"
+        run: |
+          git add ./input/fsh
+          git commit -a -m "$(date): update redcap2fhir resources"
+          git push
+
 
 
       - name: "Download the IG Publisher"
