@@ -75,6 +75,6 @@ pages:
    tutorial_table_of_contents.md:
    brief_fhir_intro.md:
    protocol.md:
-menu:
-  Home: index.html
-  Artifacts: artifacts.html
+# menu:
+#   Home: index.html
+#   Artifacts: artifacts.html
