@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_neuro_random_item_generation_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-18T21:31:11Z"
+* date = "2024-03-18T21:48:58Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
