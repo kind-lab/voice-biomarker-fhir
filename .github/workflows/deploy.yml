@@ -1,7 +1,7 @@
 name: Build the IG
-on:
-   release:
-     types: [published]
+on: push
+  #  release:
+  #    types: [published]
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -82,8 +82,8 @@ jobs:
           cd ..
           cp -r ./tofsh/output/ fsh_files
           gofsh fsh_files
-          rm -r ./input/fsh
-          cp -r gofsh/input/fsh ./input/fsh
+          rm -r ./input/fsh/instances
+          cp -r gofsh/input/fsh/instances ./input/fsh
           sushi .
 
     # commit to current repo
