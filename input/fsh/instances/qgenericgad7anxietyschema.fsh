@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_generic_gad7_anxiety_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-18T21:48:49Z"
+* date = "2024-03-19T17:06:35Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
