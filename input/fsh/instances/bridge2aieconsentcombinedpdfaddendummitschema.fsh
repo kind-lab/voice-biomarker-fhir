@@ -6,7 +6,7 @@ Usage: #example
 * title = "bridge2ai_econsent_combined_pdf_addendum_mit_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-18T21:48:33Z"
+* date = "2024-03-19T17:05:02Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

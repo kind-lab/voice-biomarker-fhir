@@ -6,7 +6,7 @@ Usage: #example
 * title = "d_voice_vocal_fold_paralysis_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-18T21:48:45Z"
+* date = "2024-03-19T17:06:13Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
