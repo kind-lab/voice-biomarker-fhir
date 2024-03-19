@@ -1,7 +1,7 @@
 name: Build the IG
 on:
-    release:
-      types: [published]
+  release:
+    types: [published]
 jobs:
   deploy:
     runs-on: ubuntu-latest
