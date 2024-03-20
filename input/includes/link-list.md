@@ -11,7 +11,7 @@
 [IntroToFhir]: brief_fhir_intro.html
 [Protocol]: protocol.html
 
-
+<!--Profiles-->
 [VbaiCohortProtocol]: StructureDefinition-vbai-cohort-protocol.html
 [VbaiBodyHeight]: StructureDefinition-vbai-body-height.html
 [VbaiBodyWeight]: StructureDefinition-vbai-body-weight.html
@@ -26,14 +26,10 @@
 [VbaiVitalSigns]: StructureDefinition-vbai-vital-signs.html
 [VbaiWavefromDevice]: StructureDefinition-vbai-waveform-device.html
 [VbaiWaveformMedia]: StructureDefinition-vbai-waveform-media.html
+
+<!--Protcols-->
 [PlanDefinition]: StructureDefinition-vbai-plan-definition.html
 [VbaiPlanDefinitionExample]: PlanDefinition-VbaiPlanDefinitionExample.html
-[Demographics]: Questionnaire-VbaiQuestionnaireDemographicExample.html
-[Confounders]: Questionnaire-VbaiQuestionnaireConfoundersExample.html
-[PHQ9]: Questionnaire-PHQ9schema.html
-[GAD7]: Questionnaire-GAD7schema.html
-[VoicePerception]: Questionnaire-VoicePerception.html
-[VHI10]: Questionnaire-VHI10.html
 [Questionnaire]: StructureDefinition-vbai-questionnaire.html
 [QuestionnaireResponse]: StructureDefinition-vbai-questionnaire-response.html
 [MoodCohortProtocol]: PlanDefinition-MoodCohortProtocolExample.html
@@ -41,25 +37,39 @@
 [PediatricCohortProtocol]: PlanDefinition-PedsCohortProtocolExample.html
 [RespiratoryCohortProtocol]: PlanDefinition-RespiratoryCohortProtocolExample.html
 [VoiceCohortProtocol]: PlanDefinition-VoiceCohortProtocolExample.html
-[whocompletedsurvey]: ValueSet-whocompletedsurvey.html
-[Moca]: Questionnaire-MOCA.html
-[Stroop]: Questionnaire-Stroop.html
-[Vocabulary]: Questionnaire-Vocabulary.html
-[RandomItemGeneration]: Questionnaire-Words.html
-[Winograd]: Questionnaire-WinogradSchema.html
-[Panas]: Questionnaire-PANASQuestionnaire.html
-[CustomAffectScale]: Questionnaire-CustomAffectScaleQuestionnaire.html
-[DSM5]: Questionnaire-DSM5.html
-[PTSD]: Questionnaire-PTSD.html
-[ADHD]: Questionnaire-ADHDQuestionnaire.html
+
+
+<!--Missing-->
 [PatientQuestionnaire]: Questionnaire-PatientQuestions.html
-[CapeV]: Questionnaire-CAPEVQuestionnaire.html
-[VoiceProblemSeverity]: Questionnaire-VoiceProblemSeverity.html
 [PSC17]: Questionnaire-PSC17.html
 [PatientRespiratoryQuestionnaire]: Questionnaire-RespiratoryPatientQuestionnaire.html
-[DyspneaIndex]: Questionnaire-DyspneaIndex.html
-[LeicesterCough]: Questionnaire-LeicesterCough.html 
-[UrgeToCough]: Questionnaire-UrgeToCough.htmls
+[UrgeToCough]: Questionnaire-UrgeToCough.html
+
+<!--Questionnaires-->
+[Demographics]: Questionnaire-qgenericdemographicsschema.html
+[Confounders]: Questionnaire-qgenericconfoundersschema.html
+[PHQ9]: Questionnaire-qgenericpatienthealthquestionnaire9schema.html
+[GAD7]: Questionnaire-qgenericgad7anxietyschema.html
+[VoicePerception]: Questionnaire-qgenericvoiceperceptionschema.html
+[VHI10]: Questionnaire-qgenericvoicehandicapindexvhi10schema.html
+[whocompletedsurvey]: ValueSet-whocompletedsurvey.html
+[Moca]: Questionnaire-MOCA.html
+[Stroop]: Questionnaire-qneurowordcolorstroopschema.html
+[Vocabulary]: Questionnaire-qneuroproductivevocabularyschema.html
+[RandomItemGeneration]: Questionnaire-qneurorandomitemgenerationschema.html
+[Winograd]: Questionnaire-qneurowinogradschemasschema.html
+[Panas]: Questionnaire-qmoodpanasschema.html
+[CustomAffectScale]: Questionnaire-qmoodcustomaffectscaleschema.html
+[DSM5]: Questionnaire-qmooddsm5adultschema.html
+[PTSD]: Questionnaire-qmoodptsdadultschema.html
+[ADHD]: Questionnaire-qmoodadhdadultschema.html
+[CapeV]: Questionnaire-dvoicevocalfoldparalysisschema.html
+[VoiceProblemSeverity]: Questionnaire-qvoicevoiceproblemseverityschema.html
+[DyspneaIndex]: Questionnaire-qrespdyspneaindexdischema.html
+[LeicesterCough]: Questionnaire-qrespleicestercoughquestionnairelcqschema.html
+[DemographicQuestionnaire]: Questionnaire-qgenericdemographicsschema.html
+[VoiceImpactingQuestionnaire]: Questionnaire-dvoicevocalfoldparalysisschema.html
+[ConfounderQuestionnaire]: Questionnaire-qgenericconfoundersschema.html
 
 
 
@@ -84,16 +94,7 @@
 
 
 
-[DemographicQuestionnaire]: Questionnaire-VbaiQuestionnaireDemographicExample.html
-[VoiceImpactingQuestionnaire]: Questionnaire-VocalFoldParalysis.html
-[AcousticTasks]: Questionnaire-GeneralAcousticTasksQuestionnaire.html
-[ConfounderQuestionnaire]: Questionnaire-VbaiQuestionnaireConfoundersExample.html
-[ValidatedQuestionnaires]: PlanDefinition-VbaiPlanDefinitionGeneralQuestionnaireExample.html
-
-[MoodAcousticTasks]: Questionnaire-MoodAcousticTasksQuestionnaire.html
-[VbaiPlanDefinitionCohortSpecificConfoundersExample]: PlanDefinition-VbaiPlanDefinitionCohortSpecificConfoundersExample.html
-[VbaiPlanDefinitionQuestionnaireMoodExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireMoodExample.html
-
+<!--Acoustic Tasks-->
 [VoiceAcousticTasks]: Questionnaire-VoiceAcousticTasksQuestionnaire.html
 
 [VbaiPlanDefinitionQuestionnaireVoiceExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireVoiceExample.html
@@ -105,6 +106,18 @@
 
 
 [RespiratoryAcousticTasks]: Questionnaire-RespiratoryAcousticTasksQuestionnaire.html
+
+[AcousticTasks]: Questionnaire-GeneralAcousticTasksQuestionnaire.html
+
+
+
+
+[ValidatedQuestionnaires]: PlanDefinition-VbaiPlanDefinitionGeneralQuestionnaireExample.html
+
+[MoodAcousticTasks]: Questionnaire-MoodAcousticTasksQuestionnaire.html
+[VbaiPlanDefinitionCohortSpecificConfoundersExample]: PlanDefinition-VbaiPlanDefinitionCohortSpecificConfoundersExample.html
+[VbaiPlanDefinitionQuestionnaireMoodExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireMoodExample.html
+
 
 
 [VbaiPlanDefinitionQuestionnaireRespiratoryExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireRespiratoryExample.html
