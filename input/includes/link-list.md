@@ -70,29 +70,36 @@
 [DemographicQuestionnaire]: Questionnaire-qgenericdemographicsschema.html
 [VoiceImpactingQuestionnaire]: Questionnaire-dvoicevocalfoldparalysisschema.html
 [ConfounderQuestionnaire]: Questionnaire-qgenericconfoundersschema.html
+[GeneralInformation]: Questionnaire-subjectparticipantbasicinformationschema.html
+[ContactInformation]: Questionnaire-subjectparticipantcontactinformationschema.html
 
 
-
-[Eligibility]: PlanDefinition-VbaiAdultPlanDefinitionEligibilityExample.html
+[Eligibility]: Questionnaire-subjectparticipanteligiblestudiesschema.html
 [EligibilityPeds]: PlanDefinition-VbaiPedsPlanDefinitionEligibilityExample.html
-[GeneralInformation]: Questionnaire-GeneralInformation.html
-[ContactInformation]: Questionnaire-ContactInformation.html
-[EligibleStudies]: Questionnaire-EligibleStudies.html
+[EligibleStudies]: Questionnaire-subjectparticipanteligiblestudiesschema.html
 [SurveyCompletion]: Questionnaire-SurveyCompletionQuestionnaire.html
-[Enrollment]: Questionnaire-Enrollment.html
+[Enrollment]: Questionnaire-enrollmentformschema.html
 
 <!--- Consent --->
-[Consent]: PlanDefinition-VbaiPlanDefinitionConsentExample.html
+
+
 [NeuroConsent]: Questionnaire-NeuroConsent.html
-[ConsentMainICF]: Questionnaire-MainICF.html
-[ConsentMainICFResearcherStatement]: Questionnaire-MainICFResearcherStatement.html
-[ConsentMainICFCombined]: Questionnaire-MainICFCombinedPDF.html
-[AddendumWCM]: Questionnaire-AddendumWCM.html
-[AddendumWCMResearcherStatement]: Questionnaire-AddendumWCMResearcherStatement.html
-[AddendumCombinedPDF]: Questionnaire-AddendumCombinedPDF.html
-[ConsentQuestionnaire]: Questionnaire-ConsentQuestionnaire.html
+
+[AddendumEnglish]: Questionnaire-bridge2aieconsentaddendumbchenglishschema.html
+[AddendumWCMEnglish]: Questionnaire-bridge2aieconsentaddendumwcmenglishschema.html
+[AddendumWCMResearcherStatement]: Questionnaire-bridge2aieconsentaddendumwcmresearcherstatemeschema.html
+[AddendumMITEnglish]: Questionnaire-bridge2aieconsentaddendummitenglishschema.html
+[AddendumMITResearcherStatement]: Questionnaire-bridge2aieconsentaddendummitresearcherstatemeschema.html
+
+[AddendumCombinedPDFWCM]: Questionnaire-bridge2aieconsentcombinedpdfaddendumwcmschema.html
+[AddendumCombinedPDFMIT]: Questionnaire-bridge2aieconsentcombinedpdfaddendummitschema.html
 
 
+[ConsentMainICFResearcherStatement]: Questionnaire-bridge2aieconsentmainicfusfresearcherstatemeschema.html
+[ConsentMainICFCombined]: Questionnaire-bridge2aieconsentcombinedpdfmainicfusfschema.html
+[ConsentMainICFUSFEnglish]: Questionnaire-bridge2aieconsentmainicfusfenglishschema.html 
+
+[PaperConsentAllSiteEnglish]: Questionnaire-bridge2aipaperconsentallsitesenglishschema.html
 
 <!--Acoustic Tasks-->
 [VoiceAcousticTasks]: Questionnaire-VoiceAcousticTasksQuestionnaire.html

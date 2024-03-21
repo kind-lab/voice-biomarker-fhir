@@ -77,14 +77,17 @@ We will ask you a few questions to determine if you are eligible for study enrol
 Before you participate in this study, we need your consent. The information here describes what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent
 
 **Questionnaire resources**
-* [ConsentMainICF]
+* [ConsentMainICFUSFEnglish]
 * [ConsentMainICFResearcherStatement]
 * [ConsentMainICFCombined]
-* [AddendumWCM]
+* [AddendumEnglish]
+* [AddendumWCMEnglish]
 * [AddendumWCMResearcherStatement]
-* [AddendumCombinedPDF]
-* [ConsentQuestionnaire]
-* [NeuroConsent] (Neuro only)
+* [AddendumMITEnglish]
+* [AddendumMITResearcherStatement]
+* [AddendumCombinedPDFWCM]
+* [AddendumCombinedPDFMIT]
+* [PaperConsentAllSiteEnglish]
 
 ### Demographics
 
