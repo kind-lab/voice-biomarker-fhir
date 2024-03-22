@@ -32,11 +32,6 @@
 [VbaiPlanDefinitionExample]: PlanDefinition-VbaiPlanDefinitionExample.html
 [Questionnaire]: StructureDefinition-vbai-questionnaire.html
 [QuestionnaireResponse]: StructureDefinition-vbai-questionnaire-response.html
-[MoodCohortProtocol]: PlanDefinition-MoodCohortProtocolExample.html
-[NeurologyCohortProtocol]: PlanDefinition-CohortProtocolExampleNeuro.html
-[PediatricCohortProtocol]: PlanDefinition-PedsCohortProtocolExample.html
-[RespiratoryCohortProtocol]: PlanDefinition-RespiratoryCohortProtocolExample.html
-[VoiceCohortProtocol]: PlanDefinition-VoiceCohortProtocolExample.html
 
 
 <!--Missing-->
@@ -102,38 +97,14 @@
 [PaperConsentAllSiteEnglish]: Questionnaire-bridge2aipaperconsentallsitesenglishschema.html
 
 <!--Acoustic Tasks-->
+[AcousticTasks]: Questionnaire-acoustictaskschema.html
+[MoodAcousticTasks]: Questionnaire-MoodAcousticTasksQuestionnaire.html
 [VoiceAcousticTasks]: Questionnaire-VoiceAcousticTasksQuestionnaire.html
-
-[VbaiPlanDefinitionQuestionnaireVoiceExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireVoiceExample.html
-
 [PediatricAcousticTasks]: Questionnaire-PedsAcousticTasksQuestionnaire.html
-
-[VbaiPlanDefinitionQuestionnairePedsExample]: PlanDefinition-VbaiPlanDefinitionQuestionnairePedsExample.html
-[Assent]: PlanDefinition-VbaiPlanDefinitionAssentExample.html
-
-
 [RespiratoryAcousticTasks]: Questionnaire-RespiratoryAcousticTasksQuestionnaire.html
 
-[AcousticTasks]: Questionnaire-GeneralAcousticTasksQuestionnaire.html
 
-
-
-
-[ValidatedQuestionnaires]: PlanDefinition-VbaiPlanDefinitionGeneralQuestionnaireExample.html
-
-[MoodAcousticTasks]: Questionnaire-MoodAcousticTasksQuestionnaire.html
-[VbaiPlanDefinitionCohortSpecificConfoundersExample]: PlanDefinition-VbaiPlanDefinitionCohortSpecificConfoundersExample.html
-[VbaiPlanDefinitionQuestionnaireMoodExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireMoodExample.html
-
-
-
-[VbaiPlanDefinitionQuestionnaireRespiratoryExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireRespiratoryExample.html
-
-
-[VbaiPlanDefinitionAcousticTasksNeuroExample]: PlanDefinition-VbaiPlanDefinitionAcousticTasksNeuroExample.html
-[VbaiPlanDefinitionQuestionnaireNeuroExample]: PlanDefinition-VbaiPlanDefinitionQuestionnaireNeuroExample.html
-
-
+<!-- 
 [VbaiPlanDefinitionClinicianInputExample]: PlanDefinition-VbaiPlanDefinitionClinicianInputExample.html
 [FeedbackQuestionnaire]: Questionnaire-FeedbackQuestionnaire.html
-[NeuroConsent]: PlanDefinition-VbaiPlanDefinitionNeuroConsentExample.html
+[NeuroConsent]: PlanDefinition-VbaiPlanDefinitionNeuroConsentExample.html -->
