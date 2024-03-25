@@ -1,7 +1,7 @@
 name: Build the IG
-on: push
-  # release:
-  #   types: [published]
+on:
+  release:
+    types: [published]
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -97,6 +97,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global credential.helper cache
           git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/voice-biomarker-fhir tmp_branch
+          rm -r tmp_branch/input/fsh
           cp -r ./input/fsh tmp_branch/input/
           cd tmp_branch
           git add ./input/fsh
