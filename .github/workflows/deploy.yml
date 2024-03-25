@@ -1,7 +1,7 @@
 name: Build the IG
-on:
-  release:
-    types: [published]
+on: push
+  # release:
+  #   types: [published]
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -89,6 +89,7 @@ jobs:
     # commit to current repo
       - name: "Overwrite fsh files"
         run: |
+          git rev-parse --abbrev-ref HEAD
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git config --global credential.helper cache
