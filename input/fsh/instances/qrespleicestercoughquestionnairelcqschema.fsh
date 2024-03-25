@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_resp_leicester_cough_questionnaire_lcq_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-25T20:13:57Z"
+* date = "2024-03-25T20:45:47Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

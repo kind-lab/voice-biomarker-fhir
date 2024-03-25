@@ -6,7 +6,7 @@ Usage: #example
 * title = "d_peds_healthy_developmentallytypical_children_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-25T20:12:07Z"
+* date = "2024-03-25T20:43:58Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
