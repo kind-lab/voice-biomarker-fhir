@@ -6,7 +6,7 @@ Usage: #example
 * title = "d_neuro_parkinsons_disease_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-19T17:05:57Z"
+* date = "2024-03-25T20:12:02Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
