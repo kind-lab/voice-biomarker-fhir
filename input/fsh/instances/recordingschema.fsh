@@ -6,7 +6,7 @@ Usage: #example
 * title = "recording_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-25T22:16:36Z"
+* date = "2024-03-25T22:48:00Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

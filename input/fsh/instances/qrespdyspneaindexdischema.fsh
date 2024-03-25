@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_resp_dyspnea_index_di_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-25T22:16:20Z"
+* date = "2024-03-25T22:47:44Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
