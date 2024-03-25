@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_mood_ptsd_adult_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-25T20:45:14Z"
+* date = "2024-03-25T21:24:31Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
