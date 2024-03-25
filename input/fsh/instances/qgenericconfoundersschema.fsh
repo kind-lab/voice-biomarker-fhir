@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_generic_confounders_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-25T21:23:37Z"
+* date = "2024-03-25T22:14:58Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

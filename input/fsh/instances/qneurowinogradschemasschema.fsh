@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_neuro_winograd_schemas_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-25T21:24:47Z"
+* date = "2024-03-25T22:16:09Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
