@@ -59,7 +59,7 @@ menu:
   Guidance: guidance.html
   Artifacts: artifacts.html
   Change Log: changelog.html
-  Tutorial: tutorial_table_of_contents.html
+  # Tutorial: tutorial_table_of_contents.html
   Protocol: protocol.html
   
 pages:
