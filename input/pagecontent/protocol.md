@@ -40,9 +40,9 @@ was collaboratively decided by the Bridge2AI-Voice Consortium.
 
 Data collection was standardized into a set of sequential phases:
 
-1. ▵ Eligibility
-2. ▵ Consent
-3. ▵ Demographic Questionnaire
+1. Eligibility
+2. Consent
+3. Demographic Questionnaire
 4. Acoustic Tasks
 5. Cohort Specific Tasks
 6. Confounder Questionnaire
@@ -64,7 +64,7 @@ The following sections describe each of these phases in detail.
 We will ask you a few questions to determine if you are eligible for study enrollment.
 
 **Questionnaire resources**
-* [SurveyCompletion] - who is completing the survey
+<!-- * [SurveyCompletion] - who is completing the survey -->
 * [GeneralInformation]
 * [ContactInformation]
 * [EligibleStudies]
@@ -77,14 +77,17 @@ We will ask you a few questions to determine if you are eligible for study enrol
 Before you participate in this study, we need your consent. The information here describes what to expect and what is required from you for this study. It will also give you information about how your data will be shared. You have options to read the consent, watch the video consent, or do both before you decide to give your electronic consent
 
 **Questionnaire resources**
-* [ConsentMainICF]
+* [ConsentMainICFUSFEnglish]
 * [ConsentMainICFResearcherStatement]
 * [ConsentMainICFCombined]
-* [AddendumWCM]
+* [AddendumEnglish]
+* [AddendumWCMEnglish]
 * [AddendumWCMResearcherStatement]
-* [AddendumCombinedPDF]
-* [ConsentQuestionnaire]
-* [NeuroConsent] (Neuro only)
+* [AddendumMITEnglish]
+* [AddendumMITResearcherStatement]
+* [AddendumCombinedPDFWCM]
+* [AddendumCombinedPDFMIT]
+* [PaperConsentAllSiteEnglish]
 
 ### Demographics
 
@@ -115,7 +118,7 @@ Before you participate in this study, we need your consent. The information here
 *A series of questionnaires which have been demonstrated to measure a particular construct.*
 
 **Questionnaire resources**
-* [ValidatedQuestionnaires]
+* ValidatedQuestionnaires
   - [GAD7]
   - [PHQ9]
   - [VoicePerception]
@@ -134,7 +137,7 @@ After the last step, the cohort specific tasks begin. These steps differ based o
 * Pediatric - [PediatricAcousticTasks]
 * Respiratory - [RespiratoryAcousticTasks]
 * Neuro
-  * Task 1: [Moca] 
+  * Task 1: Moca
   * Task 2: [Stroop]
   * Task 3: [Vocabulary]
   * Task 4: [RandomItemGeneration]
@@ -159,24 +162,27 @@ After the last step, the cohort specific tasks begin. These steps differ based o
   - [DSM5]
   - [PTSD]
   - [ADHD]
-  - Altman Self-Rating Mania Scale
-  - Severity Measure for Social Anxiety Disorder (Social Phobia)—Adult - 10
-  - Well-being: Secure Flourishing Index
-  - Hamburg–Hannover Agitation Scale (H2A)
-  - Chalder Fatigue Scale 11
-  - The Big Five Inventory–2 Extra Short Form 
+  <!-- - Altman Self-Rating Mania Scale-->
+    <!-- - Severity Measure for Social Anxiety Disorder (Social Phobia)—Adult - 10 -->
+    <!-- - Well-being: Secure Flourishing Index -->
+    <!-- - Hamburg–Hannover Agitation Scale (H2A) -->
+    <!-- - Chalder Fatigue Scale 11 -->
+    <!-- - The Big Five Inventory–2 Extra Short Form   -->
+
+
 * Voice  
   - [PatientQuestionnaire]
   - [VHI10]
   - [CAPEV]
   - [VoiceProblemSeverity]
 * Pediatric
-  - [PSC17]
+  - N/A
+  <!-- - [PSC17] -->
 * Respiratory
   - [PatientRespiratoryQuestionnaire]
   - [DyspneaIndex]
   - [LeicesterCough]
-  - [UrgeToCough]
+  <!-- - [UrgeToCough] -->
 * Neuro
   - N/A
 
@@ -186,13 +192,13 @@ After the last step, the cohort specific tasks begin. These steps differ based o
 *Documentation of clinically diagnosed conditions and other information.*
 
 **Questionnaire resources**
-* N/A.
+* N/A
 
 ### Feedback
 
 *A section for providing feedback about the application, study, or anything else.*
 
 **Questionnaire resources**
-* [FeedbackQuestionnaire]
+* N/A
 
 {% include link-list.md %}

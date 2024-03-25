@@ -14,8 +14,8 @@ The VBAI Profiles are meant for use in research and development. The audience th
 - [Home]\: This page provides an introduction, background, and walkthrough for the Voice as a Biomarker for AI IG.
 - [Guidance]\: This page provide guidance on how best to use and understand the VBAI implementation guide 
 - [Artifacts]\: This pages list out the profiles, extensions and terminology used in the VBAI implementation guide.
-- [Change Log]\: This page docuuments versioning changes.  
-
+- [Change Log]\: This page documents versioning changes.  
+- [Protocol]\: This page goes over the protocol for each of the five cohorts.
 ### VBAI Profiles
 - [VbaiBodyHeight]
 - [VbaiBodyWeight]
