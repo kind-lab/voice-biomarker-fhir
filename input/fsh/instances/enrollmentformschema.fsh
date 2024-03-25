@@ -6,7 +6,7 @@ Usage: #example
 * title = "enrollment_form_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-19T17:06:19Z"
+* date = "2024-03-25T20:12:24Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

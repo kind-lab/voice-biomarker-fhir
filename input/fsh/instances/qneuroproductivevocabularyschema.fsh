@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_neuro_productive_vocabulary_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-19T17:07:24Z"
+* date = "2024-03-25T20:13:30Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

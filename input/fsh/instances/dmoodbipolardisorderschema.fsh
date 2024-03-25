@@ -6,7 +6,7 @@ Usage: #example
 * title = "d_mood_bipolar_disorder_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-19T17:05:35Z"
+* date = "2024-03-25T20:11:40Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

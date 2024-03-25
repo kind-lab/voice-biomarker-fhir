@@ -6,7 +6,7 @@ Usage: #example
 * title = "acoustic_task_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-19T17:04:29Z"
+* date = "2024-03-25T20:10:34Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
