@@ -6,7 +6,7 @@ Usage: #example
 * title = "session_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-19T17:08:08Z"
+* date = "2024-03-25T20:14:14Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
