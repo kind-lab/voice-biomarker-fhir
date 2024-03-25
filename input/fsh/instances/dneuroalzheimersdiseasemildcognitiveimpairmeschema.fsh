@@ -6,7 +6,7 @@ Usage: #example
 * title = "d_neuro_alzheimers_disease_mild_cognitive_impairme_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-25T20:43:41Z"
+* date = "2024-03-25T21:22:58Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_neuro_wordcolor_stroop_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-25T20:45:36Z"
+* date = "2024-03-25T21:24:53Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
