@@ -4,8 +4,8 @@ on:
     types: [closed]
 jobs:
   deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
-
     strategy:
       fail-fast: false
     steps:
