@@ -6,7 +6,7 @@ Usage: #example
 * title = "d_resp_airway_stenosis_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-25T22:46:06Z"
+* date = "2024-03-26T03:48:25Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

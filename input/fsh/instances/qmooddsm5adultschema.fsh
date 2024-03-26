@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_mood_dsm5_adult_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-25T22:47:06Z"
+* date = "2024-03-26T03:49:25Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
