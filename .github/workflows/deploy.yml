@@ -3,132 +3,130 @@ on:
   pull_request:
     types: [closed]
 jobs:
-  if_merged:
+  deploy:
     if: github.event.pull_request.merged == true
-    deploy:
-      runs-on: ubuntu-latest
-
-      strategy:
-        fail-fast: false
-      steps:
-        - uses: actions/checkout@v3
-        
-        - uses: actions/setup-java@v3
-          with:
-            distribution: "temurin"
-            java-version: "17"
-        - uses: actions/checkout@v4
-        - uses: actions/setup-python@v5
-          with:
-            python-version: '3.10' 
-      # Install ruby
-      # https://github.com/ruby/setup-ruby
-        - uses: ruby/setup-ruby@v1
-          with:
-            ruby-version: "3.2"
-
-      # Install Jekyll
-      # https://jekyllrb.com/docs/installation/ubuntu/
-        - name: "Install Jekyll"
-          shell: bash
-          run: |
-            gem install jekyll bundler
-            jekyll -v
-
-      # Install node if SUSHI is needed
-      # https://github.com/actions/setup-node
-        - name: "Install Node.js"
-          uses: actions/setup-node@v3
-          with:
-            node-version: "18"
-
-      # Install SUSHI if needed
-        - name: "Install SUSHI"
-          shell: bash
-          run: |
-            npm install -g fsh-sushi@2.7.0
-            sushi --version
-            sushi .
-
-
-      # Install GOFSH if needed
-        - name: "Install GOFSH"
-          shell: bash
-          run: |
-            npm install -g gofsh@1.6.4
-            gofsh --version
-
-      # Install reproschema2fhir if needed
-        - name: Checkout
-          uses: actions/checkout@v4
-          with:
-            repository: kind-lab/reproschema-to-fhir
-            submodules: 'true'
-            path: './tofsh'
-            ssh-key: ${{ secrets.SSH_DEPLOY_KEY }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v3
       
-      # Call Gofsh if needed
-        - name: Checkout
-          shell: bash
-          run: |
-            cd ./tofsh
-            pip install -e .
-            touch .env
-            git submodule update --init --recursive
-            echo -e "CODESYSTEM_URI = https://voicecollab.ai/fhir/CodeSystem/" >> .env
-            echo -e "VALUESET_URI = https://voicecollab.ai/fhir/ValueSet/" >> .env
-            echo -e "QUESTIONNAIRE_URI = https://voicecollab.ai/fhir/Questionnaire/" >> .env
-            echo -e "QUESTIONNAIRE_LANGUAGE = en" >> .env
-            echo -e "FHIR_QUESTIONNAIRE_MODE = AnswerOptions" >> .env
-            ./job.sh
-            cd ..
-            cp -r ./tofsh/output/ fsh_files
-            gofsh fsh_files
-            rm -r ./input/fsh/instances
-            cp -r gofsh/input/fsh/instances ./input/fsh
-            sushi .
+      - uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: "17"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' 
+    # Install ruby
+    # https://github.com/ruby/setup-ruby
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
 
-      # commit to current repo
-        - name: "Overwrite fsh files"
-          run: |
-            git rev-parse --abbrev-ref HEAD
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git config --global user.name "github-actions[bot]"
-            git config --global credential.helper cache
-            git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/voice-biomarker-fhir tmp_branch
-            rm -r tmp_branch/input/fsh
-            cp -r ./input/fsh tmp_branch/input/
-            cd tmp_branch
-            git add ./input/fsh
-            git commit -a -m "$(date): update redcap2fhir resources"
-            git push
-            cd ..
+    # Install Jekyll
+    # https://jekyllrb.com/docs/installation/ubuntu/
+      - name: "Install Jekyll"
+        shell: bash
+        run: |
+          gem install jekyll bundler
+          jekyll -v
+
+    # Install node if SUSHI is needed
+    # https://github.com/actions/setup-node
+      - name: "Install Node.js"
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+    # Install SUSHI if needed
+      - name: "Install SUSHI"
+        shell: bash
+        run: |
+          npm install -g fsh-sushi@2.7.0
+          sushi --version
+          sushi .
+
+
+    # Install GOFSH if needed
+      - name: "Install GOFSH"
+        shell: bash
+        run: |
+          npm install -g gofsh@1.6.4
+          gofsh --version
+
+    # Install reproschema2fhir if needed
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          repository: kind-lab/reproschema-to-fhir
+          submodules: 'true'
+          path: './tofsh'
+          ssh-key: ${{ secrets.SSH_DEPLOY_KEY }}
+    
+    # Call Gofsh if needed
+      - name: Checkout
+        shell: bash
+        run: |
+          cd ./tofsh
+          pip install -e .
+          touch .env
+          git submodule update --init --recursive
+          echo -e "CODESYSTEM_URI = https://voicecollab.ai/fhir/CodeSystem/" >> .env
+          echo -e "VALUESET_URI = https://voicecollab.ai/fhir/ValueSet/" >> .env
+          echo -e "QUESTIONNAIRE_URI = https://voicecollab.ai/fhir/Questionnaire/" >> .env
+          echo -e "QUESTIONNAIRE_LANGUAGE = en" >> .env
+          echo -e "FHIR_QUESTIONNAIRE_MODE = AnswerOptions" >> .env
+          ./job.sh
+          cd ..
+          cp -r ./tofsh/output/ fsh_files
+          gofsh fsh_files
+          rm -r ./input/fsh/instances
+          cp -r gofsh/input/fsh/instances ./input/fsh
+          sushi .
+
+    # commit to current repo
+      - name: "Overwrite fsh files"
+        run: |
+          git rev-parse --abbrev-ref HEAD
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global credential.helper cache
+          git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/voice-biomarker-fhir tmp_branch
+          rm -r tmp_branch/input/fsh
+          cp -r ./input/fsh tmp_branch/input/
+          cd tmp_branch
+          git add ./input/fsh
+          git commit -a -m "$(date): update redcap2fhir resources"
+          git push
+          cd ..
 
 
 
-        - name: "Download the IG Publisher"
-          shell: bash
-          run: |
-            mkdir ./input-cache
-            curl -sS -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar
-            chmod +x ./input-cache/publisher.jar
-        
-        - name: "Create IG"
-          shell: bash
-          run: |
-            java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
-            mkdir -p ./git-output/vbai-fhir
-            cp -r ./output/* ./git-output/vbai-fhir 
-        
-        - name: "Deploy to kind-lab.github.io"
-          run: |
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git config --global user.name "github-actions[bot]"
-            git config --global credential.helper cache
-            git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/kind-lab.github.io website
-            mkdir -p website/vbai-fhir
-            cp -r ./git-output/vbai-fhir website
-            cd website
-            git add vbai-fhir
-            git commit -a -m "$(date): update vbai-fhir"
-            git push
+      - name: "Download the IG Publisher"
+        shell: bash
+        run: |
+          mkdir ./input-cache
+          curl -sS -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar
+          chmod +x ./input-cache/publisher.jar
+      
+      - name: "Create IG"
+        shell: bash
+        run: |
+          java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
+          mkdir -p ./git-output/vbai-fhir
+          cp -r ./output/* ./git-output/vbai-fhir 
+      
+      - name: "Deploy to kind-lab.github.io"
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global credential.helper cache
+          git clone --depth 1 https://${{ secrets.GH_VBAI_PAT }}@github.com/kind-lab/kind-lab.github.io website
+          mkdir -p website/vbai-fhir
+          cp -r ./git-output/vbai-fhir website
+          cd website
+          git add vbai-fhir
+          git commit -a -m "$(date): update vbai-fhir"
+          git push
