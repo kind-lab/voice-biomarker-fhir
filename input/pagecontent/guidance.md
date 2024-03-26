@@ -6,9 +6,9 @@ A set of FHIR profiles and resources were created to support standardization of 
 
 #### Overarching structure
 
-In FHIR, the canonical [PlanDefinition](http://hl7.org/fhir/R4/plandefinition.html) resource can be used to structure protocols. At its core, a PlanDefinition is a pre-defined group of actions to be taken in particular circumstances. In our case, these actions are the data collection steps undertaken as a part of the data collection process.
+In FHIR, we will be using [Questionnaires](http://hl7.org/fhir/R4/questionnaire.html) to define the overarching protocols.
 
-To provide consistency across the protocols, the base PlanDefinition resource was extended to create [VbaiCohortProtocol]. Each individual disease group follows the same protocol with exactly 12 steps:
+To provide consistency across the protocols, each individual disease group follows the same protocol with exactly 12 steps:
 
 1. Eligibility
 2. Consent/Assent
