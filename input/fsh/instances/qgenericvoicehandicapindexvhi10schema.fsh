@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_generic_voice_handicap_index_vhi10_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-03-26T03:49:03Z"
+* date = "2024-03-26T20:07:38Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
