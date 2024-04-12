@@ -28,7 +28,7 @@ The National Institue of Health ([NIH](https://www.nih.gov/)) started the [Bridg
 
 
 5. Retrieve FHIR Json Files
-- In a separate folder, pull from reproschema-to-fhir(https://github.com/kind-lab/voice-biomarker-fhir) to get the latest resources and follow the quickstart (https://github.com/kind-lab/reproschema-to-fhir/blob/main/README.md)
+- In a separate folder, pull from reproschema-to-fhir(https://github.com/kind-lab/reproschema-to-fhir/) to get the latest resources and follow the quickstart (https://github.com/kind-lab/reproschema-to-fhir/blob/main/README.md)
 - Run `./job.sh` from the top of the reproschema-to-fhir folder to generate the Fhir Jsons
 - Run `gofsh <path/to/fhir_jsons>` to generate fsh files from the Fhir Jsons
   - Once generated, copy the resulting output into the input/fsh/instances folder in voice-biomarker-fhir
