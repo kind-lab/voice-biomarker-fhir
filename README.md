@@ -28,7 +28,7 @@ The National Institue of Health ([NIH](https://www.nih.gov/)) started the [Bridg
 
 
 5. Run the following Commands to Build IG:
-`
+```
 mkdir quickstart-IG
 cd quickstart-IG
 git clone https://github.com/kind-lab/voice-biomarker-fhir.git
@@ -54,4 +54,4 @@ mkdir ./input-cache
 curl -sS -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar
 chmod +x ./input-cache/publisher.jar
 java -jar -Xms4096M -Xmx6144M -XX:NewRatio=1 -XX:-UseAdaptiveSizePolicy input-cache/publisher.jar ig.ini
-`
+```
