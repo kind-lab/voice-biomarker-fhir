@@ -5,7 +5,7 @@ The Voice as a Biomarker for AI Health (VBAI) profiles are based on [FHIR R4](ht
 # What is Voice as a Biomarker for AI?
 The National Institue of Health ([NIH](https://www.nih.gov/)) started the [Bridge2AI](https://commonfund.nih.gov/bridge2ai) initiative to fund the creation of foundational datasets in the medical field. Voice as a Biomarker for AI(VBAI) is one of five foundational datasets being constructed currently. The VBAI project will capture multimodal data from vocal recordings, genomic screens, waveform profiles, and electronic health records. The goal of the VBAI project is to create a dataset that can be used to create applications to diagnose conditions based on voice recordings. The researchers creating the VBAI dataset are multidisciplinary and across multiple institutions in Canada, USA, and France.
 
-# Quickstart
+# Install Dependencies
 
 1. Set up FSH and SUSHI - [SUSHI Setup Guide](https://fshschool.org/docs/sushi/installation/)
 - Install Node.js (needed for SUSHI): https://nodejs.org/en/
@@ -26,8 +26,20 @@ The National Institue of Health ([NIH](https://www.nih.gov/)) started the [Bridg
 4. Install Fhir to FSH resource
 - Install [GOFSH](https://github.com/FHIR/GoFSH) (need for generating fsh files)
 
+# Detailed Steps
 
-5. Run the following Commands to Build IG:
+1. Retrieve FHIR JSON Files
+- In a separate folder, pull from reproschema-to-fhir(https://github.com/kind-lab/reproschema-to-fhir/) to get the latest resources and follow the quickstart (https://github.com/kind-lab/reproschema-to-fhir/blob/main/README.md)
+- Run `./job.sh` from the top of the reproschema-to-fhir folder to generate the Fhir JSON's
+- Run `gofsh <path/to/fhir_JSONs>` to generate fsh files from the Fhir JSON's
+  - Once generated, copy the resulting output into the input/fsh/instances folder in voice-biomarker-fhir
+
+2. Generate the VBAI implementation guide 
+- In voice-biomarker-fhir, run `./_genonce.sh` from the top of the repository to generate the VBAI implementation guide
+
+
+# Quickstart:
+
 ```
 mkdir quickstart-IG
 cd quickstart-IG
