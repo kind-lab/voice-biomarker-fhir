@@ -24,7 +24,7 @@ The National Institue of Health ([NIH](https://www.nih.gov/)) started the [Bridg
 
 
 4. Install Fhir to FSH resource
-- Install GOFSH[https://github.com/FHIR/GoFSH]) (need for generating fsh files)
+- Install [GOFSH](https://github.com/FHIR/GoFSH]) (need for generating fsh files)
 
 
 5. Run the following Commands to Build IG:
