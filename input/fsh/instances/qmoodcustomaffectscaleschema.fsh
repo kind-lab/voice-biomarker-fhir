@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_mood_custom_affect_scale_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-15T18:21:30Z"
+* date = "2024-04-16T16:28:37Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

@@ -6,7 +6,7 @@ Usage: #example
 * title = "d_neuro_amyotrophic_lateral_sclerosis_als_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-15T18:21:22Z"
+* date = "2024-04-16T16:28:24Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

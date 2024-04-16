@@ -6,7 +6,7 @@ Usage: #example
 * title = "subjectparticipant_contact_information_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-15T18:21:40Z"
+* date = "2024-04-16T16:28:48Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -20,6 +20,9 @@ Usage: #example
 * item[+].linkId = "dob"
 * item[=].type = #string
 * item[=].text = "What is your date of birth?"
+* item[+].linkId = "age"
+* item[=].type = #string
+* item[=].text = "Age"
 * item[+].linkId = "phone_number"
 * item[=].type = #string
 * item[=].text = "Phone Number"

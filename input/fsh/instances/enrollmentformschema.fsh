@@ -6,7 +6,7 @@ Usage: #example
 * title = "enrollment_form_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-15T18:21:25Z"
+* date = "2024-04-16T16:28:31Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -242,6 +242,27 @@ Usage: #example
 * item[+].linkId = "ef_eligible_studies"
 * item[=].type = #string
 * item[=].text = "Eligible Studies: Eligible Studies"
+* item[+].linkId = "ef_learn_about_this_study"
+* item[=].type = #choice
+* item[=].text = "How did you learn about this study?: How did you learn about this study?"
+* item[=].answerOption[0].valueString = "Through my physician/provider "
+* item[=].answerOption[+].valueString = "A flyer "
+* item[=].answerOption[+].valueString = "Social Media "
+* item[=].answerOption[+].valueString = "Bridge2AI Website "
+* item[=].answerOption[+].valueString = "At an event "
+* item[=].answerOption[+].valueString = "Other"
+* item[+].linkId = "ef_learn_about_this_study_event"
+* item[=].type = #string
+* item[=].text = "If \"At an event\", please specify:"
+* item[=].enableWhen.question = "ef_learn_about_this_study"
+* item[=].enableWhen.operator = #=
+* item[=].enableWhen.answerString = "'event'"
+* item[+].linkId = "ef_learn_about_this_study_other"
+* item[=].type = #string
+* item[=].text = "If \"Other\", please specify:"
+* item[=].enableWhen.question = "ef_learn_about_this_study"
+* item[=].enableWhen.operator = #=
+* item[=].enableWhen.answerString = "'other'"
 * item[+].linkId = "ef_first_name"
 * item[=].type = #string
 * item[=].text = "Contact Information: First Name"
@@ -264,6 +285,11 @@ Usage: #example
 * item[=].text = "Review and Enroll:: Please review your answers reading all the way through the bottom and select an option.If you have any questions, you can still proceed with enrollment and ask or make changes at a later time."
 * item[=].answerOption[0].valueString = "Enroll "
 * item[=].answerOption[+].valueString = "Decline"
+* item[+].linkId = "ef_is_control_participant"
+* item[=].type = #choice
+* item[=].text = "Is Control Participant?"
+* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "ef_reason_decline_enroll"
 * item[=].type = #choice
 * item[=].text = "Please select a reason for declining"
@@ -293,6 +319,11 @@ Usage: #example
 * item[+].linkId = "ef_researcher_email"
 * item[=].type = #string
 * item[=].text = "Researcher Email"
+* item[+].linkId = "ef_enrollment_origin"
+* item[=].type = #choice
+* item[=].text = "Enrollment Origin"
+* item[=].answerOption[0].valueString = "Bridge2AI App "
+* item[=].answerOption[+].valueString = "Bridge2AI Enrollment Website"
 * item[+].linkId = "ef_started_at"
 * item[=].type = #string
 * item[=].text = "Enrollment Form - Metadata: Enrollment Form Started At"

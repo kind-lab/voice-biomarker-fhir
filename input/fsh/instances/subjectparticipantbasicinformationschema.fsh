@@ -6,7 +6,7 @@ Usage: #example
 * title = "subjectparticipant_basic_information_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-15T18:21:39Z"
+* date = "2024-04-16T16:28:48Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -26,6 +26,15 @@ Usage: #example
 * item[=].answerOption[0].valueString = "Pending "
 * item[=].answerOption[+].valueString = "Consented "
 * item[=].answerOption[+].valueString = "Withdrawn Consent"
+* item[+].linkId = "consent_method"
+* item[=].type = #choice
+* item[=].text = "Consent Method"
+* item[=].answerOption[0].valueString = "Paper Consent "
+* item[=].answerOption[+].valueString = "eConsent "
+* item[=].answerOption[+].valueString = "Video Consent"
+* item[=].enableWhen.question = "consent_status"
+* item[=].enableWhen.operator = #=
+* item[=].enableWhen.answerString = "'2'"
 * item[+].linkId = "withdrawn_consent_reason"
 * item[=].type = #string
 * item[=].text = "Withdrawn Consent Reason"
@@ -38,6 +47,11 @@ Usage: #example
 * item[=].enableWhen.question = "consent_status"
 * item[=].enableWhen.operator = #=
 * item[=].enableWhen.answerString = "3"
+* item[+].linkId = "is_feasibility_participant"
+* item[=].type = #choice
+* item[=].text = "Is Feasibility Participant?"
+* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "enrolled"
 * item[=].type = #choice
 * item[=].text = "Enrollment Details: Enrolled"

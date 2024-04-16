@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_neuro_productive_vocabulary_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-15T18:21:33Z"
+* date = "2024-04-16T16:28:41Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -14,12 +14,12 @@ Usage: #example
 * item[0].linkId = "vocabulary_session_id"
 * item[=].type = #string
 * item[=].text = "Questionnaire - Metadata: Session ID"
-* item[+].linkId = "vocabulary_started_at"
-* item[=].type = #string
-* item[=].text = "Questionnaire Started At"
 * item[+].linkId = "vocabulary_recording_acoustic_task_id"
 * item[=].type = #string
 * item[=].text = "Acoustic Task ID"
+* item[+].linkId = "vocabulary_started_at"
+* item[=].type = #string
+* item[=].text = "Questionnaire Started At"
 * item[+].linkId = "vocabulary_completed_at"
 * item[=].type = #string
 * item[=].text = "Questionnaire Completed At"

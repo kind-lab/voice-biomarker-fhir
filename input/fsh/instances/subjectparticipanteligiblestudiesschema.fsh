@@ -6,7 +6,7 @@ Usage: #example
 * title = "subjectparticipant_eligible_studies_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-15T18:21:41Z"
+* date = "2024-04-16T16:28:49Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -14,6 +14,11 @@ Usage: #example
 * item[0].linkId = "eligible_studies"
 * item[=].type = #string
 * item[=].text = "Eligible Studies: Eligible Studies"
+* item[+].linkId = "is_control_participant"
+* item[=].type = #choice
+* item[=].text = "Is Control Participant?"
+* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "laryng_cancer"
 * item[=].type = #choice
 * item[=].text = "Do you have any of these conditions, diagnosed by a clinician?(Check all that apply if you currently have the condition)Voice Disorders: Laryngeal cancer"

@@ -6,7 +6,7 @@ Usage: #example
 * title = "session_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-15T18:21:38Z"
+* date = "2024-04-16T16:28:47Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -22,6 +22,11 @@ Usage: #example
 * item[+].linkId = "session_started_at"
 * item[=].type = #string
 * item[=].text = "Session Started At"
+* item[+].linkId = "session_is_control_participant"
+* item[=].type = #choice
+* item[=].text = "Is Control Participant?"
+* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "session_completed_at"
 * item[=].type = #string
 * item[=].text = "Session Completed At"

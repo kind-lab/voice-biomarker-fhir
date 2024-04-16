@@ -6,7 +6,7 @@ Usage: #example
 * title = "d_voice_vocal_fold_paralysis_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-15T18:21:24Z"
+* date = "2024-04-16T16:28:30Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -94,23 +94,29 @@ Usage: #example
 * item[=].text = "Strain"
 * item[=].answerOption[0].valueString = "Consistent "
 * item[=].answerOption[+].valueString = "Intermittent"
-* item[+].linkId = "diagnosis_degree_p_nature"
-* item[=].type = #string
-* item[=].text = "Pitch\n(Indicate the nature of the abnormality):"
 * item[+].linkId = "diagnosis_degree_p"
 * item[=].type = #string
 * item[=].text = "Pitch"
+* item[+].linkId = "diagnosis_degree_p_nature"
+* item[=].type = #string
+* item[=].text = "Pitch\n(Indicate the nature of the abnormality):"
+* item[=].enableWhen.question = "diagnosis_degree_p"
+* item[=].enableWhen.operator = #>
+* item[=].enableWhen.answerString = "0"
 * item[+].linkId = "diagnosis_degree_p_2"
 * item[=].type = #choice
 * item[=].text = "Pitch"
 * item[=].answerOption[0].valueString = "Consistent "
 * item[=].answerOption[+].valueString = "Intermittent"
-* item[+].linkId = "diagnosis_degree_l_nature"
-* item[=].type = #string
-* item[=].text = "Loudness\n(Indicate the nature of the abnormality):"
 * item[+].linkId = "diagnosis_degree_l"
 * item[=].type = #string
 * item[=].text = "Loudness"
+* item[+].linkId = "diagnosis_degree_l_nature"
+* item[=].type = #string
+* item[=].text = "Loudness\n(Indicate the nature of the abnormality):"
+* item[=].enableWhen.question = "diagnosis_degree_l"
+* item[=].enableWhen.operator = #>
+* item[=].enableWhen.answerString = "0"
 * item[+].linkId = "diagnosis_degree_l_2"
 * item[=].type = #choice
 * item[=].text = "Loudness"

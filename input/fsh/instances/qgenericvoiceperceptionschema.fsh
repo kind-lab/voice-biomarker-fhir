@@ -6,7 +6,7 @@ Usage: #example
 * title = "q_generic_voice_perception_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-15T18:21:29Z"
+* date = "2024-04-16T16:28:36Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
