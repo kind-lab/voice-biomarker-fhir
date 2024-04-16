@@ -8,7 +8,7 @@ canonical: https://voicecollab.ai/fhir
 name: VoiceaBiomarkerforAI
 description: Implementation Guide for Voice Biomarker for AI FHIR Profiles
 status: draft # draft | active | retired | unknown
-version: 2.0.1 #1.0.0 #0.1.0
+version: 2.1.0 #1.0.0 #0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
