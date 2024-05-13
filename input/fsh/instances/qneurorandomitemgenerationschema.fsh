@@ -1,12 +1,11 @@
 Instance: qneurorandomitemgenerationschema
 InstanceOf: Questionnaire
 Usage: #example
-* meta.profile = "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
-* url = "https://voicecollab.ai/fhir/Questionnaire/qneurorandomitemgenerationschema"
+* url = "https://kind-lab.github.io/vbai-fhir/Questionnaire-qneurorandomitemgenerationschema"
 * title = "q_neuro_random_item_generation_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-16T16:28:42Z"
+* date = "2024-05-13T19:41:40Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

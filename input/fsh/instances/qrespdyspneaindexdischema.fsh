@@ -1,12 +1,11 @@
 Instance: qrespdyspneaindexdischema
 InstanceOf: Questionnaire
 Usage: #example
-* meta.profile = "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
-* url = "https://voicecollab.ai/fhir/Questionnaire/qrespdyspneaindexdischema"
+* url = "https://kind-lab.github.io/vbai-fhir/Questionnaire-qrespdyspneaindexdischema"
 * title = "q_resp_dyspnea_index_di_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-16T16:28:44Z"
+* date = "2024-05-13T19:41:42Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

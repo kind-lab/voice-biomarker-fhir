@@ -1,12 +1,11 @@
 Instance: dmooddepressionormajordepressivedisorderschema
 InstanceOf: Questionnaire
 Usage: #example
-* meta.profile = "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
-* url = "https://voicecollab.ai/fhir/Questionnaire/dmooddepressionormajordepressivedisorderschema"
+* url = "https://kind-lab.github.io/vbai-fhir/Questionnaire-dmooddepressionormajordepressivedisorderschema"
 * title = "d_mood_depression_or_major_depressive_disorder_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-16T16:28:23Z"
+* date = "2024-05-13T19:41:23Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

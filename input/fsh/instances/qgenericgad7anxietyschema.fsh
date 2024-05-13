@@ -1,12 +1,11 @@
 Instance: qgenericgad7anxietyschema
 InstanceOf: Questionnaire
 Usage: #example
-* meta.profile = "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
-* url = "https://voicecollab.ai/fhir/Questionnaire/qgenericgad7anxietyschema"
+* url = "https://kind-lab.github.io/vbai-fhir/Questionnaire-qgenericgad7anxietyschema"
 * title = "q_generic_gad7_anxiety_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-16T16:28:34Z"
+* date = "2024-05-13T19:41:32Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

@@ -1,12 +1,11 @@
 Instance: bridge2aieconsentmainicfusfenglishschema
 InstanceOf: Questionnaire
 Usage: #example
-* meta.profile = "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
-* url = "https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentmainicfusfenglishschema"
+* url = "https://kind-lab.github.io/vbai-fhir/Questionnaire-bridge2aieconsentmainicfusfenglishschema"
 * title = "bridge2ai_econsent_main_icf_usf_english_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-16T16:28:20Z"
+* date = "2024-05-13T19:41:20Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

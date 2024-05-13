@@ -1,12 +1,11 @@
 Instance: recordingschema
 InstanceOf: Questionnaire
 Usage: #example
-* meta.profile = "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
-* url = "https://voicecollab.ai/fhir/Questionnaire/recordingschema"
+* url = "https://kind-lab.github.io/vbai-fhir/Questionnaire-recordingschema"
 * title = "recording_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-16T16:28:46Z"
+* date = "2024-05-13T19:41:44Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

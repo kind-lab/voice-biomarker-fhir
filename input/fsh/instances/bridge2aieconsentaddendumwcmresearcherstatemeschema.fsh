@@ -1,12 +1,11 @@
 Instance: bridge2aieconsentaddendumwcmresearcherstatemeschema
 InstanceOf: Questionnaire
 Usage: #example
-* meta.profile = "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
-* url = "https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentaddendumwcmresearcherstatemeschema"
+* url = "https://kind-lab.github.io/vbai-fhir/Questionnaire-bridge2aieconsentaddendumwcmresearcherstatemeschema"
 * title = "bridge2ai_econsent_addendum_wcm_researcher_stateme_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-16T16:28:17Z"
+* date = "2024-05-13T19:41:18Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

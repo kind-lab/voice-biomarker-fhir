@@ -1,12 +1,11 @@
 Instance: bridge2aieconsentcombinedpdfmainicfusfschema
 InstanceOf: Questionnaire
 Usage: #example
-* meta.profile = "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
-* url = "https://voicecollab.ai/fhir/Questionnaire/bridge2aieconsentcombinedpdfmainicfusfschema"
+* url = "https://kind-lab.github.io/vbai-fhir/Questionnaire-bridge2aieconsentcombinedpdfmainicfusfschema"
 * title = "bridge2ai_econsent_combined_pdf_main_icf_usf_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-16T16:28:19Z"
+* date = "2024-05-13T19:41:20Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

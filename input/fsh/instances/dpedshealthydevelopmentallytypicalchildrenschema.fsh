@@ -1,12 +1,11 @@
 Instance: dpedshealthydevelopmentallytypicalchildrenschema
 InstanceOf: Questionnaire
 Usage: #example
-* meta.profile = "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
-* url = "https://voicecollab.ai/fhir/Questionnaire/dpedshealthydevelopmentallytypicalchildrenschema"
+* url = "https://kind-lab.github.io/vbai-fhir/Questionnaire-dpedshealthydevelopmentallytypicalchildrenschema"
 * title = "d_peds_healthy_developmentallytypical_children_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-16T16:28:26Z"
+* date = "2024-05-13T19:41:25Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

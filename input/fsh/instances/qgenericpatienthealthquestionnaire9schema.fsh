@@ -1,12 +1,11 @@
 Instance: qgenericpatienthealthquestionnaire9schema
 InstanceOf: Questionnaire
 Usage: #example
-* meta.profile = "https://voicecollab.ai/fhir/StructureDefinition/vbai-questionnaire"
-* url = "https://voicecollab.ai/fhir/Questionnaire/qgenericpatienthealthquestionnaire9schema"
+* url = "https://kind-lab.github.io/vbai-fhir/Questionnaire-qgenericpatienthealthquestionnaire9schema"
 * title = "q_generic_patient_health_questionnaire9_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-04-16T16:28:34Z"
+* date = "2024-05-13T19:41:33Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
