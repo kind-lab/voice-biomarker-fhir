@@ -51,7 +51,7 @@ touch .env
 git submodule update --init --recursive
 echo -e "CODESYSTEM_URI = https://voicecollab.ai/fhir/CodeSystem/" >> .env
 echo -e "VALUESET_URI = https://voicecollab.ai/fhir/ValueSet/" >> .env
-echo -e "QUESTIONNAIRE_URI = https://voicecollab.ai/fhir/Questionnaire/" >> .env
+echo -e "QUESTIONNAIRE_URI = https://kind-lab.github.io/vbai-fhir/" >> .env
 echo -e "QUESTIONNAIRE_LANGUAGE = en" >> .env
 echo -e "FHIR_QUESTIONNAIRE_MODE = AnswerOptions" >> .env
 ./job.sh
