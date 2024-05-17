@@ -1,9 +1,9 @@
-### How to validate ###
+### How to validate FHIR Questionnaires###
 Once you have the generate the fhir json using SUSHI, proceed with the following steps to vlaidate a given fhir resource against the IG:
 
 1. [Download the latest FHIR Validator CLI](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) 
 
-2. [Retreive the package.tgz](https://github.com/kind-lab/kind-lab.github.io/raw/main/vbai-fhir/package.tgz)
+2. [Retreive the package.tgz from the deployed IG ](https://github.com/kind-lab/kind-lab.github.io/raw/main/vbai-fhir/package.tgz) or get it one from the output folder after running `./_genonce.sh`
 
 3. To ensure the FHIR validator works with your IG, perform the following command in the directory where the package.tgz is stored:
 
