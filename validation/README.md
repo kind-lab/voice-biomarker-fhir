@@ -1,4 +1,4 @@
-### How to validate FHIR Questionnaires###
+### How to validate FHIR Questionnaires ###
 Once you have the generate the fhir json using SUSHI, proceed with the following steps to vlaidate a given fhir resource against the IG:
 
 1. [Download the latest FHIR Validator CLI](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) 
