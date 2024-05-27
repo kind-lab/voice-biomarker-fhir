@@ -16,6 +16,6 @@ cd ..
 tar -cvzf package-new.tgz package
 
 ```
-4. Now take any of the output fhir jsons and validate with the IG using the following command: `java -jar validator_cli.jar path/to/json -version 4.0.1 -ig path/to/package.tgz -questionnaire required`
+4. Now take any of the output fhir jsons and validate with the IG using the following command: `java -jar validator_cli.jar path/to/json -version 4.0.1 -ig path/to/package-new.tgz -questionnaire required`
 
 
