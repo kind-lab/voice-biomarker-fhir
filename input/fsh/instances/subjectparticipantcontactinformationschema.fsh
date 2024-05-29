@@ -5,7 +5,7 @@ Usage: #example
 * title = "subjectparticipant_contact_information_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:46Z"
+* date = "2024-05-29T18:29:41Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

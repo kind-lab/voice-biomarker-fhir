@@ -5,7 +5,7 @@ Usage: #example
 * title = "d_resp_airway_stenosis_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:26Z"
+* date = "2024-05-29T18:29:21Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -13,8 +13,8 @@ Usage: #example
 * item[0].linkId = "diagnosis_as_pft"
 * item[=].type = #choice
 * item[=].text = "1. Gold Standard Diagnosis4. Disease Severity: Has the patient had pulmonary function testing within the past 3 months?"
-* item[=].answerOption[0].valueString = "No "
-* item[=].answerOption[+].valueString = "Yes "
+* item[=].answerOption[0].valueString = "No"
+* item[=].answerOption[+].valueString = "Yes"
 * item[=].answerOption[+].valueString = "Not certain"
 * item[+].linkId = "diagnosis_as_pft_document"
 * item[=].type = #string
@@ -25,8 +25,8 @@ Usage: #example
 * item[+].linkId = "diagnosis_as_gsd"
 * item[=].type = #choice
 * item[=].text = "Does the patient have airway stenosis confirmed by a laryngoscopy, bronchoscopy or CT imaging?"
-* item[=].answerOption[0].valueString = "No "
-* item[=].answerOption[+].valueString = "Yes "
+* item[=].answerOption[0].valueString = "No"
+* item[=].answerOption[+].valueString = "Yes"
 * item[=].answerOption[+].valueString = "Not certain"
 * item[+].linkId = "diagnosis_as_gsd_yes"
 * item[=].type = #string
@@ -37,18 +37,18 @@ Usage: #example
 * item[+].linkId = "diagnosis_as_ds"
 * item[=].type = #choice
 * item[=].text = "2. Disease Subtype: Disease Subtype"
-* item[=].answerOption[0].valueString = "Subglottic Stenosis "
-* item[=].answerOption[+].valueString = "Bilateral Vocal fold immobility or Glottic Stenosis "
-* item[=].answerOption[+].valueString = "Supraglottic Stenosis "
-* item[=].answerOption[+].valueString = "Tracheal Stenosis "
+* item[=].answerOption[0].valueString = "Subglottic Stenosis"
+* item[=].answerOption[+].valueString = "Bilateral Vocal fold immobility or Glottic Stenosis"
+* item[=].answerOption[+].valueString = "Supraglottic Stenosis"
+* item[=].answerOption[+].valueString = "Tracheal Stenosis"
 * item[=].answerOption[+].valueString = "Multi-Level Upper Airway Stenosis"
 * item[+].linkId = "diagnosis_as_ds_bvfi_gs"
 * item[=].type = #choice
 * item[=].text = "Bilateral Vocal fold immobility or Glottic Stenosis Subtype"
-* item[=].answerOption[0].valueString = "Posterior Glottic Stenosis "
-* item[=].answerOption[+].valueString = "Bilateral Vocal Fold Paralysis "
-* item[=].answerOption[+].valueString = "Anterior glottic Web "
-* item[=].answerOption[+].valueString = "Not certain or TBD "
+* item[=].answerOption[0].valueString = "Posterior Glottic Stenosis"
+* item[=].answerOption[+].valueString = "Bilateral Vocal Fold Paralysis"
+* item[=].answerOption[+].valueString = "Anterior glottic Web"
+* item[=].answerOption[+].valueString = "Not certain or TBD"
 * item[=].answerOption[+].valueString = "Other"
 * item[=].enableWhen.question = "diagnosis_as_ds"
 * item[=].enableWhen.operator = #=
@@ -62,14 +62,14 @@ Usage: #example
 * item[+].linkId = "diagnosis_as_etiology"
 * item[=].type = #choice
 * item[=].text = "3. Etiology: What is the etiology?"
-* item[=].answerOption[0].valueString = "Not certain or TBD "
-* item[=].answerOption[+].valueString = "Iatrogenic (surgery or intubation) "
-* item[=].answerOption[+].valueString = "Idiopathic "
-* item[=].answerOption[+].valueString = "Auto-immune or granulomatous disease "
-* item[=].answerOption[+].valueString = "Radiation "
-* item[=].answerOption[+].valueString = "GERD "
-* item[=].answerOption[+].valueString = "Caustic Injury or Inhalation Injury "
-* item[=].answerOption[+].valueString = "Infectious (Diphtheria TB Bacterial Tracheitis other) "
+* item[=].answerOption[0].valueString = "Not certain or TBD"
+* item[=].answerOption[+].valueString = "Iatrogenic (surgery or intubation)"
+* item[=].answerOption[+].valueString = "Idiopathic"
+* item[=].answerOption[+].valueString = "Auto-immune or granulomatous disease"
+* item[=].answerOption[+].valueString = "Radiation"
+* item[=].answerOption[+].valueString = "GERD"
+* item[=].answerOption[+].valueString = "Caustic Injury or Inhalation Injury"
+* item[=].answerOption[+].valueString = "Infectious (Diphtheria TB Bacterial Tracheitis other)"
 * item[=].answerOption[+].valueString = "Other"
 * item[+].linkId = "diagnosis_as_etiology_other"
 * item[=].type = #string
@@ -80,8 +80,8 @@ Usage: #example
 * item[+].linkId = "diagnosis_as_etiology_auto_immune"
 * item[=].type = #choice
 * item[=].text = "Auto-immune or granulomatous disease Subcategory"
-* item[=].answerOption[0].valueString = "Granulomatosis with polyangiitis (GPA) (Formerly known as Wegner's disease) "
-* item[=].answerOption[+].valueString = "Relapsing Polychondritis "
+* item[=].answerOption[0].valueString = "Granulomatosis with polyangiitis (GPA) (Formerly known as Wegner's disease)"
+* item[=].answerOption[+].valueString = "Relapsing Polychondritis"
 * item[=].answerOption[+].valueString = "Other"
 * item[=].enableWhen.question = "diagnosis_as_etiology"
 * item[=].enableWhen.operator = #=
@@ -89,9 +89,9 @@ Usage: #example
 * item[+].linkId = "diagnosis_as_ds_mcg"
 * item[=].type = #choice
 * item[=].text = "Degree of Stenosis (Myer-Cotton Grade)"
-* item[=].answerOption[0].valueString = "Grade I "
-* item[=].answerOption[+].valueString = "Grade II "
-* item[=].answerOption[+].valueString = "Grade III "
+* item[=].answerOption[0].valueString = "Grade I"
+* item[=].answerOption[+].valueString = "Grade II"
+* item[=].answerOption[+].valueString = "Grade III"
 * item[=].answerOption[+].valueString = "Grade IV"
 * item[=].enableWhen[0].question = "diagnosis_as_ds"
 * item[=].enableWhen[=].operator = #=
@@ -113,9 +113,9 @@ Usage: #example
 * item[+].linkId = "diagnosis_as_ds_bc"
 * item[=].type = #choice
 * item[=].text = "Degree of Stenosis (Bogdasarian Classification)"
-* item[=].answerOption[0].valueString = "(a) Class 1 "
-* item[=].answerOption[+].valueString = "(b) Class 2 "
-* item[=].answerOption[+].valueString = "(c) Class 3 "
+* item[=].answerOption[0].valueString = "(a) Class 1"
+* item[=].answerOption[+].valueString = "(b) Class 2"
+* item[=].answerOption[+].valueString = "(c) Class 3"
 * item[=].answerOption[+].valueString = "(d) Class 4"
 * item[=].enableWhen.question = "diagnosis_as_ds_bvfi_gs"
 * item[=].enableWhen.operator = #=
@@ -129,9 +129,9 @@ Usage: #example
 * item[+].linkId = "diagnosis_as_ds_agw"
 * item[=].type = #choice
 * item[=].text = "Anterior Glottic Web classification (Cohen)"
-* item[=].answerOption[0].valueString = "Grade 1 (0-35% obstruction) "
-* item[=].answerOption[+].valueString = "Grade 2 (35-50% obstruction) "
-* item[=].answerOption[+].valueString = "Grade 3 (51-75% obstruction) "
+* item[=].answerOption[0].valueString = "Grade 1 (0-35% obstruction)"
+* item[=].answerOption[+].valueString = "Grade 2 (35-50% obstruction)"
+* item[=].answerOption[+].valueString = "Grade 3 (51-75% obstruction)"
 * item[=].answerOption[+].valueString = "Grade 4 (76-100% obstruction)"
 * item[=].enableWhen.question = "diagnosis_as_ds_bvfi_gs"
 * item[=].enableWhen.operator = #=
@@ -145,10 +145,10 @@ Usage: #example
 * item[+].linkId = "diagnosis_as_ds_ac"
 * item[=].type = #choice
 * item[=].text = "Grade of Stenosis (Aziz Classification of Supraglottic Stenosis)"
-* item[=].answerOption[0].valueString = "Grade 1 "
-* item[=].answerOption[+].valueString = "Grade 2 "
-* item[=].answerOption[+].valueString = "Grade 3 "
-* item[=].answerOption[+].valueString = "Grade 4 "
+* item[=].answerOption[0].valueString = "Grade 1"
+* item[=].answerOption[+].valueString = "Grade 2"
+* item[=].answerOption[+].valueString = "Grade 3"
+* item[=].answerOption[+].valueString = "Grade 4"
 * item[=].answerOption[+].valueString = "Unsure"
 * item[=].enableWhen.question = "diagnosis_as_ds"
 * item[=].enableWhen.operator = #=
@@ -156,8 +156,8 @@ Usage: #example
 * item[+].linkId = "diagnosis_as_ds_ac_grade_4"
 * item[=].type = #choice
 * item[=].text = "Grade of Stenosis (Aziz Classification of Supraglottic Stenosis)"
-* item[=].answerOption[0].valueString = "Grade 4T "
-* item[=].answerOption[+].valueString = "Grade 4G "
+* item[=].answerOption[0].valueString = "Grade 4T"
+* item[=].answerOption[+].valueString = "Grade 4G"
 * item[=].answerOption[+].valueString = "Grade 4TG"
 * item[=].enableWhen.question = "diagnosis_as_ds_ac"
 * item[=].enableWhen.operator = #=
@@ -177,8 +177,8 @@ Usage: #example
 * item[+].linkId = "diagnosis_as_ds_ods"
 * item[=].type = #choice
 * item[=].text = "How would you subjectively classify the overall degree of stenosis?"
-* item[=].answerOption[0].valueString = "Mild "
-* item[=].answerOption[+].valueString = "Moderate "
+* item[=].answerOption[0].valueString = "Mild"
+* item[=].answerOption[+].valueString = "Moderate"
 * item[=].answerOption[+].valueString = "Severe"
 * item[+].linkId = "diagnosis_as_ds_eps"
 * item[=].type = #string

@@ -5,7 +5,7 @@ Usage: #example
 * title = "bridge2ai_paper_consent_all_sites_english_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:21Z"
+* date = "2024-05-29T18:29:16Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -19,11 +19,11 @@ Usage: #example
 * item[+].linkId = "paper_consent_enrollment_institution"
 * item[=].type = #choice
 * item[=].text = "Enrollment Institution"
-* item[=].answerOption[0].valueString = "BCH "
-* item[=].answerOption[+].valueString = "MIT "
-* item[=].answerOption[+].valueString = "Mt. Sinai "
-* item[=].answerOption[+].valueString = "USF "
-* item[=].answerOption[+].valueString = "VUMC "
+* item[=].answerOption[0].valueString = "BCH"
+* item[=].answerOption[+].valueString = "MIT"
+* item[=].answerOption[+].valueString = "Mt. Sinai"
+* item[=].answerOption[+].valueString = "USF"
+* item[=].answerOption[+].valueString = "VUMC"
 * item[=].answerOption[+].valueString = "WCM"
 * item[+].linkId = "paper_consent_uploaded_by"
 * item[=].type = #string

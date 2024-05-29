@@ -5,7 +5,7 @@ Usage: #example
 * title = "d_neuro_amyotrophic_lateral_sclerosis_als_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:24Z"
+* date = "2024-05-29T18:29:19Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -13,20 +13,20 @@ Usage: #example
 * item[0].linkId = "diagnosis_als_gsd_category_1"
 * item[=].type = #choice
 * item[=].text = "1. Gold Standard Diagnosis\nDoes the patient meet the diagnostic criteria for Amyotrophic Lateral Sclerosis (ALS) based on:: (1) Progressive motor impairment documented by history or repeated clinical assessment, preceded by normal motor function;"
-* item[=].answerOption[0].valueString = "Yes "
-* item[=].answerOption[+].valueString = "No "
+* item[=].answerOption[0].valueString = "Yes"
+* item[=].answerOption[+].valueString = "No"
 * item[=].answerOption[+].valueString = "Not certain"
 * item[+].linkId = "diagnosis_als_gsd_category_2"
 * item[=].type = #choice
 * item[=].text = "(2) presence of UMN and LMN signs in at least 1 body region (with UMN and LMN dysfunction noted in the same body region if only one body region is involved) or LMN dysfunction in at least 2 body regions;"
-* item[=].answerOption[0].valueString = "Yes "
-* item[=].answerOption[+].valueString = "No "
+* item[=].answerOption[0].valueString = "Yes"
+* item[=].answerOption[+].valueString = "No"
 * item[=].answerOption[+].valueString = "Not certain"
 * item[+].linkId = "diagnosis_als_gsd_category_3"
 * item[=].type = #choice
 * item[=].text = "(3) investigations excluding other disease processes."
-* item[=].answerOption[0].valueString = "Yes "
-* item[=].answerOption[+].valueString = "No "
+* item[=].answerOption[0].valueString = "Yes"
+* item[=].answerOption[+].valueString = "No"
 * item[=].answerOption[+].valueString = "Not certain"
 * item[+].linkId = "diagnosis_als_gsd_calculation"
 * item[=].type = #string
@@ -34,9 +34,9 @@ Usage: #example
 * item[+].linkId = "diagnosis_als_disease_subtype"
 * item[=].type = #choice
 * item[=].text = "2. Type of ALS: Specify the type of ALS in the patient:"
-* item[=].answerOption[0].valueString = "Sporadic ALS "
-* item[=].answerOption[+].valueString = "Familial ALS "
-* item[=].answerOption[+].valueString = "Spinal/limb-onset ALS "
+* item[=].answerOption[0].valueString = "Sporadic ALS"
+* item[=].answerOption[+].valueString = "Familial ALS"
+* item[=].answerOption[+].valueString = "Spinal/limb-onset ALS"
 * item[=].answerOption[+].valueString = "Bulbar-onset ALS"
 * item[+].linkId = "diagnosis_als_disease_subtype_familial"
 * item[=].type = #string
@@ -71,8 +71,8 @@ Usage: #example
 * item[+].linkId = "diagnosis_als_dp"
 * item[=].type = #choice
 * item[=].text = "5. Disease Progression: Please provide information on the current stage and progression of ALS:"
-* item[=].answerOption[0].valueString = "Early Stage "
-* item[=].answerOption[+].valueString = "Intermediate Stage "
+* item[=].answerOption[0].valueString = "Early Stage"
+* item[=].answerOption[+].valueString = "Intermediate Stage"
 * item[=].answerOption[+].valueString = "Advanced Stage"
 * item[+].linkId = "diagnosis_als_na_alsfrs_r_score"
 * item[=].type = #string
@@ -101,7 +101,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_als_treatment_and_management"
 * item[=].type = #choice
 * item[=].text = "8. Treatment and Management: Has the patient undergone any treatment or interventions for ALS?"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "diagnosis_als_treatment_and_management_yes"
 * item[=].type = #string

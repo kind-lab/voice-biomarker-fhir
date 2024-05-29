@@ -5,7 +5,7 @@ Usage: #example
 * title = "d_neuro_alzheimers_disease_mild_cognitive_impairme_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:23Z"
+* date = "2024-05-29T18:29:18Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -25,18 +25,18 @@ Usage: #example
 * item[+].linkId = "diagnosis_alz_dementia_mci_causes"
 * item[=].type = #choice
 * item[=].text = "Have you excluded other causes of cognitive/functional changes (and/or other subtypes)?"
-* item[=].answerOption[0].valueString = "No "
-* item[=].answerOption[+].valueString = "Yes "
+* item[=].answerOption[0].valueString = "No"
+* item[=].answerOption[+].valueString = "Yes"
 * item[=].answerOption[+].valueString = "Not certain"
 * item[+].linkId = "diagnosis_alz_dementia_mci_dt"
 * item[=].type = #choice
 * item[=].text = "2. Disease Type: Specify the disease type in the patient:"
-* item[=].answerOption[0].valueString = "Mild Cognitive Impairment (MCI) "
-* item[=].answerOption[+].valueString = "Typical Alzheimer's Disease (AD) "
-* item[=].answerOption[+].valueString = "Frontotemporal Dementia (FTD) "
-* item[=].answerOption[+].valueString = "Lewy Body Dementia (LBD) "
-* item[=].answerOption[+].valueString = "Vascular Dementia (VaD) "
-* item[=].answerOption[+].valueString = "Mixed Dementia (e.g. AD and VaD) "
+* item[=].answerOption[0].valueString = "Mild Cognitive Impairment (MCI)"
+* item[=].answerOption[+].valueString = "Typical Alzheimer's Disease (AD)"
+* item[=].answerOption[+].valueString = "Frontotemporal Dementia (FTD)"
+* item[=].answerOption[+].valueString = "Lewy Body Dementia (LBD)"
+* item[=].answerOption[+].valueString = "Vascular Dementia (VaD)"
+* item[=].answerOption[+].valueString = "Mixed Dementia (e.g. AD and VaD)"
 * item[=].answerOption[+].valueString = "Other"
 * item[+].linkId = "diagnosis_alz_dementia_mci_dt_other"
 * item[=].type = #string
@@ -77,9 +77,9 @@ Usage: #example
 * item[+].linkId = "diagnosis_alz_dementia_mci_ds_cdr"
 * item[=].type = #choice
 * item[=].text = "Clinical dementia rating (CDR) staging subcategory:"
-* item[=].answerOption[0].valueString = "CDR 0.5 (Very mild impairment) "
-* item[=].answerOption[+].valueString = "CDR 1 (Mild impairment) "
-* item[=].answerOption[+].valueString = "CDR 2 (Moderate impairment) "
+* item[=].answerOption[0].valueString = "CDR 0.5 (Very mild impairment)"
+* item[=].answerOption[+].valueString = "CDR 1 (Mild impairment)"
+* item[=].answerOption[+].valueString = "CDR 2 (Moderate impairment)"
 * item[=].answerOption[+].valueString = "CDR 3 (Severe impairment)"
 * item[=].enableWhen.question = "diagnosis_alz_dementia_mci_ds"
 * item[=].enableWhen.operator = #=
@@ -105,7 +105,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_alz_dementia_mci_treatment_obtained"
 * item[=].type = #choice
 * item[=].text = "6. Treatment Obtained: Has the patient undergone any treatment for Alzheimer's disease or cognitive impairment or other types of dementia?"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "diagnosis_alz_dementia_mci_treatment_obtained_yes"
 * item[=].type = #string

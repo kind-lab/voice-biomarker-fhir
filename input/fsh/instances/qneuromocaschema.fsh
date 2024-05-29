@@ -5,7 +5,7 @@ Usage: #example
 * title = "q_neuro_moca_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:38Z"
+* date = "2024-05-29T18:29:34Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url

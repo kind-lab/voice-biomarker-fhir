@@ -5,7 +5,7 @@ Usage: #example
 * title = "q_generic_demographics_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:32Z"
+* date = "2024-05-29T18:29:27Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -37,15 +37,15 @@ Usage: #example
 * item[+].linkId = "country"
 * item[=].type = #choice
 * item[=].text = "Country"
-* item[=].answerOption[0].valueString = "USA "
+* item[=].answerOption[0].valueString = "USA"
 * item[=].answerOption[+].valueString = "Canada"
 * item[+].linkId = "gender_identity"
 * item[=].type = #choice
 * item[=].text = "Patient Demographics: What is your gender identity?"
-* item[=].answerOption[0].valueString = "Female gender identity "
-* item[=].answerOption[+].valueString = "Male gender identity "
-* item[=].answerOption[+].valueString = "Non-binary or genderqueer gender identity "
-* item[=].answerOption[+].valueString = "Other "
+* item[=].answerOption[0].valueString = "Female gender identity"
+* item[=].answerOption[+].valueString = "Male gender identity"
+* item[=].answerOption[+].valueString = "Non-binary or genderqueer gender identity"
+* item[=].answerOption[+].valueString = "Other"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[+].linkId = "other_gender_identity"
 * item[=].type = #string
@@ -56,7 +56,7 @@ Usage: #example
 * item[+].linkId = "specify_gender_identity"
 * item[=].type = #choice
 * item[=].text = "Please specify gender identity"
-* item[=].answerOption[0].valueString = "Cis: same gender as the sex assigned at birth "
+* item[=].answerOption[0].valueString = "Cis: same gender as the sex assigned at birth"
 * item[=].answerOption[+].valueString = "Trans"
 * item[=].enableWhen[0].question = "gender_identity"
 * item[=].enableWhen[=].operator = #=
@@ -68,10 +68,10 @@ Usage: #example
 * item[+].linkId = "sexual_orientation"
 * item[=].type = #choice
 * item[=].text = "What is your sexual orientation?"
-* item[=].answerOption[0].valueString = "Bisexual "
-* item[=].answerOption[+].valueString = "Heterosexual "
-* item[=].answerOption[+].valueString = "Homosexual "
-* item[=].answerOption[+].valueString = "Other (Please specify) "
+* item[=].answerOption[0].valueString = "Bisexual"
+* item[=].answerOption[+].valueString = "Heterosexual"
+* item[=].answerOption[+].valueString = "Homosexual"
+* item[=].answerOption[+].valueString = "Other (Please specify)"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[+].linkId = "other_sex_orientation"
 * item[=].type = #string
@@ -127,8 +127,8 @@ Usage: #example
 * item[+].linkId = "ethnicity"
 * item[=].type = #choice
 * item[=].text = "What is your ethnic or cultural origin?"
-* item[=].answerOption[0].valueString = "Hispanic or Latino "
-* item[=].answerOption[+].valueString = "Not Hispanic or Latino "
+* item[=].answerOption[0].valueString = "Hispanic or Latino"
+* item[=].answerOption[+].valueString = "Not Hispanic or Latino"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[+].linkId = "hispanic_latino_selection"
 * item[=].type = #string
@@ -139,17 +139,17 @@ Usage: #example
 * item[+].linkId = "edu_level"
 * item[=].type = #choice
 * item[=].text = "Education: What is your highest level of education?"
-* item[=].answerOption[0].valueString = "No formal education "
-* item[=].answerOption[+].valueString = "Some elementary school "
-* item[=].answerOption[+].valueString = "Some secondary or high school education "
-* item[=].answerOption[+].valueString = "High School or secondary school degree complete "
-* item[=].answerOption[+].valueString = "Some college education "
-* item[=].answerOption[+].valueString = "Associate's or technical degree complete "
-* item[=].answerOption[+].valueString = "College or baccalaureate degree complete "
-* item[=].answerOption[+].valueString = "Some post-baccalaureate education "
-* item[=].answerOption[+].valueString = "Graduate or professional degree complete "
-* item[=].answerOption[+].valueString = "Doctoral or post graduate education "
-* item[=].answerOption[+].valueString = "Other "
+* item[=].answerOption[0].valueString = "No formal education"
+* item[=].answerOption[+].valueString = "Some elementary school"
+* item[=].answerOption[+].valueString = "Some secondary or high school education"
+* item[=].answerOption[+].valueString = "High School or secondary school degree complete"
+* item[=].answerOption[+].valueString = "Some college education"
+* item[=].answerOption[+].valueString = "Associate's or technical degree complete"
+* item[=].answerOption[+].valueString = "College or baccalaureate degree complete"
+* item[=].answerOption[+].valueString = "Some post-baccalaureate education"
+* item[=].answerOption[+].valueString = "Graduate or professional degree complete"
+* item[=].answerOption[+].valueString = "Doctoral or post graduate education"
+* item[=].answerOption[+].valueString = "Other"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[+].linkId = "other_edu_level"
 * item[=].type = #string
@@ -160,38 +160,38 @@ Usage: #example
 * item[+].linkId = "hearing"
 * item[=].type = #choice
 * item[=].text = "Disability Questions: Are you deaf or do you have serious difficulty hearing?"
-* item[=].answerOption[0].valueString = "No "
-* item[=].answerOption[+].valueString = "Yes "
+* item[=].answerOption[0].valueString = "No"
+* item[=].answerOption[+].valueString = "Yes"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[+].linkId = "vision"
 * item[=].type = #choice
 * item[=].text = "Are you blind or do you have serious difficulty seeing, even when wearing glasses?"
-* item[=].answerOption[0].valueString = "No "
-* item[=].answerOption[+].valueString = "Yes "
+* item[=].answerOption[0].valueString = "No"
+* item[=].answerOption[+].valueString = "Yes"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[+].linkId = "cognition"
 * item[=].type = #choice
 * item[=].text = "Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions?"
-* item[=].answerOption[0].valueString = "No "
-* item[=].answerOption[+].valueString = "Yes "
+* item[=].answerOption[0].valueString = "No"
+* item[=].answerOption[+].valueString = "Yes"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[+].linkId = "mobility"
 * item[=].type = #choice
 * item[=].text = "Do you have serious difficulty walking or climbing stairs?"
-* item[=].answerOption[0].valueString = "No "
-* item[=].answerOption[+].valueString = "Yes "
+* item[=].answerOption[0].valueString = "No"
+* item[=].answerOption[+].valueString = "Yes"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[+].linkId = "self_care"
 * item[=].type = #choice
 * item[=].text = "Do you have difficulty dressing or bathing?"
-* item[=].answerOption[0].valueString = "No "
-* item[=].answerOption[+].valueString = "Yes "
+* item[=].answerOption[0].valueString = "No"
+* item[=].answerOption[+].valueString = "Yes"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[+].linkId = "independent_living"
 * item[=].type = #choice
 * item[=].text = "Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor's office or shopping?"
-* item[=].answerOption[0].valueString = "No "
-* item[=].answerOption[+].valueString = "Yes "
+* item[=].answerOption[0].valueString = "No"
+* item[=].answerOption[+].valueString = "Yes"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[+].linkId = "employ_status"
 * item[=].type = #string
@@ -213,14 +213,14 @@ Usage: #example
 * item[+].linkId = "household_income_usa"
 * item[=].type = #choice
 * item[=].text = "Demographics - Optional: What was your total household income last year (USD)? Please include all sources of income, including pensions, dividends, alimony, child support, etc."
-* item[=].answerOption[0].valueString = "< $15,000 "
-* item[=].answerOption[+].valueString = "$15,000 to $29,999 "
-* item[=].answerOption[+].valueString = "$30,000 to $$49,999 "
-* item[=].answerOption[+].valueString = "$50,000 to $99,999 "
-* item[=].answerOption[+].valueString = "$100,000 to $149,999 "
-* item[=].answerOption[+].valueString = "$150,000 to $199,999 "
-* item[=].answerOption[+].valueString = "$200,000 to $249,999 "
-* item[=].answerOption[+].valueString = ">$250,000 "
+* item[=].answerOption[0].valueString = "< $15,000"
+* item[=].answerOption[+].valueString = "$15,000 to $29,999"
+* item[=].answerOption[+].valueString = "$30,000 to $$49,999"
+* item[=].answerOption[+].valueString = "$50,000 to $99,999"
+* item[=].answerOption[+].valueString = "$100,000 to $149,999"
+* item[=].answerOption[+].valueString = "$150,000 to $199,999"
+* item[=].answerOption[+].valueString = "$200,000 to $249,999"
+* item[=].answerOption[+].valueString = ">$250,000"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[=].enableWhen.question = "country"
 * item[=].enableWhen.operator = #=
@@ -228,8 +228,8 @@ Usage: #example
 * item[+].linkId = "financial_assistance_usa"
 * item[=].type = #choice
 * item[=].text = "Do you receive a significant portion (>20%) of your income through federally-funded income assistance programs? Some examples of these programs are listed in the question below."
-* item[=].answerOption[0].valueString = "No "
-* item[=].answerOption[+].valueString = "Yes "
+* item[=].answerOption[0].valueString = "No"
+* item[=].answerOption[+].valueString = "Yes"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[=].enableWhen.question = "country"
 * item[=].enableWhen.operator = #=
@@ -243,14 +243,14 @@ Usage: #example
 * item[+].linkId = "household_income_ca"
 * item[=].type = #choice
 * item[=].text = "What was your total household income last year (CAD)? Please include all sources of income, including pensions, dividends, alimony, child support, etc."
-* item[=].answerOption[0].valueString = "< $15,000 "
-* item[=].answerOption[+].valueString = "$15,000 to $29,999 "
-* item[=].answerOption[+].valueString = "$30,000 to $$49,999 "
-* item[=].answerOption[+].valueString = "$50,000 to $99,999 "
-* item[=].answerOption[+].valueString = "$100,000 to $149,999 "
-* item[=].answerOption[+].valueString = "$150,000 to $199,999 "
-* item[=].answerOption[+].valueString = "$200,000 to $249,999 "
-* item[=].answerOption[+].valueString = ">$250,000 "
+* item[=].answerOption[0].valueString = "< $15,000"
+* item[=].answerOption[+].valueString = "$15,000 to $29,999"
+* item[=].answerOption[+].valueString = "$30,000 to $$49,999"
+* item[=].answerOption[+].valueString = "$50,000 to $99,999"
+* item[=].answerOption[+].valueString = "$100,000 to $149,999"
+* item[=].answerOption[+].valueString = "$150,000 to $199,999"
+* item[=].answerOption[+].valueString = "$200,000 to $249,999"
+* item[=].answerOption[+].valueString = ">$250,000"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[=].enableWhen.question = "country"
 * item[=].enableWhen.operator = #=
@@ -258,8 +258,8 @@ Usage: #example
 * item[+].linkId = "financial_assistance_ca"
 * item[=].type = #choice
 * item[=].text = "Do you receive a significant portion (>20%) of your income through federally-funded income assistance programs? Some examples of these programs are listed below."
-* item[=].answerOption[0].valueString = "No "
-* item[=].answerOption[+].valueString = "Yes "
+* item[=].answerOption[0].valueString = "No"
+* item[=].answerOption[+].valueString = "Yes"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[=].enableWhen.question = "country"
 * item[=].enableWhen.operator = #=
@@ -273,13 +273,13 @@ Usage: #example
 * item[+].linkId = "citizen"
 * item[=].type = #choice
 * item[=].text = "Citizenship: Citizen"
-* item[=].answerOption[0].valueString = "Citizen "
-* item[=].answerOption[+].valueString = "Permanent resident (Green card holder) "
-* item[=].answerOption[+].valueString = "Non-citizen US/Canadian national "
-* item[=].answerOption[+].valueString = "Refugee "
-* item[=].answerOption[+].valueString = "Asylum seeker "
-* item[=].answerOption[+].valueString = "Non-immigrant student "
-* item[=].answerOption[+].valueString = "Non-immigrant worker "
+* item[=].answerOption[0].valueString = "Citizen"
+* item[=].answerOption[+].valueString = "Permanent resident (Green card holder)"
+* item[=].answerOption[+].valueString = "Non-citizen US/Canadian national"
+* item[=].answerOption[+].valueString = "Refugee"
+* item[=].answerOption[+].valueString = "Asylum seeker"
+* item[=].answerOption[+].valueString = "Non-immigrant student"
+* item[=].answerOption[+].valueString = "Non-immigrant worker"
 * item[=].answerOption[+].valueString = "Prefer not to answer"
 * item[+].linkId = "marital_status"
 * item[=].type = #string
@@ -287,11 +287,11 @@ Usage: #example
 * item[+].linkId = "housing_status"
 * item[=].type = #choice
 * item[=].text = "What is your current housing status?"
-* item[=].answerOption[0].valueString = "Assisted living "
-* item[=].answerOption[+].valueString = "Own home "
-* item[=].answerOption[+].valueString = "Rent home "
-* item[=].answerOption[+].valueString = "Skilled nursing facility/nursing home "
-* item[=].answerOption[+].valueString = "Unhoused-temporarily "
+* item[=].answerOption[0].valueString = "Assisted living"
+* item[=].answerOption[+].valueString = "Own home"
+* item[=].answerOption[+].valueString = "Rent home"
+* item[=].answerOption[+].valueString = "Skilled nursing facility/nursing home"
+* item[=].answerOption[+].valueString = "Unhoused-temporarily"
 * item[=].answerOption[+].valueString = "Unhoused-permanently"
 * item[+].linkId = "household_count"
 * item[=].type = #string
@@ -299,7 +299,7 @@ Usage: #example
 * item[+].linkId = "spouse_partner_sig_other"
 * item[=].type = #choice
 * item[=].text = "Who lives with you? Choose all that apply: Spouse/partner/significant other"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[=].enableWhen.question = "household_count"
 * item[=].enableWhen.operator = #>
@@ -307,7 +307,7 @@ Usage: #example
 * item[+].linkId = "children"
 * item[=].type = #choice
 * item[=].text = "One or more children"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[=].enableWhen.question = "household_count"
 * item[=].enableWhen.operator = #>
@@ -315,7 +315,7 @@ Usage: #example
 * item[+].linkId = "parent"
 * item[=].type = #choice
 * item[=].text = "One or more parent"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[=].enableWhen.question = "household_count"
 * item[=].enableWhen.operator = #>
@@ -323,7 +323,7 @@ Usage: #example
 * item[+].linkId = "grandparent"
 * item[=].type = #choice
 * item[=].text = "One or more grandparent"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[=].enableWhen.question = "household_count"
 * item[=].enableWhen.operator = #>
@@ -331,7 +331,7 @@ Usage: #example
 * item[+].linkId = "other_live_with"
 * item[=].type = #choice
 * item[=].text = "Other"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[=].enableWhen.question = "household_count"
 * item[=].enableWhen.operator = #>
@@ -350,13 +350,13 @@ Usage: #example
 * item[+].linkId = "primary_transportation"
 * item[=].type = #choice
 * item[=].text = "What is your primary mode of transportation?"
-* item[=].answerOption[0].valueString = "Personal vehicle "
-* item[=].answerOption[+].valueString = "Shared vehicle "
-* item[=].answerOption[+].valueString = "Public transportation "
-* item[=].answerOption[+].valueString = "Ride with someone else "
-* item[=].answerOption[+].valueString = "Ride service "
-* item[=].answerOption[+].valueString = "Bicycle/Motorbike "
-* item[=].answerOption[+].valueString = "Walking "
+* item[=].answerOption[0].valueString = "Personal vehicle"
+* item[=].answerOption[+].valueString = "Shared vehicle"
+* item[=].answerOption[+].valueString = "Public transportation"
+* item[=].answerOption[+].valueString = "Ride with someone else"
+* item[=].answerOption[+].valueString = "Ride service"
+* item[=].answerOption[+].valueString = "Bicycle/Motorbike"
+* item[=].answerOption[+].valueString = "Walking"
 * item[=].answerOption[+].valueString = "Other (Please specify)"
 * item[=].enableWhen.question = "transportation_yn"
 * item[=].enableWhen.operator = #=

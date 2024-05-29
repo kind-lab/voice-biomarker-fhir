@@ -5,7 +5,7 @@ Usage: #example
 * title = "d_voice_laryngeal_cancer_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:28Z"
+* date = "2024-05-29T18:29:22Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -13,14 +13,14 @@ Usage: #example
 * item[0].linkId = "diagnois_lc_gsd_sll"
 * item[=].type = #choice
 * item[=].text = "1. Gold Standard Diagnosis: Did the patient get a laryngoscopy/stroboscopy confirming the presence of a suspicious laryngeal lesion?"
-* item[=].answerOption[0].valueString = "Yes "
-* item[=].answerOption[+].valueString = "No "
+* item[=].answerOption[0].valueString = "Yes"
+* item[=].answerOption[+].valueString = "No"
 * item[=].answerOption[+].valueString = "Not certain"
 * item[+].linkId = "diagnosis_lc_gsd_bpr"
 * item[=].type = #choice
 * item[=].text = "Does the patient have laryngeal cancer confirmed by biopsy/pathology report?"
-* item[=].answerOption[0].valueString = "Yes "
-* item[=].answerOption[+].valueString = "No "
+* item[=].answerOption[0].valueString = "Yes"
+* item[=].answerOption[+].valueString = "No"
 * item[=].answerOption[+].valueString = "Not certain"
 * item[+].linkId = "diagnosis_lc_gsd_uots"
 * item[=].type = #string
@@ -40,13 +40,13 @@ Usage: #example
 * item[+].linkId = "diagnosis_lc_ds_t_stage"
 * item[=].type = #choice
 * item[=].text = "4. Disease Severity: What is the T stage of the cancer based on the AJCC Classification?"
-* item[=].answerOption[0].valueString = "Tis (carcinoma in situ) "
-* item[=].answerOption[+].valueString = "T1a "
-* item[=].answerOption[+].valueString = "T1b "
-* item[=].answerOption[+].valueString = "T2 "
-* item[=].answerOption[+].valueString = "T3 "
-* item[=].answerOption[+].valueString = "T4a "
-* item[=].answerOption[+].valueString = "T4b "
+* item[=].answerOption[0].valueString = "Tis (carcinoma in situ)"
+* item[=].answerOption[+].valueString = "T1a"
+* item[=].answerOption[+].valueString = "T1b"
+* item[=].answerOption[+].valueString = "T2"
+* item[=].answerOption[+].valueString = "T3"
+* item[=].answerOption[+].valueString = "T4a"
+* item[=].answerOption[+].valueString = "T4b"
 * item[=].answerOption[+].valueString = "Unknown yet"
 * item[+].linkId = "diagnosis_lc_ds_t_ref"
 * item[=].type = #string
@@ -54,12 +54,12 @@ Usage: #example
 * item[+].linkId = "diagnosis_lc_ds_n_stage"
 * item[=].type = #choice
 * item[=].text = "What is the N stage of the cancer based on the AJCC Classification?"
-* item[=].answerOption[0].valueString = "N0 "
-* item[=].answerOption[+].valueString = "N1 "
-* item[=].answerOption[+].valueString = "N2a "
-* item[=].answerOption[+].valueString = "N2b "
-* item[=].answerOption[+].valueString = "N2c "
-* item[=].answerOption[+].valueString = "N3 "
+* item[=].answerOption[0].valueString = "N0"
+* item[=].answerOption[+].valueString = "N1"
+* item[=].answerOption[+].valueString = "N2a"
+* item[=].answerOption[+].valueString = "N2b"
+* item[=].answerOption[+].valueString = "N2c"
+* item[=].answerOption[+].valueString = "N3"
 * item[=].answerOption[+].valueString = "Unknown yet"
 * item[+].linkId = "diagnosis_lc_ds_n_ref"
 * item[=].type = #string
@@ -67,7 +67,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_lc_ds_m_stage"
 * item[=].type = #choice
 * item[=].text = "What is the M stage of the cancer based on the AJCC Classification?"
-* item[=].answerOption[0].valueString = "M0: no distant metastasis "
+* item[=].answerOption[0].valueString = "M0: no distant metastasis"
 * item[=].answerOption[+].valueString = "M1: Any distant metastasis"
 * item[+].linkId = "diagnosis_lc_degree_text"
 * item[=].type = #string
@@ -81,7 +81,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_lc_degree_os_2"
 * item[=].type = #choice
 * item[=].text = "Overall Severity"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_lc_degree_r_1"
 * item[=].type = #string
@@ -89,7 +89,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_lc_degree_r_2"
 * item[=].type = #choice
 * item[=].text = "Roughness"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_lc_degree_b_1"
 * item[=].type = #string
@@ -97,7 +97,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_lc_degree_b_2"
 * item[=].type = #choice
 * item[=].text = "Breathiness"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_lc_degree_s_1"
 * item[=].type = #string
@@ -105,7 +105,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_lc_degree_s_2"
 * item[=].type = #choice
 * item[=].text = "Strain"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_lc_degree_p_1"
 * item[=].type = #string
@@ -119,7 +119,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_lc_degree_p_2"
 * item[=].type = #choice
 * item[=].text = "Pitch"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_lc_degree_l_1"
 * item[=].type = #string
@@ -133,12 +133,12 @@ Usage: #example
 * item[+].linkId = "diagnosis_lc_degree_l_2"
 * item[=].type = #choice
 * item[=].text = "Loudness"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_lc_degree_comments"
 * item[=].type = #choice
 * item[=].text = "Comments about resonance"
-* item[=].answerOption[0].valueString = "Normal "
+* item[=].answerOption[0].valueString = "Normal"
 * item[=].answerOption[+].valueString = "Other"
 * item[+].linkId = "diagnosis_lc_degree_comments_other"
 * item[=].type = #string
@@ -152,14 +152,14 @@ Usage: #example
 * item[+].linkId = "diagnosis_as_ds_ccsr"
 * item[=].type = #choice
 * item[=].text = "Is the cancer causing stridor at rest?"
-* item[=].answerOption[0].valueString = "No the patient does not have stridor "
-* item[=].answerOption[+].valueString = "Yes mild stridor "
-* item[=].answerOption[+].valueString = "Yes moderate stridor "
+* item[=].answerOption[0].valueString = "No the patient does not have stridor"
+* item[=].answerOption[+].valueString = "Yes mild stridor"
+* item[=].answerOption[+].valueString = "Yes moderate stridor"
 * item[=].answerOption[+].valueString = "Yes severe stridor"
 * item[+].linkId = "diagnosis_lc_treatment"
 * item[=].type = #choice
 * item[=].text = "5. Treatment obtained: Has the patient undergone any treatment for their condition?"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "diagnosis_lc_treatment_select"
 * item[=].type = #string

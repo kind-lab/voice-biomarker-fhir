@@ -5,7 +5,7 @@ Usage: #example
 * title = "subjectparticipant_basic_information_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:45Z"
+* date = "2024-05-29T18:29:41Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -16,20 +16,20 @@ Usage: #example
 * item[+].linkId = "selected_language"
 * item[=].type = #choice
 * item[=].text = "Language"
-* item[=].answerOption[0].valueString = "English "
-* item[=].answerOption[+].valueString = "Español "
+* item[=].answerOption[0].valueString = "English"
+* item[=].answerOption[+].valueString = "Español"
 * item[=].answerOption[+].valueString = "Français"
 * item[+].linkId = "consent_status"
 * item[=].type = #choice
 * item[=].text = "Consent Status"
-* item[=].answerOption[0].valueString = "Pending "
-* item[=].answerOption[+].valueString = "Consented "
+* item[=].answerOption[0].valueString = "Pending"
+* item[=].answerOption[+].valueString = "Consented"
 * item[=].answerOption[+].valueString = "Withdrawn Consent"
 * item[+].linkId = "consent_method"
 * item[=].type = #choice
 * item[=].text = "Consent Method"
-* item[=].answerOption[0].valueString = "Paper Consent "
-* item[=].answerOption[+].valueString = "eConsent "
+* item[=].answerOption[0].valueString = "Paper Consent"
+* item[=].answerOption[+].valueString = "eConsent"
 * item[=].answerOption[+].valueString = "Video Consent"
 * item[=].enableWhen.question = "consent_status"
 * item[=].enableWhen.operator = #=
@@ -49,7 +49,7 @@ Usage: #example
 * item[+].linkId = "is_feasibility_participant"
 * item[=].type = #choice
 * item[=].text = "Is Feasibility Participant?"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "enrolled"
 * item[=].type = #choice
@@ -65,11 +65,11 @@ Usage: #example
 * item[+].linkId = "enrollment_institution"
 * item[=].type = #choice
 * item[=].text = "Enrollment Institution"
-* item[=].answerOption[0].valueString = "BCH "
-* item[=].answerOption[+].valueString = "MIT "
-* item[=].answerOption[+].valueString = "Mt. Sinai "
-* item[=].answerOption[+].valueString = "USF "
-* item[=].answerOption[+].valueString = "VUMC "
+* item[=].answerOption[0].valueString = "BCH"
+* item[=].answerOption[+].valueString = "MIT"
+* item[=].answerOption[+].valueString = "Mt. Sinai"
+* item[=].answerOption[+].valueString = "USF"
+* item[=].answerOption[+].valueString = "VUMC"
 * item[=].answerOption[+].valueString = "WCM"
 * item[+].linkId = "researcher_email"
 * item[=].type = #string

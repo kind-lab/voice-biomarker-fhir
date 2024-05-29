@@ -5,7 +5,7 @@ Usage: #example
 * title = "d_neuro_parkinsons_disease_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:25Z"
+* date = "2024-05-29T18:29:19Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -34,12 +34,12 @@ Usage: #example
 * item[+].linkId = "diagnosis_parkinsons_disease_subtype"
 * item[=].type = #choice
 * item[=].text = "2. Disease Type: Specify the subtype of Parkinson's Disease in the patient:"
-* item[=].answerOption[0].valueString = "Idiopathic Parkinson's Disease (IPD) "
-* item[=].answerOption[+].valueString = "Multiple System Atrophy (MSA) "
-* item[=].answerOption[+].valueString = "Progressive Supranuclear Palsy (PSP) "
-* item[=].answerOption[+].valueString = "Corticobasal Degeneration (CBD) "
-* item[=].answerOption[+].valueString = "Dementia with Lewy Bodies (DLB) "
-* item[=].answerOption[+].valueString = "Other Parkinsonism or Atypical Parkinsonism "
+* item[=].answerOption[0].valueString = "Idiopathic Parkinson's Disease (IPD)"
+* item[=].answerOption[+].valueString = "Multiple System Atrophy (MSA)"
+* item[=].answerOption[+].valueString = "Progressive Supranuclear Palsy (PSP)"
+* item[=].answerOption[+].valueString = "Corticobasal Degeneration (CBD)"
+* item[=].answerOption[+].valueString = "Dementia with Lewy Bodies (DLB)"
+* item[=].answerOption[+].valueString = "Other Parkinsonism or Atypical Parkinsonism"
 * item[=].answerOption[+].valueString = "Not Sure / Undetermined"
 * item[+].linkId = "diagnosis_parkinsons_disease_subtype_other"
 * item[=].type = #string
@@ -50,8 +50,8 @@ Usage: #example
 * item[+].linkId = "diagnosis_parkinsons_etiology"
 * item[=].type = #choice
 * item[=].text = "3. Etiology: What is the suspected or known etiology of Parkinson's disease in the patient?"
-* item[=].answerOption[0].valueString = "Idiopathic (unknown cause) "
-* item[=].answerOption[+].valueString = "Familial Parkinson's Disease "
+* item[=].answerOption[0].valueString = "Idiopathic (unknown cause)"
+* item[=].answerOption[+].valueString = "Familial Parkinson's Disease"
 * item[=].answerOption[+].valueString = "Environmental factors"
 * item[+].linkId = "diagnosis_parkinsons_etiology_fpd"
 * item[=].type = #string
@@ -68,10 +68,10 @@ Usage: #example
 * item[+].linkId = "diagnosis_parkinsons_ds"
 * item[=].type = #choice
 * item[=].text = "4. Disease Severity: What is the current stage/severity of Parkinson's disease in the patient?\n•\tHoehn and Yahr Scale:"
-* item[=].answerOption[0].valueString = "Stage 1 (Unilateral involvement only) "
-* item[=].answerOption[+].valueString = "Stage 2 (Bilateral involvement without impairment of balance) "
-* item[=].answerOption[+].valueString = "Stage 3 (Bilateral involvement with mild to moderate impairment of balance) "
-* item[=].answerOption[+].valueString = "Stage 4 (Severe disability but still able to walk or stand unassisted) "
+* item[=].answerOption[0].valueString = "Stage 1 (Unilateral involvement only)"
+* item[=].answerOption[+].valueString = "Stage 2 (Bilateral involvement without impairment of balance)"
+* item[=].answerOption[+].valueString = "Stage 3 (Bilateral involvement with mild to moderate impairment of balance)"
+* item[=].answerOption[+].valueString = "Stage 4 (Severe disability but still able to walk or stand unassisted)"
 * item[=].answerOption[+].valueString = "Stage 5 (Wheelchair-bound or bedridden unless aided)"
 * item[+].linkId = "diagnosis_parkinsons_ma"
 * item[=].type = #string
@@ -79,9 +79,9 @@ Usage: #example
 * item[+].linkId = "diagnosis_parkinsons_ma_uprds"
 * item[=].type = #choice
 * item[=].text = "Unified Parkinson's Disease Rating Scale (UPDRS)"
-* item[=].answerOption[0].valueString = "Part I (Intellectual function mood behavior) score "
-* item[=].answerOption[+].valueString = "Part II (Activities of daily living) score "
-* item[=].answerOption[+].valueString = "Part III (Motor Examination) score "
+* item[=].answerOption[0].valueString = "Part I (Intellectual function mood behavior) score"
+* item[=].answerOption[+].valueString = "Part II (Activities of daily living) score"
+* item[=].answerOption[+].valueString = "Part III (Motor Examination) score"
 * item[=].answerOption[+].valueString = "Part IV (Motor complications) score"
 * item[=].enableWhen.question = "diagnosis_parkinsons_ma"
 * item[=].enableWhen.operator = #=
@@ -119,7 +119,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_parkinsons_non_motor_symptoms"
 * item[=].type = #choice
 * item[=].text = "6. Non-Motor Symptoms: Are there significant non-motor symptoms associated with Parkinson's disease in the patient?"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "diagnosis_parkinsons_non_motor_symptoms_yes"
 * item[=].type = #string
@@ -130,7 +130,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_parkinsons_treatment_obtained"
 * item[=].type = #choice
 * item[=].text = "7. Treatment Obtained: Has the patient undergone any treatment for Parkinson's disease?"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "diagnosis_parkinsons_treatment_obtained_yes"
 * item[=].type = #string

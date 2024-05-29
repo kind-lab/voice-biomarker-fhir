@@ -5,7 +5,7 @@ Usage: #example
 * title = "d_voice_precancerous_lesions_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:29Z"
+* date = "2024-05-29T18:29:24Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -13,14 +13,14 @@ Usage: #example
 * item[0].linkId = "diagnois_pl_gsd_ls"
 * item[=].type = #choice
 * item[=].text = "1. Gold Standard Diagnosis: Does the patient have a precancerous vocal fold lesion confirmed by laryngoscopy/stroboscopy?"
-* item[=].answerOption[0].valueString = "Yes "
-* item[=].answerOption[+].valueString = "No "
+* item[=].answerOption[0].valueString = "Yes"
+* item[=].answerOption[+].valueString = "No"
 * item[=].answerOption[+].valueString = "Not certain"
 * item[+].linkId = "diagnois_pl_gsd_bp"
 * item[=].type = #choice
 * item[=].text = "Does the patient have a precancerous vocal fold lesion confirmed by biopsy/pathology?"
-* item[=].answerOption[0].valueString = "Yes "
-* item[=].answerOption[+].valueString = "No "
+* item[=].answerOption[0].valueString = "Yes"
+* item[=].answerOption[+].valueString = "No"
 * item[=].answerOption[+].valueString = "Not certain"
 * item[+].linkId = "diagnosis_pl_ds"
 * item[=].type = #string
@@ -28,7 +28,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_ds_k"
 * item[=].type = #choice
 * item[=].text = "Keratosis"
-* item[=].answerOption[0].valueString = "With dysplasia "
+* item[=].answerOption[0].valueString = "With dysplasia"
 * item[=].answerOption[+].valueString = "Without dysplasia"
 * item[=].enableWhen.question = "diagnosis_pl_ds"
 * item[=].enableWhen.operator = #=
@@ -36,8 +36,8 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_ds_k_wd_g"
 * item[=].type = #choice
 * item[=].text = "Keratosis with dysplasia"
-* item[=].answerOption[0].valueString = "Low grade "
-* item[=].answerOption[+].valueString = "Moderate grade "
+* item[=].answerOption[0].valueString = "Low grade"
+* item[=].answerOption[+].valueString = "Moderate grade"
 * item[=].answerOption[+].valueString = "High grade"
 * item[=].enableWhen.question = "diagnosis_pl_ds_k"
 * item[=].enableWhen.operator = #=
@@ -45,7 +45,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_ds_l"
 * item[=].type = #choice
 * item[=].text = "Leukoplakia"
-* item[=].answerOption[0].valueString = "With dysplasia "
+* item[=].answerOption[0].valueString = "With dysplasia"
 * item[=].answerOption[+].valueString = "Without dysplasia"
 * item[=].enableWhen.question = "diagnosis_pl_ds"
 * item[=].enableWhen.operator = #=
@@ -53,8 +53,8 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_ds_l_wd_g"
 * item[=].type = #choice
 * item[=].text = "Leukoplakia with dysplasia"
-* item[=].answerOption[0].valueString = "Low grade "
-* item[=].answerOption[+].valueString = "Moderate grade "
+* item[=].answerOption[0].valueString = "Low grade"
+* item[=].answerOption[+].valueString = "Moderate grade"
 * item[=].answerOption[+].valueString = "High grade"
 * item[=].enableWhen.question = "diagnosis_pl_ds_l"
 * item[=].enableWhen.operator = #=
@@ -62,7 +62,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_ds_e"
 * item[=].type = #choice
 * item[=].text = "Erythroplakia"
-* item[=].answerOption[0].valueString = "With dysplasia "
+* item[=].answerOption[0].valueString = "With dysplasia"
 * item[=].answerOption[+].valueString = "Without dysplasia"
 * item[=].enableWhen.question = "diagnosis_pl_ds"
 * item[=].enableWhen.operator = #=
@@ -70,8 +70,8 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_ds_e_wd_g"
 * item[=].type = #choice
 * item[=].text = "Erythroplakia with dysplasia"
-* item[=].answerOption[0].valueString = "Low grade "
-* item[=].answerOption[+].valueString = "Moderate grade "
+* item[=].answerOption[0].valueString = "Low grade"
+* item[=].answerOption[+].valueString = "Moderate grade"
 * item[=].answerOption[+].valueString = "High grade"
 * item[=].enableWhen.question = "diagnosis_pl_ds_e"
 * item[=].enableWhen.operator = #=
@@ -106,7 +106,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_degree_os_2"
 * item[=].type = #choice
 * item[=].text = "Overall Severity"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_pl_degree_r_1"
 * item[=].type = #string
@@ -114,7 +114,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_degree_r_2"
 * item[=].type = #choice
 * item[=].text = "Roughness"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_pl_degree_b_1"
 * item[=].type = #string
@@ -122,7 +122,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_degree_b_2"
 * item[=].type = #choice
 * item[=].text = "Breathiness"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_pl_degree_s_1"
 * item[=].type = #string
@@ -130,7 +130,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_degree_s_2"
 * item[=].type = #choice
 * item[=].text = "Strain"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_pl_degree_p_1"
 * item[=].type = #string
@@ -144,7 +144,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_degree_p_2"
 * item[=].type = #choice
 * item[=].text = "Pitch"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_pl_degree_l_1"
 * item[=].type = #string
@@ -158,12 +158,12 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_degree_l_2"
 * item[=].type = #choice
 * item[=].text = "Loudness"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_pl_degree_comments"
 * item[=].type = #choice
 * item[=].text = "Comments about resonance"
-* item[=].answerOption[0].valueString = "Normal "
+* item[=].answerOption[0].valueString = "Normal"
 * item[=].answerOption[+].valueString = "Other"
 * item[+].linkId = "diagnosis_pl_degree_comments_other"
 * item[=].type = #string
@@ -177,7 +177,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_pl_treatment"
 * item[=].type = #choice
 * item[=].text = "5. Treatment obtained: Has the patient undergone any treatment for this condition?"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "diagnosis_pl_treatment_select"
 * item[=].type = #string

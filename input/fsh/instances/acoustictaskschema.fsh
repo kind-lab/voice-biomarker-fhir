@@ -5,7 +5,7 @@ Usage: #example
 * title = "acoustic_task_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:14Z"
+* date = "2024-05-29T18:29:08Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -25,7 +25,7 @@ Usage: #example
 * item[+].linkId = "acoustic_task_status"
 * item[=].type = #choice
 * item[=].text = "Acoustic Task Status"
-* item[=].answerOption[0].valueString = "Skipped "
+* item[=].answerOption[0].valueString = "Skipped"
 * item[=].answerOption[+].valueString = "Completed"
 * item[+].linkId = "acoustic_task_started_at"
 * item[=].type = #string

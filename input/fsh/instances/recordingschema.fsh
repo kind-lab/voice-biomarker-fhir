@@ -5,7 +5,7 @@ Usage: #example
 * title = "recording_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:44Z"
+* date = "2024-05-29T18:29:39Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -43,8 +43,8 @@ Usage: #example
 * item[+].linkId = "recording_profile_name"
 * item[=].type = #choice
 * item[=].text = "Recording Profile Name"
-* item[=].answerOption[0].valueString = "Speech "
-* item[=].answerOption[+].valueString = "Breathe "
+* item[=].answerOption[0].valueString = "Speech"
+* item[=].answerOption[+].valueString = "Breathe"
 * item[=].answerOption[+].valueString = "Cough"
 * item[+].linkId = "recording_profile_version"
 * item[=].type = #choice

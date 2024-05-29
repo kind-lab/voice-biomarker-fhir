@@ -5,7 +5,7 @@ Usage: #example
 * title = "d_voice_laryngeal_dystonia_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:28Z"
+* date = "2024-05-29T18:29:23Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -22,10 +22,10 @@ Usage: #example
 * item[+].linkId = "diagnosis_ld_etiology"
 * item[=].type = #choice
 * item[=].text = "Etiology: What is the etiology?"
-* item[=].answerOption[0].valueString = "Idiopathic "
-* item[=].answerOption[+].valueString = "Familial "
-* item[=].answerOption[+].valueString = "Trauma "
-* item[=].answerOption[+].valueString = "Unknown "
+* item[=].answerOption[0].valueString = "Idiopathic"
+* item[=].answerOption[+].valueString = "Familial"
+* item[=].answerOption[+].valueString = "Trauma"
+* item[=].answerOption[+].valueString = "Unknown"
 * item[=].answerOption[+].valueString = "Other"
 * item[+].linkId = "diagnosis_ld_etiology_other"
 * item[=].type = #string
@@ -54,7 +54,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_ld_degree_os_2"
 * item[=].type = #choice
 * item[=].text = "Overall Severity"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_ld_degree_r_1"
 * item[=].type = #string
@@ -62,7 +62,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_ld_degree_r_2"
 * item[=].type = #choice
 * item[=].text = "Roughness"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_ld_degree_b_1"
 * item[=].type = #string
@@ -70,7 +70,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_ld_degree_b_2"
 * item[=].type = #choice
 * item[=].text = "Breathiness"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_ld_degree_s_1"
 * item[=].type = #string
@@ -78,7 +78,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_ld_degree_s_2"
 * item[=].type = #choice
 * item[=].text = "Strain"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_ld_degree_p_1"
 * item[=].type = #string
@@ -92,7 +92,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_ld_degree_p_2"
 * item[=].type = #choice
 * item[=].text = "Pitch"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_ld_degree_l_1"
 * item[=].type = #string
@@ -106,12 +106,12 @@ Usage: #example
 * item[+].linkId = "diagnosis_ld_degree_l_2"
 * item[=].type = #choice
 * item[=].text = "Loudness"
-* item[=].answerOption[0].valueString = "Consistent "
+* item[=].answerOption[0].valueString = "Consistent"
 * item[=].answerOption[+].valueString = "Intermittent"
 * item[+].linkId = "diagnosis_ld_degree_comments"
 * item[=].type = #choice
 * item[=].text = "Comments about resonance"
-* item[=].answerOption[0].valueString = "Normal "
+* item[=].answerOption[0].valueString = "Normal"
 * item[=].answerOption[+].valueString = "Other"
 * item[+].linkId = "diagnosis_ld_degree_comments_other"
 * item[=].type = #string
@@ -125,7 +125,7 @@ Usage: #example
 * item[+].linkId = "diagnosis_ld_treatment"
 * item[=].type = #choice
 * item[=].text = "5. Treatment obtained: Has the patient undergone any treatment for their condition?"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "diagnosis_ld_treatment_select"
 * item[=].type = #string

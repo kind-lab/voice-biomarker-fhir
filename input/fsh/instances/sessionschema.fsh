@@ -5,7 +5,7 @@ Usage: #example
 * title = "session_schema"
 * version = "1.4.0"
 * status = #active
-* date = "2024-05-13T19:41:44Z"
+* date = "2024-05-29T18:29:40Z"
 * publisher = "KinD Lab"
 * contact.name = "KinD Lab"
 * contact.telecom.system = #url
@@ -16,7 +16,7 @@ Usage: #example
 * item[+].linkId = "session_status"
 * item[=].type = #choice
 * item[=].text = "Session Status"
-* item[=].answerOption[0].valueString = "In Progress "
+* item[=].answerOption[0].valueString = "In Progress"
 * item[=].answerOption[+].valueString = "Completed"
 * item[+].linkId = "session_started_at"
 * item[=].type = #string
@@ -24,7 +24,7 @@ Usage: #example
 * item[+].linkId = "session_is_control_participant"
 * item[=].type = #choice
 * item[=].text = "Is Control Participant?"
-* item[=].answerOption[0].valueString = "Yes "
+* item[=].answerOption[0].valueString = "Yes"
 * item[=].answerOption[+].valueString = "No"
 * item[+].linkId = "session_completed_at"
 * item[=].type = #string
@@ -35,9 +35,9 @@ Usage: #example
 * item[+].linkId = "session_site"
 * item[=].type = #choice
 * item[=].text = "Session Site?"
-* item[=].answerOption[0].valueString = "BCH "
-* item[=].answerOption[+].valueString = "MIT "
-* item[=].answerOption[+].valueString = "Mt. Sinai "
-* item[=].answerOption[+].valueString = "USF "
-* item[=].answerOption[+].valueString = "VUMC "
+* item[=].answerOption[0].valueString = "BCH"
+* item[=].answerOption[+].valueString = "MIT"
+* item[=].answerOption[+].valueString = "Mt. Sinai"
+* item[=].answerOption[+].valueString = "USF"
+* item[=].answerOption[+].valueString = "VUMC"
 * item[=].answerOption[+].valueString = "WCM"
